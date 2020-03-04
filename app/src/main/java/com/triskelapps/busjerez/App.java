@@ -6,6 +6,8 @@ import android.content.SharedPreferences;
 
 import androidx.preference.PreferenceManager;
 
+import com.triskelapps.busjerez.database.MyDatabase;
+
 
 public class App extends Application {
 
@@ -16,6 +18,8 @@ public class App extends Application {
 
     public static final String PREFIX = BuildConfig.APPLICATION_ID + ".";
 
+
+    private static MyDatabase db;
     //    public static final String SHARED_TOKEN = PREFIX + "shared_token";
 
     public static final String DB_NAME = "app_db.sqlite";
@@ -24,9 +28,18 @@ public class App extends Application {
     public void onCreate() {
         super.onCreate();
 
+//        db = Room.databaseBuilder(getApplicationContext(),
+//                MyDatabase.class, DB_NAME)
+////                .addMigrations(MyDatabase.MIGRATION_1_2)
+////                .fallbackToDestructiveMigration()
+//                .allowMainThreadQueries()
+//                .build();
 
 //        NotificationHelper.with(this).initializeOreoChannelsNotification();
 
+    }
+    public static MyDatabase getDB() {
+        return db;
     }
 
     public static SharedPreferences getPrefs(Context context) {
