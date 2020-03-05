@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">Autobuses Jerez</string>
-    <string name="title_activity_maps">Map</string>
+
+    <string name="permission_denied">Permiso denegado</string>
+    <string name="permission_needed">Se necesita permiso</string>
+    <string name="location_permission_message">Hace falta aceptar el permiso a la ubicación para que puedas localizarte en el mapa</string>
 </resources>

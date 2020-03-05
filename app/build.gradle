@@ -26,6 +26,13 @@ android {
         }
     }
 
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    viewBinding.enabled = true
+
 }
 
 dependencies {
@@ -33,17 +40,21 @@ dependencies {
 
     implementation 'androidx.appcompat:appcompat:1.1.0'
     implementation 'com.google.android.gms:play-services-maps:17.0.0'
+    implementation 'com.google.maps.android:android-maps-utils:0.5'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 
+    implementation "androidx.preference:preference:1.1.0"
+
     implementation 'com.google.code.gson:gson:2.8.5'
+    implementation 'com.karumi:dexter:6.0.0'
+
+    implementation 'io.nlopez.smartlocation:library:3.3.3'
+    implementation 'com.github.GrenderG:Toasty:1.4.2'
 
     def room_version = "2.2.4"
     implementation "androidx.room:room-runtime:$room_version"
     annotationProcessor "androidx.room:room-compiler:$room_version"
 
-    implementation 'com.karumi:dexter:6.0.0'
-
-    implementation "androidx.preference:preference:1.1.0"
 }
