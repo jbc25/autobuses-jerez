@@ -1,0 +1,4487 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.106116,
+          36.680889,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Canaleja",
+        "styleUrl": "#icon-1532-0288D1-labelson",
+        "styleHash": "-1a994f18",
+        "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
+        "description": "TRANSBORDO: <br>LINEA: 10<br>COD.PARADA: 99<br>SENTIDO: Sentido Jerez<br>LATITUD: 36.680889<br>LONGITUD: -6.106116",
+        "TRANSBORDO": "",
+        "LINEA": "10.0",
+        "COD.PARADA": "99.0",
+        "SENTIDO": "Sentido Jerez",
+        "LATITUD": "36.680889",
+        "LONGITUD": "-6.106116"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.108083,
+          36.681719,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Caños de Meca",
+        "styleUrl": "#icon-1532-C2185B-labelson",
+        "styleHash": "13e0cdc8",
+        "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
+        "description": "TRANSBORDO: <br>LINEA: 10<br>COD.PARADA: 104<br>SENTIDO: Sentido Jerez<br>LATITUD: 36.681719<br>LONGITUD: -6.108083",
+        "TRANSBORDO": "",
+        "LINEA": "10.0",
+        "COD.PARADA": "104.0",
+        "SENTIDO": "Sentido Jerez",
+        "LATITUD": "36.681719",
+        "LONGITUD": "-6.108083"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.111144,
+          36.68256,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Doña María",
+        "styleUrl": "#icon-1532-C2185B-labelson",
+        "styleHash": "13e0cdc8",
+        "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
+        "description": "TRANSBORDO: <br>LINEA: 10<br>COD.PARADA: 143<br>SENTIDO: Hacia Calle Fresa<br>LATITUD: 36.68256<br>LONGITUD: -6.111144",
+        "TRANSBORDO": "",
+        "LINEA": "10.0",
+        "COD.PARADA": "143.0",
+        "SENTIDO": "Hacia Calle Fresa",
+        "LATITUD": "36.68256",
+        "LONGITUD": "-6.111144"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.111432,
+          36.68065,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Macedonia",
+        "styleUrl": "#icon-1532-C2185B-labelson",
+        "styleHash": "13e0cdc8",
+        "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
+        "description": "TRANSBORDO: <br>LINEA: 10<br>COD.PARADA: 278<br>SENTIDO: Hacia Calle Fresa<br>LATITUD: 36.68065<br>LONGITUD: -6.111432",
+        "TRANSBORDO": "",
+        "LINEA": "10.0",
+        "COD.PARADA": "278.0",
+        "SENTIDO": "Hacia Calle Fresa",
+        "LATITUD": "36.68065",
+        "LONGITUD": "-6.111432"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.113347,
+          36.680768,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Fresa",
+        "styleUrl": "#icon-1532-C2185B-labelson",
+        "styleHash": "13e0cdc8",
+        "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
+        "description": "TRANSBORDO: <br>LINEA: 10<br>COD.PARADA: 183<br>SENTIDO: Hacia Parque Atlántico<br>LATITUD: 36.680768<br>LONGITUD: -6.113347",
+        "TRANSBORDO": "",
+        "LINEA": "10.0",
+        "COD.PARADA": "183.0",
+        "SENTIDO": "Hacia Parque Atlántico",
+        "LATITUD": "36.680768",
+        "LONGITUD": "-6.113347"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.116931,
+          36.680207,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Las Palmeras",
+        "styleUrl": "#icon-1532-C2185B-labelson",
+        "styleHash": "13e0cdc8",
+        "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
+        "description": "TRANSBORDO: <br>LINEA: 10<br>COD.PARADA: 257<br>SENTIDO: Hacia Parque Atlántico<br>LATITUD: 36.680207<br>LONGITUD: -6.116931",
+        "TRANSBORDO": "",
+        "LINEA": "10.0",
+        "COD.PARADA": "257.0",
+        "SENTIDO": "Hacia Parque Atlántico",
+        "LATITUD": "36.680207",
+        "LONGITUD": "-6.116931"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.118661,
+          36.679422,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Super Sol",
+        "styleUrl": "#icon-1532-C2185B-labelson",
+        "styleHash": "13e0cdc8",
+        "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
+        "description": "TRANSBORDO: <br>LINEA: 10<br>COD.PARADA: 424<br>SENTIDO: Hacia Parque Atlántico<br>LATITUD: 36.679422<br>LONGITUD: -6.118661",
+        "TRANSBORDO": "",
+        "LINEA": "10.0",
+        "COD.PARADA": "424.0",
+        "SENTIDO": "Hacia Parque Atlántico",
+        "LATITUD": "36.679422",
+        "LONGITUD": "-6.118661"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.119942,
+          36.67804,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Parque Atlántico",
+        "styleUrl": "#icon-1532-C2185B-labelson",
+        "styleHash": "13e0cdc8",
+        "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
+        "description": "TRANSBORDO: <br>LINEA: 10<br>COD.PARADA: 322<br>SENTIDO: Hacia Vallesequillo<br>LATITUD: 36.67804<br>LONGITUD: -6.119942",
+        "TRANSBORDO": "",
+        "LINEA": "10.0",
+        "COD.PARADA": "322.0",
+        "SENTIDO": "Hacia Vallesequillo",
+        "LATITUD": "36.67804",
+        "LONGITUD": "-6.119942"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.121212,
+          36.677041,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Mediterráneo",
+        "styleUrl": "#icon-1532-C2185B-labelson",
+        "styleHash": "13e0cdc8",
+        "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
+        "description": "TRANSBORDO: <br>LINEA: 10<br>COD.PARADA: 295<br>SENTIDO: Hacia Vallesequillo<br>LATITUD: 36.677041<br>LONGITUD: -6.121212",
+        "TRANSBORDO": "",
+        "LINEA": "10.0",
+        "COD.PARADA": "295.0",
+        "SENTIDO": "Hacia Vallesequillo",
+        "LATITUD": "36.677041",
+        "LONGITUD": "-6.121212"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.121294,
+          36.675629,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Manjón",
+        "styleUrl": "#icon-1532-C2185B-labelson",
+        "styleHash": "13e0cdc8",
+        "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
+        "description": "TRANSBORDO: <br>LINEA: 10<br>COD.PARADA: 285<br>SENTIDO: Hacia Vallesequillo<br>LATITUD: 36.675629<br>LONGITUD: -6.121294",
+        "TRANSBORDO": "",
+        "LINEA": "10.0",
+        "COD.PARADA": "285.0",
+        "SENTIDO": "Hacia Vallesequillo",
+        "LATITUD": "36.675629",
+        "LONGITUD": "-6.121294"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.119227,
+          36.673442,
+          0
+        ]
+      },
+      "properties": {
+        "name": "El Serrallo",
+        "styleUrl": "#icon-1532-C2185B-labelson",
+        "styleHash": "13e0cdc8",
+        "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
+        "description": "TRANSBORDO: <br>LINEA: 10<br>COD.PARADA: 158<br>SENTIDO: Hacia Vallesequillo<br>LATITUD: 36.673442<br>LONGITUD: -6.119227",
+        "TRANSBORDO": "",
+        "LINEA": "10.0",
+        "COD.PARADA": "158.0",
+        "SENTIDO": "Hacia Vallesequillo",
+        "LATITUD": "36.673442",
+        "LONGITUD": "-6.119227"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.121288,
+          36.673087,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Parque Cartuja",
+        "styleUrl": "#icon-1532-C2185B-labelson",
+        "styleHash": "13e0cdc8",
+        "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
+        "description": "TRANSBORDO: <br>LINEA: 10<br>COD.PARADA: 324<br>SENTIDO: Hacia Vallesequillo<br>LATITUD: 36.673087<br>LONGITUD: -6.121288",
+        "TRANSBORDO": "",
+        "LINEA": "10.0",
+        "COD.PARADA": "324.0",
+        "SENTIDO": "Hacia Vallesequillo",
+        "LATITUD": "36.673087",
+        "LONGITUD": "-6.121288"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.124295,
+          36.675107,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Vallesequillo",
+        "styleUrl": "#icon-1532-C2185B-labelson",
+        "styleHash": "13e0cdc8",
+        "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
+        "description": "TRANSBORDO: <br>LINEA: 10<br>COD.PARADA: 448<br>SENTIDO: Única, atraviesa<br>LATITUD: 36.675107<br>LONGITUD: -6.124295",
+        "TRANSBORDO": "",
+        "LINEA": "10.0",
+        "COD.PARADA": "448.0",
+        "SENTIDO": "Única, atraviesa",
+        "LATITUD": "36.675107",
+        "LONGITUD": "-6.124295"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.125189,
+          36.677652,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Tomás Bengoa",
+        "styleUrl": "#icon-1532-C2185B-labelson",
+        "styleHash": "13e0cdc8",
+        "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
+        "description": "TRANSBORDO: <br>LINEA: 10<br>COD.PARADA: 435<br>SENTIDO: Dirección Diego F. Herrera<br>LATITUD: 36.677652<br>LONGITUD: -6.125189",
+        "TRANSBORDO": "",
+        "LINEA": "10.0",
+        "COD.PARADA": "435.0",
+        "SENTIDO": "Dirección Diego F. Herrera",
+        "LATITUD": "36.677652",
+        "LONGITUD": "-6.125189"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.127863,
+          36.679308,
+          0
+        ]
+      },
+      "properties": {
+        "name": "FF.CC.",
+        "styleUrl": "#icon-1532-C2185B-labelson",
+        "styleHash": "13e0cdc8",
+        "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
+        "description": "TRANSBORDO: <br>LINEA: 10<br>COD.PARADA: 182<br>SENTIDO: Dirección Diego F. Herrera<br>LATITUD: 36.679308<br>LONGITUD: -6.127863",
+        "TRANSBORDO": "",
+        "LINEA": "10.0",
+        "COD.PARADA": "182.0",
+        "SENTIDO": "Dirección Diego F. Herrera",
+        "LATITUD": "36.679308",
+        "LONGITUD": "-6.127863"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.131088,
+          36.680544,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Diego F. Herrera",
+        "styleUrl": "#icon-1532-C2185B-labelson",
+        "styleHash": "13e0cdc8",
+        "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
+        "description": "TRANSBORDO: 1-2-3-4-5-8-9-11-12-15-18<br>LINEA: 10<br>COD.PARADA: 139<br>SENTIDO: Sentido Angustias<br>LATITUD: 36.680544<br>LONGITUD: -6.131088",
+        "TRANSBORDO": "1-2-3-4-5-8-9-11-12-15-18",
+        "LINEA": "10.0",
+        "COD.PARADA": "139.0",
+        "SENTIDO": "Sentido Angustias",
+        "LATITUD": "36.680544",
+        "LONGITUD": "-6.131088"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.134338,
+          36.680865,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Angustias Canal Sur",
+        "styleUrl": "#icon-1532-C2185B-labelson",
+        "styleHash": "13e0cdc8",
+        "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
+        "description": "TRANSBORDO: 1-2-3-4-5-6-12-18<br>LINEA: 10<br>COD.PARADA: 130<br>SENTIDO: Única<br>LATITUD: 36.680865<br>LONGITUD: -6.134338",
+        "TRANSBORDO": "1-2-3-4-5-6-12-18",
+        "LINEA": "10.0",
+        "COD.PARADA": "130.0",
+        "SENTIDO": "Única",
+        "LATITUD": "36.680865",
+        "LONGITUD": "-6.134338"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.136679,
+          36.681745,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Plaza Esteve",
+        "styleUrl": "#icon-1532-C2185B-labelson",
+        "styleHash": "13e0cdc8",
+        "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
+        "description": "TRANSBORDO: 1-2-3-4-6-11-14<br>LINEA: 10<br>COD.PARADA: 343<br>SENTIDO: Esteve<br>LATITUD: 36.681745<br>LONGITUD: -6.136679",
+        "TRANSBORDO": "1-2-3-4-6-11-14",
+        "LINEA": "10.0",
+        "COD.PARADA": "343.0",
+        "SENTIDO": "Esteve",
+        "LATITUD": "36.681745",
+        "LONGITUD": "-6.136679"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.137124,
+          36.687463,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Sto. Domingo II",
+        "styleUrl": "#icon-1532-C2185B-labelson",
+        "styleHash": "13e0cdc8",
+        "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
+        "description": "TRANSBORDO: 2-3-4-16-17-18<br>LINEA: 10<br>COD.PARADA: 419<br>SENTIDO: Hacia Norte y Oeste<br>LATITUD: 36.687463<br>LONGITUD: -6.137124",
+        "TRANSBORDO": "2-3-4-16-17-18",
+        "LINEA": "10.0",
+        "COD.PARADA": "419.0",
+        "SENTIDO": "Hacia Norte y Oeste",
+        "LATITUD": "36.687463",
+        "LONGITUD": "-6.137124"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.135741,
+          36.690344,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Sevilla",
+        "styleUrl": "#icon-1532-C2185B-labelson",
+        "styleHash": "13e0cdc8",
+        "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
+        "description": "TRANSBORDO: 2-3-4-16-17-18<br>LINEA: 10<br>COD.PARADA: 414<br>SENTIDO: De Alameda Cristina a Paul<br>LATITUD: 36.690344<br>LONGITUD: -6.135741",
+        "TRANSBORDO": "2-3-4-16-17-18",
+        "LINEA": "10.0",
+        "COD.PARADA": "414.0",
+        "SENTIDO": "De Alameda Cristina a Paul",
+        "LATITUD": "36.690344",
+        "LONGITUD": "-6.135741"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.1339468,
+          36.6914943,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Álvaro Domecq",
+        "styleUrl": "#icon-1532-C2185B-labelson",
+        "styleHash": "13e0cdc8",
+        "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
+        "description": "TRANSBORDO: 4-16-17<br>LINEA: 10<br>COD.PARADA: 16<br>SENTIDO: Dirección Hipercor<br>LATITUD: 36.6914943<br>LONGITUD: -6.1339468",
+        "TRANSBORDO": "4-16-17",
+        "LINEA": "10.0",
+        "COD.PARADA": "16.0",
+        "SENTIDO": "Dirección Hipercor",
+        "LATITUD": "36.6914943",
+        "LONGITUD": "-6.1339468"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.135953,
+          36.695356,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Juzgados",
+        "styleUrl": "#icon-1532-C2185B-labelson",
+        "styleHash": "13e0cdc8",
+        "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
+        "description": "TRANSBORDO: <br>LINEA: 10<br>COD.PARADA: 236<br>SENTIDO: Dirección Hacienda<br>LATITUD: 36.695356<br>LONGITUD: -6.135953",
+        "TRANSBORDO": "",
+        "LINEA": "10.0",
+        "COD.PARADA": "236.0",
+        "SENTIDO": "Dirección Hacienda",
+        "LATITUD": "36.695356",
+        "LONGITUD": "-6.135953"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.138996,
+          36.698434,
+          0
+        ]
+      },
+      "properties": {
+        "name": "San Benito",
+        "styleUrl": "#icon-1532-C2185B-labelson",
+        "styleHash": "13e0cdc8",
+        "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
+        "description": "TRANSBORDO: 8<br>LINEA: 10<br>COD.PARADA: 387<br>SENTIDO: Hacia Circunvalación<br>LATITUD: 36.698434<br>LONGITUD: -6.138996",
+        "TRANSBORDO": "8",
+        "LINEA": "10.0",
+        "COD.PARADA": "387.0",
+        "SENTIDO": "Hacia Circunvalación",
+        "LATITUD": "36.698434",
+        "LONGITUD": "-6.138996"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.141449,
+          36.700567,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Tomás Gª Figueras",
+        "styleUrl": "#icon-1532-C2185B-labelson",
+        "styleHash": "13e0cdc8",
+        "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
+        "description": "TRANSBORDO: 8<br>LINEA: 10<br>COD.PARADA: 436<br>SENTIDO: Hacia Circunvalación<br>LATITUD: 36.700567<br>LONGITUD: -6.141449",
+        "TRANSBORDO": "8",
+        "LINEA": "10.0",
+        "COD.PARADA": "436.0",
+        "SENTIDO": "Hacia Circunvalación",
+        "LATITUD": "36.700567",
+        "LONGITUD": "-6.141449"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.147166,
+          36.705808,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Garvey",
+        "styleUrl": "#icon-1532-C2185B-labelson",
+        "styleHash": "13e0cdc8",
+        "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
+        "description": "TRANSBORDO: <br>LINEA: 10<br>COD.PARADA: 187<br>SENTIDO: Dirección Hospital<br>LATITUD: 36.705808<br>LONGITUD: -6.147166",
+        "TRANSBORDO": "",
+        "LINEA": "10.0",
+        "COD.PARADA": "187.0",
+        "SENTIDO": "Dirección Hospital",
+        "LATITUD": "36.705808",
+        "LONGITUD": "-6.147166"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.148634,
+          36.704972,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Los Villares",
+        "styleUrl": "#icon-1532-C2185B-labelson",
+        "styleHash": "13e0cdc8",
+        "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
+        "description": "TRANSBORDO: <br>LINEA: 10<br>COD.PARADA: 273<br>SENTIDO: Hacia Hospital<br>LATITUD: 36.704972<br>LONGITUD: -6.148634",
+        "TRANSBORDO": "",
+        "LINEA": "10.0",
+        "COD.PARADA": "273.0",
+        "SENTIDO": "Hacia Hospital",
+        "LATITUD": "36.704972",
+        "LONGITUD": "-6.148634"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.14208,
+          36.702041,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Arcipreste Corona",
+        "styleUrl": "#icon-1532-C2185B-labelson",
+        "styleHash": "13e0cdc8",
+        "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
+        "description": "TRANSBORDO: 8<br>LINEA: 10<br>COD.PARADA: 28<br>SENTIDO: Sentido Hospital<br>LATITUD: 36.702041<br>LONGITUD: -6.14208",
+        "TRANSBORDO": "8",
+        "LINEA": "10.0",
+        "COD.PARADA": "28.0",
+        "SENTIDO": "Sentido Hospital",
+        "LATITUD": "36.702041",
+        "LONGITUD": "-6.14208"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.1489,
+          36.699402,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Urgencias",
+        "styleUrl": "#icon-1532-C2185B-labelson",
+        "styleHash": "13e0cdc8",
+        "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
+        "description": "TRANSBORDO: 8-9<br>LINEA: 10<br>COD.PARADA: 447<br>SENTIDO: Única<br>LATITUD: 36.699402<br>LONGITUD: -6.1489",
+        "TRANSBORDO": "8-9",
+        "LINEA": "10.0",
+        "COD.PARADA": "447.0",
+        "SENTIDO": "Única",
+        "LATITUD": "36.699402",
+        "LONGITUD": "-6.1489"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.150267,
+          36.69827,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Consultas Externas",
+        "styleUrl": "#icon-1532-C2185B-labelson",
+        "styleHash": "13e0cdc8",
+        "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
+        "description": "TRANSBORDO: 8-9<br>LINEA: 10<br>COD.PARADA: 129<br>SENTIDO: Única<br>LATITUD: 36.69827<br>LONGITUD: -6.150267",
+        "TRANSBORDO": "8-9",
+        "LINEA": "10.0",
+        "COD.PARADA": "129.0",
+        "SENTIDO": "Única",
+        "LATITUD": "36.69827",
+        "LONGITUD": "-6.150267"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.147064,
+          36.698709,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Hospital Infantil",
+        "styleUrl": "#icon-1532-C2185B-labelson",
+        "styleHash": "13e0cdc8",
+        "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
+        "description": "TRANSBORDO: 8-9<br>LINEA: 10<br>COD.PARADA: 217<br>SENTIDO: Unica<br>LATITUD: 36.698709<br>LONGITUD: -6.147064",
+        "TRANSBORDO": "8-9",
+        "LINEA": "10.0",
+        "COD.PARADA": "217.0",
+        "SENTIDO": "Unica",
+        "LATITUD": "36.698709",
+        "LONGITUD": "-6.147064"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.142358,
+          36.701525,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Arcipreste Corona",
+        "styleUrl": "#icon-1532-C2185B-labelson",
+        "styleHash": "13e0cdc8",
+        "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
+        "description": "TRANSBORDO: 9<br>LINEA: 10<br>COD.PARADA: 29<br>SENTIDO: Hacia San Benito<br>LATITUD: 36.701525<br>LONGITUD: -6.142358",
+        "TRANSBORDO": "9",
+        "LINEA": "10.0",
+        "COD.PARADA": "29.0",
+        "SENTIDO": "Hacia San Benito",
+        "LATITUD": "36.701525",
+        "LONGITUD": "-6.142358"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.144171,
+          36.700281,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Reina Sofía San Benito",
+        "styleUrl": "#icon-1532-C2185B-labelson",
+        "styleHash": "13e0cdc8",
+        "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
+        "description": "TRANSBORDO: 9<br>LINEA: 10<br>COD.PARADA: 365<br>SENTIDO: Hacia San Benito<br>LATITUD: 36.700281<br>LONGITUD: -6.144171",
+        "TRANSBORDO": "9",
+        "LINEA": "10.0",
+        "COD.PARADA": "365.0",
+        "SENTIDO": "Hacia San Benito",
+        "LATITUD": "36.700281",
+        "LONGITUD": "-6.144171"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.140846,
+          36.699767,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Tomás Gª Figueras",
+        "styleUrl": "#icon-1532-C2185B-labelson",
+        "styleHash": "13e0cdc8",
+        "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
+        "description": "TRANSBORDO: 9<br>LINEA: 10<br>COD.PARADA: 437<br>SENTIDO: Hacia Hacienda<br>LATITUD: 36.699767<br>LONGITUD: -6.140846",
+        "TRANSBORDO": "9",
+        "LINEA": "10.0",
+        "COD.PARADA": "437.0",
+        "SENTIDO": "Hacia Hacienda",
+        "LATITUD": "36.699767",
+        "LONGITUD": "-6.140846"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.13913,
+          36.698522,
+          0
+        ]
+      },
+      "properties": {
+        "name": "San Benito",
+        "styleUrl": "#icon-1532-C2185B-labelson",
+        "styleHash": "13e0cdc8",
+        "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
+        "description": "TRANSBORDO: 9<br>LINEA: 10<br>COD.PARADA: 388<br>SENTIDO: Hacia Hacienda<br>LATITUD: 36.698522<br>LONGITUD: -6.13913",
+        "TRANSBORDO": "9",
+        "LINEA": "10.0",
+        "COD.PARADA": "388.0",
+        "SENTIDO": "Hacia Hacienda",
+        "LATITUD": "36.698522",
+        "LONGITUD": "-6.13913"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.136004,
+          36.695416,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Juzgados",
+        "styleUrl": "#icon-1532-C2185B-labelson",
+        "styleHash": "13e0cdc8",
+        "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
+        "description": "TRANSBORDO: <br>LINEA: 10<br>COD.PARADA: 237<br>SENTIDO: Sentido Alvaro Domecq<br>LATITUD: 36.695416<br>LONGITUD: -6.136004",
+        "TRANSBORDO": "",
+        "LINEA": "10.0",
+        "COD.PARADA": "237.0",
+        "SENTIDO": "Sentido Alvaro Domecq",
+        "LATITUD": "36.695416",
+        "LONGITUD": "-6.136004"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.133541,
+          36.691794,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Álvaro Domecq",
+        "styleUrl": "#icon-1532-C2185B-labelson",
+        "styleHash": "13e0cdc8",
+        "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
+        "description": "TRANSBORDO: 16-17<br>LINEA: 10<br>COD.PARADA: 17<br>SENTIDO: Sentido Centro<br>LATITUD: 36.691794<br>LONGITUD: -6.133541",
+        "TRANSBORDO": "16-17",
+        "LINEA": "10.0",
+        "COD.PARADA": "17.0",
+        "SENTIDO": "Sentido Centro",
+        "LATITUD": "36.691794",
+        "LONGITUD": "-6.133541"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.135788,
+          36.690418,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Sevilla",
+        "styleUrl": "#icon-1532-C2185B-labelson",
+        "styleHash": "13e0cdc8",
+        "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
+        "description": "TRANSBORDO: 16-17<br>LINEA: 10<br>COD.PARADA: 415<br>SENTIDO: Dirección centro<br>LATITUD: 36.690418<br>LONGITUD: -6.135788",
+        "TRANSBORDO": "16-17",
+        "LINEA": "10.0",
+        "COD.PARADA": "415.0",
+        "SENTIDO": "Dirección centro",
+        "LATITUD": "36.690418",
+        "LONGITUD": "-6.135788"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.137629,
+          36.688852,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Mamelón",
+        "styleUrl": "#icon-1532-C2185B-labelson",
+        "styleHash": "13e0cdc8",
+        "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
+        "description": "TRANSBORDO: 2-3-16-17-18<br>LINEA: 10<br>COD.PARADA: 284<br>SENTIDO: Única<br>LATITUD: 36.688852<br>LONGITUD: -6.137629",
+        "TRANSBORDO": "2-3-16-17-18",
+        "LINEA": "10.0",
+        "COD.PARADA": "284.0",
+        "SENTIDO": "Única",
+        "LATITUD": "36.688852",
+        "LONGITUD": "-6.137629"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.137447,
+          36.686357,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Sto. Domingo III",
+        "styleUrl": "#icon-1532-C2185B-labelson",
+        "styleHash": "13e0cdc8",
+        "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
+        "description": "TRANSBORDO: 16-17 <br>LINEA: 10<br>COD.PARADA: 421<br>SENTIDO: Unica<br>LATITUD: 36.686357<br>LONGITUD: -6.137447",
+        "TRANSBORDO": "16-17 ",
+        "LINEA": "10.0",
+        "COD.PARADA": "421.0",
+        "SENTIDO": "Unica",
+        "LATITUD": "36.686357",
+        "LONGITUD": "-6.137447"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.136451,
+          36.685095,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Rotonda Casino",
+        "styleUrl": "#icon-1532-C2185B-labelson",
+        "styleHash": "13e0cdc8",
+        "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
+        "description": "TRANSBORDO: 2-3-16-17-18<br>LINEA: 10<br>COD.PARADA: 385<br>SENTIDO: Única<br>LATITUD: 36.685095<br>LONGITUD: -6.136451",
+        "TRANSBORDO": "2-3-16-17-18",
+        "LINEA": "10.0",
+        "COD.PARADA": "385.0",
+        "SENTIDO": "Única",
+        "LATITUD": "36.685095",
+        "LONGITUD": "-6.136451"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.137124,
+          36.687463,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Sto. Domingo II",
+        "styleUrl": "#icon-1532-C2185B-labelson",
+        "styleHash": "13e0cdc8",
+        "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
+        "description": "TRANSBORDO: 2-3-18<br>LINEA: 10<br>COD.PARADA: 420<br>SENTIDO: Hacia Esteve<br>LATITUD: 36.687463<br>LONGITUD: -6.137124",
+        "TRANSBORDO": "2-3-18",
+        "LINEA": "10.0",
+        "COD.PARADA": "420.0",
+        "SENTIDO": "Hacia Esteve",
+        "LATITUD": "36.687463",
+        "LONGITUD": "-6.137124"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.132913,
+          36.688521,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Paúl",
+        "styleUrl": "#icon-1532-C2185B-labelson",
+        "styleHash": "13e0cdc8",
+        "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
+        "description": "TRANSBORDO: 2-3-18<br>LINEA: 10<br>COD.PARADA: 329<br>SENTIDO: Única<br>LATITUD: 36.688521<br>LONGITUD: -6.132913",
+        "TRANSBORDO": "2-3-18",
+        "LINEA": "10.0",
+        "COD.PARADA": "329.0",
+        "SENTIDO": "Única",
+        "LATITUD": "36.688521",
+        "LONGITUD": "-6.132913"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.129405,
+          36.688395,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Fátima",
+        "styleUrl": "#icon-1532-C2185B-labelson",
+        "styleHash": "13e0cdc8",
+        "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
+        "description": "TRANSBORDO: 2-3-18<br>LINEA: 10<br>COD.PARADA: 174<br>SENTIDO: De Zaragoza a Nuestra señora de la paz<br>LATITUD: 36.688395<br>LONGITUD: -6.129405",
+        "TRANSBORDO": "2-3-18",
+        "LINEA": "10.0",
+        "COD.PARADA": "174.0",
+        "SENTIDO": "De Zaragoza a Nuestra señora de la paz",
+        "LATITUD": "36.688395",
+        "LONGITUD": "-6.129405"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.127942,
+          36.68792,
+          0
+        ]
+      },
+      "properties": {
+        "name": "España",
+        "styleUrl": "#icon-1532-C2185B-labelson",
+        "styleHash": "13e0cdc8",
+        "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
+        "description": "TRANSBORDO: 2-3-4-5-15-18<br>LINEA: 10<br>COD.PARADA: 168<br>SENTIDO: Hacia Madre de Dios<br>LATITUD: 36.68792<br>LONGITUD: -6.127942",
+        "TRANSBORDO": "2-3-4-5-15-18",
+        "LINEA": "10.0",
+        "COD.PARADA": "168.0",
+        "SENTIDO": "Hacia Madre de Dios",
+        "LATITUD": "36.68792",
+        "LONGITUD": "-6.127942"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.128288,
+          36.681258,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Estaciones",
+        "styleUrl": "#icon-1532-C2185B-labelson",
+        "styleHash": "13e0cdc8",
+        "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
+        "description": "TRANSBORDO: 2-3-4-5-15-18<br>LINEA: 10<br>COD.PARADA: 171<br>SENTIDO: Dirección Madre de Dios<br>LATITUD: 36.681258<br>LONGITUD: -6.128288",
+        "TRANSBORDO": "2-3-4-5-15-18",
+        "LINEA": "10.0",
+        "COD.PARADA": "171.0",
+        "SENTIDO": "Dirección Madre de Dios",
+        "LATITUD": "36.681258",
+        "LONGITUD": "-6.128288"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.1331925,
+          36.6805086,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Plaza Angustias",
+        "styleUrl": "#icon-1532-C2185B-labelson",
+        "styleHash": "13e0cdc8",
+        "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
+        "description": "TRANSBORDO: 7<br>LINEA: 10<br>COD.PARADA: 339<br>SENTIDO: Hacia el Este en Bodega Cuadro<br>LATITUD: 36.6805086<br>LONGITUD: -6.1331925",
+        "TRANSBORDO": "7",
+        "LINEA": "10.0",
+        "COD.PARADA": "339.0",
+        "SENTIDO": "Hacia el Este en Bodega Cuadro",
+        "LATITUD": "36.6805086",
+        "LONGITUD": "-6.1331925"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.130807,
+          36.67932,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Porvenir",
+        "styleUrl": "#icon-1532-C2185B-labelson",
+        "styleHash": "13e0cdc8",
+        "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
+        "description": "TRANSBORDO: 7-8-9-15<br>LINEA: 10<br>COD.PARADA: 344<br>SENTIDO: Única<br>LATITUD: 36.67932<br>LONGITUD: -6.130807",
+        "TRANSBORDO": "7-8-9-15",
+        "LINEA": "10.0",
+        "COD.PARADA": "344.0",
+        "SENTIDO": "Única",
+        "LATITUD": "36.67932",
+        "LONGITUD": "-6.130807"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.129741,
+          36.679155,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Pz. Madre Dios",
+        "styleUrl": "#icon-1532-C2185B-labelson",
+        "styleHash": "13e0cdc8",
+        "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
+        "description": "TRANSBORDO: 7-8-9 <br>LINEA: 10<br>COD.PARADA: 353<br>SENTIDO: Bajando la plaza<br>LATITUD: 36.679155<br>LONGITUD: -6.129741",
+        "TRANSBORDO": "7-8-9 ",
+        "LINEA": "10.0",
+        "COD.PARADA": "353.0",
+        "SENTIDO": "Bajando la plaza",
+        "LATITUD": "36.679155",
+        "LONGITUD": "-6.129741"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.127765,
+          36.679278,
+          0
+        ]
+      },
+      "properties": {
+        "name": "FF.CC.",
+        "styleUrl": "#icon-1532-C2185B-labelson",
+        "styleHash": "13e0cdc8",
+        "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
+        "description": "TRANSBORDO: 9<br>LINEA: 10<br>COD.PARADA: 181<br>SENTIDO: Dirección Vallesequillo<br>LATITUD: 36.679278<br>LONGITUD: -6.127765",
+        "TRANSBORDO": "9",
+        "LINEA": "10.0",
+        "COD.PARADA": "181.0",
+        "SENTIDO": "Dirección Vallesequillo",
+        "LATITUD": "36.679278",
+        "LONGITUD": "-6.127765"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.12519,
+          36.677649,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Tomás Bengoa",
+        "styleUrl": "#icon-1532-C2185B-labelson",
+        "styleHash": "13e0cdc8",
+        "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
+        "description": "TRANSBORDO: 9<br>LINEA: 10<br>COD.PARADA: 434<br>SENTIDO: Dirección Vallesequillo<br>LATITUD: 36.677649<br>LONGITUD: -6.12519",
+        "TRANSBORDO": "9",
+        "LINEA": "10.0",
+        "COD.PARADA": "434.0",
+        "SENTIDO": "Dirección Vallesequillo",
+        "LATITUD": "36.677649",
+        "LONGITUD": "-6.12519"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.1248,
+          36.676297,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Avd. Vallesequillo",
+        "styleUrl": "#icon-1532-C2185B-labelson",
+        "styleHash": "13e0cdc8",
+        "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
+        "description": "TRANSBORDO: 9<br>LINEA: 10<br>COD.PARADA: 59<br>SENTIDO: Dirección Estancia Barrera<br>LATITUD: 36.676297<br>LONGITUD: -6.1248",
+        "TRANSBORDO": "9",
+        "LINEA": "10.0",
+        "COD.PARADA": "59.0",
+        "SENTIDO": "Dirección Estancia Barrera",
+        "LATITUD": "36.676297",
+        "LONGITUD": "-6.1248"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.126566,
+          36.675946,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Fdz. Sierra",
+        "styleUrl": "#icon-1532-C2185B-labelson",
+        "styleHash": "13e0cdc8",
+        "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
+        "description": "TRANSBORDO: 9<br>LINEA: 10<br>COD.PARADA: 175<br>SENTIDO: Direccion Estancia Barrera<br>LATITUD: 36.675946<br>LONGITUD: -6.126566",
+        "TRANSBORDO": "9",
+        "LINEA": "10.0",
+        "COD.PARADA": "175.0",
+        "SENTIDO": "Direccion Estancia Barrera",
+        "LATITUD": "36.675946",
+        "LONGITUD": "-6.126566"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.125447,
+          36.674404,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Obispo Cirada",
+        "styleUrl": "#icon-1532-C2185B-labelson",
+        "styleHash": "13e0cdc8",
+        "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
+        "description": "TRANSBORDO: 9<br>LINEA: 10<br>COD.PARADA: 312<br>SENTIDO: Hacia Liberación<br>LATITUD: 36.674404<br>LONGITUD: -6.125447",
+        "TRANSBORDO": "9",
+        "LINEA": "10.0",
+        "COD.PARADA": "312.0",
+        "SENTIDO": "Hacia Liberación",
+        "LATITUD": "36.674404",
+        "LONGITUD": "-6.125447"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.123978,
+          36.673655,
+          0
+        ]
+      },
+      "properties": {
+        "name": "San Eloy",
+        "styleUrl": "#icon-1532-C2185B-labelson",
+        "styleHash": "13e0cdc8",
+        "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
+        "description": "TRANSBORDO: 9<br>LINEA: 10<br>COD.PARADA: 389<br>SENTIDO: Hacia Liberación<br>LATITUD: 36.673655<br>LONGITUD: -6.123978",
+        "TRANSBORDO": "9",
+        "LINEA": "10.0",
+        "COD.PARADA": "389.0",
+        "SENTIDO": "Hacia Liberación",
+        "LATITUD": "36.673655",
+        "LONGITUD": "-6.123978"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.12129,
+          36.672998,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Parque Cartuja",
+        "styleUrl": "#icon-1532-C2185B-labelson",
+        "styleHash": "13e0cdc8",
+        "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
+        "description": "TRANSBORDO: <br>LINEA: 10<br>COD.PARADA: 325<br>SENTIDO: Hacia Parque Atlántico<br>LATITUD: 36.672998<br>LONGITUD: -6.12129",
+        "TRANSBORDO": "",
+        "LINEA": "10.0",
+        "COD.PARADA": "325.0",
+        "SENTIDO": "Hacia Parque Atlántico",
+        "LATITUD": "36.672998",
+        "LONGITUD": "-6.12129"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.119296,
+          36.673334,
+          0
+        ]
+      },
+      "properties": {
+        "name": "El Serrallo",
+        "styleUrl": "#icon-1532-C2185B-labelson",
+        "styleHash": "13e0cdc8",
+        "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
+        "description": "TRANSBORDO: <br>LINEA: 10<br>COD.PARADA: 159<br>SENTIDO: Hacia Parque Atlántico<br>LATITUD: 36.673334<br>LONGITUD: -6.119296",
+        "TRANSBORDO": "",
+        "LINEA": "10.0",
+        "COD.PARADA": "159.0",
+        "SENTIDO": "Hacia Parque Atlántico",
+        "LATITUD": "36.673334",
+        "LONGITUD": "-6.119296"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.121424,
+          36.675767,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Manjón",
+        "styleUrl": "#icon-1532-C2185B-labelson",
+        "styleHash": "13e0cdc8",
+        "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
+        "description": "TRANSBORDO: <br>LINEA: 10<br>COD.PARADA: 286<br>SENTIDO: Hacia Parque Atlántico<br>LATITUD: 36.675767<br>LONGITUD: -6.121424",
+        "TRANSBORDO": "",
+        "LINEA": "10.0",
+        "COD.PARADA": "286.0",
+        "SENTIDO": "Hacia Parque Atlántico",
+        "LATITUD": "36.675767",
+        "LONGITUD": "-6.121424"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.120911,
+          36.677167,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Mediterráneo",
+        "styleUrl": "#icon-1532-C2185B-labelson",
+        "styleHash": "13e0cdc8",
+        "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
+        "description": "TRANSBORDO: <br>LINEA: 10<br>COD.PARADA: 296<br>SENTIDO: Hacia Parque Atlántico<br>LATITUD: 36.677167<br>LONGITUD: -6.120911",
+        "TRANSBORDO": "",
+        "LINEA": "10.0",
+        "COD.PARADA": "296.0",
+        "SENTIDO": "Hacia Parque Atlántico",
+        "LATITUD": "36.677167",
+        "LONGITUD": "-6.120911"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.119752,
+          36.678309,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Parque Atlántico",
+        "styleUrl": "#icon-1532-C2185B-labelson",
+        "styleHash": "13e0cdc8",
+        "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
+        "description": "TRANSBORDO: <br>LINEA: 10<br>COD.PARADA: 323<br>SENTIDO: Hacia Calle Fresa<br>LATITUD: 36.678309<br>LONGITUD: -6.119752",
+        "TRANSBORDO": "",
+        "LINEA": "10.0",
+        "COD.PARADA": "323.0",
+        "SENTIDO": "Hacia Calle Fresa",
+        "LATITUD": "36.678309",
+        "LONGITUD": "-6.119752"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.11864,
+          36.679452,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Super Sol",
+        "styleUrl": "#icon-1532-C2185B-labelson",
+        "styleHash": "13e0cdc8",
+        "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
+        "description": "TRANSBORDO: <br>LINEA: 10<br>COD.PARADA: 425<br>SENTIDO: Hacia Calle Fresa<br>LATITUD: 36.679452<br>LONGITUD: -6.11864",
+        "TRANSBORDO": "",
+        "LINEA": "10.0",
+        "COD.PARADA": "425.0",
+        "SENTIDO": "Hacia Calle Fresa",
+        "LATITUD": "36.679452",
+        "LONGITUD": "-6.11864"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.116109,
+          36.680578,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Las Palmeras",
+        "styleUrl": "#icon-1532-C2185B-labelson",
+        "styleHash": "13e0cdc8",
+        "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
+        "description": "TRANSBORDO: <br>LINEA: 10<br>COD.PARADA: 258<br>SENTIDO: Hacia Calle Fresa<br>LATITUD: 36.680578<br>LONGITUD: -6.116109",
+        "TRANSBORDO": "",
+        "LINEA": "10.0",
+        "COD.PARADA": "258.0",
+        "SENTIDO": "Hacia Calle Fresa",
+        "LATITUD": "36.680578",
+        "LONGITUD": "-6.116109"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.113339,
+          36.680765,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Fresa",
+        "styleUrl": "#icon-1532-C2185B-labelson",
+        "styleHash": "13e0cdc8",
+        "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
+        "description": "TRANSBORDO: <br>LINEA: 10<br>COD.PARADA: 184<br>SENTIDO: Hacia Macedonia<br>LATITUD: 36.680765<br>LONGITUD: -6.113339",
+        "TRANSBORDO": "",
+        "LINEA": "10.0",
+        "COD.PARADA": "184.0",
+        "SENTIDO": "Hacia Macedonia",
+        "LATITUD": "36.680765",
+        "LONGITUD": "-6.113339"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.110173,
+          36.68056,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Macedonia",
+        "styleUrl": "#icon-1532-C2185B-labelson",
+        "styleHash": "13e0cdc8",
+        "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
+        "description": "TRANSBORDO: <br>LINEA: 10<br>COD.PARADA: 279<br>SENTIDO: Hacia Parque Eroski<br>LATITUD: 36.68056<br>LONGITUD: -6.110173",
+        "TRANSBORDO": "",
+        "LINEA": "10.0",
+        "COD.PARADA": "279.0",
+        "SENTIDO": "Hacia Parque Eroski",
+        "LATITUD": "36.68056",
+        "LONGITUD": "-6.110173"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.106662,
+          36.680526,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Parque Eroski",
+        "styleUrl": "#icon-1532-C2185B-labelson",
+        "styleHash": "13e0cdc8",
+        "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
+        "description": "TRANSBORDO: <br>LINEA: 10<br>COD.PARADA: 326<br>SENTIDO: Única<br>LATITUD: 36.680526<br>LONGITUD: -6.106662",
+        "TRANSBORDO": "",
+        "LINEA": "10.0",
+        "COD.PARADA": "326.0",
+        "SENTIDO": "Única",
+        "LATITUD": "36.680526",
+        "LONGITUD": "-6.106662"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -6.106124,
+            36.6808868,
+            0
+          ],
+          [
+            -6.1066121,
+            36.6810229,
+            0
+          ],
+          [
+            -6.107186,
+            36.6812918,
+            0
+          ],
+          [
+            -6.108216,
+            36.681793,
+            0
+          ],
+          [
+            -6.1088115,
+            36.6820726,
+            0
+          ],
+          [
+            -6.1095679,
+            36.6824512,
+            0
+          ],
+          [
+            -6.1107963,
+            36.6830449,
+            0
+          ],
+          [
+            -6.1108231,
+            36.6832127,
+            0
+          ],
+          [
+            -6.1109787,
+            36.683303,
+            0
+          ],
+          [
+            -6.1111343,
+            36.6832987,
+            0
+          ],
+          [
+            -6.1112201,
+            36.683217,
+            0
+          ],
+          [
+            -6.1112416,
+            36.6831008,
+            0
+          ],
+          [
+            -6.111145,
+            36.6830062,
+            0
+          ],
+          [
+            -6.1110431,
+            36.6829373,
+            0
+          ],
+          [
+            -6.1110485,
+            36.6828599,
+            0
+          ],
+          [
+            -6.1110967,
+            36.6826448,
+            0
+          ],
+          [
+            -6.1111369,
+            36.6823523,
+            0
+          ],
+          [
+            -6.1112577,
+            36.681608,
+            0
+          ],
+          [
+            -6.1112899,
+            36.6809713,
+            0
+          ],
+          [
+            -6.1113408,
+            36.6806701,
+            0
+          ],
+          [
+            -6.1120221,
+            36.6807175,
+            0
+          ],
+          [
+            -6.1121723,
+            36.6807089,
+            0
+          ],
+          [
+            -6.1133364,
+            36.680825,
+            0
+          ],
+          [
+            -6.1136019,
+            36.6808315,
+            0
+          ],
+          [
+            -6.1139184,
+            36.6808336,
+            0
+          ],
+          [
+            -6.1142725,
+            36.6808896,
+            0
+          ],
+          [
+            -6.1145434,
+            36.6808982,
+            0
+          ],
+          [
+            -6.1147177,
+            36.6809068,
+            0
+          ],
+          [
+            -6.1149296,
+            36.6809304,
+            0
+          ],
+          [
+            -6.1154151,
+            36.6809648,
+            0
+          ],
+          [
+            -6.1156223,
+            36.6809643,
+            0
+          ],
+          [
+            -6.115804,
+            36.6809885,
+            0
+          ],
+          [
+            -6.1160025,
+            36.6809562,
+            0
+          ],
+          [
+            -6.1160696,
+            36.6808573,
+            0
+          ],
+          [
+            -6.1160588,
+            36.680739,
+            0
+          ],
+          [
+            -6.116142,
+            36.6805239,
+            0
+          ],
+          [
+            -6.1165121,
+            36.6803668,
+            0
+          ],
+          [
+            -6.116893,
+            36.6801991,
+            0
+          ],
+          [
+            -6.1170754,
+            36.6801259,
+            0
+          ],
+          [
+            -6.1174415,
+            36.6800076,
+            0
+          ],
+          [
+            -6.1177164,
+            36.6799162,
+            0
+          ],
+          [
+            -6.1179203,
+            36.6798334,
+            0
+          ],
+          [
+            -6.1179954,
+            36.6797947,
+            0
+          ],
+          [
+            -6.1181094,
+            36.679728,
+            0
+          ],
+          [
+            -6.1185171,
+            36.6794795,
+            0
+          ],
+          [
+            -6.1185385,
+            36.6794634,
+            0
+          ],
+          [
+            -6.1186083,
+            36.679373,
+            0
+          ],
+          [
+            -6.1187504,
+            36.679258,
+            0
+          ],
+          [
+            -6.1190535,
+            36.6790084,
+            0
+          ],
+          [
+            -6.1192909,
+            36.6788213,
+            0
+          ],
+          [
+            -6.1194196,
+            36.6787256,
+            0
+          ],
+          [
+            -6.119488,
+            36.6786578,
+            0
+          ],
+          [
+            -6.1196905,
+            36.6783706,
+            0
+          ],
+          [
+            -6.1198367,
+            36.678163,
+            0
+          ],
+          [
+            -6.1199628,
+            36.6779866,
+            0
+          ],
+          [
+            -6.1200567,
+            36.6778328,
+            0
+          ],
+          [
+            -6.1201519,
+            36.6777102,
+            0
+          ],
+          [
+            -6.1203276,
+            36.6775413,
+            0
+          ],
+          [
+            -6.1204724,
+            36.6774166,
+            0
+          ],
+          [
+            -6.1207339,
+            36.6772488,
+            0
+          ],
+          [
+            -6.1209539,
+            36.6771251,
+            0
+          ],
+          [
+            -6.1211201,
+            36.6770498,
+            0
+          ],
+          [
+            -6.1212583,
+            36.6770079,
+            0
+          ],
+          [
+            -6.1213991,
+            36.6769863,
+            0
+          ],
+          [
+            -6.1216633,
+            36.6769788,
+            0
+          ],
+          [
+            -6.1216901,
+            36.6769788,
+            0
+          ],
+          [
+            -6.1218028,
+            36.6769702,
+            0
+          ],
+          [
+            -6.1219087,
+            36.6769939,
+            0
+          ],
+          [
+            -6.1222681,
+            36.6770326,
+            0
+          ],
+          [
+            -6.1225203,
+            36.6770756,
+            0
+          ],
+          [
+            -6.1226436,
+            36.6769552,
+            0
+          ],
+          [
+            -6.1226504,
+            36.6768616,
+            0
+          ],
+          [
+            -6.1226302,
+            36.6767723,
+            0
+          ],
+          [
+            -6.1223057,
+            36.676512,
+            0
+          ],
+          [
+            -6.1220804,
+            36.6764002,
+            0
+          ],
+          [
+            -6.1217532,
+            36.676142,
+            0
+          ],
+          [
+            -6.1215654,
+            36.6759527,
+            0
+          ],
+          [
+            -6.1214568,
+            36.6757924,
+            0
+          ],
+          [
+            -6.121273,
+            36.6755698,
+            0
+          ],
+          [
+            -6.1211939,
+            36.6754267,
+            0
+          ],
+          [
+            -6.1210893,
+            36.6753106,
+            0
+          ],
+          [
+            -6.1206199,
+            36.6749061,
+            0
+          ],
+          [
+            -6.1201344,
+            36.6744996,
+            0
+          ],
+          [
+            -6.1200084,
+            36.6743554,
+            0
+          ],
+          [
+            -6.1192332,
+            36.6737316,
+            0
+          ],
+          [
+            -6.1190052,
+            36.6735638,
+            0
+          ],
+          [
+            -6.1189838,
+            36.6735164,
+            0
+          ],
+          [
+            -6.1193003,
+            36.673439,
+            0
+          ],
+          [
+            -6.1196355,
+            36.6733723,
+            0
+          ],
+          [
+            -6.1200781,
+            36.6732841,
+            0
+          ],
+          [
+            -6.1205555,
+            36.6731916,
+            0
+          ],
+          [
+            -6.1209659,
+            36.6731335,
+            0
+          ],
+          [
+            -6.1214916,
+            36.6731271,
+            0
+          ],
+          [
+            -6.1217652,
+            36.6731625,
+            0
+          ],
+          [
+            -6.1219288,
+            36.6733266,
+            0
+          ],
+          [
+            -6.1221152,
+            36.6734301,
+            0
+          ],
+          [
+            -6.1223506,
+            36.6733937,
+            0
+          ],
+          [
+            -6.1225058,
+            36.6732937,
+            0
+          ],
+          [
+            -6.1225834,
+            36.6732373,
+            0
+          ],
+          [
+            -6.1228958,
+            36.6732176,
+            0
+          ],
+          [
+            -6.1236153,
+            36.6732509,
+            0
+          ],
+          [
+            -6.1236961,
+            36.6733471,
+            0
+          ],
+          [
+            -6.1238008,
+            36.6735113,
+            0
+          ],
+          [
+            -6.1238968,
+            36.6737815,
+            0
+          ],
+          [
+            -6.1239501,
+            36.6740833,
+            0
+          ],
+          [
+            -6.1240007,
+            36.6743916,
+            0
+          ],
+          [
+            -6.1240661,
+            36.6745579,
+            0
+          ],
+          [
+            -6.1241583,
+            36.6748725,
+            0
+          ],
+          [
+            -6.124439,
+            36.6758585,
+            0
+          ],
+          [
+            -6.1246397,
+            36.6764751,
+            0
+          ],
+          [
+            -6.1248929,
+            36.6771664,
+            0
+          ],
+          [
+            -6.124982,
+            36.6773743,
+            0
+          ],
+          [
+            -6.1251606,
+            36.6778332,
+            0
+          ],
+          [
+            -6.1253102,
+            36.6780207,
+            0
+          ],
+          [
+            -6.1254809,
+            36.6781366,
+            0
+          ],
+          [
+            -6.1257038,
+            36.6783488,
+            0
+          ],
+          [
+            -6.1259574,
+            36.6785313,
+            0
+          ],
+          [
+            -6.1261767,
+            36.6786634,
+            0
+          ],
+          [
+            -6.1264366,
+            36.6787918,
+            0
+          ],
+          [
+            -6.1269916,
+            36.6790206,
+            0
+          ],
+          [
+            -6.1271311,
+            36.6791081,
+            0
+          ],
+          [
+            -6.1271176,
+            36.6792196,
+            0
+          ],
+          [
+            -6.1271551,
+            36.6793184,
+            0
+          ],
+          [
+            -6.1272571,
+            36.6793548,
+            0
+          ],
+          [
+            -6.1273804,
+            36.6793258,
+            0
+          ],
+          [
+            -6.12743,
+            36.6792814,
+            0
+          ],
+          [
+            -6.1274542,
+            36.679251,
+            0
+          ],
+          [
+            -6.1274703,
+            36.6792217,
+            0
+          ],
+          [
+            -6.1275813,
+            36.6792469,
+            0
+          ],
+          [
+            -6.1277056,
+            36.6792914,
+            0
+          ],
+          [
+            -6.1281063,
+            36.6794489,
+            0
+          ],
+          [
+            -6.1288703,
+            36.6797282,
+            0
+          ],
+          [
+            -6.1296102,
+            36.6800246,
+            0
+          ],
+          [
+            -6.1303648,
+            36.6803286,
+            0
+          ],
+          [
+            -6.1307984,
+            36.6805149,
+            0
+          ],
+          [
+            -6.1309415,
+            36.6805694,
+            0
+          ],
+          [
+            -6.1313175,
+            36.6806967,
+            0
+          ],
+          [
+            -6.1314235,
+            36.6806984,
+            0
+          ],
+          [
+            -6.1316583,
+            36.680685,
+            0
+          ],
+          [
+            -6.1317295,
+            36.6806846,
+            0
+          ],
+          [
+            -6.1326579,
+            36.6808732,
+            0
+          ],
+          [
+            -6.1329547,
+            36.6809533,
+            0
+          ],
+          [
+            -6.133177,
+            36.680567,
+            0
+          ],
+          [
+            -6.1337897,
+            36.6806815,
+            0
+          ],
+          [
+            -6.1343797,
+            36.6808296,
+            0
+          ],
+          [
+            -6.1345379,
+            36.6808667,
+            0
+          ],
+          [
+            -6.1348732,
+            36.6808951,
+            0
+          ],
+          [
+            -6.1353131,
+            36.68099,
+            0
+          ],
+          [
+            -6.1357342,
+            36.6810956,
+            0
+          ],
+          [
+            -6.1359997,
+            36.6811647,
+            0
+          ],
+          [
+            -6.1363672,
+            36.6812928,
+            0
+          ],
+          [
+            -6.1367333,
+            36.6814299,
+            0
+          ],
+          [
+            -6.1366696,
+            36.6815986,
+            0
+          ],
+          [
+            -6.1366511,
+            36.6817151,
+            0
+          ],
+          [
+            -6.1366422,
+            36.6818021,
+            0
+          ],
+          [
+            -6.1366359,
+            36.6822644,
+            0
+          ],
+          [
+            -6.1366254,
+            36.6824969,
+            0
+          ],
+          [
+            -6.1360999,
+            36.6830735,
+            0
+          ],
+          [
+            -6.1354322,
+            36.6832523,
+            0
+          ],
+          [
+            -6.1357046,
+            36.6836664,
+            0
+          ],
+          [
+            -6.1361331,
+            36.6847339,
+            0
+          ],
+          [
+            -6.1362025,
+            36.684846,
+            0
+          ],
+          [
+            -6.1363029,
+            36.6851215,
+            0
+          ],
+          [
+            -6.136392,
+            36.6853313,
+            0
+          ],
+          [
+            -6.1364847,
+            36.6854741,
+            0
+          ],
+          [
+            -6.1367007,
+            36.6856794,
+            0
+          ],
+          [
+            -6.1369408,
+            36.6858782,
+            0
+          ],
+          [
+            -6.137167,
+            36.6860817,
+            0
+          ],
+          [
+            -6.137217,
+            36.68619,
+            0
+          ],
+          [
+            -6.1371696,
+            36.6868861,
+            0
+          ],
+          [
+            -6.1371553,
+            36.6872299,
+            0
+          ],
+          [
+            -6.1371548,
+            36.6873728,
+            0
+          ],
+          [
+            -6.1371305,
+            36.6874883,
+            0
+          ],
+          [
+            -6.1371375,
+            36.6877879,
+            0
+          ],
+          [
+            -6.1371365,
+            36.6880896,
+            0
+          ],
+          [
+            -6.1371428,
+            36.6884155,
+            0
+          ],
+          [
+            -6.1371413,
+            36.6885712,
+            0
+          ],
+          [
+            -6.1371317,
+            36.6887129,
+            0
+          ],
+          [
+            -6.1370928,
+            36.6889139,
+            0
+          ],
+          [
+            -6.1370412,
+            36.6890117,
+            0
+          ],
+          [
+            -6.1369855,
+            36.6890837,
+            0
+          ],
+          [
+            -6.1366894,
+            36.689434,
+            0
+          ],
+          [
+            -6.1363545,
+            36.6897822,
+            0
+          ],
+          [
+            -6.1359981,
+            36.6901115,
+            0
+          ],
+          [
+            -6.1358024,
+            36.6902777,
+            0
+          ],
+          [
+            -6.1357059,
+            36.6903646,
+            0
+          ],
+          [
+            -6.1354575,
+            36.6905645,
+            0
+          ],
+          [
+            -6.1354125,
+            36.6906548,
+            0
+          ],
+          [
+            -6.1347301,
+            36.6910731,
+            0
+          ],
+          [
+            -6.1340201,
+            36.691493,
+            0
+          ],
+          [
+            -6.1328242,
+            36.6921977,
+            0
+          ],
+          [
+            -6.1331087,
+            36.6926102,
+            0
+          ],
+          [
+            -6.1333636,
+            36.6929907,
+            0
+          ],
+          [
+            -6.1335802,
+            36.6931901,
+            0
+          ],
+          [
+            -6.1342089,
+            36.6936554,
+            0
+          ],
+          [
+            -6.1345313,
+            36.6938838,
+            0
+          ],
+          [
+            -6.1348644,
+            36.6941079,
+            0
+          ],
+          [
+            -6.1352315,
+            36.6944237,
+            0
+          ],
+          [
+            -6.1355611,
+            36.6948213,
+            0
+          ],
+          [
+            -6.1359767,
+            36.6953868,
+            0
+          ],
+          [
+            -6.1364083,
+            36.6959372,
+            0
+          ],
+          [
+            -6.1369568,
+            36.6965904,
+            0
+          ],
+          [
+            -6.1374891,
+            36.6972909,
+            0
+          ],
+          [
+            -6.1378585,
+            36.6976272,
+            0
+          ],
+          [
+            -6.1382817,
+            36.6979613,
+            0
+          ],
+          [
+            -6.1399841,
+            36.6990836,
+            0
+          ],
+          [
+            -6.1405331,
+            36.699477,
+            0
+          ],
+          [
+            -6.1407366,
+            36.6996533,
+            0
+          ],
+          [
+            -6.1409185,
+            36.6998339,
+            0
+          ],
+          [
+            -6.1412449,
+            36.7002317,
+            0
+          ],
+          [
+            -6.1414498,
+            36.7005269,
+            0
+          ],
+          [
+            -6.1416467,
+            36.7008757,
+            0
+          ],
+          [
+            -6.1416466,
+            36.7011432,
+            0
+          ],
+          [
+            -6.1416358,
+            36.7013462,
+            0
+          ],
+          [
+            -6.1414264,
+            36.7017512,
+            0
+          ],
+          [
+            -6.1413003,
+            36.7019043,
+            0
+          ],
+          [
+            -6.1413365,
+            36.7021293,
+            0
+          ],
+          [
+            -6.1414887,
+            36.7022568,
+            0
+          ],
+          [
+            -6.1415777,
+            36.7023156,
+            0
+          ],
+          [
+            -6.1416506,
+            36.7023787,
+            0
+          ],
+          [
+            -6.1417102,
+            36.702631,
+            0
+          ],
+          [
+            -6.1417279,
+            36.7028646,
+            0
+          ],
+          [
+            -6.1417354,
+            36.7028955,
+            0
+          ],
+          [
+            -6.1428657,
+            36.7032033,
+            0
+          ],
+          [
+            -6.1435837,
+            36.7034239,
+            0
+          ],
+          [
+            -6.143881,
+            36.7034912,
+            0
+          ],
+          [
+            -6.1439868,
+            36.70357,
+            0
+          ],
+          [
+            -6.1440065,
+            36.7036392,
+            0
+          ],
+          [
+            -6.143801,
+            36.7047835,
+            0
+          ],
+          [
+            -6.1438368,
+            36.7048914,
+            0
+          ],
+          [
+            -6.1439915,
+            36.7049711,
+            0
+          ],
+          [
+            -6.1446214,
+            36.7051486,
+            0
+          ],
+          [
+            -6.1463338,
+            36.7056019,
+            0
+          ],
+          [
+            -6.1472758,
+            36.7058586,
+            0
+          ],
+          [
+            -6.1476476,
+            36.7059461,
+            0
+          ],
+          [
+            -6.1477933,
+            36.705949,
+            0
+          ],
+          [
+            -6.1479343,
+            36.7057605,
+            0
+          ],
+          [
+            -6.1481182,
+            36.7054816,
+            0
+          ],
+          [
+            -6.148237,
+            36.7053207,
+            0
+          ],
+          [
+            -6.1483772,
+            36.7051813,
+            0
+          ],
+          [
+            -6.1485792,
+            36.7050935,
+            0
+          ],
+          [
+            -6.1486184,
+            36.7049443,
+            0
+          ],
+          [
+            -6.1485173,
+            36.7047922,
+            0
+          ],
+          [
+            -6.1483702,
+            36.704628,
+            0
+          ],
+          [
+            -6.1477843,
+            36.7033224,
+            0
+          ],
+          [
+            -6.1472152,
+            36.702076,
+            0
+          ],
+          [
+            -6.146598,
+            36.7007324,
+            0
+          ],
+          [
+            -6.1461849,
+            36.699996,
+            0
+          ],
+          [
+            -6.1460051,
+            36.6999238,
+            0
+          ],
+          [
+            -6.1459515,
+            36.6998773,
+            0
+          ],
+          [
+            -6.1458898,
+            36.6997577,
+            0
+          ],
+          [
+            -6.1459005,
+            36.6995539,
+            0
+          ],
+          [
+            -6.1458703,
+            36.699433,
+            0
+          ],
+          [
+            -6.14547,
+            36.6986885,
+            0
+          ],
+          [
+            -6.1455163,
+            36.6983998,
+            0
+          ],
+          [
+            -6.145695,
+            36.6983631,
+            0
+          ],
+          [
+            -6.1460535,
+            36.698427,
+            0
+          ],
+          [
+            -6.1463637,
+            36.6985404,
+            0
+          ],
+          [
+            -6.1464781,
+            36.6987097,
+            0
+          ],
+          [
+            -6.1443895,
+            36.7001223,
+            0
+          ],
+          [
+            -6.1435777,
+            36.7006045,
+            0
+          ],
+          [
+            -6.142782,
+            36.701177,
+            0
+          ],
+          [
+            -6.1419889,
+            36.7016957,
+            0
+          ],
+          [
+            -6.1415655,
+            36.7016884,
+            0
+          ],
+          [
+            -6.1412278,
+            36.7019514,
+            0
+          ],
+          [
+            -6.1413499,
+            36.7022399,
+            0
+          ],
+          [
+            -6.1416809,
+            36.7023083,
+            0
+          ],
+          [
+            -6.1419072,
+            36.7022541,
+            0
+          ],
+          [
+            -6.1420729,
+            36.7021196,
+            0
+          ],
+          [
+            -6.1420831,
+            36.7019076,
+            0
+          ],
+          [
+            -6.1421335,
+            36.7017344,
+            0
+          ],
+          [
+            -6.1430706,
+            36.7010715,
+            0
+          ],
+          [
+            -6.144596,
+            36.7001077,
+            0
+          ],
+          [
+            -6.1455571,
+            36.6999312,
+            0
+          ],
+          [
+            -6.1459679,
+            36.6999462,
+            0
+          ],
+          [
+            -6.1461001,
+            36.6999736,
+            0
+          ],
+          [
+            -6.1462645,
+            36.6999021,
+            0
+          ],
+          [
+            -6.1463243,
+            36.6998004,
+            0
+          ],
+          [
+            -6.1463287,
+            36.6996582,
+            0
+          ],
+          [
+            -6.1467721,
+            36.6991473,
+            0
+          ],
+          [
+            -6.1469992,
+            36.6988273,
+            0
+          ],
+          [
+            -6.1471423,
+            36.6988244,
+            0
+          ],
+          [
+            -6.1472513,
+            36.6987841,
+            0
+          ],
+          [
+            -6.1473783,
+            36.698792,
+            0
+          ],
+          [
+            -6.1480962,
+            36.6991228,
+            0
+          ],
+          [
+            -6.1483586,
+            36.6992538,
+            0
+          ],
+          [
+            -6.1489,
+            36.699402,
+            0
+          ],
+          [
+            -6.1491736,
+            36.6995525,
+            0
+          ],
+          [
+            -6.1491602,
+            36.6996665,
+            0
+          ],
+          [
+            -6.1492339,
+            36.6997364,
+            0
+          ],
+          [
+            -6.1493298,
+            36.6997412,
+            0
+          ],
+          [
+            -6.1494234,
+            36.6996942,
+            0
+          ],
+          [
+            -6.1497223,
+            36.6996943,
+            0
+          ],
+          [
+            -6.1498476,
+            36.6996557,
+            0
+          ],
+          [
+            -6.1501087,
+            36.6994063,
+            0
+          ],
+          [
+            -6.1502286,
+            36.6993697,
+            0
+          ],
+          [
+            -6.150495,
+            36.6990955,
+            0
+          ],
+          [
+            -6.1505156,
+            36.6990208,
+            0
+          ],
+          [
+            -6.1508075,
+            36.6987318,
+            0
+          ],
+          [
+            -6.1508408,
+            36.6985916,
+            0
+          ],
+          [
+            -6.1507931,
+            36.6985108,
+            0
+          ],
+          [
+            -6.1501642,
+            36.6982261,
+            0
+          ],
+          [
+            -6.1495649,
+            36.6979091,
+            0
+          ],
+          [
+            -6.1492391,
+            36.6977006,
+            0
+          ],
+          [
+            -6.1489133,
+            36.6974964,
+            0
+          ],
+          [
+            -6.1487672,
+            36.6974943,
+            0
+          ],
+          [
+            -6.1482676,
+            36.6978331,
+            0
+          ],
+          [
+            -6.1481118,
+            36.6980391,
+            0
+          ],
+          [
+            -6.1475349,
+            36.69837,
+            0
+          ],
+          [
+            -6.1472116,
+            36.6985978,
+            0
+          ],
+          [
+            -6.1471144,
+            36.6985999,
+            0
+          ],
+          [
+            -6.1470148,
+            36.698644,
+            0
+          ],
+          [
+            -6.1469865,
+            36.6987176,
+            0
+          ],
+          [
+            -6.1469777,
+            36.6987975,
+            0
+          ],
+          [
+            -6.1467737,
+            36.6990895,
+            0
+          ],
+          [
+            -6.1465267,
+            36.6993944,
+            0
+          ],
+          [
+            -6.1463428,
+            36.6995939,
+            0
+          ],
+          [
+            -6.1462535,
+            36.6997345,
+            0
+          ],
+          [
+            -6.146262,
+            36.6998019,
+            0
+          ],
+          [
+            -6.1462223,
+            36.6998823,
+            0
+          ],
+          [
+            -6.1461128,
+            36.6999153,
+            0
+          ],
+          [
+            -6.1459869,
+            36.6998662,
+            0
+          ],
+          [
+            -6.1459522,
+            36.6997545,
+            0
+          ],
+          [
+            -6.145975,
+            36.699617,
+            0
+          ],
+          [
+            -6.1458926,
+            36.6994213,
+            0
+          ],
+          [
+            -6.145703,
+            36.6990348,
+            0
+          ],
+          [
+            -6.1455143,
+            36.6986738,
+            0
+          ],
+          [
+            -6.1455514,
+            36.6984287,
+            0
+          ],
+          [
+            -6.1457068,
+            36.6983965,
+            0
+          ],
+          [
+            -6.1460178,
+            36.6984493,
+            0
+          ],
+          [
+            -6.1463208,
+            36.6985659,
+            0
+          ],
+          [
+            -6.146467,
+            36.6987619,
+            0
+          ],
+          [
+            -6.1455342,
+            36.6993976,
+            0
+          ],
+          [
+            -6.1444995,
+            36.700102,
+            0
+          ],
+          [
+            -6.1433497,
+            36.7008208,
+            0
+          ],
+          [
+            -6.1425481,
+            36.7013813,
+            0
+          ],
+          [
+            -6.1420964,
+            36.7017002,
+            0
+          ],
+          [
+            -6.1420046,
+            36.7021242,
+            0
+          ],
+          [
+            -6.1418838,
+            36.7022205,
+            0
+          ],
+          [
+            -6.1417415,
+            36.7022523,
+            0
+          ],
+          [
+            -6.1416287,
+            36.7022596,
+            0
+          ],
+          [
+            -6.141516,
+            36.7022368,
+            0
+          ],
+          [
+            -6.1413845,
+            36.7021151,
+            0
+          ],
+          [
+            -6.1413597,
+            36.7020083,
+            0
+          ],
+          [
+            -6.1413563,
+            36.7019015,
+            0
+          ],
+          [
+            -6.1414951,
+            36.7015561,
+            0
+          ],
+          [
+            -6.1415859,
+            36.7013511,
+            0
+          ],
+          [
+            -6.1415858,
+            36.7009432,
+            0
+          ],
+          [
+            -6.1414825,
+            36.7006692,
+            0
+          ],
+          [
+            -6.141288,
+            36.7003651,
+            0
+          ],
+          [
+            -6.1411411,
+            36.7001571,
+            0
+          ],
+          [
+            -6.1409137,
+            36.6998889,
+            0
+          ],
+          [
+            -6.1406874,
+            36.6996548,
+            0
+          ],
+          [
+            -6.1404182,
+            36.6994465,
+            0
+          ],
+          [
+            -6.1400616,
+            36.6991875,
+            0
+          ],
+          [
+            -6.139697,
+            36.6989329,
+            0
+          ],
+          [
+            -6.1393123,
+            36.6986868,
+            0
+          ],
+          [
+            -6.138684,
+            36.6982648,
+            0
+          ],
+          [
+            -6.1381159,
+            36.697884,
+            0
+          ],
+          [
+            -6.1376095,
+            36.6974581,
+            0
+          ],
+          [
+            -6.1375359,
+            36.6973949,
+            0
+          ],
+          [
+            -6.1374166,
+            36.6972586,
+            0
+          ],
+          [
+            -6.1372479,
+            36.6970461,
+            0
+          ],
+          [
+            -6.1369089,
+            36.6965939,
+            0
+          ],
+          [
+            -6.1363666,
+            36.6959355,
+            0
+          ],
+          [
+            -6.1360994,
+            36.6956042,
+            0
+          ],
+          [
+            -6.1352832,
+            36.6945513,
+            0
+          ],
+          [
+            -6.1351426,
+            36.6943964,
+            0
+          ],
+          [
+            -6.1349672,
+            36.6942306,
+            0
+          ],
+          [
+            -6.1345707,
+            36.6939507,
+            0
+          ],
+          [
+            -6.1338268,
+            36.6934246,
+            0
+          ],
+          [
+            -6.1335099,
+            36.693182,
+            0
+          ],
+          [
+            -6.133338,
+            36.6930101,
+            0
+          ],
+          [
+            -6.1330321,
+            36.6925747,
+            0
+          ],
+          [
+            -6.1328162,
+            36.6922279,
+            0
+          ],
+          [
+            -6.133246,
+            36.6919857,
+            0
+          ],
+          [
+            -6.1342427,
+            36.6914027,
+            0
+          ],
+          [
+            -6.1350844,
+            36.6908919,
+            0
+          ],
+          [
+            -6.1354302,
+            36.6906805,
+            0
+          ],
+          [
+            -6.1355414,
+            36.6906394,
+            0
+          ],
+          [
+            -6.1357244,
+            36.690493,
+            0
+          ],
+          [
+            -6.1361458,
+            36.6901606,
+            0
+          ],
+          [
+            -6.1367897,
+            36.6895266,
+            0
+          ],
+          [
+            -6.1371961,
+            36.6891763,
+            0
+          ],
+          [
+            -6.1374342,
+            36.6890054,
+            0
+          ],
+          [
+            -6.1377624,
+            36.6887866,
+            0
+          ],
+          [
+            -6.1378917,
+            36.6886923,
+            0
+          ],
+          [
+            -6.1379442,
+            36.6885849,
+            0
+          ],
+          [
+            -6.1378905,
+            36.6883609,
+            0
+          ],
+          [
+            -6.1378259,
+            36.6883456,
+            0
+          ],
+          [
+            -6.1377693,
+            36.6882204,
+            0
+          ],
+          [
+            -6.1374512,
+            36.6875564,
+            0
+          ],
+          [
+            -6.1374153,
+            36.6874366,
+            0
+          ],
+          [
+            -6.1374035,
+            36.6873211,
+            0
+          ],
+          [
+            -6.1374601,
+            36.6863249,
+            0
+          ],
+          [
+            -6.1374911,
+            36.6860719,
+            0
+          ],
+          [
+            -6.1372356,
+            36.6861197,
+            0
+          ],
+          [
+            -6.1366922,
+            36.6856231,
+            0
+          ],
+          [
+            -6.1366033,
+            36.6855269,
+            0
+          ],
+          [
+            -6.136509,
+            36.6854479,
+            0
+          ],
+          [
+            -6.1364283,
+            36.685323,
+            0
+          ],
+          [
+            -6.1364108,
+            36.6850938,
+            0
+          ],
+          [
+            -6.1364047,
+            36.685005,
+            0
+          ],
+          [
+            -6.1364576,
+            36.6848926,
+            0
+          ],
+          [
+            -6.1364144,
+            36.6848355,
+            0
+          ],
+          [
+            -6.1363499,
+            36.6848127,
+            0
+          ],
+          [
+            -6.1362596,
+            36.6848426,
+            0
+          ],
+          [
+            -6.1362283,
+            36.6848853,
+            0
+          ],
+          [
+            -6.1363016,
+            36.6850002,
+            0
+          ],
+          [
+            -6.1363222,
+            36.6851083,
+            0
+          ],
+          [
+            -6.13637,
+            36.685243,
+            0
+          ],
+          [
+            -6.1364897,
+            36.6854623,
+            0
+          ],
+          [
+            -6.1368119,
+            36.6857526,
+            0
+          ],
+          [
+            -6.1372192,
+            36.6861333,
+            0
+          ],
+          [
+            -6.1372439,
+            36.6862177,
+            0
+          ],
+          [
+            -6.1372471,
+            36.686315,
+            0
+          ],
+          [
+            -6.1372022,
+            36.686922,
+            0
+          ],
+          [
+            -6.1371851,
+            36.6872879,
+            0
+          ],
+          [
+            -6.13719,
+            36.6884785,
+            0
+          ],
+          [
+            -6.1371334,
+            36.6889211,
+            0
+          ],
+          [
+            -6.137021,
+            36.6891028,
+            0
+          ],
+          [
+            -6.1368765,
+            36.6892759,
+            0
+          ],
+          [
+            -6.136574,
+            36.6896177,
+            0
+          ],
+          [
+            -6.1361995,
+            36.6899865,
+            0
+          ],
+          [
+            -6.135841,
+            36.6902865,
+            0
+          ],
+          [
+            -6.1354853,
+            36.6905908,
+            0
+          ],
+          [
+            -6.1342828,
+            36.689732,
+            0
+          ],
+          [
+            -6.1340329,
+            36.6895758,
+            0
+          ],
+          [
+            -6.1336585,
+            36.6890976,
+            0
+          ],
+          [
+            -6.133356,
+            36.6886736,
+            0
+          ],
+          [
+            -6.1330894,
+            36.6885723,
+            0
+          ],
+          [
+            -6.1326423,
+            36.6884765,
+            0
+          ],
+          [
+            -6.1318635,
+            36.6883942,
+            0
+          ],
+          [
+            -6.1307955,
+            36.6883531,
+            0
+          ],
+          [
+            -6.1300121,
+            36.6883691,
+            0
+          ],
+          [
+            -6.1292998,
+            36.6884297,
+            0
+          ],
+          [
+            -6.1278896,
+            36.6885311,
+            0
+          ],
+          [
+            -6.1277925,
+            36.6884598,
+            0
+          ],
+          [
+            -6.127765,
+            36.6883671,
+            0
+          ],
+          [
+            -6.127888,
+            36.687948,
+            0
+          ],
+          [
+            -6.128148,
+            36.6869458,
+            0
+          ],
+          [
+            -6.128276,
+            36.6862522,
+            0
+          ],
+          [
+            -6.1283343,
+            36.6855844,
+            0
+          ],
+          [
+            -6.1284408,
+            36.6846004,
+            0
+          ],
+          [
+            -6.1283991,
+            36.684107,
+            0
+          ],
+          [
+            -6.1283037,
+            36.683704,
+            0
+          ],
+          [
+            -6.1282265,
+            36.6834778,
+            0
+          ],
+          [
+            -6.1281171,
+            36.6832558,
+            0
+          ],
+          [
+            -6.1279954,
+            36.6829749,
+            0
+          ],
+          [
+            -6.1279058,
+            36.6826854,
+            0
+          ],
+          [
+            -6.127835,
+            36.6823787,
+            0
+          ],
+          [
+            -6.1278479,
+            36.681978,
+            0
+          ],
+          [
+            -6.128026,
+            36.6815474,
+            0
+          ],
+          [
+            -6.1283565,
+            36.6811687,
+            0
+          ],
+          [
+            -6.1283635,
+            36.681059,
+            0
+          ],
+          [
+            -6.1286003,
+            36.680903,
+            0
+          ],
+          [
+            -6.128826,
+            36.6807648,
+            0
+          ],
+          [
+            -6.1289576,
+            36.6804397,
+            0
+          ],
+          [
+            -6.1293078,
+            36.679877,
+            0
+          ],
+          [
+            -6.1309473,
+            36.6805379,
+            0
+          ],
+          [
+            -6.1313272,
+            36.6806704,
+            0
+          ],
+          [
+            -6.131721,
+            36.6806484,
+            0
+          ],
+          [
+            -6.132921,
+            36.6809085,
+            0
+          ],
+          [
+            -6.1331187,
+            36.6805373,
+            0
+          ],
+          [
+            -6.1330244,
+            36.6805131,
+            0
+          ],
+          [
+            -6.1325978,
+            36.6803127,
+            0
+          ],
+          [
+            -6.1316629,
+            36.6798447,
+            0
+          ],
+          [
+            -6.1312022,
+            36.6796193,
+            0
+          ],
+          [
+            -6.1308002,
+            36.6793792,
+            0
+          ],
+          [
+            -6.1303718,
+            36.679116,
+            0
+          ],
+          [
+            -6.129864,
+            36.6788032,
+            0
+          ],
+          [
+            -6.1297898,
+            36.6790125,
+            0
+          ],
+          [
+            -6.129294,
+            36.6798539,
+            0
+          ],
+          [
+            -6.128519,
+            36.6795615,
+            0
+          ],
+          [
+            -6.1281074,
+            36.6794207,
+            0
+          ],
+          [
+            -6.1278037,
+            36.6792971,
+            0
+          ],
+          [
+            -6.1275053,
+            36.6791927,
+            0
+          ],
+          [
+            -6.1274564,
+            36.6792003,
+            0
+          ],
+          [
+            -6.1274065,
+            36.6791277,
+            0
+          ],
+          [
+            -6.127356,
+            36.6790989,
+            0
+          ],
+          [
+            -6.1272659,
+            36.6790878,
+            0
+          ],
+          [
+            -6.1271704,
+            36.6791068,
+            0
+          ],
+          [
+            -6.127018,
+            36.6790007,
+            0
+          ],
+          [
+            -6.1268228,
+            36.6789204,
+            0
+          ],
+          [
+            -6.1264617,
+            36.6787748,
+            0
+          ],
+          [
+            -6.1261286,
+            36.6785944,
+            0
+          ],
+          [
+            -6.1258199,
+            36.6784085,
+            0
+          ],
+          [
+            -6.1255891,
+            36.6782166,
+            0
+          ],
+          [
+            -6.1255113,
+            36.6781552,
+            0
+          ],
+          [
+            -6.1253543,
+            36.6779507,
+            0
+          ],
+          [
+            -6.1252443,
+            36.6777742,
+            0
+          ],
+          [
+            -6.1251893,
+            36.6776279,
+            0
+          ],
+          [
+            -6.1249734,
+            36.6771449,
+            0
+          ],
+          [
+            -6.1248158,
+            36.6767093,
+            0
+          ],
+          [
+            -6.1246908,
+            36.6763339,
+            0
+          ],
+          [
+            -6.1248844,
+            36.6762925,
+            0
+          ],
+          [
+            -6.126093,
+            36.6760432,
+            0
+          ],
+          [
+            -6.1268568,
+            36.6759024,
+            0
+          ],
+          [
+            -6.1271717,
+            36.6754578,
+            0
+          ],
+          [
+            -6.1263233,
+            36.6749364,
+            0
+          ],
+          [
+            -6.1256417,
+            36.6745294,
+            0
+          ],
+          [
+            -6.125195,
+            36.6743545,
+            0
+          ],
+          [
+            -6.1246678,
+            36.6742055,
+            0
+          ],
+          [
+            -6.1242479,
+            36.6740284,
+            0
+          ],
+          [
+            -6.1240756,
+            36.6738668,
+            0
+          ],
+          [
+            -6.1239505,
+            36.6735192,
+            0
+          ],
+          [
+            -6.1241588,
+            36.6733798,
+            0
+          ],
+          [
+            -6.1241852,
+            36.6731208,
+            0
+          ],
+          [
+            -6.1239919,
+            36.6730365,
+            0
+          ],
+          [
+            -6.1237209,
+            36.6730589,
+            0
+          ],
+          [
+            -6.123116,
+            36.6730744,
+            0
+          ],
+          [
+            -6.1226097,
+            36.6730477,
+            0
+          ],
+          [
+            -6.1225148,
+            36.6728945,
+            0
+          ],
+          [
+            -6.1222367,
+            36.6727878,
+            0
+          ],
+          [
+            -6.1218831,
+            36.6729109,
+            0
+          ],
+          [
+            -6.1217197,
+            36.6730046,
+            0
+          ],
+          [
+            -6.121469,
+            36.6729763,
+            0
+          ],
+          [
+            -6.121114,
+            36.6729799,
+            0
+          ],
+          [
+            -6.1207589,
+            36.6730137,
+            0
+          ],
+          [
+            -6.1198165,
+            36.6732024,
+            0
+          ],
+          [
+            -6.1189161,
+            36.6733913,
+            0
+          ],
+          [
+            -6.1187046,
+            36.6733159,
+            0
+          ],
+          [
+            -6.1184701,
+            36.6733986,
+            0
+          ],
+          [
+            -6.1184548,
+            36.6735605,
+            0
+          ],
+          [
+            -6.1185839,
+            36.673665,
+            0
+          ],
+          [
+            -6.1186941,
+            36.6736958,
+            0
+          ],
+          [
+            -6.1188504,
+            36.6736831,
+            0
+          ],
+          [
+            -6.1189316,
+            36.6737779,
+            0
+          ],
+          [
+            -6.1198577,
+            36.6745525,
+            0
+          ],
+          [
+            -6.1205541,
+            36.6751044,
+            0
+          ],
+          [
+            -6.1209868,
+            36.675433,
+            0
+          ],
+          [
+            -6.1211106,
+            36.6755705,
+            0
+          ],
+          [
+            -6.1213341,
+            36.6757736,
+            0
+          ],
+          [
+            -6.1214631,
+            36.6759153,
+            0
+          ],
+          [
+            -6.1216067,
+            36.6760475,
+            0
+          ],
+          [
+            -6.12171,
+            36.6761645,
+            0
+          ],
+          [
+            -6.1217545,
+            36.6761782,
+            0
+          ],
+          [
+            -6.1217996,
+            36.6764776,
+            0
+          ],
+          [
+            -6.1216813,
+            36.6769963,
+            0
+          ],
+          [
+            -6.1214116,
+            36.677019,
+            0
+          ],
+          [
+            -6.1212465,
+            36.6770443,
+            0
+          ],
+          [
+            -6.1210044,
+            36.6771312,
+            0
+          ],
+          [
+            -6.1207773,
+            36.6772561,
+            0
+          ],
+          [
+            -6.1205528,
+            36.6773919,
+            0
+          ],
+          [
+            -6.1204502,
+            36.6774676,
+            0
+          ],
+          [
+            -6.1203531,
+            36.6775487,
+            0
+          ],
+          [
+            -6.1201694,
+            36.6777271,
+            0
+          ],
+          [
+            -6.1200514,
+            36.6778873,
+            0
+          ],
+          [
+            -6.1199428,
+            36.6780539,
+            0
+          ],
+          [
+            -6.1197719,
+            36.6783007,
+            0
+          ],
+          [
+            -6.1196314,
+            36.6785241,
+            0
+          ],
+          [
+            -6.1194874,
+            36.6787079,
+            0
+          ],
+          [
+            -6.1191217,
+            36.6789944,
+            0
+          ],
+          [
+            -6.1186358,
+            36.6793948,
+            0
+          ],
+          [
+            -6.1185303,
+            36.6795094,
+            0
+          ],
+          [
+            -6.1180269,
+            36.6798152,
+            0
+          ],
+          [
+            -6.1178394,
+            36.6799029,
+            0
+          ],
+          [
+            -6.11746,
+            36.680035,
+            0
+          ],
+          [
+            -6.1170591,
+            36.6801671,
+            0
+          ],
+          [
+            -6.1165148,
+            36.6803946,
+            0
+          ],
+          [
+            -6.1161528,
+            36.6805514,
+            0
+          ],
+          [
+            -6.1159249,
+            36.6806584,
+            0
+          ],
+          [
+            -6.115823,
+            36.6807632,
+            0
+          ],
+          [
+            -6.1157419,
+            36.6808038,
+            0
+          ],
+          [
+            -6.1156634,
+            36.6808659,
+            0
+          ],
+          [
+            -6.1154482,
+            36.6809408,
+            0
+          ],
+          [
+            -6.1148792,
+            36.6809084,
+            0
+          ],
+          [
+            -6.1146484,
+            36.6808858,
+            0
+          ],
+          [
+            -6.1142741,
+            36.6808712,
+            0
+          ],
+          [
+            -6.1139811,
+            36.6808166,
+            0
+          ],
+          [
+            -6.1133236,
+            36.6807936,
+            0
+          ],
+          [
+            -6.1124778,
+            36.680709,
+            0
+          ],
+          [
+            -6.1121893,
+            36.6806878,
+            0
+          ],
+          [
+            -6.1120316,
+            36.6806934,
+            0
+          ],
+          [
+            -6.1118927,
+            36.6806796,
+            0
+          ],
+          [
+            -6.1114593,
+            36.6806552,
+            0
+          ],
+          [
+            -6.1111954,
+            36.6806335,
+            0
+          ],
+          [
+            -6.1108912,
+            36.6805967,
+            0
+          ],
+          [
+            -6.1103797,
+            36.6805639,
+            0
+          ],
+          [
+            -6.1097985,
+            36.6805439,
+            0
+          ],
+          [
+            -6.1093715,
+            36.6804927,
+            0
+          ],
+          [
+            -6.1081991,
+            36.6804004,
+            0
+          ],
+          [
+            -6.1073072,
+            36.6803231,
+            0
+          ],
+          [
+            -6.1067968,
+            36.6802887,
+            0
+          ],
+          [
+            -6.1066472,
+            36.6805437,
+            0
+          ]
+        ]
+      },
+      "properties": {
+        "name": "Línea 10",
+        "description": "Parque Eroski » Hospital Infantil » Parque Eroski",
+        "styleUrl": "#line-0288D1-6231-nodesc",
+        "styleHash": "-75798a4b",
+        "styleMapHash": {
+          "normal": "#line-0288D1-6231-nodesc-normal",
+          "highlight": "#line-0288D1-6231-nodesc-highlight"
+        },
+        "stroke": "#0288d1",
+        "stroke-opacity": 1,
+        "stroke-width": 6.231
+      }
+    }
+  ]
+}

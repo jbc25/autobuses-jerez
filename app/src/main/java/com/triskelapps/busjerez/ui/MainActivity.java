@@ -1,7 +1,6 @@
 package com.triskelapps.busjerez.ui;
 
 import android.Manifest;
-import android.content.DialogInterface;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AlertDialog;
@@ -13,6 +12,10 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.LatLngBounds;
 import com.google.android.gms.maps.model.MapStyleOptions;
+import com.google.android.gms.maps.model.Marker;
+import com.google.android.gms.maps.model.MarkerOptions;
+import com.google.android.gms.maps.model.Polyline;
+import com.google.android.gms.maps.model.PolylineOptions;
 import com.karumi.dexter.Dexter;
 import com.karumi.dexter.PermissionToken;
 import com.karumi.dexter.listener.PermissionDeniedResponse;
@@ -23,18 +26,13 @@ import com.triskelapps.busjerez.R;
 import com.triskelapps.busjerez.base.BaseActivity;
 import com.triskelapps.busjerez.model.BusLine;
 import com.triskelapps.busjerez.model.BusStop;
-import com.triskelapps.busjerez.util.Util;
-
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import es.dmoral.toasty.Toasty;
 
-public class MainActivity extends BaseActivity implements OnMapReadyCallback {
+public class MainActivity extends BaseActivity implements OnMapReadyCallback, MainView, GoogleMap.OnPolylineClickListener {
 
     private final LatLng JEREZ_NORTH_EAST = new LatLng(36.707457, -6.093387);
     private final LatLng JEREZ_SOUTH_WEST = new LatLng(36.663924, -6.160751);
@@ -42,11 +40,16 @@ public class MainActivity extends BaseActivity implements OnMapReadyCallback {
     private final LatLng JEREZ_CENTER = new LatLng(36.682757, -6.136800);
 
     private GoogleMap map;
+    private MainPresenter presenter;
+    private MapDataController mapDataController;
+
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_maps);
+
+        presenter = MainPresenter.newInstance(this, this);
 
         configureToolbar();
 
@@ -55,105 +58,54 @@ public class MainActivity extends BaseActivity implements OnMapReadyCallback {
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
 
+        presenter.onCreate();
+
     }
 
-    private void testGeoJson() {
-
-        String jsonStr = Util.getStringFromAssets(this, "test.geojson"); // A string containing GeoJSON
-
-        try {
-            JSONObject jsonObject = new JSONObject(jsonStr);
-            JSONArray jsonArray = jsonObject.getJSONArray("features");
-
-            BusLine busLine = new BusLine();
-            List<BusStop> busStops = new ArrayList<>();
-
-            boolean lineStringProcessed = false;
-
-            for (int i = 0; i < jsonArray.length(); i++) {
-                JSONObject jsonFeature = jsonArray.getJSONObject(i);
-                JSONObject jsonGeometry = jsonFeature.getJSONObject("geometry");
-                String type = jsonGeometry.getString("type");
-                switch (type) {
-                    case "Point":
-
-                        BusStop busStop = new BusStop();
-
-                        String nameLine1 = jsonFeature.getJSONObject("properties").getString("name");
-                        busStop.setName(nameLine1);
-
-                        JSONArray coords = jsonGeometry.getJSONArray("coordinates");
-
-                        List<Double> coordinates = new ArrayList<>();
-                        coordinates.add(coords.getDouble(1));
-                        coordinates.add(coords.getDouble(0));
-
-                        busStop.setCoordinates(coordinates);
-                        busStops.add(busStop);
-
-                        busLine.setBusStops(busStops);
-                        break;
-
-                    case "LineString":
-
-                        if (lineStringProcessed) {
-                            throw new IllegalStateException("More than one LineString");
-                        }
-
-                        String nameLine = jsonFeature.getJSONObject("properties").getString("name");
-                        busLine.setName(nameLine);
-
-                        JSONArray coordinatesList = jsonGeometry.getJSONArray("coordinates");
-                        List<List<Double>> path = new ArrayList<>();
-
-                        for (int j = 0; j < coordinatesList.length(); j++) {
-                            JSONArray latLngCoords = coordinatesList.getJSONArray(j);
-                            path.add(new ArrayList<Double>() {{
-                                add(latLngCoords.getDouble(1));
-                                add(latLngCoords.getDouble(0));
-                            }});
-
-                        }
-
-                        busLine.setPath(path);
-
-                        lineStringProcessed = true;
-
-                        break;
-                }
-            }
-
-            busLine.toString();
-
-        } catch (JSONException e) {
-            e.printStackTrace();
-        }
-    }
 
     @Override
     public void onMapReady(GoogleMap googleMap) {
         map = googleMap;
 
+        mapDataController = new MapDataController();
+
         map.setBuildingsEnabled(false);
         map.setIndoorEnabled(false);
+
+        map.setOnPolylineClickListener(this);
 
         map.setMapStyle(MapStyleOptions.loadRawResourceStyle(this, R.raw.map_style));
 
         map.moveCamera(CameraUpdateFactory.newLatLngZoom(JEREZ_CENTER, 14));
 
         map.setOnMapLoadedCallback(() -> {
+
             LatLngBounds latLngBoundsJerez = LatLngBounds.builder().include(JEREZ_NORTH_EAST).include(JEREZ_SOUTH_WEST).build();
-            int padding = getResources().getDimensionPixelSize(R.dimen.padding_map);
-            map.animateCamera(CameraUpdateFactory.newLatLngBounds(latLngBoundsJerez, padding));
+            animateMapToBounds(latLngBoundsJerez);
 
-
-            testGeoJson();
+            presenter.onMapLoaded();
         });
 
         checkLocationPermission();
 
+
     }
 
+    private void animateMapToBounds(LatLngBounds bounds) {
+        int padding = getResources().getDimensionPixelSize(R.dimen.padding_map);
+        map.animateCamera(CameraUpdateFactory.newLatLngBounds(bounds, padding));
+    }
+
+    @Override
+    public void onBackPressed() {
+        if (mapDataController.hasBusLineSelected()) {
+            mapDataController.unselectBusLine();
+            LatLngBounds latLngBoundsJerez = LatLngBounds.builder().include(JEREZ_NORTH_EAST).include(JEREZ_SOUTH_WEST).build();
+            animateMapToBounds(latLngBoundsJerez);
+        } else {
+            super.onBackPressed();
+        }
+    }
 
     private void checkLocationPermission() {
 
@@ -176,18 +128,8 @@ public class MainActivity extends BaseActivity implements OnMapReadyCallback {
                         new AlertDialog.Builder(MainActivity.this)
                                 .setTitle(R.string.permission_needed)
                                 .setMessage(R.string.location_permission_message)
-                                .setPositiveButton(R.string.accept, new DialogInterface.OnClickListener() {
-                                    @Override
-                                    public void onClick(DialogInterface dialog, int which) {
-                                        token.continuePermissionRequest();
-                                    }
-                                })
-                                .setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener() {
-                                    @Override
-                                    public void onClick(DialogInterface dialog, int which) {
-                                        token.cancelPermissionRequest();
-                                    }
-                                })
+                                .setPositiveButton(R.string.accept, (dialog, which) -> token.continuePermissionRequest())
+                                .setNegativeButton(R.string.cancel, (dialog, which) -> token.cancelPermissionRequest())
                                 .show();
                     }
                 }).check();
@@ -195,5 +137,63 @@ public class MainActivity extends BaseActivity implements OnMapReadyCallback {
 
     private void configureSelfLocationMap() {
         map.setMyLocationEnabled(true);
+    }
+
+
+    @Override
+    public void loadBusLines(List<BusLine> busLines) {
+
+        map.clear();
+
+        for (BusLine busLine : busLines) {
+
+            Polyline polylinePath = map.addPolyline(new PolylineOptions()
+                    .clickable(true)
+                    .visible(busLine.isVisible())
+                    .color(busLine.getColor())
+                    .addAll(getPathLatLng(busLine)));
+
+            polylinePath.setTag(busLine.getId());
+
+            List<Marker> markersBusStopsLine = new ArrayList<>();
+
+            for (BusStop busStop : busLine.getBusStops()) {
+
+                LatLng position = new LatLng(busStop.getCoordinates().get(0), busStop.getCoordinates().get(1));
+                Marker marker = map.addMarker(new MarkerOptions()
+                        .position(position)
+                        .visible(false)
+                        .title(busStop.getName()));
+
+                marker.setTag(busStop);
+
+                markersBusStopsLine.add(marker);
+
+            }
+
+            mapDataController.addLineData(busLine.getId(), polylinePath, markersBusStopsLine);
+
+        }
+
+    }
+
+    private List<LatLng> getPathLatLng(BusLine busLine) {
+        List<LatLng> pathLatLng = new ArrayList<>();
+
+        for (List<Double> coords : busLine.getPath()) {
+            pathLatLng.add(new LatLng(coords.get(0), coords.get(1)));
+        }
+
+        return pathLatLng;
+    }
+
+    @Override
+    public void onPolylineClick(Polyline polyline) {
+
+        int lineId = (int) polyline.getTag();
+        mapDataController.selectBusLine(lineId);
+        LatLngBounds lineBounds = mapDataController.getLineBounds(lineId);
+        animateMapToBounds(lineBounds);
+
     }
 }

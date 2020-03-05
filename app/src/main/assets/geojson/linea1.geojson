@@ -1488,6 +1488,7 @@
       },
       "properties": {
         "name": "Línea 1",
+        "description": "Plaza Esteve » San Telmo » Convento Angustias",
         "styleUrl": "#line-0288D1-6231-nodesc",
         "styleHash": "-75798a4b",
         "styleMapHash": {
