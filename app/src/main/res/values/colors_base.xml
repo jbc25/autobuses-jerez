@@ -14,5 +14,6 @@
     <color name="violet_semitransp">#449917fb</color>
 
     <color name="white">#FFF</color>
+    <color name="white_semitransp">#D3FFFFFF</color>
 
 </resources>

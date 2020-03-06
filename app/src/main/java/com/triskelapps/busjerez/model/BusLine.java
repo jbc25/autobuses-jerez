@@ -15,7 +15,7 @@ public class BusLine {
     private transient boolean visible = true;
 
     public String getName() {
-        return name;
+        return name.trim();
     }
 
     public void setName(String name) {

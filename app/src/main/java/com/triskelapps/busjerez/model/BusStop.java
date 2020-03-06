@@ -5,7 +5,9 @@ import java.util.List;
 public class BusStop {
 
     private String name;
-    //...
+    private int code;
+    private String transfer;
+    private String direction;
     private List<Double> coordinates;
 
     public String getName() {
@@ -22,5 +24,29 @@ public class BusStop {
 
     public void setCoordinates(List<Double> coordinates) {
         this.coordinates = coordinates;
+    }
+
+    public int getCode() {
+        return code;
+    }
+
+    public void setCode(int code) {
+        this.code = code;
+    }
+
+    public String getTransfer() {
+        return transfer;
+    }
+
+    public void setTransfer(String transfer) {
+        this.transfer = transfer;
+    }
+
+    public String getDirection() {
+        return direction;
+    }
+
+    public void setDirection(String direction) {
+        this.direction = direction;
     }
 }

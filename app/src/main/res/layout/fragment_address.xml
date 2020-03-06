@@ -1,0 +1,15 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context="com.triskelapps.busjerez.ui.main.address.AddressFragment">
+
+    <fragment
+        android:id="@+id/fragment_places_autocomplete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:name="com.triskelapps.busjerez.ui.main.address.CustomPlaceAutocompleteFragment"/>
+
+
+</LinearLayout>

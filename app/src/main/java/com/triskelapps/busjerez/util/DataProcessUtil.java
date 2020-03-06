@@ -35,9 +35,9 @@ public class DataProcessUtil {
 
         List<BusLine> busLines = new ArrayList<>();
 
-        try {
-            for (int lineNumber = 1; lineNumber <= LINES_COUNT; lineNumber++) {
+        for (int lineNumber = 1; lineNumber <= LINES_COUNT; lineNumber++) {
 
+            try {
                 String jsonStr = Util.getStringFromAssets(context, String.format("geojson/linea%d.geojson", lineNumber)); // A string containing GeoJSON
 
                 JSONObject jsonObject = new JSONObject(jsonStr);
@@ -55,8 +55,20 @@ public class DataProcessUtil {
 
                             BusStop busStop = new BusStop();
 
-                            String nameLine1 = jsonFeature.getJSONObject("properties").getString("name");
+                            JSONObject jsonPropertiesBusStop = jsonFeature.getJSONObject("properties");
+                            String nameLine1 = jsonPropertiesBusStop.getString("name");
                             busStop.setName(nameLine1);
+
+                            if (jsonPropertiesBusStop.has("COD")) {
+                                busStop.setCode((int) jsonPropertiesBusStop.getDouble("COD"));
+                            } else if (jsonPropertiesBusStop.has("COD. PARADA")) {
+                                busStop.setCode((int) jsonPropertiesBusStop.getDouble("COD. PARADA"));
+                            } else {
+                                busStop.setCode((int) jsonPropertiesBusStop.getDouble("COD.PARADA"));
+                            }
+
+                            busStop.setTransfer(jsonPropertiesBusStop.getString("TRANSBORDO"));
+                            busStop.setDirection(jsonPropertiesBusStop.getString("SENTIDO"));
 
                             JSONArray coords = jsonGeometry.getJSONArray("coordinates");
 
@@ -98,11 +110,12 @@ public class DataProcessUtil {
                 }
 
                 busLines.add(busLine);
-
+            } catch (JSONException e) {
+                Log.e(TAG, "processData: error in bus line: " + lineNumber);
+                throw new RuntimeException(e);
             }
-        } catch (JSONException e) {
-            throw new RuntimeException(e);
         }
+
 
         String busLinesData = new Gson().toJson(busLines);
         Log.i(TAG, "processData: BusLines data: " + busLinesData);

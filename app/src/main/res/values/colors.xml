@@ -2,5 +2,10 @@
 <resources>
     <color name="colorPrimary">#155ab9</color>
     <color name="colorPrimaryDark">#103E7E</color>
-    <color name="colorAccent">#fea000</color>
+    <color name="colorAccent">#fff</color>
+
+    <color name="orange_logo">#fea000</color>
+
+    <color name="bg_filter_bus_lines">#CDCACACA</color>
+
 </resources>

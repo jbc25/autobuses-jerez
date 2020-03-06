@@ -19,7 +19,7 @@
         "description": "TRANSBORDO: 1-2-4-6-10-11-14<br>LINEA: 3<br>COD. PARADA: 343<br>SENTIDO: Esteve<br>LATITUD: 36.681745<br>LONGITUD: -6.136679",
         "TRANSBORDO": "1-2-4-6-10-11-14",
         "LINEA": "3.0",
-        "COD. PARADA": "343.0",
+        "COD": "343.0",
         "SENTIDO": "Esteve",
         "LATITUD": "36.681745",
         "LONGITUD": "-6.136679"
@@ -43,7 +43,7 @@
         "description": "TRANSBORDO: 2-4-10-16-17-18<br>LINEA: 3<br>COD. PARADA: 419<br>SENTIDO: Hacia Norte y Oeste<br>LATITUD: 36.687463<br>LONGITUD: -6.137124",
         "TRANSBORDO": "2-4-10-16-17-18",
         "LINEA": "3.0",
-        "COD. PARADA": "419.0",
+        "COD": "419.0",
         "SENTIDO": "Hacia Norte y Oeste",
         "LATITUD": "36.687463",
         "LONGITUD": "-6.137124"
@@ -67,7 +67,7 @@
         "description": "TRANSBORDO: 2-10-16-17-18<br>LINEA: 3<br>COD. PARADA: 284<br>SENTIDO: Única<br>LATITUD: 36.688852<br>LONGITUD: -6.137629",
         "TRANSBORDO": "2-10-16-17-18",
         "LINEA": "3.0",
-        "COD. PARADA": "284.0",
+        "COD": "284.0",
         "SENTIDO": "Única",
         "LATITUD": "36.688852",
         "LONGITUD": "-6.137629"
@@ -91,7 +91,7 @@
         "description": "TRANSBORDO: NO<br>LINEA: 3<br>COD. PARADA: 264<br>SENTIDO: A principio de C/ Lealas<br>LATITUD: 36.688649<br>LONGITUD: -6.141347",
         "TRANSBORDO": "NO",
         "LINEA": "3.0",
-        "COD. PARADA": "264.0",
+        "COD": "264.0",
         "SENTIDO": "A principio de C/ Lealas",
         "LATITUD": "36.688649",
         "LONGITUD": "-6.141347"
@@ -115,7 +115,7 @@
         "description": "TRANSBORDO: NO<br>LINEA: 3<br>COD. PARADA: 386<br>SENTIDO: A mediados de C/ Lealas<br>LATITUD: 36.689997<br>LONGITUD: -6.142393",
         "TRANSBORDO": "NO",
         "LINEA": "3.0",
-        "COD. PARADA": "386.0",
+        "COD": "386.0",
         "SENTIDO": "A mediados de C/ Lealas",
         "LATITUD": "36.689997",
         "LONGITUD": "-6.142393"
@@ -139,7 +139,7 @@
         "description": "TRANSBORDO: NO<br>LINEA: 3<br>COD. PARADA: 265<br>SENTIDO: Al final de C/ Lealas<br>LATITUD: 36.69176<br>LONGITUD: -6.143242",
         "TRANSBORDO": "NO",
         "LINEA": "3.0",
-        "COD. PARADA": "265.0",
+        "COD": "265.0",
         "SENTIDO": "Al final de C/ Lealas",
         "LATITUD": "36.69176",
         "LONGITUD": "-6.143242"
@@ -163,7 +163,7 @@
         "description": "TRANSBORDO: 9<br>LINEA: 3<br>COD. PARADA: 247<br>SENTIDO: Única<br>LATITUD: 36.693938<br>LONGITUD: -6.1426",
         "TRANSBORDO": "9",
         "LINEA": "3.0",
-        "COD. PARADA": "247.0",
+        "COD": "247.0",
         "SENTIDO": "Única",
         "LATITUD": "36.693938",
         "LONGITUD": "-6.1426"
@@ -187,7 +187,7 @@
         "description": "TRANSBORDO: 9<br>LINEA: 3<br>COD. PARADA: 332<br>SENTIDO: Única<br>LATITUD: 36.695443<br>LONGITUD: -6.142349",
         "TRANSBORDO": "9",
         "LINEA": "3.0",
-        "COD. PARADA": "332.0",
+        "COD": "332.0",
         "SENTIDO": "Única",
         "LATITUD": "36.695443",
         "LONGITUD": "-6.142349"
@@ -211,7 +211,7 @@
         "description": "TRANSBORDO: 9<br>LINEA: 3<br>COD. PARADA: 248<br>SENTIDO: Única<br>LATITUD: 36.694755<br>LONGITUD: -6.143862",
         "TRANSBORDO": "9",
         "LINEA": "3.0",
-        "COD. PARADA": "248.0",
+        "COD": "248.0",
         "SENTIDO": "Única",
         "LATITUD": "36.694755",
         "LONGITUD": "-6.143862"
@@ -235,7 +235,7 @@
         "description": "TRANSBORDO: NO<br>LINEA: 3<br>COD. PARADA: 417<br>SENTIDO: Única<br>LATITUD: 36.694657<br>LONGITUD: -6.145401",
         "TRANSBORDO": "NO",
         "LINEA": "3.0",
-        "COD. PARADA": "417.0",
+        "COD": "417.0",
         "SENTIDO": "Única",
         "LATITUD": "36.694657",
         "LONGITUD": "-6.145401"
@@ -259,7 +259,7 @@
         "description": "TRANSBORDO: NO<br>LINEA: 3<br>COD. PARADA: 261<br>SENTIDO: Única<br>LATITUD: 36.695714<br>LONGITUD: -6.147081",
         "TRANSBORDO": "NO",
         "LINEA": "3.0",
-        "COD. PARADA": "261.0",
+        "COD": "261.0",
         "SENTIDO": "Única",
         "LATITUD": "36.695714",
         "LONGITUD": "-6.147081"
@@ -283,7 +283,7 @@
         "description": "TRANSBORDO: NO<br>LINEA: 3<br>COD. PARADA: 20<br>SENTIDO: De Farruca a Mosto<br>LATITUD: 36.69463<br>LONGITUD: -6.148024",
         "TRANSBORDO": "NO",
         "LINEA": "3.0",
-        "COD. PARADA": "20.0",
+        "COD": "20.0",
         "SENTIDO": "De Farruca a Mosto",
         "LATITUD": "36.69463",
         "LONGITUD": "-6.148024"
@@ -307,7 +307,7 @@
         "description": "TRANSBORDO: NO<br>LINEA: 3<br>COD. PARADA: 219<br>SENTIDO: De Mosto a S.Juan Bosco<br>LATITUD: 36.693479<br>LONGITUD: -6.146162",
         "TRANSBORDO": "NO",
         "LINEA": "3.0",
-        "COD. PARADA": "219.0",
+        "COD": "219.0",
         "SENTIDO": "De Mosto a S.Juan Bosco",
         "LATITUD": "36.693479",
         "LONGITUD": "-6.146162"
@@ -331,7 +331,7 @@
         "description": "TRANSBORDO: 18<br>LINEA: 3<br>COD. PARADA: 404<br>SENTIDO: <br>LATITUD: 36.691727<br>LONGITUD: -6.143601",
         "TRANSBORDO": "18",
         "LINEA": "3.0",
-        "COD. PARADA": "404.0",
+        "COD": "404.0",
         "SENTIDO": "",
         "LATITUD": "36.691727",
         "LONGITUD": "-6.143601"
@@ -355,7 +355,7 @@
         "description": "TRANSBORDO: 18<br>LINEA: 3<br>COD. PARADA: 42<br>SENTIDO: <br>LATITUD: 36.689437<br>LONGITUD: -6.144113",
         "TRANSBORDO": "18",
         "LINEA": "3.0",
-        "COD. PARADA": "42.0",
+        "COD": "42.0",
         "SENTIDO": "",
         "LATITUD": "36.689437",
         "LONGITUD": "-6.144113"
@@ -379,7 +379,7 @@
         "description": "TRANSBORDO: 18<br>LINEA: 3<br>COD. PARADA: 408<br>SENTIDO: Única<br>LATITUD: 36.688717<br>LONGITUD: -6.143893",
         "TRANSBORDO": "18",
         "LINEA": "3.0",
-        "COD. PARADA": "408.0",
+        "COD": "408.0",
         "SENTIDO": "Única",
         "LATITUD": "36.688717",
         "LONGITUD": "-6.143893"
@@ -403,7 +403,7 @@
         "description": "TRANSBORDO: 2-18<br>LINEA: 3<br>COD. PARADA: 24<br>SENTIDO: Hacia Porvera<br>LATITUD: 36.688127<br>LONGITUD: -6.14216",
         "TRANSBORDO": "2-18",
         "LINEA": "3.0",
-        "COD. PARADA": "24.0",
+        "COD": "24.0",
         "SENTIDO": "Hacia Porvera",
         "LATITUD": "36.688127",
         "LONGITUD": "-6.14216"
@@ -427,7 +427,7 @@
         "description": "TRANSBORDO: 2-18<br>LINEA: 3<br>COD. PARADA: 346<br>SENTIDO: Unica<br>LATITUD: 36.687392<br>LONGITUD: -6.139677",
         "TRANSBORDO": "2-18",
         "LINEA": "3.0",
-        "COD. PARADA": "346.0",
+        "COD": "346.0",
         "SENTIDO": "Unica",
         "LATITUD": "36.687392",
         "LONGITUD": "-6.139677"
@@ -451,7 +451,7 @@
         "description": "TRANSBORDO: 2-18<br>LINEA: 3<br>COD. PARADA: 345<br>SENTIDO: Unica<br>LATITUD: 36.686158<br>LONGITUD: -6.137657",
         "TRANSBORDO": "2-18",
         "LINEA": "3.0",
-        "COD. PARADA": "345.0",
+        "COD": "345.0",
         "SENTIDO": "Unica",
         "LATITUD": "36.686158",
         "LONGITUD": "-6.137657"
@@ -475,7 +475,7 @@
         "description": "TRANSBORDO: 2-10-16-17-18<br>LINEA: 3<br>COD. PARADA: 385<br>SENTIDO: Única<br>LATITUD: 36.685095<br>LONGITUD: -6.136451",
         "TRANSBORDO": "2-10-16-17-18",
         "LINEA": "3.0",
-        "COD. PARADA": "385.0",
+        "COD": "385.0",
         "SENTIDO": "Única",
         "LATITUD": "36.685095",
         "LONGITUD": "-6.136451"
@@ -499,7 +499,7 @@
         "description": "TRANSBORDO: 2-10-18<br>LINEA: 3<br>COD. PARADA: 420<br>SENTIDO: Hacia Esteve<br>LATITUD: 36.687463<br>LONGITUD: -6.137124",
         "TRANSBORDO": "2-10-18",
         "LINEA": "3.0",
-        "COD. PARADA": "420.0",
+        "COD": "420.0",
         "SENTIDO": "Hacia Esteve",
         "LATITUD": "36.687463",
         "LONGITUD": "-6.137124"
@@ -523,7 +523,7 @@
         "description": "TRANSBORDO: 2-4-10-16-17-18<br>LINEA: 3<br>COD. PARADA: 414<br>SENTIDO: De Alameda Cristina a Paul<br>LATITUD: 36.690344<br>LONGITUD: -6.135741",
         "TRANSBORDO": "2-4-10-16-17-18",
         "LINEA": "3.0",
-        "COD. PARADA": "414.0",
+        "COD": "414.0",
         "SENTIDO": "De Alameda Cristina a Paul",
         "LATITUD": "36.690344",
         "LONGITUD": "-6.135741"
@@ -547,7 +547,7 @@
         "description": "TRANSBORDO: 2-10-18<br>LINEA: 3<br>COD. PARADA: 329<br>SENTIDO: Única<br>LATITUD: 36.688521<br>LONGITUD: -6.132913",
         "TRANSBORDO": "2-10-18",
         "LINEA": "3.0",
-        "COD. PARADA": "329.0",
+        "COD": "329.0",
         "SENTIDO": "Única",
         "LATITUD": "36.688521",
         "LONGITUD": "-6.132913"
@@ -571,7 +571,7 @@
         "description": "TRANSBORDO: 2-10-18<br>LINEA: 3<br>COD. PARADA: 174<br>SENTIDO: De Zaragoza a Nuestra señora de la paz<br>LATITUD: 36.688395<br>LONGITUD: -6.129405",
         "TRANSBORDO": "2-10-18",
         "LINEA": "3.0",
-        "COD. PARADA": "174.0",
+        "COD": "174.0",
         "SENTIDO": "De Zaragoza a Nuestra señora de la paz",
         "LATITUD": "36.688395",
         "LONGITUD": "-6.129405"
@@ -595,7 +595,7 @@
         "description": "TRANSBORDO: 2-4-5-10-15-18<br>LINEA: 3<br>COD. PARADA: 168<br>SENTIDO: Hacia Madre de Dios<br>LATITUD: 36.68792<br>LONGITUD: -6.127942",
         "TRANSBORDO": "2-4-5-10-15-18",
         "LINEA": "3.0",
-        "COD. PARADA": "168.0",
+        "COD": "168.0",
         "SENTIDO": "Hacia Madre de Dios",
         "LATITUD": "36.68792",
         "LONGITUD": "-6.127942"
@@ -619,7 +619,7 @@
         "description": "TRANSBORDO: 2-4-5-10-15-18<br>LINEA: 3<br>COD. PARADA: 171<br>SENTIDO: Dirección Madre de Dios<br>LATITUD: 36.681258<br>LONGITUD: -6.128288",
         "TRANSBORDO": "2-4-5-10-15-18",
         "LINEA": "3.0",
-        "COD. PARADA": "171.0",
+        "COD": "171.0",
         "SENTIDO": "Dirección Madre de Dios",
         "LATITUD": "36.681258",
         "LONGITUD": "-6.128288"
@@ -643,7 +643,7 @@
         "description": "TRANSBORDO: 1-2-4-5-8-9-10-11-12-15-18<br>LINEA: 3<br>COD. PARADA: 139<br>SENTIDO: Sentido Angustias<br>LATITUD: 36.680544<br>LONGITUD: -6.131088",
         "TRANSBORDO": "1-2-4-5-8-9-10-11-12-15-18",
         "LINEA": "3.0",
-        "COD. PARADA": "139.0",
+        "COD": "139.0",
         "SENTIDO": "Sentido Angustias",
         "LATITUD": "36.680544",
         "LONGITUD": "-6.131088"
@@ -668,7 +668,7 @@
         "description": "TRANSBORDO: 1-2-4-5-6-10-12-18<br>LINEA: 3<br>COD. PARADA: 130<br>SENTIDO: Única<br>LATITUD: 36.680865<br>LONGITUD: -6.134338",
         "TRANSBORDO": "1-2-4-5-6-10-12-18",
         "LINEA": "3.0",
-        "COD. PARADA": "130.0",
+        "COD": "130.0",
         "SENTIDO": "Única",
         "LATITUD": "36.680865",
         "LONGITUD": "-6.134338"
