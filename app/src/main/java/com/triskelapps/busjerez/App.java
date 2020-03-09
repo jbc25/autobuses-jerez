@@ -6,12 +6,14 @@ import android.content.SharedPreferences;
 
 import androidx.core.content.ContextCompat;
 import androidx.preference.PreferenceManager;
+import androidx.room.Room;
 
 import com.google.android.libraries.places.api.Places;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import com.triskelapps.busjerez.database.MyDatabase;
 import com.triskelapps.busjerez.model.BusLine;
+import com.triskelapps.busjerez.model.db.BusLineVisible;
 import com.triskelapps.busjerez.util.Util;
 
 import java.lang.reflect.Type;
@@ -23,10 +25,14 @@ public class App extends Application {
 
     private static final String TAG = "App";
 
+    public static final int BUS_LINES_COUNT = 18;
+
     public static final String URL_GOOGLE_PLAY_APP = "https://play.google.com/store/apps/details?id=" + BuildConfig.APPLICATION_ID;
     public static final String URL_DIRECT_GOOGLE_PLAY_APP = "market://details?id=" + BuildConfig.APPLICATION_ID;
 
     public static final String PREFIX = BuildConfig.APPLICATION_ID + ".";
+
+    public static final String PREF_FIRST_TIME_DATA_POPULATED = PREFIX + "pref_first_time_data_populated";
 
     private static final String FILE_BUS_LINES_DATA = "bus_lines_data.json";
 
@@ -43,16 +49,32 @@ public class App extends Application {
         String apiKey = getString(R.string.google_maps_key);
         Places.initialize(getApplicationContext(), apiKey);
 
-//        db = Room.databaseBuilder(getApplicationContext(),
-//                MyDatabase.class, DB_NAME)
-////                .addMigrations(MyDatabase.MIGRATION_1_2)
-////                .fallbackToDestructiveMigration()
-//                .allowMainThreadQueries()
-//                .build();
+        db = Room.databaseBuilder(getApplicationContext(),
+                MyDatabase.class, DB_NAME)
+//                .addMigrations(MyDatabase.MIGRATION_1_2)
+//                .fallbackToDestructiveMigration()
+                .allowMainThreadQueries()
+                .build();
+
+        populateDataFirstTime();
 
 //        NotificationHelper.with(this).initializeOreoChannelsNotification();
 
     }
+
+    private void populateDataFirstTime() {
+        if (!getPrefs(this).getBoolean(PREF_FIRST_TIME_DATA_POPULATED, false)) {
+            populateBusLineVisibleTable();
+            getPrefs(this).edit().putBoolean(PREF_FIRST_TIME_DATA_POPULATED, true).commit();
+        }
+    }
+
+    private void populateBusLineVisibleTable() {
+        for (int lineId = 1; lineId <= BUS_LINES_COUNT; lineId++) {
+            db.busLineVisibleDao().insert(new BusLineVisible(lineId, true));
+        }
+    }
+
     public static MyDatabase getDB() {
         return db;
     }
@@ -71,6 +93,9 @@ public class App extends Application {
         for (BusLine busLine : busLines) {
             int colorId = context.getResources().getIdentifier("line" + busLine.getId(), "color", context.getPackageName());
             busLine.setColor(ContextCompat.getColor(context, colorId));
+
+            BusLineVisible busLineVisible = db.busLineVisibleDao().getBusLineVisible(busLine.getId());
+            busLine.setVisible(busLineVisible.isVisible());
         }
 
         return busLines;

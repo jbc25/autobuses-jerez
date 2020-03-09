@@ -1,13 +1,15 @@
 package com.triskelapps.busjerez.database;
 
+import androidx.room.Database;
 import androidx.room.RoomDatabase;
 
-import com.triskelapps.busjerez.database.dao.CategoryDao;
+import com.triskelapps.busjerez.database.dao.BusLineVisibleDao;
+import com.triskelapps.busjerez.model.db.BusLineVisible;
 
-//@Database(entities = {}, version = 1, exportSchema = false)
+@Database(entities = {BusLineVisible.class}, version = 1, exportSchema = false)
 public abstract class MyDatabase extends RoomDatabase {
 
-    public abstract CategoryDao categoryDao();
+    public abstract BusLineVisibleDao busLineVisibleDao();
 
 
 //    public static final Migration MIGRATION_1_2 = new Migration(1, 2) {

@@ -1,8 +1,9 @@
 package com.triskelapps.busjerez.model;
 
+import java.io.Serializable;
 import java.util.List;
 
-public class BusStop {
+public class BusStop implements Serializable {
 
     private String name;
     private int code;

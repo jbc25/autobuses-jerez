@@ -8,6 +8,7 @@ import com.google.android.libraries.places.api.model.Place;
 import com.triskelapps.busjerez.App;
 import com.triskelapps.busjerez.base.BasePresenter;
 import com.triskelapps.busjerez.model.BusLine;
+import com.triskelapps.busjerez.model.db.BusLineVisible;
 
 import java.util.List;
 
@@ -87,6 +88,9 @@ public class MainPresenter extends BasePresenter {
     }
 
     public void onBusLineCheckedChanged(int position, boolean checked) {
-        view.setBusLineVisible(busLines.get(position).getId(), checked);
+        int lineId = busLines.get(position).getId();
+        view.setBusLineVisible(lineId, checked);
+
+        App.getDB().busLineVisibleDao().update(new BusLineVisible(lineId, checked));
     }
 }

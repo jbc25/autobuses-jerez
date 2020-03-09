@@ -11,6 +11,7 @@ import java.util.Map;
 
 public class MapDataController {
 
+    private static final String TAG = "MapDataController";
     private int lineSelected = 0;
 
     private Map<Integer, Polyline> polylinePathMap = new HashMap<>();
@@ -19,12 +20,21 @@ public class MapDataController {
     public void selectBusLine(int lineId) {
 
         if (lineSelected > 0) {
-            setMarkersOfLineSelectedVisible(false);
+            unselectBusLine();
         }
 
         lineSelected = lineId;
 
+        polylinePathMap.get(lineId).setZIndex(1);
+
         setMarkersOfLineSelectedVisible(true);
+    }
+
+
+    public void unselectBusLine() {
+        setMarkersOfLineSelectedVisible(false);
+        polylinePathMap.get(lineSelected).setZIndex(0);
+        lineSelected = 0;
     }
 
     private void setMarkersOfLineSelectedVisible(boolean visible) {
@@ -33,6 +43,7 @@ public class MapDataController {
 
     public void setBusLineVisible(int lineId, boolean visible) {
         polylinePathMap.get(lineId).setVisible(visible);
+        polylinePathMap.get(lineId).setClickable(visible);
 
         if (!visible) {
             setMarkersVisible(lineId, false);
@@ -63,8 +74,8 @@ public class MapDataController {
         return lineSelected > 0;
     }
 
-    public void unselectBusLine() {
-        setMarkersOfLineSelectedVisible(false);
-        lineSelected = 0;
+    public Marker getMarker(int position) {
+        List<Marker> markers = markersBusStopsMap.get(lineSelected);
+        return markers.get(position);
     }
 }

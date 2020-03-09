@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.triskelapps.busjerez.ui.main.bus_stops.BusStopsFragment">
+
+    <TextView
+        android:id="@+id/tv_line_info"
+        style="@style/TextBase"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:visibility="visible"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_bus_stops"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"/>
+
+    <LinearLayout
+        android:id="@+id/view_timetable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:visibility="gone"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            style="@style/TextBase"
+            android:layout_marginLeft="10dp"
+            android:text="13:30, 14:15, 15:00..."
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <View style="@style/XpansorHoriz" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/more_timetable" />
+
+    </LinearLayout>
+
+</LinearLayout>

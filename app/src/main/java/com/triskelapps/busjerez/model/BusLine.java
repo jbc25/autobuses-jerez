@@ -1,9 +1,10 @@
 package com.triskelapps.busjerez.model;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class BusLine {
+public class BusLine implements Serializable {
 
     private int id;
     private String name;

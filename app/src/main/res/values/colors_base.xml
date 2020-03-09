@@ -15,5 +15,6 @@
 
     <color name="white">#FFF</color>
     <color name="white_semitransp">#D3FFFFFF</color>
+    <color name="grey_light">#E2E2E2</color>
 
 </resources>

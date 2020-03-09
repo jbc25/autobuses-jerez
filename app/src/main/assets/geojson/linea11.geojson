@@ -2604,24 +2604,16 @@
       },
       "properties": {
         "name": "Línea 11",
-        "description": "Convento Angustias » La Marquesa » Convento Angustias",
+        "description": "Esteve » La Marquesa",
         "styleUrl": "#line-0288D1-6000",
         "styleHash": "73caef8",
         "styleMapHash": {
           "normal": "#line-0288D1-6000-normal",
           "highlight": "#line-0288D1-6000-highlight"
         },
-        "description": "descripción: TRANSBORDO: <br>LINEA: <br>COD.PARADA: <br>SENTIDO: <br>LATITUD: <br>LONGITUD:<br>TRANSBORDO: <br>LINEA: <br>COD.PARADA: <br>SENTIDO: <br>LATITUD: <br>LONGITUD: ",
         "stroke": "#0288d1",
         "stroke-opacity": 1,
-        "stroke-width": 6,
-        "descripción": "TRANSBORDO: \nLINEA: \nCOD.PARADA: \nSENTIDO: \nLATITUD: \nLONGITUD:",
-        "TRANSBORDO": "",
-        "LINEA": "",
-        "COD.PARADA": "",
-        "SENTIDO": "",
-        "LATITUD": "",
-        "LONGITUD": ""
+        "stroke-width": 6
       }
     }
   ]

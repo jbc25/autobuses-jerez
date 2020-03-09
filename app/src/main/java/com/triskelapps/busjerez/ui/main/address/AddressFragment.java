@@ -11,7 +11,9 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import com.google.android.gms.common.api.Status;
+import com.google.android.gms.maps.model.LatLng;
 import com.google.android.libraries.places.api.model.Place;
+import com.google.android.libraries.places.api.model.RectangularBounds;
 import com.google.android.libraries.places.widget.listener.PlaceSelectionListener;
 import com.triskelapps.busjerez.R;
 import com.triskelapps.busjerez.base.BaseMainFragment;
@@ -24,6 +26,9 @@ import java.util.Arrays;
  * A simple {@link Fragment} subclass.
  */
 public class AddressFragment extends BaseMainFragment {
+
+    public final LatLng AUTOCOMPLETE_RESULTS_JEREZ_NORTH_EAST = new LatLng(36.765444, -6.017372);
+    public final LatLng AUTOCOMPLETE_RESULTS_JEREZ_SOUTH_WEST = new LatLng(36.626432, -6.161407);
 
     private FragmentAddressBinding binding;
     private CustomPlaceAutocompleteFragment autocompleteFragment;
@@ -54,6 +59,11 @@ public class AddressFragment extends BaseMainFragment {
         autocompleteFragment = (CustomPlaceAutocompleteFragment) getChildFragmentManager().findFragmentById(R.id.fragment_places_autocomplete);
 
         autocompleteFragment.setCountry("ES");
+
+        // https://developers.google.com/places/android-sdk/autocomplete#constrain-AC-results
+        autocompleteFragment.setLocationRestriction(RectangularBounds.newInstance(
+                AUTOCOMPLETE_RESULTS_JEREZ_SOUTH_WEST, AUTOCOMPLETE_RESULTS_JEREZ_NORTH_EAST));
+
 //        autocompleteFragment.setTypeFilter(TypeFilter.ADDRESS);
 
         autocompleteFragment.setPlaceFields(Arrays.asList(Place.Field.ID, Place.Field.NAME, Place.Field.ADDRESS, Place.Field.LAT_LNG));
@@ -75,4 +85,7 @@ public class AddressFragment extends BaseMainFragment {
     }
 
 
+    public void clearAddress() {
+        autocompleteFragment.setText("");
+    }
 }

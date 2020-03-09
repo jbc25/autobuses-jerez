@@ -30,7 +30,8 @@
             <FrameLayout
                 android:id="@+id/frame_bottom"
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
+                android:layout_height="wrap_content"
+                android:minHeight="100dp"
                 android:layout_alignParentBottom="true"
                 android:background="@color/white_semitransp"
                 android:padding="15dp"
@@ -41,12 +42,12 @@
         </RelativeLayout>
 
         <fragment
-            android:id="@+id/fragment_bus_lines"
-            android:name="com.triskelapps.busjerez.ui.main.filter.BusLinesFragment"
+            android:id="@+id/fragment_filter_bus_lines"
+            android:name="com.triskelapps.busjerez.ui.main.filter.FilterBusLinesFragment"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="end"
-            android:layout_marginLeft="50dp"
+            android:layout_marginLeft="70dp"
             tools:layout="@layout/fragment_filter_bus_lines" />
 
         <com.google.android.material.navigation.NavigationView

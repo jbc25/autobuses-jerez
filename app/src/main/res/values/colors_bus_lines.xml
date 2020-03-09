@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="line1">#ffea03</color>
+    <color name="line1">#FFEB2B</color>
     <color name="line2">#f33600</color>
     <color name="line3">#e9ac14</color>
     <color name="line4">#c5013a</color>
     <color name="line5">#991e4f</color>
     <color name="line6">#bd9600</color>
     <color name="line7">#6d9000</color>
-    <color name="line8">#84cff5</color>
+    <color name="line8">#6EBCE3</color>
     <color name="line9">#00609d</color>
     <color name="line10">#8356c4</color>
     <color name="line11">#df9fc3</color>

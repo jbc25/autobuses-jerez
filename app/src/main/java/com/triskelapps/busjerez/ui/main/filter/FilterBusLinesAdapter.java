@@ -2,10 +2,12 @@ package com.triskelapps.busjerez.ui.main.filter;
 
 
 import android.content.Context;
+import android.content.res.ColorStateList;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import androidx.core.widget.CompoundButtonCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.triskelapps.busjerez.R;
@@ -14,7 +16,7 @@ import com.triskelapps.busjerez.model.BusLine;
 
 import java.util.List;
 
-public class BusLinesAdapter extends RecyclerView.Adapter<BusLinesAdapter.ViewHolder> {
+public class FilterBusLinesAdapter extends RecyclerView.Adapter<FilterBusLinesAdapter.ViewHolder> {
 
 
     private List<BusLine> busLines;
@@ -22,7 +24,7 @@ public class BusLinesAdapter extends RecyclerView.Adapter<BusLinesAdapter.ViewHo
     private OnItemClickListener itemClickListener;
 
 
-    public BusLinesAdapter(Context context, List<BusLine> busLines) {
+    public FilterBusLinesAdapter(Context context, List<BusLine> busLines) {
         this.context = context;
         this.busLines = busLines;
     }
@@ -43,8 +45,17 @@ public class BusLinesAdapter extends RecyclerView.Adapter<BusLinesAdapter.ViewHo
 
         final BusLine busLine = getItemAtPosition(position);
 
+        holder.binding.checkBusLine.setChecked(busLine.isVisible());
+
         holder.binding.checkBusLine.setText(busLine.getName());
         holder.binding.checkBusLine.setTextColor(busLine.getColor());
+
+        CompoundButtonCompat.setButtonTintList(holder.binding.checkBusLine, ColorStateList.valueOf(busLine.getColor()));
+
+        holder.binding.tvLineDescription.setText(busLine.getDescription());
+        holder.binding.tvLineDescription.setTextColor(busLine.getColor());
+
+        holder.binding.imgBusStop.setColorFilter(busLine.getColor());
 
     }
 
@@ -69,8 +80,20 @@ public class BusLinesAdapter extends RecyclerView.Adapter<BusLinesAdapter.ViewHo
             binding = RowBusLineBinding.bind(itemView);
 
             binding.checkBusLine.setOnCheckedChangeListener((buttonView, isChecked) -> {
+
+                if(!buttonView.isPressed()) {
+                    return;
+                }
+
                 if (itemClickListener != null) {
                     itemClickListener.onBusLineCheckedChanged(getAdapterPosition(), isChecked);
+                }
+            });
+
+            binding.imgBusStop.setOnClickListener(v -> {
+                if (itemClickListener != null) {
+                    itemClickListener.onBusStopButtonClick(getAdapterPosition());
+                    itemClickListener.onBusLineCheckedChanged(getAdapterPosition(), true);
                 }
             });
 
@@ -85,6 +108,8 @@ public class BusLinesAdapter extends RecyclerView.Adapter<BusLinesAdapter.ViewHo
 
     public interface OnItemClickListener {
         void onBusLineCheckedChanged(int position, boolean checked);
+
+        void onBusStopButtonClick(int position);
     }
 }
 

@@ -16,13 +16,13 @@ import com.triskelapps.busjerez.model.BusLine;
 import java.util.List;
 
 
-public class BusLinesFragment extends BaseMainFragment implements BusLinesAdapter.OnItemClickListener {
+public class FilterBusLinesFragment extends BaseMainFragment implements FilterBusLinesAdapter.OnItemClickListener {
 
     private FragmentFilterBusLinesBinding binding;
     private List<BusLine> busLines;
-    private BusLinesAdapter adapter;
+    private FilterBusLinesAdapter adapter;
 
-    public BusLinesFragment() {
+    public FilterBusLinesFragment() {
         // Required empty public constructor
     }
 
@@ -42,7 +42,7 @@ public class BusLinesFragment extends BaseMainFragment implements BusLinesAdapte
 
         busLines = App.getBusLinesData(getActivity());
 
-        adapter = new BusLinesAdapter(getActivity(), busLines);
+        adapter = new FilterBusLinesAdapter(getActivity(), busLines);
         adapter.setOnItemClickListener(this);
         binding.recyclerBusLines.setAdapter(adapter);
 
@@ -51,5 +51,10 @@ public class BusLinesFragment extends BaseMainFragment implements BusLinesAdapte
     @Override
     public void onBusLineCheckedChanged(int position, boolean checked) {
         getMainPresenter().onBusLineCheckedChanged(position, checked);
+    }
+
+    @Override
+    public void onBusStopButtonClick(int position) {
+        getMainPresenter().onBusLinePathClick(busLines.get(position).getId());
     }
 }

@@ -9513,14 +9513,13 @@
       },
       "properties": {
         "name": "Línea 15",
-        "description": "Angustias - Nueva Jarilla - Angustias - El Portal",
+        "description": "Nueva Jarilla - Guadalcacín - Angustias - El Portal",
         "styleUrl": "#line-0288D1-6000",
         "styleHash": "73caef8",
         "styleMapHash": {
           "normal": "#line-0288D1-6000-normal",
           "highlight": "#line-0288D1-6000-highlight"
         },
-        "description": "descripción: TRANSBORDO: <br>LINEA: <br>COD.PARADA: <br>SENTIDO: <br>LATITUD: <br>LONGITUD:<br>TRANSBORDO: <br>LINEA: <br>COD.PARADA: <br>SENTIDO: <br>LATITUD: <br>LONGITUD: ",
         "stroke": "#0288d1",
         "stroke-opacity": 1,
         "stroke-width": 6

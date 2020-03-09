@@ -5,6 +5,7 @@ import android.text.TextUtils;
 import android.util.Log;
 
 import com.google.gson.Gson;
+import com.triskelapps.busjerez.App;
 import com.triskelapps.busjerez.model.BusLine;
 import com.triskelapps.busjerez.model.BusStop;
 
@@ -31,11 +32,10 @@ public class DataProcessUtil {
 
     public void processData() {
 
-        int LINES_COUNT = 18;
 
         List<BusLine> busLines = new ArrayList<>();
 
-        for (int lineNumber = 1; lineNumber <= LINES_COUNT; lineNumber++) {
+        for (int lineNumber = 1; lineNumber <= App.BUS_LINES_COUNT; lineNumber++) {
 
             try {
                 String jsonStr = Util.getStringFromAssets(context, String.format("geojson/linea%d.geojson", lineNumber)); // A string containing GeoJSON
@@ -59,12 +59,16 @@ public class DataProcessUtil {
                             String nameLine1 = jsonPropertiesBusStop.getString("name");
                             busStop.setName(nameLine1);
 
-                            if (jsonPropertiesBusStop.has("COD")) {
-                                busStop.setCode((int) jsonPropertiesBusStop.getDouble("COD"));
-                            } else if (jsonPropertiesBusStop.has("COD. PARADA")) {
-                                busStop.setCode((int) jsonPropertiesBusStop.getDouble("COD. PARADA"));
-                            } else {
-                                busStop.setCode((int) jsonPropertiesBusStop.getDouble("COD.PARADA"));
+                            try {
+                                if (jsonPropertiesBusStop.has("COD")) {
+                                    busStop.setCode((int) jsonPropertiesBusStop.getDouble("COD"));
+                                } else if (jsonPropertiesBusStop.has("COD. PARADA")) {
+                                    busStop.setCode((int) jsonPropertiesBusStop.getDouble("COD. PARADA"));
+                                } else {
+                                    busStop.setCode((int) jsonPropertiesBusStop.getDouble("COD.PARADA"));
+                                }
+                            } catch (Exception e) {
+                                // Some lines have no field COD. PARADA
                             }
 
                             busStop.setTransfer(jsonPropertiesBusStop.getString("TRANSBORDO"));

@@ -7,7 +7,7 @@
     android:background="@color/bg_filter_bus_lines"
     android:clickable="true"
     android:padding="15dp"
-    tools:context="com.triskelapps.busjerez.ui.main.filter.BusLinesFragment">
+    tools:context="com.triskelapps.busjerez.ui.main.filter.FilterBusLinesFragment">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_bus_lines"

@@ -1,21 +1,22 @@
 package com.triskelapps.busjerez.ui.main;
 
 import android.Manifest;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.widget.Toolbar;
+import androidx.fragment.app.Fragment;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.BitmapDescriptor;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.LatLngBounds;
@@ -37,17 +38,18 @@ import com.triskelapps.busjerez.databinding.ActivityMainBinding;
 import com.triskelapps.busjerez.model.BusLine;
 import com.triskelapps.busjerez.model.BusStop;
 import com.triskelapps.busjerez.ui.main.address.AddressFragment;
-import com.triskelapps.busjerez.ui.main.filter.BusLinesFragment;
+import com.triskelapps.busjerez.ui.main.bus_stops.BusStopsFragment;
+import com.triskelapps.busjerez.ui.main.filter.FilterBusLinesFragment;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import es.dmoral.toasty.Toasty;
 
-public class MainActivity extends BaseActivity implements OnMapReadyCallback, MainView, GoogleMap.OnPolylineClickListener {
+public class MainActivity extends BaseActivity implements OnMapReadyCallback, MainView, GoogleMap.OnPolylineClickListener, GoogleMap.OnMarkerClickListener {
 
-    private final LatLng JEREZ_NORTH_EAST = new LatLng(36.707457, -6.093387);
-    private final LatLng JEREZ_SOUTH_WEST = new LatLng(36.663924, -6.160751);
+    public final LatLng JEREZ_NORTH_EAST = new LatLng(36.707457, -6.093387);
+    public final LatLng JEREZ_SOUTH_WEST = new LatLng(36.663924, -6.160751);
 
     private final LatLng JEREZ_CENTER = new LatLng(36.682757, -6.136800);
 
@@ -56,7 +58,9 @@ public class MainActivity extends BaseActivity implements OnMapReadyCallback, Ma
     private MapDataController mapDataController;
     private ActivityMainBinding binding;
     private Marker markerDestination;
-    private BusLinesFragment fragmentBusLines;
+    private FilterBusLinesFragment fragmentFilterBusLines;
+    private AddressFragment addressFragment;
+    private BusStopsFragment busStopsFragment;
 
 
     @Override
@@ -77,15 +81,24 @@ public class MainActivity extends BaseActivity implements OnMapReadyCallback, Ma
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
 
-        fragmentBusLines = (BusLinesFragment) getSupportFragmentManager().findFragmentById(R.id.fragment_bus_lines);
+        fragmentFilterBusLines = (FilterBusLinesFragment) getSupportFragmentManager().findFragmentById(R.id.fragment_filter_bus_lines);
 
         presenter.onCreate();
 
+        addressFragment = new AddressFragment();
+
         getSupportFragmentManager().beginTransaction()
-                .add(R.id.frame_bottom, new AddressFragment())
+                .replace(R.id.frame_bottom, addressFragment)
+//                .addToBackStack(null)
                 .commit();
 
     }
+
+    @Override
+    public void onAttachFragment(@NonNull Fragment fragment) {
+        super.onAttachFragment(fragment);
+    }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -130,6 +143,7 @@ public class MainActivity extends BaseActivity implements OnMapReadyCallback, Ma
         map.getUiSettings().setRotateGesturesEnabled(false);
 
         map.setOnPolylineClickListener(this);
+        map.setOnMarkerClickListener(this);
 
         map.setMapStyle(MapStyleOptions.loadRawResourceStyle(this, R.raw.map_style));
 
@@ -175,16 +189,36 @@ public class MainActivity extends BaseActivity implements OnMapReadyCallback, Ma
 
     @Override
     public void onBackPressed() {
-        if (mapDataController.hasBusLineSelected()) {
+        if (hasDrawerPanelOpened()) {
+            closeDrawerPanels();
+        } else if(busStopsFragment != null && busStopsFragment.hasBusStopSelected()){
+            busStopsFragment.clearBusStopSelection();
+        } else if(mapDataController.hasBusLineSelected()) {
             mapDataController.unselectBusLine();
             getSupportFragmentManager().popBackStack();
             LatLngBounds latLngBoundsJerez = LatLngBounds.builder().include(JEREZ_NORTH_EAST).include(JEREZ_SOUTH_WEST).build();
             animateMapToBounds(latLngBoundsJerez);
         } else if (getSupportFragmentManager().getBackStackEntryCount() > 0) {
             getSupportFragmentManager().popBackStack();
+        } else if (addressFragment != null && markerDestination != null) {
+            addressFragment.clearAddress();
+            presenter.onClearPlaceAutocompleteText();
         } else {
             super.onBackPressed();
         }
+    }
+
+    private void closeDrawerPanels() {
+
+        if (binding.drawerLayout.isDrawerOpen(Gravity.LEFT)) {
+            binding.drawerLayout.closeDrawer(Gravity.LEFT);
+        } else if (binding.drawerLayout.isDrawerOpen(Gravity.RIGHT)) {
+            binding.drawerLayout.closeDrawer(Gravity.RIGHT);
+        }
+    }
+
+    private boolean hasDrawerPanelOpened() {
+        return binding.drawerLayout.isDrawerOpen(Gravity.LEFT) || binding.drawerLayout.isDrawerOpen(Gravity.RIGHT);
     }
 
     private void checkLocationPermission() {
@@ -226,14 +260,29 @@ public class MainActivity extends BaseActivity implements OnMapReadyCallback, Ma
     public void onPolylineClick(Polyline polyline) {
 
         int lineId = (int) polyline.getTag();
-        mapDataController.selectBusLine(lineId);
-        LatLngBounds lineBounds = mapDataController.getLineBounds(lineId);
-        animateMapToBounds(lineBounds);
-
         presenter.onBusLinePathClick(lineId);
 
     }
 
+    @Override
+    public boolean onMarkerClick(Marker marker) {
+        if (busStopsFragment != null) {
+            busStopsFragment.selectBusStop((BusStop) marker.getTag());
+        }
+        return false;
+    }
+
+    public void selectBusStopMarker(int position) {
+        Marker marker = mapDataController.getMarker(position);
+        marker.showInfoWindow();
+
+        map.animateCamera(CameraUpdateFactory.newLatLng(marker.getPosition()));
+    }
+
+    public void unselectBusStopMarker(int position) {
+        Marker marker = mapDataController.getMarker(position);
+        marker.hideInfoWindow();
+    }
 
     // PRESENTER CALLBACKS
 
@@ -247,6 +296,7 @@ public class MainActivity extends BaseActivity implements OnMapReadyCallback, Ma
             Polyline polylinePath = map.addPolyline(new PolylineOptions()
                     .clickable(true)
                     .visible(busLine.isVisible())
+                    .clickable(busLine.isVisible())
                     .color(busLine.getColor())
                     .addAll(getPathLatLng(busLine)));
 
@@ -260,7 +310,7 @@ public class MainActivity extends BaseActivity implements OnMapReadyCallback, Ma
                 Marker marker = map.addMarker(new MarkerOptions()
                         .position(position)
                         .visible(false)
-                        .icon(BitmapDescriptorFactory.fromBitmap(getBusMarkerBitmapTinted(busLine.getColor())))
+                        .icon(getBusMarkerIcon(busLine.getId()))
                         .title(busStop.getName()));
 
                 marker.setTag(busStop);
@@ -275,9 +325,15 @@ public class MainActivity extends BaseActivity implements OnMapReadyCallback, Ma
 
     }
 
-    private Bitmap getBusMarkerBitmapTinted(int color) {
-        return BitmapFactory.decodeResource(getResources(), R.mipmap.ic_bus_marker_2);
+    private BitmapDescriptor getBusMarkerIcon(int lineId) {
+        int resource = getResources().getIdentifier("ic_bus_marker_line_" + lineId, "mipmap", getPackageName());
+        if (resource == 0) {
+            resource = R.mipmap.ic_bus_marker_2;
+        }
+
+        return BitmapDescriptorFactory.fromResource(resource);
     }
+
 
     private List<LatLng> getPathLatLng(BusLine busLine) {
         List<LatLng> pathLatLng = new ArrayList<>();
@@ -291,13 +347,32 @@ public class MainActivity extends BaseActivity implements OnMapReadyCallback, Ma
 
     @Override
     public void showBusLineInfo(BusLine busLine) {
-//        binding.viewBottomInfo.setVisibility(View.VISIBLE);
-//        binding.tvLineInfo.setText(busLine.getName() + " - " + busLine.getDescription());
-//        binding.tvLineInfo.setTextColor(busLine.getColor());
+
+        mapDataController.selectBusLine(busLine.getId());
+        LatLngBounds lineBounds = mapDataController.getLineBounds(busLine.getId());
+        animateMapToBounds(lineBounds);
+
+        if (binding.drawerLayout.isDrawerOpen(Gravity.RIGHT)) {
+            binding.drawerLayout.closeDrawer(Gravity.RIGHT);
+        }
+
+        if (getSupportFragmentManager().getBackStackEntryCount() == 1) {
+            getSupportFragmentManager().popBackStack();
+        }
+
+        busStopsFragment = BusStopsFragment.newInstance(busLine);
+        getSupportFragmentManager().beginTransaction()
+                .replace(R.id.frame_bottom, busStopsFragment)
+                .addToBackStack(null)
+                .commit();
+
     }
 
     @Override
     public void setDestinationMarker(Place place) {
+
+        removeDestinationMarker();
+
         markerDestination = map.addMarker(new MarkerOptions()
                 .position(place.getLatLng())
                 .title(place.getName()));
@@ -318,4 +393,5 @@ public class MainActivity extends BaseActivity implements OnMapReadyCallback, Ma
     public void setBusLineVisible(int lineId, boolean visible) {
         mapDataController.setBusLineVisible(lineId, visible);
     }
+
 }
