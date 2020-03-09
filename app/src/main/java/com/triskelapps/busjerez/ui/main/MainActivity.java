@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
@@ -81,6 +82,8 @@ public class MainActivity extends BaseActivity implements OnMapReadyCallback, Ma
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
 
+        binding.progressMap.setVisibility(View.VISIBLE);
+
         fragmentFilterBusLines = (FilterBusLinesFragment) getSupportFragmentManager().findFragmentById(R.id.fragment_filter_bus_lines);
 
         presenter.onCreate();
@@ -151,6 +154,8 @@ public class MainActivity extends BaseActivity implements OnMapReadyCallback, Ma
 
         map.setOnMapLoadedCallback(() -> {
 
+            binding.progressMap.setVisibility(View.GONE);
+
             LatLngBounds latLngBoundsJerez = LatLngBounds.builder().include(JEREZ_NORTH_EAST).include(JEREZ_SOUTH_WEST).build();
             animateMapToBounds(latLngBoundsJerez);
 
@@ -193,6 +198,7 @@ public class MainActivity extends BaseActivity implements OnMapReadyCallback, Ma
             closeDrawerPanels();
         } else if(busStopsFragment != null && busStopsFragment.hasBusStopSelected()){
             busStopsFragment.clearBusStopSelection();
+            map.getUiSettings().setMapToolbarEnabled(false);
         } else if(mapDataController.hasBusLineSelected()) {
             mapDataController.unselectBusLine();
             getSupportFragmentManager().popBackStack();
@@ -266,6 +272,7 @@ public class MainActivity extends BaseActivity implements OnMapReadyCallback, Ma
 
     @Override
     public boolean onMarkerClick(Marker marker) {
+        map.getUiSettings().setMapToolbarEnabled(true);
         if (busStopsFragment != null) {
             busStopsFragment.selectBusStop((BusStop) marker.getTag());
         }
@@ -273,6 +280,7 @@ public class MainActivity extends BaseActivity implements OnMapReadyCallback, Ma
     }
 
     public void selectBusStopMarker(int position) {
+        map.getUiSettings().setMapToolbarEnabled(false);
         Marker marker = mapDataController.getMarker(position);
         marker.showInfoWindow();
 
@@ -298,6 +306,7 @@ public class MainActivity extends BaseActivity implements OnMapReadyCallback, Ma
                     .visible(busLine.isVisible())
                     .clickable(busLine.isVisible())
                     .color(busLine.getColor())
+                    .width(getResources().getDimensionPixelSize(R.dimen.width_polyline))
                     .addAll(getPathLatLng(busLine)));
 
             polylinePath.setTag(busLine.getId());
