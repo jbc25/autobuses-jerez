@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Autobuses Jerez</string>
+    <string name="app_name">Jerez Autobuses</string>
 
     <string name="permission_denied">Permiso denegado</string>
     <string name="permission_needed">Se necesita permiso</string>

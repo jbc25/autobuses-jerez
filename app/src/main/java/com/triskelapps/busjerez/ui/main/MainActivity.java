@@ -273,7 +273,7 @@ public class MainActivity extends BaseActivity implements OnMapReadyCallback, Ma
     @Override
     public boolean onMarkerClick(Marker marker) {
         map.getUiSettings().setMapToolbarEnabled(true);
-        if (busStopsFragment != null) {
+        if (busStopsFragment != null && marker.getTag() != null && marker.getTag() instanceof BusStop) {
             busStopsFragment.selectBusStop((BusStop) marker.getTag());
         }
         return false;
