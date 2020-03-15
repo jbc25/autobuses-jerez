@@ -2,6 +2,7 @@ package com.triskelapps.busjerez.ui.timetable;
 
 import android.app.Dialog;
 import android.os.Bundle;
+import android.os.Handler;
 import android.text.TextUtils;
 import android.view.View;
 import android.webkit.WebView;
@@ -29,6 +30,7 @@ import java.util.Map;
 public class TimetableDialog extends DialogFragment implements WebView.FindListener {
 
     private static final String ARG_BUS_STOP = "arg_bus_stop";
+    private static final String TAG = "TimetableDialog";
     private DialogTimetableBinding binding;
     private BusStop busStop;
     private String infoHtml;
@@ -137,9 +139,15 @@ public class TimetableDialog extends DialogFragment implements WebView.FindListe
                 public void onPageFinished(WebView view, String url) {
                     super.onPageFinished(view, url);
 
-                    String dayTypeWebName = convertDayType(dayType);
-                    binding.webviewTimetable.findAllAsync(dayTypeWebName);
+                    // Workaround to make this work in Android 9
+                    new Handler().postDelayed(() -> {
+                        String dayTypeWebName = convertDayType(dayType);
+                        binding.webviewTimetable.findAllAsync(dayTypeWebName);
+                    }, 50);
+
                 }
+
+
             });
         }
     }
