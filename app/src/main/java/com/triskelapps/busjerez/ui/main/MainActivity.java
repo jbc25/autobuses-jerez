@@ -1,6 +1,7 @@
 package com.triskelapps.busjerez.ui.main;
 
 import android.Manifest;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.Menu;
@@ -38,6 +39,7 @@ import com.triskelapps.busjerez.base.BaseActivity;
 import com.triskelapps.busjerez.databinding.ActivityMainBinding;
 import com.triskelapps.busjerez.model.BusLine;
 import com.triskelapps.busjerez.model.BusStop;
+import com.triskelapps.busjerez.ui.favourites.FavouritesActivity;
 import com.triskelapps.busjerez.ui.main.address.AddressFragment;
 import com.triskelapps.busjerez.ui.main.bus_stops.BusStopsFragment;
 import com.triskelapps.busjerez.ui.main.filter.FilterBusLinesFragment;
@@ -190,6 +192,10 @@ public class MainActivity extends BaseActivity implements OnMapReadyCallback, Ma
                     binding.drawerLayout.openDrawer(Gravity.RIGHT);
                 }
                 return true;
+
+            case R.id.menu_favourites:
+                startActivity(new Intent(this, FavouritesActivity.class));
+                break;
         }
         return super.onOptionsItemSelected(item);
     }

@@ -18,7 +18,7 @@
 
     <string name="line_id_bus_stop_format">Línea %d. Parada: %s</string>
 
-    <string name="info_timetable_format">Línea %d. Parada: %s\nDía: %s\nHora: %s</string>
+    <string name="info_timetable_format">Línea %d. Parada: %s\nDía: %s\nHora actual: %s</string>
     <string name="see_timetable">Ver horarios</string>
 
     <string name="festive_1_new_year">Año nuevo</string>
@@ -40,4 +40,7 @@
     <string name="saturday">Sábado</string>
     <string name="festive">Festivo</string>
     <string name="bus_stop_direction_transfer_format">Dirección: %s\nTransbordos: %s</string>
+    <string name="favourite_bus_stop_format">Línea %d. Parada: %s</string>
+    <string name="favourites">Favoritos</string>
+    <string name="favourite_bus_stops">Paradas favoritas</string>
 </resources>

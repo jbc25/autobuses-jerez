@@ -4,12 +4,16 @@ import androidx.room.Database;
 import androidx.room.RoomDatabase;
 
 import com.triskelapps.busjerez.database.dao.BusLineVisibleDao;
+import com.triskelapps.busjerez.database.dao.BusStopDao;
+import com.triskelapps.busjerez.model.BusStop;
 import com.triskelapps.busjerez.model.db.BusLineVisible;
 
-@Database(entities = {BusLineVisible.class}, version = 1, exportSchema = false)
+@Database(entities = {BusLineVisible.class, BusStop.class}, version = 2, exportSchema = false)
 public abstract class MyDatabase extends RoomDatabase {
 
     public abstract BusLineVisibleDao busLineVisibleDao();
+
+    public abstract BusStopDao busStopDao();
 
 
 //    public static final Migration MIGRATION_1_2 = new Migration(1, 2) {

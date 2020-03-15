@@ -3,7 +3,9 @@ package com.triskelapps.busjerez.ui.timetable;
 import android.app.Dialog;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.view.View;
 import android.webkit.WebView;
+import android.webkit.WebViewClient;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -11,7 +13,10 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.DialogFragment;
 
 import com.triskelapps.busjerez.R;
+import com.triskelapps.busjerez.base.BaseActivity;
+import com.triskelapps.busjerez.base.BaseInteractor;
 import com.triskelapps.busjerez.databinding.DialogTimetableBinding;
+import com.triskelapps.busjerez.interactor.TimetableInteractor;
 import com.triskelapps.busjerez.model.BusStop;
 import com.triskelapps.busjerez.util.DateUtils;
 
@@ -24,18 +29,16 @@ import java.util.Map;
 public class TimetableDialog extends DialogFragment implements WebView.FindListener {
 
     private static final String ARG_BUS_STOP = "arg_bus_stop";
-    private static final String ARG_INFO_HTML = "arg_info_html";
     private DialogTimetableBinding binding;
     private BusStop busStop;
     private String infoHtml;
 
     private Map<String, String> festiveDaysMap = new HashMap<>();
 
-    public static TimetableDialog createDialog(BusStop busStop, String infoHtml) {
+    public static TimetableDialog createDialog(BusStop busStop) {
         TimetableDialog timetableDialog = new TimetableDialog();
         Bundle args = new Bundle();
         args.putSerializable(ARG_BUS_STOP, busStop);
-        args.putString(ARG_INFO_HTML, infoHtml);
         timetableDialog.setArguments(args);
         return timetableDialog;
     }
@@ -45,13 +48,39 @@ public class TimetableDialog extends DialogFragment implements WebView.FindListe
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         busStop = (BusStop) getArguments().getSerializable(ARG_BUS_STOP);
-        infoHtml = getArguments().getString(ARG_INFO_HTML);
 
         binding = DialogTimetableBinding.inflate(getActivity().getLayoutInflater());
 
         initializeFestiveDays();
 
         binding.webviewTimetable.setFindListener(this);
+
+        showProgressBar();
+        new TimetableInteractor(getActivity(), null)
+                .getTimetable(busStop.getLineId(), busStop.getCode(), new BaseInteractor.CallbackPost() {
+                    @Override
+                    public void onSuccess(String body) {
+                        hideProgressBar();
+                        infoHtml = body;
+                        refreshInfoText();
+                    }
+
+                    @Override
+                    public void onError(String error) {
+                        hideProgressBar();
+                        ((BaseActivity)getActivity()).toast(error);
+                    }
+                });
+    }
+
+    private void showProgressBar() {
+        binding.progressbarWebview.setVisibility(View.VISIBLE);
+        binding.webviewTimetable.setVisibility(View.GONE);
+    }
+
+    private void hideProgressBar() {
+        binding.progressbarWebview.setVisibility(View.GONE);
+        binding.webviewTimetable.setVisibility(View.VISIBLE);
     }
 
     private void initializeFestiveDays() {
@@ -84,9 +113,7 @@ public class TimetableDialog extends DialogFragment implements WebView.FindListe
     @Override
     public Dialog onCreateDialog(@Nullable Bundle savedInstanceState) {
 
-
         refreshInfoText();
-        binding.webviewTimetable.loadDataWithBaseURL(null, infoHtml, "text/html", "utf-8", null);
 
         return new AlertDialog.Builder(getActivity())
                 .setView(binding.getRoot())
@@ -101,8 +128,20 @@ public class TimetableDialog extends DialogFragment implements WebView.FindListe
         String infoText = getString(R.string.info_timetable_format, busStop.getLineId(), busStop.getName(), dayType, time);
         binding.tvTimetableInfo.setText(infoText);
 
-        String dayTypeWebName = convertDayType(dayType);
-        binding.webviewTimetable.findAllAsync(dayTypeWebName);
+        if (infoHtml != null) {
+
+            binding.webviewTimetable.loadDataWithBaseURL(null, infoHtml, "text/html", "utf-8", null);
+
+            binding.webviewTimetable.setWebViewClient(new WebViewClient() {
+                @Override
+                public void onPageFinished(WebView view, String url) {
+                    super.onPageFinished(view, url);
+
+                    String dayTypeWebName = convertDayType(dayType);
+                    binding.webviewTimetable.findAllAsync(dayTypeWebName);
+                }
+            });
+        }
     }
 
     private String convertDayType(String dayType) {
@@ -134,8 +173,9 @@ public class TimetableDialog extends DialogFragment implements WebView.FindListe
 
     @Override
     public void onFindResultReceived(int activeMatchOrdinal, int numberOfMatches, boolean isDoneCounting) {
-        if (isDoneCounting) {
+        if (isDoneCounting && numberOfMatches > 0) {
             binding.webviewTimetable.findNext(true);
+            binding.webviewTimetable.clearMatches();
         }
 
     }

@@ -52,7 +52,7 @@ public class App extends Application {
         db = Room.databaseBuilder(getApplicationContext(),
                 MyDatabase.class, DB_NAME)
 //                .addMigrations(MyDatabase.MIGRATION_1_2)
-//                .fallbackToDestructiveMigration()
+                .fallbackToDestructiveMigration()
                 .allowMainThreadQueries()
                 .build();
 
@@ -63,9 +63,8 @@ public class App extends Application {
     }
 
     private void populateDataFirstTime() {
-        if (!getPrefs(this).getBoolean(PREF_FIRST_TIME_DATA_POPULATED, false)) {
+        if (getDB().busLineVisibleDao().getAll().size() == 0) {
             populateBusLineVisibleTable();
-            getPrefs(this).edit().putBoolean(PREF_FIRST_TIME_DATA_POPULATED, true).commit();
         }
     }
 

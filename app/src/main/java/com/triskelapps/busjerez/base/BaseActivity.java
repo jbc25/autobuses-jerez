@@ -7,7 +7,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
-import android.graphics.PorterDuff;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.os.Handler;
@@ -20,6 +19,8 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.content.res.AppCompatResources;
 import androidx.appcompat.widget.Toolbar;
+import androidx.core.content.ContextCompat;
+import androidx.core.graphics.drawable.DrawableCompat;
 
 import com.triskelapps.busjerez.App;
 import com.triskelapps.busjerez.R;
@@ -233,7 +234,7 @@ public abstract class BaseActivity extends AppCompatActivity implements BaseView
 
         Drawable upArrow = AppCompatResources.getDrawable(this, R.mipmap.ic_arrow_back_white);
 //        final Drawable upArrow = getResources().getDrawable(R.drawable.ic_arrow_back);
-        upArrow.setColorFilter(getResources().getColor(R.color.colorPrimary), PorterDuff.Mode.SRC_ATOP);
+        DrawableCompat.setTint(upArrow, ContextCompat.getColor(this, R.color.white));
         toolbar.setNavigationIcon(upArrow);
     }
 

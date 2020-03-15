@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.triskelapps.busjerez.App;
 import com.triskelapps.busjerez.R;
 import com.triskelapps.busjerez.base.BaseInteractor;
 import com.triskelapps.busjerez.base.BaseMainFragment;
@@ -56,14 +57,16 @@ public class BusStopsFragment extends BaseMainFragment implements BusStopsAdapte
                              Bundle savedInstanceState) {
         binding = FragmentBusStopsBinding.inflate(getLayoutInflater(), container, false);
 
+        binding.btnTimetable.setOnClickListener(this);
+        binding.imgFavourite.setOnClickListener(this);
+        
         binding.tvLineInfo.setText(getString(R.string.line_info_format, busLine.getId(), busLine.getDescription()));
 
         busStops = busLine.getBusStops();
         adapter = new BusStopsAdapter(getActivity(), busStops, busLine.getColor());
         adapter.setOnItemClickListener(this);
         binding.recyclerBusStops.setAdapter(adapter);
-
-        binding.btnTimetable.setOnClickListener(this);
+        
 
         return binding.getRoot();
     }
@@ -73,7 +76,7 @@ public class BusStopsFragment extends BaseMainFragment implements BusStopsAdapte
 
         ((MainActivity) getActivity()).selectBusStopMarker(position);
 
-        showTimetableView(busStops.get(position));
+        showBusStopInfoView(busStops.get(position));
 
     }
 
@@ -83,7 +86,7 @@ public class BusStopsFragment extends BaseMainFragment implements BusStopsAdapte
         for (int i = 0; i < busStops.size(); i++) {
             BusStop busStopItem = busStops.get(i);
 
-            // TODO this should be replaced with bus stop code (peding review data)
+            // TODO this should be replaced with bus stop code (pending review data)
             if (TextUtils.equals(busStopItem.getName(), busStop.getName())) {
                 position = i;
                 break;
@@ -94,14 +97,19 @@ public class BusStopsFragment extends BaseMainFragment implements BusStopsAdapte
 
         binding.recyclerBusStops.smoothScrollToPosition(position);
 
-        showTimetableView(busStop);
+        showBusStopInfoView(busStop);
     }
 
 
-    private void showTimetableView(BusStop busStop) {
-        binding.viewTimetable.setVisibility(View.VISIBLE);
+    private void showBusStopInfoView(BusStop busStop) {
+        binding.viewBusStopInfo.setVisibility(View.VISIBLE);
+        binding.imgFavourite.setVisibility(View.VISIBLE);
         binding.tvDirectionTransfer.setText(getString(
                 R.string.bus_stop_direction_transfer_format, busStop.getDirection(), busStop.getTransfer()));
+
+        boolean isFavourite = App.getDB().busStopDao().getBusBusStop(busStop.getName()) != null;
+        binding.imgFavourite.setSelected(isFavourite);
+        
         busStopSelected = busStop;
     }
 
@@ -112,7 +120,8 @@ public class BusStopsFragment extends BaseMainFragment implements BusStopsAdapte
     public void clearBusStopSelection() {
         ((MainActivity) getActivity()).unselectBusStopMarker(adapter.getSelectedPosition());
         adapter.setSelectedPosition(-1);
-        binding.viewTimetable.setVisibility(View.GONE);
+        binding.viewBusStopInfo.setVisibility(View.GONE);
+        binding.imgFavourite.setVisibility(View.GONE);
     }
 
     @Override
@@ -122,6 +131,16 @@ public class BusStopsFragment extends BaseMainFragment implements BusStopsAdapte
             case R.id.btn_timetable:
                 requestTimetable();
                 break;
+
+            case R.id.img_favourite:
+                if (binding.imgFavourite.isSelected()) {
+                    App.getDB().busStopDao().delete(busStopSelected);
+                    binding.imgFavourite.setSelected(false);
+                } else {
+                    App.getDB().busStopDao().insert(busStopSelected);
+                    binding.imgFavourite.setSelected(true);
+                } 
+                break;
         }
     }
 
@@ -130,28 +149,11 @@ public class BusStopsFragment extends BaseMainFragment implements BusStopsAdapte
         if (busStopSelected.getCode() == -1) {
             toast(R.string.error_code_bus_stop);
         } else {
-            showProgressDialog(getString(R.string.loading));
-            new TimetableInteractor(getActivity(), this)
-                    .getTimetable(busLine.getId(), busStopSelected.getCode(), new BaseInteractor.CallbackPost() {
-                        @Override
-                        public void onSuccess(String body) {
-                            hideProgressDialog();
-                            showDialogTimetable(body);
-                        }
 
-                        @Override
-                        public void onError(String error) {
-                            hideProgressDialog();
-                            toast(error);
-                        }
-                    });
+            TimetableDialog.createDialog(busStopSelected).show(getChildFragmentManager(), null);
+
 
         }
     }
 
-    private void showDialogTimetable(String body) {
-
-        TimetableDialog.createDialog(busStopSelected, body).show(getChildFragmentManager(), null);
-
-    }
 }

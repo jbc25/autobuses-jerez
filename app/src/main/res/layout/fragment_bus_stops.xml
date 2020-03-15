@@ -25,7 +25,8 @@
             android:layout_width="35dp"
             android:layout_height="35dp"
             android:adjustViewBounds="true"
-            app:srcCompat="@drawable/ic_favourite_off"/>
+            app:srcCompat="@drawable/ic_favourite"
+            android:visibility="gone"/>
     </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView
@@ -37,7 +38,7 @@
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
 
     <RelativeLayout
-        android:id="@+id/view_timetable"
+        android:id="@+id/view_bus_stop_info"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
