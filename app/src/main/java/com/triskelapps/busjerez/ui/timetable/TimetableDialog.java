@@ -106,7 +106,13 @@ public class TimetableDialog extends DialogFragment implements WebView.FindListe
     }
 
     private String convertDayType(String dayType) {
-        if(TextUtils.equals(dayType, getString(R.string.fest)))
+        if (TextUtils.equals(dayType, getString(R.string.sunday)) || dayType.contains(getString(R.string.festive))) {
+            return "DOMINGOS Y FESTIVOS";
+        } else if (TextUtils.equals(dayType, getString(R.string.saturday))) {
+            return "SÁBADOS";
+        } else {
+            return "LABORABLES";
+        }
     }
 
     private String getDayType() {
@@ -114,7 +120,7 @@ public class TimetableDialog extends DialogFragment implements WebView.FindListe
         String dayMonth = new SimpleDateFormat("dd/MM").format(new Date());
         int dayWeek = Calendar.getInstance().get(Calendar.DAY_OF_WEEK);
         if (festiveDaysMap.containsKey(dayMonth)) {
-            return getString(R.string.festive) + ": " + festiveDaysMap.get(dayMonth);
+            return getString(R.string.festive) + ". " + festiveDaysMap.get(dayMonth);
         } else if (dayWeek == Calendar.SUNDAY) {
             return getString(R.string.sunday);
         } else if (dayWeek == Calendar.SATURDAY) {

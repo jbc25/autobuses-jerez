@@ -100,8 +100,9 @@ public class BusStopsFragment extends BaseMainFragment implements BusStopsAdapte
 
     private void showTimetableView(BusStop busStop) {
         binding.viewTimetable.setVisibility(View.VISIBLE);
+        binding.tvDirectionTransfer.setText(getString(
+                R.string.bus_stop_direction_transfer_format, busStop.getDirection(), busStop.getTransfer()));
         busStopSelected = busStop;
-        // TODO show timetable
     }
 
     public boolean hasBusStopSelected() {

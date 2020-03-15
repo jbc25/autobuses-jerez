@@ -39,4 +39,5 @@
     <string name="laboral">Laborable</string>
     <string name="saturday">Sábado</string>
     <string name="festive">Festivo</string>
+    <string name="bus_stop_direction_transfer_format">Dirección: %s\nTransbordos: %s</string>
 </resources>
