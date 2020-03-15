@@ -13,4 +13,30 @@
     <string name="bus_lines">Líneas de autobus</string>
     <string name="line_info_format">Línea %d: %s</string>
     <string name="more_timetable">Más horarios</string>
+    <string name="timetable">Horarios</string>
+    <string name="error_code_bus_stop">Error. No existe código de parada</string>
+
+    <string name="line_id_bus_stop_format">Línea %d. Parada: %s</string>
+
+    <string name="info_timetable_format">Línea %d. Parada: %s\nDía: %s\nHora: %s</string>
+    <string name="see_timetable">Ver horarios</string>
+
+    <string name="festive_1_new_year">Año nuevo</string>
+    <string name="festive_2_magic_kings">Reyes Magos</string>
+    <string name="festive_3_andalucia_day">Día de Andalucía</string>
+    <string name="festive_4_jueves_santo">Jueves Santo</string>
+    <string name="festive_5_viernes_santo">Viernes Santo</string>
+    <string name="festive_6_worker_day">Día del Trabajador</string>
+    <string name="festive_7_feria_caballo">Feria del Caballo</string>
+    <string name="festive_8_asuncion_virgen">Asunción de la Virgen</string>
+    <string name="festive_9_virgen_merced">Virgen de la Merced</string>
+    <string name="festive_10_nacional_day">Día de la Hispanidad</string>
+    <string name="festive_11_all_saints">Todos los Santos (trasladado)</string>
+    <string name="festive_12_constitution_day">Día de la Constitución (trasladado)</string>
+    <string name="festive_13_inmaculada_day">Día de la Inmaculada Concepción</string>
+    <string name="festive_14_christmas">Navidad</string>
+    <string name="sunday">Domingo</string>
+    <string name="laboral">Laborable</string>
+    <string name="saturday">Sábado</string>
+    <string name="festive">Festivo</string>
 </resources>

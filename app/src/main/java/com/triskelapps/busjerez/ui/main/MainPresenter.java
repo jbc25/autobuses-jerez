@@ -43,14 +43,8 @@ public class MainPresenter extends BasePresenter {
 
     }
 
-    public void onResume() {
-
-        refreshData();
-    }
-
-    public void refreshData() {
-
-
+    public void onMapReady() {
+        loadData();
     }
 
     public void onMapLoaded() {
@@ -93,4 +87,5 @@ public class MainPresenter extends BasePresenter {
 
         App.getDB().busLineVisibleDao().update(new BusLineVisible(lineId, checked));
     }
+
 }

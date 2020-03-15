@@ -52,7 +52,7 @@ public class MainActivity extends BaseActivity implements OnMapReadyCallback, Ma
     public final LatLng JEREZ_NORTH_EAST = new LatLng(36.707457, -6.093387);
     public final LatLng JEREZ_SOUTH_WEST = new LatLng(36.663924, -6.160751);
 
-    private final LatLng JEREZ_CENTER = new LatLng(36.682757, -6.136800);
+    private final LatLng JEREZ_CENTER = new LatLng(36.687458, -6.127826);
 
     private GoogleMap map;
     private MainPresenter presenter;
@@ -82,7 +82,7 @@ public class MainActivity extends BaseActivity implements OnMapReadyCallback, Ma
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
 
-        binding.progressMap.setVisibility(View.VISIBLE);
+        binding.progressMap.setVisibility(View.GONE);
 
         fragmentFilterBusLines = (FilterBusLinesFragment) getSupportFragmentManager().findFragmentById(R.id.fragment_filter_bus_lines);
 
@@ -150,17 +150,19 @@ public class MainActivity extends BaseActivity implements OnMapReadyCallback, Ma
 
         map.setMapStyle(MapStyleOptions.loadRawResourceStyle(this, R.raw.map_style));
 
-        map.moveCamera(CameraUpdateFactory.newLatLngZoom(JEREZ_CENTER, 14));
+        map.moveCamera(CameraUpdateFactory.newLatLngZoom(JEREZ_CENTER, 12.5f));
 
-        map.setOnMapLoadedCallback(() -> {
+        presenter.onMapReady();
 
-            binding.progressMap.setVisibility(View.GONE);
-
-            LatLngBounds latLngBoundsJerez = LatLngBounds.builder().include(JEREZ_NORTH_EAST).include(JEREZ_SOUTH_WEST).build();
-            animateMapToBounds(latLngBoundsJerez);
-
-            presenter.onMapLoaded();
-        });
+//        map.setOnMapLoadedCallback(() -> {
+//
+//            binding.progressMap.setVisibility(View.GONE);
+//
+//            LatLngBounds latLngBoundsJerez = LatLngBounds.builder().include(JEREZ_NORTH_EAST).include(JEREZ_SOUTH_WEST).build();
+//            animateMapToBounds(latLngBoundsJerez);
+//
+//            presenter.onMapLoaded();
+//        });
 
         checkLocationPermission();
 
@@ -357,9 +359,6 @@ public class MainActivity extends BaseActivity implements OnMapReadyCallback, Ma
     @Override
     public void showBusLineInfo(BusLine busLine) {
 
-        mapDataController.selectBusLine(busLine.getId());
-        LatLngBounds lineBounds = mapDataController.getLineBounds(busLine.getId());
-        animateMapToBounds(lineBounds);
 
         if (binding.drawerLayout.isDrawerOpen(Gravity.RIGHT)) {
             binding.drawerLayout.closeDrawer(Gravity.RIGHT);
@@ -375,6 +374,9 @@ public class MainActivity extends BaseActivity implements OnMapReadyCallback, Ma
                 .addToBackStack(null)
                 .commit();
 
+        mapDataController.selectBusLine(busLine.getId());
+        LatLngBounds lineBounds = mapDataController.getLineBounds(busLine.getId());
+        animateMapToBounds(lineBounds);
     }
 
     @Override

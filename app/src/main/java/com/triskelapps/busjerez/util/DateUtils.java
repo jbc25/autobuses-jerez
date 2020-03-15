@@ -14,6 +14,8 @@ public class DateUtils {
     public static SimpleDateFormat formatDateApi = new SimpleDateFormat("yyyy-MM-dd");
     public static SimpleDateFormat formatDateUser = new SimpleDateFormat("dd/MM/yyyy");
 
+    public static SimpleDateFormat formatTime = new SimpleDateFormat("HH:mm");
+
 
     public static String getCurrentDateTimeHumanFormat() {
         return formatDateTimeUser.format(new Date());

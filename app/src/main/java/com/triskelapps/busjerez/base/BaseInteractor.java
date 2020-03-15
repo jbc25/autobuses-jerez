@@ -3,9 +3,13 @@ package com.triskelapps.busjerez.base;
 import android.content.Context;
 
 import com.triskelapps.busjerez.R;
+import com.triskelapps.busjerez.api.ApiClient;
 import com.triskelapps.busjerez.util.Util;
 
+import java.io.IOException;
 import java.util.List;
+
+import retrofit2.Response;
 
 
 /**
@@ -23,23 +27,21 @@ public class BaseInteractor {
         this.baseView = baseView;
     }
 
-//    public <T> T getApi(Class<T> service) {
-//        return ApiClient.getInstance().create(service);
-//    }
-//
-//
-//    public Action0 actionTerminate = new Action0() {
-//        @Override
-//        public void call() {
-//
-//            if (baseView != null) {
-//                baseView.setRefresing(false);
-//                baseView.hideProgressDialog();
-//            }
-//
-//        }
-//    };
+    public <T> T getApi(Class<T> service) {
+        return ApiClient.getInstance().create(service);
+    }
 
+    public String parseError(Response<?> response) {
+
+        String errorMsg = "";
+        try {
+            errorMsg = response.errorBody().string();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        return "Error " + response.code() + ". " + errorMsg;
+    }
 
     public interface CallbackGetList<T> {
         void onListReceived(List<T> list);
@@ -54,7 +56,7 @@ public class BaseInteractor {
     }
 
     public interface CallbackPost {
-        void onSuccess(String id);
+        void onSuccess(String body);
         void onError(String error);
     }
 

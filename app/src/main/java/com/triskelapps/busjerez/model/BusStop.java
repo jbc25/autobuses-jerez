@@ -6,7 +6,8 @@ import java.util.List;
 public class BusStop implements Serializable {
 
     private String name;
-    private int code;
+    private int code = -1;
+    private int lineId;
     private String transfer;
     private String direction;
     private List<Double> coordinates;
@@ -49,5 +50,13 @@ public class BusStop implements Serializable {
 
     public void setDirection(String direction) {
         this.direction = direction;
+    }
+
+    public int getLineId() {
+        return lineId;
+    }
+
+    public void setLineId(int lineId) {
+        this.lineId = lineId;
     }
 }

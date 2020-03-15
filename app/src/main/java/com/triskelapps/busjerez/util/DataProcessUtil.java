@@ -71,6 +71,8 @@ public class DataProcessUtil {
                                 // Some lines have no field COD. PARADA
                             }
 
+                            busStop.setLineId(lineNumber);
+
                             busStop.setTransfer(jsonPropertiesBusStop.getString("TRANSBORDO"));
                             busStop.setDirection(jsonPropertiesBusStop.getString("SENTIDO"));
 
@@ -90,7 +92,8 @@ public class DataProcessUtil {
 
                             String nameLine = jsonFeature.getJSONObject("properties").getString("name");
                             busLine.setName(nameLine);
-                            busLine.setId(Integer.parseInt(nameLine.replace("Línea", "").trim()));
+//                            busLine.setId(Integer.parseInt(nameLine.replace("Línea", "").trim()));
+                            busLine.setId(lineNumber);
 
                             if (jsonFeature.getJSONObject("properties").has("description")) {
                                 String descriptionLine = jsonFeature.getJSONObject("properties").getString("description");
