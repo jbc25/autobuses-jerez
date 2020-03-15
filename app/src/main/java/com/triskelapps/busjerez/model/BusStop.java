@@ -11,12 +11,16 @@ import java.util.List;
 @Entity
 public class BusStop implements Serializable {
 
+    public static final int CODE_NOT_FOUND = -1;
+
     @PrimaryKey
     private @NonNull String name;
-    private int code = -1;
+    private int code;
     private int lineId;
     private String transfer;
     private String direction;
+
+    private String way;
 
     @Ignore
     private List<Double> coordinates;
@@ -67,5 +71,17 @@ public class BusStop implements Serializable {
 
     public void setLineId(int lineId) {
         this.lineId = lineId;
+    }
+
+    public boolean hasValidCode() {
+        return getCode() != CODE_NOT_FOUND;
+    }
+
+    public String getWay() {
+        return way;
+    }
+
+    public void setWay(String way) {
+        this.way = way;
     }
 }

@@ -17,6 +17,8 @@ import java.util.List;
 public class BusStopsAdapter extends RecyclerView.Adapter<BusStopsAdapter.ViewHolder> {
 
 
+    private static final String TAG = "BusStopsAdapter";
+
     private final int busLineColor;
     private int selectedPosition = -1;
     private List<BusStop> busStops;

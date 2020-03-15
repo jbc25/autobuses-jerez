@@ -1,17 +1,15 @@
 package com.triskelapps.busjerez.ui.main.bus_stops;
 
 import android.os.Bundle;
-import android.text.TextUtils;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import com.triskelapps.busjerez.App;
 import com.triskelapps.busjerez.R;
-import com.triskelapps.busjerez.base.BaseInteractor;
 import com.triskelapps.busjerez.base.BaseMainFragment;
 import com.triskelapps.busjerez.databinding.FragmentBusStopsBinding;
-import com.triskelapps.busjerez.interactor.TimetableInteractor;
 import com.triskelapps.busjerez.model.BusLine;
 import com.triskelapps.busjerez.model.BusStop;
 import com.triskelapps.busjerez.ui.main.MainActivity;
@@ -76,18 +74,27 @@ public class BusStopsFragment extends BaseMainFragment implements BusStopsAdapte
 
         ((MainActivity) getActivity()).selectBusStopMarker(position);
 
+        Log.i(TAG, "onBusStopClick: code: " + busStops.get(position).getCode() + ". Name: " + busStops.get(position).getName());
+
         showBusStopInfoView(busStops.get(position));
 
     }
 
 
     public void selectBusStop(BusStop busStop) {
+
+        if (!busStop.hasValidCode()) {
+            toast(R.string.error_code_bus_stop);
+            return;
+        }
+
+        Log.i(TAG, "onBusStopClick: code: " + busStop.getCode() + ". Name: " + busStop.getName());
+
         int position = -1;
         for (int i = 0; i < busStops.size(); i++) {
             BusStop busStopItem = busStops.get(i);
 
-            // TODO this should be replaced with bus stop code (pending review data)
-            if (TextUtils.equals(busStopItem.getName(), busStop.getName())) {
+            if (busStop.getCode() == busStopItem.getCode()) {
                 position = i;
                 break;
             }
@@ -107,7 +114,7 @@ public class BusStopsFragment extends BaseMainFragment implements BusStopsAdapte
         binding.tvDirectionTransfer.setText(getString(
                 R.string.bus_stop_direction_transfer_format, busStop.getDirection(), busStop.getTransfer()));
 
-        boolean isFavourite = App.getDB().busStopDao().getBusBusStop(busStop.getName()) != null;
+        boolean isFavourite = App.getDB().busStopDao().getBusBusStop(busStop.getCode()) != null;
         binding.imgFavourite.setSelected(isFavourite);
         
         busStopSelected = busStop;
@@ -146,7 +153,7 @@ public class BusStopsFragment extends BaseMainFragment implements BusStopsAdapte
 
     private void requestTimetable() {
 
-        if (busStopSelected.getCode() == -1) {
+        if (!busStopSelected.hasValidCode()) {
             toast(R.string.error_code_bus_stop);
         } else {
 

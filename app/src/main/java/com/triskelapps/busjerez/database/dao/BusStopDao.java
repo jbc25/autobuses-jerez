@@ -15,8 +15,8 @@ public interface BusStopDao extends BaseDao<BusStop> {
     @Query("SELECT * FROM busstop")
     List<BusStop> getAll();
 
-    @Query("SELECT * FROM busstop WHERE name = :name")
-    BusStop getBusBusStop(String name);
+    @Query("SELECT * FROM busstop WHERE code = :code")
+    BusStop getBusBusStop(int code);
 
 
 }

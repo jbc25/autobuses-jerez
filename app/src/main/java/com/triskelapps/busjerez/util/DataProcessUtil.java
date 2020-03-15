@@ -69,6 +69,7 @@ public class DataProcessUtil {
                                 }
                             } catch (Exception e) {
                                 // Some lines have no field COD. PARADA
+                                busStop.setCode(BusStop.CODE_NOT_FOUND);
                             }
 
                             busStop.setLineId(lineNumber);
@@ -94,7 +95,7 @@ public class DataProcessUtil {
                             busLine.setName(nameLine);
 //                            busLine.setId(Integer.parseInt(nameLine.replace("Línea", "").trim()));
                             busLine.setId(lineNumber);
-                            busLine.setFinalBusStop(getFinalBusStop(lineNumber));
+                            busLine.setFinalBusStopCode(getFinalBusStopCode(lineNumber));
 
                             if (jsonFeature.getJSONObject("properties").has("description")) {
                                 String descriptionLine = jsonFeature.getJSONObject("properties").getString("description");
@@ -129,63 +130,62 @@ public class DataProcessUtil {
         Log.i(TAG, "processData: BusLines data: " + busLinesData);
     }
 
-    // TODO This is not working. need bus stop code
-    private String getFinalBusStop(int lineNumber) {
+    private int getFinalBusStopCode(int lineNumber) {
         switch (lineNumber) {
             case 1:
-                return "San Telmo";
+                return 401; // San Telmo
 
             case 2:
-                return "Picadueña Baja";
+                return 334; // Picadueña baja
 
             case 3:
-                return "Las Torres";
+                return 261; // Las Torres
 
             case 4:
-                return "Hipercor";
+                return 206; // Hipercor
 
             case 5:
-                return "Guadalcacín";
+                return 195; // Guadalcacín
 
             case 6:
-                return "Avda. Europa";
+                return 60; // Avda. Europa
 
             case 7:
-                return "Estella";
+                return 172; // "Estella";
 
             case 8:
             case 9:
-                return null; // Circulares
+                return -1; // Circulares
 
             case 10:
-                return "Urgencias";
+                return 447; // Urgencias
 
             case 11:
-                return "La Marquesa";
+                return 243; // La Marquesa
 
             case 12:
-                return "Avda. Europa";
+                return 61; // Avda. Europa
 
             case 13:
-                return "Asisa";
+                return 41; // Asisa
 
             case 14:
-                return "Rotonda 6";
+                return 384; // Rotonda 6
 
             case 15:
-                return "El Portal";
+                return 157; // El Portal
 
             case 16:
-                return "Ortega y Gasset";
+                return 313; // Ortega y Gasset
 
             case 17:
-                return "Montealto";
+                return 301; // Montealto
 
             case 18:
-                return "Area Sur";
+                return 32; // Area Sur
 
             default:
-                return null;
+                return -1;
         }
     }
 }

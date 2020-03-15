@@ -8,7 +8,7 @@ import com.triskelapps.busjerez.database.dao.BusStopDao;
 import com.triskelapps.busjerez.model.BusStop;
 import com.triskelapps.busjerez.model.db.BusLineVisible;
 
-@Database(entities = {BusLineVisible.class, BusStop.class}, version = 2, exportSchema = false)
+@Database(entities = {BusLineVisible.class, BusStop.class}, version = 4, exportSchema = false)
 public abstract class MyDatabase extends RoomDatabase {
 
     public abstract BusLineVisibleDao busLineVisibleDao();

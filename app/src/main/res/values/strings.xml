@@ -39,7 +39,7 @@
     <string name="laboral">Laborable</string>
     <string name="saturday">Sábado</string>
     <string name="festive">Festivo</string>
-    <string name="bus_stop_direction_transfer_format">Dirección: %s\nTransbordos: %s</string>
+    <string name="bus_stop_direction_transfer_format">Sentido: %s\nTransbordos: %s</string>
     <string name="favourite_bus_stop_format">Línea %d. Parada: %s</string>
     <string name="favourites">Favoritos</string>
     <string name="favourite_bus_stops">Paradas favoritas</string>

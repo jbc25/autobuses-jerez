@@ -3,11 +3,13 @@ package com.triskelapps.busjerez.ui.main;
 
 import android.content.Context;
 import android.content.Intent;
+import android.util.Log;
 
 import com.google.android.libraries.places.api.model.Place;
 import com.triskelapps.busjerez.App;
 import com.triskelapps.busjerez.base.BasePresenter;
 import com.triskelapps.busjerez.model.BusLine;
+import com.triskelapps.busjerez.model.BusStop;
 import com.triskelapps.busjerez.model.db.BusLineVisible;
 
 import java.util.List;
@@ -56,6 +58,20 @@ public class MainPresenter extends BasePresenter {
     private void loadData() {
 
         busLines = App.getBusLinesData(context);
+
+        for (BusLine busLine : busLines) {
+            for (int i = 0; i < busLine.getBusStops().size(); i++) {
+                BusStop busStop = busLine.getBusStops().get(i);
+
+                for (int j = 0; j < busLine.getBusStops().size(); j++) {
+                    BusStop busStop1 = busLine.getBusStops().get(j);
+
+                    if (i != j && busStop.getCode() == busStop1.getCode()) {
+                        Log.i(TAG, "bus stop code repeated: " + busStop1.getCode() + ". Línea " + busLine.getId());
+                    }
+                }
+            }
+        }
 
         view.loadBusLines(busLines);
     }
