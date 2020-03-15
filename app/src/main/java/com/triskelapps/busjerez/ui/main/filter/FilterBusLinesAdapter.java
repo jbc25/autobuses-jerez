@@ -94,6 +94,8 @@ public class FilterBusLinesAdapter extends RecyclerView.Adapter<FilterBusLinesAd
                 if (itemClickListener != null) {
                     itemClickListener.onBusStopButtonClick(getAdapterPosition());
                     itemClickListener.onBusLineCheckedChanged(getAdapterPosition(), true);
+                    busLines.get(getAdapterPosition()).setVisible(true);
+                    notifyDataSetChanged();
                 }
             });
 

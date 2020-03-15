@@ -13,6 +13,8 @@ public class BusLine implements Serializable {
     private List<BusStop> busStops;
     private List<List<Double>> path = new ArrayList<>();
 
+    private String finalBusStop;
+
     private transient boolean visible = true;
 
     public String getName() {
@@ -76,5 +78,13 @@ public class BusLine implements Serializable {
 
     public void setColor(int color) {
         this.color = color;
+    }
+
+    public String getFinalBusStop() {
+        return finalBusStop;
+    }
+
+    public void setFinalBusStop(String finalBusStop) {
+        this.finalBusStop = finalBusStop;
     }
 }

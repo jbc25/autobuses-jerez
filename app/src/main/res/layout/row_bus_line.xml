@@ -26,6 +26,7 @@
         android:shadowDx="1.5"
         android:shadowDy="1.3"
         android:shadowRadius="2"
+        android:textSize="17sp"
         android:layout_below="@+id/check_bus_line"/>
 
     <androidx.appcompat.widget.AppCompatImageView

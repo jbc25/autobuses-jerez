@@ -94,6 +94,7 @@ public class DataProcessUtil {
                             busLine.setName(nameLine);
 //                            busLine.setId(Integer.parseInt(nameLine.replace("Línea", "").trim()));
                             busLine.setId(lineNumber);
+                            busLine.setFinalBusStop(getFinalBusStop(lineNumber));
 
                             if (jsonFeature.getJSONObject("properties").has("description")) {
                                 String descriptionLine = jsonFeature.getJSONObject("properties").getString("description");
@@ -126,5 +127,65 @@ public class DataProcessUtil {
 
         String busLinesData = new Gson().toJson(busLines);
         Log.i(TAG, "processData: BusLines data: " + busLinesData);
+    }
+
+    // TODO This is not working. need bus stop code
+    private String getFinalBusStop(int lineNumber) {
+        switch (lineNumber) {
+            case 1:
+                return "San Telmo";
+
+            case 2:
+                return "Picadueña Baja";
+
+            case 3:
+                return "Las Torres";
+
+            case 4:
+                return "Hipercor";
+
+            case 5:
+                return "Guadalcacín";
+
+            case 6:
+                return "Avda. Europa";
+
+            case 7:
+                return "Estella";
+
+            case 8:
+            case 9:
+                return null; // Circulares
+
+            case 10:
+                return "Urgencias";
+
+            case 11:
+                return "La Marquesa";
+
+            case 12:
+                return "Avda. Europa";
+
+            case 13:
+                return "Asisa";
+
+            case 14:
+                return "Rotonda 6";
+
+            case 15:
+                return "El Portal";
+
+            case 16:
+                return "Ortega y Gasset";
+
+            case 17:
+                return "Montealto";
+
+            case 18:
+                return "Area Sur";
+
+            default:
+                return null;
+        }
     }
 }

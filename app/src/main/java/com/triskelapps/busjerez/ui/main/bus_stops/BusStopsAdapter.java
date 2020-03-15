@@ -47,6 +47,8 @@ public class BusStopsAdapter extends RecyclerView.Adapter<BusStopsAdapter.ViewHo
 
         holder.binding.tvName.setText(busStop.getName());
         holder.binding.imgBusStop.setColorFilter(busLineColor);
+        holder.binding.viewPointBusStop.setColor(busLineColor);
+        holder.binding.viewPointBusStop.configureStartEndPoint(position, busStops.size());
         holder.binding.getRoot().setSelected(selectedPosition == position);
 
     }

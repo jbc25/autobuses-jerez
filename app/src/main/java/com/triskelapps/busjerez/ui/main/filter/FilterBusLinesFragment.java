@@ -50,6 +50,7 @@ public class FilterBusLinesFragment extends BaseMainFragment implements FilterBu
 
     @Override
     public void onBusLineCheckedChanged(int position, boolean checked) {
+        busLines.get(position).setVisible(checked);
         getMainPresenter().onBusLineCheckedChanged(position, checked);
     }
 

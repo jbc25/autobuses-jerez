@@ -93,6 +93,10 @@ public class App extends Application {
             int colorId = context.getResources().getIdentifier("line" + busLine.getId(), "color", context.getPackageName());
             busLine.setColor(ContextCompat.getColor(context, colorId));
 
+//            if (busLine.getId() == 1) {
+//                busLine.set
+//            }
+
             BusLineVisible busLineVisible = db.busLineVisibleDao().getBusLineVisible(busLine.getId());
             busLine.setVisible(busLineVisible.isVisible());
         }
