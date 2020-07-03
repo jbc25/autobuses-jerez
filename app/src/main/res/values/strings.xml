@@ -43,4 +43,6 @@
     <string name="favourite_bus_stop_format">Línea %d. Parada: %s</string>
     <string name="favourites">Favoritos</string>
     <string name="favourite_bus_stops">Paradas favoritas</string>
+    <string name="about_app">Sobre la aplicación</string>
+    <string name="news">Noticias</string>
 </resources>

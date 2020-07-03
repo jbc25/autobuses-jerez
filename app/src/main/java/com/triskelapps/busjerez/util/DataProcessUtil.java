@@ -70,6 +70,7 @@ public class DataProcessUtil {
                             } catch (Exception e) {
                                 // Some lines have no field COD. PARADA
                                 busStop.setCode(BusStop.CODE_NOT_FOUND);
+                                Log.i(TAG, "processData: Code not found. Línea: " + lineNumber + ", parada: " + busStop.getName());
                             }
 
                             busStop.setLineId(lineNumber);

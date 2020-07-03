@@ -2,7 +2,12 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
+        android:id="@+id/nav_news"
+        android:icon="@mipmap/ic_news"
+        android:title="@string/news" />
+
+    <item
         android:id="@+id/nav_about"
         android:icon="@mipmap/ic_bus_marker_4"
-        android:title="asdfadfa" />
+        android:title="@string/about_app" />
 </menu>

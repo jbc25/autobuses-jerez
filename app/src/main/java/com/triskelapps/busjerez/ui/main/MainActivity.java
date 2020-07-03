@@ -1,6 +1,7 @@
 package com.triskelapps.busjerez.ui.main;
 
 import android.Manifest;
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Gravity;
@@ -28,12 +29,14 @@ import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.maps.model.Polyline;
 import com.google.android.gms.maps.model.PolylineOptions;
 import com.google.android.libraries.places.api.model.Place;
+import com.google.android.material.navigation.NavigationView;
 import com.karumi.dexter.Dexter;
 import com.karumi.dexter.PermissionToken;
 import com.karumi.dexter.listener.PermissionDeniedResponse;
 import com.karumi.dexter.listener.PermissionGrantedResponse;
 import com.karumi.dexter.listener.PermissionRequest;
 import com.karumi.dexter.listener.single.PermissionListener;
+import com.triskelapps.busjerez.BuildConfig;
 import com.triskelapps.busjerez.R;
 import com.triskelapps.busjerez.base.BaseActivity;
 import com.triskelapps.busjerez.databinding.ActivityMainBinding;
@@ -43,13 +46,14 @@ import com.triskelapps.busjerez.ui.favourites.FavouritesActivity;
 import com.triskelapps.busjerez.ui.main.address.AddressFragment;
 import com.triskelapps.busjerez.ui.main.bus_stops.BusStopsFragment;
 import com.triskelapps.busjerez.ui.main.filter.FilterBusLinesFragment;
+import com.triskelapps.busjerez.ui.news.NewsActivity;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import es.dmoral.toasty.Toasty;
 
-public class MainActivity extends BaseActivity implements OnMapReadyCallback, MainView, GoogleMap.OnPolylineClickListener, GoogleMap.OnMarkerClickListener {
+public class MainActivity extends BaseActivity implements OnMapReadyCallback, MainView, GoogleMap.OnPolylineClickListener, GoogleMap.OnMarkerClickListener, NavigationView.OnNavigationItemSelectedListener {
 
     public final LatLng JEREZ_NORTH_EAST = new LatLng(36.707457, -6.093387);
     public final LatLng JEREZ_SOUTH_WEST = new LatLng(36.663924, -6.160751);
@@ -79,6 +83,8 @@ public class MainActivity extends BaseActivity implements OnMapReadyCallback, Ma
         configureDrawer();
         configureToolbarBackArrowBehaviour();
 
+        binding.navView.setNavigationItemSelectedListener(this);
+
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
@@ -90,12 +96,14 @@ public class MainActivity extends BaseActivity implements OnMapReadyCallback, Ma
 
         presenter.onCreate();
 
-        addressFragment = new AddressFragment();
+        binding.tvAppVersion.setText(BuildConfig.VERSION_NAME);
 
-        getSupportFragmentManager().beginTransaction()
-                .replace(R.id.frame_bottom, addressFragment)
-//                .addToBackStack(null)
-                .commit();
+        addressFragment = (AddressFragment) getSupportFragmentManager().findFragmentById(R.id.fragment_address);
+
+//        getSupportFragmentManager().beginTransaction()
+//                .replace(R.id.frame_bottom, addressFragment)
+////                .addToBackStack(null)
+//                .commit();
 
     }
 
@@ -177,6 +185,44 @@ public class MainActivity extends BaseActivity implements OnMapReadyCallback, Ma
     }
 
 
+    private void checkLocationPermission() {
+
+        Dexter.withActivity(this)
+                .withPermission(Manifest.permission.ACCESS_FINE_LOCATION)
+                .withListener(new PermissionListener() {
+                    @Override
+                    public void onPermissionGranted(PermissionGrantedResponse response) {
+                        configureSelfLocationMap();
+                    }
+
+                    @Override
+                    public void onPermissionDenied(PermissionDeniedResponse response) {
+                        Toasty.error(MainActivity.this, getString(R.string.permission_denied)).show();
+                        finish();
+                    }
+
+                    @Override
+                    public void onPermissionRationaleShouldBeShown(PermissionRequest permission, PermissionToken token) {
+                        new AlertDialog.Builder(MainActivity.this)
+                                .setTitle(R.string.permission_needed)
+                                .setMessage(R.string.location_permission_message)
+                                .setPositiveButton(R.string.accept, (dialog, which) -> token.continuePermissionRequest())
+                                .setNegativeButton(R.string.cancel, (dialog, which) -> token.cancelPermissionRequest())
+                                .show();
+                    }
+                }).check();
+    }
+
+
+    @SuppressLint("MissingPermission")
+    private void configureSelfLocationMap() {
+        map.setMyLocationEnabled(true);
+    }
+
+
+    // INTERACTIONS
+
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
@@ -211,7 +257,7 @@ public class MainActivity extends BaseActivity implements OnMapReadyCallback, Ma
             mapDataController.unselectBusLine();
             getSupportFragmentManager().popBackStack();
             LatLngBounds latLngBoundsJerez = LatLngBounds.builder().include(JEREZ_NORTH_EAST).include(JEREZ_SOUTH_WEST).build();
-            animateMapToBounds(latLngBoundsJerez);
+//            animateMapToBounds(latLngBoundsJerez);
         } else if (getSupportFragmentManager().getBackStackEntryCount() > 0) {
             getSupportFragmentManager().popBackStack();
         } else if (addressFragment != null && markerDestination != null) {
@@ -235,40 +281,16 @@ public class MainActivity extends BaseActivity implements OnMapReadyCallback, Ma
         return binding.drawerLayout.isDrawerOpen(Gravity.LEFT) || binding.drawerLayout.isDrawerOpen(Gravity.RIGHT);
     }
 
-    private void checkLocationPermission() {
-
-        Dexter.withActivity(this)
-                .withPermission(Manifest.permission.ACCESS_FINE_LOCATION)
-                .withListener(new PermissionListener() {
-                    @Override
-                    public void onPermissionGranted(PermissionGrantedResponse response) {
-                        configureSelfLocationMap();
-                    }
-
-                    @Override
-                    public void onPermissionDenied(PermissionDeniedResponse response) {
-                        Toasty.error(MainActivity.this, getString(R.string.permission_denied)).show();
-                        finish();
-                    }
-
-                    @Override
-                    public void onPermissionRationaleShouldBeShown(PermissionRequest permission, PermissionToken token) {
-                        new AlertDialog.Builder(MainActivity.this)
-                                .setTitle(R.string.permission_needed)
-                                .setMessage(R.string.location_permission_message)
-                                .setPositiveButton(R.string.accept, (dialog, which) -> token.continuePermissionRequest())
-                                .setNegativeButton(R.string.cancel, (dialog, which) -> token.cancelPermissionRequest())
-                                .show();
-                    }
-                }).check();
+    @Override
+    public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+        switch (menuItem.getItemId()) {
+            case R.id.nav_news:
+                startActivity(new Intent(this, NewsActivity.class));
+                break;
+        }
+        closeDrawerPanels();
+        return false;
     }
-
-    private void configureSelfLocationMap() {
-        map.setMyLocationEnabled(true);
-    }
-
-
-    // INTERACTIONS
 
     @Override
     public void onPolylineClick(Polyline polyline) {
@@ -382,7 +404,7 @@ public class MainActivity extends BaseActivity implements OnMapReadyCallback, Ma
 
         mapDataController.selectBusLine(busLine.getId());
         LatLngBounds lineBounds = mapDataController.getLineBounds(busLine.getId());
-        animateMapToBounds(lineBounds);
+//        animateMapToBounds(lineBounds);
     }
 
     @Override
