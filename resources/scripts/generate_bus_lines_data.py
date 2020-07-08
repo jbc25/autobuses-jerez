@@ -1,4 +1,5 @@
 import json
+import requests
 
 class BusLine:
 	id = 0
@@ -14,7 +15,7 @@ class BusLine:
 class BusStop:
 	name = ''
 	code = 0
-	line_id = 0
+	lineId = 0
 	transfer = ''
 	direction = ''
 	way = ''
@@ -46,20 +47,14 @@ final_bus_stop_code_switcher = {
 bus_lines = []
 all_bus_stops = {} # Algunas paradas no tienen código. Este diccionario se crea dinánicamente para asignar el código de otras lineas
 pending_bus_stop_codes = {
-	'Estadio Chapín': 484,
-	'Los Pinos': 486,
-	'San Marino': 488,
-	'Carrefour Norte': 105,
-	'Arrumbadores': 39,
-	'Canal Sur - Angustias': 130,
-	'Azucarera': 65,
-	'Hipercor - Camino de Espera': 208,
-	'AV. de la Paz':55,
+	'L12-Estadio Chapín': 484,
+	'L12-Los Pinos': 486,
+	'L12-San Marino': 488,
+	'L12-Carrefour Norte': 105,
+	'L12-Arrumbadores': 39,
+	'L14-Canal Sur - Angustias': 130,
+	'L15-AV. de la Paz':55,
 
-}
-
-change_bus_stop = {
-	'L15-Pozoalbero': 'Azucarera'
 }
 
 fake_bus_stops = [
@@ -67,15 +62,34 @@ fake_bus_stops = [
 	'L15-Ortega y Gasset',
 	'L15-San Juan Bautista',
 	'L15-Diego Fernández Herrera',
+	'L15-Hipercor - Camino de Espera',
+	'L15-Pozoalbero',
 
 
 ]
+
+def download_timetable(line_number, bus_stop_code, bus_stop_name):
+
+	print(f'Recibiendo horarios linea{line_number}-parada{bus_stop_code}-{bus_stop_name.replace("/","")}')
+
+	payload = {'valorLinea': line_number, 'valorCaja1': bus_stop_code}
+	r = requests.post("https://www.jerez.es/index.php?id=listar_b", data=payload)
+	html_str = r.text
+
+	file_out = open(f'timetables/linea{line_number}-parada{bus_stop_code}-{bus_stop_name.replace("/","")}', 'w')
+	file_out.write(html_str)
+	file_out.close()
+
+	print('Horarios guardados')
+
+
 
 for line_number in range(1, 19):
 
 	print(f'Procesando linea {line_number}')
 
 	bus_line = BusLine()
+	bus_line.path = []
 
 	file_geojson = open(f'geojson/linea{line_number}.geojson', 'r+')
 	geojson_text = file_geojson.read()
@@ -106,12 +120,10 @@ for line_number in range(1, 19):
 			if bus_stop_name_and_line_number in fake_bus_stops:
 				continue
 
-			if bus_stop_name_and_line_number in change_bus_stop:
-				bus_stop_name = change_bus_stop[bus_stop_name_and_line_number]
 
 			bus_stop = BusStop()
 			bus_stop.name = bus_stop_name
-			bus_stop.line_id = line_number
+			bus_stop.lineId = line_number
 
 			# if 'Angustias' in bus_stop_name:
 			#	print(f'Angustias encontrado. nombre: {bus_stop_name} Linea: {line_number}')
@@ -124,14 +136,17 @@ for line_number in range(1, 19):
 				if bus_stop_name in all_bus_stops:
 					bus_stop.code = all_bus_stops[bus_stop_name]
 
-				elif bus_stop_name in pending_bus_stop_codes:
-					bus_stop.code = pending_bus_stop_codes[bus_stop_name]
+				elif bus_stop_name_and_line_number in pending_bus_stop_codes:
+					bus_stop.code = pending_bus_stop_codes[bus_stop_name_and_line_number]
 					# print(f'Code in DICTIONARY. Línea: {line_number}. parada: {bus_stop_name}')
 
 				else:
 					bus_stop.code = -1
 					print(f'Code not found. Línea: {line_number}. parada: {bus_stop_name}. index: {index}')
 				
+
+			if line_number >= 5:
+				download_timetable(line_number, bus_stop.code, bus_stop_name)
 
 			bus_stop.transfer = properties_bus_stop['TRANSBORDO'].strip()
 			bus_stop.direction = properties_bus_stop['SENTIDO'].strip()
@@ -150,17 +165,20 @@ for line_number in range(1, 19):
 
 			if 'description' in properties_line:
 				bus_line.description = properties_line['description'].strip()
-			else:
-				print(f'Linea {line_number}, un LineString no tiene descripción')
+			#else:
+			#	print(f'Linea {line_number}, un LineString no tiene descripción')
 
 			coordinates_list = geometry['coordinates']
 
-			print(f'coordinates_list size: {len(coordinates_list)}')
 
-			bus_line.path = []
+			if bus_line.path:
+				print(f'Mas de un LineString en linea {line_number}. Se añadiran al anterior')
+
+			print(f'coordinates_list size: {len(coordinates_list)}')
 
 			for coordinates in coordinates_list:
 				bus_line.path.append([float(coordinates[1]), float(coordinates[0])])
+
 
 			
 

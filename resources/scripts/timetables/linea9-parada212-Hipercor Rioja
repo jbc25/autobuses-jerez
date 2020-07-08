@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr" class="no-js">
+<head>
+<base href="https://www.jerez.es/" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+<meta charset="utf-8" />
+<!-- 
+	Based on the TYPO3 Bootstrap Package by Benjamin Kott - http://www.bk2k.info
+
+	This website is powered by TYPO3 - inspiring people to share!
+	TYPO3 is a free open source Content Management Framework initially created by Kasper Skaarhoj and licensed under GNU/GPL.
+	TYPO3 is copyright 1998-2017 of Kasper Skaarhoj. Extensions are copyright of their respective owners.
+	Information and contribution at http://typo3.org/
+-->
+
+
+<link rel="shortcut icon" href="https://www.jerez.es/favicon.ico" type="image/x-ms-bmp; charset=binary" />
+<link rel="icon" href="https://www.jerez.es/favicon.ico" type="image/x-ms-bmp; charset=binary" />
+<title>listar_b: Ayuntamiento de Jerez - Página oficial</title>
+<meta name="generator" content="TYPO3 CMS" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="index,follow" />
+<meta name="google" content="notranslate" />
+<meta name="apple-mobile-web-app-capable" content="no" />
+
+
+<link rel="stylesheet" type="text/css" href="https://www.jerez.es/typo3temp/compressor/merged-9db878c020c7000a8abc6570a3b46b0e-609598856c08626eae2f713cf0d80df2.css?1590133124" media="all">
+
+
+
+<script src="https://www.jerez.es/uploads/tx_t3jquery/jquery-1.11.x-1.10.x.js" type="text/javascript"></script>
+<script src="https://www.jerez.es/typo3temp/compressor/modernizr-2.8.3.min-192c7d8c0f53ed8dd0b28030810d60f1.js?1543498771" type="text/javascript"></script>
+<script src="https://www.jerez.es/typo3temp/compressor/windowsphone-viewportfix.min-7e7826ff12da7830f4dc6f0ee57ca793.js?1543498771" type="text/javascript"></script>
+<script src="https://www.jerez.es/typo3temp/compressor/bootstrap.min-846ff729a6e3207522df7baa51b7946a.js?1543498771" type="text/javascript"></script>
+<script src="https://www.jerez.es/typo3temp/compressor/jquery.responsiveimages.min-c57a57ac334057324de05ae70ee44f7f.js?1543498771" type="text/javascript"></script>
+<script src="https://www.jerez.es/typo3temp/compressor/main.min-b8139bf40d28da3747a38213c5880a3b.js?1543498771" type="text/javascript"></script>
+<!--[if IE 8 ]><script src="https://www.jerez.es/typo3conf/ext/bootstrap_package/Resources/Public/JavaScript/Libs/respond.min.js?1541773588" type="text/javascript"></script><![endif]-->
+
+<script src="https://www.jerez.es/typo3temp/compressor/jquery.smartmenus.min-ccd32f58c4733c30e1aa0a24f8a186b2.js?1543498771" type="text/javascript"></script>
+<script src="https://www.jerez.es/typo3temp/compressor/jquery.smartmenus.bootstrap.min-b13a46e96504f43fff5bf81c61412c8b.js?1543498771" type="text/javascript"></script>
+
+<script type="text/javascript">
+/*<![CDATA[*/
+/*_scriptCode*/
+
+			// decrypt helper function
+		function decryptCharcode(n,start,end,offset) {
+			n = n + offset;
+			if (offset > 0 && n > end) {
+				n = start + (n - end - 1);
+			} else if (offset < 0 && n < start) {
+				n = end - (start - n - 1);
+			}
+			return String.fromCharCode(n);
+		}
+			// decrypt string
+		function decryptString(enc,offset) {
+			var dec = "";
+			var len = enc.length;
+			for(var i=0; i < len; i++) {
+				var n = enc.charCodeAt(i);
+				if (n >= 0x2B && n <= 0x3A) {
+					dec += decryptCharcode(n,0x2B,0x3A,offset);	// 0-9 . , - + / :
+				} else if (n >= 0x40 && n <= 0x5A) {
+					dec += decryptCharcode(n,0x40,0x5A,offset);	// A-Z @
+				} else if (n >= 0x61 && n <= 0x7A) {
+					dec += decryptCharcode(n,0x61,0x7A,offset);	// a-z
+				} else {
+					dec += enc.charAt(i);
+				}
+			}
+			return dec;
+		}
+			// decrypt spam-protected emails
+		function linkTo_UnCryptMailto(s) {
+			location.href = decryptString(s,3);
+		}
+		
+
+/*]]>*/
+</script>
+
+
+<H1 style="display: none"><title>listar_b: Ayuntamiento de Jerez - Página oficial</title></H1>
+
+
+</head>
+<body>
+
+<div class="tx-pageparams-pi1">
+		<!-- index.php?
+&id=18991
+&id=listar_b
+ -->
+	</div>
+	<div class="body-bg">
+	<a class="sr-only sr-only-focusable" href="https://www.jerez.es/webs_municipales/autobuses_urbanos/listar/listar_b/#content">
+		Saltar al contenido principal
+	</a>
+	
+	<!--TYPO3SEARCH_begin-->
+	<div id="content" class="main-section">
+		
+
+	
+	<div class="container">
+		<div id="c191856"><div style='width: 200px; border: 1px solid black; float: left; padding: 10px; margin: 10px;'><STRONG>LABORABLES</STRONG><hr /><BR /><div style='width: 100px; float: left;'>07:37<br />08:07<br />08:35<br />09:05<br />09:27<br />09:58<br />10:28<br />11:00<br />11:26<br />12:01<br />12:32<br />13:06<br />13:32<br />14:04<br />14:35<br />15:06<br /></div><div style='width: 100px; float: left;'>15:30<br />15:58<br />16:28<br />16:57<br />17:20<br />17:49<br />18:15<br />18:45<br />19:13<br />19:44<br />20:17<br />20:43<br />21:13<br />21:39<br />22:15<br />22:59<br /></div><div style='width: 100px; float: left;'></div></div><div style='width: 200px; border: 1px solid black; float: left; padding: 10px; margin: 10px;'><STRONG>S&Aacute;BADOS</STRONG><hr /><BR /><div style='width: 100px; float: left;'>08:07<br />08:32<br />09:00<br />09:30<br />09:57<br />10:23<br />10:53<br />11:25<br />11:56<br />12:26<br />12:57<br />13:31<br />14:02<br />14:29<br />15:31<br /></div><div style='width: 100px; float: left;'>15:59<br />16:25<br />16:54<br />17:22<br />17:49<br />18:13<br />18:41<br />19:10<br />19:42<br />20:08<br />20:43<br />21:11<br />21:42<br />22:03<br />22:59<br /></div><div style='width: 100px; float: left;'></div></div><div style='width: 200px; border: 1px solid black; float: left; padding: 10px; margin: 10px;'><STRONG>DOMINGOS Y FESTIVOS</STRONG><hr /><BR /><div style='width: 100px; float: left;'>08:29<br />09:10<br />09:46<br />10:15<br />10:57<br />11:39<br />12:06<br />12:57<br />13:41<br />14:08<br />15:01<br />15:45<br />16:14<br />17:02<br />17:43<br /></div><div style='width: 100px; float: left;'>18:10<br />18:55<br />19:40<br />20:09<br />20:54<br />21:40<br /></div></div><div style='clear: both;'></div>
+<br />
+
+
+
+
+
+</div>
+	</div>
+
+
+		
+	</div>
+	<!--TYPO3SEARCH_end-->
+	
+</div>
+
+  <script type="text/javascript">
+    window.cookieconsent_options = {
+      expiryDays: 365,
+      
+        learnMore: 'Más información.',
+      
+      dismiss: 'Acepto.',
+      message: 'Utilizamos cookies propias y de terceros para mejorar nuestros servicios. Si continua navegando, consideramos que acepta su uso.',
+      
+        link: 'https://www.jerez.es/politica_de_cookies/',
+      
+      
+    };
+  </script>
+<script src="https://www.jerez.es/typo3temp/compressor/jquery.magnific-popup.min-74ab4e9498fe1682f1c7bd6c1b5013f7.js?1543498771" type="text/javascript"></script>
+<script src="https://www.jerez.es/typo3temp/compressor/jquery.filter-isImageFile.min-27d871eb8236ef172ac3f3e78cc92b1a.js?1543498771" type="text/javascript"></script>
+<script src="https://www.jerez.es/typo3temp/compressor/jquery.mfpInlineFunctions.min-64491804b56c8927a0d5e59b0e529d3e.js?1543498771" type="text/javascript"></script>
+
+<script src="https://www.jerez.es/typo3temp/compressor/cookieconsent-91d8b857cc360a22c43f0f8c48c05a3b.js?1545220080" type="text/javascript"></script>
+
+<script type="text/javascript">
+/*<![CDATA[*/
+/*TS_inlineFooter*/
+
+;(function($) {
+	$('.csc-textpic-imagewrap,.image-wrap').each(function() {
+		$(this).magnificPopup({
+			delegate: 'a:isImageFile',
+			tClose: 'Close (Esc)',
+			type: 'image',
+			tLoading: 'Loading image #%curr%...',
+			mainClass: 'mfp-img-mobile',
+			gallery: {
+				enabled: 1,
+				preload: [1,2],
+				navigateByImgClick: 1,
+				arrowMarkup: '<button title="%title%" type="button" class="mfp-arrow mfp-arrow-%dir%"></button>',
+				tPrev: 'Previous (Left arrow key)',
+				tNext: 'Next (Right arrow key)',
+				tCounter: '%curr% of %total%'
+			},
+			image: {
+				cursor: 'mfp-zoom-out-cur',
+				titleSrc: 'title',
+				verticalGap: 88,
+				verticalFit: 1,
+				tError: '<a href="%url%">The image</a> could not be loaded.'
+			},
+			removalDelay: 0
+		});
+	});
+})(window.jQuery || window.Zepto);
+;(function($) {
+	$('p').each(function() {
+		$(this).magnificPopup({
+			delegate: 'a.mfp-for-rte',
+			tClose: 'Close (Esc)',
+			type: 'image',
+			tLoading: 'Loading image #%curr%...',
+			mainClass: 'mfp-img-mobile',
+			gallery: {
+				enabled: 1,
+				preload: [1,2],
+				navigateByImgClick: 1,
+				arrowMarkup: '<button title="%title%" type="button" class="mfp-arrow mfp-arrow-%dir%"></button>',
+				tPrev: 'Previous (Left arrow key)',
+				tNext: 'Next (Right arrow key)',
+				tCounter: '%curr% of %total%'
+			},
+			image: {
+				cursor: 'mfp-zoom-out-cur',
+				titleSrc: 'title',
+				verticalGap: 88,
+				verticalFit: 1,
+				tError: '<a href="%url%">The image</a> could not be loaded.'
+			},
+			removalDelay: 0
+		});
+	});
+})(window.jQuery || window.Zepto);
+
+/*]]>*/
+</script>
+
+
+
+<script src="https://ssl.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-39851085-1";
+urchinTracker();
+</script>
+</body>
+</html>
