@@ -9,7 +9,7 @@ import java.util.List;
 public interface MainView extends BaseView {
     void loadBusLines(List<BusLine> busLines);
 
-    void showBusLineInfo(BusLine busLine);
+    void showBusLineInfo(BusLine busLine, boolean animateToBounds);
 
     void setDestinationMarker(Place place);
 

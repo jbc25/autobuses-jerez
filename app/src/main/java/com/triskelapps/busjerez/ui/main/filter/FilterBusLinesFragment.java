@@ -56,6 +56,6 @@ public class FilterBusLinesFragment extends BaseMainFragment implements FilterBu
 
     @Override
     public void onBusStopButtonClick(int position) {
-        getMainPresenter().onBusLinePathClick(busLines.get(position).getId());
+        getMainPresenter().onBusLinePathClick(busLines.get(position).getId(), true);
     }
 }

@@ -2,7 +2,9 @@ package com.triskelapps.busjerez.ui.main;
 
 import android.Manifest;
 import android.annotation.SuppressLint;
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.Menu;
@@ -250,10 +252,10 @@ public class MainActivity extends BaseActivity implements OnMapReadyCallback, Ma
     public void onBackPressed() {
         if (hasDrawerPanelOpened()) {
             closeDrawerPanels();
-        } else if(busStopsFragment != null && busStopsFragment.hasBusStopSelected()){
+        } else if (busStopsFragment != null && busStopsFragment.hasBusStopSelected()) {
             busStopsFragment.clearBusStopSelection();
             map.getUiSettings().setMapToolbarEnabled(false);
-        } else if(mapDataController.hasBusLineSelected()) {
+        } else if (mapDataController.hasBusLineSelected()) {
             mapDataController.unselectBusLine();
             getSupportFragmentManager().popBackStack();
             LatLngBounds latLngBoundsJerez = LatLngBounds.builder().include(JEREZ_NORTH_EAST).include(JEREZ_SOUTH_WEST).build();
@@ -287,16 +289,35 @@ public class MainActivity extends BaseActivity implements OnMapReadyCallback, Ma
             case R.id.nav_news:
                 startActivity(new Intent(this, NewsActivity.class));
                 break;
+
+            case R.id.nav_about:
+                showAboutDialog();
+                break;
         }
         closeDrawerPanels();
         return false;
+    }
+
+    private void showAboutDialog() {
+        new AlertDialog.Builder(this)
+                .setTitle(R.string.app_info)
+                .setMessage(R.string.app_info_text)
+                .setPositiveButton(R.string.contact, (dialog, which) -> {
+                    Intent intent = new Intent(Intent.ACTION_SENDTO, Uri.fromParts(
+                        "mailto","julio@triskelapps.com", null));
+                    intent.putExtra(Intent.EXTRA_SUBJECT, getString(R.string.contact_email_subject));
+//                    intent.putExtra(Intent.EXTRA_TEXT, "I'm email body.");
+                    startActivity(Intent.createChooser(intent, getString(R.string.send_email)));
+                })
+                .setNegativeButton(R.string.back, null)
+                .show();
     }
 
     @Override
     public void onPolylineClick(Polyline polyline) {
 
         int lineId = (int) polyline.getTag();
-        presenter.onBusLinePathClick(lineId);
+        presenter.onBusLinePathClick(lineId, false);
 
     }
 
@@ -385,7 +406,7 @@ public class MainActivity extends BaseActivity implements OnMapReadyCallback, Ma
     }
 
     @Override
-    public void showBusLineInfo(BusLine busLine) {
+    public void showBusLineInfo(BusLine busLine, boolean animateToBounds) {
 
 
         if (binding.drawerLayout.isDrawerOpen(Gravity.RIGHT)) {
@@ -404,7 +425,9 @@ public class MainActivity extends BaseActivity implements OnMapReadyCallback, Ma
 
         mapDataController.selectBusLine(busLine.getId());
         LatLngBounds lineBounds = mapDataController.getLineBounds(busLine.getId());
-//        animateMapToBounds(lineBounds);
+        if (animateToBounds) {
+            animateMapToBounds(lineBounds);
+        }
     }
 
     @Override

@@ -2,6 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:paddingTop="10dp"
     android:paddingBottom="10dp">
@@ -13,19 +14,12 @@
         android:textStyle="bold"
         android:textSize="20sp"
         android:checked="true"
-        android:shadowColor="@color/black"
-        android:shadowDx="2"
-        android:shadowDy="2"
-        android:shadowRadius="3"/>
+        app:backgroundTint="@color/colorPrimary"/>
 
     <TextView
         android:id="@+id/tv_line_description"
         style="@style/TextBase"
         android:layout_marginTop="5dp"
-        android:shadowColor="@color/black"
-        android:shadowDx="1.5"
-        android:shadowDy="1.3"
-        android:shadowRadius="2"
         android:textSize="17sp"
         android:layout_below="@+id/check_bus_line"/>
 
@@ -35,8 +29,15 @@
         android:layout_height="40dp"
         android:adjustViewBounds="true"
         android:paddingBottom="3dp"
-        android:src="@mipmap/ic_bus_stop"
+        app:srcCompat="@mipmap/ic_bus_stop"
+        app:tint="@color/colorPrimary"
         android:background="@drawable/background_pressed_common"
         android:layout_alignParentRight="true"/>
+
+    <View
+        android:id="@+id/view_bg_color"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.5"/>
 
 </RelativeLayout>

@@ -11,7 +11,6 @@ import com.triskelapps.busjerez.base.BasePresenter;
 import com.triskelapps.busjerez.model.BusLine;
 import com.triskelapps.busjerez.model.BusStop;
 import com.triskelapps.busjerez.model.db.BusLineVisible;
-import com.triskelapps.busjerez.util.DataProcessUtil;
 
 import java.util.List;
 
@@ -77,10 +76,10 @@ public class MainPresenter extends BasePresenter {
         view.loadBusLines(busLines);
     }
 
-    public void onBusLinePathClick(int lineId) {
+    public void onBusLinePathClick(int lineId, boolean animateToBounds) {
         for (BusLine busLine : busLines) {
             if (busLine.getId() == lineId) {
-                view.showBusLineInfo(busLine);
+                view.showBusLineInfo(busLine, animateToBounds);
                 return;
             }
         }

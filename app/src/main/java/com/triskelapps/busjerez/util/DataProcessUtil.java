@@ -68,7 +68,7 @@ public class DataProcessUtil {
                                     busStop.setCode((int) jsonPropertiesBusStop.getDouble("COD.PARADA"));
                                 }
                             } catch (Exception e) {
-                                // Some lines have no field COD. PARADA
+                                // Some lines have no field COD.PARADA
                                 busStop.setCode(BusStop.CODE_NOT_FOUND);
                                 Log.i(TAG, "processData: Code not found. Línea: " + lineNumber + ", parada: " + busStop.getName());
                             }
@@ -87,7 +87,6 @@ public class DataProcessUtil {
                             busStop.setCoordinates(coordinates);
                             busStops.add(busStop);
 
-                            busLine.setBusStops(busStops);
                             break;
 
                         case "LineString":
@@ -119,6 +118,7 @@ public class DataProcessUtil {
                     throw new RuntimeException("No description field for " + busLine.getName());
                 }
 
+                busLine.setBusStops(busStops);
                 busLines.add(busLine);
             } catch (JSONException e) {
                 Log.e(TAG, "processData: error in bus line: " + lineNumber);
