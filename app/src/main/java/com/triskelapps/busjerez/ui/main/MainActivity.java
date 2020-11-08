@@ -353,7 +353,6 @@ public class MainActivity extends BaseActivity implements OnMapReadyCallback, Ma
         for (BusLine busLine : busLines) {
 
             Polyline polylinePath = map.addPolyline(new PolylineOptions()
-                    .clickable(true)
                     .visible(busLine.isVisible())
                     .clickable(busLine.isVisible())
                     .color(busLine.getColor())

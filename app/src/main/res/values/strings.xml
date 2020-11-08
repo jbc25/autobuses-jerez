@@ -22,7 +22,7 @@
     <string name="see_timetable">Ver horarios</string>
 
     <string name="festive_1_new_year">Año nuevo</string>
-    <string name="festive_2_magic_kings">Reyes Magos</string>
+    <string name="festive_2_magic_kings">Reyes</string>
     <string name="festive_3_andalucia_day">Día de Andalucía</string>
     <string name="festive_4_jueves_santo">Jueves Santo</string>
     <string name="festive_5_viernes_santo">Viernes Santo</string>
@@ -31,8 +31,8 @@
     <string name="festive_8_asuncion_virgen">Asunción de la Virgen</string>
     <string name="festive_9_virgen_merced">Virgen de la Merced</string>
     <string name="festive_10_nacional_day">Día de la Hispanidad</string>
-    <string name="festive_11_all_saints">Todos los Santos (trasladado)</string>
-    <string name="festive_12_constitution_day">Día de la Constitución (trasladado)</string>
+    <string name="festive_11_all_saints">Todos los Santos</string>
+    <string name="festive_12_constitution_day">Día de la Constitución</string>
     <string name="festive_13_inmaculada_day">Día de la Inmaculada Concepción</string>
     <string name="festive_14_christmas">Navidad</string>
     <string name="sunday">Domingo</string>
@@ -50,4 +50,5 @@
     <string name="contact">Contactar</string>
     <string name="contact_email_subject">Contacto desde la app Autobuses Jerez</string>
     <string name="send_email">Enviar email</string>
+    <string name="moved">(trasladado)</string>
 </resources>
