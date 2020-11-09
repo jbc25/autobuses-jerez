@@ -14,3 +14,4 @@
 .cxx
 /app/src/main/res/values/google_maps_api.xml
 /.idea/sonarlint/issuestore/
+/app/google-services.json
