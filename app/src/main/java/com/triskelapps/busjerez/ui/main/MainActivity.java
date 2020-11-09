@@ -6,10 +6,12 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.text.Html;
 import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.webkit.WebView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
@@ -49,6 +51,8 @@ import com.triskelapps.busjerez.ui.main.address.AddressFragment;
 import com.triskelapps.busjerez.ui.main.bus_stops.BusStopsFragment;
 import com.triskelapps.busjerez.ui.main.filter.FilterBusLinesFragment;
 import com.triskelapps.busjerez.ui.news.NewsActivity;
+import com.triskelapps.busjerez.util.Util;
+import com.triskelapps.busjerez.views.TextViewHTML;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -98,7 +102,7 @@ public class MainActivity extends BaseActivity implements OnMapReadyCallback, Ma
 
         presenter.onCreate();
 
-        binding.tvAppVersion.setText(BuildConfig.VERSION_NAME);
+        binding.tvAppVersion.setText(getString(R.string.version_format, BuildConfig.VERSION_NAME));
 
         addressFragment = (AddressFragment) getSupportFragmentManager().findFragmentById(R.id.fragment_address);
 
@@ -290,12 +294,38 @@ public class MainActivity extends BaseActivity implements OnMapReadyCallback, Ma
                 startActivity(new Intent(this, NewsActivity.class));
                 break;
 
-            case R.id.nav_about:
+            case R.id.nav_buses_contact:
+                showDialogAssetsHtml("info/buses_contact.html");
+                break;
+
+            case R.id.nav_info:
                 showAboutDialog();
+                break;
+
+            case R.id.nav_developer:
+                showDialogAssetsHtml("info/developer_info.html");
+                break;
+
+            case R.id.nav_free_software:
+                showDialogAssetsHtml("info/free_software.html");
                 break;
         }
         closeDrawerPanels();
         return false;
+    }
+
+    private void showDialogAssetsHtml(String assetFile) {
+
+        String htmlContactText = Util.getStringFromAssets(this, assetFile);
+        TextViewHTML textViewHTML = new TextViewHTML(this);
+        textViewHTML.setText(htmlContactText);
+
+        int padding = getResources().getDimensionPixelSize(R.dimen.padding_contact_dialog);
+        textViewHTML.setPadding(padding, padding, padding, padding);
+        new AlertDialog.Builder(this)
+                .setView(textViewHTML)
+                .setNegativeButton(R.string.back, null)
+                .show();
     }
 
     private void showAboutDialog() {

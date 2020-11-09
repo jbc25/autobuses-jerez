@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Jerez Autobuses</string>
+    <string name="app_name">Autobuses de Jerez</string>
 
     <string name="permission_denied">Permiso denegado</string>
     <string name="permission_needed">Se necesita permiso</string>
@@ -46,9 +46,15 @@
     <string name="about_app">Sobre la aplicación</string>
     <string name="news">Noticias</string>
     <string name="app_info">Información de la app</string>
-    <string name="app_info_text">Esta aplicación surge por iniciativa propia del desarrollador con la intención de gestionar más fácilmente y de manera interactiva la información de la red de autobuses de Jerez y sus horarios.\n\nEs independiente de COMUJESA o cualquier otro organismo municipal.\n\nToda la información se ha obtenido de fuentes oficiales (página web, teléfono de información, etc) por lo que no puedo hacerme responsable si hay algún error en dicha información.\n\nSi al usar la app, se detecta algún error, ya sea algún fallo técnico o relacionado con los datos de líneas de autobuses y horarios, se agradece la colaboración enviando un correo a través del botón inferior \"Contactar\".\nTambién se puede escribir para mandar sugerencias de mejora.\n\n¡Muchas gracias y que disfrutes de esta aplicación!</string>
+    <string name="app_info_text">Esta aplicación surge por iniciativa propia del desarrollador con la intención de gestionar más fácilmente y de manera interactiva la información de la red de autobuses de Jerez y sus horarios.\n\nEs independiente de COMUJESA o cualquier otro organismo municipal.\n\nToda la información se ha obtenido de fuentes oficiales (página web, teléfono de información, Twitter, etc) por lo que no puedo hacerme responsable si hay algún error en dicha información.\n\nSi al usar la app, se detecta algún error, ya sea algún fallo técnico o relacionado con los datos de líneas de autobuses y horarios, se agradece la colaboración enviando un correo a través del botón inferior \"Contactar\".\nTambién se puede escribir para mandar sugerencias de mejora.\n\n¡Muchas gracias y que disfrutes de esta aplicación!</string>
     <string name="contact">Contactar</string>
     <string name="contact_email_subject">Contacto desde la app Autobuses Jerez</string>
     <string name="send_email">Enviar email</string>
     <string name="moved">(trasladado)</string>
+    <string name="version_format">Versión %s</string>
+    <string name="urban_buses">Autobuses urbanos</string>
+    <string name="application">Aplicación</string>
+    <string name="free_software">Software libre</string>
+    <string name="developer">Desarrollador</string>
+    <string name="info">Información</string>
 </resources>

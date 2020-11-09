@@ -11,4 +11,7 @@
     <color name="primary_semitransp">#77155AB9</color>
     <color name="white_background">#FAFAFA</color>
 
+    <color name="primary_light">#C2CEDD</color>
+    <color name="transparent">#0000</color>
+
 </resources>
