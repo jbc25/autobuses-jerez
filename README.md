@@ -1,13 +1,16 @@
 AUTOBUSES DE JEREZ
 ------------------
 
-Ten a mano toda la información que necesitas para moverte en bus por Jerez
+Encuentra fácilmente la forma de llegar a cualquier lugar de Jerez en autobús
 
 - Mapa interactivo
 - Líneas y paradas
 - Horarios según tipo de día (laborable, sábado, domingo/festivo)
+- Guarda paradas como favoritas para acceder a los horarios directamente
 
-#### [Descarga gratuita desde Google Play](https://play.google.com/store/apps/details?id=com.triskelapps.busjerez)
+La aplicación se puede descargar gratuitamente desde
+[Google Play](https://play.google.com/store/apps/details?id=com.triskelapps.busjerez)
+o directamente el [archivo apk instalable](app/release/app-release.apk).
 
 Esta aplicación surge con intención de gestionar más fácilmente y de manera interactiva la información de la red de autobuses de Jerez y sus horarios.
 
