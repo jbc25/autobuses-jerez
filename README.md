@@ -1,4 +1,4 @@
-AUTOBUSES DE JEREZ
+AUTOBUSES DE JEREZ [!autobuses-jerez-icono](app/src/main/res/mipmap-xxhdpi/ic_app.png)
 ------------------
 
 Encuentra fácilmente la forma de llegar a cualquier lugar de Jerez en autobús
@@ -10,7 +10,7 @@ Encuentra fácilmente la forma de llegar a cualquier lugar de Jerez en autobús
 
 La aplicación se puede descargar gratuitamente desde
 [Google Play](https://play.google.com/store/apps/details?id=com.triskelapps.busjerez)
-o directamente el [archivo apk instalable](app/release/app-release.apk).
+o directamente el [archivo apk instalable](https://github.com/jbc25/autobuses-jerez/raw/master/app/release/app-release.apk).
 
 Esta aplicación surge con intención de gestionar más fácilmente y de manera interactiva la información de la red de autobuses de Jerez y sus horarios.
 
