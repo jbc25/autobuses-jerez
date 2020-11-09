@@ -1,4 +1,4 @@
-AUTOBUSES DE JEREZ [!autobuses-jerez-icono](app/src/main/res/mipmap-xxhdpi/ic_app.png)
+AUTOBUSES DE JEREZ ![autobuses-jerez-icono](app/src/main/res/mipmap-xxhdpi/ic_app.png)
 ------------------
 
 Encuentra fácilmente la forma de llegar a cualquier lugar de Jerez en autobús
