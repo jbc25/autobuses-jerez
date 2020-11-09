@@ -25,12 +25,13 @@ También se puede escribir para mandar sugerencias de mejora.
 
 ¡Muchas gracias y que disfrutes de esta aplicación!
 
-<img src="resources/market/screenshots/photo5857267010495427548.jpg" alt="pantallazo1" width="80"/>
-![pantallazo1](resources/market/screenshots/photo5857267010495427548.jpg)
-![pantallazo2](resources/market/screenshots/photo5857267010495427548.jpg)
-![pantallazo3](resources/market/screenshots/photo5857267010495427548.jpg)
-![pantallazo4](resources/market/screenshots/photo5857267010495427548.jpg)
-![pantallazo5](resources/market/screenshots/photo5857267010495427548.jpg)
+<img src="resources/market/screenshots/photo5857267010495427553.jpg" alt="pantallazo1" width="150"/>
+<img src="resources/market/screenshots/photo5857267010495427552.jpg" alt="pantallazo2" width="150"/>
+<img src="resources/market/screenshots/photo5857267010495427551.jpg" alt="pantallazo3" width="150"/>
+<img src="resources/market/screenshots/photo5857267010495427550.jpg" alt="pantallazo4" width="150"/>
+<img src="resources/market/screenshots/photo5857267010495427549.jpg" alt="pantallazo5" width="150"/>
+<img src="resources/market/screenshots/photo5857267010495427548.jpg" alt="pantallazo6" width="150"/>
+
 
 License
 -------
