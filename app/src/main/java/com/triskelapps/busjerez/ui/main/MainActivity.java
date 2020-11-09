@@ -309,6 +309,10 @@ public class MainActivity extends BaseActivity implements OnMapReadyCallback, Ma
             case R.id.nav_free_software:
                 showDialogAssetsHtml("info/free_software.html");
                 break;
+
+            case R.id.nav_share:
+                Util.shareText(this, getString(R.string.share_text), getString(R.string.share_app));
+                break;
         }
         closeDrawerPanels();
         return false;

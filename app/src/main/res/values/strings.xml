@@ -57,4 +57,7 @@
     <string name="free_software">Software libre</string>
     <string name="developer">Desarrollador</string>
     <string name="info">Información</string>
+    <string name="share">Compartir</string>
+    <string name="share_app">¡Comparte esta aplicación!</string>
+    <string name="share_text">Te recomiendo la aplicación Autobuses de Jerez.\n\nCon ella podrás ver fácilmente qué linea y parada tienes que coger para llegar a tu destino y ver los horarios.\n\nDescargala gratuitamente en Google Play:\nhttps://play.google.com/store/apps/details?id=com.triskelapps.busjerez</string>
 </resources>

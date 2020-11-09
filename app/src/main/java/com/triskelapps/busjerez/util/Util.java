@@ -2,6 +2,7 @@ package com.triskelapps.busjerez.util;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
+import android.content.Intent;
 import android.content.res.AssetManager;
 import android.content.res.Resources;
 import android.graphics.Point;
@@ -163,5 +164,18 @@ public final class Util {
         }
         textView.setText(result);
         textView.setMovementMethod(LinkMovementMethod.getInstance());
+    }
+
+    public static void shareText(Context context, String shareBody, String chooserText) {
+
+        Intent sharingIntent = new Intent(android.content.Intent.ACTION_SEND);
+        sharingIntent.setType("text/plain");
+//                sharingIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, "Subject Here");
+        sharingIntent.putExtra(android.content.Intent.EXTRA_TEXT, shareBody);
+        if (chooserText != null) {
+            context.startActivity(Intent.createChooser(sharingIntent, chooserText));
+        } else {
+            context.startActivity(sharingIntent);
+        }
     }
 }
