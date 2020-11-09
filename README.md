@@ -1,5 +1,7 @@
-AUTOBUSES DE JEREZ ![autobuses-jerez-icono](app/src/main/res/mipmap-xxhdpi/ic_app.png)
+AUTOBUSES DE JEREZ
 ------------------
+
+![autobuses-jerez-icono](app/src/main/res/mipmap-xxhdpi/ic_app.png)
 
 Encuentra fácilmente la forma de llegar a cualquier lugar de Jerez en autobús
 
@@ -22,6 +24,13 @@ Si al usar la app, se detecta algún error, ya sea algún fallo técnico o relac
 También se puede escribir para mandar sugerencias de mejora.
 
 ¡Muchas gracias y que disfrutes de esta aplicación!
+
+<img src="resources/market/screenshots/photo5857267010495427548.jpg" alt="pantallazo1" width="80"/>
+![pantallazo1](resources/market/screenshots/photo5857267010495427548.jpg)
+![pantallazo2](resources/market/screenshots/photo5857267010495427548.jpg)
+![pantallazo3](resources/market/screenshots/photo5857267010495427548.jpg)
+![pantallazo4](resources/market/screenshots/photo5857267010495427548.jpg)
+![pantallazo5](resources/market/screenshots/photo5857267010495427548.jpg)
 
 License
 -------
