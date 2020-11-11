@@ -41,9 +41,17 @@
             android:configChanges="orientation|screenSize"
             android:label="@string/favourite_bus_stops" />
 
-        <activity android:name=".ui.news.NewsActivity"
-            android:label="@string/news"
-            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".ui.news.NewsActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/news" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@mipmap/ic_notification" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorPrimary" />
     </application>
 
 </manifest>
