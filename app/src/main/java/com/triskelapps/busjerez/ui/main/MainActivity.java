@@ -12,11 +12,13 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.webkit.WebView;
+import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.widget.Toolbar;
+import androidx.core.widget.ImageViewCompat;
 import androidx.fragment.app.Fragment;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
@@ -294,6 +296,10 @@ public class MainActivity extends BaseActivity implements OnMapReadyCallback, Ma
                 startActivity(new Intent(this, NewsActivity.class));
                 break;
 
+            case R.id.nav_covid_rules:
+                showCovidRulesDialog();
+                break;
+
             case R.id.nav_buses_contact:
                 showDialogAssetsHtml("info/buses_contact.html");
                 break;
@@ -332,13 +338,24 @@ public class MainActivity extends BaseActivity implements OnMapReadyCallback, Ma
                 .show();
     }
 
+    private void showCovidRulesDialog() {
+
+        View layout = View.inflate(this, R.layout.view_covid_rules, null);
+
+        new AlertDialog.Builder(this)
+//                .setTitle(R.string.covid_rules)
+                .setView(layout)
+                .setNegativeButton(R.string.back, null)
+                .show();
+    }
+
     private void showAboutDialog() {
         new AlertDialog.Builder(this)
                 .setTitle(R.string.app_info)
                 .setMessage(R.string.app_info_text)
                 .setPositiveButton(R.string.contact, (dialog, which) -> {
                     Intent intent = new Intent(Intent.ACTION_SENDTO, Uri.fromParts(
-                        "mailto","julio@triskelapps.com", null));
+                            "mailto","julio@triskelapps.com", null));
                     intent.putExtra(Intent.EXTRA_SUBJECT, getString(R.string.contact_email_subject));
 //                    intent.putExtra(Intent.EXTRA_TEXT, "I'm email body.");
                     startActivity(Intent.createChooser(intent, getString(R.string.send_email)));

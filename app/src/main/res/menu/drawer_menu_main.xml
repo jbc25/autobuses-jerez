@@ -9,6 +9,11 @@
                 android:title="@string/news" />
 
             <item
+                android:id="@+id/nav_covid_rules"
+                android:icon="@mipmap/ic_virus"
+                android:title="@string/covid_rules" />
+
+            <item
                 android:id="@+id/nav_buses_contact"
                 android:icon="@drawable/ic_contact_phone"
                 android:title="@string/contact" />

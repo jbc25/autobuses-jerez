@@ -40,7 +40,7 @@
     <string name="saturday">Sábado</string>
     <string name="festive">Festivo</string>
     <string name="bus_stop_direction_transfer_format">Sentido: %s\nTransbordos: %s</string>
-    <string name="favourite_bus_stop_format">Línea %d. Parada: %s</string>
+    <string name="favourite_bus_stop_format">Línea %d - %s</string>
     <string name="favourites">Favoritos</string>
     <string name="favourite_bus_stops">Paradas favoritas</string>
     <string name="about_app">Sobre la aplicación</string>
@@ -60,4 +60,6 @@
     <string name="share">Compartir</string>
     <string name="share_app">¡Comparte esta aplicación!</string>
     <string name="share_text">Te recomiendo la aplicación Autobuses de Jerez.\n\nCon ella podrás ver fácilmente qué linea y parada tienes que coger para llegar a tu destino y ver los horarios.\n\nDescargala gratuitamente en Google Play:\nhttps://play.google.com/store/apps/details?id=com.triskelapps.busjerez</string>
+    <string name="empty_fav_list">Todavía no tienes paradas favoritas. Para añadirlas, selecciona tu línea y parada habitual en la pantalla anterior y pulsa el icono de la estrella.</string>
+    <string name="covid_rules">Normas COVID</string>
 </resources>

@@ -90,7 +90,7 @@ public class App extends Application {
         List<BusLine> busLines = new Gson().fromJson(jsonDataStr, listType);
 
         for (BusLine busLine : busLines) {
-            int colorId = context.getResources().getIdentifier("line" + busLine.getId(), "color", context.getPackageName());
+            int colorId = getColorForLine(context, busLine.getId());
             busLine.setColor(ContextCompat.getColor(context, colorId));
 
 //            if (busLine.getId() == 1) {
@@ -102,6 +102,11 @@ public class App extends Application {
         }
 
         return busLines;
+    }
+
+    public static int getColorForLine(Context context, int lineId) {
+        int colorId = context.getResources().getIdentifier("line" + lineId, "color", context.getPackageName());
+        return colorId;
     }
 
 }

@@ -8,12 +8,11 @@ import androidx.room.PrimaryKey;
 import java.io.Serializable;
 import java.util.List;
 
-@Entity
+@Entity(primaryKeys = {"code","lineId"})
 public class BusStop implements Serializable {
 
     public static final int CODE_NOT_FOUND = -1;
 
-    @PrimaryKey
     private @NonNull String name;
     private int code;
     private int lineId;

@@ -6,8 +6,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.triskelapps.busjerez.App;
 import com.triskelapps.busjerez.R;
 import com.triskelapps.busjerez.databinding.RowBusStopBinding;
 import com.triskelapps.busjerez.databinding.RowFavouriteBusStopBinding;
@@ -43,6 +45,8 @@ public class FavouritesAdapter extends RecyclerView.Adapter<FavouritesAdapter.Vi
 
         final BusStop busStop = getItemAtPosition(position);
 
+        int color = ContextCompat.getColor(context, App.getColorForLine(context, busStop.getLineId()));
+        holder.binding.imgBusStopFav.setColorFilter(color);
         holder.binding.tvName.setText(context.getString(R.string.favourite_bus_stop_format, busStop.getLineId(), busStop.getName()));
 
     }

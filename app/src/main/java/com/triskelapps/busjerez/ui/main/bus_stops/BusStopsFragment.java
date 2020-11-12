@@ -114,7 +114,7 @@ public class BusStopsFragment extends BaseMainFragment implements BusStopsAdapte
         binding.tvDirectionTransfer.setText(getString(
                 R.string.bus_stop_direction_transfer_format, busStop.getDirection(), busStop.getTransfer()));
 
-        boolean isFavourite = App.getDB().busStopDao().getBusBusStop(busStop.getCode()) != null;
+        boolean isFavourite = App.getDB().busStopDao().getBusBusStop(busStop.getCode(), busStop.getLineId()) != null;
         binding.imgFavourite.setSelected(isFavourite);
         
         busStopSelected = busStop;
@@ -140,15 +140,25 @@ public class BusStopsFragment extends BaseMainFragment implements BusStopsAdapte
                 break;
 
             case R.id.img_favourite:
-                if (binding.imgFavourite.isSelected()) {
-                    App.getDB().busStopDao().delete(busStopSelected);
-                    binding.imgFavourite.setSelected(false);
-                } else {
-                    App.getDB().busStopDao().insert(busStopSelected);
-                    binding.imgFavourite.setSelected(true);
-                } 
+                addRemoveFavourite();
                 break;
         }
+    }
+
+    private void addRemoveFavourite() {
+
+        if (!busStopSelected.hasValidCode()) {
+            toast(R.string.error_code_bus_stop);
+        } else {
+            if (binding.imgFavourite.isSelected()) {
+                App.getDB().busStopDao().delete(busStopSelected);
+                binding.imgFavourite.setSelected(false);
+            } else {
+                App.getDB().busStopDao().insert(busStopSelected);
+                binding.imgFavourite.setSelected(true);
+            }
+        }
+
     }
 
     private void requestTimetable() {
@@ -156,10 +166,7 @@ public class BusStopsFragment extends BaseMainFragment implements BusStopsAdapte
         if (!busStopSelected.hasValidCode()) {
             toast(R.string.error_code_bus_stop);
         } else {
-
             TimetableDialog.createDialog(busStopSelected).show(getChildFragmentManager(), null);
-
-
         }
     }
 

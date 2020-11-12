@@ -3,6 +3,8 @@ package com.triskelapps.busjerez.ui.favourites;
 import android.os.Bundle;
 import android.view.View;
 
+import androidx.recyclerview.widget.DividerItemDecoration;
+
 import com.triskelapps.busjerez.App;
 import com.triskelapps.busjerez.base.BaseActivity;
 import com.triskelapps.busjerez.databinding.ActivityFavouritesBinding;
@@ -25,10 +27,14 @@ public class FavouritesActivity extends BaseActivity implements FavouritesAdapte
 
         configureSecondLevelActivity();
 
+        binding.recyclerFavs.addItemDecoration(new DividerItemDecoration(this, DividerItemDecoration.VERTICAL));
+
         favourites = App.getDB().busStopDao().getAll();
         adapter = new FavouritesAdapter(this, favourites);
         adapter.setOnItemClickListener(this);
         binding.recyclerFavs.setAdapter(adapter);
+
+        binding.viewEmptyList.setVisibility(favourites.isEmpty() ? View.VISIBLE : View.GONE);
 
     }
 
