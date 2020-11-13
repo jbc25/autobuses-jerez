@@ -1,4 +1,4 @@
-package com.triskelapps.busjerez;
+package com.triskelapps.busjerez.views;
 
 import android.content.Context;
 import android.util.AttributeSet;

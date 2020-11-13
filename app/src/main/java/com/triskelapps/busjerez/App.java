@@ -46,7 +46,7 @@ public class App extends Application {
     public void onCreate() {
         super.onCreate();
 
-        String apiKey = getString(R.string.google_maps_key);
+        String apiKey = BuildConfig.MAPS_API_KEY;
         Places.initialize(getApplicationContext(), apiKey);
 
         db = Room.databaseBuilder(getApplicationContext(),
