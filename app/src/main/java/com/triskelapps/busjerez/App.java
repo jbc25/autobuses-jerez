@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.provider.Settings;
 
+import androidx.appcompat.app.AppCompatDelegate;
 import androidx.core.content.ContextCompat;
 import androidx.preference.PreferenceManager;
 import androidx.room.Room;
@@ -49,6 +50,8 @@ public class App extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
+
+        AppCompatDelegate.setCompatVectorFromResourcesEnabled(true);
 
         CountlyConfig config = new CountlyConfig(this, getString(R.string.countly_app_key), getString(R.string.countly_server_url));
         if (DebugHelper.SWITCH_RECORD_ANALYTICS) {

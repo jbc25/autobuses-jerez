@@ -66,7 +66,9 @@ public class TimetableDialog extends DialogFragment implements WebView.FindListe
                     @Override
                     public void onError(String error) {
                         hideProgressBar();
-                        ((BaseActivity)getActivity()).toast(error);
+                        if (getActivity() != null) {
+                            ((BaseActivity)getActivity()).toast(error);
+                        }
                     }
                 });
     }
