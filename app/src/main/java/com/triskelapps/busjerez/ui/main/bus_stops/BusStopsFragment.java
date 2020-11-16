@@ -14,6 +14,7 @@ import com.triskelapps.busjerez.model.BusLine;
 import com.triskelapps.busjerez.model.BusStop;
 import com.triskelapps.busjerez.ui.main.MainActivity;
 import com.triskelapps.busjerez.ui.timetable.TimetableDialog;
+import com.triskelapps.busjerez.util.AnalyticsUtil;
 
 import java.util.List;
 
@@ -74,7 +75,11 @@ public class BusStopsFragment extends BaseMainFragment implements BusStopsAdapte
 
         ((MainActivity) getActivity()).selectBusStopMarker(position);
 
-        Log.i(TAG, "onBusStopClick: code: " + busStops.get(position).getCode() + ". Name: " + busStops.get(position).getName());
+        BusStop busStop = busStops.get(position);
+
+        Log.i(TAG, "onBusStopClick: code: " + busStop.getCode() + ". Name: " + busStop.getName());
+
+        AnalyticsUtil.selectBusStop(busStop);
 
         showBusStopInfoView(busStops.get(position));
 
@@ -85,8 +90,11 @@ public class BusStopsFragment extends BaseMainFragment implements BusStopsAdapte
 
         if (!busStop.hasValidCode()) {
             toast(R.string.error_code_bus_stop);
+            AnalyticsUtil.busStopNotFound(busStop.getLineId(), busStop.getName(), "marker_click");
             return;
         }
+
+        AnalyticsUtil.selectBusStop(busStop);
 
         Log.i(TAG, "onBusStopClick: code: " + busStop.getCode() + ". Name: " + busStop.getName());
 
@@ -149,13 +157,16 @@ public class BusStopsFragment extends BaseMainFragment implements BusStopsAdapte
 
         if (!busStopSelected.hasValidCode()) {
             toast(R.string.error_code_bus_stop);
+            AnalyticsUtil.busStopNotFound(busStopSelected.getLineId(), busStopSelected.getName(), "add_favourite");
         } else {
             if (binding.imgFavourite.isSelected()) {
                 App.getDB().busStopDao().delete(busStopSelected);
                 binding.imgFavourite.setSelected(false);
+                AnalyticsUtil.addFavouriteBusStop(busStopSelected);
             } else {
                 App.getDB().busStopDao().insert(busStopSelected);
                 binding.imgFavourite.setSelected(true);
+                AnalyticsUtil.removeFavouriteBusStop(busStopSelected);
             }
         }
 
@@ -165,8 +176,10 @@ public class BusStopsFragment extends BaseMainFragment implements BusStopsAdapte
 
         if (!busStopSelected.hasValidCode()) {
             toast(R.string.error_code_bus_stop);
+            AnalyticsUtil.busStopNotFound(busStopSelected.getLineId(), busStopSelected.getName(), "request_timetable");
         } else {
             TimetableDialog.createDialog(busStopSelected).show(getChildFragmentManager(), null);
+            AnalyticsUtil.seeTimetable(busStopSelected);
         }
     }
 

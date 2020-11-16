@@ -3,6 +3,7 @@ package com.triskelapps.busjerez;
 import android.app.Application;
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.provider.Settings;
 
 import androidx.core.content.ContextCompat;
 import androidx.preference.PreferenceManager;
@@ -19,6 +20,9 @@ import com.triskelapps.busjerez.util.Util;
 import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.List;
+
+import ly.count.android.sdk.Countly;
+import ly.count.android.sdk.CountlyConfig;
 
 
 public class App extends Application {
@@ -46,6 +50,14 @@ public class App extends Application {
     public void onCreate() {
         super.onCreate();
 
+        CountlyConfig config = new CountlyConfig(this, getString(R.string.countly_app_key), getString(R.string.countly_server_url));
+        if (DebugHelper.SWITCH_RECORD_ANALYTICS) {
+            config.enableCrashReporting();
+            config.setViewTracking(true);
+            config.setAutoTrackingUseShortName(true);
+        }
+        Countly.sharedInstance().init(config);
+
         String apiKey = BuildConfig.MAPS_API_KEY;
         Places.initialize(getApplicationContext(), apiKey);
 
@@ -59,6 +71,7 @@ public class App extends Application {
         populateDataFirstTime();
 
 //        NotificationHelper.with(this).initializeOreoChannelsNotification();
+
 
     }
 

@@ -2,23 +2,18 @@ package com.triskelapps.busjerez.ui.main;
 
 import android.Manifest;
 import android.annotation.SuppressLint;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-import android.text.Html;
 import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.webkit.WebView;
-import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.widget.Toolbar;
-import androidx.core.widget.ImageViewCompat;
 import androidx.fragment.app.Fragment;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
@@ -53,6 +48,7 @@ import com.triskelapps.busjerez.ui.main.address.AddressFragment;
 import com.triskelapps.busjerez.ui.main.bus_stops.BusStopsFragment;
 import com.triskelapps.busjerez.ui.main.filter.FilterBusLinesFragment;
 import com.triskelapps.busjerez.ui.news.NewsActivity;
+import com.triskelapps.busjerez.util.AnalyticsUtil;
 import com.triskelapps.busjerez.util.Util;
 import com.triskelapps.busjerez.views.TextViewHTML;
 
@@ -298,26 +294,32 @@ public class MainActivity extends BaseActivity implements OnMapReadyCallback, Ma
 
             case R.id.nav_covid_rules:
                 showCovidRulesDialog();
+                AnalyticsUtil.recordEvent("click_menu_covid_rules");
                 break;
 
             case R.id.nav_buses_contact:
                 showDialogAssetsHtml("info/buses_contact.html");
+                AnalyticsUtil.recordEvent("click_menu_buses_contact");
                 break;
 
             case R.id.nav_info:
                 showAboutDialog();
+                AnalyticsUtil.recordEvent("click_menu_app_info");
                 break;
 
             case R.id.nav_developer:
                 showDialogAssetsHtml("info/developer_info.html");
+                AnalyticsUtil.recordEvent("click_menu_developer");
                 break;
 
             case R.id.nav_free_software:
                 showDialogAssetsHtml("info/free_software.html");
+                AnalyticsUtil.recordEvent("click_menu_free_software");
                 break;
 
             case R.id.nav_share:
                 Util.shareText(this, getString(R.string.share_text), getString(R.string.share_app));
+                AnalyticsUtil.recordEvent("click_menu_share");
                 break;
         }
         closeDrawerPanels();
@@ -369,6 +371,7 @@ public class MainActivity extends BaseActivity implements OnMapReadyCallback, Ma
 
         int lineId = (int) polyline.getTag();
         presenter.onBusLinePathClick(lineId, false);
+        AnalyticsUtil.selectBusLine(lineId, "polyline_click");
 
     }
 

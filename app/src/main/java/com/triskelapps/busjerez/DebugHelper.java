@@ -2,7 +2,7 @@ package com.triskelapps.busjerez;
 
 public class DebugHelper {
 
-//    private static Class SHORTCUT_ACTIVITY = CategoriesActivity.class;
+    //    private static Class SHORTCUT_ACTIVITY = CategoriesActivity.class;
     private static Class SHORTCUT_ACTIVITY = null;
 
     // === SWITCHES DEBUG ===
@@ -16,7 +16,7 @@ public class DebugHelper {
     public static final boolean DEBUG_MESSAGES = false;
     public static final boolean DISABLE_CRASHLYTICS = true;
     public static final boolean USE_TEST_STRIPE_KEY = false;
-
+    public static final boolean RECORD_ANALYTICS = false;
 
 
 
@@ -77,6 +77,8 @@ public class DebugHelper {
     public static final Class SWITCH_SHORTCUT_ACTIVITY = BuildConfig.DEBUG
             || FORZE_BETA_ENV_APK ? SHORTCUT_ACTIVITY : null;
 
+    public static final boolean SWITCH_RECORD_ANALYTICS = BuildConfig.DEBUG
+            || FORZE_BETA_ENV_APK ? RECORD_ANALYTICS : true;
 
 
 }
