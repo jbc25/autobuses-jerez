@@ -23,10 +23,8 @@ import androidx.core.content.ContextCompat;
 import androidx.core.graphics.drawable.DrawableCompat;
 
 import com.triskelapps.busjerez.App;
-import com.triskelapps.busjerez.DebugHelper;
 import com.triskelapps.busjerez.R;
-
-import ly.count.android.sdk.Countly;
+import com.triskelapps.busjerez.util.CountlyUtil;
 
 
 public abstract class BaseActivity extends AppCompatActivity implements BaseView {
@@ -66,9 +64,7 @@ public abstract class BaseActivity extends AppCompatActivity implements BaseView
     @Override
     protected void onStart() {
         super.onStart();
-        if (DebugHelper.SWITCH_RECORD_ANALYTICS) {
-            Countly.sharedInstance().onStart(this);
-        }
+        CountlyUtil.onStart(this);
     }
 
     @Override
@@ -79,10 +75,7 @@ public abstract class BaseActivity extends AppCompatActivity implements BaseView
     @Override
     protected void onStop() {
         super.onStop();
-        if (DebugHelper.SWITCH_RECORD_ANALYTICS) {
-            Countly.sharedInstance().onStop();
-        }
-
+        CountlyUtil.onStop();
     }
 
     @Override

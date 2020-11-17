@@ -3,7 +3,6 @@ package com.triskelapps.busjerez;
 import android.app.Application;
 import android.content.Context;
 import android.content.SharedPreferences;
-import android.provider.Settings;
 
 import androidx.appcompat.app.AppCompatDelegate;
 import androidx.core.content.ContextCompat;
@@ -16,14 +15,12 @@ import com.google.gson.reflect.TypeToken;
 import com.triskelapps.busjerez.database.MyDatabase;
 import com.triskelapps.busjerez.model.BusLine;
 import com.triskelapps.busjerez.model.db.BusLineVisible;
+import com.triskelapps.busjerez.util.CountlyUtil;
 import com.triskelapps.busjerez.util.Util;
 
 import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.List;
-
-import ly.count.android.sdk.Countly;
-import ly.count.android.sdk.CountlyConfig;
 
 
 public class App extends Application {
@@ -53,13 +50,7 @@ public class App extends Application {
 
         AppCompatDelegate.setCompatVectorFromResourcesEnabled(true);
 
-        CountlyConfig config = new CountlyConfig(this, getString(R.string.countly_app_key), getString(R.string.countly_server_url));
-        if (DebugHelper.SWITCH_RECORD_ANALYTICS) {
-            config.enableCrashReporting();
-            config.setViewTracking(true);
-            config.setAutoTrackingUseShortName(true);
-        }
-        Countly.sharedInstance().init(config);
+        CountlyUtil.configureCountly(this);
 
         String apiKey = BuildConfig.MAPS_API_KEY;
         Places.initialize(getApplicationContext(), apiKey);
@@ -77,6 +68,8 @@ public class App extends Application {
 
 
     }
+
+
 
     private void populateDataFirstTime() {
         if (getDB().busLineVisibleDao().getAll().size() == 0) {

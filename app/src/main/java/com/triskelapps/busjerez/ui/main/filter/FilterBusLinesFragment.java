@@ -12,7 +12,7 @@ import com.triskelapps.busjerez.App;
 import com.triskelapps.busjerez.base.BaseMainFragment;
 import com.triskelapps.busjerez.databinding.FragmentFilterBusLinesBinding;
 import com.triskelapps.busjerez.model.BusLine;
-import com.triskelapps.busjerez.util.AnalyticsUtil;
+import com.triskelapps.busjerez.util.CountlyUtil;
 
 import java.util.List;
 
@@ -54,9 +54,9 @@ public class FilterBusLinesFragment extends BaseMainFragment implements FilterBu
         busLines.get(position).setVisible(checked);
         getMainPresenter().onBusLineCheckedChanged(position, checked);
         if (checked) {
-            AnalyticsUtil.showBusLine(busLines.get(position).getId());
+            CountlyUtil.showBusLine(busLines.get(position).getId());
         } else {
-            AnalyticsUtil.hideBusLine(busLines.get(position).getId());
+            CountlyUtil.hideBusLine(busLines.get(position).getId());
         }
     }
 
@@ -64,6 +64,6 @@ public class FilterBusLinesFragment extends BaseMainFragment implements FilterBu
     public void onBusStopButtonClick(int position) {
         BusLine busLine = busLines.get(position);
         getMainPresenter().onBusLinePathClick(busLine.getId(), true);
-        AnalyticsUtil.selectBusLine(busLine.getId(), "filter_panel");
+        CountlyUtil.selectBusLine(busLine.getId(), "filter_panel");
     }
 }

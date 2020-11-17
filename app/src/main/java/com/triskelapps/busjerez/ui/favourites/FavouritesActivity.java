@@ -10,7 +10,7 @@ import com.triskelapps.busjerez.base.BaseActivity;
 import com.triskelapps.busjerez.databinding.ActivityFavouritesBinding;
 import com.triskelapps.busjerez.model.BusStop;
 import com.triskelapps.busjerez.ui.timetable.TimetableDialog;
-import com.triskelapps.busjerez.util.AnalyticsUtil;
+import com.triskelapps.busjerez.util.CountlyUtil;
 
 import java.util.List;
 
@@ -44,7 +44,7 @@ public class FavouritesActivity extends BaseActivity implements FavouritesAdapte
 
         BusStop busStop = favourites.get(position);
         TimetableDialog.createDialog(busStop).show(getSupportFragmentManager(), null);
-        AnalyticsUtil.seeTimetableFavourite(busStop);
+        CountlyUtil.seeTimetableFavourite(busStop);
 
     }
 }

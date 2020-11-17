@@ -18,7 +18,7 @@ import com.google.android.libraries.places.widget.listener.PlaceSelectionListene
 import com.triskelapps.busjerez.R;
 import com.triskelapps.busjerez.base.BaseMainFragment;
 import com.triskelapps.busjerez.databinding.FragmentAddressBinding;
-import com.triskelapps.busjerez.util.AnalyticsUtil;
+import com.triskelapps.busjerez.util.CountlyUtil;
 
 import java.util.Arrays;
 
@@ -74,13 +74,13 @@ public class AddressFragment extends BaseMainFragment {
             public void onPlaceSelected(Place place) {
                 Log.i(TAG, "Autocomplete Places. Selected: " + place.getName());
                 getMainPresenter().onPlaceSelected(place);
-                AnalyticsUtil.selectPlace(place.getName());
+                CountlyUtil.selectPlace(place.getName());
             }
 
             @Override
             public void onError(Status status) {
                 Log.i(TAG, "Autocomplete Places. Error: " + status);
-                AnalyticsUtil.selectPlaceError(status.getStatusCode(), status.getStatusMessage());
+                CountlyUtil.selectPlaceError(status.getStatusCode(), status.getStatusMessage());
             }
         });
 

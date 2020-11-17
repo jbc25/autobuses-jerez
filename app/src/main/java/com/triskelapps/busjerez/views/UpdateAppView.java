@@ -3,6 +3,7 @@ package com.triskelapps.busjerez.views;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.content.IntentSender;
 import android.net.Uri;
 import android.util.AttributeSet;
 import android.util.Log;
@@ -12,23 +13,29 @@ import android.widget.TextView;
 
 import androidx.appcompat.widget.AppCompatImageView;
 
+import com.google.android.play.core.appupdate.AppUpdateInfo;
+import com.google.android.play.core.appupdate.AppUpdateManager;
+import com.google.android.play.core.appupdate.AppUpdateManagerFactory;
+import com.google.android.play.core.appupdate.AppUpdateOptions;
+import com.google.android.play.core.install.model.AppUpdateType;
+import com.google.android.play.core.install.model.UpdateAvailability;
+import com.google.android.play.core.tasks.Task;
 import com.google.firebase.remoteconfig.FirebaseRemoteConfig;
 import com.triskelapps.busjerez.BuildConfig;
+import com.triskelapps.busjerez.DebugHelper;
 import com.triskelapps.busjerez.R;
+
+import ly.count.android.sdk.Countly;
 
 
 public class UpdateAppView extends FrameLayout implements View.OnClickListener {
 
     private static final String TAG = "UpdateAppView";
 
-    public static final String TEMPLATE_URL_GOOGLE_PLAY_APP_HTTP = "https://play.google.com/store/apps/details?id=%s";
-    public static final String TEMPLATE_URL_GOOGLE_PLAY_APP_DIRECT = "market://details?id=%s";
-
     private TextView btnUpdateApp;
     private AppCompatImageView btnCloseUpdateAppView;
-    private String httpUrl;
-    private String directUrl;
-    private String remoteConfigVariableName;
+    private AppUpdateManager appUpdateManager;
+    private AppUpdateInfo appUpdateInfo;
 
     public UpdateAppView(Context context) {
         super(context);
@@ -47,8 +54,8 @@ public class UpdateAppView extends FrameLayout implements View.OnClickListener {
     }
 
     private void findViews(View layout) {
-        btnUpdateApp = (TextView)layout.findViewById( R.id.btn_update_app );
-        btnCloseUpdateAppView = (AppCompatImageView)layout.findViewById( R.id.btn_close_update_app_view );
+        btnUpdateApp = (TextView) layout.findViewById(R.id.btn_update_app);
+        btnCloseUpdateAppView = (AppCompatImageView) layout.findViewById(R.id.btn_close_update_app_view);
 
         btnUpdateApp.setOnClickListener(this);
         btnCloseUpdateAppView.setOnClickListener(this);
@@ -67,12 +74,11 @@ public class UpdateAppView extends FrameLayout implements View.OnClickListener {
 
     private void configure() {
 
-        String packageName = getContext().getPackageName().replace(".debug", "");
-        this.httpUrl = String.format(TEMPLATE_URL_GOOGLE_PLAY_APP_HTTP, packageName);
-        this.directUrl = String.format(TEMPLATE_URL_GOOGLE_PLAY_APP_DIRECT, packageName);
-        this.remoteConfigVariableName = "market_version";
+        appUpdateManager = AppUpdateManagerFactory.create(getContext());
 
-        checkNewVersionInMarket();
+        if (getContext() instanceof Activity) {
+            checkUpdateAvailable();
+        }
     }
 
     @Override
@@ -84,10 +90,6 @@ public class UpdateAppView extends FrameLayout implements View.OnClickListener {
                 break;
 
             case R.id.btn_update_app:
-                if (httpUrl == null) {
-                    throw new IllegalStateException("View not configured");
-                }
-
                 onUpdateVersionClick();
                 break;
         }
@@ -97,45 +99,32 @@ public class UpdateAppView extends FrameLayout implements View.OnClickListener {
 
     public void onUpdateVersionClick() {
 
-        Intent directPlayIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(directUrl));
-        if (directPlayIntent.resolveActivity(getContext().getPackageManager()) != null) {
-            getContext().startActivity(directPlayIntent);
-        } else {
-            getContext().startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(httpUrl)));
-        }
+        AppUpdateOptions options = AppUpdateOptions.newBuilder(AppUpdateType.IMMEDIATE)
+                .setAllowAssetPackDeletion(true).build();
+
+        appUpdateManager.startUpdateFlow(appUpdateInfo, (Activity) getContext(), options);
+
     }
 
+    private void checkUpdateAvailable() {
 
-    private void checkNewVersionInMarket() {
+        Task<AppUpdateInfo> appUpdateInfoTask = appUpdateManager.getAppUpdateInfo();
 
-        final FirebaseRemoteConfig firebaseRemoteConfig = FirebaseRemoteConfig.getInstance();
+        appUpdateInfoTask
+                .addOnSuccessListener(appUpdateInfo -> {
+                    if (appUpdateInfo.updateAvailability() == UpdateAvailability.UPDATE_AVAILABLE
+                            && appUpdateInfo.isUpdateTypeAllowed(AppUpdateType.IMMEDIATE)) {
 
-        long cacheExpiration = 3600 * 2; // 12 hour in seconds.
-        // If your app is using developer mode, cacheExpiration is set to 0, so each fetch will
-        // retrieve values from the service.
-//        if (BuildConfig.DEBUG) {
-//            cacheExpiration = 0;
-//        }
-
-        // [START fetch_config_with_callback]
-        // cacheExpirationSeconds is set to cacheExpiration here, indicating the next fetch request
-        // will use fetch data from the Remote Config service, rather than cached parameter values,
-        // if cached parameter values are more than cacheExpiration seconds old.
-        // See Best Practices in the README for more information.
-        firebaseRemoteConfig.fetchAndActivate()
-                .addOnCompleteListener((Activity) getContext(), task -> {
-                    if (task.isSuccessful()) {
-                        firebaseRemoteConfig.activate();
-                        int marketCode = (int) FirebaseRemoteConfig.getInstance().getLong(remoteConfigVariableName);
-                        int localCode = BuildConfig.VERSION_CODE;
-                        if (marketCode > localCode) {
-                            setVisibility(VISIBLE);
-                        }
-                    } else {
-                        Log.e(TAG, "onComplete: remote config task failed", task.getException());
+                        this.appUpdateInfo = appUpdateInfo;
+                        setVisibility(VISIBLE);
                     }
+                })
+                .addOnFailureListener(e -> {
+                    if (DebugHelper.SWITCH_RECORD_ANALYTICS) {
+                        Countly.sharedInstance().crashes().recordHandledException(e);
+                    }
+                    e.printStackTrace();
                 });
-
 
     }
 }
