@@ -19,11 +19,17 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
+            <com.triskelapps.busjerez.views.UpdateAppView
+                android:id="@+id/view_update_app"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
             <fragment
                 android:id="@+id/fragment_address"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:name="com.triskelapps.busjerez.ui.main.address.AddressFragment" />
+                android:name="com.triskelapps.busjerez.ui.main.address.AddressFragment"
+                android:layout_below="@+id/view_update_app"/>
 
             <fragment
                 android:id="@+id/map"
