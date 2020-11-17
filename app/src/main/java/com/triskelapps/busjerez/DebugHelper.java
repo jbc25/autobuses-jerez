@@ -18,7 +18,7 @@ public class DebugHelper {
     public static final boolean DEBUG_MESSAGES = false;
     public static final boolean DISABLE_CRASHLYTICS = true;
     public static final boolean USE_TEST_STRIPE_KEY = false;
-    public static final boolean RECORD_ANALYTICS = true;
+    public static final boolean RECORD_ANALYTICS = false;
 
 
 

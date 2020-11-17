@@ -34,6 +34,7 @@ public class TimetableDialog extends DialogFragment implements WebView.FindListe
     private DialogTimetableBinding binding;
     private BusStop busStop;
     private String infoHtml;
+    private String dayType;
 
     public static TimetableDialog createDialog(BusStop busStop) {
         TimetableDialog timetableDialog = new TimetableDialog();
@@ -60,7 +61,7 @@ public class TimetableDialog extends DialogFragment implements WebView.FindListe
                     public void onSuccess(String body) {
                         hideProgressBar();
                         infoHtml = body;
-                        refreshInfoText();
+                        loadTimetableHtml();
                     }
 
                     @Override
@@ -87,14 +88,20 @@ public class TimetableDialog extends DialogFragment implements WebView.FindListe
     @Override
     public void onResume() {
         super.onResume();
-        refreshInfoText();
+        showHeaderInfo();
+    }
+
+    private void showHeaderInfo() {
+
+        String time = DateUtils.formatTime.format(new Date());
+        dayType = DayTypeUtil.with(getContext()).getDayType();
+        String infoText = getString(R.string.info_timetable_format, busStop.getLineId(), busStop.getName(), dayType, time);
+        binding.tvTimetableInfo.setText(infoText);
     }
 
     @NonNull
     @Override
     public Dialog onCreateDialog(@Nullable Bundle savedInstanceState) {
-
-        refreshInfoText();
 
         return new AlertDialog.Builder(getActivity())
                 .setView(binding.getRoot())
@@ -102,14 +109,9 @@ public class TimetableDialog extends DialogFragment implements WebView.FindListe
                 .create();
     }
 
-    private void refreshInfoText() {
+    private void loadTimetableHtml() {
 
-        String time = DateUtils.formatTime.format(new Date());
-        String dayType = DayTypeUtil.with(getContext()).getDayType();
-        String infoText = getString(R.string.info_timetable_format, busStop.getLineId(), busStop.getName(), dayType, time);
-        binding.tvTimetableInfo.setText(infoText);
-
-        if (infoHtml != null) {
+        if (getContext() != null && infoHtml != null) {
 
             binding.webviewTimetable.loadDataWithBaseURL(null, infoHtml, "text/html", "utf-8", null);
 
@@ -120,8 +122,10 @@ public class TimetableDialog extends DialogFragment implements WebView.FindListe
 
                     // Workaround to make this work in Android 9
                     new Handler().postDelayed(() -> {
-                        String dayTypeWebName = convertDayType(dayType);
-                        binding.webviewTimetable.findAllAsync(dayTypeWebName);
+                        if (dayType != null) {
+                            String dayTypeWebName = convertDayType(dayType);
+                            binding.webviewTimetable.findAllAsync(dayTypeWebName);
+                        }
                     }, 50);
 
                 }
