@@ -252,22 +252,26 @@ public class MainActivity extends BaseActivity implements OnMapReadyCallback, Ma
 
     @Override
     public void onBackPressed() {
-        if (hasDrawerPanelOpened()) {
-            closeDrawerPanels();
-        } else if (busStopsFragment != null && busStopsFragment.hasBusStopSelected()) {
-            busStopsFragment.clearBusStopSelection();
-            map.getUiSettings().setMapToolbarEnabled(false);
-        } else if (mapDataController.hasBusLineSelected()) {
-            mapDataController.unselectBusLine();
-            getSupportFragmentManager().popBackStack();
-            LatLngBounds latLngBoundsJerez = LatLngBounds.builder().include(JEREZ_NORTH_EAST).include(JEREZ_SOUTH_WEST).build();
+        try {
+            if (hasDrawerPanelOpened()) {
+                closeDrawerPanels();
+            } else if (busStopsFragment != null && busStopsFragment.hasBusStopSelected()) {
+                busStopsFragment.clearBusStopSelection();
+                map.getUiSettings().setMapToolbarEnabled(false);
+            } else if (mapDataController.hasBusLineSelected()) {
+                mapDataController.unselectBusLine();
+                getSupportFragmentManager().popBackStack();
+                LatLngBounds latLngBoundsJerez = LatLngBounds.builder().include(JEREZ_NORTH_EAST).include(JEREZ_SOUTH_WEST).build();
 //            animateMapToBounds(latLngBoundsJerez);
-        } else if (getSupportFragmentManager().getBackStackEntryCount() > 0) {
-            getSupportFragmentManager().popBackStack();
-        } else if (addressFragment != null && markerDestination != null) {
-            addressFragment.clearAddress();
-            presenter.onClearPlaceAutocompleteText();
-        } else {
+            } else if (getSupportFragmentManager().getBackStackEntryCount() > 0) {
+                getSupportFragmentManager().popBackStack();
+            } else if (addressFragment != null && markerDestination != null) {
+                addressFragment.clearAddress();
+                presenter.onClearPlaceAutocompleteText();
+            } else {
+                super.onBackPressed();
+            }
+        } catch (Exception e) {
             super.onBackPressed();
         }
     }

@@ -22,7 +22,7 @@
 
         <activity
             android:name=".ui.main.MainActivity"
-            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -32,12 +32,12 @@
         </activity>
         <activity
             android:name=".ui.favourites.FavouritesActivity"
-            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
             android:label="@string/favourite_bus_stops" />
 
         <activity
             android:name=".ui.news.NewsActivity"
-            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
             android:label="@string/news" />
 
         <meta-data
