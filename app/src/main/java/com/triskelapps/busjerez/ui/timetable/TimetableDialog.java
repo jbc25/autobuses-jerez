@@ -19,6 +19,7 @@ import com.triskelapps.busjerez.base.BaseInteractor;
 import com.triskelapps.busjerez.databinding.DialogTimetableBinding;
 import com.triskelapps.busjerez.interactor.TimetableInteractor;
 import com.triskelapps.busjerez.model.BusStop;
+import com.triskelapps.busjerez.util.CountlyUtil;
 import com.triskelapps.busjerez.util.DateUtils;
 
 import java.text.SimpleDateFormat;
@@ -68,8 +69,9 @@ public class TimetableDialog extends DialogFragment implements WebView.FindListe
                     public void onError(String error) {
                         hideProgressBar();
                         if (getActivity() != null) {
-                            ((BaseActivity)getActivity()).toast(error);
+                            ((BaseActivity)getActivity()).toast(getString(R.string.error_loading_timetable));
                         }
+                        CountlyUtil.recordHandledException(new Exception("Error loading timetable.\n" + error));
                     }
                 });
     }

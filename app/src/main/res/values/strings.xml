@@ -62,4 +62,5 @@
     <string name="share_text">Te recomiendo la aplicación Autobuses de Jerez.\n\nCon ella podrás ver fácilmente qué linea y parada tienes que coger para llegar a tu destino y ver los horarios.\n\nDescargala gratuitamente en Google Play:\nhttps://play.google.com/store/apps/details?id=com.triskelapps.busjerez</string>
     <string name="empty_fav_list">Todavía no tienes paradas favoritas. Para añadirlas, selecciona tu línea y parada habitual en la pantalla anterior y pulsa el icono de la estrella.</string>
     <string name="covid_rules">Normas COVID</string>
+    <string name="error_loading_timetable">Error al cargar los horarios. Estamos trabajando para arreglarlo.</string>
 </resources>

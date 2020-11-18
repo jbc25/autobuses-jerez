@@ -179,7 +179,7 @@ public class CountlyUtil {
         String serverUrl = FirebaseRemoteConfig.getInstance().getString("countly_server_url");
 
         CountlyConfig config = new CountlyConfig(app, appKey, serverUrl);
-        if (DebugHelper.RECORD_ANALYTICS) {
+        if (DebugHelper.SWITCH_RECORD_ANALYTICS) {
             config.enableCrashReporting();
             config.setViewTracking(true);
             config.setAutoTrackingUseShortName(true);
@@ -201,5 +201,11 @@ public class CountlyUtil {
                 Log.e(TAG, "remoteConfig error: ", task.getException());
             }
         });
+    }
+
+    public static void recordHandledException(Exception e) {
+        if (isAnalyticsEnabled()) {
+            Countly.sharedInstance().crashes().recordHandledException(e);
+        }
     }
 }
