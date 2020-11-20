@@ -104,10 +104,9 @@ public class MainActivity extends BaseActivity implements OnMapReadyCallback, Ma
 
         addressFragment = (AddressFragment) getSupportFragmentManager().findFragmentById(R.id.fragment_address);
 
-//        getSupportFragmentManager().beginTransaction()
-//                .replace(R.id.frame_bottom, addressFragment)
-////                .addToBackStack(null)
-//                .commit();
+        for (int i = 0; i < getSupportFragmentManager().getBackStackEntryCount(); i++) {
+            getSupportFragmentManager().popBackStack();
+        }
 
     }
 
@@ -389,16 +388,19 @@ public class MainActivity extends BaseActivity implements OnMapReadyCallback, Ma
     }
 
     public void selectBusStopMarker(int position) {
-        map.getUiSettings().setMapToolbarEnabled(false);
-        Marker marker = mapDataController.getMarker(position);
-        marker.showInfoWindow();
-
-        map.animateCamera(CameraUpdateFactory.newLatLng(marker.getPosition()));
+        if (mapDataController.hasBusLineSelected()) {
+            map.getUiSettings().setMapToolbarEnabled(false);
+            Marker marker = mapDataController.getMarker(position);
+            marker.showInfoWindow();
+            map.animateCamera(CameraUpdateFactory.newLatLng(marker.getPosition()));
+        }
     }
 
     public void unselectBusStopMarker(int position) {
-        Marker marker = mapDataController.getMarker(position);
-        marker.hideInfoWindow();
+        if (mapDataController.hasBusLineSelected()) {
+            Marker marker = mapDataController.getMarker(position);
+            marker.hideInfoWindow();
+        }
     }
 
     // PRESENTER CALLBACKS
@@ -495,6 +497,8 @@ public class MainActivity extends BaseActivity implements OnMapReadyCallback, Ma
         markerDestination = map.addMarker(new MarkerOptions()
                 .position(place.getLatLng())
                 .title(place.getName()));
+
+        markerDestination.showInfoWindow();
 
         map.animateCamera(CameraUpdateFactory.newLatLng(place.getLatLng()));
 
