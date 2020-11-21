@@ -1,50 +1,53 @@
 {
 	"title": "Autobuses de Jerez",
 	"title2": "Autobuses de Jerez - App gratuita para Android",
-	"description_short": "Encuentra fácilmente la forma de llegar a cualquier lugar de Jerez en autobús con esta app gratuita",
+	"description_short": "Encuentra fácilmente la forma de llegar en autobús a cualquier lugar de Jerez con esta app gratuita",
 	"web_root": "https://jerezbus.web.app",
 	"app_id_android": "com.triskelapps.busjerez",
 	"year": "2020",
+	"open_source": {
+		"repository_url": "https://github.com/jbc25/autobuses-jerez"
+	},
 
 	"features": [
 		{
 			"header": "Mapa interactivo",
-			"body": "Visualiza todas las líneas en el mapa y muévete libremente deslizando y haciendo zoom.<br>La aplicación comprueba tu posición para que sepas exactamente donde estás y puedas ver qúé líneas y paradas tienes cerca.",
+			"body": "Visualiza todas las <b>líneas en el mapa</b> y muévete libremente deslizando y haciendo zoom.<br>La aplicación te indica <b>exactamente donde estás</b> para que puedas ver las líneas y paradas que tienes cerca.",
 			"image": "capture1.png",
 			"image_alt": "Mapa interactivo",
 			"inverted": true
 		},
 		{
 			"header": "Busca tu destino",
-			"body": "Utiliza el buscador de lugares para localizar tu destino. De esta manera te será muy fácil ver qué líneas pasan cerca.",
+			"body": "Utiliza el buscador de lugares para <b>localizar tu destino</b>. De esta manera te será muy fácil ver las líneas que pasan cerca.",
 			"image": "capture6.png",
 			"image_alt": "Líneas y paradas",
 			"inverted": false
 		},
 		{
 			"header": "Líneas y paradas",
-			"body": "Selecciona una línea para ver sus paradas en el mapa y en la vista esquemática. Podrás moverte por ellas y seleccionarlas para ver más información",
+			"body": "Selecciona una línea para ver sus <b>paradas en el mapa</b> y en la vista esquemática. Podrás moverte por ellas y seleccionarlas para ampliar información.",
 			"image": "capture2.png",
 			"image_alt": "Líneas y paradas",
 			"inverted": true
 		},
 		{
 			"header": "Horarios de cada parada",
-			"body": "En la parada seleccionada, solo tienes que pulsar el botón inferior para ver sus <b>horarios</b>.<br>Podrás ver fácilmente qué hora es y en qué día estamos (laborable, sábado o domingo/festivo).",
+			"body": "En la parada seleccionada, verás un botón que te mostrará <b>todos sus horarios</b> y la <b>hora y el día actual</b> (laborable, sábado o domingo/festivo).",
 			"image": "capture3.png",
 			"image_alt": "Horarios",
 			"inverted": false
 		},
 		{
-			"header": "Guarda paradas favoritas",
-			"body": "Pulsando el botón de la estrella podrás guardar tus paradas habituales para luego ver rápidamente sus horarios cuando lo necesites.",
+			"header": "Guarda tus paradas habituales",
+			"body": "Pulsando el botón de la estrella podrás guardar tus <b>paradas habituales</b> para <b>acceder directamente</b> a sus horarios cuando lo necesites.",
 			"image": "capture4.png",
 			"image_alt": "Paradas favoritas",
 			"inverted": true
 		},
 		{
 			"header": "Mostrar/ocultar líneas del mapa",
-			"body": "Despliega el panel lateral para elegir qué líneas quieres ver en el mapa y acceder fácilmente a la información de cada una de ellas.",
+			"body": "Despliega el panel lateral para <b>seleccionar las líneas que necesites</b> ver en el mapa y acceder fácilmente a la información de cada una de ellas.",
 			"image": "capture5.png",
 			"image_alt": "Horarios",
 			"inverted": false

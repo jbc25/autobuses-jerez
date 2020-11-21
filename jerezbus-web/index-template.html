@@ -41,7 +41,7 @@
     <link href="assets/bootstrap.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="assets/style.min.css" rel="stylesheet">
+    <link href="assets/style.css" rel="stylesheet">
 
     <style type="text/css">
       header.masthead{
@@ -55,7 +55,7 @@
     <!-- Navigation   -->
      <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
       <div class="container">
-        <img src="assets/favicon-32x32.png" alt="Logotipo app {{title}}" class="logo">
+        <img src="assets/ic_app_round.png" alt="Logotipo app {{title}}" class="logo">
         <a class="navbar-brand" href="#">{{title}}</a>
 
         <span class="float-right download-button">
@@ -117,6 +117,10 @@
     <!-- Footer -->
     <footer class="py-5 bg-black">
       <div class="container">
+        {{#open_source}}
+          <p class="m-0 text-center text-white">Código liberado bajo licencia GPL. <a href="{{repository_url}}" target="_blank">Ver en GitHub</a></p>
+        {{/open_source}}
+        <br>
         <p class="m-0 text-center text-white small"><a href="https://triskelapps.com/">Triskel Apps</a> {{year}} - <a href="#avisolegal" data-toggle="modal" data-target="#avisolegal">Aviso legal</a></p>
       </div>
       <!-- /.container -->

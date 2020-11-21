@@ -24,7 +24,7 @@ platforms_sizes = [
 	},
 	{
 		'name': 'favicon',
-		'sizes': [16, 32, 96],
+		'sizes': [16, 32, 64, 96],
 	},
 	{
 		'name': 'ms-icon',
