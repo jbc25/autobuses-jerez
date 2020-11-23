@@ -96,7 +96,7 @@ public class CountlyUtil {
             segmentation.put("line_id", busStop.getLineId());
             segmentation.put("bus_stop_info", String.format("L%d - %d - %s",
                     busStop.getLineId(), busStop.getCode(), busStop.getName()));
-            Countly.sharedInstance().events().recordEvent("add_favourite_bus_stop", segmentation);
+            Countly.sharedInstance().events().recordEvent("add_favourite_bus_stop_ok", segmentation);
         }
     }
 
@@ -106,7 +106,7 @@ public class CountlyUtil {
             segmentation.put("line_id", busStop.getLineId());
             segmentation.put("bus_stop_info", String.format("L%d - %d - %s",
                     busStop.getLineId(), busStop.getCode(), busStop.getName()));
-            Countly.sharedInstance().events().recordEvent("remove_favourite_bus_stop", segmentation);
+            Countly.sharedInstance().events().recordEvent("remove_favourite_bus_stop_ok", segmentation);
         }
     }
 

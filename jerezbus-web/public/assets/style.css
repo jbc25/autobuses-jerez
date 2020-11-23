@@ -126,7 +126,7 @@ header.masthead .bg-circle-4 {
 .logo { 
     margin-right: 10px; 
     width: 64px;
-    height: 64px;
+    height: 64px
 }
 
 .bg-primary {
@@ -181,12 +181,12 @@ header.masthead .bg-circle-4 {
 }
 
 @media (max-width:767px) {
-    .download-button { display: none; }
+    /*.download-button { display: none; } */
 }
 
 @media (max-width:425px) {
     .navbar-custom .navbar-brand {
-        font-size: .85rem;
+        font-size: 1rem;
         margin-right: 0;
     }
     .display-4 { font-size: 2rem; }
@@ -198,10 +198,13 @@ header.masthead .bg-circle-4 {
 
 @media (max-width:380px) {
     .navbar-custom .navbar-brand {
-        font-size: .8rem;
+        font-size: 1rem;
         margin-right: 0;
     }
-    .logo { width: 20px; }
+    .logo { 
+      width: 48px;
+      height: 48px 
+    }
     header.masthead .masthead-content .masthead-heading {
         font-size: 3rem;
     }

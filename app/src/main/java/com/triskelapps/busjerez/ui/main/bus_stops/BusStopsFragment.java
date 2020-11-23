@@ -162,11 +162,11 @@ public class BusStopsFragment extends BaseMainFragment implements BusStopsAdapte
             if (binding.imgFavourite.isSelected()) {
                 App.getDB().busStopDao().delete(busStopSelected);
                 binding.imgFavourite.setSelected(false);
-                CountlyUtil.addFavouriteBusStop(busStopSelected);
+                CountlyUtil.removeFavouriteBusStop(busStopSelected);
             } else {
                 App.getDB().busStopDao().insert(busStopSelected);
                 binding.imgFavourite.setSelected(true);
-                CountlyUtil.removeFavouriteBusStop(busStopSelected);
+                CountlyUtil.addFavouriteBusStop(busStopSelected);
             }
         }
 
