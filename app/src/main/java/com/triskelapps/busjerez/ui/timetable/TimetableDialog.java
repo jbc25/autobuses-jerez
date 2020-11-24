@@ -122,6 +122,10 @@ public class TimetableDialog extends DialogFragment implements WebView.FindListe
                 public void onPageFinished(WebView view, String url) {
                     super.onPageFinished(view, url);
 
+                    if (getActivity() == null) {
+                        return;
+                    }
+
                     // Workaround to make this work in Android 9
                     new Handler().postDelayed(() -> {
                         if (dayType != null) {
