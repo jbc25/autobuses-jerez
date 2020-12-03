@@ -16,6 +16,7 @@ public class MapDataController {
 
     private Map<Integer, Polyline> polylinePathMap = new HashMap<>();
     private Map<Integer, List<Marker>> markersBusStopsMap = new HashMap<>();
+    private Map<Integer, List<Marker>> markersArrowsMap = new HashMap<>();
 
     public void selectBusLine(int lineId) {
 
@@ -54,6 +55,10 @@ public class MapDataController {
         for (Marker marker : markersBusStopsMap.get(lineId)) {
             marker.setVisible(visible);
         }
+
+        for (Marker marker : markersArrowsMap.get(lineId)) {
+            marker.setVisible(visible);
+        }
     }
 
     public LatLngBounds getLineBounds(int lineId) {
@@ -65,9 +70,10 @@ public class MapDataController {
         return latLngBuilder.build();
     }
 
-    public void addLineData(int lineId, Polyline polylinePath, List<Marker> markersBusStopsLine) {
+    public void addLineData(int lineId, Polyline polylinePath, List<Marker> markersBusStopsLine, List<Marker> markersArrowsLine) {
         polylinePathMap.put(lineId, polylinePath);
         markersBusStopsMap.put(lineId, markersBusStopsLine);
+        markersArrowsMap.put(lineId, markersArrowsLine);
     }
 
     public boolean hasBusLineSelected() {

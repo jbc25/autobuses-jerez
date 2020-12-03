@@ -3,8 +3,16 @@ package com.triskelapps.busjerez.ui.main;
 import android.Manifest;
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.Canvas;
+import android.graphics.ColorFilter;
+import android.graphics.Paint;
+import android.graphics.PorterDuff;
+import android.graphics.PorterDuffColorFilter;
 import android.net.Uri;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -14,6 +22,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.widget.Toolbar;
+import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
@@ -38,6 +47,7 @@ import com.karumi.dexter.listener.PermissionDeniedResponse;
 import com.karumi.dexter.listener.PermissionGrantedResponse;
 import com.karumi.dexter.listener.PermissionRequest;
 import com.karumi.dexter.listener.single.PermissionListener;
+import com.triskelapps.busjerez.App;
 import com.triskelapps.busjerez.BuildConfig;
 import com.triskelapps.busjerez.R;
 import com.triskelapps.busjerez.base.BaseActivity;
@@ -95,6 +105,8 @@ public class MainActivity extends BaseActivity implements OnMapReadyCallback, Ma
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
 
+        Log.i(TAG, "mapAsync started");
+
         binding.progressMap.setVisibility(View.GONE);
 
         fragmentFilterBusLines = (FilterBusLinesFragment) getSupportFragmentManager().findFragmentById(R.id.fragment_filter_bus_lines);
@@ -151,6 +163,9 @@ public class MainActivity extends BaseActivity implements OnMapReadyCallback, Ma
 
     @Override
     public void onMapReady(GoogleMap googleMap) {
+
+        Log.i(TAG, "mapAsync ready");
+
         map = googleMap;
 
         mapDataController = new MapDataController();
@@ -388,8 +403,9 @@ public class MainActivity extends BaseActivity implements OnMapReadyCallback, Ma
         map.getUiSettings().setMapToolbarEnabled(true);
         if (busStopsFragment != null && marker.getTag() != null && marker.getTag() instanceof BusStop) {
             busStopsFragment.selectBusStop((BusStop) marker.getTag());
+            return false;
         }
-        return false;
+        return true;
     }
 
     public void selectBusStopMarker(int position) {
@@ -415,6 +431,8 @@ public class MainActivity extends BaseActivity implements OnMapReadyCallback, Ma
 
 
         map.clear();
+
+        Log.i(TAG, "loadBusLines: start");
 
         for (BusLine busLine : busLines) {
 
@@ -444,11 +462,56 @@ public class MainActivity extends BaseActivity implements OnMapReadyCallback, Ma
 
             }
 
-            mapDataController.addLineData(busLine.getId(), polylinePath, markersBusStopsLine);
+            List<Marker> markersArrowsLine = new ArrayList<>();
+            int PATH_STEP = 6;
+            BitmapDescriptor bitmapDescriptorLine = BitmapDescriptorFactory.fromBitmap(tintArrow(App.getColorForLine(this, busLine.getId())));
+            for (int pathIndex = 0; pathIndex < busLine.getPath().size(); pathIndex++) {
+                if (pathIndex % PATH_STEP == 0 && pathIndex + 1 < busLine.getPath().size()) {
+                    List<Double> currentCoords = busLine.getPath().get(pathIndex);
+                    List<Double> nextCoords = busLine.getPath().get(pathIndex+1);
+                    LatLng currentLatLng = new LatLng(currentCoords.get(0), currentCoords.get(1));
+                    LatLng nextLatLng = new LatLng(nextCoords.get(0), nextCoords.get(1));
+                    double rotation = SphericalUtil.computeHeading(currentLatLng, nextLatLng);
+
+                    double middleLat = (currentCoords.get(0) + nextCoords.get(0)) / 2;
+                    double middleLng = (currentCoords.get(1) + nextCoords.get(1)) / 2;
+                    LatLng position = new LatLng(middleLat, middleLng);
+                    Marker marker = map.addMarker(new MarkerOptions()
+                            .position(position)
+                            .visible(false)
+                            .rotation((float) rotation)
+                            .icon(bitmapDescriptorLine));
+
+                    markersArrowsLine.add(marker);
+                }
+
+            }
+
+            mapDataController.addLineData(busLine.getId(), polylinePath, markersBusStopsLine, markersArrowsLine);
 
         }
 
+        Log.i(TAG, "loadBusLines: finish");
+
+
     }
+
+    private Bitmap tintArrow(int colorId) {
+
+        int color = ContextCompat.getColor(this, colorId);
+
+        Bitmap markerBitmap = BitmapFactory.decodeResource(getResources(), R.mipmap.ic_arrow_busline);
+        Bitmap resultBitmap = Bitmap.createBitmap(markerBitmap.getWidth(), markerBitmap.getHeight(), Bitmap.Config.ARGB_8888);
+        ColorFilter filter = new PorterDuffColorFilter(color, PorterDuff.Mode.SRC_IN);
+
+        Paint markerPaint = new Paint();
+        markerPaint.setColorFilter(filter);
+
+        Canvas canvas = new Canvas(resultBitmap);
+        canvas.drawBitmap(markerBitmap, 0, 0, markerPaint);
+        return resultBitmap;
+    }
+
 
     private BitmapDescriptor getBusMarkerIcon(int lineId) {
         int resource = getResources().getIdentifier("ic_bus_marker_line_" + lineId, "mipmap", getPackageName());
