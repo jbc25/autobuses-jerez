@@ -31,6 +31,7 @@ import com.google.android.gms.maps.model.Polyline;
 import com.google.android.gms.maps.model.PolylineOptions;
 import com.google.android.libraries.places.api.model.Place;
 import com.google.android.material.navigation.NavigationView;
+import com.google.maps.android.SphericalUtil;
 import com.karumi.dexter.Dexter;
 import com.karumi.dexter.PermissionToken;
 import com.karumi.dexter.listener.PermissionDeniedResponse;
@@ -183,8 +184,12 @@ public class MainActivity extends BaseActivity implements OnMapReadyCallback, Ma
     }
 
     private void animateMapToBounds(LatLngBounds bounds) {
-        int padding = getResources().getDimensionPixelSize(R.dimen.padding_map);
-        map.animateCamera(CameraUpdateFactory.newLatLngBounds(bounds, padding));
+        try {
+            int padding = getResources().getDimensionPixelSize(R.dimen.padding_map);
+            map.animateCamera(CameraUpdateFactory.newLatLngBounds(bounds, padding));
+        } catch (Exception e) {
+            //ignore. a line was selected before maps is loaded. not important
+        }
     }
 
 
@@ -388,7 +393,7 @@ public class MainActivity extends BaseActivity implements OnMapReadyCallback, Ma
     }
 
     public void selectBusStopMarker(int position) {
-        if (mapDataController.hasBusLineSelected()) {
+        if (mapDataController.hasBusLineSelected() && position != -1) {
             map.getUiSettings().setMapToolbarEnabled(false);
             Marker marker = mapDataController.getMarker(position);
             marker.showInfoWindow();
@@ -397,7 +402,7 @@ public class MainActivity extends BaseActivity implements OnMapReadyCallback, Ma
     }
 
     public void unselectBusStopMarker(int position) {
-        if (mapDataController.hasBusLineSelected()) {
+        if (mapDataController.hasBusLineSelected() && position != -1) {
             Marker marker = mapDataController.getMarker(position);
             marker.hideInfoWindow();
         }
@@ -407,6 +412,7 @@ public class MainActivity extends BaseActivity implements OnMapReadyCallback, Ma
 
     @Override
     public void loadBusLines(List<BusLine> busLines) {
+
 
         map.clear();
 
