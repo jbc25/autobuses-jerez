@@ -6,10 +6,9 @@ import android.content.SharedPreferences;
 
 import androidx.preference.PreferenceManager;
 
+import com.triskelapps.busjerez.App;
 import com.triskelapps.busjerez.BuildConfig;
 import com.triskelapps.busjerez.R;
-
-import java.util.Map;
 
 public class ChangelogHelper {
 
@@ -28,14 +27,19 @@ public class ChangelogHelper {
 
 
     public void check() {
+
         int previousVersionCode = getPrefs().getInt(PREF_PREVIOUS_APP_VERSION_CODE, 0);
         int currentVersionCode = BuildConfig.VERSION_CODE;
 
-        if (previousVersionCode < currentVersionCode && hasText(currentVersionCode)) {
+        if (previousVersionCode < currentVersionCode && !isFirstTimeLaunch() && hasText(currentVersionCode)) {
             showText(currentVersionCode);
             getPrefs().edit().putInt(PREF_PREVIOUS_APP_VERSION_CODE, currentVersionCode).commit();
         }
 
+    }
+
+    private boolean isFirstTimeLaunch() {
+        return getPrefs().getBoolean(App.PREF_FIRST_TIME_LAUNCH, true);
     }
 
     private void showText(int currentVersionCode) {

@@ -2,6 +2,7 @@ package com.triskelapps.busjerez.ui.main;
 
 import android.Manifest;
 import android.annotation.SuppressLint;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -12,6 +13,7 @@ import android.graphics.PorterDuff;
 import android.graphics.PorterDuffColorFilter;
 import android.net.Uri;
 import android.os.Bundle;
+import android.text.Html;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.Menu;
@@ -52,6 +54,7 @@ import com.triskelapps.busjerez.BuildConfig;
 import com.triskelapps.busjerez.R;
 import com.triskelapps.busjerez.base.BaseActivity;
 import com.triskelapps.busjerez.databinding.ActivityMainBinding;
+import com.triskelapps.busjerez.databinding.ViewTextDialogBinding;
 import com.triskelapps.busjerez.model.BusLine;
 import com.triskelapps.busjerez.model.BusStop;
 import com.triskelapps.busjerez.ui.favourites.FavouritesActivity;
@@ -61,6 +64,7 @@ import com.triskelapps.busjerez.ui.main.filter.FilterBusLinesFragment;
 import com.triskelapps.busjerez.ui.news.NewsActivity;
 import com.triskelapps.busjerez.util.ChangelogHelper;
 import com.triskelapps.busjerez.util.CountlyUtil;
+import com.triskelapps.busjerez.util.ShareAppReminderHelper;
 import com.triskelapps.busjerez.util.Util;
 import com.triskelapps.busjerez.views.TextViewHTML;
 
@@ -123,7 +127,26 @@ public class MainActivity extends BaseActivity implements OnMapReadyCallback, Ma
         }
 
         ChangelogHelper.with(this).check();
+        ShareAppReminderHelper.with(this).check();
+        checkWelcomeMessage();
 
+    }
+
+    private void checkWelcomeMessage() {
+        if (getPrefs().getBoolean(App.PREF_FIRST_TIME_LAUNCH, true)) {
+
+            new AlertDialog.Builder(this)
+                    .setTitle(R.string.welcome)
+                    .setMessage(R.string.welcome_text)
+                    .setPositiveButton(R.string.watch_video, (dialog, which) -> {
+                        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(App.URL_YOUTUBE_VIDEO)));
+                        CountlyUtil.recordEvent("welcome_screen_watch_video");
+                    })
+                    .setNeutralButton(R.string.close, null)
+                    .show();
+
+            getPrefs().edit().putBoolean(App.PREF_FIRST_TIME_LAUNCH, false).commit();
+        }
     }
 
     @Override
@@ -343,6 +366,11 @@ public class MainActivity extends BaseActivity implements OnMapReadyCallback, Ma
                 CountlyUtil.recordEvent("click_menu_free_software");
                 break;
 
+            case R.id.nav_watch_video:
+                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(App.URL_YOUTUBE_VIDEO)));
+                CountlyUtil.recordEvent("click_menu_watch_video");
+                break;
+
             case R.id.nav_share:
                 Util.shareText(this, getString(R.string.share_text), getString(R.string.share_app));
                 CountlyUtil.recordEvent("click_menu_share");
@@ -355,13 +383,11 @@ public class MainActivity extends BaseActivity implements OnMapReadyCallback, Ma
     private void showDialogAssetsHtml(String assetFile) {
 
         String htmlContactText = Util.getStringFromAssets(this, assetFile);
-        TextViewHTML textViewHTML = new TextViewHTML(this);
-        textViewHTML.setText(htmlContactText);
+        ViewTextDialogBinding textDialogBinding = ViewTextDialogBinding.inflate(getLayoutInflater());
+        Util.setHtmlLinkableText(textDialogBinding.tvTextDialog, htmlContactText);
 
-        int padding = getResources().getDimensionPixelSize(R.dimen.padding_contact_dialog);
-        textViewHTML.setPadding(padding, padding, padding, padding);
         new AlertDialog.Builder(this)
-                .setView(textViewHTML)
+                .setView(textDialogBinding.getRoot())
                 .setNegativeButton(R.string.back, null)
                 .show();
     }

@@ -59,10 +59,22 @@
     <string name="info">Información</string>
     <string name="share">Compartir</string>
     <string name="share_app">¡Comparte esta aplicación!</string>
-    <string name="share_text">Te recomiendo la aplicación Autobuses de Jerez.\n\nCon ella podrás ver fácilmente qué linea y parada tienes que coger para llegar a tu destino y ver los horarios.\n\nDescargala gratuitamente en Google Play:\nhttps://play.google.com/store/apps/details?id=com.triskelapps.busjerez</string>
+    <string name="share_text">Nueva app: Autobuses de Jerez.\n\nCon ella podrás ver fácilmente qué linea y parada tienes que coger para llegar a tu destino y ver los horarios.\n\nDescargala gratuitamente en Google Play:\nhttps://play.google.com/store/apps/details?id=com.triskelapps.busjerez</string>
     <string name="empty_fav_list">Todavía no tienes paradas favoritas. Para añadirlas, selecciona tu línea y parada habitual en la pantalla anterior y pulsa el icono de la estrella.</string>
     <string name="covid_rules">Normas COVID</string>
     <string name="error_loading_timetable">Error al cargar los horarios. Estamos trabajando para arreglarlo.</string>
     <string name="version_updates">Novedades de esta versión:</string>
     <string name="ok">OK</string>
+    <string name="share_app_reminder_text">Si te está resultando útil esta app puedes compartirla con tus contactos, grupos o redes sociales y así ayudar a más gente a moverse mejor con los autobuses de Jerez ;)</string>
+    <string name="later">Mas tarde</string>
+    <string name="dont_show_again">No volver a mostrar</string>
+    <string name="welcome">¡Bienvenid@!</string>
+    <string name="welcome_text">Gracias por descargar la app Autobuses de Jerez. Con ella tendras a mano lo que necesitas para moverte mejor por la ciudad:\n
+\n- Mapa interactivo
+\n- Líneas y paradas
+\n- Horarios según tipo de día (laborable, sábado, domingo/festivo)
+\n- Buscador de lugares
+\n- Guarda paradas como favoritas para acceder a los horarios directamente
+\n- Sección de noticias y avisos\n\nPuedes ver un vídeo de demostración pulsando el botón inferior.</string>
+    <string name="watch_video">Ver video</string>
 </resources>

@@ -156,6 +156,22 @@ public class CountlyUtil {
         }
     }
 
+    public static void bannerMessageClick(String link) {
+        if (isAnalyticsEnabled()) {
+            Map<String, Object> segmentation = new HashMap<>();
+            segmentation.put("link", link);
+            Countly.sharedInstance().events().recordEvent("banner_message_click", segmentation);
+        }
+    }
+
+    public static void appShareReminderDialogShown(int appStartCount) {
+        if (isAnalyticsEnabled()) {
+            Map<String, Object> segmentation = new HashMap<>();
+            segmentation.put("app_start_count", appStartCount);
+            Countly.sharedInstance().events().recordEvent("app_share_reminder_dialog_shown", segmentation);
+        }
+    }
+
 
     public static void configureCountly(Application app) {
 

@@ -32,8 +32,11 @@ public class App extends Application {
     public static final String URL_GOOGLE_PLAY_APP = "https://play.google.com/store/apps/details?id=" + BuildConfig.APPLICATION_ID;
     public static final String URL_DIRECT_GOOGLE_PLAY_APP = "market://details?id=" + BuildConfig.APPLICATION_ID;
 
+    public static final String URL_YOUTUBE_VIDEO = "https://youtu.be/S87pQYvdvRQ";
+
     public static final String PREFIX = BuildConfig.APPLICATION_ID + ".";
 
+    public static final String PREF_FIRST_TIME_LAUNCH = PREFIX + "pref_first_time_launch";
     public static final String PREF_FIRST_TIME_DATA_POPULATED = PREFIX + "pref_first_time_data_populated";
 
     private static final String FILE_BUS_LINES_DATA = "bus_lines_data.json";
@@ -61,6 +64,10 @@ public class App extends Application {
                 .fallbackToDestructiveMigration()
                 .allowMainThreadQueries()
                 .build();
+
+
+        boolean firstTimeLaunch = getDB().busLineVisibleDao().getAll().size() == 0;
+        getPrefs(this).edit().putBoolean(PREF_FIRST_TIME_LAUNCH, firstTimeLaunch).commit();
 
         populateDataFirstTime();
 

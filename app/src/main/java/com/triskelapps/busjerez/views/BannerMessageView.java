@@ -25,6 +25,7 @@ import com.android.volley.toolbox.Volley;
 import com.google.firebase.remoteconfig.FirebaseRemoteConfig;
 import com.triskelapps.busjerez.R;
 import com.triskelapps.busjerez.databinding.ViewBannerMessageBinding;
+import com.triskelapps.busjerez.util.CountlyUtil;
 import com.triskelapps.busjerez.util.Util;
 
 import org.json.JSONException;
@@ -133,6 +134,7 @@ public class BannerMessageView extends FrameLayout implements View.OnClickListen
             Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(link));
             if (intent.resolveActivity(getContext().getPackageManager()) != null) {
                 getContext().startActivity(intent);
+                CountlyUtil.bannerMessageClick(link);
             }
         }
 
