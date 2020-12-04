@@ -134,13 +134,13 @@ public class MainActivity extends BaseActivity implements OnMapReadyCallback, Ma
 
     private void checkWelcomeMessage() {
         if (getPrefs().getBoolean(App.PREF_FIRST_TIME_LAUNCH, true)) {
-
+            CountlyUtil.recordEvent("welcome_screen_show_dialog");
             new AlertDialog.Builder(this)
                     .setTitle(R.string.welcome)
                     .setMessage(R.string.welcome_text)
                     .setPositiveButton(R.string.watch_video, (dialog, which) -> {
                         startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(App.URL_YOUTUBE_VIDEO)));
-                        CountlyUtil.recordEvent("welcome_screen_watch_video");
+                        CountlyUtil.recordEvent("welcome_screen_click_watch_video");
                     })
                     .setNeutralButton(R.string.close, null)
                     .show();

@@ -112,6 +112,11 @@ public class UpdateAppView extends FrameLayout implements View.OnClickListener, 
     @OnLifecycleEvent(Lifecycle.Event.ON_RESUME)
     public void checkUpdateInProgress() {
         Log.i(TAG, "checkUpdateInProgress: ");
+
+        if (BuildConfig.DEBUG) {
+            return;
+        }
+
         if (appUpdateInfo != null && appUpdateInfo.updateAvailability()
                 == UpdateAvailability.DEVELOPER_TRIGGERED_UPDATE_IN_PROGRESS) {
             AppUpdateOptions options = AppUpdateOptions.newBuilder(AppUpdateType.IMMEDIATE)
@@ -134,6 +139,7 @@ public class UpdateAppView extends FrameLayout implements View.OnClickListener, 
 
             case R.id.btn_update_app:
                 onUpdateVersionClick();
+                CountlyUtil.recordEvent("update_app_button_click");
                 break;
         }
 
@@ -168,6 +174,10 @@ public class UpdateAppView extends FrameLayout implements View.OnClickListener, 
     }
 
     private void checkUpdateAvailable() {
+
+        if (BuildConfig.DEBUG) {
+            return;
+        }
 
         Task<AppUpdateInfo> appUpdateInfoTask = appUpdateManager.getAppUpdateInfo();
 
