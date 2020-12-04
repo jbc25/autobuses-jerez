@@ -19,10 +19,16 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
+            <com.triskelapps.busjerez.views.BannerMessageView
+                android:id="@+id/view_banner_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
             <com.triskelapps.busjerez.views.UpdateAppView
                 android:id="@+id/view_update_app"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view_banner_message"/>
 
             <fragment
                 android:id="@+id/fragment_address"

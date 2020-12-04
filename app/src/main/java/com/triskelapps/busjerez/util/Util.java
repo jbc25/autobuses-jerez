@@ -19,8 +19,10 @@ import android.util.TypedValue;
 import android.view.WindowManager;
 import android.widget.TextView;
 
+import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.text.DecimalFormat;
 import java.text.DecimalFormatSymbols;
 import java.text.Normalizer;
@@ -177,5 +179,14 @@ public final class Util {
         } else {
             context.startActivity(sharingIntent);
         }
+    }
+
+    public static String getStringFromInputStream(InputStream inputStream) throws IOException {
+        BufferedReader r = new BufferedReader(new InputStreamReader(inputStream));
+        StringBuilder stringBuilder = new StringBuilder();
+        for (String line; (line = r.readLine()) != null; ) {
+            stringBuilder.append(line).append('\n');
+        }
+        return stringBuilder.toString();
     }
 }
