@@ -8,6 +8,7 @@ import android.net.Uri;
 import android.text.TextUtils;
 import android.util.AttributeSet;
 import android.util.Log;
+import android.util.Patterns;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.FrameLayout;
@@ -79,6 +80,8 @@ public class BannerMessageView extends FrameLayout implements View.OnClickListen
                         response -> processResponseJson(response),
                         error -> error.printStackTrace());
 
+        jsonObjectRequest.setShouldCache(false);
+
         queue.add(jsonObjectRequest);
 
     }
@@ -89,27 +92,31 @@ public class BannerMessageView extends FrameLayout implements View.OnClickListen
             boolean active = response.getBoolean("active");
             if (active) {
 
-                setVisibility(VISIBLE);
-
                 String message = response.getString("message");
                 String link = response.getString("link");
                 String color = response.getString("color");
                 String textColor = response.getString("text_color");
 
-                binding.tvBannerMessage.setText(message);
+                if (!TextUtils.isEmpty(message)) {
+                    binding.tvBannerMessage.setText(message);
+                    setVisibility(VISIBLE);
+                }
 
-                if (!TextUtils.isEmpty(link)) {
+                if (!TextUtils.isEmpty(link) && Patterns.WEB_URL.matcher(link).matches()) {
                     this.link = link;
                     setOnClickListener(this);
                 }
 
+                try {
+                    if (!TextUtils.isEmpty(color)) {
+                        binding.getRoot().setBackgroundColor(Color.parseColor(color));
+                    }
 
-                if (!TextUtils.isEmpty(color)) {
-                    setBackgroundColor(Color.parseColor(color));
-                }
-
-                if (!TextUtils.isEmpty(textColor)) {
-                    binding.tvBannerMessage.setTextColor(Color.parseColor(textColor));
+                    if (!TextUtils.isEmpty(textColor)) {
+                        binding.tvBannerMessage.setTextColor(Color.parseColor(textColor));
+                    }
+                } catch (IllegalArgumentException e) {
+                    Log.e(TAG, "processResponseJson: color cannot be parsed", e);
                 }
 
             }
