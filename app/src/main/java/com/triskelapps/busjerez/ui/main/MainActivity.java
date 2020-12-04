@@ -59,6 +59,7 @@ import com.triskelapps.busjerez.ui.main.address.AddressFragment;
 import com.triskelapps.busjerez.ui.main.bus_stops.BusStopsFragment;
 import com.triskelapps.busjerez.ui.main.filter.FilterBusLinesFragment;
 import com.triskelapps.busjerez.ui.news.NewsActivity;
+import com.triskelapps.busjerez.util.ChangelogHelper;
 import com.triskelapps.busjerez.util.CountlyUtil;
 import com.triskelapps.busjerez.util.Util;
 import com.triskelapps.busjerez.views.TextViewHTML;
@@ -120,6 +121,8 @@ public class MainActivity extends BaseActivity implements OnMapReadyCallback, Ma
         for (int i = 0; i < getSupportFragmentManager().getBackStackEntryCount(); i++) {
             getSupportFragmentManager().popBackStack();
         }
+
+        ChangelogHelper.with(this).check();
 
     }
 

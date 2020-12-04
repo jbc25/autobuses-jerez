@@ -79,9 +79,6 @@ public class UpdateAppView extends FrameLayout implements View.OnClickListener, 
 
         setVisibility(GONE);
 
-
-
-
         configure();
     }
 
