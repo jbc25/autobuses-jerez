@@ -71,6 +71,7 @@ public class ShareAppReminderHelper {
                 .setMessage(R.string.share_app_reminder_text)
                 .setPositiveButton(R.string.share, (dialog, which) -> {
                     Util.shareText(context, context.getString(R.string.share_text), context.getString(R.string.share_app));
+                    getPrefs().edit().putBoolean(PREF_DONT_SHOW_AGAIN, true).commit();
                     CountlyUtil.recordEvent("app_share_reminder_click_sharing");
                 })
                 .setNegativeButton(R.string.later, (dialog, which) ->
