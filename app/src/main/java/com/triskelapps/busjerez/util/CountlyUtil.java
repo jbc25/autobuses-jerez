@@ -173,6 +173,21 @@ public class CountlyUtil {
     }
 
 
+    public static void timetableError(BusStop busStop) {
+        if (isAnalyticsEnabled()) {
+            Map<String, Object> segmentation = new HashMap<>();
+            segmentation.put("line_id", busStop.getLineId());
+            segmentation.put("bus_stop_info", String.format("L%d - %s", busStop.getLineId(), busStop.getName()));
+            Countly.sharedInstance().events().recordEvent("timetable_error", segmentation);
+        }
+    }
+
+
+
+
+    // CONFIGURATIONS
+
+
     public static void configureCountly(Application app) {
 
         if (areKeysFetched()) {
@@ -224,4 +239,5 @@ public class CountlyUtil {
             Countly.sharedInstance().crashes().recordHandledException(e);
         }
     }
+
 }

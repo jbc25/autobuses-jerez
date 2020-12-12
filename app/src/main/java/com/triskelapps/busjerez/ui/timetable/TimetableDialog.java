@@ -60,18 +60,23 @@ public class TimetableDialog extends DialogFragment implements WebView.FindListe
                 .getTimetable(busStop.getLineId(), busStop.getCode(), new BaseInteractor.CallbackPost() {
                     @Override
                     public void onSuccess(String body) {
-                        hideProgressBar();
+                        if (getActivity() == null) {
+                            return;
+                        }
                         infoHtml = body;
                         loadTimetableHtml();
                     }
 
                     @Override
                     public void onError(String error) {
-                        hideProgressBar();
-                        if (getActivity() != null) {
-                            ((BaseActivity)getActivity()).toast(getString(R.string.error_loading_timetable));
+                        if (getActivity() == null) {
+                            return;
                         }
-                        CountlyUtil.recordHandledException(new Exception("Error loading timetable.\n" + error));
+                        hideProgressBar();
+                        ((BaseActivity) getActivity()).toast(getString(R.string.error_loading_timetable));
+
+                        CountlyUtil.recordHandledException(new Exception("Error loading timetable: " + error));
+                        CountlyUtil.timetableError(busStop);
                     }
                 });
     }
@@ -122,10 +127,18 @@ public class TimetableDialog extends DialogFragment implements WebView.FindListe
                 public void onPageFinished(WebView view, String url) {
                     super.onPageFinished(view, url);
 
+                    if (getActivity() == null) {
+                        CountlyUtil.recordHandledException(new Exception("Error timetable No Context"));
+                        return;
+                    }
+
+                    hideProgressBar();
+
                     // Workaround to make this work in Android 9
                     new Handler().postDelayed(() -> {
 
                         if (getActivity() == null) {
+                            CountlyUtil.recordHandledException(new Exception("Error timetable No Context"));
                             return;
                         }
 
@@ -151,7 +164,6 @@ public class TimetableDialog extends DialogFragment implements WebView.FindListe
             return "LABORABLES";
         }
     }
-
 
 
     @Override
