@@ -71,6 +71,14 @@ public class BusStopsFragment extends BaseMainFragment implements BusStopsAdapte
     }
 
     @Override
+    public void onResume() {
+        super.onResume();
+        if (busStopSelected != null) {
+            showBusStopInfoView(busStopSelected);
+        }
+    }
+
+    @Override
     public void onItemClick(View view, int position) {
 
         ((MainActivity) getActivity()).selectBusStopMarker(position);

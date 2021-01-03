@@ -47,4 +47,11 @@ public class FavouritesActivity extends BaseActivity implements FavouritesAdapte
         CountlyUtil.seeTimetableFavourite(busStop);
 
     }
+
+    @Override
+    public void onItemRemoveClick(int position) {
+        App.getDB().busStopDao().delete(favourites.get(position));
+        favourites.remove(position);
+        adapter.notifyDataSetChanged();
+    }
 }

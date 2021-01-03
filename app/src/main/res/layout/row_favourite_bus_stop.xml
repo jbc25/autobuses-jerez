@@ -21,5 +21,15 @@
         android:id="@+id/tv_name"
         style="@style/TextBase"
         android:textSize="18sp"
+        android:layout_weight="1"
         android:layout_marginLeft="8dp"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/img_remove_fav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_close"
+        android:padding="3dp"
+        app:tint="@color/black"
+        android:background="@drawable/background_pressed_common"/>
 </LinearLayout>
