@@ -19,6 +19,9 @@ public class BusStop implements Serializable {
     private String transfer;
     private String direction;
 
+    @Ignore
+    private boolean nonRegular;
+
     private String way;
 
     @Ignore
@@ -26,6 +29,10 @@ public class BusStop implements Serializable {
 
     public String getName() {
         return name;
+    }
+
+    public String getNameComplete() {
+        return name + (nonRegular ? "\nNo regular" : "");
     }
 
     public void setName(String name) {
@@ -82,5 +89,13 @@ public class BusStop implements Serializable {
 
     public void setWay(String way) {
         this.way = way;
+    }
+
+    public boolean isNonRegular() {
+        return nonRegular;
+    }
+
+    public void setNonRegular(boolean nonRegular) {
+        this.nonRegular = nonRegular;
     }
 }
