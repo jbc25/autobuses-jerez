@@ -23,7 +23,9 @@ Toda la información se ha obtenido de fuentes oficiales (página web, teléfono
 Si al usar la app, se detecta algún error, ya sea algún fallo técnico o relacionado con los datos de líneas de autobuses y horarios, puedes [mandarme un correo](mailto:julio@triskelapps.com) para corregirlo.
 También se puede escribir para mandar sugerencias de mejora.
 
-¡Muchas gracias y que disfrutes de esta aplicación!
+A fecha 4 de enero de 2021 se han corregido varios errores en la información de las líneas gracias a la ayuda de Daniel. ¡Muchas gracias por tu colaboración!
+
+¡Que disfrutes de esta aplicación!
 
 <span>
 <img src="resources/market/screenshots/photo5857267010495427553.jpg" alt="pantallazo1" width="200"/>
