@@ -32,7 +32,7 @@ public class BusStop implements Serializable {
     }
 
     public String getNameComplete() {
-        return name + (nonRegular ? "\nNo regular" : "");
+        return name + (nonRegular ? "\n(No regular)" : "");
     }
 
     public void setName(String name) {

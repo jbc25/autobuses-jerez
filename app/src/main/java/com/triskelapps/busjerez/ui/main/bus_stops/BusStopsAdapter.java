@@ -2,6 +2,7 @@ package com.triskelapps.busjerez.ui.main.bus_stops;
 
 
 import android.content.Context;
+import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -50,6 +51,7 @@ public class BusStopsAdapter extends RecyclerView.Adapter<BusStopsAdapter.ViewHo
         holder.binding.tvName.setText(busStop.getNameComplete());
         holder.binding.imgBusStop.setColorFilter(busLineColor);
         holder.binding.viewPointBusStop.setColor(busLineColor);
+        holder.binding.viewPointBusStop.setAlpha(busStop.isNonRegular() ? 0.5f : 1f);
         holder.binding.viewPointBusStop.configureStartEndPoint(position, busStops.size());
         holder.binding.getRoot().setSelected(selectedPosition == position);
 

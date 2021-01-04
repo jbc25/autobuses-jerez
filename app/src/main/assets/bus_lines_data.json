@@ -16932,7 +16932,7 @@
       {
         "name": "Carrefour Sur",
         "lineId": 8,
-        "nonRegular": false,
+        "nonRegular": true,
         "code": 107,
         "transfer": "13",
         "direction": "Sentido antihorario",
@@ -20351,7 +20351,7 @@
       {
         "name": "Carrefour Sur",
         "lineId": 9,
-        "nonRegular": false,
+        "nonRegular": true,
         "code": 108,
         "transfer": "13",
         "direction": "Sentido horario",
@@ -30588,7 +30588,7 @@
         "name": "Alc\u00e1zar",
         "lineId": 13,
         "nonRegular": false,
-        "code": -1,
+        "code": 8,
         "direction": "Zona Sur",
         "coordinates": [
           36.68001,
@@ -30599,7 +30599,7 @@
         "name": "Torresoto",
         "lineId": 13,
         "nonRegular": false,
-        "code": -1,
+        "code": 442,
         "direction": "Zona Sur",
         "coordinates": [
           36.6769516,
@@ -30609,8 +30609,8 @@
       {
         "name": "Campo de la Juventud",
         "lineId": 13,
-        "nonRegular": false,
-        "code": -1,
+        "nonRegular": true,
+        "code": 94,
         "direction": "Zona Sur",
         "coordinates": [
           36.6746222,
@@ -30620,8 +30620,8 @@
       {
         "name": "Agrimensor",
         "lineId": 13,
-        "nonRegular": false,
-        "code": -1,
+        "nonRegular": true,
+        "code": 1,
         "direction": "Zona Sur",
         "coordinates": [
           36.6754965,
@@ -30631,8 +30631,8 @@
       {
         "name": "Alvar Fa\u00f1ez",
         "lineId": 13,
-        "nonRegular": false,
-        "code": -1,
+        "nonRegular": true,
+        "code": 15,
         "direction": "Zona Sur",
         "coordinates": [
           36.6765435,
@@ -30643,7 +30643,7 @@
         "name": "Historiador B\u00aa Gtrrz.",
         "lineId": 13,
         "nonRegular": false,
-        "code": -1,
+        "code": 214,
         "direction": "Zona Sur",
         "coordinates": [
           36.6759664,
@@ -30654,7 +30654,7 @@
         "name": "Telef\u00f3nica",
         "lineId": 13,
         "nonRegular": false,
-        "code": -1,
+        "code": 431,
         "direction": "Zona Sur",
         "coordinates": [
           36.6749265,
@@ -30665,7 +30665,7 @@
         "name": "Quintero Ram\u00edrez",
         "lineId": 13,
         "nonRegular": false,
-        "code": -1,
+        "code": 358,
         "direction": "Zona Sur",
         "coordinates": [
           36.6751033,
@@ -30676,7 +30676,7 @@
         "name": "Jos\u00e9 de Soto",
         "lineId": 13,
         "nonRegular": false,
-        "code": -1,
+        "code": 230,
         "direction": "Zona Sur",
         "coordinates": [
           36.6743077,
@@ -30686,8 +30686,8 @@
       {
         "name": "Carrefour Sur",
         "lineId": 13,
-        "nonRegular": false,
-        "code": -1,
+        "nonRegular": true,
+        "code": 107,
         "direction": "Zona Sur",
         "coordinates": [
           36.6725658,
@@ -30697,8 +30697,8 @@
       {
         "name": "Rodrigo de Jerez",
         "lineId": 13,
-        "nonRegular": false,
-        "code": -1,
+        "nonRegular": true,
+        "code": 375,
         "direction": "Zona Sur",
         "coordinates": [
           36.6707383,
@@ -30708,8 +30708,8 @@
       {
         "name": "Media Markt",
         "lineId": 13,
-        "nonRegular": false,
-        "code": -1,
+        "nonRegular": true,
+        "code": 290,
         "direction": "Zona Sur",
         "coordinates": [
           36.669377,
@@ -30719,8 +30719,8 @@
       {
         "name": "Guadabajaque",
         "lineId": 13,
-        "nonRegular": false,
-        "code": -1,
+        "nonRegular": true,
+        "code": 194,
         "direction": "Zona Sur",
         "coordinates": [
           36.6652793,
@@ -30730,8 +30730,8 @@
       {
         "name": "Campus El Sabio",
         "lineId": 13,
-        "nonRegular": false,
-        "code": -1,
+        "nonRegular": true,
+        "code": 96,
         "direction": "Zona Sur",
         "coordinates": [
           36.6625839,
@@ -30741,8 +30741,8 @@
       {
         "name": "Resid. Rancho Colores",
         "lineId": 13,
-        "nonRegular": false,
-        "code": -1,
+        "nonRegular": true,
+        "code": 370,
         "direction": "Zona Sur",
         "coordinates": [
           36.6687513,
@@ -30752,8 +30752,8 @@
       {
         "name": "Gta. de Guadabajaque",
         "lineId": 13,
-        "nonRegular": false,
-        "code": -1,
+        "nonRegular": true,
+        "code": 190,
         "direction": "Zona Sur",
         "coordinates": [
           36.6664717,
@@ -30763,8 +30763,8 @@
       {
         "name": "Media Markt",
         "lineId": 13,
-        "nonRegular": false,
-        "code": -1,
+        "nonRegular": true,
+        "code": 291,
         "direction": "Zona Sur",
         "coordinates": [
           36.669291,
@@ -30774,8 +30774,8 @@
       {
         "name": "Rodrigo de Jerez",
         "lineId": 13,
-        "nonRegular": false,
-        "code": -1,
+        "nonRegular": true,
+        "code": 376,
         "direction": "Zona Sur",
         "coordinates": [
           36.6715858,
@@ -30785,7 +30785,7 @@
       {
         "name": "Carrefour Sur",
         "lineId": 13,
-        "nonRegular": false,
+        "nonRegular": true,
         "code": -1,
         "direction": "Zona Sur",
         "coordinates": [
@@ -30797,7 +30797,7 @@
         "name": "La Venencia",
         "lineId": 13,
         "nonRegular": false,
-        "code": -1,
+        "code": 251,
         "direction": "Zona Sur",
         "coordinates": [
           36.6709907,
@@ -30808,7 +30808,7 @@
         "name": "Av. Puerta del Sur",
         "lineId": 13,
         "nonRegular": false,
-        "code": -1,
+        "code": 58,
         "direction": "Zona Sur",
         "coordinates": [
           36.6688277,
@@ -30819,7 +30819,7 @@
         "name": "Asisa",
         "lineId": 13,
         "nonRegular": false,
-        "code": -1,
+        "code": 41,
         "direction": "Zona Sur",
         "coordinates": [
           36.6687729,
@@ -30830,7 +30830,7 @@
         "name": "C. Salud Puerta del Sur",
         "lineId": 13,
         "nonRegular": false,
-        "code": -1,
+        "code": 481,
         "direction": "Zona Sur",
         "coordinates": [
           36.6687299,
@@ -30841,7 +30841,7 @@
         "name": "Constituci\u00f3n",
         "lineId": 13,
         "nonRegular": false,
-        "code": -1,
+        "code": 128,
         "direction": "Zona Sur",
         "coordinates": [
           36.6691714,
@@ -30852,7 +30852,7 @@
         "name": "Nueva Cartuja",
         "lineId": 13,
         "nonRegular": false,
-        "code": -1,
+        "code": 307,
         "direction": "Zona Sur",
         "coordinates": [
           36.6702278,
@@ -30863,7 +30863,7 @@
         "name": "Av. Solidaridad",
         "lineId": 13,
         "nonRegular": false,
-        "code": -1,
+        "code": 418,
         "direction": "Zona Sur",
         "coordinates": [
           36.6697703,
@@ -30874,7 +30874,7 @@
         "name": "Vallesequillo II",
         "lineId": 13,
         "nonRegular": false,
-        "code": -1,
+        "code": 449,
         "direction": "Zona Sur",
         "coordinates": [
           36.6703888,
@@ -30885,7 +30885,7 @@
         "name": "Moreno Mendoza",
         "lineId": 13,
         "nonRegular": false,
-        "code": -1,
+        "code": 302,
         "direction": "Alc\u00e1zar-Centro",
         "coordinates": [
           36.673098,
@@ -30896,7 +30896,7 @@
         "name": "C.Mayores Zona Sur",
         "lineId": 13,
         "nonRegular": false,
-        "code": -1,
+        "code": 483,
         "direction": "Alc\u00e1zar-Centro",
         "coordinates": [
           36.6696146,
@@ -30907,7 +30907,7 @@
         "name": "C. Salud Puerta del Sur",
         "lineId": 13,
         "nonRegular": false,
-        "code": -1,
+        "code": 482,
         "direction": "Alc\u00e1zar-Centro",
         "coordinates": [
           36.6688399,
@@ -30918,7 +30918,7 @@
         "name": "Hern\u00e1ndez Rubio",
         "lineId": 13,
         "nonRegular": false,
-        "code": -1,
+        "code": 204,
         "direction": "Alc\u00e1zar-Centro",
         "coordinates": [
           36.6700497,
@@ -30929,7 +30929,7 @@
         "name": "Osuna",
         "lineId": 13,
         "nonRegular": false,
-        "code": -1,
+        "code": 315,
         "direction": "Alc\u00e1zar-Centro",
         "coordinates": [
           36.6701385,
@@ -30940,7 +30940,7 @@
         "name": "Juana Aguilar",
         "lineId": 13,
         "nonRegular": false,
-        "code": -1,
+        "code": 235,
         "direction": "Alc\u00e1zar-Centro",
         "coordinates": [
           36.6711983,
@@ -30951,7 +30951,7 @@
         "name": "La Venencia",
         "lineId": 13,
         "nonRegular": false,
-        "code": -1,
+        "code": 252,
         "direction": "Alc\u00e1zar-Centro",
         "coordinates": [
           36.6711071,
@@ -30961,8 +30961,8 @@
       {
         "name": "Carrefour Sur",
         "lineId": 13,
-        "nonRegular": false,
-        "code": -1,
+        "nonRegular": true,
+        "code": 108,
         "direction": "Alc\u00e1zar-Centro",
         "coordinates": [
           36.672842,
@@ -30973,7 +30973,7 @@
         "name": "Jos\u00e9 de Soto",
         "lineId": 13,
         "nonRegular": false,
-        "code": -1,
+        "code": 231,
         "direction": "Alc\u00e1zar-Centro",
         "coordinates": [
           36.6742857,
@@ -30984,7 +30984,7 @@
         "name": "Quintero Ram\u00edrez",
         "lineId": 13,
         "nonRegular": false,
-        "code": -1,
+        "code": 359,
         "direction": "Alc\u00e1zar-Centro",
         "coordinates": [
           36.6751014,
@@ -30995,7 +30995,7 @@
         "name": "Telef\u00f3nica",
         "lineId": 13,
         "nonRegular": false,
-        "code": -1,
+        "code": 432,
         "direction": "Alc\u00e1zar-Centro",
         "coordinates": [
           36.6748854,
@@ -31006,7 +31006,7 @@
         "name": "Historiador B\u00aa Gtrrz.",
         "lineId": 13,
         "nonRegular": false,
-        "code": -1,
+        "code": 213,
         "direction": "Alc\u00e1zar-Centro",
         "coordinates": [
           36.6760422,
@@ -31017,7 +31017,7 @@
         "name": "Torresoto",
         "lineId": 13,
         "nonRegular": false,
-        "code": -1,
+        "code": 443,
         "direction": "Alc\u00e1zar-Centro",
         "coordinates": [
           36.677098,
@@ -40238,7 +40238,7 @@
         "name": "Naves Andana",
         "lineId": 15,
         "nonRegular": false,
-        "code": 26,
+        "code": 25,
         "transfer": "",
         "direction": "El Portal",
         "coordinates": [
@@ -40298,7 +40298,7 @@
         "name": "Naves Andana",
         "lineId": 15,
         "nonRegular": false,
-        "code": -1,
+        "code": 26,
         "transfer": "",
         "direction": "Pz. Angustias-N.Jarilla",
         "coordinates": [
@@ -40394,7 +40394,7 @@
         "name": "C/ Porvenir",
         "lineId": 15,
         "nonRegular": false,
-        "code": -1,
+        "code": 340,
         "transfer": "7-8-9-10",
         "direction": "Nueva Jarilla",
         "coordinates": [
@@ -40406,7 +40406,7 @@
         "name": "Pz. Madre de Dios",
         "lineId": 15,
         "nonRegular": false,
-        "code": -1,
+        "code": 281,
         "transfer": "1-7-8-9-10",
         "direction": "Nueva Jarilla",
         "coordinates": [
@@ -40466,7 +40466,7 @@
         "name": "Sementales",
         "lineId": 15,
         "nonRegular": false,
-        "code": -1,
+        "code": 320,
         "transfer": "5-8-9",
         "direction": "Nueva Jarilla",
         "coordinates": [
@@ -40670,7 +40670,7 @@
         "name": "N.Jarilla- C/ Nueva",
         "lineId": 15,
         "nonRegular": false,
-        "code": -1,
+        "code": 87,
         "transfer": "",
         "direction": "Nueva Jarilla",
         "coordinates": [
@@ -40682,7 +40682,7 @@
         "name": "Nueva Jarilla II",
         "lineId": 15,
         "nonRegular": false,
-        "code": -1,
+        "code": 87,
         "transfer": "",
         "direction": "Nueva Jarilla",
         "coordinates": [

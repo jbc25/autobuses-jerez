@@ -948,11 +948,11 @@
                     "highlight": "#icon-1532-C2185B-highlight"
                 },
                 "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
-                "description": "descripción: TRANSBORDO: <br>LINEA: 15<br>COD.PARADA: 26<br>SENTIDO: Hacia El Portal<br>LATITUD: 36.6534291<br>LONGITUD: -6.1301725<br>TRANSBORDO: <br>LINEA: 15.0<br>COD.PARADA: 26.0<br>SENTIDO: Hacia El Portal<br>LATITUD: 36.6534291<br>LONGITUD: -6.1301725",
+                "description": "descripción: TRANSBORDO: <br>LINEA: 15<br>COD.PARADA: 26<br>SENTIDO: Hacia El Portal<br>LATITUD: 36.6534291<br>LONGITUD: -6.1301725<br>TRANSBORDO: <br>LINEA: 15.0<br>COD.PARADA: 25<br>SENTIDO: Hacia El Portal<br>LATITUD: 36.6534291<br>LONGITUD: -6.1301725",
                 "descripción": "TRANSBORDO: \nLINEA: 15\nCOD.PARADA: 26\nSENTIDO: Hacia El Portal\nLATITUD: 36.6534291\nLONGITUD: -6.1301725",
                 "TRANSBORDO": "",
                 "LINEA": "15.0",
-                "COD.PARADA": "26.0",
+                "COD.PARADA": "25",
                 "SENTIDO": "Hacia El Portal",
                 "LATITUD": "36.6534291",
                 "LONGITUD": "-6.1301725"
@@ -1093,11 +1093,11 @@
                     "highlight": "#icon-1532-C2185B-highlight"
                 },
                 "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
-                "description": "descripción: TRANSBORDO: <br>LINEA: <br>COD.PARADA: <br>SENTIDO: Hacia Jerez<br>LATITUD: 36.6535054<br>LONGITUD: -6.1294517<br>TRANSBORDO: <br>LINEA: <br>COD.PARADA: <br>SENTIDO: Hacia Jerez<br>LATITUD: 36.6535054<br>LONGITUD: -6.1294517",
+                "description": "descripción: TRANSBORDO: <br>LINEA: <br>COD.PARADA: <br>SENTIDO: Hacia Jerez<br>LATITUD: 36.6535054<br>LONGITUD: -6.1294517<br>TRANSBORDO: <br>LINEA: <br>COD.PARADA: 26<br>SENTIDO: Hacia Jerez<br>LATITUD: 36.6535054<br>LONGITUD: -6.1294517",
                 "descripción": "TRANSBORDO: \nLINEA: \nCOD.PARADA: \nSENTIDO: Hacia Jerez\nLATITUD: 36.6535054\nLONGITUD: -6.1294517",
                 "TRANSBORDO": "",
                 "LINEA": "",
-                "COD.PARADA": "",
+                "COD.PARADA": "26",
                 "SENTIDO": "Hacia Jerez",
                 "LATITUD": "36.6535054",
                 "LONGITUD": "-6.1294517"
@@ -1325,11 +1325,11 @@
                     "highlight": "#icon-1532-C2185B-highlight"
                 },
                 "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
-                "description": "descripción: TRANSBORDO: 7-8-9-10<br>LINEA: <br>COD.PARADA: <br>SENTIDO: Nueva Jarilla<br>LATITUD: 36.6793073<br>LONGITUD: -6.1307793<br>TRANSBORDO: 7-8-9-10<br>LINEA: 15<br>COD.PARADA: <br>SENTIDO: Nueva Jarilla<br>LATITUD: 36.6793073<br>LONGITUD: -6.1307793",
-                "descripción": "TRANSBORDO: 7-8-9-10\nLINEA: \nCOD.PARADA: \nSENTIDO: Nueva Jarilla\nLATITUD: 36.6793073\nLONGITUD: -6.1307793",
+                "description": "descripción: fake-cod.anterior<br><br>TRANSBORDO: 7-8-9-10<br>LINEA: 15<br>COD.PARADA: 340<br>SENTIDO: Nueva Jarilla<br>LATITUD: 36.6793073<br>LONGITUD: -6.1307793",
+                "descripción": "fake-cod.anterior\n",
                 "TRANSBORDO": "7-8-9-10",
                 "LINEA": "15",
-                "COD.PARADA": "",
+                "COD.PARADA": "340",
                 "SENTIDO": "Nueva Jarilla",
                 "LATITUD": "36.6793073",
                 "LONGITUD": "-6.1307793"
@@ -1354,11 +1354,11 @@
                     "highlight": "#icon-1532-C2185B-highlight"
                 },
                 "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
-                "description": "descripción: TRANSBORDO: 1-7-8-9-10<br>LINEA: <br>COD.PARADA: <br>SENTIDO: Nueva Jarilla<br>LATITUD: 36.6802302<br>LONGITUD: -6.128934<br>TRANSBORDO: 1-7-8-9-10<br>LINEA: 15<br>COD.PARADA: <br>SENTIDO: Nueva Jarilla<br>LATITUD: 36.6802302<br>LONGITUD: -6.128934",
+                "description": "descripción: TRANSBORDO: 1-7-8-9-10<br>LINEA: <br>COD.PARADA: <br>SENTIDO: Nueva Jarilla<br>LATITUD: 36.6802302<br>LONGITUD: -6.128934<br>TRANSBORDO: 1-7-8-9-10<br>LINEA: 15<br>COD.PARADA: 281<br>SENTIDO: Nueva Jarilla<br>LATITUD: 36.6802302<br>LONGITUD: -6.128934",
                 "descripción": "TRANSBORDO: 1-7-8-9-10\nLINEA: \nCOD.PARADA: \nSENTIDO: Nueva Jarilla\nLATITUD: 36.6802302\nLONGITUD: -6.128934",
                 "TRANSBORDO": "1-7-8-9-10",
                 "LINEA": "15",
-                "COD.PARADA": "",
+                "COD.PARADA": "281",
                 "SENTIDO": "Nueva Jarilla",
                 "LATITUD": "36.6802302",
                 "LONGITUD": "-6.128934"
@@ -1499,11 +1499,11 @@
                     "highlight": "#icon-1532-C2185B-highlight"
                 },
                 "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
-                "description": "descripción: <br>TRANSBORDO: 5-8-9<br>LINEA: 15<br>COD.PARADA: <br>SENTIDO: Nueva Jarilla<br>LATITUD: <br>LONGITUD: ",
-                "descripción": "",
+                "description": "descripción: fake-cod.anterior<br>TRANSBORDO: 5-8-9<br>LINEA: 15<br>COD.PARADA: 320<br>SENTIDO: Nueva Jarilla<br>LATITUD: <br>LONGITUD: ",
+                "descripción": "fake-cod.anterior",
                 "TRANSBORDO": "5-8-9",
                 "LINEA": "15",
-                "COD.PARADA": "",
+                "COD.PARADA": "320",
                 "SENTIDO": "Nueva Jarilla",
                 "LATITUD": "",
                 "LONGITUD": ""
@@ -1992,11 +1992,11 @@
                     "highlight": "#icon-1532-C2185B-highlight"
                 },
                 "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
-                "description": "descripción: <br>TRANSBORDO: <br>LINEA: 15<br>COD.PARADA: <br>SENTIDO: <br>LATITUD: <br>LONGITUD: ",
-                "descripción": "",
+                "description": "descripción: fake-cod.siguiente<br>TRANSBORDO: <br>LINEA: 15<br>COD.PARADA: 87<br>SENTIDO: <br>LATITUD: <br>LONGITUD: ",
+                "descripción": "fake-cod.siguiente",
                 "TRANSBORDO": "",
                 "LINEA": "15",
-                "COD.PARADA": "",
+                "COD.PARADA": "87",
                 "SENTIDO": "",
                 "LATITUD": "",
                 "LONGITUD": ""
@@ -2021,11 +2021,11 @@
                     "highlight": "#icon-1532-C2185B-highlight"
                 },
                 "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
-                "description": "descripción: <br>TRANSBORDO: <br>LINEA: 15<br>COD.PARADA: <br>SENTIDO: <br>LATITUD: <br>LONGITUD: ",
+                "description": "descripción: <br>TRANSBORDO: <br>LINEA: 15<br>COD.PARADA: 87<br>SENTIDO: <br>LATITUD: <br>LONGITUD: ",
                 "descripción": "",
                 "TRANSBORDO": "",
                 "LINEA": "15",
-                "COD.PARADA": "",
+                "COD.PARADA": "87",
                 "SENTIDO": "",
                 "LATITUD": "",
                 "LONGITUD": ""

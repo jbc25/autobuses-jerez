@@ -241,7 +241,10 @@ direction_names = {
 }
 
 
-non_regular_bus_stops = ['Garvey', 'Los Villares', 'Ciudad del Transporte', 'IVECO', 'PCTA']
+non_regular_bus_stops = ['Garvey', 'Los Villares', 'Ciudad del Transporte', 'IVECO', 'PCTA', 'Campo de la Juventud', 'Agrimensor',
+	'Alvar Fañez', 'Rodrigo de Jerez', 'Media Markt', 'Guadabajaque', 'Campus El Sabio', 'Resid. Rancho Colores', 
+	'Gta. de Guadabajaque', 'Media Markt', 'Rodrigo de Jerez', 'Carrefour Sur'
+]
 
 
 def download_timetable(line_number, bus_stop_code, bus_stop_name):
@@ -276,7 +279,7 @@ for lines_file in lines_files:
 
 	file_geojson = open(f'geojson/lineas_{lines_file}.geojson', 'r+')
 	geojson_text = file_geojson.read()
-	geojson_text = geojson_text.replace('COD. PARADA', 'COD').replace('COD.PARADA', 'COD')
+	geojson_text = geojson_text.replace('COD. PARADA', 'COD').replace('COD.PARADA', 'COD').replace('Codigo de parada', 'COD')
 	file_geojson.close()
 
 	geojson = json.loads(geojson_text)
@@ -320,8 +323,10 @@ for lines_file in lines_files:
 			try:
 				if 'COD' in properties_bus_stop:
 					bus_stop.code = int(float(properties_bus_stop['COD']))
+					#print(f'bus_stop.code: {bus_stop.code}')
 				else:
 					bus_stop.code = -1
+					print('no COD')
 
 			except:
 				bus_stop.code = -1
