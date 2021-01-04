@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="version_37">• Flechas para ver el sentido  de circulación de las líneas\n• Funcionamiento interno mejorado</string>
+    <string name="version_40">• Corregidos varios errores en la información de líneas y paradas. Gracias a Daniel por su colaboración ;)\n• Añadida la opción de borrar paradas favoritas desde la lista</string>
 </resources>
