@@ -16932,7 +16932,7 @@
       {
         "name": "Carrefour Sur",
         "lineId": 8,
-        "nonRegular": true,
+        "nonRegular": false,
         "code": 107,
         "transfer": "13",
         "direction": "Sentido antihorario",
@@ -20351,7 +20351,7 @@
       {
         "name": "Carrefour Sur",
         "lineId": 9,
-        "nonRegular": true,
+        "nonRegular": false,
         "code": 108,
         "transfer": "13",
         "direction": "Sentido horario",
@@ -30686,7 +30686,7 @@
       {
         "name": "Carrefour Sur",
         "lineId": 13,
-        "nonRegular": true,
+        "nonRegular": false,
         "code": 107,
         "direction": "Zona Sur",
         "coordinates": [
@@ -30783,7 +30783,7 @@
         ]
       },
       {
-        "name": "Carrefour Sur",
+        "name": "Carrefour Sur.",
         "lineId": 13,
         "nonRegular": true,
         "code": -1,
@@ -30961,7 +30961,7 @@
       {
         "name": "Carrefour Sur",
         "lineId": 13,
-        "nonRegular": true,
+        "nonRegular": false,
         "code": 108,
         "direction": "Alc\u00e1zar-Centro",
         "coordinates": [
