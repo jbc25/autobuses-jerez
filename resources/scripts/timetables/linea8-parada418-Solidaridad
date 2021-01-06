@@ -25,7 +25,7 @@
 <meta name="apple-mobile-web-app-capable" content="no" />
 
 
-<link rel="stylesheet" type="text/css" href="https://www.jerez.es/typo3temp/compressor/merged-9db878c020c7000a8abc6570a3b46b0e-609598856c08626eae2f713cf0d80df2.css?1590133124" media="all">
+<link rel="stylesheet" type="text/css" href="https://www.jerez.es/typo3temp/compressor/merged-6d7ca07417799db65b15b945f5cf48ad-1d7f0ca6a3b0d98e42ad3f2de2be6aa4.css?1606219997" media="all">
 
 
 
@@ -82,7 +82,7 @@
 </script>
 
 
-<H1 style="display: none"><title>listar_b: Ayuntamiento de Jerez - Página oficial</title></H1>
+
 
 
 </head>
@@ -94,7 +94,7 @@
 &id=listar_b
  -->
 	</div>
-	<div class="body-bg">
+	<h1 style="display: none">listar_b: Ayuntamiento de Jerez - Página oficial</h1><div class="body-bg">
 	<a class="sr-only sr-only-focusable" href="https://www.jerez.es/webs_municipales/autobuses_urbanos/listar/listar_b/#content">
 		Saltar al contenido principal
 	</a>
@@ -105,7 +105,7 @@
 
 	
 	<div class="container">
-		<div id="c191856"><div style='width: 200px; border: 1px solid black; float: left; padding: 10px; margin: 10px;'><STRONG>LABORABLES</STRONG><hr /><BR /><div style='width: 100px; float: left;'>07:54<br />08:24<br />08:46<br />09:12<br />09:36<br />10:03<br />10:28<br />10:56<br />11:25<br />11:55<br />12:24<br />12:52<br />13:21<br />13:51<br />14:19<br />14:46<br />15:36<br /></div><div style='width: 100px; float: left;'>16:06<br />16:27<br />16:52<br />17:22<br />17:49<br />18:12<br />18:40<br />19:12<br />19:40<br />20:03<br />20:30<br />21:04<br />21:29<br />21:49<br />22:44<br />23:25<br /></div></div><div style='width: 200px; border: 1px solid black; float: left; padding: 10px; margin: 10px;'><STRONG>S&Aacute;BADOS</STRONG><hr /><BR /><div style='width: 100px; float: left;'>08:24<br />08:52<br />09:16<br />09:42<br />10:06<br />10:31<br />10:58<br />11:26<br />11:55<br />12:23<br />12:55<br />13:23<br />13:52<br />14:51<br />15:17<br /></div><div style='width: 100px; float: left;'>16:05<br />16:38<br />17:00<br />17:26<br />17:48<br />18:19<br />18:45<br />19:14<br />19:37<br />20:10<br />20:36<br />21:04<br />21:29<br />22:00<br />23:06<br /></div><div style='width: 100px; float: left;'></div></div><div style='width: 200px; border: 1px solid black; float: left; padding: 10px; margin: 10px;'><STRONG>DOMINGOS Y FESTIVOS</STRONG><hr /><BR /><div style='width: 100px; float: left;'>08:20<br />08:45<br />09:19<br />10:01<br />10:28<br />11:04<br />11:46<br />12:16<br />12:52<br />13:35<br />14:05<br />14:40<br />15:23<br />15:53<br />16:25<br /></div><div style='width: 100px; float: left;'>17:04<br />17:35<br />18:09<br />18:48<br />19:20<br />19:56<br />20:37<br />21:09<br />21:47<br /></div></div><div style='clear: both;'></div>
+		<div id="c191856"><div style='width: 150px; border: 1px solid black; float: left; padding: 10px; margin: 10px;'><STRONG>LABORABLES</STRONG><hr /><BR /><div style='width: 100px; float: left;'>07:58<br />08:13<br />08:33<br />08:54<br />09:16<br />09:40<br />10:00<br />10:20<br />10:38<br />10:59<br />11:21<br />11:40<br />12:01<br />12:22<br />12:39<br />13:01<br />13:23<br />13:42<br />14:08<br />14:27<br />14:45<br /></div><div style='width: 100px; float: left;'>15:07<br />15:33<br />15:50<br />16:07<br />16:24<br />16:43<br />17:03<br />17:29<br />17:55<br />18:17<br />18:40<br />19:01<br />19:27<br />19:54<br />20:16<br />20:39<br />20:59<br />21:23<br />21:47<br />22:08<br />23:05<br /></div><div style='width: 100px; float: left;'></div></div><div style='width: 150px; border: 1px solid black; float: left; padding: 10px; margin: 10px;'><STRONG>S&Aacute;BADOS</STRONG><hr /><BR /><div style='width: 100px; float: left;'>08:24<br />08:52<br />09:16<br />09:42<br />10:06<br />10:31<br />10:58<br />11:26<br />11:55<br />12:23<br />12:55<br />13:23<br />13:52<br />14:51<br />15:17<br /></div><div style='width: 100px; float: left;'>16:05<br />16:38<br />17:00<br />17:26<br />17:48<br />18:19<br />18:45<br />19:14<br />19:37<br />20:10<br />20:36<br />21:04<br />21:29<br />22:00<br />23:06<br /></div><div style='width: 100px; float: left;'></div></div><div style='width: 150px; border: 1px solid black; float: left; padding: 10px; margin: 10px;'><STRONG>DOMINGOS Y FESTIVOS</STRONG><hr /><BR /><div style='width: 100px; float: left;'>08:20<br />08:45<br />09:19<br />10:01<br />10:28<br />11:04<br />11:46<br />12:16<br />12:52<br />13:35<br />14:05<br />14:40<br />15:23<br />15:53<br />16:25<br /></div><div style='width: 100px; float: left;'>17:04<br />17:35<br />18:09<br />18:48<br />19:20<br />19:56<br />20:37<br />21:09<br />21:47<br /></div></div><div style='clear: both;'></div>
 <br />
 
 
@@ -136,9 +136,9 @@
       
     };
   </script>
-<script src="https://www.jerez.es/typo3temp/compressor/jquery.magnific-popup.min-74ab4e9498fe1682f1c7bd6c1b5013f7.js?1543498771" type="text/javascript"></script>
-<script src="https://www.jerez.es/typo3temp/compressor/jquery.filter-isImageFile.min-27d871eb8236ef172ac3f3e78cc92b1a.js?1543498771" type="text/javascript"></script>
-<script src="https://www.jerez.es/typo3temp/compressor/jquery.mfpInlineFunctions.min-64491804b56c8927a0d5e59b0e529d3e.js?1543498771" type="text/javascript"></script>
+<script src="https://www.jerez.es/typo3temp/compressor/jquery.magnific-popup.min-bcc650c57acf901e873a9653f5f3f37b.js?1596187276" type="text/javascript"></script>
+<script src="https://www.jerez.es/typo3temp/compressor/jquery.filter-isImageFile.min-52abb678c16553de61bbd91f41d06369.js?1596187276" type="text/javascript"></script>
+<script src="https://www.jerez.es/typo3temp/compressor/jquery.mfpInlineFunctions.min-83fc7430f691afb8ac772bb9adcd5c38.js?1596187363" type="text/javascript"></script>
 
 <script src="https://www.jerez.es/typo3temp/compressor/cookieconsent-91d8b857cc360a22c43f0f8c48c05a3b.js?1545220080" type="text/javascript"></script>
 

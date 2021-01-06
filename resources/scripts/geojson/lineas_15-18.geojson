@@ -49,8 +49,8 @@
                     "highlight": "#icon-1532-C2185B-highlight"
                 },
                 "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
-                "description": "descripción: TRANSBORDO: <br>LINEA: 15<br>COD.PARADA: 309<br>SENTIDO: Unica<br>LATITUD: 36.756857<br>LONGITUD: -6.033231<br>TRANSBORDO: <br>LINEA: 15.0<br>COD.PARADA: 309<br>SENTIDO: Unica<br>LATITUD: 36.756857<br>LONGITUD: -6.033231",
-                "descripción": "TRANSBORDO: \nLINEA: 15\nCOD.PARADA: 309\nSENTIDO: Unica\nLATITUD: 36.756857\nLONGITUD: -6.033231",
+                "description": "descripción: fake<br>TRANSBORDO: <br>LINEA: 15.0<br>COD.PARADA: 309<br>SENTIDO: Unica<br>LATITUD: 36.756857<br>LONGITUD: -6.033231",
+                "descripción": "fake",
                 "TRANSBORDO": "",
                 "LINEA": "15.0",
                 "COD.PARADA": "309",

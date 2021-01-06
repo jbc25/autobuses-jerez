@@ -16146,7 +16146,7 @@
     "name": "L\u00ednea 8",
     "id": 8,
     "finalBusStopCode": -1,
-    "description": "Circular 1 (Angustias, sentido antihorario)",
+    "description": "Circular 1 - Sentido antihorario",
     "color": 0,
     "busStops": [
       {
@@ -20093,7 +20093,7 @@
     "name": "L\u00ednea 9",
     "id": 9,
     "finalBusStopCode": -1,
-    "description": "Circular 2 (Angustias, sentido horario)",
+    "description": "Circular 2 - Sentido horario",
     "color": 0,
     "busStops": [
       {
@@ -27818,7 +27818,7 @@
     "name": "L\u00ednea 12",
     "id": 12,
     "finalBusStopCode": 61,
-    "description": "Corredera - Avda. Europa",
+    "description": "Corredera - San Jos\u00e9 Obrero",
     "color": 0,
     "busStops": [
       {
@@ -32676,7 +32676,7 @@
     "name": "L\u00ednea 14",
     "id": 14,
     "finalBusStopCode": 384,
-    "description": "Esteve - Nueva Andaluc\u00eda - El Encinar",
+    "description": "Esteve - Rotonda N\u00ba6",
     "color": 0,
     "busStops": [
       {

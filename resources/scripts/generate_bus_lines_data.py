@@ -56,13 +56,13 @@ bus_lines_descriptions = {
 	"5": "Esteve - Guadalcac\u00edn", 
 	"6": "Esteve - La Granja", 
 	"7": "Angustias - Estella", 
-	"8": "Circular 1 (Angustias, sentido antihorario)", 
-	"9": "Circular 2 (Angustias, sentido horario)", 
+	"8": "Circular 1 - Sentido antihorario", 
+	"9": "Circular 2 - Sentido horario", 
 	"10": "La Canaleja - Esteve - Hospital", 
 	"11": "Esteve \u00bb La Marquesa", 
-	"12": "Corredera - Avda. Europa", 
+	"12": "Corredera - San José Obrero", 
 	"13": "Alc\u00e1zar - Puertas del Sur - Asisa", 
-	"14": "Esteve - Nueva Andaluc\u00eda - El Encinar", 
+	"14": "Esteve - Rotonda Nº6", 
 	"15": "Nueva Jarilla - Guadalcac\u00edn - Angustias - El Portal", 
 	"16": "Rotonda Casino - Hipercor - Ortega y Gasset", 
 	"17": "Rotonda Casino - Montealto", 
@@ -246,8 +246,12 @@ non_regular_bus_stops = ['Garvey', 'Los Villares', 'Ciudad del Transporte', 'IVE
 	'Gta. de Guadabajaque', 'Media Markt', 'Rodrigo de Jerez', 'Carrefour Sur.'
 ]
 
+timetable_download_count = 0
 
 def download_timetable(line_number, bus_stop_code, bus_stop_name):
+
+	global timetable_download_count
+	timetable_download_count += 1
 
 	print(f'Recibiendo horarios linea{line_number}-parada{bus_stop_code}-{bus_stop_name.replace("/","")}')
 
@@ -259,7 +263,7 @@ def download_timetable(line_number, bus_stop_code, bus_stop_name):
 	file_out.write(html_str)
 	file_out.close()
 
-	print('Horarios guardados')
+	print(f'Horarios guardados. total: {timetable_download_count}')
 
 
 lines_files = ["1-5", "6-10", "11-14", "15-18"]
@@ -333,8 +337,7 @@ for lines_file in lines_files:
 				print(f'Code not found. Línea: {line_number}. parada: {bus_stop_name}. index: {index}')
 				
 
-#			if line_number >= 5:
-#				download_timetable(line_number, bus_stop.code, bus_stop_name)
+#			download_timetable(line_number, bus_stop.code, bus_stop_name)
 
 			if 'TRANSBORDO' in properties_bus_stop:
 				bus_stop.transfer = properties_bus_stop['TRANSBORDO'].strip()
