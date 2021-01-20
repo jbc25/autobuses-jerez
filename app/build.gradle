@@ -10,8 +10,8 @@ android {
         applicationId "com.triskelapps.busjerez"
         minSdkVersion 17
         targetSdkVersion 29
-        versionCode 40
-        versionName "0.4.0"
+        versionCode 42
+        versionName "0.4.2"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 

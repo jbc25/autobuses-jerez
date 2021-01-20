@@ -268,8 +268,7 @@ def download_timetable(line_number, bus_stop_code, bus_stop_name):
 
 lines_files = ["1-5", "6-10", "11-14", "15-18"]
 
-# These two lines has 2 LineString
-repeat_path_line_10 = True
+# These lines has 2 LineString
 repeat_path_line_15 = True
 
 for lines_file in lines_files:
@@ -384,10 +383,6 @@ for lines_file in lines_files:
 
 
 			# After a LineString a new bus_line starts with these exceptions
-
-			if line_number == 10 and repeat_path_line_10:
-				repeat_path_line_10 = False
-				continue
 
 			if line_number == 15 and repeat_path_line_15:
 				repeat_path_line_15 = False

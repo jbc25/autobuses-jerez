@@ -16,6 +16,10 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 
+
+/**
+ * Not used, replaced by python script
+ */
 public class DataProcessUtil {
 
     private static final String TAG = "DataProcessUtil";
