@@ -1,9 +1,12 @@
 {
 	"title": "Autobuses de Jerez",
 	"title2": "Autobuses de Jerez - App gratuita para Android",
-	"description_short": "Encuentra fácilmente la forma de llegar en autobús a cualquier lugar de Jerez con esta app gratuita",
+	"description_short": "Encuentra fácilmente la forma de llegar en autobús a cualquier lugar de Jerez con esta app<br>Descárgala gratuitamente en",
 	"web_root": "https://jerezbus.web.app",
 	"app_id_android": "com.triskelapps.busjerez",
+	"app_store": {
+		"url": "https://apps.apple.com/es/app/autobusesjerez/id1546520728"
+		},
 	"firebase_proyect_name": "jerezbus",
 	"year": "2020",
 	"open_source": {

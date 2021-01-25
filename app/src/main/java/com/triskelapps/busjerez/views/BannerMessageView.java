@@ -1,9 +1,9 @@
 package com.triskelapps.busjerez.views;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
+import android.net.SSLCertificateSocketFactory;
 import android.net.Uri;
 import android.text.TextUtils;
 import android.util.AttributeSet;
@@ -12,37 +12,24 @@ import android.util.Patterns;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.FrameLayout;
-import android.widget.TextView;
-
-import androidx.appcompat.widget.AppCompatImageView;
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
-import com.android.volley.Response;
-import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
-import com.google.firebase.remoteconfig.FirebaseRemoteConfig;
-import com.triskelapps.busjerez.R;
+import com.google.android.gms.security.ProviderInstaller;
 import com.triskelapps.busjerez.databinding.ViewBannerMessageBinding;
 import com.triskelapps.busjerez.util.CountlyUtil;
-import com.triskelapps.busjerez.util.Util;
 
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.io.BufferedInputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
-import java.net.URL;
 
 public class BannerMessageView extends FrameLayout implements View.OnClickListener {
 
     private static final String TAG = "UpdateAppView";
 
-    public static final String URL_BANNER_MESSAGE_FILE = "http://triskelapps.es/apps/autobuses-jerez/banner_message.json";
+    public static final String URL_BANNER_MESSAGE_FILE = "https://triskelapps.es/apps/autobuses-jerez/banner_message.json";
     private String link;
     private ViewBannerMessageBinding binding;
 
@@ -80,6 +67,7 @@ public class BannerMessageView extends FrameLayout implements View.OnClickListen
                 (Request.Method.GET, URL_BANNER_MESSAGE_FILE, null,
                         response -> processResponseJson(response),
                         error -> error.printStackTrace());
+
 
         jsonObjectRequest.setShouldCache(false);
 
