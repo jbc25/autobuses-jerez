@@ -77,4 +77,5 @@
 \n- Guarda paradas como favoritas para acceder a los horarios directamente
 \n- Sección de noticias y avisos\n\nPuedes ver un vídeo de demostración pulsando el botón inferior.</string>
     <string name="watch_video">Ver video</string>
+    <string name="updating_data">Actualizando datos...</string>
 </resources>

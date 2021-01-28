@@ -3,6 +3,7 @@ package com.triskelapps.busjerez;
 import android.app.Application;
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.util.Log;
 
 import androidx.appcompat.app.AppCompatDelegate;
 import androidx.core.content.ContextCompat;
@@ -38,6 +39,9 @@ public class App extends Application {
 
     public static final String PREF_FIRST_TIME_LAUNCH = PREFIX + "pref_first_time_launch";
     public static final String PREF_FIRST_TIME_DATA_POPULATED = PREFIX + "pref_first_time_data_populated";
+    public static final String PREF_BUS_DATA = PREFIX + "pref_bus_data";
+    public static final String PREF_BUS_DATA_SAVED_VERSION = PREFIX + "pref_bus_data_saved_version";;
+
 
     private static final String FILE_BUS_LINES_DATA = "bus_lines_data.json";
 
@@ -79,6 +83,16 @@ public class App extends Application {
 
 
     private void populateDataFirstTime() {
+
+        Log.i(TAG, "populateDataFirstTime: 1");
+
+        if (getPrefs(this).getString(PREF_BUS_DATA, null) == null) {
+            String jsonDataStrInitial = Util.getStringFromAssets(this, FILE_BUS_LINES_DATA);
+            getPrefs(this).edit().putString(PREF_BUS_DATA, jsonDataStrInitial).commit();
+        }
+
+        Log.i(TAG, "populateDataFirstTime: 2");
+
         if (getDB().busLineVisibleDao().getAll().size() == 0) {
             populateBusLineVisibleTable();
         }
@@ -100,7 +114,7 @@ public class App extends Application {
 
     public static List<BusLine> getBusLinesData(Context context) {
 
-        String jsonDataStr = Util.getStringFromAssets(context, FILE_BUS_LINES_DATA);
+        String jsonDataStr = getPrefs(context).getString(PREF_BUS_DATA, null);
         Type listType = new TypeToken<ArrayList<BusLine>>() {
         }.getType();
         List<BusLine> busLines = new Gson().fromJson(jsonDataStr, listType);
@@ -108,10 +122,6 @@ public class App extends Application {
         for (BusLine busLine : busLines) {
             int colorId = getColorForLine(context, busLine.getId());
             busLine.setColor(ContextCompat.getColor(context, colorId));
-
-//            if (busLine.getId() == 1) {
-//                busLine.set
-//            }
 
             BusLineVisible busLineVisible = db.busLineVisibleDao().getBusLineVisible(busLine.getId());
             busLine.setVisible(busLineVisible.isVisible());
