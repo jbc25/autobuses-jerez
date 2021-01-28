@@ -18,6 +18,7 @@ import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
 import com.google.android.gms.security.ProviderInstaller;
+import com.triskelapps.busjerez.App;
 import com.triskelapps.busjerez.databinding.ViewBannerMessageBinding;
 import com.triskelapps.busjerez.util.CountlyUtil;
 
@@ -79,12 +80,16 @@ public class BannerMessageView extends FrameLayout implements View.OnClickListen
 
         try {
             boolean active = response.getBoolean("active");
-            if (active) {
+            int id = response.getInt("id");
+            boolean bannerIgnored = App.getPrefs(getContext()).getBoolean(App.PREF_BANNER_IGNORED_ID + id, false);
+
+            if (active && !bannerIgnored) {
 
                 String message = response.getString("message");
                 String link = response.getString("link");
                 String color = response.getString("color");
                 String textColor = response.getString("text_color");
+                boolean canClose = response.getBoolean("can_close");
 
                 if (!TextUtils.isEmpty(message)) {
                     binding.tvBannerMessage.setText(message);
@@ -107,6 +112,13 @@ public class BannerMessageView extends FrameLayout implements View.OnClickListen
                 } catch (IllegalArgumentException e) {
                     Log.e(TAG, "processResponseJson: color cannot be parsed", e);
                 }
+
+                binding.btnCloseBannerView.setVisibility(canClose ? VISIBLE : GONE);
+                binding.btnCloseBannerView.setOnClickListener(
+                        v -> {
+                            setVisibility(GONE);
+                            App.getPrefs(getContext()).edit().putBoolean(App.PREF_BANNER_IGNORED_ID + id, true).commit();
+                        });
 
             }
         } catch (JSONException e) {

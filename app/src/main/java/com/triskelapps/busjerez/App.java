@@ -40,7 +40,8 @@ public class App extends Application {
     public static final String PREF_FIRST_TIME_LAUNCH = PREFIX + "pref_first_time_launch";
     public static final String PREF_FIRST_TIME_DATA_POPULATED = PREFIX + "pref_first_time_data_populated";
     public static final String PREF_BUS_DATA = PREFIX + "pref_bus_data";
-    public static final String PREF_BUS_DATA_SAVED_VERSION = PREFIX + "pref_bus_data_saved_version";;
+    public static final String PREF_BUS_DATA_SAVED_VERSION = PREFIX + "pref_bus_data_saved_version";
+    public static final String PREF_BANNER_IGNORED_ID = PREFIX + "pref_banner_ignored_id_";
 
 
     private static final String FILE_BUS_LINES_DATA = "bus_lines_data.json";
