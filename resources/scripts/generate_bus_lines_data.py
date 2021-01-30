@@ -348,11 +348,12 @@ for lines_file in lines_files:
 			elif line_number == 9:
 				bus_stop.direction = 'Sentido horario'
 			else:
+				# print(f'line_number: {line_number}, direction_index: {direction_index}')
 				current_direction_data = direction_names[line_number][direction_index]
 				bus_stop.direction = current_direction_data['direction']
 				
 				bus_stop_name_to_continue = current_direction_data['destination']
-				if bus_stop.name == bus_stop_name_to_continue:
+				if bus_stop.name == bus_stop_name_to_continue and direction_index == 0:
 					direction_index += 1;
 
 			coordinates = geometry['coordinates']

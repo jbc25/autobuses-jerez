@@ -17669,28 +17669,28 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -6.1341409,
-                    36.6808015,
+                    -6.1315046,
+                    36.6814932,
                     0
                 ]
             },
             "properties": {
-                "name": "Pz. Angustias-Canal Sur",
-                "styleUrl": "#icon-1532-1A237E",
-                "styleHash": "-572a9907",
+                "name": "C/ Medina\n",
+                "styleUrl": "#icon-1532-01579B",
+                "styleHash": "6f39a139",
                 "styleMapHash": {
-                    "normal": "#icon-1532-1A237E-normal",
-                    "highlight": "#icon-1532-1A237E-highlight"
+                    "normal": "#icon-1532-01579B-normal",
+                    "highlight": "#icon-1532-01579B-highlight"
                 },
                 "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
-                "description": "descripción: TRANSBORDO: 1-2-3-4-5-6-7-8-9-10-11-12-14-15<br>LINEA: 18<br>COD.PARADA: 130<br>SENTIDO: Luz Shopping<br>LATITUD: 36.680865<br>LONGITUD: -6.134338<br>TRANSBORDO: 1-2-3-4-5-6-7-8-9-10-11-12-14-15<br>LINEA: 18.0<br>COD.PARADA: 130.0<br>SENTIDO: Luz Shopping<br>LATITUD: 36.680865<br>LONGITUD: -6.134338",
-                "descripción": "TRANSBORDO: 1-2-3-4-5-6-7-8-9-10-11-12-14-15\nLINEA: 18\nCOD.PARADA: 130\nSENTIDO: Luz Shopping\nLATITUD: 36.680865\nLONGITUD: -6.134338",
-                "TRANSBORDO": "1-2-3-4-5-6-7-8-9-10-11-12-14-15",
-                "LINEA": "18.0",
-                "COD.PARADA": "130.0",
-                "SENTIDO": "Luz Shopping",
-                "LATITUD": "36.680865",
-                "LONGITUD": "-6.134338"
+                "description": "descripción: <br>TRANSBORDO: <br>LINEA: 18<br>COD.PARADA: 130<br>SENTIDO: <br>LATITUD: <br>LONGITUD: ",
+                "descripción": "",
+                "TRANSBORDO": "",
+                "LINEA": "18",
+                "COD.PARADA": "130",
+                "SENTIDO": "",
+                "LATITUD": "",
+                "LONGITUD": ""
             }
         },
         {
@@ -17698,13 +17698,13 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -6.136273,
-                    36.6813093,
+                    -6.1355345,
+                    36.6834282,
                     0
                 ]
             },
             "properties": {
-                "name": "Corredera",
+                "name": "C/ Honda\n",
                 "styleUrl": "#icon-1532-C2185B",
                 "styleHash": "-63984647",
                 "styleMapHash": {
@@ -17712,14 +17712,14 @@
                     "highlight": "#icon-1532-C2185B-highlight"
                 },
                 "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
-                "description": "descripción: TRANSBORDO: 5-12<br>LINEA: 18<br>COD.PARADA: 131<br>SENTIDO: Luz Shopping<br>LATITUD: 36.680999<br>LONGITUD: -6.135418<br>TRANSBORDO: 5-12<br>LINEA: 18.0<br>COD.PARADA: 131.0<br>SENTIDO: Luz Shopping<br>LATITUD: 36.680999<br>LONGITUD: -6.135418",
-                "descripción": "TRANSBORDO: 5-12\nLINEA: 18\nCOD.PARADA: 131\nSENTIDO: Luz Shopping\nLATITUD: 36.680999\nLONGITUD: -6.135418",
-                "TRANSBORDO": "5-12",
-                "LINEA": "18.0",
-                "COD.PARADA": "131.0",
-                "SENTIDO": "Luz Shopping",
-                "LATITUD": "36.680999",
-                "LONGITUD": "-6.135418"
+                "description": "descripción: <br>TRANSBORDO: <br>LINEA: 18<br>COD.PARADA: 130<br>SENTIDO: <br>LATITUD: <br>LONGITUD: ",
+                "descripción": "",
+                "TRANSBORDO": "",
+                "LINEA": "18",
+                "COD.PARADA": "130",
+                "SENTIDO": "",
+                "LATITUD": "",
+                "LONGITUD": ""
             }
         },
         {
@@ -18685,73 +18685,38 @@
                 "type": "LineString",
                 "coordinates": [
                     [
-                        -6.134361,
-                        36.680819,
+                        -6.1315845,
+                        36.6815161,
                         0
                     ],
                     [
-                        -6.134556,
-                        36.680858,
+                        -6.1318137,
+                        36.6815916,
                         0
                     ],
                     [
-                        -6.134883,
-                        36.680888,
+                        -6.1324117,
+                        36.6818153,
                         0
                     ],
                     [
-                        -6.135323,
-                        36.680979,
+                        -6.1328704,
+                        36.6820255,
                         0
                     ],
                     [
-                        -6.135755,
-                        36.68109,
+                        -6.1335743,
+                        36.6823818,
                         0
                     ],
                     [
-                        -6.136249,
-                        36.681237,
+                        -6.1343644,
+                        36.6827401,
                         0
                     ],
                     [
-                        -6.13675,
-                        36.681426,
-                        0
-                    ],
-                    [
-                        -6.13667,
-                        36.681615,
-                        0
-                    ],
-                    [
-                        -6.136647,
-                        36.681854,
-                        0
-                    ],
-                    [
-                        -6.136655,
-                        36.682082,
-                        0
-                    ],
-                    [
-                        -6.136647,
-                        36.682318,
-                        0
-                    ],
-                    [
-                        -6.136632,
-                        36.682498,
-                        0
-                    ],
-                    [
-                        -6.136258,
-                        36.682895,
-                        0
-                    ],
-                    [
-                        -6.136114,
-                        36.683077,
+                        -6.1353254,
+                        36.6831286,
                         0
                     ],
                     [
@@ -22345,48 +22310,18 @@
                         0
                     ],
                     [
-                        -6.131777,
-                        36.6806753,
+                        -6.1317056,
+                        36.6806651,
                         0
                     ],
                     [
-                        -6.13279,
-                        36.6809128,
+                        -6.1311807,
+                        36.6813903,
                         0
                     ],
                     [
-                        -6.1328871,
-                        36.6809301,
-                        0
-                    ],
-                    [
-                        -6.1329881,
-                        36.6809132,
-                        0
-                    ],
-                    [
-                        -6.1330417,
-                        36.6808649,
-                        0
-                    ],
-                    [
-                        -6.1331542,
-                        36.6806359,
-                        0
-                    ],
-                    [
-                        -6.1332118,
-                        36.6805828,
-                        0
-                    ],
-                    [
-                        -6.1333285,
-                        36.6805812,
-                        0
-                    ],
-                    [
-                        -6.134361,
-                        36.680819,
+                        -6.1315046,
+                        36.6814932,
                         0
                     ]
                 ]

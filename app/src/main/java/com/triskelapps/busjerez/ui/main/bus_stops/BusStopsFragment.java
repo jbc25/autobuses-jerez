@@ -1,6 +1,7 @@
 package com.triskelapps.busjerez.ui.main.bus_stops;
 
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -110,10 +111,17 @@ public class BusStopsFragment extends BaseMainFragment implements BusStopsAdapte
         for (int i = 0; i < busStops.size(); i++) {
             BusStop busStopItem = busStops.get(i);
 
-            if (busStop.getCode() == busStopItem.getCode()) {
+            if (busStop.getCode() == busStopItem.getCode()
+                    && TextUtils.equals(busStop.getName(), busStopItem.getName())) {
                 position = i;
                 break;
             }
+        }
+
+        if (position == -1) {
+            CountlyUtil.recordHandledException(new IllegalArgumentException(
+                    "selectBusStop. not found: " + busStop.getName() + ", code: " + busStop.getCode()));
+            return;
         }
 
         adapter.setSelectedPosition(position);
