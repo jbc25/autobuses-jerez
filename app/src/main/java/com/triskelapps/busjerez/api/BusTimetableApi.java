@@ -17,7 +17,7 @@ public interface BusTimetableApi {
     Call<ResponseBody> getTimetable(@Field("valorLinea") int lineId, @Field("valorCaja1") int codeBusStop);
 
 
-    @GET("https://triskelapps.es/apps/autobuses-jerez/timetables/L{lineId}P{busStopCode}.html")
+    @GET("https://triskelapps.es/apps/autobuses-jerez/timetables/L{lineId}-P{busStopCode}.html")
     Call<ResponseBody> getTimetableAlternative(@Path("lineId") int lineId, @Path("busStopCode") int codeBusStop);
 
 

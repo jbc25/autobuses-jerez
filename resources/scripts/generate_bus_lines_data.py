@@ -246,25 +246,6 @@ non_regular_bus_stops = ['Garvey', 'Los Villares', 'Ciudad del Transporte', 'IVE
 	'Gta. de Guadabajaque', 'Media Markt', 'Rodrigo de Jerez', 'Carrefour Sur.'
 ]
 
-timetable_download_count = 0
-
-def download_timetable(line_number, bus_stop_code, bus_stop_name):
-
-	global timetable_download_count
-	timetable_download_count += 1
-
-	print(f'Recibiendo horarios linea{line_number}-parada{bus_stop_code}-{bus_stop_name.replace("/","")}')
-
-	payload = {'valorLinea': line_number, 'valorCaja1': bus_stop_code}
-	r = requests.post("https://www.jerez.es/index.php?id=listar_b", data=payload)
-	html_str = r.text
-
-	file_out = open(f'timetables/linea{line_number}-parada{bus_stop_code}-{bus_stop_name.replace("/","")}', 'w')
-	file_out.write(html_str)
-	file_out.close()
-
-	print(f'Horarios guardados. total: {timetable_download_count}')
-
 
 lines_files = ["1-5", "6-10", "11-14", "15-18"]
 
@@ -336,7 +317,7 @@ for lines_file in lines_files:
 				print(f'Code not found. Línea: {line_number}. parada: {bus_stop_name}. index: {index}')
 				
 
-#			download_timetable(line_number, bus_stop.code, bus_stop_name)
+			download_timetable(line_number, bus_stop.code, bus_stop_name)
 
 			if 'TRANSBORDO' in properties_bus_stop:
 				bus_stop.transfer = properties_bus_stop['TRANSBORDO'].strip()
