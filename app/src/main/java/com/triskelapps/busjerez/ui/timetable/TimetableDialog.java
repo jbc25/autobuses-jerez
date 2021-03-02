@@ -75,7 +75,6 @@ public class TimetableDialog extends DialogFragment implements WebView.FindListe
                         hideProgressBar();
                         ((BaseActivity) getActivity()).toast(getString(R.string.error_loading_timetable));
 
-                        CountlyUtil.recordHandledException(new Exception("Error loading timetable: " + error));
                         CountlyUtil.timetableError(busStop);
                     }
                 });

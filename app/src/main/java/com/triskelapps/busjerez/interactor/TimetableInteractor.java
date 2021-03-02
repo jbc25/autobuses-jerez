@@ -6,6 +6,7 @@ import android.util.Log;
 import com.triskelapps.busjerez.api.BusTimetableApi;
 import com.triskelapps.busjerez.base.BaseInteractor;
 import com.triskelapps.busjerez.base.BaseView;
+import com.triskelapps.busjerez.util.CountlyUtil;
 
 import java.io.IOException;
 
@@ -48,11 +49,39 @@ public class TimetableInteractor extends BaseInteractor {
                     @Override
                     public void onFailure(Call<ResponseBody> call, Throwable t) {
 
-                        callback.onError(t.getMessage());
+                        CountlyUtil.recordHandledException(new Exception("Error loading timetable: " + t.getMessage()));
+                        getTimetableAlternative(lineId, codeBusStop, callback);
                     }
                 });
     }
 
+    public void getTimetableAlternative(int lineId, int codeBusStop, CallbackPost callback) {
+
+        getApi(BusTimetableApi.class)
+                .getTimetableAlternative(lineId, codeBusStop)
+                .enqueue(new Callback<ResponseBody>() {
+                    @Override
+                    public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
+                        if (response.isSuccessful()) {
+                            try {
+                                callback.onSuccess(response.body().string());
+                            } catch (IOException e) {
+                                callback.onError("Error on string body");
+                                Log.e(TAG, "onResponse: Error", e);
+                            }
+                        } else {
+                            callback.onError(parseError(response));
+                        }
+                    }
+
+                    @Override
+                    public void onFailure(Call<ResponseBody> call, Throwable t) {
+
+                        CountlyUtil.recordHandledException(new Exception("Error loading timetable ALTERNATIVE: " + t.getMessage()));
+                        callback.onError(t.getMessage());
+                    }
+                });
+    }
 
 
 }
