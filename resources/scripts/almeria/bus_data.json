@@ -1,0 +1,1079 @@
+[
+    {
+        "id": "1",
+        "color": "#8f481f",
+        "name": "L\u00ednea 1",
+        "description": "Casco Hist\u00f3rico",
+        "busStops": [
+            {
+                "code": "34",
+                "name": "Obispo Orber\u00e1",
+                "lineId": "1",
+                "waitTimeCode": "",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            {
+                "code": "506",
+                "name": "Plaza del Carmen",
+                "lineId": "1",
+                "waitTimeCode": "",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            {
+                "code": "507",
+                "name": "Plaza Administracion Vieja",
+                "lineId": "1",
+                "waitTimeCode": "",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            {
+                "code": "5",
+                "name": "Paseo - Educador",
+                "lineId": "1",
+                "waitTimeCode": "",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            {
+                "code": "6",
+                "name": "Paseo - Delegaci\u00f3n de Gobierno",
+                "lineId": "1",
+                "waitTimeCode": "",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            {
+                "code": "406",
+                "name": "Puerta del Mar",
+                "lineId": "1",
+                "waitTimeCode": "",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            {
+                "code": "407",
+                "name": "Paseo San Luis, 7",
+                "lineId": "1",
+                "waitTimeCode": "",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            {
+                "code": "408",
+                "name": "Calle la Reina, 17",
+                "lineId": "1",
+                "waitTimeCode": "",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            {
+                "code": "409",
+                "name": "Alcazaba",
+                "lineId": "1",
+                "waitTimeCode": "",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            {
+                "code": "410",
+                "name": "Calle Reducto, 8",
+                "lineId": "1",
+                "waitTimeCode": "",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            {
+                "code": "411",
+                "name": "Calle Reducto, 92",
+                "lineId": "1",
+                "waitTimeCode": "",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            {
+                "code": "440",
+                "name": "Arqu\u00edmedes",
+                "lineId": "1",
+                "waitTimeCode": "",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            {
+                "code": "79",
+                "name": "Avenida del Mar 39",
+                "lineId": "1",
+                "waitTimeCode": "",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            {
+                "code": "412",
+                "name": "La Curva",
+                "lineId": "1",
+                "waitTimeCode": "",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            {
+                "code": "413",
+                "name": "Calle Nicol\u00e1s Salmer\u00f3n, 40",
+                "lineId": "1",
+                "waitTimeCode": "",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            {
+                "code": "414",
+                "name": "Calle Nicol\u00e1s Salmer\u00f3n, 20",
+                "lineId": "1",
+                "waitTimeCode": "",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            {
+                "code": "415",
+                "name": "Calle Nicol\u00e1s Salmer\u00f3n, 8",
+                "lineId": "1",
+                "waitTimeCode": "",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            {
+                "code": "292",
+                "name": "Estaci\u00f3n Intermodal",
+                "lineId": "1",
+                "waitTimeCode": "",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            {
+                "code": "273",
+                "name": "Carretera de Ronda 31",
+                "lineId": "1",
+                "waitTimeCode": "",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            {
+                "code": "293",
+                "name": "Art\u00e9s de Arcos",
+                "lineId": "1",
+                "waitTimeCode": "",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            {
+                "code": "479",
+                "name": "Calle Hermanos Machado",
+                "lineId": "1",
+                "waitTimeCode": "",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            {
+                "code": "7",
+                "name": "Stella Maris",
+                "lineId": "1",
+                "waitTimeCode": "",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            {
+                "code": "34",
+                "name": "Obispo Orber\u00e1",
+                "lineId": "1",
+                "waitTimeCode": "",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            }
+        ],
+        "waitTimeCode": "",
+        "path": [
+            [
+                0,
+                0
+            ],
+            [
+                1,
+                1
+            ]
+        ]
+    },
+    {
+        "id": "2",
+        "color": "#e42921",
+        "name": "L\u00ednea 2",
+        "description": "Centro - Hospital Torrec\u00e1rdenas",
+        "busStops": [
+            {
+                "code": "331",
+                "name": "Compa\u00f1\u00eda de Mar\u00eda",
+                "lineId": "2",
+                "waitTimeCode": "",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            {
+                "code": "4",
+                "name": "Paseo - Puerta de Purchena",
+                "lineId": "2",
+                "waitTimeCode": "",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            {
+                "code": "5",
+                "name": "Paseo - Educador",
+                "lineId": "2",
+                "waitTimeCode": "",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            {
+                "code": "6",
+                "name": "Paseo - Delegaci\u00f3n de Gobierno",
+                "lineId": "2",
+                "waitTimeCode": "",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            {
+                "code": "400",
+                "name": "Calle Can\u00f3nigo Molina Alonso",
+                "lineId": "2",
+                "waitTimeCode": "",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            {
+                "code": "292",
+                "name": "Estaci\u00f3n Intermodal",
+                "lineId": "2",
+                "waitTimeCode": "",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            {
+                "code": "401",
+                "name": "Carretera de Ronda 78",
+                "lineId": "2",
+                "waitTimeCode": "",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            {
+                "code": "9",
+                "name": "Ronda - Sanidad",
+                "lineId": "2",
+                "waitTimeCode": "",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            {
+                "code": "10",
+                "name": "Ronda - Blas Infante",
+                "lineId": "2",
+                "waitTimeCode": "",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            {
+                "code": "11",
+                "name": "Cruz Roja",
+                "lineId": "2",
+                "waitTimeCode": "",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            {
+                "code": "12",
+                "name": "Bola Azul",
+                "lineId": "2",
+                "waitTimeCode": "",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            {
+                "code": "13",
+                "name": "La Magnesita",
+                "lineId": "2",
+                "waitTimeCode": "",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            {
+                "code": "391",
+                "name": "Italia 6",
+                "lineId": "2",
+                "waitTimeCode": "",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            {
+                "code": "393",
+                "name": "Italia - Tito Pedro",
+                "lineId": "2",
+                "waitTimeCode": "",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            {
+                "code": "61",
+                "name": "Avenida Mediterr\u00e1neo - Centro Comercial",
+                "lineId": "2",
+                "waitTimeCode": "",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            {
+                "code": "396",
+                "name": "Avenida Mediterr\u00e1neo - Hotel Elba",
+                "lineId": "2",
+                "waitTimeCode": "",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            {
+                "code": "402",
+                "name": "Parroquia Jesucristo Redentor",
+                "lineId": "2",
+                "waitTimeCode": "",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            {
+                "code": "423",
+                "name": "Avenida Mediterr\u00e1neo - Colegio Europa",
+                "lineId": "2",
+                "waitTimeCode": "",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            {
+                "code": "19",
+                "name": "Carretera de Hu\u00e9rcal 24",
+                "lineId": "2",
+                "waitTimeCode": "",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            {
+                "code": "20",
+                "name": "Carretera de Hu\u00e9rcal 56",
+                "lineId": "2",
+                "waitTimeCode": "",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            {
+                "code": "22",
+                "name": "Hospital Universitario Torrec\u00e1rdenas",
+                "lineId": "2",
+                "waitTimeCode": "",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            {
+                "code": "22",
+                "name": "Hospital Universitario Torrec\u00e1rdenas",
+                "lineId": "2",
+                "waitTimeCode": "",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            {
+                "code": "426",
+                "name": "Parking Hospital",
+                "lineId": "2",
+                "waitTimeCode": "",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            {
+                "code": "23",
+                "name": "Estadio Municipal Juan Rojas",
+                "lineId": "2",
+                "waitTimeCode": "",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            {
+                "code": "307",
+                "name": "Domingo Art\u00e9s 20",
+                "lineId": "2",
+                "waitTimeCode": "",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            {
+                "code": "403",
+                "name": "Colegio Almer\u00eda Norte",
+                "lineId": "2",
+                "waitTimeCode": "",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            {
+                "code": "67",
+                "name": "Centro Comercial Mediterr\u00e1neo",
+                "lineId": "2",
+                "waitTimeCode": "",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            {
+                "code": "394",
+                "name": "Italia 11",
+                "lineId": "2",
+                "waitTimeCode": "",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            {
+                "code": "392",
+                "name": "Italia - Parque",
+                "lineId": "2",
+                "waitTimeCode": "",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            {
+                "code": "27",
+                "name": "Ronda - la Magnesita",
+                "lineId": "2",
+                "waitTimeCode": "",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            {
+                "code": "28",
+                "name": "Ronda - Bola Azul",
+                "lineId": "2",
+                "waitTimeCode": "",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            {
+                "code": "29",
+                "name": "Ronda - Cruz Roja",
+                "lineId": "2",
+                "waitTimeCode": "",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            {
+                "code": "30",
+                "name": "Ronda - Juzgados",
+                "lineId": "2",
+                "waitTimeCode": "",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            {
+                "code": "31",
+                "name": "Sanidad",
+                "lineId": "2",
+                "waitTimeCode": "",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            {
+                "code": "32",
+                "name": "Gregorio Mara\u00f1\u00f3n 45",
+                "lineId": "2",
+                "waitTimeCode": "",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            {
+                "code": "331",
+                "name": "Compa\u00f1\u00eda de Mar\u00eda",
+                "lineId": "2",
+                "waitTimeCode": "",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            }
+        ],
+        "waitTimeCode": "",
+        "path": [
+            [
+                0,
+                0
+            ],
+            [
+                1,
+                1
+            ]
+        ]
+    },
+    {
+        "id": "3",
+        "color": "#007d3b",
+        "name": "L\u00ednea 3",
+        "description": "Torrec\u00e1rdenas - Nueva Almer\u00eda",
+        "busStops": [
+            {
+                "code": "150",
+                "name": "Nueva Almer\u00eda",
+                "lineId": "3",
+                "waitTimeCode": "",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            {
+                "code": "151",
+                "name": "Quinto Pino",
+                "lineId": "3",
+                "waitTimeCode": "",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            {
+                "code": "152",
+                "name": "Auditorio",
+                "lineId": "3",
+                "waitTimeCode": "",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            {
+                "code": "154",
+                "name": "Avenida Mediterr\u00e1neo - Auditorio",
+                "lineId": "3",
+                "waitTimeCode": "",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            {
+                "code": "155",
+                "name": "Parque de las Familias",
+                "lineId": "3",
+                "waitTimeCode": "",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            {
+                "code": "157",
+                "name": "Avenida Mediterr\u00e1neo 104",
+                "lineId": "3",
+                "waitTimeCode": "",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            {
+                "code": "158",
+                "name": "Avenida Mediterr\u00e1neo - Cortijo Grande",
+                "lineId": "3",
+                "waitTimeCode": "",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            {
+                "code": "56",
+                "name": "Parque Carrefour",
+                "lineId": "3",
+                "waitTimeCode": "",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            {
+                "code": "57",
+                "name": "Parque del Generalife",
+                "lineId": "3",
+                "waitTimeCode": "",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            {
+                "code": "58",
+                "name": "Avenida Mediterr\u00e1neo 298",
+                "lineId": "3",
+                "waitTimeCode": "",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            {
+                "code": "81",
+                "name": "Granja Escuela",
+                "lineId": "3",
+                "waitTimeCode": "",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            {
+                "code": "82",
+                "name": "Los D\u00edaz",
+                "lineId": "3",
+                "waitTimeCode": "",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            {
+                "code": "116",
+                "name": "Mam\u00ed - Cauce",
+                "lineId": "3",
+                "waitTimeCode": "",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            {
+                "code": "126",
+                "name": "Mam\u00ed - Iglesia",
+                "lineId": "3",
+                "waitTimeCode": "",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            {
+                "code": "127",
+                "name": "Mam\u00ed 140",
+                "lineId": "3",
+                "waitTimeCode": "",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            {
+                "code": "156",
+                "name": "Zeus",
+                "lineId": "3",
+                "waitTimeCode": "",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            {
+                "code": "161",
+                "name": "La Fuente",
+                "lineId": "3",
+                "waitTimeCode": "",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            {
+                "code": "321",
+                "name": "Madre Mar\u00eda Aznar 6",
+                "lineId": "3",
+                "waitTimeCode": "",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            {
+                "code": "309",
+                "name": "Madre Mar\u00eda Aznar 142",
+                "lineId": "3",
+                "waitTimeCode": "",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            {
+                "code": "306",
+                "name": "Colegio Europa",
+                "lineId": "3",
+                "waitTimeCode": "",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            {
+                "code": "19",
+                "name": "Carretera de Hu\u00e9rcal 24",
+                "lineId": "3",
+                "waitTimeCode": "",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            {
+                "code": "20",
+                "name": "Carretera de Hu\u00e9rcal 56",
+                "lineId": "3",
+                "waitTimeCode": "",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            {
+                "code": "22",
+                "name": "Hospital Universitario Torrec\u00e1rdenas",
+                "lineId": "3",
+                "waitTimeCode": "",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            {
+                "code": "22",
+                "name": "Hospital Universitario Torrec\u00e1rdenas",
+                "lineId": "3",
+                "waitTimeCode": "",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            {
+                "code": "426",
+                "name": "Parking Hospital",
+                "lineId": "3",
+                "waitTimeCode": "",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            {
+                "code": "23",
+                "name": "Estadio Municipal Juan Rojas",
+                "lineId": "3",
+                "waitTimeCode": "",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            {
+                "code": "307",
+                "name": "Domingo Art\u00e9s 20",
+                "lineId": "3",
+                "waitTimeCode": "",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            {
+                "code": "311",
+                "name": "Avenida. Madre Mar\u00eda Aznar, 151",
+                "lineId": "3",
+                "waitTimeCode": "",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            {
+                "code": "308",
+                "name": "Madre Mar\u00eda Aznar 127",
+                "lineId": "3",
+                "waitTimeCode": "",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            {
+                "code": "395",
+                "name": "Avenida. Madre Mar\u00eda Aznar, la Salle",
+                "lineId": "3",
+                "waitTimeCode": "",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            {
+                "code": "312",
+                "name": "Instituto Alhadra",
+                "lineId": "3",
+                "waitTimeCode": "",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            {
+                "code": "324",
+                "name": "Instituto Albaida",
+                "lineId": "3",
+                "waitTimeCode": "",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            {
+                "code": "99",
+                "name": "Carretera de N\u00edjar - Granja Escuela",
+                "lineId": "3",
+                "waitTimeCode": "",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            {
+                "code": "69",
+                "name": "Jefatura Polic\u00eda Local",
+                "lineId": "3",
+                "waitTimeCode": "",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            {
+                "code": "70",
+                "name": "Avenida Mediterr\u00e1neo 233",
+                "lineId": "3",
+                "waitTimeCode": "",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            {
+                "code": "71",
+                "name": "Plaza Nueva Andaluc\u00eda",
+                "lineId": "3",
+                "waitTimeCode": "",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            {
+                "code": "159",
+                "name": "Avenida Mediterr\u00e1neo - Estaci\u00f3n de Servicio",
+                "lineId": "3",
+                "waitTimeCode": "",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            {
+                "code": "160",
+                "name": "Avenida Mediterr\u00e1neo - Jacinto Benavente",
+                "lineId": "3",
+                "waitTimeCode": "",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            {
+                "code": "162",
+                "name": "Avenida Mediterr\u00e1neo 45",
+                "lineId": "3",
+                "waitTimeCode": "",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            {
+                "code": "163",
+                "name": "Avenida Mediterr\u00e1neo 23",
+                "lineId": "3",
+                "waitTimeCode": "",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            {
+                "code": "136",
+                "name": "Paseo Mar\u00edtimo - Auditorio",
+                "lineId": "3",
+                "waitTimeCode": "",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            {
+                "code": "137",
+                "name": "Paseo Mar\u00edtimo - Residencia de Mayores",
+                "lineId": "3",
+                "waitTimeCode": "",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            {
+                "code": "150",
+                "name": "Nueva Almer\u00eda",
+                "lineId": "3",
+                "waitTimeCode": "",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            }
+        ],
+        "waitTimeCode": "",
+        "path": [
+            [
+                0,
+                0
+            ],
+            [
+                1,
+                1
+            ]
+        ]
+    }
+]
