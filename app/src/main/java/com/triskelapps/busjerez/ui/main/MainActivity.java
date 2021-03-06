@@ -8,9 +8,11 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.ColorFilter;
+import android.graphics.LightingColorFilter;
 import android.graphics.Paint;
 import android.graphics.PorterDuff;
 import android.graphics.PorterDuffColorFilter;
+import android.graphics.drawable.BitmapDrawable;
 import android.net.Uri;
 import android.os.Bundle;
 import android.text.Html;
@@ -78,7 +80,7 @@ public class MainActivity extends BaseActivity implements OnMapReadyCallback, Ma
     public final LatLng JEREZ_NORTH_EAST = new LatLng(36.707457, -6.093387);
     public final LatLng JEREZ_SOUTH_WEST = new LatLng(36.663924, -6.160751);
 
-    private final LatLng JEREZ_CENTER = new LatLng(36.687458, -6.127826);
+    private final LatLng JEREZ_CENTER = new LatLng(36.843724859578046, -2.450765243421731);
 
     private GoogleMap map;
     private MainPresenter presenter;
@@ -482,7 +484,7 @@ public class MainActivity extends BaseActivity implements OnMapReadyCallback, Ma
                 Marker marker = map.addMarker(new MarkerOptions()
                         .position(position)
                         .visible(false)
-                        .icon(getBusMarkerIcon(busLine.getId()))
+                        .icon(getBusMarkerIcon(busLine.getColor()))
                         .title(busStop.getName()));
 
                 marker.setTag(busStop);
@@ -492,29 +494,29 @@ public class MainActivity extends BaseActivity implements OnMapReadyCallback, Ma
             }
 
             List<Marker> markersArrowsLine = new ArrayList<>();
-            int PATH_STEP = 7;
-            BitmapDescriptor bitmapDescriptorLine = BitmapDescriptorFactory.fromBitmap(tintArrow(App.getColorForLine(this, busLine.getId())));
-            for (int pathIndex = 0; pathIndex < busLine.getPath().size(); pathIndex++) {
-                if (pathIndex % PATH_STEP == 0 && pathIndex + 1 < busLine.getPath().size()) {
-                    List<Double> currentCoords = busLine.getPath().get(pathIndex);
-                    List<Double> nextCoords = busLine.getPath().get(pathIndex+1);
-                    LatLng currentLatLng = new LatLng(currentCoords.get(0), currentCoords.get(1));
-                    LatLng nextLatLng = new LatLng(nextCoords.get(0), nextCoords.get(1));
-                    double rotation = SphericalUtil.computeHeading(currentLatLng, nextLatLng);
-
-                    double middleLat = (currentCoords.get(0) + nextCoords.get(0)) / 2;
-                    double middleLng = (currentCoords.get(1) + nextCoords.get(1)) / 2;
-                    LatLng position = new LatLng(middleLat, middleLng);
-                    Marker marker = map.addMarker(new MarkerOptions()
-                            .position(position)
-                            .visible(false)
-                            .rotation((float) rotation)
-                            .icon(bitmapDescriptorLine));
-
-                    markersArrowsLine.add(marker);
-                }
-
-            }
+//            int PATH_STEP = 7;
+//            BitmapDescriptor bitmapDescriptorLine = BitmapDescriptorFactory.fromBitmap(tintArrow(App.getColorForLine(this, busLine.getId())));
+//            for (int pathIndex = 0; pathIndex < busLine.getPath().size(); pathIndex++) {
+//                if (pathIndex % PATH_STEP == 0 && pathIndex + 1 < busLine.getPath().size()) {
+//                    List<Double> currentCoords = busLine.getPath().get(pathIndex);
+//                    List<Double> nextCoords = busLine.getPath().get(pathIndex+1);
+//                    LatLng currentLatLng = new LatLng(currentCoords.get(0), currentCoords.get(1));
+//                    LatLng nextLatLng = new LatLng(nextCoords.get(0), nextCoords.get(1));
+//                    double rotation = SphericalUtil.computeHeading(currentLatLng, nextLatLng);
+//
+//                    double middleLat = (currentCoords.get(0) + nextCoords.get(0)) / 2;
+//                    double middleLng = (currentCoords.get(1) + nextCoords.get(1)) / 2;
+//                    LatLng position = new LatLng(middleLat, middleLng);
+//                    Marker marker = map.addMarker(new MarkerOptions()
+//                            .position(position)
+//                            .visible(false)
+//                            .rotation((float) rotation)
+//                            .icon(bitmapDescriptorLine));
+//
+//                    markersArrowsLine.add(marker);
+//                }
+//
+//            }
 
             mapDataController.addLineData(busLine.getId(), polylinePath, markersBusStopsLine, markersArrowsLine);
 
@@ -542,13 +544,24 @@ public class MainActivity extends BaseActivity implements OnMapReadyCallback, Ma
     }
 
 
-    private BitmapDescriptor getBusMarkerIcon(int lineId) {
-        int resource = getResources().getIdentifier("ic_bus_marker_line_" + lineId, "mipmap", getPackageName());
-        if (resource == 0) {
-            resource = R.mipmap.ic_bus_marker_2;
-        }
+    private BitmapDescriptor getBusMarkerIcon(int color) {
 
-        return BitmapDescriptorFactory.fromResource(resource);
+        Bitmap icon = BitmapFactory.decodeResource(getResources(), R.mipmap.ic_bus_marker_2);
+        Bitmap iconTinted = changeBitmapColor(icon, color);
+
+        return BitmapDescriptorFactory.fromBitmap(iconTinted);
+    }
+
+    private Bitmap changeBitmapColor(Bitmap sourceBitmap, int color) {
+
+        Bitmap resultBitmap = Bitmap.createBitmap(sourceBitmap, 0, 0,
+                sourceBitmap.getWidth() - 1, sourceBitmap.getHeight() - 1);
+        Paint p = new Paint();
+        ColorFilter filter = new LightingColorFilter(color, 1);
+        p.setColorFilter(filter);
+        Canvas canvas = new Canvas(resultBitmap);
+        canvas.drawBitmap(resultBitmap, 0, 0, p);
+        return resultBitmap;
     }
 
 

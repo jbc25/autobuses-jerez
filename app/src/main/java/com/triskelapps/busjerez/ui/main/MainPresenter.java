@@ -126,6 +126,7 @@ public class MainPresenter extends BasePresenter {
 
         busLines = App.getBusLinesData(context);
 
+        Log.i(TAG, "loadData: start");
         for (BusLine busLine : busLines) {
             for (int i = 0; i < busLine.getBusStops().size(); i++) {
                 BusStop busStop = busLine.getBusStops().get(i);
@@ -139,6 +140,8 @@ public class MainPresenter extends BasePresenter {
                 }
             }
         }
+
+        Log.i(TAG, "loadData: finish");
 
         view.loadBusLines(busLines);
     }
