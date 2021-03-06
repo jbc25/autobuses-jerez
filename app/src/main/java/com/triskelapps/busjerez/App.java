@@ -120,13 +120,13 @@ public class App extends Application {
         }.getType();
         List<BusLine> busLines = new Gson().fromJson(jsonDataStr, listType);
 
-        for (BusLine busLine : busLines) {
-            int colorId = getColorForLine(context, busLine.getId());
-            busLine.setColor(ContextCompat.getColor(context, colorId));
-
-            BusLineVisible busLineVisible = db.busLineVisibleDao().getBusLineVisible(busLine.getId());
-            busLine.setVisible(busLineVisible.isVisible());
-        }
+//        for (BusLine busLine : busLines) {
+//            int colorId = getColorForLine(context, busLine.getId());
+//            busLine.setColor(ContextCompat.getColor(context, colorId));
+//
+//            BusLineVisible busLineVisible = db.busLineVisibleDao().getBusLineVisible(busLine.getId());
+//            busLine.setVisible(busLineVisible.isVisible());
+//        }
 
         return busLines;
     }
