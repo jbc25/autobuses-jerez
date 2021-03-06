@@ -1,5 +1,7 @@
 package com.triskelapps.busjerez.model;
 
+import android.graphics.Color;
+
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
@@ -9,7 +11,7 @@ public class BusLine implements Serializable {
     private int id;
     private String name;
     private String description;
-    private int color;
+    private String color;
     private List<BusStop> busStops;
     private List<List<Double>> path = new ArrayList<>();
 
@@ -73,10 +75,10 @@ public class BusLine implements Serializable {
     }
 
     public int getColor() {
-        return color;
+        return Color.parseColor(color);
     }
 
-    public void setColor(int color) {
+    public void setColor(String color) {
         this.color = color;
     }
 

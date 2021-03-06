@@ -127,19 +127,19 @@ public class MainPresenter extends BasePresenter {
         busLines = App.getBusLinesData(context);
 
         Log.i(TAG, "loadData: start");
-        for (BusLine busLine : busLines) {
-            for (int i = 0; i < busLine.getBusStops().size(); i++) {
-                BusStop busStop = busLine.getBusStops().get(i);
-
-                for (int j = 0; j < busLine.getBusStops().size(); j++) {
-                    BusStop busStop1 = busLine.getBusStops().get(j);
-
-                    if (i != j && busStop.getCode() == busStop1.getCode()) {
-                        Log.i(TAG, "bus stop code repeated: " + busStop1.getCode() + ". Línea " + busLine.getId());
-                    }
-                }
-            }
-        }
+//        for (BusLine busLine : busLines) {
+//            for (int i = 0; i < busLine.getBusStops().size(); i++) {
+//                BusStop busStop = busLine.getBusStops().get(i);
+//
+//                for (int j = 0; j < busLine.getBusStops().size(); j++) {
+//                    BusStop busStop1 = busLine.getBusStops().get(j);
+//
+//                    if (i != j && busStop.getCode() == busStop1.getCode()) {
+//                        Log.i(TAG, "bus stop code repeated: " + busStop1.getCode() + ". Línea " + busLine.getId());
+//                    }
+//                }
+//            }
+//        }
 
         Log.i(TAG, "loadData: finish");
 
