@@ -74,6 +74,10 @@ public class App extends Application {
         boolean firstTimeLaunch = getDB().busLineVisibleDao().getAll().size() == 0;
         getPrefs(this).edit().putBoolean(PREF_FIRST_TIME_LAUNCH, firstTimeLaunch).commit();
 
+
+        // TODO REMOVE THIS
+        getPrefs(this).edit().remove(PREF_BUS_DATA).commit();
+
         populateDataFirstTime();
 
 //        NotificationHelper.with(this).initializeOreoChannelsNotification();

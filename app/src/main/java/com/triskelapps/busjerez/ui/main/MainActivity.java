@@ -483,7 +483,7 @@ public class MainActivity extends BaseActivity implements OnMapReadyCallback, Ma
                 LatLng position = new LatLng(busStop.getCoordinates().get(0), busStop.getCoordinates().get(1));
                 Marker marker = map.addMarker(new MarkerOptions()
                         .position(position)
-                        .visible(true)
+                        .visible(false)
                         .icon(getBusMarkerIcon(busLine.getColor()))
                         .title(busStop.getName()));
 
