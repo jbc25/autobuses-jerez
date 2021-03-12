@@ -46,11 +46,12 @@ print(lines_paths)
 # Second add paths to the main json
 with open('bus_data.json', 'r') as file_bus_data_in:
 	json_bus_data = json.loads(file_bus_data_in.read())
-	for bus_line in json_bus_data:
-		bus_line['path'] = lines_paths[str(bus_line['id'])]
 
-	data_formatted = json.dumps(json_bus_data, indent=4)
-	print(data_formatted)
+for bus_line in json_bus_data:
+	bus_line['path'] = lines_paths[bus_line['id']]
+
+data_formatted = json.dumps(json_bus_data, indent=4)
+print(data_formatted)
 
 with open('bus_data.json', 'w') as file_bus_data_out:
     file_bus_data_out.write(data_formatted)

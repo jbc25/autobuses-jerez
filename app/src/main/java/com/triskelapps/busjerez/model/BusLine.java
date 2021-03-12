@@ -11,7 +11,8 @@ public class BusLine implements Serializable {
     private int id;
     private String name;
     private String description;
-    private String color;
+    private int color;
+    private String colorHex;
     private List<BusStop> busStops;
     private List<List<Double>> path = new ArrayList<>();
 
@@ -75,10 +76,10 @@ public class BusLine implements Serializable {
     }
 
     public int getColor() {
-        return Color.parseColor(color);
+        return Color.parseColor(colorHex);
     }
 
-    public void setColor(String color) {
+    public void setColor(int color) {
         this.color = color;
     }
 
@@ -88,5 +89,13 @@ public class BusLine implements Serializable {
 
     public void setFinalBusStopCode(int finalBusStopCode) {
         this.finalBusStopCode = finalBusStopCode;
+    }
+
+    public String getColorHex() {
+        return colorHex;
+    }
+
+    public void setColorHex(String colorHex) {
+        this.colorHex = colorHex;
     }
 }
