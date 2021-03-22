@@ -3,6 +3,7 @@ package com.triskelapps;
 import android.app.Application;
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.graphics.Color;
 import android.util.Log;
 
 import androidx.appcompat.app.AppCompatDelegate;
@@ -50,6 +51,7 @@ public class App extends Application {
     //    public static final String SHARED_TOKEN = PREFIX + "shared_token";
 
     public static final String DB_NAME = "app_db.sqlite";
+    private static List<BusLine> busLines;
 
 
     @Override
@@ -76,7 +78,6 @@ public class App extends Application {
         getPrefs(this).edit().putBoolean(PREF_FIRST_TIME_LAUNCH, firstTimeLaunch).commit();
 
         populateDataFirstTime();
-
 
 //        NotificationHelper.with(this).initializeOreoChannelsNotification();
 
@@ -126,24 +127,40 @@ public class App extends Application {
         return PreferenceManager.getDefaultSharedPreferences(context);
     }
 
-    public static List<BusLine> getBusLinesData(Context context) {
+    private static void loadData(Context context) {
 
         String jsonDataStr = getPrefs(context).getString(PREF_BUS_DATA, null);
-        Type listType = new TypeToken<ArrayList<BusLine>>() {
-        }.getType();
-        List<BusLine> busLines = new Gson().fromJson(jsonDataStr, listType);
+        Type listType = new TypeToken<ArrayList<BusLine>>() {}.getType();
+        busLines = new Gson().fromJson(jsonDataStr, listType);
 
         for (BusLine busLine : busLines) {
             BusLineVisible busLineVisible = db.busLineVisibleDao().getBusLineVisible(busLine.getId());
             busLine.setVisible(busLineVisible.isVisible());
         }
 
+    }
+
+
+    public static List<BusLine> getBusLinesData(Context context) {
+        return getBusLinesData(context, false);
+    }
+
+    public static List<BusLine> getBusLinesData(Context context, boolean forzeReload) {
+        if (busLines == null || forzeReload) {
+            loadData(context);
+        }
+
         return busLines;
     }
 
     public static int getColorForLine(Context context, int lineId) {
-        int colorId = context.getResources().getIdentifier("line" + lineId, "color", context.getPackageName());
-        return colorId;
+        for (BusLine busLine : busLines) {
+            if (busLine.getId() == lineId) {
+                return busLine.getColor();
+            }
+        }
+
+        return Color.BLACK;
     }
 
 }

@@ -487,7 +487,7 @@ public class MainActivity extends BaseActivity implements OnMapReadyCallback, Ma
 
             List<Marker> markersArrowsLine = new ArrayList<>();
             int PATH_STEP = 7;
-            BitmapDescriptor bitmapDescriptorLine = BitmapDescriptorFactory.fromBitmap(tintArrow(App.getColorForLine(this, busLine.getId())));
+            BitmapDescriptor bitmapDescriptorLine = BitmapDescriptorFactory.fromBitmap(tintArrow(busLine.getColor()));
             for (int pathIndex = 0; pathIndex < busLine.getPath().size(); pathIndex++) {
                 if (pathIndex % PATH_STEP == 0 && pathIndex + 1 < busLine.getPath().size()) {
                     List<Double> currentCoords = busLine.getPath().get(pathIndex);
@@ -519,9 +519,7 @@ public class MainActivity extends BaseActivity implements OnMapReadyCallback, Ma
 
     }
 
-    private Bitmap tintArrow(int colorId) {
-
-        int color = ContextCompat.getColor(this, colorId);
+    private Bitmap tintArrow(int color) {
 
         Bitmap markerBitmap = BitmapFactory.decodeResource(getResources(), R.mipmap.ic_arrow_busline);
         Bitmap resultBitmap = Bitmap.createBitmap(markerBitmap.getWidth(), markerBitmap.getHeight(), Bitmap.Config.ARGB_8888);

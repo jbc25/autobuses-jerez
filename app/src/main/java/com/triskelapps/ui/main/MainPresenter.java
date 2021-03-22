@@ -95,7 +95,7 @@ public class MainPresenter extends BasePresenter {
                                     .putString(App.PREF_BUS_DATA, response)
                                     .putInt(App.PREF_BUS_DATA_SAVED_VERSION, serverVersion)
                                     .commit();
-                            loadData();
+                            loadData(true);
                         },
                         error -> {
                             view.hideProgressDialog();
@@ -109,35 +109,18 @@ public class MainPresenter extends BasePresenter {
     }
 
     public void onMapReady() {
-        loadData();
+        loadData(false);
     }
 
     public void onMapLoaded() {
 
-        loadData(); // Method time: 8ms
+        loadData(false); // Method time: 8ms
     }
 
 
-    private void loadData() {
+    private void loadData(boolean forzeReload) {
 
-        busLines = App.getBusLinesData(context);
-
-//        Log.i(TAG, "loadData: start");
-//        for (BusLine busLine : busLines) {
-//            for (int i = 0; i < busLine.getBusStops().size(); i++) {
-//                BusStop busStop = busLine.getBusStops().get(i);
-//
-//                for (int j = 0; j < busLine.getBusStops().size(); j++) {
-//                    BusStop busStop1 = busLine.getBusStops().get(j);
-//
-//                    if (i != j && busStop.getCode() == busStop1.getCode()) {
-//                        Log.i(TAG, "bus stop code repeated: " + busStop1.getCode() + ". Línea " + busLine.getId());
-//                    }
-//                }
-//            }
-//        }
-//
-//        Log.i(TAG, "loadData: finish");
+        busLines = App.getBusLinesData(context, forzeReload);
 
         view.loadBusLines(busLines);
     }

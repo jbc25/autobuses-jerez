@@ -45,7 +45,7 @@ public class FavouritesAdapter extends RecyclerView.Adapter<FavouritesAdapter.Vi
 
         final BusStop busStop = getItemAtPosition(position);
 
-        int color = ContextCompat.getColor(context, App.getColorForLine(context, busStop.getLineId()));
+        int color = App.getColorForLine(context, busStop.getLineId());
         holder.binding.imgBusStopFav.setColorFilter(color);
         holder.binding.tvName.setText(context.getString(R.string.favourite_bus_stop_format, busStop.getLineId(), busStop.getName()));
 
