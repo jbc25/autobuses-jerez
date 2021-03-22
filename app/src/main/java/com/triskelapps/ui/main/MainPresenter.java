@@ -13,7 +13,7 @@ import com.android.volley.toolbox.Volley;
 import com.google.android.libraries.places.api.model.Place;
 import com.triskelapps.App;
 import com.triskelapps.CityData;
-import com.triskelapps.busjerez.R;
+import com.triskelapps.R;
 import com.triskelapps.base.BasePresenter;
 import com.triskelapps.model.BusLine;
 import com.triskelapps.model.db.BusLineVisible;

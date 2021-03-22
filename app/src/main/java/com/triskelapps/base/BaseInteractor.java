@@ -2,7 +2,7 @@ package com.triskelapps.base;
 
 import android.content.Context;
 
-import com.triskelapps.busjerez.R;
+import com.triskelapps.R;
 import com.triskelapps.api.ApiClient;
 import com.triskelapps.util.Util;
 

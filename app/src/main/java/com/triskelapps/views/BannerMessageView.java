@@ -19,7 +19,7 @@ import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
 import com.google.android.gms.security.ProviderInstaller;
 import com.triskelapps.App;
-import com.triskelapps.busjerez.databinding.ViewBannerMessageBinding;
+import com.triskelapps.databinding.ViewBannerMessageBinding;
 import com.triskelapps.util.CountlyUtil;
 
 import org.json.JSONException;

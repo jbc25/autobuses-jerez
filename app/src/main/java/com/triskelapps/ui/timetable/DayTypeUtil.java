@@ -2,7 +2,7 @@ package com.triskelapps.ui.timetable;
 
 import android.content.Context;
 
-import com.triskelapps.busjerez.R;
+import com.triskelapps.R;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;

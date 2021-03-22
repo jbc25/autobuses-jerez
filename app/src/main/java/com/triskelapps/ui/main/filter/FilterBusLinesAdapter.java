@@ -10,8 +10,8 @@ import android.view.ViewGroup;
 import androidx.core.widget.CompoundButtonCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.triskelapps.busjerez.R;
-import com.triskelapps.busjerez.databinding.RowBusLineBinding;
+import com.triskelapps.R;
+import com.triskelapps.databinding.RowBusLineBinding;
 import com.triskelapps.model.BusLine;
 
 import java.util.List;

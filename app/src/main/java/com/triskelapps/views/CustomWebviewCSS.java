@@ -13,7 +13,7 @@ import android.widget.ProgressBar;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import com.triskelapps.busjerez.R;
+import com.triskelapps.R;
 
 import java.io.InputStream;
 

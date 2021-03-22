@@ -9,7 +9,7 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
 import com.triskelapps.base.BaseActivity;
-import com.triskelapps.busjerez.databinding.ActivityNewsBinding;
+import com.triskelapps.databinding.ActivityNewsBinding;
 import com.triskelapps.util.Util;
 
 import java.io.InputStream;

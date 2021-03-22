@@ -5,7 +5,7 @@ import android.content.Context;
 import android.content.SharedPreferences;
 
 import com.triskelapps.App;
-import com.triskelapps.busjerez.R;
+import com.triskelapps.R;
 import com.triskelapps.util.Util;
 
 

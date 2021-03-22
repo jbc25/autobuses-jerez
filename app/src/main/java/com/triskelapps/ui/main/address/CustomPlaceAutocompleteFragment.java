@@ -6,7 +6,7 @@ import android.view.View;
 import androidx.annotation.NonNull;
 
 import com.google.android.libraries.places.widget.AutocompleteSupportFragment;
-import com.triskelapps.busjerez.R;
+import com.triskelapps.R;
 
 public class CustomPlaceAutocompleteFragment extends AutocompleteSupportFragment {
 

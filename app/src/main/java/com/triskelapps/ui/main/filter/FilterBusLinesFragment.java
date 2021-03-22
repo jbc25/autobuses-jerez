@@ -10,7 +10,7 @@ import androidx.annotation.Nullable;
 
 import com.triskelapps.App;
 import com.triskelapps.base.BaseMainFragment;
-import com.triskelapps.busjerez.databinding.FragmentFilterBusLinesBinding;
+import com.triskelapps.databinding.FragmentFilterBusLinesBinding;
 import com.triskelapps.model.BusLine;
 import com.triskelapps.util.CountlyUtil;
 

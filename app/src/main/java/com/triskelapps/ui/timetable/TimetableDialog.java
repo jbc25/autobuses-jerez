@@ -13,10 +13,10 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.DialogFragment;
 
-import com.triskelapps.busjerez.R;
+import com.triskelapps.R;
 import com.triskelapps.base.BaseActivity;
 import com.triskelapps.base.BaseInteractor;
-import com.triskelapps.busjerez.databinding.DialogTimetableBinding;
+import com.triskelapps.databinding.DialogTimetableBinding;
 import com.triskelapps.interactor.TimetableInteractor;
 import com.triskelapps.model.BusStop;
 import com.triskelapps.util.CountlyUtil;

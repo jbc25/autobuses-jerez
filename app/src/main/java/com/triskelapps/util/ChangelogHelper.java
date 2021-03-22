@@ -7,7 +7,8 @@ import android.content.SharedPreferences;
 import androidx.preference.PreferenceManager;
 
 import com.triskelapps.App;
-import com.triskelapps.busjerez.R;
+import com.triskelapps.BuildConfig;
+import com.triskelapps.R;
 
 public class ChangelogHelper {
 

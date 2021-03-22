@@ -10,9 +10,9 @@ import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.triskelapps.App;
-import com.triskelapps.busjerez.R;
-import com.triskelapps.busjerez.databinding.RowBusStopBinding;
-import com.triskelapps.busjerez.databinding.RowFavouriteBusStopBinding;
+import com.triskelapps.R;
+import com.triskelapps.databinding.RowBusStopBinding;
+import com.triskelapps.databinding.RowFavouriteBusStopBinding;
 import com.triskelapps.model.BusStop;
 
 import java.util.List;

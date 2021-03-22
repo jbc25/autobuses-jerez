@@ -18,5 +18,7 @@ public interface BusLineVisibleDao extends BaseDao<BusLineVisible> {
     @Query("SELECT * FROM buslinevisible WHERE lineId = :lineId")
     BusLineVisible getBusLineVisible(int lineId);
 
+    @Query("DELETE FROM buslinevisible")
+    void deleteAll();
 
 }

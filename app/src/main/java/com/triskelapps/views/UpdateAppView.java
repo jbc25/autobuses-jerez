@@ -27,8 +27,9 @@ import com.google.android.play.core.install.model.UpdateAvailability;
 import com.google.android.play.core.tasks.OnCompleteListener;
 import com.google.android.play.core.tasks.Task;
 import com.google.firebase.remoteconfig.FirebaseRemoteConfig;
+import com.triskelapps.BuildConfig;
 import com.triskelapps.DebugHelper;
-import com.triskelapps.busjerez.R;
+import com.triskelapps.R;
 import com.triskelapps.util.CountlyUtil;
 
 import ly.count.android.sdk.Countly;

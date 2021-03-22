@@ -7,7 +7,7 @@ import androidx.recyclerview.widget.DividerItemDecoration;
 
 import com.triskelapps.App;
 import com.triskelapps.base.BaseActivity;
-import com.triskelapps.busjerez.databinding.ActivityFavouritesBinding;
+import com.triskelapps.databinding.ActivityFavouritesBinding;
 import com.triskelapps.model.BusStop;
 import com.triskelapps.ui.timetable.TimetableDialog;
 import com.triskelapps.util.CountlyUtil;

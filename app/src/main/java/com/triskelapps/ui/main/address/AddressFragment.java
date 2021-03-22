@@ -15,9 +15,9 @@ import com.google.android.libraries.places.api.model.Place;
 import com.google.android.libraries.places.api.model.RectangularBounds;
 import com.google.android.libraries.places.widget.listener.PlaceSelectionListener;
 import com.triskelapps.CityData;
-import com.triskelapps.busjerez.R;
+import com.triskelapps.R;
 import com.triskelapps.base.BaseMainFragment;
-import com.triskelapps.busjerez.databinding.FragmentAddressBinding;
+import com.triskelapps.databinding.FragmentAddressBinding;
 import com.triskelapps.util.CountlyUtil;
 
 import java.util.Arrays;

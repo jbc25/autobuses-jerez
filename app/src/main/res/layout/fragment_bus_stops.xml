@@ -6,7 +6,7 @@
     android:orientation="vertical"
     android:padding="10dp"
     android:background="@color/white"
-    tools:context="com.triskelapps.busjerez.ui.main.bus_stops.BusStopsFragment">
+    tools:context="com.triskelapps.ui.main.bus_stops.BusStopsFragment">
 
     <LinearLayout
         android:layout_width="match_parent"

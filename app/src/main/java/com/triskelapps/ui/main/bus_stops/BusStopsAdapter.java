@@ -9,8 +9,8 @@ import android.view.ViewGroup;
 
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.triskelapps.busjerez.R;
-import com.triskelapps.busjerez.databinding.RowBusStopBinding;
+import com.triskelapps.R;
+import com.triskelapps.databinding.RowBusStopBinding;
 import com.triskelapps.model.BusStop;
 
 import java.util.List;

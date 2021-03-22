@@ -7,8 +7,8 @@ import android.text.TextUtils;
 
 import androidx.preference.PreferenceManager;
 
-import com.triskelapps.busjerez.BuildConfig;
-import com.triskelapps.busjerez.R;
+import com.triskelapps.BuildConfig;
+import com.triskelapps.R;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;

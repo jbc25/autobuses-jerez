@@ -70,6 +70,8 @@ public class App extends Application {
                 .allowMainThreadQueries()
                 .build();
 
+//        clearPersistedData();
+
         boolean firstTimeLaunch = getDB().busLineVisibleDao().getAll().size() == 0;
         getPrefs(this).edit().putBoolean(PREF_FIRST_TIME_LAUNCH, firstTimeLaunch).commit();
 
@@ -81,6 +83,12 @@ public class App extends Application {
 
     }
 
+    private void clearPersistedData() {
+
+        getPrefs(this).edit().remove(PREF_BUS_DATA).commit();
+        db.busLineVisibleDao().deleteAll();
+        db.busStopDao().deleteAll();
+    }
 
 
     private void populateDataFirstTime() {
@@ -90,18 +98,23 @@ public class App extends Application {
         if (getPrefs(this).getString(PREF_BUS_DATA, null) == null) {
             String jsonDataStrInitial = Util.getStringFromAssets(this, FILE_BUS_LINES_DATA);
             getPrefs(this).edit().putString(PREF_BUS_DATA, jsonDataStrInitial).commit();
+
+            populateBusLineVisibleTable(jsonDataStrInitial);
         }
 
         Log.i(TAG, "populateDataFirstTime: 2");
 
-        if (getDB().busLineVisibleDao().getAll().size() == 0) {
-            populateBusLineVisibleTable();
-        }
     }
 
-    private void populateBusLineVisibleTable() {
-        for (int lineId = 1; lineId <= BUS_LINES_COUNT; lineId++) {
-            db.busLineVisibleDao().insert(new BusLineVisible(lineId, true));
+    private void populateBusLineVisibleTable(String jsonDataStrInitial) {
+        db.busLineVisibleDao().deleteAll();
+
+        Type listType = new TypeToken<ArrayList<BusLine>>() {
+        }.getType();
+        List<BusLine> busLines = new Gson().fromJson(jsonDataStrInitial, listType);
+
+        for(BusLine busLine : busLines) {
+            db.busLineVisibleDao().insert(new BusLineVisible(busLine.getId(), true));
         }
     }
 

@@ -23,7 +23,7 @@ import androidx.core.content.ContextCompat;
 import androidx.core.graphics.drawable.DrawableCompat;
 
 import com.triskelapps.App;
-import com.triskelapps.busjerez.R;
+import com.triskelapps.R;
 import com.triskelapps.util.CountlyUtil;
 
 

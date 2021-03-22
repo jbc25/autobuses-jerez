@@ -8,7 +8,7 @@ import android.widget.FrameLayout;
 import androidx.annotation.Nullable;
 import androidx.core.graphics.drawable.DrawableCompat;
 
-import com.triskelapps.busjerez.databinding.ViewPointBusStopBinding;
+import com.triskelapps.databinding.ViewPointBusStopBinding;
 
 
 public class PointBusStopView extends FrameLayout {

@@ -8,9 +8,9 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.triskelapps.App;
-import com.triskelapps.busjerez.R;
+import com.triskelapps.R;
 import com.triskelapps.base.BaseMainFragment;
-import com.triskelapps.busjerez.databinding.FragmentBusStopsBinding;
+import com.triskelapps.databinding.FragmentBusStopsBinding;
 import com.triskelapps.model.BusLine;
 import com.triskelapps.model.BusStop;
 import com.triskelapps.ui.main.MainActivity;

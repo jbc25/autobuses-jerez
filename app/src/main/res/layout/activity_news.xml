@@ -5,12 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.triskelapps.busjerez.ui.news.NewsActivity">
+    tools:context="com.triskelapps.ui.news.NewsActivity">
 
 
     <include layout="@layout/toolbar" />
 
-    <com.triskelapps.busjerez.views.CustomWebviewCSS
+    <com.triskelapps.views.CustomWebviewCSS
         android:id="@+id/webview_css"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />

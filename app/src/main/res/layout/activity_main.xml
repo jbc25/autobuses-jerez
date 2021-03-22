@@ -19,12 +19,12 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <com.triskelapps.busjerez.views.BannerMessageView
+            <com.triskelapps.views.BannerMessageView
                 android:id="@+id/view_banner_message"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
-            <com.triskelapps.busjerez.views.UpdateAppView
+            <com.triskelapps.views.UpdateAppView
                 android:id="@+id/view_update_app"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -34,7 +34,7 @@
                 android:id="@+id/fragment_address"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:name="com.triskelapps.busjerez.ui.main.address.AddressFragment"
+                android:name="com.triskelapps.ui.main.address.AddressFragment"
                 android:layout_below="@+id/view_update_app"/>
 
             <fragment
@@ -67,7 +67,7 @@
 
         <fragment
             android:id="@+id/fragment_filter_bus_lines"
-            android:name="com.triskelapps.busjerez.ui.main.filter.FilterBusLinesFragment"
+            android:name="com.triskelapps.ui.main.filter.FilterBusLinesFragment"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="end"
