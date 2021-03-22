@@ -7,7 +7,7 @@ android {
     def mapsApiKey = "AIzaSyCnGIo5HlO1DnniY-cGShOyle_HWyH2swU"
 
     defaultConfig {
-        applicationId "com.triskelapps.busjerez"
+        applicationId "com.triskelapps."
         minSdkVersion 17
         targetSdkVersion 29
         versionCode 53
@@ -35,6 +35,21 @@ android {
         debug {
             applicationIdSuffix ".debug"
             versionNameSuffix " debug"
+        }
+    }
+
+    flavorDimensions "city"
+    productFlavors {
+        jerez {
+            dimension "city"
+            applicationIdSuffix "busjerez"
+            versionNameSuffix "-busjerez"
+        }
+
+        almeria {
+            dimension "city"
+            applicationIdSuffix "busalmeria"
+            versionNameSuffix "-busalmeria"
         }
     }
 
