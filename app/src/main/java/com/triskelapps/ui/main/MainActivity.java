@@ -41,6 +41,7 @@ import com.google.android.gms.maps.model.Polyline;
 import com.google.android.gms.maps.model.PolylineOptions;
 import com.google.android.libraries.places.api.model.Place;
 import com.google.android.material.navigation.NavigationView;
+import com.google.maps.android.SphericalUtil;
 import com.karumi.dexter.Dexter;
 import com.karumi.dexter.PermissionToken;
 import com.karumi.dexter.listener.PermissionDeniedResponse;
@@ -485,29 +486,29 @@ public class MainActivity extends BaseActivity implements OnMapReadyCallback, Ma
             }
 
             List<Marker> markersArrowsLine = new ArrayList<>();
-//            int PATH_STEP = 7;
-//            BitmapDescriptor bitmapDescriptorLine = BitmapDescriptorFactory.fromBitmap(tintArrow(App.getColorForLine(this, busLine.getId())));
-//            for (int pathIndex = 0; pathIndex < busLine.getPath().size(); pathIndex++) {
-//                if (pathIndex % PATH_STEP == 0 && pathIndex + 1 < busLine.getPath().size()) {
-//                    List<Double> currentCoords = busLine.getPath().get(pathIndex);
-//                    List<Double> nextCoords = busLine.getPath().get(pathIndex+1);
-//                    LatLng currentLatLng = new LatLng(currentCoords.get(0), currentCoords.get(1));
-//                    LatLng nextLatLng = new LatLng(nextCoords.get(0), nextCoords.get(1));
-//                    double rotation = SphericalUtil.computeHeading(currentLatLng, nextLatLng);
-//
-//                    double middleLat = (currentCoords.get(0) + nextCoords.get(0)) / 2;
-//                    double middleLng = (currentCoords.get(1) + nextCoords.get(1)) / 2;
-//                    LatLng position = new LatLng(middleLat, middleLng);
-//                    Marker marker = map.addMarker(new MarkerOptions()
-//                            .position(position)
-//                            .visible(false)
-//                            .rotation((float) rotation)
-//                            .icon(bitmapDescriptorLine));
-//
-//                    markersArrowsLine.add(marker);
-//                }
-//
-//            }
+            int PATH_STEP = 7;
+            BitmapDescriptor bitmapDescriptorLine = BitmapDescriptorFactory.fromBitmap(tintArrow(App.getColorForLine(this, busLine.getId())));
+            for (int pathIndex = 0; pathIndex < busLine.getPath().size(); pathIndex++) {
+                if (pathIndex % PATH_STEP == 0 && pathIndex + 1 < busLine.getPath().size()) {
+                    List<Double> currentCoords = busLine.getPath().get(pathIndex);
+                    List<Double> nextCoords = busLine.getPath().get(pathIndex+1);
+                    LatLng currentLatLng = new LatLng(currentCoords.get(0), currentCoords.get(1));
+                    LatLng nextLatLng = new LatLng(nextCoords.get(0), nextCoords.get(1));
+                    double rotation = SphericalUtil.computeHeading(currentLatLng, nextLatLng);
+
+                    double middleLat = (currentCoords.get(0) + nextCoords.get(0)) / 2;
+                    double middleLng = (currentCoords.get(1) + nextCoords.get(1)) / 2;
+                    LatLng position = new LatLng(middleLat, middleLng);
+                    Marker marker = map.addMarker(new MarkerOptions()
+                            .position(position)
+                            .visible(false)
+                            .rotation((float) rotation)
+                            .icon(bitmapDescriptorLine));
+
+                    markersArrowsLine.add(marker);
+                }
+
+            }
 
             mapDataController.addLineData(busLine.getId(), polylinePath, markersBusStopsLine, markersArrowsLine);
 

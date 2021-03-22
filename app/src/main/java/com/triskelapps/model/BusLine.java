@@ -76,7 +76,7 @@ public class BusLine implements Serializable {
     }
 
     public int getColor() {
-        return Color.parseColor("#0000ff"); // TODO CHANGE COLOR SYSTEM
+        return Color.parseColor(colorHex);
     }
 
     public void setColor(int color) {
