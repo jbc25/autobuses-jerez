@@ -92,7 +92,7 @@ for line_node in root.xpath("//div[@class='links']/a[@class='lines']"):
 		'description': line_description,
 		'busStops': bus_stops,
 		'waitTimeCode': bus_line_waitTimeCode,
-		'path': [[0, 0], [1, 1]],
+		'path': [[36.843724859578046, -2.450765243421731]],
 	}
 
 	bus_data.append(bus_line)

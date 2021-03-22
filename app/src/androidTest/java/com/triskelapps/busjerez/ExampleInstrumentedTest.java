@@ -1,4 +1,4 @@
-package com.triskelapps.busjerez;
+package com.triskelapps;
 
 import android.content.Context;
 
