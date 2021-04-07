@@ -317,7 +317,7 @@ for lines_file in lines_files:
 				print(f'Code not found. Línea: {line_number}. parada: {bus_stop_name}. index: {index}')
 				
 
-			download_timetable(line_number, bus_stop.code, bus_stop_name)
+			#download_timetable(line_number, bus_stop.code, bus_stop_name)
 
 			if 'TRANSBORDO' in properties_bus_stop:
 				bus_stop.transfer = properties_bus_stop['TRANSBORDO'].strip()
