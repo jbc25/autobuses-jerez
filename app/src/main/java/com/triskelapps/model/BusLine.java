@@ -1,12 +1,15 @@
 package com.triskelapps.model;
 
 import android.graphics.Color;
+import android.util.Log;
 
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
 public class BusLine implements Serializable {
+
+    private static final String TAG = BusLine.class.getSimpleName();
 
     private int id;
     private String name;
@@ -76,7 +79,12 @@ public class BusLine implements Serializable {
     }
 
     public int getColor() {
-        return Color.parseColor(colorHex);
+        try {
+            return Color.parseColor(colorHex);
+        } catch (Exception e) {
+            Log.e(TAG, "color parse error: " + colorHex + ", line: " + id );
+            return Color.BLUE;
+        }
     }
 
     public void setColor(int color) {
