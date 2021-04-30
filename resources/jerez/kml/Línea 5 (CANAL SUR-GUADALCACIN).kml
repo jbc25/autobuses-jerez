@@ -1,0 +1,2069 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Línea 5 (CANAL SUR-GUADALCACIN)</name>
+    <description/>
+    <Style id="icon-1532-0288D1-labelson">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Style id="icon-1532-C2185B-labelson">
+      <IconStyle>
+        <color>ff5b18c2</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Style id="line-0288D1-6425-nodesc-normal">
+      <LineStyle>
+        <color>ffd18802</color>
+        <width>6.425</width>
+      </LineStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="line-0288D1-6425-nodesc-highlight">
+      <LineStyle>
+        <color>ffd18802</color>
+        <width>9.6375</width>
+      </LineStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="line-0288D1-6425-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-0288D1-6425-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-0288D1-6425-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Folder>
+      <name>Paradas</name>
+      <Placemark>
+        <name>Angustias Canal Sur</name>
+        <description><![CDATA[TRANSBORDO: 1-2-3-4-6-10-12-18<br>LINEA: 5<br>COD. PARADA: 130<br>SENTIDO: Única<br>LATITUD: 36.680865<br>LONGITUD: -6.134338]]></description>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="TRANSBORDO">
+            <value>1-2-3-4-6-10-12-18</value>
+          </Data>
+          <Data name="LINEA">
+            <value>5.0</value>
+          </Data>
+          <Data name="COD. PARADA">
+            <value>130.0</value>
+          </Data>
+          <Data name="SENTIDO">
+            <value>Única</value>
+          </Data>
+          <Data name="LATITUD">
+            <value>36.680865</value>
+          </Data>
+          <Data name="LONGITUD">
+            <value>-6.134338</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -6.134338,36.680865,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Corredera</name>
+        <description><![CDATA[TRANSBORDO: 12-18<br>LINEA: 5<br>COD. PARADA: 131<br>SENTIDO: Unica<br>LATITUD: 36.680999<br>LONGITUD: -6.135418]]></description>
+        <styleUrl>#icon-1532-C2185B-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="TRANSBORDO">
+            <value>12-18</value>
+          </Data>
+          <Data name="LINEA">
+            <value>5.0</value>
+          </Data>
+          <Data name="COD. PARADA">
+            <value>131.0</value>
+          </Data>
+          <Data name="SENTIDO">
+            <value>Unica</value>
+          </Data>
+          <Data name="LATITUD">
+            <value>36.680999</value>
+          </Data>
+          <Data name="LONGITUD">
+            <value>-6.135418</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -6.135418,36.680999,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Villamarta</name>
+        <description><![CDATA[TRANSBORDO: 1-6-11-12-14<br>LINEA: 5<br>COD. PARADA: 453<br>SENTIDO: Única<br>LATITUD: 36.683371<br>LONGITUD: -6.135114]]></description>
+        <styleUrl>#icon-1532-C2185B-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="TRANSBORDO">
+            <value>1-6-11-12-14</value>
+          </Data>
+          <Data name="LINEA">
+            <value>5.0</value>
+          </Data>
+          <Data name="COD. PARADA">
+            <value>453.0</value>
+          </Data>
+          <Data name="SENTIDO">
+            <value>Única</value>
+          </Data>
+          <Data name="LATITUD">
+            <value>36.683371</value>
+          </Data>
+          <Data name="LONGITUD">
+            <value>-6.135114</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -6.135114,36.683371,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Arcos</name>
+        <description><![CDATA[TRANSBORDO: 1-6-11-12-14<br>LINEA: 5<br>COD. PARADA: 30<br>SENTIDO: Al final de C/ Arcos<br>LATITUD: 36.684118<br>LONGITUD: -6.130268]]></description>
+        <styleUrl>#icon-1532-C2185B-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="TRANSBORDO">
+            <value>1-6-11-12-14</value>
+          </Data>
+          <Data name="LINEA">
+            <value>5.0</value>
+          </Data>
+          <Data name="COD. PARADA">
+            <value>30.0</value>
+          </Data>
+          <Data name="SENTIDO">
+            <value>Al final de C/ Arcos</value>
+          </Data>
+          <Data name="LATITUD">
+            <value>36.684118</value>
+          </Data>
+          <Data name="LONGITUD">
+            <value>-6.130268</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -6.130268,36.684118,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>España</name>
+        <description><![CDATA[TRANSBORDO: 15<br>LINEA: 5<br>COD. PARADA: 169<br>SENTIDO: Hacia Alvaro Domecq<br>LATITUD: 36.688<br>LONGITUD: -6.127778]]></description>
+        <styleUrl>#icon-1532-C2185B-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="TRANSBORDO">
+            <value>15</value>
+          </Data>
+          <Data name="LINEA">
+            <value>5.0</value>
+          </Data>
+          <Data name="COD. PARADA">
+            <value>169.0</value>
+          </Data>
+          <Data name="SENTIDO">
+            <value>Hacia Alvaro Domecq</value>
+          </Data>
+          <Data name="LATITUD">
+            <value>36.688</value>
+          </Data>
+          <Data name="LONGITUD">
+            <value>-6.127778</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -6.127778,36.688,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>La Constancia</name>
+        <description><![CDATA[TRANSBORDO: NO<br>LINEA: 5<br>COD. PARADA: 241<br>SENTIDO: Dirección Alvaro Domecq<br>LATITUD: 36.690014<br>LONGITUD: -6.127757]]></description>
+        <styleUrl>#icon-1532-C2185B-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="TRANSBORDO">
+            <value>NO</value>
+          </Data>
+          <Data name="LINEA">
+            <value>5.0</value>
+          </Data>
+          <Data name="COD. PARADA">
+            <value>241.0</value>
+          </Data>
+          <Data name="SENTIDO">
+            <value>Dirección Alvaro Domecq</value>
+          </Data>
+          <Data name="LATITUD">
+            <value>36.690014</value>
+          </Data>
+          <Data name="LONGITUD">
+            <value>-6.127757</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -6.127757,36.690014,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Torres de Córdoba</name>
+        <description><![CDATA[TRANSBORDO: NO<br>LINEA: 5<br>COD. PARADA: 441<br>SENTIDO: Dirección Alvaro Domecq<br>LATITUD: 36.691775<br>LONGITUD: -6.127791]]></description>
+        <styleUrl>#icon-1532-C2185B-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="TRANSBORDO">
+            <value>NO</value>
+          </Data>
+          <Data name="LINEA">
+            <value>5.0</value>
+          </Data>
+          <Data name="COD. PARADA">
+            <value>441.0</value>
+          </Data>
+          <Data name="SENTIDO">
+            <value>Dirección Alvaro Domecq</value>
+          </Data>
+          <Data name="LATITUD">
+            <value>36.691775</value>
+          </Data>
+          <Data name="LONGITUD">
+            <value>-6.127791</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -6.127791,36.691775,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pza. Caballo</name>
+        <description><![CDATA[TRANSBORDO: NO<br>LINEA: 5<br>COD. PARADA: 357<br>SENTIDO: Hacia Avda. Alvaro Domecq<br>LATITUD: 36.693597<br>LONGITUD: -6.129393]]></description>
+        <styleUrl>#icon-1532-C2185B-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="TRANSBORDO">
+            <value>NO</value>
+          </Data>
+          <Data name="LINEA">
+            <value>5.0</value>
+          </Data>
+          <Data name="COD. PARADA">
+            <value>357.0</value>
+          </Data>
+          <Data name="SENTIDO">
+            <value>Hacia Avda. Alvaro Domecq</value>
+          </Data>
+          <Data name="LATITUD">
+            <value>36.693597</value>
+          </Data>
+          <Data name="LONGITUD">
+            <value>-6.129393</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -6.129393,36.693597,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Avd. Caballo</name>
+        <description><![CDATA[TRANSBORDO: 16-17<br>LINEA: 5<br>COD. PARADA: 51<br>SENTIDO: Hacia Hipercor<br>LATITUD: 36.694052<br>LONGITUD: -6.130214]]></description>
+        <styleUrl>#icon-1532-C2185B-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="TRANSBORDO">
+            <value>16-17</value>
+          </Data>
+          <Data name="LINEA">
+            <value>5.0</value>
+          </Data>
+          <Data name="COD. PARADA">
+            <value>51.0</value>
+          </Data>
+          <Data name="SENTIDO">
+            <value>Hacia Hipercor</value>
+          </Data>
+          <Data name="LATITUD">
+            <value>36.694052</value>
+          </Data>
+          <Data name="LONGITUD">
+            <value>-6.130214</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -6.130214,36.694052,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Feria</name>
+        <description><![CDATA[TRANSBORDO: 16-17<br>LINEA: 5<br>COD. PARADA: 177<br>SENTIDO: Hacia Hipercor<br>LATITUD: 36.695742<br>LONGITUD: -6.128372]]></description>
+        <styleUrl>#icon-1532-C2185B-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="TRANSBORDO">
+            <value>16-17</value>
+          </Data>
+          <Data name="LINEA">
+            <value>5.0</value>
+          </Data>
+          <Data name="COD. PARADA">
+            <value>177.0</value>
+          </Data>
+          <Data name="SENTIDO">
+            <value>Hacia Hipercor</value>
+          </Data>
+          <Data name="LATITUD">
+            <value>36.695742</value>
+          </Data>
+          <Data name="LONGITUD">
+            <value>-6.128372</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -6.128372,36.695742,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>El Bosque</name>
+        <description><![CDATA[TRANSBORDO: NO<br>LINEA: 5<br>COD. PARADA: 146<br>SENTIDO: Hacia Avda. Europa<br>LATITUD: 36.696516<br>LONGITUD: -6.12341]]></description>
+        <styleUrl>#icon-1532-C2185B-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="TRANSBORDO">
+            <value>NO</value>
+          </Data>
+          <Data name="LINEA">
+            <value>5.0</value>
+          </Data>
+          <Data name="COD. PARADA">
+            <value>146.0</value>
+          </Data>
+          <Data name="SENTIDO">
+            <value>Hacia Avda. Europa</value>
+          </Data>
+          <Data name="LATITUD">
+            <value>36.696516</value>
+          </Data>
+          <Data name="LONGITUD">
+            <value>-6.12341</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -6.12341,36.696516,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Edf. Congreso</name>
+        <description><![CDATA[TRANSBORDO: 9<br>LINEA: 5<br>COD. PARADA: 144<br>SENTIDO: Hacia La Granja<br>LATITUD: 36.696377<br>LONGITUD: -6.117672]]></description>
+        <styleUrl>#icon-1532-C2185B-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="TRANSBORDO">
+            <value>9</value>
+          </Data>
+          <Data name="LINEA">
+            <value>5.0</value>
+          </Data>
+          <Data name="COD. PARADA">
+            <value>144.0</value>
+          </Data>
+          <Data name="SENTIDO">
+            <value>Hacia La Granja</value>
+          </Data>
+          <Data name="LATITUD">
+            <value>36.696377</value>
+          </Data>
+          <Data name="LONGITUD">
+            <value>-6.117672</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -6.117672,36.696377,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Carrefour Norte</name>
+        <description><![CDATA[TRANSBORDO: 9<br>LINEA: 5<br>COD. PARADA: 105<br>SENTIDO: Hacia La Granja<br>LATITUD: 36.696699<br>LONGITUD: -6.11577]]></description>
+        <styleUrl>#icon-1532-C2185B-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="TRANSBORDO">
+            <value>9</value>
+          </Data>
+          <Data name="LINEA">
+            <value>5.0</value>
+          </Data>
+          <Data name="COD. PARADA">
+            <value>105.0</value>
+          </Data>
+          <Data name="SENTIDO">
+            <value>Hacia La Granja</value>
+          </Data>
+          <Data name="LATITUD">
+            <value>36.696699</value>
+          </Data>
+          <Data name="LONGITUD">
+            <value>-6.11577</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -6.11577,36.696699,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Arrumbadores</name>
+        <description><![CDATA[TRANSBORDO: 9<br>LINEA: 5<br>COD. PARADA: 39<br>SENTIDO: Hacia La Granja<br>LATITUD: 36.697699<br>LONGITUD: -6.110267]]></description>
+        <styleUrl>#icon-1532-C2185B-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="TRANSBORDO">
+            <value>9</value>
+          </Data>
+          <Data name="LINEA">
+            <value>5.0</value>
+          </Data>
+          <Data name="COD. PARADA">
+            <value>39.0</value>
+          </Data>
+          <Data name="SENTIDO">
+            <value>Hacia La Granja</value>
+          </Data>
+          <Data name="LATITUD">
+            <value>36.697699</value>
+          </Data>
+          <Data name="LONGITUD">
+            <value>-6.110267</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -6.110267,36.697699,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Entre Parques</name>
+        <description><![CDATA[TRANSBORDO: 9-12<br>LINEA: 5<br>COD. PARADA: 160<br>SENTIDO: Hacia Caballero Bonald<br>LATITUD: 36.698159<br>LONGITUD: -6.107596]]></description>
+        <styleUrl>#icon-1532-C2185B-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="TRANSBORDO">
+            <value>9-12</value>
+          </Data>
+          <Data name="LINEA">
+            <value>5.0</value>
+          </Data>
+          <Data name="COD. PARADA">
+            <value>160.0</value>
+          </Data>
+          <Data name="SENTIDO">
+            <value>Hacia Caballero Bonald</value>
+          </Data>
+          <Data name="LATITUD">
+            <value>36.698159</value>
+          </Data>
+          <Data name="LONGITUD">
+            <value>-6.107596</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -6.107596,36.698159,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Inst. F.P. La Granja</name>
+        <description><![CDATA[TRANSBORDO: 6-9<br>LINEA: 5<br>COD. PARADA: 223<br>SENTIDO: Hacia Autopista<br>LATITUD: 36.698751<br>LONGITUD: -6.104574]]></description>
+        <styleUrl>#icon-1532-C2185B-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="TRANSBORDO">
+            <value>6-9</value>
+          </Data>
+          <Data name="LINEA">
+            <value>5.0</value>
+          </Data>
+          <Data name="COD. PARADA">
+            <value>223.0</value>
+          </Data>
+          <Data name="SENTIDO">
+            <value>Hacia Autopista</value>
+          </Data>
+          <Data name="LATITUD">
+            <value>36.698751</value>
+          </Data>
+          <Data name="LONGITUD">
+            <value>-6.104574</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -6.104574,36.698751,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Avda. Europa</name>
+        <description><![CDATA[TRANSBORDO: 8-12<br>LINEA: 5<br>COD. PARADA: 61<br>SENTIDO: Dirección Alvaro Domecq<br>LATITUD: 36.699366<br>LONGITUD: -6.102484]]></description>
+        <styleUrl>#icon-1532-C2185B-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="TRANSBORDO">
+            <value>8-12</value>
+          </Data>
+          <Data name="LINEA">
+            <value>5.0</value>
+          </Data>
+          <Data name="COD. PARADA">
+            <value>61.0</value>
+          </Data>
+          <Data name="SENTIDO">
+            <value>Dirección Alvaro Domecq</value>
+          </Data>
+          <Data name="LATITUD">
+            <value>36.699366</value>
+          </Data>
+          <Data name="LONGITUD">
+            <value>-6.102484</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -6.102484,36.699366,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Azulejos Bahia</name>
+        <description><![CDATA[TRANSBORDO: NO<br>LINEA: 5<br>COD. PARADA: 66<br>SENTIDO: Hacia San José Obrero<br>LATITUD: 36.699888<br>LONGITUD: -6.104893]]></description>
+        <styleUrl>#icon-1532-C2185B-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="TRANSBORDO">
+            <value>NO</value>
+          </Data>
+          <Data name="LINEA">
+            <value>5.0</value>
+          </Data>
+          <Data name="COD. PARADA">
+            <value>66.0</value>
+          </Data>
+          <Data name="SENTIDO">
+            <value>Hacia San José Obrero</value>
+          </Data>
+          <Data name="LATITUD">
+            <value>36.699888</value>
+          </Data>
+          <Data name="LONGITUD">
+            <value>-6.104893</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -6.104893,36.699888,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Arroyo del Membrillar</name>
+        <description><![CDATA[TRANSBORDO: 12<br>LINEA: 5<br>COD. PARADA: 37<br>SENTIDO: Hacia San José Obrero<br>LATITUD: 36.702099<br>LONGITUD: -6.107136]]></description>
+        <styleUrl>#icon-1532-C2185B-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="TRANSBORDO">
+            <value>12</value>
+          </Data>
+          <Data name="LINEA">
+            <value>5.0</value>
+          </Data>
+          <Data name="COD. PARADA">
+            <value>37.0</value>
+          </Data>
+          <Data name="SENTIDO">
+            <value>Hacia San José Obrero</value>
+          </Data>
+          <Data name="LATITUD">
+            <value>36.702099</value>
+          </Data>
+          <Data name="LONGITUD">
+            <value>-6.107136</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -6.107136,36.702099,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Santa Antonia</name>
+        <description><![CDATA[TRANSBORDO: NO<br>LINEA: 5<br>COD. PARADA: 405<br>SENTIDO: Hacia San José Obrero<br>LATITUD: 36.702938<br>LONGITUD: -6.105496]]></description>
+        <styleUrl>#icon-1532-C2185B-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="TRANSBORDO">
+            <value>NO</value>
+          </Data>
+          <Data name="LINEA">
+            <value>5.0</value>
+          </Data>
+          <Data name="COD. PARADA">
+            <value>405.0</value>
+          </Data>
+          <Data name="SENTIDO">
+            <value>Hacia San José Obrero</value>
+          </Data>
+          <Data name="LATITUD">
+            <value>36.702938</value>
+          </Data>
+          <Data name="LONGITUD">
+            <value>-6.105496</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -6.105496,36.702938,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Ermita Palomares</name>
+        <description><![CDATA[TRANSBORDO: NO<br>LINEA: 5<br>COD. PARADA: 162<br>SENTIDO: Hacia San José Obrero<br>LATITUD: 36.703548<br>LONGITUD: -6.10262]]></description>
+        <styleUrl>#icon-1532-C2185B-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="TRANSBORDO">
+            <value>NO</value>
+          </Data>
+          <Data name="LINEA">
+            <value>5.0</value>
+          </Data>
+          <Data name="COD. PARADA">
+            <value>162.0</value>
+          </Data>
+          <Data name="SENTIDO">
+            <value>Hacia San José Obrero</value>
+          </Data>
+          <Data name="LATITUD">
+            <value>36.703548</value>
+          </Data>
+          <Data name="LONGITUD">
+            <value>-6.10262</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -6.10262,36.703548,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Ermita Setefilla</name>
+        <description><![CDATA[TRANSBORDO: NO<br>LINEA: 5<br>COD. PARADA: 166<br>SENTIDO: Hacia San José Obrero<br>LATITUD: 36.7054<br>LONGITUD: -6.103369]]></description>
+        <styleUrl>#icon-1532-C2185B-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="TRANSBORDO">
+            <value>NO</value>
+          </Data>
+          <Data name="LINEA">
+            <value>5.0</value>
+          </Data>
+          <Data name="COD. PARADA">
+            <value>166.0</value>
+          </Data>
+          <Data name="SENTIDO">
+            <value>Hacia San José Obrero</value>
+          </Data>
+          <Data name="LATITUD">
+            <value>36.7054</value>
+          </Data>
+          <Data name="LONGITUD">
+            <value>-6.103369</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -6.103369,36.7054,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>San José Obrero</name>
+        <description><![CDATA[TRANSBORDO: NO<br>LINEA: 5<br>COD. PARADA: 395<br>SENTIDO: Hacia Guadalcacín<br>LATITUD: 36.706587<br>LONGITUD: -6.104122]]></description>
+        <styleUrl>#icon-1532-C2185B-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="TRANSBORDO">
+            <value>NO</value>
+          </Data>
+          <Data name="LINEA">
+            <value>5.0</value>
+          </Data>
+          <Data name="COD. PARADA">
+            <value>395.0</value>
+          </Data>
+          <Data name="SENTIDO">
+            <value>Hacia Guadalcacín</value>
+          </Data>
+          <Data name="LATITUD">
+            <value>36.706587</value>
+          </Data>
+          <Data name="LONGITUD">
+            <value>-6.104122</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -6.104122,36.706587,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>El Picador</name>
+        <description><![CDATA[TRANSBORDO: NO<br>LINEA: 5<br>COD. PARADA: 151<br>SENTIDO: Hacia Guadalcacín<br>LATITUD: 36.707461<br>LONGITUD: -6.098794]]></description>
+        <styleUrl>#icon-1532-C2185B-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="TRANSBORDO">
+            <value>NO</value>
+          </Data>
+          <Data name="LINEA">
+            <value>5.0</value>
+          </Data>
+          <Data name="COD. PARADA">
+            <value>151.0</value>
+          </Data>
+          <Data name="SENTIDO">
+            <value>Hacia Guadalcacín</value>
+          </Data>
+          <Data name="LATITUD">
+            <value>36.707461</value>
+          </Data>
+          <Data name="LONGITUD">
+            <value>-6.098794</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -6.098794,36.707461,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rabanito</name>
+        <description><![CDATA[TRANSBORDO: NO<br>LINEA: 5<br>COD. PARADA: 360<br>SENTIDO: Hacia Guadalcacin<br>LATITUD: 36.709431<br>LONGITUD: -6.090526]]></description>
+        <styleUrl>#icon-1532-C2185B-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="TRANSBORDO">
+            <value>NO</value>
+          </Data>
+          <Data name="LINEA">
+            <value>5.0</value>
+          </Data>
+          <Data name="COD. PARADA">
+            <value>360.0</value>
+          </Data>
+          <Data name="SENTIDO">
+            <value>Hacia Guadalcacin</value>
+          </Data>
+          <Data name="LATITUD">
+            <value>36.709431</value>
+          </Data>
+          <Data name="LONGITUD">
+            <value>-6.090526</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -6.090526,36.709431,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Ferretería</name>
+        <description><![CDATA[TRANSBORDO: NO<br>LINEA: 5<br>COD. PARADA: 180<br>SENTIDO: Hacia Guadalcacin<br>LATITUD: 36.714782<br>LONGITUD: -6.08975]]></description>
+        <styleUrl>#icon-1532-C2185B-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="TRANSBORDO">
+            <value>NO</value>
+          </Data>
+          <Data name="LINEA">
+            <value>5.0</value>
+          </Data>
+          <Data name="COD. PARADA">
+            <value>180.0</value>
+          </Data>
+          <Data name="SENTIDO">
+            <value>Hacia Guadalcacin</value>
+          </Data>
+          <Data name="LATITUD">
+            <value>36.714782</value>
+          </Data>
+          <Data name="LONGITUD">
+            <value>-6.08975</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -6.08975,36.714782,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Feria Guadalcín</name>
+        <description><![CDATA[TRANSBORDO: NO<br>LINEA: 5<br>COD. PARADA: 178<br>SENTIDO: Unica<br>LATITUD: 36.715878<br>LONGITUD: -6.087756]]></description>
+        <styleUrl>#icon-1532-C2185B-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="TRANSBORDO">
+            <value>NO</value>
+          </Data>
+          <Data name="LINEA">
+            <value>5.0</value>
+          </Data>
+          <Data name="COD. PARADA">
+            <value>178.0</value>
+          </Data>
+          <Data name="SENTIDO">
+            <value>Unica</value>
+          </Data>
+          <Data name="LATITUD">
+            <value>36.715878</value>
+          </Data>
+          <Data name="LONGITUD">
+            <value>-6.087756</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -6.087756,36.715878,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Mercado Abastos</name>
+        <description><![CDATA[TRANSBORDO: NO<br>LINEA: 5<br>COD. PARADA: 299<br>SENTIDO: Única<br>LATITUD: 36.716135<br>LONGITUD: -6.085842]]></description>
+        <styleUrl>#icon-1532-C2185B-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="TRANSBORDO">
+            <value>NO</value>
+          </Data>
+          <Data name="LINEA">
+            <value>5.0</value>
+          </Data>
+          <Data name="COD. PARADA">
+            <value>299.0</value>
+          </Data>
+          <Data name="SENTIDO">
+            <value>Única</value>
+          </Data>
+          <Data name="LATITUD">
+            <value>36.716135</value>
+          </Data>
+          <Data name="LONGITUD">
+            <value>-6.085842</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -6.085842,36.716135,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>C/ Madrid</name>
+        <description><![CDATA[TRANSBORDO: NO<br>LINEA: 5<br>COD. PARADA: 86<br>SENTIDO: Única<br>LATITUD: 36.714503<br>LONGITUD: -6.084837]]></description>
+        <styleUrl>#icon-1532-C2185B-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="TRANSBORDO">
+            <value>NO</value>
+          </Data>
+          <Data name="LINEA">
+            <value>5.0</value>
+          </Data>
+          <Data name="COD. PARADA">
+            <value>86.0</value>
+          </Data>
+          <Data name="SENTIDO">
+            <value>Única</value>
+          </Data>
+          <Data name="LATITUD">
+            <value>36.714503</value>
+          </Data>
+          <Data name="LONGITUD">
+            <value>-6.084837</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -6.084837,36.714503,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Divina Pastora Guadalcacin</name>
+        <description><![CDATA[TRANSBORDO: NO<br>LINEA: 5<br>COD. PARADA: 140<br>SENTIDO: Unica<br>LATITUD: 36.712824<br>LONGITUD: -6.085989]]></description>
+        <styleUrl>#icon-1532-C2185B-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="TRANSBORDO">
+            <value>NO</value>
+          </Data>
+          <Data name="LINEA">
+            <value>5.0</value>
+          </Data>
+          <Data name="COD. PARADA">
+            <value>140.0</value>
+          </Data>
+          <Data name="SENTIDO">
+            <value>Unica</value>
+          </Data>
+          <Data name="LATITUD">
+            <value>36.712824</value>
+          </Data>
+          <Data name="LONGITUD">
+            <value>-6.085989</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -6.085989,36.712824,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Guadalcacín</name>
+        <description><![CDATA[TRANSBORDO: NO<br>LINEA: 5<br>COD. PARADA: 195<br>SENTIDO: Unica<br>LATITUD: 36.713328<br>LONGITUD: -6.088468]]></description>
+        <styleUrl>#icon-1532-C2185B-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="TRANSBORDO">
+            <value>NO</value>
+          </Data>
+          <Data name="LINEA">
+            <value>5.0</value>
+          </Data>
+          <Data name="COD. PARADA">
+            <value>195.0</value>
+          </Data>
+          <Data name="SENTIDO">
+            <value>Unica</value>
+          </Data>
+          <Data name="LATITUD">
+            <value>36.713328</value>
+          </Data>
+          <Data name="LONGITUD">
+            <value>-6.088468</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -6.088468,36.713328,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rabanito</name>
+        <description><![CDATA[TRANSBORDO: NO<br>LINEA: 5<br>COD. PARADA: 361<br>SENTIDO: Hacia San José Obrero<br>LATITUD: 36.709503<br>LONGITUD: -6.090194]]></description>
+        <styleUrl>#icon-1532-C2185B-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="TRANSBORDO">
+            <value>NO</value>
+          </Data>
+          <Data name="LINEA">
+            <value>5.0</value>
+          </Data>
+          <Data name="COD. PARADA">
+            <value>361.0</value>
+          </Data>
+          <Data name="SENTIDO">
+            <value>Hacia San José Obrero</value>
+          </Data>
+          <Data name="LATITUD">
+            <value>36.709503</value>
+          </Data>
+          <Data name="LONGITUD">
+            <value>-6.090194</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -6.090194,36.709503,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>El Picador</name>
+        <description><![CDATA[TRANSBORDO: NO<br>LINEA: 5<br>COD. PARADA: 152<br>SENTIDO: Hacia San José Obrero<br>LATITUD: 36.707385<br>LONGITUD: -6.099191]]></description>
+        <styleUrl>#icon-1532-C2185B-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="TRANSBORDO">
+            <value>NO</value>
+          </Data>
+          <Data name="LINEA">
+            <value>5.0</value>
+          </Data>
+          <Data name="COD. PARADA">
+            <value>152.0</value>
+          </Data>
+          <Data name="SENTIDO">
+            <value>Hacia San José Obrero</value>
+          </Data>
+          <Data name="LATITUD">
+            <value>36.707385</value>
+          </Data>
+          <Data name="LONGITUD">
+            <value>-6.099191</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -6.099191,36.707385,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>San José Obrero</name>
+        <description><![CDATA[TRANSBORDO: NO<br>LINEA: 5<br>COD. PARADA: 396<br>SENTIDO: Hacia La Granja<br>LATITUD: 36.70645<br>LONGITUD: -6.10449]]></description>
+        <styleUrl>#icon-1532-C2185B-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="TRANSBORDO">
+            <value>NO</value>
+          </Data>
+          <Data name="LINEA">
+            <value>5.0</value>
+          </Data>
+          <Data name="COD. PARADA">
+            <value>396.0</value>
+          </Data>
+          <Data name="SENTIDO">
+            <value>Hacia La Granja</value>
+          </Data>
+          <Data name="LATITUD">
+            <value>36.70645</value>
+          </Data>
+          <Data name="LONGITUD">
+            <value>-6.10449</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -6.10449,36.70645,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Ermita Setefilla</name>
+        <description><![CDATA[TRANSBORDO: NO<br>LINEA: 5<br>COD. PARADA: 167<br>SENTIDO: Hacia La Granja<br>LATITUD: 36.705513<br>LONGITUD: -6.103519]]></description>
+        <styleUrl>#icon-1532-C2185B-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="TRANSBORDO">
+            <value>NO</value>
+          </Data>
+          <Data name="LINEA">
+            <value>5.0</value>
+          </Data>
+          <Data name="COD. PARADA">
+            <value>167.0</value>
+          </Data>
+          <Data name="SENTIDO">
+            <value>Hacia La Granja</value>
+          </Data>
+          <Data name="LATITUD">
+            <value>36.705513</value>
+          </Data>
+          <Data name="LONGITUD">
+            <value>-6.103519</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -6.103519,36.705513,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Ermita Palomares</name>
+        <description><![CDATA[TRANSBORDO: NO<br>LINEA: 5<br>COD. PARADA: 163<br>SENTIDO: Hacia La Granja<br>LATITUD: 36.703109<br>LONGITUD: -6.103172]]></description>
+        <styleUrl>#icon-1532-C2185B-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="TRANSBORDO">
+            <value>NO</value>
+          </Data>
+          <Data name="LINEA">
+            <value>5.0</value>
+          </Data>
+          <Data name="COD. PARADA">
+            <value>163.0</value>
+          </Data>
+          <Data name="SENTIDO">
+            <value>Hacia La Granja</value>
+          </Data>
+          <Data name="LATITUD">
+            <value>36.703109</value>
+          </Data>
+          <Data name="LONGITUD">
+            <value>-6.103172</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -6.103172,36.703109,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Santa Antonia</name>
+        <description><![CDATA[TRANSBORDO: NO<br>LINEA: 5<br>COD. PARADA: 406<br>SENTIDO: Hacia La Granja<br>LATITUD: 36.702963<br>LONGITUD: -6.105517]]></description>
+        <styleUrl>#icon-1532-C2185B-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="TRANSBORDO">
+            <value>NO</value>
+          </Data>
+          <Data name="LINEA">
+            <value>5.0</value>
+          </Data>
+          <Data name="COD. PARADA">
+            <value>406.0</value>
+          </Data>
+          <Data name="SENTIDO">
+            <value>Hacia La Granja</value>
+          </Data>
+          <Data name="LATITUD">
+            <value>36.702963</value>
+          </Data>
+          <Data name="LONGITUD">
+            <value>-6.105517</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -6.105517,36.702963,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Arroyo del Membrillar</name>
+        <description><![CDATA[TRANSBORDO: NO<br>LINEA: 5<br>COD. PARADA: 38<br>SENTIDO: Hacia La Granja<br>LATITUD: 36.702127<br>LONGITUD: -6.107103]]></description>
+        <styleUrl>#icon-1532-C2185B-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="TRANSBORDO">
+            <value>NO</value>
+          </Data>
+          <Data name="LINEA">
+            <value>5.0</value>
+          </Data>
+          <Data name="COD. PARADA">
+            <value>38.0</value>
+          </Data>
+          <Data name="SENTIDO">
+            <value>Hacia La Granja</value>
+          </Data>
+          <Data name="LATITUD">
+            <value>36.702127</value>
+          </Data>
+          <Data name="LONGITUD">
+            <value>-6.107103</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -6.107103,36.702127,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Azulejos Bahia</name>
+        <description><![CDATA[TRANSBORDO: NO<br>LINEA: 5<br>COD. PARADA: 67<br>SENTIDO: Hacia La Granja<br>LATITUD: 36.699889<br>LONGITUD: -6.104891]]></description>
+        <styleUrl>#icon-1532-C2185B-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="TRANSBORDO">
+            <value>NO</value>
+          </Data>
+          <Data name="LINEA">
+            <value>5.0</value>
+          </Data>
+          <Data name="COD. PARADA">
+            <value>67.0</value>
+          </Data>
+          <Data name="SENTIDO">
+            <value>Hacia La Granja</value>
+          </Data>
+          <Data name="LATITUD">
+            <value>36.699889</value>
+          </Data>
+          <Data name="LONGITUD">
+            <value>-6.104891</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -6.104891,36.699889,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Inst. F.P. La Granja</name>
+        <description><![CDATA[TRANSBORDO: 8-12<br>LINEA: 5<br>COD. PARADA: 224<br>SENTIDO: Hacia Avda. Europa<br>LATITUD: 36.698898<br>LONGITUD: -6.105]]></description>
+        <styleUrl>#icon-1532-C2185B-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="TRANSBORDO">
+            <value>8-12</value>
+          </Data>
+          <Data name="LINEA">
+            <value>5.0</value>
+          </Data>
+          <Data name="COD. PARADA">
+            <value>224.0</value>
+          </Data>
+          <Data name="SENTIDO">
+            <value>Hacia Avda. Europa</value>
+          </Data>
+          <Data name="LATITUD">
+            <value>36.698898</value>
+          </Data>
+          <Data name="LONGITUD">
+            <value>-6.105</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -6.105,36.698898,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Entre Parques</name>
+        <description><![CDATA[TRANSBORDO: 8-12<br>LINEA: 5<br>COD. PARADA: 161<br>SENTIDO: Dirección Arrumbadores<br>LATITUD: 36.698461<br>LONGITUD: -6.107657]]></description>
+        <styleUrl>#icon-1532-C2185B-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="TRANSBORDO">
+            <value>8-12</value>
+          </Data>
+          <Data name="LINEA">
+            <value>5.0</value>
+          </Data>
+          <Data name="COD. PARADA">
+            <value>161.0</value>
+          </Data>
+          <Data name="SENTIDO">
+            <value>Dirección Arrumbadores</value>
+          </Data>
+          <Data name="LATITUD">
+            <value>36.698461</value>
+          </Data>
+          <Data name="LONGITUD">
+            <value>-6.107657</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -6.107657,36.698461,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Arrumbadores</name>
+        <description><![CDATA[TRANSBORDO: 8-12<br>LINEA: 5<br>COD. PARADA: 40<br>SENTIDO: Sentido Alvaro domecq<br>LATITUD: 36.697805<br>LONGITUD: -6.111153]]></description>
+        <styleUrl>#icon-1532-C2185B-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="TRANSBORDO">
+            <value>8-12</value>
+          </Data>
+          <Data name="LINEA">
+            <value>5.0</value>
+          </Data>
+          <Data name="COD. PARADA">
+            <value>40.0</value>
+          </Data>
+          <Data name="SENTIDO">
+            <value>Sentido Alvaro domecq</value>
+          </Data>
+          <Data name="LATITUD">
+            <value>36.697805</value>
+          </Data>
+          <Data name="LONGITUD">
+            <value>-6.111153</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -6.111153,36.697805,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Carrefour Norte</name>
+        <description><![CDATA[TRANSBORDO: 8<br>LINEA: 5<br>COD. PARADA: 106<br>SENTIDO: Hacia Alvaro Domecq<br>LATITUD: 36.697163<br>LONGITUD: -6.114791]]></description>
+        <styleUrl>#icon-1532-C2185B-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="TRANSBORDO">
+            <value>8</value>
+          </Data>
+          <Data name="LINEA">
+            <value>5.0</value>
+          </Data>
+          <Data name="COD. PARADA">
+            <value>106.0</value>
+          </Data>
+          <Data name="SENTIDO">
+            <value>Hacia Alvaro Domecq</value>
+          </Data>
+          <Data name="LATITUD">
+            <value>36.697163</value>
+          </Data>
+          <Data name="LONGITUD">
+            <value>-6.114791</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -6.114791,36.697163,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Edf. Congreso</name>
+        <description><![CDATA[TRANSBORDO: 8<br>LINEA: 5<br>COD. PARADA: 145<br>SENTIDO: Hacia Alvaro Domecq<br>LATITUD: 36.696516<br>LONGITUD: -6.118183]]></description>
+        <styleUrl>#icon-1532-C2185B-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="TRANSBORDO">
+            <value>8</value>
+          </Data>
+          <Data name="LINEA">
+            <value>5.0</value>
+          </Data>
+          <Data name="COD. PARADA">
+            <value>145.0</value>
+          </Data>
+          <Data name="SENTIDO">
+            <value>Hacia Alvaro Domecq</value>
+          </Data>
+          <Data name="LATITUD">
+            <value>36.696516</value>
+          </Data>
+          <Data name="LONGITUD">
+            <value>-6.118183</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -6.118183,36.696516,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>El Bosque</name>
+        <description><![CDATA[TRANSBORDO: 16<br>LINEA: 5<br>COD. PARADA: 147<br>SENTIDO: Hacia Alvaro Domecq<br>LATITUD: 36.697508<br>LONGITUD: -6.125066]]></description>
+        <styleUrl>#icon-1532-C2185B-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="TRANSBORDO">
+            <value>16</value>
+          </Data>
+          <Data name="LINEA">
+            <value>5.0</value>
+          </Data>
+          <Data name="COD. PARADA">
+            <value>147.0</value>
+          </Data>
+          <Data name="SENTIDO">
+            <value>Hacia Alvaro Domecq</value>
+          </Data>
+          <Data name="LATITUD">
+            <value>36.697508</value>
+          </Data>
+          <Data name="LONGITUD">
+            <value>-6.125066</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -6.125066,36.697508,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Feria</name>
+        <description><![CDATA[TRANSBORDO: 16-17<br>LINEA: 5<br>COD. PARADA: 176<br>SENTIDO: Dirección centro<br>LATITUD: 36.697524<br>LONGITUD: -6.126383]]></description>
+        <styleUrl>#icon-1532-C2185B-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="TRANSBORDO">
+            <value>16-17</value>
+          </Data>
+          <Data name="LINEA">
+            <value>5.0</value>
+          </Data>
+          <Data name="COD. PARADA">
+            <value>176.0</value>
+          </Data>
+          <Data name="SENTIDO">
+            <value>Dirección centro</value>
+          </Data>
+          <Data name="LATITUD">
+            <value>36.697524</value>
+          </Data>
+          <Data name="LONGITUD">
+            <value>-6.126383</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -6.126383,36.697524,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Avd. Caballo</name>
+        <description><![CDATA[TRANSBORDO: 16-17<br>LINEA: 5<br>COD. PARADA: 50<br>SENTIDO: Dirección centro<br>LATITUD: 36.694845<br>LONGITUD: -6.129436]]></description>
+        <styleUrl>#icon-1532-C2185B-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="TRANSBORDO">
+            <value>16-17</value>
+          </Data>
+          <Data name="LINEA">
+            <value>5.0</value>
+          </Data>
+          <Data name="COD. PARADA">
+            <value>50.0</value>
+          </Data>
+          <Data name="SENTIDO">
+            <value>Dirección centro</value>
+          </Data>
+          <Data name="LATITUD">
+            <value>36.694845</value>
+          </Data>
+          <Data name="LONGITUD">
+            <value>-6.129436</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -6.129436,36.694845,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pza. Caballo</name>
+        <description><![CDATA[TRANSBORDO: 4<br>LINEA: 5<br>COD. PARADA: 356<br>SENTIDO: Hacia Avda. de Mexico<br>LATITUD: 36.693683<br>LONGITUD: -6.130286]]></description>
+        <styleUrl>#icon-1532-C2185B-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="TRANSBORDO">
+            <value>4</value>
+          </Data>
+          <Data name="LINEA">
+            <value>5.0</value>
+          </Data>
+          <Data name="COD. PARADA">
+            <value>356.0</value>
+          </Data>
+          <Data name="SENTIDO">
+            <value>Hacia Avda. de Mexico</value>
+          </Data>
+          <Data name="LATITUD">
+            <value>36.693683</value>
+          </Data>
+          <Data name="LONGITUD">
+            <value>-6.130286</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -6.130286,36.693683,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Torres de Córdoba</name>
+        <description><![CDATA[TRANSBORDO: 4<br>LINEA: 5<br>COD. PARADA: 440<br>SENTIDO: Dirección la Constancia<br>LATITUD: 36.692273<br>LONGITUD: -6.128317]]></description>
+        <styleUrl>#icon-1532-C2185B-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="TRANSBORDO">
+            <value>4</value>
+          </Data>
+          <Data name="LINEA">
+            <value>5.0</value>
+          </Data>
+          <Data name="COD. PARADA">
+            <value>440.0</value>
+          </Data>
+          <Data name="SENTIDO">
+            <value>Dirección la Constancia</value>
+          </Data>
+          <Data name="LATITUD">
+            <value>36.692273</value>
+          </Data>
+          <Data name="LONGITUD">
+            <value>-6.128317</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -6.128317,36.692273,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>La Constancia</name>
+        <description><![CDATA[TRANSBORDO: 4<br>LINEA: 5<br>COD. PARADA: 240<br>SENTIDO: Dirección Bda. España<br>LATITUD: 36.689934<br>LONGITUD: -6.127866]]></description>
+        <styleUrl>#icon-1532-C2185B-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="TRANSBORDO">
+            <value>4</value>
+          </Data>
+          <Data name="LINEA">
+            <value>5.0</value>
+          </Data>
+          <Data name="COD. PARADA">
+            <value>240.0</value>
+          </Data>
+          <Data name="SENTIDO">
+            <value>Dirección Bda. España</value>
+          </Data>
+          <Data name="LATITUD">
+            <value>36.689934</value>
+          </Data>
+          <Data name="LONGITUD">
+            <value>-6.127866</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -6.127866,36.689934,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>España</name>
+        <description><![CDATA[TRANSBORDO: 2-3-4-10-15-18<br>LINEA: 5<br>COD. PARADA: 168<br>SENTIDO: Hacia Madre de Dios<br>LATITUD: 36.68792<br>LONGITUD: -6.127942]]></description>
+        <styleUrl>#icon-1532-C2185B-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="TRANSBORDO">
+            <value>2-3-4-10-15-18</value>
+          </Data>
+          <Data name="LINEA">
+            <value>5.0</value>
+          </Data>
+          <Data name="COD. PARADA">
+            <value>168.0</value>
+          </Data>
+          <Data name="SENTIDO">
+            <value>Hacia Madre de Dios</value>
+          </Data>
+          <Data name="LATITUD">
+            <value>36.68792</value>
+          </Data>
+          <Data name="LONGITUD">
+            <value>-6.127942</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -6.127942,36.68792,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Estaciones</name>
+        <description><![CDATA[TRANSBORDO: 2-3-4-10-15-18<br>LINEA: 5<br>COD. PARADA: 171<br>SENTIDO: Dirección Madre de Dios<br>LATITUD: 36.681258<br>LONGITUD: -6.128288]]></description>
+        <styleUrl>#icon-1532-C2185B-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="TRANSBORDO">
+            <value>2-3-4-10-15-18</value>
+          </Data>
+          <Data name="LINEA">
+            <value>5.0</value>
+          </Data>
+          <Data name="COD. PARADA">
+            <value>171.0</value>
+          </Data>
+          <Data name="SENTIDO">
+            <value>Dirección Madre de Dios</value>
+          </Data>
+          <Data name="LATITUD">
+            <value>36.681258</value>
+          </Data>
+          <Data name="LONGITUD">
+            <value>-6.128288</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -6.128288,36.681258,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Diego F. Herrera</name>
+        <description><![CDATA[TRANSBORDO: 1-2-3-4-8-9-10-11-12-15-18<br>LINEA: 5<br>COD. PARADA: 139<br>SENTIDO: Sentido Angustias<br>LATITUD: 36.680544<br>LONGITUD: -6.131088]]></description>
+        <styleUrl>#icon-1532-C2185B-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="TRANSBORDO">
+            <value>1-2-3-4-8-9-10-11-12-15-18</value>
+          </Data>
+          <Data name="LINEA">
+            <value>5.0</value>
+          </Data>
+          <Data name="COD. PARADA">
+            <value>139.0</value>
+          </Data>
+          <Data name="SENTIDO">
+            <value>Sentido Angustias</value>
+          </Data>
+          <Data name="LATITUD">
+            <value>36.680544</value>
+          </Data>
+          <Data name="LONGITUD">
+            <value>-6.131088</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -6.131088,36.680544,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Recorrido</name>
+      <Placemark>
+        <name>Línea 5
+</name>
+        <styleUrl>#line-0288D1-6425-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -6.1343541,36.6808155,0
+            -6.1349258,36.6809168,0
+            -6.1354507,36.6810159,0
+            -6.1360019,36.6811803,0
+            -6.1365772,36.6813717,0
+            -6.1367736,36.6814292,0
+            -6.1367021,36.681564,0
+            -6.1366613,36.6817086,0
+            -6.1366434,36.6824607,0
+            -6.1363754,36.6827875,0
+            -6.1360966,36.6830734,0
+            -6.1356026,36.683234,0
+            -6.1351601,36.6833563,0
+            -6.134719,36.6834647,0
+            -6.1336864,36.6836984,0
+            -6.1331252,36.6838061,0
+            -6.1329759,36.6838308,0
+            -6.1315847,36.683961,0
+            -6.1311442,36.684004,0
+            -6.1307372,36.6840513,0
+            -6.1303628,36.6840949,0
+            -6.1300393,36.6841417,0
+            -6.1292203,36.6842519,0
+            -6.1283655,36.6843398,0
+            -6.1283753,36.684758,0
+            -6.1283476,36.6852185,0
+            -6.1282528,36.6856952,0
+            -6.1280065,36.6868494,0
+            -6.127603,36.6883143,0
+            -6.1274686,36.6883923,0
+            -6.1273691,36.6884789,0
+            -6.1273487,36.6886817,0
+            -6.1275638,36.6887744,0
+            -6.1276491,36.6887465,0
+            -6.1277156,36.688824,0
+            -6.1278257,36.6890473,0
+            -6.1278479,36.6892676,0
+            -6.1278272,36.6894471,0
+            -6.1275871,36.6905563,0
+            -6.1275348,36.6908284,0
+            -6.1274732,36.6910554,0
+            -6.1274547,36.691131,0
+            -6.127396,36.6912109,0
+            -6.1273742,36.6913769,0
+            -6.1274532,36.6914856,0
+            -6.1275839,36.6915056,0
+            -6.1277243,36.6916619,0
+            -6.127994,36.6919939,0
+            -6.1283227,36.6924067,0
+            -6.1286057,36.6927653,0
+            -6.1288894,36.6931188,0
+            -6.1291036,36.6933686,0
+            -6.1292349,36.6934936,0
+            -6.1294408,36.693644,0
+            -6.1296225,36.6937943,0
+            -6.1298673,36.6939651,0
+            -6.1300326,36.6940929,0
+            -6.130104,36.6941444,0
+            -6.130099,36.6942324,0
+            -6.1297675,36.6945081,0
+            -6.1295508,36.6946867,0
+            -6.129381,36.6948515,0
+            -6.128833,36.6952946,0
+            -6.1284838,36.6955908,0
+            -6.1278513,36.6961561,0
+            -6.1274709,36.6964654,0
+            -6.1272753,36.6966395,0
+            -6.1271066,36.6967963,0
+            -6.1265203,36.6973132,0
+            -6.1262446,36.6975523,0
+            -6.1259944,36.6977829,0
+            -6.1258763,36.6978377,0
+            -6.125716,36.6978435,0
+            -6.1256063,36.6978141,0
+            -6.1252488,36.697621,0
+            -6.1249221,36.697415,0
+            -6.124326,36.6970466,0
+            -6.1236704,36.6966688,0
+            -6.1234929,36.6965875,0
+            -6.1233719,36.6964436,0
+            -6.1232739,36.6963974,0
+            -6.123005,36.696413,0
+            -6.1221436,36.696295,0
+            -6.121328,36.6962452,0
+            -6.120996,36.6962177,0
+            -6.1208438,36.6961676,0
+            -6.1207546,36.6960352,0
+            -6.1206677,36.6959373,0
+            -6.1204949,36.6959163,0
+            -6.1203564,36.6959476,0
+            -6.1202904,36.6960004,0
+            -6.1201989,36.6960468,0
+            -6.119775,36.6960731,0
+            -6.1193867,36.6960902,0
+            -6.1190239,36.6961396,0
+            -6.1183084,36.6962519,0
+            -6.1179473,36.6963305,0
+            -6.1173832,36.6964285,0
+            -6.1171199,36.696471,0
+            -6.1168085,36.696523,0
+            -6.1166287,36.6965532,0
+            -6.1165254,36.6964931,0
+            -6.1163477,36.6965103,0
+            -6.1162427,36.6965813,0
+            -6.1161473,36.6966297,0
+            -6.1153303,36.6967723,0
+            -6.1144222,36.6969332,0
+            -6.1122735,36.6973199,0
+            -6.1116364,36.6974329,0
+            -6.1110289,36.6975352,0
+            -6.1100688,36.697716,0
+            -6.1094841,36.6978171,0
+            -6.1089344,36.6979053,0
+            -6.1074525,36.6981751,0
+            -6.1073301,36.6981646,0
+            -6.1072493,36.6981144,0
+            -6.1071015,36.6980803,0
+            -6.1069089,36.6981175,0
+            -6.1068018,36.6982092,0
+            -6.1067161,36.6983583,0
+            -6.1064936,36.6984049,0
+            -6.1059813,36.6984981,0
+            -6.1056119,36.6985564,0
+            -6.105268,36.698618,0
+            -6.1039451,36.6988442,0
+            -6.1028927,36.6990417,0
+            -6.1025156,36.6991182,0
+            -6.1021506,36.6991914,0
+            -6.1019049,36.6992298,0
+            -6.1017224,36.6991861,0
+            -6.1016043,36.6992588,0
+            -6.1015238,36.6993425,0
+            -6.1015479,36.6994403,0
+            -6.1016887,36.6995236,0
+            -6.1018181,36.6995308,0
+            -6.1019419,36.6994355,0
+            -6.1022438,36.6993879,0
+            -6.1025552,36.6993283,0
+            -6.1035082,36.6991522,0
+            -6.1040108,36.6990642,0
+            -6.1040523,36.6990868,0
+            -6.1040831,36.6991138,0
+            -6.1041555,36.6992305,0
+            -6.1045008,36.6995651,0
+            -6.1051487,36.7001362,0
+            -6.1058019,36.7007083,0
+            -6.1061742,36.7010132,0
+            -6.1065518,36.701318,0
+            -6.1069911,36.7016804,0
+            -6.1071946,36.7018552,0
+            -6.1072495,36.7018978,0
+            -6.107287,36.7019328,0
+            -6.1070667,36.7021327,0
+            -6.1067749,36.7023988,0
+            -6.1063782,36.7027614,0
+            -6.1060498,36.7030583,0
+            -6.1059016,36.7031831,0
+            -6.1058463,36.7032261,0
+            -6.1056526,36.7030195,0
+            -6.1053892,36.7027947,0
+            -6.104934,36.7024676,0
+            -6.1044261,36.7020745,0
+            -6.103523,36.7027983,0
+            -6.1027714,36.7033885,0
+            -6.1018304,36.7041534,0
+            -6.1025648,36.7047853,0
+            -6.1031623,36.7052754,0
+            -6.1037977,36.7057291,0
+            -6.1043032,36.7061107,0
+            -6.1044819,36.7062362,0
+            -6.1045793,36.7063022,0
+            -6.1046364,36.7063725,0
+            -6.1042499,36.7065459,0
+            -6.1039896,36.7066035,0
+            -6.1014911,36.7069678,0
+            -6.1001385,36.7072015,0
+            -6.0994072,36.7073398,0
+            -6.0986702,36.7074767,0
+            -6.0970266,36.707878,0
+            -6.0957907,36.7081858,0
+            -6.0949233,36.708402,0
+            -6.0937574,36.708694,0
+            -6.0927773,36.7089361,0
+            -6.092191,36.7090596,0
+            -6.091653,36.7091669,0
+            -6.0910439,36.7093043,0
+            -6.0904118,36.7094327,0
+            -6.0899945,36.7095401,0
+            -6.0897859,36.7096014,0
+            -6.0895987,36.7096669,0
+            -6.0892724,36.7105006,0
+            -6.0890986,36.7109142,0
+            -6.0889768,36.7111812,0
+            -6.0888939,36.7113547,0
+            -6.0887227,36.7117823,0
+            -6.0886008,36.7120638,0
+            -6.0885729,36.7122561,0
+            -6.0886476,36.7123858,0
+            -6.0887947,36.712568,0
+            -6.0889485,36.7127546,0
+            -6.0890863,36.7129477,0
+            -6.0898259,36.7137444,0
+            -6.0904209,36.7144438,0
+            -6.0890992,36.7151351,0
+            -6.0884147,36.7155233,0
+            -6.087807,36.7158399,0
+            -6.0872255,36.7161659,0
+            -6.0865445,36.7165375,0
+            -6.0862992,36.7163878,0
+            -6.0860515,36.7162561,0
+            -6.0858104,36.7161235,0
+            -6.08561,36.7160179,0
+            -6.0858096,36.7157754,0
+            -6.0860582,36.7154628,0
+            -6.0862221,36.7152463,0
+            -6.0856368,36.714937,0
+            -6.0852155,36.7147157,0
+            -6.0849183,36.7145589,0
+            -6.0846999,36.714429,0
+            -6.084978,36.7140557,0
+            -6.0853311,36.7136308,0
+            -6.0858052,36.7130451,0
+            -6.0861361,36.7126469,0
+            -6.0864477,36.7122295,0
+            -6.0868349,36.711788,0
+            -6.0870097,36.7115958,0
+            -6.0881814,36.7122232,0
+            -6.0882875,36.7122729,0
+            -6.0883761,36.7123463,0
+            -6.0884972,36.7124768,0
+            -6.0887136,36.7127498,0
+            -6.08891,36.712983,0
+            -6.0889792,36.7130639,0
+            -6.0887187,36.7132183,0
+            -6.0885818,36.7132934,0
+            -6.0884422,36.7133512,0
+            -6.0888644,36.713111,0
+            -6.0889916,36.7130385,0
+            -6.0890865,36.7130048,0
+            -6.0891367,36.7129621,0
+            -6.0889418,36.7126698,0
+            -6.0887478,36.7124377,0
+            -6.0886709,36.7123163,0
+            -6.0886681,36.712183,0
+            -6.0886605,36.7120772,0
+            -6.0887441,36.7118253,0
+            -6.0889865,36.711246,0
+            -6.0892163,36.7107586,0
+            -6.0894152,36.7102594,0
+            -6.0896101,36.7097676,0
+            -6.0896361,36.709681,0
+            -6.0898388,36.7096151,0
+            -6.0900389,36.7095621,0
+            -6.0901976,36.7095249,0
+            -6.091348,36.7092669,0
+            -6.0925064,36.7090219,0
+            -6.0935978,36.708765,0
+            -6.0947053,36.7084866,0
+            -6.0968653,36.7079399,0
+            -6.0980196,36.7076484,0
+            -6.0986109,36.7075095,0
+            -6.0989253,36.7074455,0
+            -6.099851,36.7072796,0
+            -6.1017931,36.7069419,0
+            -6.1034809,36.706708,0
+            -6.1042406,36.7065773,0
+            -6.104446,36.7065062,0
+            -6.1047043,36.7063847,0
+            -6.1045548,36.7062502,0
+            -6.1042559,36.7060372,0
+            -6.1039731,36.7058241,0
+            -6.1037133,36.705626,0
+            -6.1035297,36.7054947,0
+            -6.1032811,36.7053128,0
+            -6.1028141,36.7049457,0
+            -6.1023238,36.7045352,0
+            -6.1018908,36.7041708,0
+            -6.1019131,36.7041263,0
+            -6.1021066,36.7039664,0
+            -6.102544,36.7036327,0
+            -6.1029827,36.7032658,0
+            -6.1035801,36.7028061,0
+            -6.1042612,36.7022617,0
+            -6.1044347,36.7021352,0
+            -6.1049821,36.702558,0
+            -6.1052249,36.7027325,0
+            -6.1054596,36.7029081,0
+            -6.1056743,36.7031169,0
+            -6.105842,36.7032585,0
+            -6.1064301,36.7027637,0
+            -6.1068126,36.7024109,0
+            -6.1070777,36.7021593,0
+            -6.1073443,36.7019324,0
+            -6.1061284,36.7009243,0
+            -6.1055044,36.7004031,0
+            -6.1051549,36.700093,0
+            -6.1047556,36.6997321,0
+            -6.1042689,36.6992871,0
+            -6.1041627,36.6991742,0
+            -6.1041556,36.6990452,0
+            -6.1052739,36.6988335,0
+            -6.1064693,36.6986222,0
+            -6.1066197,36.6986062,0
+            -6.106762,36.6986117,0
+            -6.1069512,36.6986882,0
+            -6.107196,36.6986963,0
+            -6.1074418,36.6985326,0
+            -6.1075919,36.6984513,0
+            -6.1081899,36.6983593,0
+            -6.1090292,36.6982032,0
+            -6.110413,36.6979546,0
+            -6.1108366,36.6978874,0
+            -6.1113382,36.6977722,0
+            -6.1118478,36.6976828,0
+            -6.1135174,36.6974008,0
+            -6.1145591,36.6971993,0
+            -6.1155995,36.6970278,0
+            -6.1162656,36.6968977,0
+            -6.1164465,36.6968617,0
+            -6.1166617,36.6967996,0
+            -6.1180546,36.6965509,0
+            -6.1186138,36.6964637,0
+            -6.1191729,36.6963894,0
+            -6.1197213,36.6963527,0
+            -6.1202483,36.6963301,0
+            -6.120495,36.696323,0
+            -6.1206707,36.6962953,0
+            -6.1211445,36.6963505,0
+            -6.1217188,36.6963831,0
+            -6.122246,36.6964333,0
+            -6.1225479,36.6964503,0
+            -6.1228229,36.6965211,0
+            -6.1229343,36.6965811,0
+            -6.1230067,36.6966842,0
+            -6.1231322,36.6967513,0
+            -6.123259,36.6967259,0
+            -6.1234407,36.6966726,0
+            -6.1238617,36.6968549,0
+            -6.124292,36.6971093,0
+            -6.1246526,36.6973165,0
+            -6.1248752,36.6974582,0
+            -6.1251729,36.6976473,0
+            -6.1254149,36.6977849,0
+            -6.1255755,36.6979236,0
+            -6.1256209,36.698079,0
+            -6.1257831,36.6981502,0
+            -6.1259313,36.6980976,0
+            -6.1259732,36.6979466,0
+            -6.126088,36.6977937,0
+            -6.1269099,36.6970634,0
+            -6.1281442,36.69598,0
+            -6.1288043,36.6953867,0
+            -6.1296466,36.6946954,0
+            -6.1301322,36.6943196,0
+            -6.1302703,36.6942543,0
+            -6.1304494,36.6941249,0
+            -6.1306194,36.693972,0
+            -6.1306186,36.6938783,0
+            -6.1305162,36.6938293,0
+            -6.1300657,36.6934921,0
+            -6.1298029,36.6932912,0
+            -6.1296393,36.6932079,0
+            -6.1294717,36.6931685,0
+            -6.1292538,36.6931412,0
+            -6.1290562,36.6930937,0
+            -6.1289421,36.692999,0
+            -6.1288549,36.6929156,0
+            -6.128779,36.6928416,0
+            -6.1284917,36.6924799,0
+            -6.1281764,36.6921054,0
+            -6.1278202,36.691673,0
+            -6.1276958,36.6915084,0
+            -6.1278213,36.6913874,0
+            -6.1278787,36.691228,0
+            -6.127784,36.691144,0
+            -6.1276562,36.6910676,0
+            -6.1275977,36.6909175,0
+            -6.1277186,36.690408,0
+            -6.1279537,36.689263,0
+            -6.1279425,36.6890518,0
+            -6.1278564,36.6887741,0
+            -6.1278563,36.6886353,0
+            -6.1278441,36.6884895,0
+            -6.1277328,36.6884042,0
+            -6.1278106,36.6881621,0
+            -6.1280587,36.6871849,0
+            -6.1282525,36.6862576,0
+            -6.1283198,36.6857322,0
+            -6.1283977,36.6852067,0
+            -6.1284542,36.6846802,0
+            -6.1284294,36.6843222,0
+            -6.1283537,36.6839685,0
+            -6.1279386,36.682877,0
+            -6.127859,36.6825407,0
+            -6.1278285,36.6823725,0
+            -6.1278169,36.6822022,0
+            -6.1278366,36.681925,0
+            -6.1279743,36.6816169,0
+            -6.128179,36.6813304,0
+            -6.1283555,36.6811191,0
+            -6.1283628,36.6810733,0
+            -6.1284077,36.6810233,0
+            -6.1284974,36.680949,0
+            -6.1286194,36.6808639,0
+            -6.1287823,36.680731,0
+            -6.1289817,36.6803806,0
+            -6.1292692,36.6798741,0
+            -6.1301371,36.6802275,0
+            -6.1306381,36.6804203,0
+            -6.131048,36.6805551,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>

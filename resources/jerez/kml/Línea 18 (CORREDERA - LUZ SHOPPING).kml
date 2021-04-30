@@ -1,0 +1,1922 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Línea 18 (CORREDERA - LUZ SHOPPING)</name>
+    <description/>
+    <Style id="icon-1532-0288D1-labelson">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Style id="icon-1532-C2185B-labelson">
+      <IconStyle>
+        <color>ff5b18c2</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Style id="line-0288D1-6000-normal">
+      <LineStyle>
+        <color>ffd18802</color>
+        <width>6</width>
+      </LineStyle>
+    </Style>
+    <Style id="line-0288D1-6000-highlight">
+      <LineStyle>
+        <color>ffd18802</color>
+        <width>9</width>
+      </LineStyle>
+    </Style>
+    <StyleMap id="line-0288D1-6000">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-0288D1-6000-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-0288D1-6000-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Folder>
+      <name>Paradas</name>
+      <Placemark>
+        <name>Angustias Canal Sur</name>
+        <description><![CDATA[TRANSBORDO: 1-2-3-4-5-6-10-12<br>LINEA: 18<br>COD.PARADA: 130<br>SENTIDO: Única<br>LATITUD: 36.680865<br>LONGITUD: -6.134338]]></description>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="TRANSBORDO">
+            <value>1-2-3-4-5-6-10-12</value>
+          </Data>
+          <Data name="LINEA">
+            <value>18.0</value>
+          </Data>
+          <Data name="COD.PARADA">
+            <value>130.0</value>
+          </Data>
+          <Data name="SENTIDO">
+            <value>Única</value>
+          </Data>
+          <Data name="LATITUD">
+            <value>36.680865</value>
+          </Data>
+          <Data name="LONGITUD">
+            <value>-6.134338</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -6.134338,36.680865,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Corredera</name>
+        <description><![CDATA[TRANSBORDO: 5-12<br>LINEA: 18<br>COD.PARADA: 131<br>SENTIDO: Unica<br>LATITUD: 36.680999<br>LONGITUD: -6.135418]]></description>
+        <styleUrl>#icon-1532-C2185B-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="TRANSBORDO">
+            <value>5-12</value>
+          </Data>
+          <Data name="LINEA">
+            <value>18.0</value>
+          </Data>
+          <Data name="COD.PARADA">
+            <value>131.0</value>
+          </Data>
+          <Data name="SENTIDO">
+            <value>Unica</value>
+          </Data>
+          <Data name="LATITUD">
+            <value>36.680999</value>
+          </Data>
+          <Data name="LONGITUD">
+            <value>-6.135418</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -6.135418,36.680999,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Sto. Domingo II</name>
+        <description><![CDATA[TRANSBORDO: 2-3-4-10-16-17<br>LINEA: 18<br>COD.PARADA: 419<br>SENTIDO: Hacia Norte y Oeste<br>LATITUD: 36.687463<br>LONGITUD: -6.137124]]></description>
+        <styleUrl>#icon-1532-C2185B-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="TRANSBORDO">
+            <value>2-3-4-10-16-17</value>
+          </Data>
+          <Data name="LINEA">
+            <value>18.0</value>
+          </Data>
+          <Data name="COD.PARADA">
+            <value>419.0</value>
+          </Data>
+          <Data name="SENTIDO">
+            <value>Hacia Norte y Oeste</value>
+          </Data>
+          <Data name="LATITUD">
+            <value>36.687463</value>
+          </Data>
+          <Data name="LONGITUD">
+            <value>-6.137124</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -6.137124,36.687463,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Mamelón</name>
+        <description><![CDATA[TRANSBORDO: 2-3-10-16-17<br>LINEA: 18<br>COD.PARADA: 284<br>SENTIDO: Única<br>LATITUD: 36.688852<br>LONGITUD: -6.137629]]></description>
+        <styleUrl>#icon-1532-C2185B-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="TRANSBORDO">
+            <value>2-3-10-16-17</value>
+          </Data>
+          <Data name="LINEA">
+            <value>18.0</value>
+          </Data>
+          <Data name="COD.PARADA">
+            <value>284.0</value>
+          </Data>
+          <Data name="SENTIDO">
+            <value>Única</value>
+          </Data>
+          <Data name="LATITUD">
+            <value>36.688852</value>
+          </Data>
+          <Data name="LONGITUD">
+            <value>-6.137629</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -6.137629,36.688852,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Ancha</name>
+        <description><![CDATA[TRANSBORDO: 2<br>LINEA: 18<br>COD.PARADA: 23<br>SENTIDO: Hacia Santiago<br>LATITUD: 36.688059<br>LONGITUD: -6.142393]]></description>
+        <styleUrl>#icon-1532-C2185B-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="TRANSBORDO">
+            <value>2</value>
+          </Data>
+          <Data name="LINEA">
+            <value>18.0</value>
+          </Data>
+          <Data name="COD.PARADA">
+            <value>23.0</value>
+          </Data>
+          <Data name="SENTIDO">
+            <value>Hacia Santiago</value>
+          </Data>
+          <Data name="LATITUD">
+            <value>36.688059</value>
+          </Data>
+          <Data name="LONGITUD">
+            <value>-6.142393</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -6.142393,36.688059,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Taxdirt</name>
+        <description><![CDATA[TRANSBORDO: <br>LINEA: 18<br>COD.PARADA: 430<br>SENTIDO: Única (escuela de idiomas)<br>LATITUD: 36.688966<br>LONGITUD: -6.145014]]></description>
+        <styleUrl>#icon-1532-C2185B-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="TRANSBORDO">
+            <value/>
+          </Data>
+          <Data name="LINEA">
+            <value>18.0</value>
+          </Data>
+          <Data name="COD.PARADA">
+            <value>430.0</value>
+          </Data>
+          <Data name="SENTIDO">
+            <value>Única (escuela de idiomas)</value>
+          </Data>
+          <Data name="LATITUD">
+            <value>36.688966</value>
+          </Data>
+          <Data name="LONGITUD">
+            <value>-6.145014</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -6.145014,36.688966,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Sanatorio</name>
+        <description><![CDATA[TRANSBORDO: <br>LINEA: 18<br>COD.PARADA: 402<br>SENTIDO: Hacia Luz Shopping<br>LATITUD: 36.691362<br>LONGITUD: -6.148507]]></description>
+        <styleUrl>#icon-1532-C2185B-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="TRANSBORDO">
+            <value/>
+          </Data>
+          <Data name="LINEA">
+            <value>18.0</value>
+          </Data>
+          <Data name="COD.PARADA">
+            <value>402.0</value>
+          </Data>
+          <Data name="SENTIDO">
+            <value>Hacia Luz Shopping</value>
+          </Data>
+          <Data name="LATITUD">
+            <value>36.691362</value>
+          </Data>
+          <Data name="LONGITUD">
+            <value>-6.148507</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -6.148507,36.691362,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Calvario</name>
+        <description><![CDATA[TRANSBORDO: <br>LINEA: 18<br>COD.PARADA: 90<br>SENTIDO: Subiendo<br>LATITUD: 36.693091<br>LONGITUD: -6.150186]]></description>
+        <styleUrl>#icon-1532-C2185B-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="TRANSBORDO">
+            <value/>
+          </Data>
+          <Data name="LINEA">
+            <value>18.0</value>
+          </Data>
+          <Data name="COD.PARADA">
+            <value>90.0</value>
+          </Data>
+          <Data name="SENTIDO">
+            <value>Subiendo</value>
+          </Data>
+          <Data name="LATITUD">
+            <value>36.693091</value>
+          </Data>
+          <Data name="LONGITUD">
+            <value>-6.150186</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -6.150186,36.693091,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>San Juan de Dios</name>
+        <description><![CDATA[TRANSBORDO: <br>LINEA: 18<br>COD.PARADA: 399<br>SENTIDO: Hacia Luz Shopping<br>LATITUD: 36.691624<br>LONGITUD: -6.151862]]></description>
+        <styleUrl>#icon-1532-C2185B-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="TRANSBORDO">
+            <value/>
+          </Data>
+          <Data name="LINEA">
+            <value>18.0</value>
+          </Data>
+          <Data name="COD.PARADA">
+            <value>399.0</value>
+          </Data>
+          <Data name="SENTIDO">
+            <value>Hacia Luz Shopping</value>
+          </Data>
+          <Data name="LATITUD">
+            <value>36.691624</value>
+          </Data>
+          <Data name="LONGITUD">
+            <value>-6.151862</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -6.151862,36.691624,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Area Sur</name>
+        <description><![CDATA[TRANSBORDO: 8<br>LINEA: 18<br>COD.PARADA: 31<br>SENTIDO: Entrando en Area Sur<br>LATITUD: 36.69449<br>LONGITUD: -6.153202]]></description>
+        <styleUrl>#icon-1532-C2185B-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="TRANSBORDO">
+            <value>8</value>
+          </Data>
+          <Data name="LINEA">
+            <value>18.0</value>
+          </Data>
+          <Data name="COD.PARADA">
+            <value>31.0</value>
+          </Data>
+          <Data name="SENTIDO">
+            <value>Entrando en Area Sur</value>
+          </Data>
+          <Data name="LATITUD">
+            <value>36.69449</value>
+          </Data>
+          <Data name="LONGITUD">
+            <value>-6.153202</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -6.153202,36.69449,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Ikea</name>
+        <description><![CDATA[TRANSBORDO: <br>LINEA: 18<br>COD.PARADA: 220<br>SENTIDO: <br>LATITUD: 36.695343<br>LONGITUD: -6.160336]]></description>
+        <styleUrl>#icon-1532-C2185B-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="TRANSBORDO">
+            <value/>
+          </Data>
+          <Data name="LINEA">
+            <value>18.0</value>
+          </Data>
+          <Data name="COD.PARADA">
+            <value>220.0</value>
+          </Data>
+          <Data name="SENTIDO">
+            <value/>
+          </Data>
+          <Data name="LATITUD">
+            <value>36.695343</value>
+          </Data>
+          <Data name="LONGITUD">
+            <value>-6.160336</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -6.160336,36.695343,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Bricor</name>
+        <description><![CDATA[TRANSBORDO: <br>LINEA: 18<br>COD.PARADA: 78<br>SENTIDO: <br>LATITUD: 36.692864<br>LONGITUD: -6.161134]]></description>
+        <styleUrl>#icon-1532-C2185B-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="TRANSBORDO">
+            <value/>
+          </Data>
+          <Data name="LINEA">
+            <value>18.0</value>
+          </Data>
+          <Data name="COD.PARADA">
+            <value>78.0</value>
+          </Data>
+          <Data name="SENTIDO">
+            <value/>
+          </Data>
+          <Data name="LATITUD">
+            <value>36.692864</value>
+          </Data>
+          <Data name="LONGITUD">
+            <value>-6.161134</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -6.161134,36.692864,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Alcampo</name>
+        <description><![CDATA[TRANSBORDO: <br>LINEA: 18<br>COD.PARADA: 7<br>SENTIDO: En el mismo centro<br>LATITUD: 36.6923717<br>LONGITUD: -6.1600136]]></description>
+        <styleUrl>#icon-1532-C2185B-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="TRANSBORDO">
+            <value/>
+          </Data>
+          <Data name="LINEA">
+            <value>18.0</value>
+          </Data>
+          <Data name="COD.PARADA">
+            <value>7.0</value>
+          </Data>
+          <Data name="SENTIDO">
+            <value>En el mismo centro</value>
+          </Data>
+          <Data name="LATITUD">
+            <value>36.6923717</value>
+          </Data>
+          <Data name="LONGITUD">
+            <value>-6.1600136</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -6.1600136,36.6923717,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Area Sur 2</name>
+        <description><![CDATA[TRANSBORDO: 9<br>LINEA: 18<br>COD.PARADA: 34<br>SENTIDO: Dirección Area Sur<br>LATITUD: 36.692093<br>LONGITUD: -6.156533]]></description>
+        <styleUrl>#icon-1532-C2185B-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="TRANSBORDO">
+            <value>9</value>
+          </Data>
+          <Data name="LINEA">
+            <value>18.0</value>
+          </Data>
+          <Data name="COD.PARADA">
+            <value>34.0</value>
+          </Data>
+          <Data name="SENTIDO">
+            <value>Dirección Area Sur</value>
+          </Data>
+          <Data name="LATITUD">
+            <value>36.692093</value>
+          </Data>
+          <Data name="LONGITUD">
+            <value>-6.156533</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -6.156533,36.692093,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Alcampo</name>
+        <description><![CDATA[TRANSBORDO: <br>LINEA: 18<br>COD.PARADA: 6<br>SENTIDO: Antes de la salida de Luz Shopping<br>LATITUD: 36.6926635<br>LONGITUD: -6.1588416]]></description>
+        <styleUrl>#icon-1532-C2185B-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="TRANSBORDO">
+            <value/>
+          </Data>
+          <Data name="LINEA">
+            <value>18.0</value>
+          </Data>
+          <Data name="COD.PARADA">
+            <value>6.0</value>
+          </Data>
+          <Data name="SENTIDO">
+            <value>Antes de la salida de Luz Shopping</value>
+          </Data>
+          <Data name="LATITUD">
+            <value>36.6926635</value>
+          </Data>
+          <Data name="LONGITUD">
+            <value>-6.1588416</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -6.1588416,36.6926635,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Worten</name>
+        <description><![CDATA[TRANSBORDO: <br>LINEA: 18<br>COD.PARADA: 456<br>SENTIDO: Hacia Centro<br>LATITUD: 36.695339<br>LONGITUD: -6.160354]]></description>
+        <styleUrl>#icon-1532-C2185B-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="TRANSBORDO">
+            <value/>
+          </Data>
+          <Data name="LINEA">
+            <value>18.0</value>
+          </Data>
+          <Data name="COD.PARADA">
+            <value>456.0</value>
+          </Data>
+          <Data name="SENTIDO">
+            <value>Hacia Centro</value>
+          </Data>
+          <Data name="LATITUD">
+            <value>36.695339</value>
+          </Data>
+          <Data name="LONGITUD">
+            <value>-6.160354</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -6.160354,36.695339,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Area Sur</name>
+        <description><![CDATA[TRANSBORDO: 9<br>LINEA: 18<br>COD.PARADA: 32<br>SENTIDO: Saliendo de Area Sur<br>LATITUD: 36.694438<br>LONGITUD: -6.153433]]></description>
+        <styleUrl>#icon-1532-C2185B-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="TRANSBORDO">
+            <value>9</value>
+          </Data>
+          <Data name="LINEA">
+            <value>18.0</value>
+          </Data>
+          <Data name="COD.PARADA">
+            <value>32.0</value>
+          </Data>
+          <Data name="SENTIDO">
+            <value>Saliendo de Area Sur</value>
+          </Data>
+          <Data name="LATITUD">
+            <value>36.694438</value>
+          </Data>
+          <Data name="LONGITUD">
+            <value>-6.153433</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -6.153433,36.694438,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>San Juan de Dios</name>
+        <description><![CDATA[TRANSBORDO: <br>LINEA: 18<br>COD.PARADA: 400<br>SENTIDO: Hacia Centro<br>LATITUD: 36.691624<br>LONGITUD: -6.151862]]></description>
+        <styleUrl>#icon-1532-C2185B-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="TRANSBORDO">
+            <value/>
+          </Data>
+          <Data name="LINEA">
+            <value>18.0</value>
+          </Data>
+          <Data name="COD.PARADA">
+            <value>400.0</value>
+          </Data>
+          <Data name="SENTIDO">
+            <value>Hacia Centro</value>
+          </Data>
+          <Data name="LATITUD">
+            <value>36.691624</value>
+          </Data>
+          <Data name="LONGITUD">
+            <value>-6.151862</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -6.151862,36.691624,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Calvario</name>
+        <description><![CDATA[TRANSBORDO: 8<br>LINEA: 18<br>COD.PARADA: 91<br>SENTIDO: Bajando<br>LATITUD: 36.692878<br>LONGITUD: -6.149867]]></description>
+        <styleUrl>#icon-1532-C2185B-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="TRANSBORDO">
+            <value>8</value>
+          </Data>
+          <Data name="LINEA">
+            <value>18.0</value>
+          </Data>
+          <Data name="COD.PARADA">
+            <value>91.0</value>
+          </Data>
+          <Data name="SENTIDO">
+            <value>Bajando</value>
+          </Data>
+          <Data name="LATITUD">
+            <value>36.692878</value>
+          </Data>
+          <Data name="LONGITUD">
+            <value>-6.149867</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -6.149867,36.692878,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Sanatorio</name>
+        <description><![CDATA[TRANSBORDO: <br>LINEA: 18<br>COD.PARADA: 403<br>SENTIDO: Hacia Centro<br>LATITUD: 36.691362<br>LONGITUD: -6.148507]]></description>
+        <styleUrl>#icon-1532-C2185B-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="TRANSBORDO">
+            <value/>
+          </Data>
+          <Data name="LINEA">
+            <value>18.0</value>
+          </Data>
+          <Data name="COD.PARADA">
+            <value>403.0</value>
+          </Data>
+          <Data name="SENTIDO">
+            <value>Hacia Centro</value>
+          </Data>
+          <Data name="LATITUD">
+            <value>36.691362</value>
+          </Data>
+          <Data name="LONGITUD">
+            <value>-6.148507</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -6.148507,36.691362,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>San Juan Bosco</name>
+        <description><![CDATA[TRANSBORDO: <br>LINEA: 18<br>COD.PARADA: 398<br>SENTIDO: Única<br>LATITUD: 36.692419<br>LONGITUD: -6.145731]]></description>
+        <styleUrl>#icon-1532-C2185B-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="TRANSBORDO">
+            <value/>
+          </Data>
+          <Data name="LINEA">
+            <value>18.0</value>
+          </Data>
+          <Data name="COD.PARADA">
+            <value>398.0</value>
+          </Data>
+          <Data name="SENTIDO">
+            <value>Única</value>
+          </Data>
+          <Data name="LATITUD">
+            <value>36.692419</value>
+          </Data>
+          <Data name="LONGITUD">
+            <value>-6.145731</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -6.145731,36.692419,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Santa Ana</name>
+        <description><![CDATA[TRANSBORDO: 3<br>LINEA: 18<br>COD.PARADA: 404<br>SENTIDO: <br>LATITUD: 36.691727<br>LONGITUD: -6.143601]]></description>
+        <styleUrl>#icon-1532-C2185B-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="TRANSBORDO">
+            <value>3</value>
+          </Data>
+          <Data name="LINEA">
+            <value>18.0</value>
+          </Data>
+          <Data name="COD.PARADA">
+            <value>404.0</value>
+          </Data>
+          <Data name="SENTIDO">
+            <value/>
+          </Data>
+          <Data name="LATITUD">
+            <value>36.691727</value>
+          </Data>
+          <Data name="LONGITUD">
+            <value>-6.143601</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -6.143601,36.691727,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Asta</name>
+        <description><![CDATA[TRANSBORDO: 3<br>LINEA: 18<br>COD.PARADA: 42<br>SENTIDO: <br>LATITUD: 36.689437<br>LONGITUD: -6.144113]]></description>
+        <styleUrl>#icon-1532-C2185B-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="TRANSBORDO">
+            <value>3</value>
+          </Data>
+          <Data name="LINEA">
+            <value>18.0</value>
+          </Data>
+          <Data name="COD.PARADA">
+            <value>42.0</value>
+          </Data>
+          <Data name="SENTIDO">
+            <value/>
+          </Data>
+          <Data name="LATITUD">
+            <value>36.689437</value>
+          </Data>
+          <Data name="LONGITUD">
+            <value>-6.144113</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -6.144113,36.689437,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Santiago</name>
+        <description><![CDATA[TRANSBORDO: 3<br>LINEA: 18<br>COD.PARADA: 408<br>SENTIDO: Única<br>LATITUD: 36.688717<br>LONGITUD: -6.143893]]></description>
+        <styleUrl>#icon-1532-C2185B-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="TRANSBORDO">
+            <value>3</value>
+          </Data>
+          <Data name="LINEA">
+            <value>18.0</value>
+          </Data>
+          <Data name="COD.PARADA">
+            <value>408.0</value>
+          </Data>
+          <Data name="SENTIDO">
+            <value>Única</value>
+          </Data>
+          <Data name="LATITUD">
+            <value>36.688717</value>
+          </Data>
+          <Data name="LONGITUD">
+            <value>-6.143893</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -6.143893,36.688717,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Ancha</name>
+        <description><![CDATA[TRANSBORDO: 2-3<br>LINEA: 18<br>COD.PARADA: 24<br>SENTIDO: Hacia Porvera<br>LATITUD: 36.688127<br>LONGITUD: -6.14216]]></description>
+        <styleUrl>#icon-1532-C2185B-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="TRANSBORDO">
+            <value>2-3</value>
+          </Data>
+          <Data name="LINEA">
+            <value>18.0</value>
+          </Data>
+          <Data name="COD.PARADA">
+            <value>24.0</value>
+          </Data>
+          <Data name="SENTIDO">
+            <value>Hacia Porvera</value>
+          </Data>
+          <Data name="LATITUD">
+            <value>36.688127</value>
+          </Data>
+          <Data name="LONGITUD">
+            <value>-6.14216</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -6.14216,36.688127,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Porvera II</name>
+        <description><![CDATA[TRANSBORDO: 2-3<br>LINEA: 18<br>COD.PARADA: 346<br>SENTIDO: Unica<br>LATITUD: 36.687392<br>LONGITUD: -6.139677]]></description>
+        <styleUrl>#icon-1532-C2185B-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="TRANSBORDO">
+            <value>2-3</value>
+          </Data>
+          <Data name="LINEA">
+            <value>18.0</value>
+          </Data>
+          <Data name="COD.PARADA">
+            <value>346.0</value>
+          </Data>
+          <Data name="SENTIDO">
+            <value>Unica</value>
+          </Data>
+          <Data name="LATITUD">
+            <value>36.687392</value>
+          </Data>
+          <Data name="LONGITUD">
+            <value>-6.139677</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -6.139677,36.687392,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Porvera I</name>
+        <description><![CDATA[TRANSBORDO: 2-3<br>LINEA: 18<br>COD.PARADA: 345<br>SENTIDO: Unica<br>LATITUD: 36.686158<br>LONGITUD: -6.137657]]></description>
+        <styleUrl>#icon-1532-C2185B-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="TRANSBORDO">
+            <value>2-3</value>
+          </Data>
+          <Data name="LINEA">
+            <value>18.0</value>
+          </Data>
+          <Data name="COD.PARADA">
+            <value>345.0</value>
+          </Data>
+          <Data name="SENTIDO">
+            <value>Unica</value>
+          </Data>
+          <Data name="LATITUD">
+            <value>36.686158</value>
+          </Data>
+          <Data name="LONGITUD">
+            <value>-6.137657</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -6.137657,36.686158,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rotonda Casino</name>
+        <description><![CDATA[TRANSBORDO: 2-3-10-16-17<br>LINEA: 18<br>COD.PARADA: 385<br>SENTIDO: Única<br>LATITUD: 36.685095<br>LONGITUD: -6.136451]]></description>
+        <styleUrl>#icon-1532-C2185B-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="TRANSBORDO">
+            <value>2-3-10-16-17</value>
+          </Data>
+          <Data name="LINEA">
+            <value>18.0</value>
+          </Data>
+          <Data name="COD.PARADA">
+            <value>385.0</value>
+          </Data>
+          <Data name="SENTIDO">
+            <value>Única</value>
+          </Data>
+          <Data name="LATITUD">
+            <value>36.685095</value>
+          </Data>
+          <Data name="LONGITUD">
+            <value>-6.136451</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -6.136451,36.685095,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Sto. Domingo II</name>
+        <description><![CDATA[TRANSBORDO: 2-3-10<br>LINEA: 18<br>COD.PARADA: 420<br>SENTIDO: Hacia Esteve<br>LATITUD: 36.687463<br>LONGITUD: -6.137124]]></description>
+        <styleUrl>#icon-1532-C2185B-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="TRANSBORDO">
+            <value>2-3-10</value>
+          </Data>
+          <Data name="LINEA">
+            <value>18.0</value>
+          </Data>
+          <Data name="COD.PARADA">
+            <value>420.0</value>
+          </Data>
+          <Data name="SENTIDO">
+            <value>Hacia Esteve</value>
+          </Data>
+          <Data name="LATITUD">
+            <value>36.687463</value>
+          </Data>
+          <Data name="LONGITUD">
+            <value>-6.137124</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -6.137124,36.687463,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Sevilla</name>
+        <description><![CDATA[TRANSBORDO: 2-3-4-10-16-17<br>LINEA: 18<br>COD.PARADA: 414<br>SENTIDO: De Alameda Cristina a Paul<br>LATITUD: 36.690344<br>LONGITUD: -6.135741]]></description>
+        <styleUrl>#icon-1532-C2185B-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="TRANSBORDO">
+            <value>2-3-4-10-16-17</value>
+          </Data>
+          <Data name="LINEA">
+            <value>18.0</value>
+          </Data>
+          <Data name="COD.PARADA">
+            <value>414.0</value>
+          </Data>
+          <Data name="SENTIDO">
+            <value>De Alameda Cristina a Paul</value>
+          </Data>
+          <Data name="LATITUD">
+            <value>36.690344</value>
+          </Data>
+          <Data name="LONGITUD">
+            <value>-6.135741</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -6.135741,36.690344,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Paúl</name>
+        <description><![CDATA[TRANSBORDO: 2-3-10<br>LINEA: 18<br>COD.PARADA: 329<br>SENTIDO: Única<br>LATITUD: 36.688521<br>LONGITUD: -6.132913]]></description>
+        <styleUrl>#icon-1532-C2185B-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="TRANSBORDO">
+            <value>2-3-10</value>
+          </Data>
+          <Data name="LINEA">
+            <value>18.0</value>
+          </Data>
+          <Data name="COD.PARADA">
+            <value>329.0</value>
+          </Data>
+          <Data name="SENTIDO">
+            <value>Única</value>
+          </Data>
+          <Data name="LATITUD">
+            <value>36.688521</value>
+          </Data>
+          <Data name="LONGITUD">
+            <value>-6.132913</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -6.132913,36.688521,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Fátima</name>
+        <description><![CDATA[TRANSBORDO: 2-3-10<br>LINEA: 18<br>COD.PARADA: 174<br>SENTIDO: De Zaragoza a Nuestra señora de la paz<br>LATITUD: 36.688395<br>LONGITUD: -6.129405]]></description>
+        <styleUrl>#icon-1532-C2185B-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="TRANSBORDO">
+            <value>2-3-10</value>
+          </Data>
+          <Data name="LINEA">
+            <value>18.0</value>
+          </Data>
+          <Data name="COD.PARADA">
+            <value>174.0</value>
+          </Data>
+          <Data name="SENTIDO">
+            <value>De Zaragoza a Nuestra señora de la paz</value>
+          </Data>
+          <Data name="LATITUD">
+            <value>36.688395</value>
+          </Data>
+          <Data name="LONGITUD">
+            <value>-6.129405</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -6.129405,36.688395,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>España</name>
+        <description><![CDATA[TRANSBORDO: 2-3-4-5-10-15<br>LINEA: 18<br>COD.PARADA: 168<br>SENTIDO: Hacia Madre de Dios<br>LATITUD: 36.68792<br>LONGITUD: -6.127942]]></description>
+        <styleUrl>#icon-1532-C2185B-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="TRANSBORDO">
+            <value>2-3-4-5-10-15</value>
+          </Data>
+          <Data name="LINEA">
+            <value>18.0</value>
+          </Data>
+          <Data name="COD.PARADA">
+            <value>168.0</value>
+          </Data>
+          <Data name="SENTIDO">
+            <value>Hacia Madre de Dios</value>
+          </Data>
+          <Data name="LATITUD">
+            <value>36.68792</value>
+          </Data>
+          <Data name="LONGITUD">
+            <value>-6.127942</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -6.127942,36.68792,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Estaciones</name>
+        <description><![CDATA[TRANSBORDO: 2-3-4-5-10-15<br>LINEA: 18<br>COD.PARADA: 171<br>SENTIDO: Dirección Madre de Dios<br>LATITUD: 36.681258<br>LONGITUD: -6.128288]]></description>
+        <styleUrl>#icon-1532-C2185B-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="TRANSBORDO">
+            <value>2-3-4-5-10-15</value>
+          </Data>
+          <Data name="LINEA">
+            <value>18.0</value>
+          </Data>
+          <Data name="COD.PARADA">
+            <value>171.0</value>
+          </Data>
+          <Data name="SENTIDO">
+            <value>Dirección Madre de Dios</value>
+          </Data>
+          <Data name="LATITUD">
+            <value>36.681258</value>
+          </Data>
+          <Data name="LONGITUD">
+            <value>-6.128288</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -6.128288,36.681258,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Diego F. Herrera</name>
+        <description><![CDATA[TRANSBORDO: 1-2-3-4-5-8-9-10-11-12-15<br>LINEA: 18<br>COD.PARADA: 139<br>SENTIDO: Sentido Angustias<br>LATITUD: 36.680544<br>LONGITUD: -6.131088]]></description>
+        <styleUrl>#icon-1532-C2185B-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="TRANSBORDO">
+            <value>1-2-3-4-5-8-9-10-11-12-15</value>
+          </Data>
+          <Data name="LINEA">
+            <value>18.0</value>
+          </Data>
+          <Data name="COD.PARADA">
+            <value>139.0</value>
+          </Data>
+          <Data name="SENTIDO">
+            <value>Sentido Angustias</value>
+          </Data>
+          <Data name="LATITUD">
+            <value>36.680544</value>
+          </Data>
+          <Data name="LONGITUD">
+            <value>-6.131088</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -6.131088,36.680544,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Recorrido</name>
+      <Placemark>
+        <name>Línea 18
+</name>
+        <description><![CDATA[descripción: TRANSBORDO: <br>LINEA: <br>COD.PARADA: <br>SENTIDO: <br>LATITUD: <br>LONGITUD:<br>TRANSBORDO: <br>LINEA: <br>COD.PARADA: <br>SENTIDO: <br>LATITUD: <br>LONGITUD: ]]></description>
+        <styleUrl>#line-0288D1-6000</styleUrl>
+        <ExtendedData>
+          <Data name="descripción">
+            <value>TRANSBORDO: 
+LINEA: 
+COD.PARADA: 
+SENTIDO: 
+LATITUD: 
+LONGITUD:</value>
+          </Data>
+          <Data name="TRANSBORDO">
+            <value/>
+          </Data>
+          <Data name="LINEA">
+            <value/>
+          </Data>
+          <Data name="COD.PARADA">
+            <value/>
+          </Data>
+          <Data name="SENTIDO">
+            <value/>
+          </Data>
+          <Data name="LATITUD">
+            <value/>
+          </Data>
+          <Data name="LONGITUD">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -6.134361,36.680819,0
+            -6.134556,36.680858,0
+            -6.134883,36.680888,0
+            -6.135323,36.680979,0
+            -6.135755,36.68109,0
+            -6.136249,36.681237,0
+            -6.13675,36.681426,0
+            -6.13667,36.681615,0
+            -6.136647,36.681854,0
+            -6.136655,36.682082,0
+            -6.136647,36.682318,0
+            -6.136632,36.682498,0
+            -6.136258,36.682895,0
+            -6.136114,36.683077,0
+            -6.135449,36.683266,0
+            -6.135693,36.683632,0
+            -6.135958,36.684253,0
+            -6.13614,36.684705,0
+            -6.136166,36.684772,0
+            -6.136183,36.684805,0
+            -6.136209,36.684836,0
+            -6.136237,36.684868,0
+            -6.136231,36.684906,0
+            -6.136247,36.684946,0
+            -6.136274,36.684979,0
+            -6.13628,36.685,0
+            -6.136294,36.685043,0
+            -6.136312,36.685113,0
+            -6.136358,36.685225,0
+            -6.136404,36.685326,0
+            -6.136409,36.685339,0
+            -6.136432,36.68538,0
+            -6.136457,36.685418,0
+            -6.13648,36.685447,0
+            -6.136505,36.685477,0
+            -6.13654,36.685516,0
+            -6.136578,36.685559,0
+            -6.136603,36.685578,0
+            -6.136649,36.685616,0
+            -6.136693,36.685657,0
+            -6.136806,36.685757,0
+            -6.1369,36.685832,0
+            -6.136994,36.685907,0
+            -6.137036,36.685946,0
+            -6.137097,36.686004,0
+            -6.137144,36.686047,0
+            -6.137168,36.686068,0
+            -6.13719,36.686093,0
+            -6.137203,36.686118,0
+            -6.137215,36.686148,0
+            -6.137223,36.686183,0
+            -6.137229,36.686219,0
+            -6.137223,36.686295,0
+            -6.137218,36.686396,0
+            -6.137214,36.686497,0
+            -6.137201,36.686598,0
+            -6.137192,36.686706,0
+            -6.137184,36.686904,0
+            -6.137177,36.68703,0
+            -6.137173,36.687118,0
+            -6.137165,36.687276,0
+            -6.137161,36.687379,0
+            -6.137158,36.687411,0
+            -6.137138,36.687465,0
+            -6.13714,36.687514,0
+            -6.137141,36.687623,0
+            -6.137142,36.687733,0
+            -6.137143,36.687834,0
+            -6.137144,36.687945,0
+            -6.137148,36.688136,0
+            -6.13715,36.688272,0
+            -6.13715,36.688405,0
+            -6.137145,36.688668,0
+            -6.137128,36.688766,0
+            -6.137115,36.68883,0
+            -6.137105,36.68889,0
+            -6.137101,36.688913,0
+            -6.137052,36.68901,0
+            -6.137062,36.689017,0
+            -6.137099,36.689053,0
+            -6.13714,36.689085,0
+            -6.13719,36.689109,0
+            -6.137242,36.689116,0
+            -6.137566,36.688894,0
+            -6.137759,36.688762,0
+            -6.137857,36.688694,0
+            -6.137895,36.688652,0
+            -6.137927,36.688597,0
+            -6.138102,36.688696,0
+            -6.138216,36.688762,0
+            -6.13833,36.688829,0
+            -6.138461,36.688912,0
+            -6.138592,36.688985,0
+            -6.138856,36.689137,0
+            -6.139385,36.68944,0
+            -6.139518,36.689377,0
+            -6.139687,36.689274,0
+            -6.139976,36.689101,0
+            -6.140568,36.688752,0
+            -6.140612,36.688726,0
+            -6.140661,36.688705,0
+            -6.140759,36.688666,0
+            -6.140954,36.688586,0
+            -6.141041,36.688554,0
+            -6.141134,36.688524,0
+            -6.141304,36.688458,0
+            -6.141526,36.688368,0
+            -6.141748,36.688284,0
+            -6.142194,36.688118,0
+            -6.142291,36.68809,0
+            -6.142386,36.68806,0
+            -6.142579,36.68801,0
+            -6.14296,36.68791,0
+            -6.143033,36.687878,0
+            -6.143099,36.687844,0
+            -6.143183,36.687883,0
+            -6.143263,36.687928,0
+            -6.143336,36.687971,0
+            -6.143411,36.688013,0
+            -6.143484,36.688062,0
+            -6.143555,36.68811,0
+            -6.143697,36.68821,0
+            -6.143719,36.688208,0
+            -6.14384,36.688152,0
+            -6.144503,36.688616,0
+            -6.144622,36.688702,0
+            -6.144739,36.688785,0
+            -6.144974,36.688954,0
+            -6.145439,36.689295,0
+            -6.14553,36.689355,0
+            -6.145618,36.689418,0
+            -6.145791,36.689545,0
+            -6.145879,36.68961,0
+            -6.14597,36.689675,0
+            -6.146049,36.689724,0
+            -6.146132,36.689769,0
+            -6.146218,36.689815,0
+            -6.146306,36.689862,0
+            -6.146419,36.689922,0
+            -6.146533,36.689982,0
+            -6.146762,36.690099,0
+            -6.14702,36.69022,0
+            -6.147138,36.690281,0
+            -6.147253,36.690345,0
+            -6.147482,36.690474,0
+            -6.14759,36.690535,0
+            -6.147697,36.690596,0
+            -6.147911,36.690721,0
+            -6.14796,36.690754,0
+            -6.148002,36.690794,0
+            -6.148068,36.690854,0
+            -6.148132,36.690917,0
+            -6.148208,36.691016,0
+            -6.148335,36.691176,0
+            -6.148406,36.69126,0
+            -6.148475,36.691342,0
+            -6.148559,36.691444,0
+            -6.14864,36.691547,0
+            -6.148802,36.69175,0
+            -6.148925,36.691902,0
+            -6.149052,36.692051,0
+            -6.149305,36.692349,0
+            -6.149408,36.692446,0
+            -6.149547,36.692573,0
+            -6.149685,36.692699,0
+            -6.149817,36.692818,0
+            -6.149943,36.692937,0
+            -6.149896,36.692975,0
+            -6.149865,36.693024,0
+            -6.149864,36.693073,0
+            -6.149884,36.693118,0
+            -6.149914,36.693162,0
+            -6.149943,36.693186,0
+            -6.149997,36.693208,0
+            -6.150048,36.693214,0
+            -6.150099,36.693212,0
+            -6.15014,36.693204,0
+            -6.150181,36.693184,0
+            -6.150235,36.69313,0
+            -6.150259,36.693077,0
+            -6.150258,36.693034,0
+            -6.150246,36.692996,0
+            -6.150226,36.692969,0
+            -6.150207,36.692953,0
+            -6.150183,36.692936,0
+            -6.150209,36.692889,0
+            -6.15024,36.692842,0
+            -6.150273,36.692796,0
+            -6.150298,36.692767,0
+            -6.150331,36.692732,0
+            -6.150369,36.692696,0
+            -6.150406,36.692668,0
+            -6.150438,36.692643,0
+            -6.150543,36.692572,0
+            -6.150653,36.692512,0
+            -6.150769,36.692453,0
+            -6.150865,36.692406,0
+            -6.150911,36.692379,0
+            -6.150958,36.692352,0
+            -6.151006,36.692324,0
+            -6.151046,36.692296,0
+            -6.151135,36.692229,0
+            -6.151212,36.692174,0
+            -6.151246,36.692146,0
+            -6.151275,36.692115,0
+            -6.151308,36.692077,0
+            -6.15134,36.692038,0
+            -6.151407,36.691962,0
+            -6.151463,36.691936,0
+            -6.151532,36.691912,0
+            -6.15166,36.691863,0
+            -6.151762,36.691827,0
+            -6.151836,36.691788,0
+            -6.151878,36.691758,0
+            -6.1519,36.691725,0
+            -6.151899,36.691678,0
+            -6.151888,36.691644,0
+            -6.151871,36.691616,0
+            -6.151832,36.691574,0
+            -6.151816,36.691553,0
+            -6.15177,36.691552,0
+            -6.151729,36.691545,0
+            -6.151686,36.6916,0
+            -6.151645,36.691656,0
+            -6.15158,36.691744,0
+            -6.15149,36.691859,0
+            -6.15144,36.691923,0
+            -6.151404,36.69196,0
+            -6.151386,36.691978,0
+            -6.151314,36.692065,0
+            -6.151276,36.692108,0
+            -6.151237,36.692148,0
+            -6.151195,36.692182,0
+            -6.151151,36.692213,0
+            -6.151109,36.692244,0
+            -6.151064,36.692278,0
+            -6.151014,36.692314,0
+            -6.150956,36.692349,0
+            -6.150902,36.692379,0
+            -6.150845,36.692412,0
+            -6.150737,36.692465,0
+            -6.150627,36.692522,0
+            -6.15058,36.692547,0
+            -6.15054,36.692569,0
+            -6.150453,36.692628,0
+            -6.150399,36.692666,0
+            -6.150356,36.692704,0
+            -6.15031,36.692748,0
+            -6.150272,36.69279,0
+            -6.15024,36.692837,0
+            -6.150212,36.692875,0
+            -6.150195,36.692904,0
+            -6.150175,36.692943,0
+            -6.150125,36.692923,0
+            -6.150086,36.692914,0
+            -6.150044,36.692914,0
+            -6.149986,36.692925,0
+            -6.149944,36.692956,0
+            -6.149904,36.692997,0
+            -6.14988,36.693057,0
+            -6.149896,36.693112,0
+            -6.149927,36.693152,0
+            -6.149988,36.693194,0
+            -6.150065,36.693204,0
+            -6.150085,36.693222,0
+            -6.1501,36.693331,0
+            -6.150122,36.693405,0
+            -6.150173,36.693501,0
+            -6.150275,36.693623,0
+            -6.150369,36.693715,0
+            -6.150696,36.693958,0
+            -6.150967,36.69416,0
+            -6.151054,36.694257,0
+            -6.151097,36.694368,0
+            -6.151092,36.694497,0
+            -6.151141,36.694597,0
+            -6.151238,36.694672,0
+            -6.151346,36.694704,0
+            -6.151462,36.694695,0
+            -6.15154,36.694664,0
+            -6.151601,36.694612,0
+            -6.151647,36.694553,0
+            -6.151673,36.694491,0
+            -6.151762,36.694477,0
+            -6.15195,36.694465,0
+            -6.152602,36.694465,0
+            -6.153539,36.694594,0
+            -6.15387,36.694621,0
+            -6.153897,36.694671,0
+            -6.153987,36.694768,0
+            -6.154099,36.694806,0
+            -6.154154,36.694813,0
+            -6.154215,36.694809,0
+            -6.154292,36.694783,0
+            -6.154359,36.694743,0
+            -6.154488,36.694776,0
+            -6.154705,36.694848,0
+            -6.155812,36.695331,0
+            -6.157427,36.696101,0
+            -6.157612,36.696094,0
+            -6.157664,36.696154,0
+            -6.157692,36.696192,0
+            -6.157733,36.696233,0
+            -6.157802,36.696277,0
+            -6.157859,36.696305,0
+            -6.157923,36.696313,0
+            -6.157987,36.696311,0
+            -6.158048,36.696301,0
+            -6.158111,36.696267,0
+            -6.158176,36.696219,0
+            -6.158229,36.696135,0
+            -6.158237,36.696061,0
+            -6.15823,36.696017,0
+            -6.158198,36.695938,0
+            -6.158351,36.695707,0
+            -6.158426,36.6956,0
+            -6.15875,36.695232,0
+            -6.158862,36.695101,0
+            -6.158912,36.695066,0
+            -6.158978,36.695038,0
+            -6.159109,36.695023,0
+            -6.159158,36.695048,0
+            -6.159434,36.695195,0
+            -6.159565,36.695256,0
+            -6.159688,36.695314,0
+            -6.159789,36.695346,0
+            -6.159881,36.695366,0
+            -6.159973,36.695377,0
+            -6.160113,36.69538,0
+            -6.160199,36.695371,0
+            -6.160286,36.695355,0
+            -6.160491,36.695302,0
+            -6.160684,36.695189,0
+            -6.160808,36.695088,0
+            -6.160923,36.694978,0
+            -6.161253,36.69458,0
+            -6.16141,36.694385,0
+            -6.161542,36.69409,0
+            -6.16158,36.693899,0
+            -6.161562,36.693596,0
+            -6.16151,36.693405,0
+            -6.161431,36.693224,0
+            -6.161318,36.693059,0
+            -6.161229,36.692951,0
+            -6.161122,36.692848,0
+            -6.160874,36.692663,0
+            -6.160553,36.692538,0
+            -6.160306,36.69247,0
+            -6.160148,36.692443,0
+            -6.160015,36.692438,0
+            -6.159781,36.692431,0
+            -6.159648,36.692419,0
+            -6.15946,36.69237,0
+            -6.159381,36.692322,0
+            -6.159303,36.69225,0
+            -6.159003,36.691908,0
+            -6.158665,36.691634,0
+            -6.158443,36.691472,0
+            -6.158227,36.691348,0
+            -6.157615,36.691024,0
+            -6.157389,36.690892,0
+            -6.157354,36.690807,0
+            -6.157305,36.690741,0
+            -6.157215,36.690686,0
+            -6.157109,36.690668,0
+            -6.157016,36.690679,0
+            -6.156931,36.690708,0
+            -6.156869,36.690752,0
+            -6.156826,36.690815,0
+            -6.156798,36.690914,0
+            -6.156831,36.691013,0
+            -6.156774,36.691274,0
+            -6.156653,36.691749,0
+            -6.156551,36.692051,0
+            -6.156406,36.692351,0
+            -6.156232,36.69266,0
+            -6.156155,36.692785,0
+            -6.155914,36.693118,0
+            -6.155719,36.693354,0
+            -6.155512,36.693559,0
+            -6.155302,36.693759,0
+            -6.154846,36.694109,0
+            -6.1546,36.694277,0
+            -6.154346,36.694422,0
+            -6.154266,36.694381,0
+            -6.154204,36.694367,0
+            -6.154146,36.694359,0
+            -6.154082,36.694366,0
+            -6.154018,36.694382,0
+            -6.153965,36.694419,0
+            -6.153925,36.694462,0
+            -6.153905,36.694517,0
+            -6.153892,36.694564,0
+            -6.153897,36.694609,0
+            -6.153921,36.694661,0
+            -6.153967,36.694711,0
+            -6.154016,36.694753,0
+            -6.154077,36.694774,0
+            -6.154198,36.694777,0
+            -6.154254,36.694763,0
+            -6.154308,36.694737,0
+            -6.154367,36.694694,0
+            -6.154391,36.694666,0
+            -6.154414,36.694639,0
+            -6.154426,36.694602,0
+            -6.154431,36.694569,0
+            -6.154425,36.694502,0
+            -6.154673,36.69434,0
+            -6.154887,36.694194,0
+            -6.1551,36.694045,0
+            -6.155205,36.693969,0
+            -6.15531,36.693885,0
+            -6.155718,36.693494,0
+            -6.155903,36.693288,0
+            -6.15622,36.692857,0
+            -6.156368,36.692629,0
+            -6.15649,36.692411,0
+            -6.156595,36.692193,0
+            -6.156691,36.691967,0
+            -6.156823,36.69152,0
+            -6.156912,36.691078,0
+            -6.157003,36.691116,0
+            -6.157101,36.691124,0
+            -6.157199,36.691112,0
+            -6.157268,36.691078,0
+            -6.157614,36.691138,0
+            -6.15791,36.691271,0
+            -6.158149,36.691407,0
+            -6.15838,36.691556,0
+            -6.158647,36.691751,0
+            -6.158881,36.691962,0
+            -6.159126,36.692213,0
+            -6.159196,36.692332,0
+            -6.159211,36.692395,0
+            -6.159193,36.692465,0
+            -6.159115,36.692568,0
+            -6.158846,36.692735,0
+            -6.158602,36.692941,0
+            -6.1582,36.693379,0
+            -6.157995,36.693655,0
+            -6.157938,36.693783,0
+            -6.157918,36.693894,0
+            -6.157922,36.694007,0
+            -6.157954,36.694129,0
+            -6.158013,36.694227,0
+            -6.15811,36.694377,0
+            -6.15822,36.694471,0
+            -6.158714,36.694762,0
+            -6.159101,36.69499,0
+            -6.159697,36.695291,0
+            -6.159942,36.695353,0
+            -6.160085,36.695358,0
+            -6.160229,36.695346,0
+            -6.160441,36.695292,0
+            -6.160538,36.695257,0
+            -6.160642,36.695195,0
+            -6.160719,36.695339,0
+            -6.160747,36.695422,0
+            -6.160753,36.695506,0
+            -6.160734,36.695674,0
+            -6.160691,36.695897,0
+            -6.160678,36.695984,0
+            -6.160681,36.69607,0
+            -6.160691,36.696206,0
+            -6.160691,36.696343,0
+            -6.16069,36.696619,0
+            -6.160659,36.697595,0
+            -6.160584,36.697594,0
+            -6.16039,36.697444,0
+            -6.160173,36.697309,0
+            -6.158274,36.69641,0
+            -6.158189,36.6963,0
+            -6.158142,36.696218,0
+            -6.158174,36.696176,0
+            -6.158196,36.696133,0
+            -6.158201,36.696063,0
+            -6.158186,36.695995,0
+            -6.158137,36.695915,0
+            -6.158012,36.695853,0
+            -6.157849,36.695854,0
+            -6.157734,36.695909,0
+            -6.157649,36.695988,0
+            -6.157467,36.696006,0
+            -6.157349,36.695982,0
+            -6.156354,36.69549,0
+            -6.155417,36.695046,0
+            -6.154519,36.694671,0
+            -6.154388,36.69461,0
+            -6.154387,36.694552,0
+            -6.154376,36.6945,0
+            -6.154341,36.694453,0
+            -6.15429,36.694417,0
+            -6.154235,36.694401,0
+            -6.154161,36.694389,0
+            -6.154086,36.694393,0
+            -6.154015,36.694419,0
+            -6.153959,36.694477,0
+            -6.15389,36.694475,0
+            -6.153029,36.694398,0
+            -6.151728,36.69438,0
+            -6.151554,36.694268,0
+            -6.151401,36.694231,0
+            -6.151252,36.694234,0
+            -6.151039,36.69418,0
+            -6.15099,36.694163,0
+            -6.150895,36.694089,0
+            -6.15075,36.693978,0
+            -6.150544,36.693823,0
+            -6.150448,36.693751,0
+            -6.150368,36.693688,0
+            -6.150303,36.693625,0
+            -6.150239,36.693556,0
+            -6.150191,36.693493,0
+            -6.150171,36.693459,0
+            -6.150148,36.69342,0
+            -6.150127,36.693372,0
+            -6.15012,36.693333,0
+            -6.150109,36.693292,0
+            -6.150093,36.693202,0
+            -6.150154,36.693186,0
+            -6.150208,36.693151,0
+            -6.150229,36.693121,0
+            -6.150245,36.693082,0
+            -6.150246,36.693035,0
+            -6.150223,36.692986,0
+            -6.150182,36.692945,0
+            -6.150221,36.692878,0
+            -6.150243,36.692845,0
+            -6.150292,36.69278,0
+            -6.150318,36.692753,0
+            -6.150344,36.692723,0
+            -6.150378,36.692692,0
+            -6.150443,36.692644,0
+            -6.15048,36.692618,0
+            -6.150562,36.692565,0
+            -6.150692,36.692496,0
+            -6.150821,36.692432,0
+            -6.150877,36.692403,0
+            -6.151002,36.69233,0
+            -6.15105,36.692298,0
+            -6.151099,36.692261,0
+            -6.151196,36.692189,0
+            -6.151229,36.692166,0
+            -6.151259,36.692139,0
+            -6.151284,36.692111,0
+            -6.151344,36.692041,0
+            -6.15141,36.691965,0
+            -6.151631,36.691883,0
+            -6.151739,36.691844,0
+            -6.151792,36.691822,0
+            -6.151864,36.691782,0
+            -6.151896,36.691753,0
+            -6.15191,36.691726,0
+            -6.151908,36.691677,0
+            -6.151891,36.691628,0
+            -6.15182,36.691549,0
+            -6.151771,36.691545,0
+            -6.151725,36.691535,0
+            -6.151523,36.691803,0
+            -6.151421,36.691933,0
+            -6.151292,36.692084,0
+            -6.151241,36.692141,0
+            -6.1512,36.692174,0
+            -6.151087,36.692256,0
+            -6.151032,36.692296,0
+            -6.150992,36.692324,0
+            -6.150948,36.692351,0
+            -6.150901,36.692376,0
+            -6.150847,36.692407,0
+            -6.150796,36.692433,0
+            -6.150664,36.692498,0
+            -6.1506,36.692532,0
+            -6.150527,36.692573,0
+            -6.150476,36.692606,0
+            -6.150414,36.692651,0
+            -6.150357,36.692696,0
+            -6.150331,36.692722,0
+            -6.150283,36.692772,0
+            -6.150266,36.69279,0
+            -6.150244,36.692822,0
+            -6.150206,36.692874,0
+            -6.150173,36.692934,0
+            -6.150133,36.692916,0
+            -6.150094,36.692905,0
+            -6.150044,36.692905,0
+            -6.149998,36.692912,0
+            -6.149952,36.692927,0
+            -6.149626,36.692628,0
+            -6.149465,36.69248,0
+            -6.149384,36.692406,0
+            -6.149307,36.692334,0
+            -6.149232,36.692244,0
+            -6.148928,36.691884,0
+            -6.148503,36.691353,0
+            -6.148286,36.691093,0
+            -6.148152,36.69092,0
+            -6.148055,36.690823,0
+            -6.147905,36.690933,0
+            -6.147435,36.691421,0
+            -6.147311,36.69155,0
+            -6.147183,36.691657,0
+            -6.146456,36.692034,0
+            -6.146232,36.692151,0
+            -6.145977,36.6923,0
+            -6.145524,36.692539,0
+            -6.145427,36.692609,0
+            -6.145335,36.692689,0
+            -6.145163,36.692844,0
+            -6.144592,36.69251,0
+            -6.143622,36.691925,0
+            -6.143601,36.691702,0
+            -6.143564,36.69144,0
+            -6.143532,36.690997,0
+            -6.143512,36.690649,0
+            -6.143519,36.690522,0
+            -6.14374,36.690114,0
+            -6.144026,36.689646,0
+            -6.144074,36.689552,0
+            -6.144107,36.689439,0
+            -6.144125,36.689359,0
+            -6.144125,36.68923,0
+            -6.144014,36.689009,0
+            -6.143974,36.688894,0
+            -6.143862,36.688668,0
+            -6.143639,36.688418,0
+            -6.143608,36.688379,0
+            -6.143597,36.688334,0
+            -6.143703,36.688221,0
+            -6.143706,36.688197,0
+            -6.143471,36.688039,0
+            -6.143292,36.68793,0
+            -6.143203,36.687877,0
+            -6.143103,36.687832,0
+            -6.142993,36.687881,0
+            -6.142799,36.687942,0
+            -6.142535,36.688011,0
+            -6.14231,36.688072,0
+            -6.142185,36.688108,0
+            -6.142062,36.688148,0
+            -6.141134,36.688511,0
+            -6.140692,36.688216,0
+            -6.140011,36.687724,0
+            -6.139962,36.687639,0
+            -6.139773,36.687476,0
+            -6.139633,36.687372,0
+            -6.139345,36.687195,0
+            -6.139134,36.68708,0
+            -6.138918,36.686949,0
+            -6.137888,36.686306,0
+            -6.137694,36.686182,0
+            -6.137595,36.686116,0
+            -6.137552,36.68609,0
+            -6.137489,36.686067,0
+            -6.137401,36.686081,0
+            -6.137223,36.68613,0
+            -6.1372,36.686085,0
+            -6.137154,36.68604,0
+            -6.137079,36.685973,0
+            -6.137039,36.685934,0
+            -6.136998,36.685897,0
+            -6.136844,36.685772,0
+            -6.136776,36.685714,0
+            -6.13674,36.685684,0
+            -6.136682,36.685631,0
+            -6.136653,36.685605,0
+            -6.136629,36.685586,0
+            -6.136597,36.685561,0
+            -6.13654,36.685499,0
+            -6.136492,36.685442,0
+            -6.136468,36.685413,0
+            -6.136446,36.685381,0
+            -6.136414,36.68532,0
+            -6.136386,36.68525,0
+            -6.136396,36.685166,0
+            -6.136395,36.684982,0
+            -6.136434,36.684942,0
+            -6.136447,36.684894,0
+            -6.136421,36.684847,0
+            -6.136385,36.684826,0
+            -6.136344,36.684816,0
+            -6.136301,36.684824,0
+            -6.136266,36.684843,0
+            -6.136242,36.684873,0
+            -6.136239,36.684907,0
+            -6.13625,36.684937,0
+            -6.136283,36.684972,0
+            -6.136291,36.684998,0
+            -6.13632,36.6851,0
+            -6.136348,36.685183,0
+            -6.136408,36.685322,0
+            -6.136444,36.685387,0
+            -6.136474,36.68543,0
+            -6.13651,36.685473,0
+            -6.136584,36.685558,0
+            -6.136656,36.685615,0
+            -6.13681,36.685752,0
+            -6.136896,36.685823,0
+            -6.136982,36.68589,0
+            -6.137115,36.686013,0
+            -6.137153,36.686046,0
+            -6.137186,36.68608,0
+            -6.137198,36.686093,0
+            -6.137223,36.686147,0
+            -6.137236,36.686211,0
+            -6.137235,36.68624,0
+            -6.13722,36.686492,0
+            -6.137207,36.686604,0
+            -6.137183,36.68716,0
+            -6.137174,36.68731,0
+            -6.137168,36.687393,0
+            -6.137159,36.687432,0
+            -6.137148,36.687467,0
+            -6.137155,36.688018,0
+            -6.137158,36.688292,0
+            -6.137156,36.68856,0
+            -6.137156,36.688669,0
+            -6.13711,36.688915,0
+            -6.137056,36.689019,0
+            -6.137016,36.68908,0
+            -6.136943,36.689154,0
+            -6.136878,36.689228,0
+            -6.136748,36.689379,0
+            -6.136616,36.689527,0
+            -6.136463,36.689678,0
+            -6.136314,36.68983,0
+            -6.136186,36.689956,0
+            -6.13601,36.690109,0
+            -6.135825,36.690267,0
+            -6.135724,36.690355,0
+            -6.13563,36.690436,0
+            -6.135557,36.690499,0
+            -6.135486,36.690561,0
+            -6.135347,36.690463,0
+            -6.135206,36.690362,0
+            -6.135065,36.690261,0
+            -6.134783,36.690061,0
+            -6.134027,36.689545,0
+            -6.13368,36.689073,0
+            -6.133399,36.688702,0
+            -6.133327,36.688635,0
+            -6.132875,36.688505,0
+            -6.132641,36.688451,0
+            -6.132176,36.688402,0
+            -6.13172,36.688365,0
+            -6.131256,36.68835,0
+            -6.130708,36.688332,0
+            -6.130012,36.688345,0
+            -6.128674,36.688448,0
+            -6.1279,36.688513,0
+            -6.127801,36.688454,0
+            -6.127763,36.688381,0
+            -6.128089,36.687097,0
+            -6.128162,36.686796,0
+            -6.128251,36.686348,0
+            -6.128294,36.685978,0
+            -6.128292,36.685675,0
+            -6.128378,36.685097,0
+            -6.128408,36.684814,0
+            -6.128417,36.684454,0
+            -6.128366,36.68404,0
+            -6.12829,36.683687,0
+            -6.128049,36.683146,0
+            -6.127981,36.682978,0
+            -6.127892,36.682709,0
+            -6.127855,36.682569,0
+            -6.127829,36.682419,0
+            -6.127814,36.682249,0
+            -6.127818,36.682044,0
+            -6.127855,36.681894,0
+            -6.12793,36.681674,0
+            -6.128119,36.681384,0
+            -6.128317,36.681234,0
+            -6.128347,36.681153,0
+            -6.128396,36.681046,0
+            -6.128622,36.680901,0
+            -6.128806,36.680734,0
+            -6.128996,36.68034,0
+            -6.129284,36.679868,0
+            -6.129561,36.679973,0
+            -6.131059,36.680584,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>
