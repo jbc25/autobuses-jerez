@@ -6,7 +6,9 @@ import androidx.room.Ignore;
 import androidx.room.PrimaryKey;
 
 import java.io.Serializable;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @Entity(primaryKeys = {"code","lineId"})
 public class BusStop implements Serializable {
@@ -20,12 +22,16 @@ public class BusStop implements Serializable {
     private String direction;
 
     @Ignore
+    private List<Double> coordinates;
+
+    @Ignore
+    private Map<String, String> extras = new HashMap<>();
+
+    @Ignore
     private boolean nonRegular;
 
     private String way;
 
-    @Ignore
-    private List<Double> coordinates;
 
     public String getName() {
         return name;

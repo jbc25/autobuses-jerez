@@ -5,7 +5,9 @@ import android.util.Log;
 
 import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class BusLine implements Serializable {
 
@@ -18,8 +20,7 @@ public class BusLine implements Serializable {
     private String colorHex;
     private List<BusStop> busStops;
     private List<List<Double>> path = new ArrayList<>();
-
-    private int finalBusStopCode;
+    private Map<String, String> extras = new HashMap<>();
 
     private transient boolean visible = true;
 
@@ -89,14 +90,6 @@ public class BusLine implements Serializable {
 
     public void setColor(int color) {
         this.color = color;
-    }
-
-    public int getFinalBusStopCode() {
-        return finalBusStopCode;
-    }
-
-    public void setFinalBusStopCode(int finalBusStopCode) {
-        this.finalBusStopCode = finalBusStopCode;
     }
 
     public String getColorHex() {

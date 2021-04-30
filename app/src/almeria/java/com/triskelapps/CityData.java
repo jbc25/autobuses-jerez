@@ -17,4 +17,6 @@ public class CityData {
 
     public static final String URL_BUS_DATA_VERSION_FILE = "https://triskelapps.es/apps/autobuses-almeria/bus_data_version.json";
     public static final String URL_BUS_DATA_FILE = "https://triskelapps.es/apps/autobuses-almeria/bus_data.json";
+
+    public static final String TOPIC_FIREBASE = "almeria";
 }

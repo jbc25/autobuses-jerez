@@ -12,6 +12,7 @@ import androidx.preference.PreferenceManager;
 import androidx.room.Room;
 
 import com.google.android.libraries.places.api.Places;
+import com.google.firebase.messaging.FirebaseMessaging;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import com.triskelapps.database.MyDatabase;
@@ -81,6 +82,7 @@ public class App extends Application {
 
 //        NotificationHelper.with(this).initializeOreoChannelsNotification();
 
+        FirebaseMessaging.getInstance().subscribeToTopic(CityData.TOPIC_FIREBASE);
 
     }
 
