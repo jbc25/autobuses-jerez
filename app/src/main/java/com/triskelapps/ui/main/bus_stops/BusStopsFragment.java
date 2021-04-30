@@ -8,7 +8,6 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.triskelapps.App;
-import com.triskelapps.BuildConfig;
 import com.triskelapps.R;
 import com.triskelapps.base.BaseMainFragment;
 import com.triskelapps.databinding.FragmentBusStopsBinding;
