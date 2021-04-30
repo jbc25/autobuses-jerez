@@ -19,6 +19,7 @@ import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
 import com.google.android.gms.security.ProviderInstaller;
 import com.triskelapps.App;
+import com.triskelapps.CityData;
 import com.triskelapps.databinding.ViewBannerMessageBinding;
 import com.triskelapps.util.CountlyUtil;
 
@@ -30,7 +31,6 @@ public class BannerMessageView extends FrameLayout implements View.OnClickListen
 
     private static final String TAG = "UpdateAppView";
 
-    public static final String URL_BANNER_MESSAGE_FILE = "https://triskelapps.es/apps/autobuses-jerez/banner_message.json";
     private String link;
     private ViewBannerMessageBinding binding;
 
@@ -65,7 +65,7 @@ public class BannerMessageView extends FrameLayout implements View.OnClickListen
         RequestQueue queue = Volley.newRequestQueue(getContext());
 
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest
-                (Request.Method.GET, URL_BANNER_MESSAGE_FILE, null,
+                (Request.Method.GET, CityData.URL_BANNER_MESSAGE_FILE, null,
                         response -> processResponseJson(response),
                         error -> error.printStackTrace());
 

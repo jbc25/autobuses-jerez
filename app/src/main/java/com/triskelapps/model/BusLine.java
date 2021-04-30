@@ -99,4 +99,16 @@ public class BusLine implements Serializable {
     public void setColorHex(String colorHex) {
         this.colorHex = colorHex;
     }
+
+    public Map<String, String> getExtras() {
+        return extras;
+    }
+
+    public void setExtras(Map<String, String> extras) {
+        this.extras = extras;
+    }
+
+    public String getExtra(String key) {
+        return extras != null ? extras.get(key) : null;
+    }
 }

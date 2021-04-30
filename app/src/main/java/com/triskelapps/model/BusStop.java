@@ -111,24 +111,23 @@ public class BusStop implements Serializable {
         this.nonRegular = nonRegular;
     }
 
-    public boolean hasExtraInfo() {
-        if (BuildConfig.FLAVOR.equals("jerez")) {
-            return true;
-        } else if (BuildConfig.FLAVOR.equals("almeria")) {
-            return false;
-        }
-
-        return false;
+    public Map<String, String> getExtras() {
+        return extras;
     }
 
-    public String getExtraInfo(Context context) {
-        if (BuildConfig.FLAVOR.equals("jerez")) {
-            return context.getString(
-                    R.string.bus_stop_direction_transfer_format, getDirection(), getTransfer());
-        } else if (BuildConfig.FLAVOR.equals("almeria")) {
-            return null;
+    public void setExtras(Map<String, String> extras) {
+        this.extras = extras;
+    }
+
+    public String getExtra(String key) {
+        return extras != null ? extras.get(key) : null;
+    }
+
+    public void addExtra(String key, String value) {
+        if (extras == null) {
+            extras = new HashMap<>();
         }
 
-        return null;
+        extras.put(key, value);
     }
 }

@@ -7,7 +7,6 @@ import android.graphics.Color;
 import android.util.Log;
 
 import androidx.appcompat.app.AppCompatDelegate;
-import androidx.core.content.ContextCompat;
 import androidx.preference.PreferenceManager;
 import androidx.room.Room;
 
@@ -134,6 +133,8 @@ public class App extends Application {
         String jsonDataStr = getPrefs(context).getString(PREF_BUS_DATA, null);
         Type listType = new TypeToken<ArrayList<BusLine>>() {}.getType();
         busLines = new Gson().fromJson(jsonDataStr, listType);
+
+        CityManager.processBusLinesData(busLines);
 
         for (BusLine busLine : busLines) {
             BusLineVisible busLineVisible = db.busLineVisibleDao().getBusLineVisible(busLine.getId());
