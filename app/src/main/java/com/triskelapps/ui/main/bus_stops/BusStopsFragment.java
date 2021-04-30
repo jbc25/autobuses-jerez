@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.triskelapps.App;
+import com.triskelapps.BuildConfig;
 import com.triskelapps.R;
 import com.triskelapps.base.BaseMainFragment;
 import com.triskelapps.databinding.FragmentBusStopsBinding;
@@ -135,8 +136,9 @@ public class BusStopsFragment extends BaseMainFragment implements BusStopsAdapte
     private void showBusStopInfoView(BusStop busStop) {
         binding.viewBusStopInfo.setVisibility(View.VISIBLE);
         binding.imgFavourite.setVisibility(View.VISIBLE);
-        binding.tvDirectionTransfer.setText(getString(
-                R.string.bus_stop_direction_transfer_format, busStop.getDirection(), busStop.getTransfer()));
+
+        binding.tvDirectionTransfer.setVisibility(busStop.hasExtraInfo() ? View.VISIBLE : View.GONE);
+        binding.tvDirectionTransfer.setText(busStop.getExtraInfo(getActivity()));
 
         boolean isFavourite = App.getDB().busStopDao().getBusBusStop(busStop.getCode(), busStop.getLineId()) != null;
         binding.imgFavourite.setSelected(isFavourite);

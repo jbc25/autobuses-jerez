@@ -1,9 +1,15 @@
 package com.triskelapps.model;
 
+import android.content.Context;
+
 import androidx.annotation.NonNull;
+import androidx.fragment.app.FragmentActivity;
 import androidx.room.Entity;
 import androidx.room.Ignore;
 import androidx.room.PrimaryKey;
+
+import com.triskelapps.BuildConfig;
+import com.triskelapps.R;
 
 import java.io.Serializable;
 import java.util.HashMap;
@@ -103,5 +109,26 @@ public class BusStop implements Serializable {
 
     public void setNonRegular(boolean nonRegular) {
         this.nonRegular = nonRegular;
+    }
+
+    public boolean hasExtraInfo() {
+        if (BuildConfig.FLAVOR.equals("jerez")) {
+            return true;
+        } else if (BuildConfig.FLAVOR.equals("almeria")) {
+            return false;
+        }
+
+        return false;
+    }
+
+    public String getExtraInfo(Context context) {
+        if (BuildConfig.FLAVOR.equals("jerez")) {
+            return context.getString(
+                    R.string.bus_stop_direction_transfer_format, getDirection(), getTransfer());
+        } else if (BuildConfig.FLAVOR.equals("almeria")) {
+            return null;
+        }
+
+        return null;
     }
 }
