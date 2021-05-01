@@ -73,8 +73,8 @@ public class TimetableDialog extends DialogFragment {
 
         RequestQueue queue = Volley.newRequestQueue(getContext());
 
-        String lineWaitTimeCode = busStop.getExtra("waitTimeCodeLine");
-        String busStopWaitTimeCode = busStop.getExtra("waitTimeCode");
+        String lineWaitTimeCode = busStop.getWaitTimeCodeLine();
+        String busStopWaitTimeCode = busStop.getWaitTimeCode();
 
         String url = String.format(URL_WAIT_TIME, lineWaitTimeCode, busStopWaitTimeCode);
 

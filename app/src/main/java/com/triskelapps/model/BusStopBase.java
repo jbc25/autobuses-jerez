@@ -16,28 +16,27 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-@Entity(primaryKeys = {"code","lineId"})
-public class BusStop implements Serializable {
+public abstract class BusStopBase implements Serializable {
 
     public static final int CODE_NOT_FOUND = -1;
 
-    private @NonNull String name;
-    private int code;
-    private int lineId;
-    private String transfer;
-    private String direction;
+    protected @NonNull String name;
+    protected int code;
+    protected int lineId;
+    protected String transfer;
+    protected String direction;
 
     @Ignore
-    private List<Double> coordinates;
+    protected List<Double> coordinates;
 
     @Ignore
-    private Map<String, String> extras = new HashMap<>();
+    protected boolean nonRegular;
 
-    @Ignore
-    private boolean nonRegular;
+    protected String way;
 
-    private String way;
+    public abstract boolean hasBusStopExtraInfo();
 
+    public abstract String getBusStopExtraInfo(Context context);
 
     public String getName() {
         return name;
@@ -111,23 +110,4 @@ public class BusStop implements Serializable {
         this.nonRegular = nonRegular;
     }
 
-    public Map<String, String> getExtras() {
-        return extras;
-    }
-
-    public void setExtras(Map<String, String> extras) {
-        this.extras = extras;
-    }
-
-    public String getExtra(String key) {
-        return extras != null ? extras.get(key) : null;
-    }
-
-    public void addExtra(String key, String value) {
-        if (extras == null) {
-            extras = new HashMap<>();
-        }
-
-        extras.put(key, value);
-    }
 }

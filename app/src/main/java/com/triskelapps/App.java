@@ -134,8 +134,6 @@ public class App extends Application {
         Type listType = new TypeToken<ArrayList<BusLine>>() {}.getType();
         busLines = new Gson().fromJson(jsonDataStr, listType);
 
-        CityManager.processBusLinesData(busLines);
-
         for (BusLine busLine : busLines) {
             BusLineVisible busLineVisible = db.busLineVisibleDao().getBusLineVisible(busLine.getId());
             busLine.setVisible(busLineVisible.isVisible());
