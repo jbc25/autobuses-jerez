@@ -10,6 +10,22 @@ public class BusStop  extends BusStopBase{
     private String waitTimeCode;
     private String waitTimeCodeLine;
 
+    @Override
+    public boolean hasBusStopExtraInfo() {
+        return false;
+    }
+
+    @Override
+    public String getBusStopExtraInfo(Context context) {
+        return null;
+    }
+
+    @Override
+    public String getNameComplete() {
+        return name;
+    }
+
+
     public String getWaitTimeCode() {
         return waitTimeCode;
     }
@@ -26,13 +42,4 @@ public class BusStop  extends BusStopBase{
         this.waitTimeCodeLine = waitTimeCodeLine;
     }
 
-    @Override
-    public boolean hasBusStopExtraInfo() {
-        return false;
-    }
-
-    @Override
-    public String getBusStopExtraInfo(Context context) {
-        return null;
-    }
 }

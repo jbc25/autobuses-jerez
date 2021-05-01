@@ -19,6 +19,12 @@ public abstract class BusStopBase implements Serializable {
     @Ignore
     protected List<Double> coordinates;
 
+    protected String transfer;
+    protected String direction;
+
+    @Ignore
+    protected boolean nonRegular;
+
     public abstract boolean hasBusStopExtraInfo();
 
     public abstract String getBusStopExtraInfo(Context context);
@@ -27,7 +33,9 @@ public abstract class BusStopBase implements Serializable {
         return name;
     }
 
-    public abstract String getNameComplete();
+    public String getNameComplete() {
+        return name + (nonRegular ? "\n(No regular)" : "");
+    }
 
     public void setName(String name) {
         this.name = name;
@@ -61,5 +69,27 @@ public abstract class BusStopBase implements Serializable {
         return getCode() != CODE_NOT_FOUND;
     }
 
+    public boolean isNonRegular() {
+        return nonRegular;
+    }
 
+    public void setNonRegular(boolean nonRegular) {
+        this.nonRegular = nonRegular;
+    }
+
+    public String getTransfer() {
+        return transfer;
+    }
+
+    public void setTransfer(String transfer) {
+        this.transfer = transfer;
+    }
+
+    public String getDirection() {
+        return direction;
+    }
+
+    public void setDirection(String direction) {
+        this.direction = direction;
+    }
 }

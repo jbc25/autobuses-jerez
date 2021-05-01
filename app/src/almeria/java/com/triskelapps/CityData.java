@@ -12,8 +12,8 @@ public class CityData {
     public final static LatLng COORD_SOUTH_WEST = new LatLng(36.663924, -6.160751);
 
 
-    public final static LatLng AUTOCOMPLETE_RESULTS_COORDS_NORTH_EAST = new LatLng(36.88516389679643, -2.497121070841281);
-    public final static LatLng AUTOCOMPLETE_RESULTS_COORDS_SOUTH_WEST = new LatLng(36.81285394888109, -2.2785760332076155);
+    public final static LatLng AUTOCOMPLETE_RESULTS_COORDS_NORTH_EAST = new LatLng(36.88516389679643, -2.2785760332076155);
+    public final static LatLng AUTOCOMPLETE_RESULTS_COORDS_SOUTH_WEST = new LatLng(36.81285394888109, -2.497121070841281);
 
     public static final String URL_BUS_DATA_VERSION_FILE = "https://triskelapps.es/apps/autobuses-almeria/bus_data_version.json";
     public static final String URL_BUS_DATA_FILE = "https://triskelapps.es/apps/autobuses-almeria/bus_data.json";
