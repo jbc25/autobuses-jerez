@@ -3,18 +3,10 @@ package com.triskelapps.model;
 import android.content.Context;
 
 import androidx.annotation.NonNull;
-import androidx.fragment.app.FragmentActivity;
-import androidx.room.Entity;
 import androidx.room.Ignore;
-import androidx.room.PrimaryKey;
-
-import com.triskelapps.BuildConfig;
-import com.triskelapps.R;
 
 import java.io.Serializable;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 public abstract class BusStopBase implements Serializable {
 
@@ -23,16 +15,9 @@ public abstract class BusStopBase implements Serializable {
     protected @NonNull String name;
     protected int code;
     protected int lineId;
-    protected String transfer;
-    protected String direction;
 
     @Ignore
     protected List<Double> coordinates;
-
-    @Ignore
-    protected boolean nonRegular;
-
-    protected String way;
 
     public abstract boolean hasBusStopExtraInfo();
 
@@ -42,9 +27,7 @@ public abstract class BusStopBase implements Serializable {
         return name;
     }
 
-    public String getNameComplete() {
-        return name + (nonRegular ? "\n(No regular)" : "");
-    }
+    public abstract String getNameComplete();
 
     public void setName(String name) {
         this.name = name;
@@ -66,22 +49,6 @@ public abstract class BusStopBase implements Serializable {
         this.code = code;
     }
 
-    public String getTransfer() {
-        return transfer;
-    }
-
-    public void setTransfer(String transfer) {
-        this.transfer = transfer;
-    }
-
-    public String getDirection() {
-        return direction;
-    }
-
-    public void setDirection(String direction) {
-        this.direction = direction;
-    }
-
     public int getLineId() {
         return lineId;
     }
@@ -94,20 +61,5 @@ public abstract class BusStopBase implements Serializable {
         return getCode() != CODE_NOT_FOUND;
     }
 
-    public String getWay() {
-        return way;
-    }
-
-    public void setWay(String way) {
-        this.way = way;
-    }
-
-    public boolean isNonRegular() {
-        return nonRegular;
-    }
-
-    public void setNonRegular(boolean nonRegular) {
-        this.nonRegular = nonRegular;
-    }
 
 }
