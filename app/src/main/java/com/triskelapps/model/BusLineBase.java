@@ -9,18 +9,16 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class BusLine implements Serializable {
+public abstract class BusLineBase implements Serializable {
 
-    private static final String TAG = BusLine.class.getSimpleName();
+    private static final String TAG = BusLineBase.class.getSimpleName();
 
     private int id;
     private String name;
     private String description;
-    private int color;
     private String colorHex;
     private List<BusStop> busStops;
     private List<List<Double>> path = new ArrayList<>();
-    private Map<String, String> extras = new HashMap<>();
 
     private transient boolean visible = true;
 
@@ -56,13 +54,6 @@ public class BusLine implements Serializable {
         this.description = description;
     }
 
-    public void addCoordsToPath(Double lat, Double lng) {
-        path.add(new ArrayList<Double>() {{
-            add(lat);
-            add(lng);
-        }});
-    }
-
     public int getId() {
         return id;
     }
@@ -88,9 +79,6 @@ public class BusLine implements Serializable {
         }
     }
 
-    public void setColor(int color) {
-        this.color = color;
-    }
 
     public String getColorHex() {
         return colorHex;
@@ -100,15 +88,4 @@ public class BusLine implements Serializable {
         this.colorHex = colorHex;
     }
 
-    public Map<String, String> getExtras() {
-        return extras;
-    }
-
-    public void setExtras(Map<String, String> extras) {
-        this.extras = extras;
-    }
-
-    public String getExtra(String key) {
-        return extras != null ? extras.get(key) : null;
-    }
 }

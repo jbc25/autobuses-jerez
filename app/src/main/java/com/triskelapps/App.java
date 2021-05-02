@@ -14,6 +14,7 @@ import com.google.android.libraries.places.api.Places;
 import com.google.firebase.messaging.FirebaseMessaging;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
+import com.triskelapps.database.DBMigrationBase;
 import com.triskelapps.database.MyDatabase;
 import com.triskelapps.model.BusLine;
 import com.triskelapps.model.db.BusLineVisible;
@@ -67,8 +68,8 @@ public class App extends Application {
 
         db = Room.databaseBuilder(getApplicationContext(),
                 MyDatabase.class, DB_NAME)
-//                .addMigrations(MyDatabase.MIGRATION_1_2)
-                .fallbackToDestructiveMigration()
+//                .addMigrations(DBMigrationBase.MIGRATION_5_6)
+//                .fallbackToDestructiveMigration()
                 .allowMainThreadQueries()
                 .build();
 
