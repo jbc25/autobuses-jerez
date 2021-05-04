@@ -65,7 +65,8 @@ public class MainPresenter extends BasePresenter {
                             try {
                                 int serverVersion = response.getInt("version");
                                 int savedVersion = getPrefs().getInt(App.PREF_BUS_DATA_SAVED_VERSION, 1);
-                                if (savedVersion < serverVersion) {
+//                                if (savedVersion < serverVersion) {
+                                if(true) {
                                     syncData(serverVersion);
                                 }
                             } catch (JSONException e) {
