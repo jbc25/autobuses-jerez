@@ -2,11 +2,8 @@ package com.triskelapps.ui.timetable;
 
 import android.app.Dialog;
 import android.os.Bundle;
-import android.os.Handler;
 import android.text.TextUtils;
 import android.view.View;
-import android.webkit.WebView;
-import android.webkit.WebViewClient;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -19,28 +16,19 @@ import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
 import com.triskelapps.R;
-import com.triskelapps.base.BaseActivity;
-import com.triskelapps.base.BaseInteractor;
 import com.triskelapps.databinding.DialogTimetableBinding;
-import com.triskelapps.interactor.TimetableInteractor;
-import com.triskelapps.model.BusLine;
 import com.triskelapps.model.BusStop;
-import com.triskelapps.util.CountlyUtil;
 import com.triskelapps.util.DateUtils;
 
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.net.URL;
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
 import java.util.Date;
 import java.util.HashMap;
-import java.util.Locale;
 import java.util.Map;
+import java.util.concurrent.TimeUnit;
 
 import es.dmoral.toasty.Toasty;
-import okhttp3.HttpUrl;
 
 public class TimetableDialog extends DialogFragment {
 
@@ -114,26 +102,40 @@ public class TimetableDialog extends DialogFragment {
     }
 
     private void processResponseJson(JSONObject response) {
+
+        String waitTime1 = null;
+        String waitTime2 = null;
         try {
-            String waitTime1 = response.getString("waitTimeString");
-            String waitTime2 = "";
-            showWaitTimes(waitTime1, waitTime2);
+            waitTime1 = response.getString("waitTimeString");
         } catch (JSONException e) {
             e.printStackTrace();
         }
+
+        try {
+            JSONObject jsonObjDebugInfo0 = response.getJSONArray("debugInfo").getJSONObject(0);
+            int seconds = jsonObjDebugInfo0.getJSONObject("vh_second").getInt("seconds");
+
+            waitTime2 = getString(R.string.minutes_x, TimeUnit.SECONDS.toMinutes(seconds));
+
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+
+        showWaitTimes(waitTime1, waitTime2);
     }
 
     private void showWaitTimes(String waitTime1, String waitTime2) {
         binding.tvWaitTime1.setText(waitTime1);
+        binding.tvWaitTime2.setText(waitTime2);
     }
 
     private void showProgressBar() {
-        binding.progressbarWebview.setVisibility(View.VISIBLE);
+        binding.progressbar.setVisibility(View.VISIBLE);
         binding.viewWaitTime.setVisibility(View.GONE);
     }
 
     private void hideProgressBar() {
-        binding.progressbarWebview.setVisibility(View.GONE);
+        binding.progressbar.setVisibility(View.GONE);
         binding.viewWaitTime.setVisibility(View.VISIBLE);
     }
 
