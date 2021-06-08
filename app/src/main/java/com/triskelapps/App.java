@@ -20,6 +20,7 @@ import com.triskelapps.model.BusLine;
 import com.triskelapps.model.db.BusLineVisible;
 import com.triskelapps.util.CountlyUtil;
 import com.triskelapps.util.Util;
+import com.triskelapps.util.update_app.UpdateAppManager;
 
 import java.lang.reflect.Type;
 import java.util.ArrayList;
@@ -72,6 +73,8 @@ public class App extends Application {
 //                .fallbackToDestructiveMigration()
                 .allowMainThreadQueries()
                 .build();
+
+        UpdateAppManager.scheduleAppUpdateCheckWork(this);
 
 //        clearPersistedData();
 

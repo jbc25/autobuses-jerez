@@ -335,11 +335,6 @@ public class MainActivity extends BaseActivity implements OnMapReadyCallback, Ma
                 startActivity(new Intent(this, NewsActivity.class));
                 break;
 
-            case R.id.nav_covid_rules:
-                showCovidRulesDialog();
-                CountlyUtil.recordEvent("click_menu_covid_rules");
-                break;
-
             case R.id.nav_buses_contact:
                 showDialogAssetsHtml("info/buses_contact.html");
                 CountlyUtil.recordEvent("click_menu_buses_contact");
@@ -382,17 +377,6 @@ public class MainActivity extends BaseActivity implements OnMapReadyCallback, Ma
 
         new AlertDialog.Builder(this)
                 .setView(textDialogBinding.getRoot())
-                .setNegativeButton(R.string.back, null)
-                .show();
-    }
-
-    private void showCovidRulesDialog() {
-
-        View layout = View.inflate(this, R.layout.view_covid_rules, null);
-
-        new AlertDialog.Builder(this)
-//                .setTitle(R.string.covid_rules)
-                .setView(layout)
                 .setNegativeButton(R.string.back, null)
                 .show();
     }
@@ -452,6 +436,9 @@ public class MainActivity extends BaseActivity implements OnMapReadyCallback, Ma
     @Override
     public void loadBusLines(List<BusLine> busLines) {
 
+        if (map == null) {
+            return;
+        }
 
         map.clear();
 
