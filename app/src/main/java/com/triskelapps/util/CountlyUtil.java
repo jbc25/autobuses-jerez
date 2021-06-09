@@ -7,6 +7,7 @@ import android.util.Log;
 
 import com.google.firebase.remoteconfig.FirebaseRemoteConfig;
 import com.triskelapps.DebugHelper;
+import com.triskelapps.R;
 import com.triskelapps.model.BusStop;
 import com.triskelapps.model.News;
 
@@ -214,8 +215,8 @@ public class CountlyUtil {
 
     private static void initCountly(Application app) {
 
-        String appKey = FirebaseRemoteConfig.getInstance().getString("countly_app_key");
-        String serverUrl = FirebaseRemoteConfig.getInstance().getString("countly_server_url");
+        String appKey = app.getString(R.string.countly_app_key);
+        String serverUrl = app.getString(R.string.countly_server_url);
 
         CountlyConfig config = new CountlyConfig(app, appKey, serverUrl);
         if (DebugHelper.SWITCH_RECORD_ANALYTICS) {

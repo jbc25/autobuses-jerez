@@ -15,4 +15,5 @@
 /app/src/main/res/values/google_maps_api.xml
 /.idea/sonarlint/issuestore/
 **/google-services.json
+**/secret.xml
 /app/src/main/res/values/countly.xml
