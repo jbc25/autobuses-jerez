@@ -2,15 +2,13 @@ package com.triskelapps.util;
 
 import android.app.Activity;
 import android.app.Application;
-import android.provider.Settings;
 import android.text.TextUtils;
 import android.util.Log;
 
 import com.google.firebase.remoteconfig.FirebaseRemoteConfig;
-import com.triskelapps.App;
 import com.triskelapps.DebugHelper;
-import com.triskelapps.base.BaseActivity;
 import com.triskelapps.model.BusStop;
+import com.triskelapps.model.News;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -127,6 +125,16 @@ public class CountlyUtil {
             segmentation.put("bus_stop_info", String.format("L%d - %d - %s",
                     busStop.getLineId(), busStop.getCode(), busStop.getName()));
             Countly.sharedInstance().events().recordEvent("see_timetable_favourite", segmentation);
+        }
+    }
+
+    public static void newsClick(News news) {
+
+        if (isAnalyticsEnabled()) {
+            Map<String, Object> segmentation = new HashMap<>();
+            segmentation.put("title", news.getTitle());
+            segmentation.put("link", news.getUrl());
+            Countly.sharedInstance().events().recordEvent("news_click", segmentation);
         }
     }
 

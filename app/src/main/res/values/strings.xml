@@ -66,4 +66,5 @@
     <string name="next_arrivals">Próximas llegadas</string>
     <string name="minutes_x">%d min</string>
     <string name="seconds_x">%d segundos</string>
+    <string name="site_name">Sitio</string>
 </resources>

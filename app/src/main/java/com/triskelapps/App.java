@@ -7,6 +7,8 @@ import android.graphics.Color;
 import android.util.Log;
 
 import androidx.appcompat.app.AppCompatDelegate;
+import androidx.multidex.MultiDex;
+import androidx.multidex.MultiDexApplication;
 import androidx.preference.PreferenceManager;
 import androidx.room.Room;
 
@@ -27,7 +29,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class App extends Application {
+public class App extends MultiDexApplication {
 
     private static final String TAG = "App";
 
@@ -59,6 +61,8 @@ public class App extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
+
+        MultiDex.install(this);
 
         AppCompatDelegate.setCompatVectorFromResourcesEnabled(true);
 
