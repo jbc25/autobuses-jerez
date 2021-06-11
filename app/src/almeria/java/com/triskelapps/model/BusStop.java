@@ -4,6 +4,8 @@ import android.content.Context;
 
 import androidx.room.Entity;
 
+import com.triskelapps.R;
+
 @Entity(primaryKeys = {"code","lineId"})
 public class BusStop  extends BusStopBase{
 
@@ -12,12 +14,12 @@ public class BusStop  extends BusStopBase{
 
     @Override
     public boolean hasBusStopExtraInfo() {
-        return false;
+        return true;
     }
 
     @Override
     public String getBusStopExtraInfo(Context context) {
-        return null;
+        return context.getString(R.string.bus_stop_transfer_format, getTransfer());
     }
 
     @Override

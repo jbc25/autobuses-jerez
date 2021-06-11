@@ -26,13 +26,13 @@
     <string name="saturday">Sábado</string>
     <string name="festive">Festivo</string>
     <string name="bus_stop_direction_transfer_format">Sentido: %s\nTransbordos: %s</string>
+    <string name="bus_stop_transfer_format">Transbordos: %s</string>
     <string name="favourite_bus_stop_format">Línea %d - %s</string>
     <string name="favourites">Favoritos</string>
     <string name="favourite_bus_stops">Paradas favoritas</string>
     <string name="about_app">Sobre la aplicación</string>
     <string name="news">Noticias</string>
     <string name="app_info">Información de la app</string>
-    <string name="app_info_text">Esta aplicación surge por iniciativa propia del desarrollador con la intención de gestionar más fácilmente y de manera interactiva la información de la red de autobuses de Jerez y sus horarios.\n\nEs independiente de COMUJESA o cualquier otro organismo municipal.\n\nToda la información se ha obtenido de fuentes oficiales (página web, teléfono de información, Twitter, etc) por lo que no puedo hacerme responsable si hay algún error en dicha información.\n\nSi al usar la app, se detecta algún error, ya sea algún fallo técnico o relacionado con los datos de líneas de autobuses y horarios, se agradece la colaboración enviando un correo a través del botón inferior \"Contactar\".\nTambién se puede escribir para mandar sugerencias de mejora.\n\nA fecha 4 de enero de 2021 se han corregido varios errores en la información de las líneas gracias a la ayuda de Daniel. ¡Muchas gracias por tu colaboración!\n\n¡Que disfrutes de esta aplicación!</string>
     <string name="contact">Contactar</string>
     <string name="contact_email_subject">Contacto desde la app Autobuses Jerez</string>
     <string name="send_email">Enviar email</string>
@@ -54,7 +54,7 @@
     <string name="later">Mas tarde</string>
     <string name="dont_show_again">No volver a mostrar</string>
     <string name="welcome">¡Bienvenid@!</string>
-    <string name="welcome_text">Gracias por descargar la app Autobuses de Jerez. Con ella tendras a mano lo que necesitas para moverte mejor por la ciudad:\n
+    <string name="welcome_text">Gracias por descargar la app %s. Con ella tendras a mano lo que necesitas para moverte mejor por la ciudad:\n
 \n- Mapa interactivo
 \n- Líneas y paradas
 \n- Horarios según tipo de día (laborable, sábado, domingo/festivo)

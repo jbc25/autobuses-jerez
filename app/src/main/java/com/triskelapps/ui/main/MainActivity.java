@@ -23,7 +23,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.widget.Toolbar;
-import androidx.core.content.ContextCompat;
+import androidx.core.graphics.ColorUtils;
 import androidx.fragment.app.Fragment;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
@@ -131,7 +131,7 @@ public class MainActivity extends BaseActivity implements OnMapReadyCallback, Ma
             CountlyUtil.recordEvent("welcome_screen_show_dialog");
             new AlertDialog.Builder(this)
                     .setTitle(R.string.welcome)
-                    .setMessage(R.string.welcome_text)
+                    .setMessage(getString(R.string.welcome_text, getString(R.string.app_name_description)))
                     .setPositiveButton(R.string.watch_video, (dialog, which) -> {
                         startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(App.URL_YOUTUBE_VIDEO)));
                         CountlyUtil.recordEvent("welcome_screen_click_watch_video");
@@ -518,6 +518,10 @@ public class MainActivity extends BaseActivity implements OnMapReadyCallback, Ma
         Canvas canvas = new Canvas(resultBitmap);
         canvas.drawBitmap(markerBitmap, 0, 0, markerPaint);
         return resultBitmap;
+    }
+
+    boolean isDark(int color) {
+        return ColorUtils.calculateLuminance(color) < 0.5;
     }
 
 
