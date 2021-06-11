@@ -458,13 +458,15 @@ public class MainActivity extends BaseActivity implements OnMapReadyCallback, Ma
 
             List<Marker> markersBusStopsLine = new ArrayList<>();
 
+            BitmapDescriptor busStopsIcon = getBusMarkerIcon(busLine.getColor());
+
             for (BusStop busStop : busLine.getBusStops()) {
 
                 LatLng position = new LatLng(busStop.getCoordinates().get(0), busStop.getCoordinates().get(1));
                 Marker marker = map.addMarker(new MarkerOptions()
                         .position(position)
                         .visible(false)
-                        .icon(getBusMarkerIcon(busLine.getColor()))
+                        .icon(busStopsIcon)
                         .title(busStop.getName()));
 
                 marker.setTag(busStop);

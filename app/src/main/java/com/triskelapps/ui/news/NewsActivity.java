@@ -16,6 +16,8 @@ public class NewsActivity  extends BaseActivity {
         binding = ActivityNewsBinding.inflate(LayoutInflater.from(this));
         setContentView(binding.getRoot());
 
+        configureSecondLevelActivity();
+
 
     }
 }
