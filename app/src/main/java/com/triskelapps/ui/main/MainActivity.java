@@ -8,6 +8,7 @@ import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.ColorFilter;
 import android.graphics.LightingColorFilter;
+import android.graphics.Matrix;
 import android.graphics.Paint;
 import android.graphics.PorterDuff;
 import android.graphics.PorterDuffColorFilter;
@@ -520,17 +521,28 @@ public class MainActivity extends BaseActivity implements OnMapReadyCallback, Ma
         return resultBitmap;
     }
 
-    boolean isDark(int color) {
-        return ColorUtils.calculateLuminance(color) < 0.5;
-    }
 
 
     private BitmapDescriptor getBusMarkerIcon(int color) {
 
-        Bitmap icon = BitmapFactory.decodeResource(getResources(), R.mipmap.ic_bus_marker_2);
-        Bitmap iconTinted = changeBitmapColor(icon, color);
+        Bitmap iconMarkerOutline = BitmapFactory.decodeResource(getResources(), R.mipmap.ic_bus_marker_outline);
+        Bitmap iconTinted = Bitmap.createBitmap(iconMarkerOutline.getWidth(), iconMarkerOutline.getHeight(), iconMarkerOutline.getConfig());
+        Canvas canvas = new Canvas(iconTinted);
+        canvas.drawBitmap(iconMarkerOutline, new Matrix(), null);
+
+        Bitmap iconBg = BitmapFactory.decodeResource(getResources(), R.mipmap.ic_bus_marker_background);
+        Bitmap iconBgTinted = changeBitmapColor(iconBg, color);
+        canvas.drawBitmap(iconBgTinted, new Matrix(), null);
+
+        int icBusStopMarker = isDark(color) ? R.mipmap.ic_bus_marker_icon_white : R.mipmap.ic_bus_marker_icon_black;
+        Bitmap busIcon = BitmapFactory.decodeResource(getResources(), icBusStopMarker);
+        canvas.drawBitmap(busIcon, new Matrix(), null);
 
         return BitmapDescriptorFactory.fromBitmap(iconTinted);
+    }
+
+    boolean isDark(int color) {
+        return ColorUtils.calculateLuminance(color) < 0.2;
     }
 
     private Bitmap changeBitmapColor(Bitmap sourceBitmap, int color) {
