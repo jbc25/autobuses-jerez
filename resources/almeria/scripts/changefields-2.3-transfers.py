@@ -1,34 +1,31 @@
 import json
+import sys
 
-
-# Second add paths to the main json
-with open('bus_data_old.json', 'r') as file_bus_data_in:
+with open('bus_data.json', 'r') as file_bus_data_in:
 	json_bus_data = json.loads(file_bus_data_in.read())
 
-json_bus_data_ordered = []
+with open('transfer_info.json', 'r') as file_transfer_info_in:
+	json_transfer_info = json.loads(file_transfer_info_in.read())
 
-for bus_line in json_bus_data:
+for index, bus_line in enumerate(json_bus_data):
 
-	for bus_stop in bus_line['busStops']:
-		bus_stop['waitTimeCode'] = bus_stop['extras']['waitTimeCode']
-		bus_stop['waitTimeCodeLine'] = bus_line['extras']['waitTimeCode']
-		del bus_stop['extras']
+	bus_line_2 = json_transfer_info[index]
 
-	bus_line_ordered_fields = {
-		'id': bus_line['id'],
-		'name': bus_line['name'],
-		'description': bus_line['description'],
-		'color': 0,
-		'colorHex': bus_line['colorHex'],
-		'waitTimeCode': bus_line['extras']['waitTimeCode'],
-		'busStops': bus_line['busStops'],
-		'path': bus_line['path']
-		}
+	if not bus_line['id'] == bus_line_2['id']:
+		print(f'Lines dont match: {bus_line["id"]}')
+		sys.exit()
 
-	json_bus_data_ordered.append(bus_line_ordered_fields)
+	for index_bs, bus_stop in enumerate(bus_line['busStops']):
 
+		bus_stop_2 = bus_line_2['busStops'][index_bs]
 
-data_formatted = json.dumps(json_bus_data_ordered, indent=4)
+		if not bus_stop['name'] == bus_stop_2['name']:
+			print(f'Bus stop dont match: {bus_stop["name"]}')
+			sys.exit()
+
+		bus_stop['transfer'] = bus_stop_2['transfer']
+
+data_formatted = json.dumps(json_bus_data, indent=4)
 print(data_formatted)
 
 with open('bus_data.json', 'w') as file_bus_data_out:
