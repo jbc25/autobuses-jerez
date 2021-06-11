@@ -2,6 +2,8 @@ package com.triskelapps.interactor;
 
 import android.content.Context;
 import android.database.Observable;
+import android.os.Handler;
+import android.os.Looper;
 import android.util.Log;
 
 import androidx.annotation.NonNull;
@@ -14,7 +16,6 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.Query;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.triskelapps.App;
-import com.triskelapps.CityData;
 import com.triskelapps.base.BaseInteractor;
 import com.triskelapps.base.BaseView;
 import com.triskelapps.model.News;
@@ -23,9 +24,12 @@ import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.select.Elements;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.Callable;
+import java.util.concurrent.Executor;
+import java.util.concurrent.Executors;
 
 
 /**
@@ -43,59 +47,67 @@ public class NewsInteractor extends BaseInteractor {
 
     public void parseLinkDetails(final String link, CallbackGetEntity<News> callback) {
 
-        Tasks.call((Callable<News>) () -> {
+        Executor executor = Executors.newSingleThreadExecutor();
+        Handler handler = new Handler(Looper.getMainLooper());
+        executor.execute(() -> {
 
-            News news = new News();
-
-            Document doc = Jsoup.connect(link).get();
-
-            Elements metaOgTitle = doc.select("meta[property=og:title]");
-            if (metaOgTitle != null) {
-                news.setTitle(metaOgTitle.attr("content"));
-            } else {
-                news.setTitle(doc.title());
-            }
-
-            Elements metaOgDescription = doc.select("meta[property=og:description]");
-            if (metaOgDescription != null) {
-                news.setSubtitle(metaOgDescription.attr("content"));
-            }
-
-            Elements metaOgSiteName = doc.select("meta[property=og:site_name]");
-            if (metaOgSiteName != null) {
-                news.setMedia(metaOgSiteName.attr("content"));
-            }
-
-            Elements metaOgImage = doc.select("meta[property=og:image]");
-            if (metaOgImage != null) {
-                news.setImage(metaOgImage.attr("content"));
-            }
-
-            Elements metaOgUrl = doc.select("meta[property=og:url]");
-            if (metaOgUrl != null) {
-                news.setUrl(metaOgUrl.attr("content"));
-            } else {
-                news.setUrl(link);
-            }
-
-            Elements metaOgDate = doc.select("meta[property=article:published_time]");
-            if (metaOgDate != null && !metaOgDate.isEmpty()) {
-                news.setDate(metaOgDate.attr("content").substring(0, 10));
-            }
-
-
-            return news;
-
-        })
-                .addOnCompleteListener(task -> {
-
-                    if (task.isSuccessful()) {
-                        callback.onEntityReceived(task.getResult());
-                    } else {
-                        callback.onError(task.getException().getMessage());
-                    }
+            try {
+                News news = getNewsMetadata(link);
+                handler.post(() -> {
+                    callback.onEntityReceived(news);
                 });
+            } catch (IOException e) {
+                e.printStackTrace();
+                handler.post(() -> {
+                    callback.onError(e.getMessage());
+                });
+            }
+        });
 
+    }
+
+    private News getNewsMetadata(String link) throws IOException {
+
+        News news = new News();
+
+        Document doc = Jsoup.connect(link).get();
+
+        Elements metaOgTitle = doc.select("meta[property=og:title]");
+        if (metaOgTitle != null) {
+            news.setTitle(metaOgTitle.attr("content"));
+        } else {
+            news.setTitle(doc.title());
+        }
+
+        Elements metaOgDescription = doc.select("meta[property=og:description]");
+        if (metaOgDescription != null) {
+            news.setSubtitle(metaOgDescription.attr("content"));
+        }
+
+        Elements metaOgSiteName = doc.select("meta[property=og:site_name]");
+        if (metaOgSiteName != null) {
+            news.setMedia(metaOgSiteName.attr("content"));
+        }
+
+        Elements metaOgImage = doc.select("meta[property=og:image]");
+        if (metaOgImage != null) {
+            news.setImage(metaOgImage.attr("content"));
+        }
+
+        Elements metaOgUrl = doc.select("meta[property=og:url]");
+        if (metaOgUrl != null) {
+            news.setUrl(metaOgUrl.attr("content"));
+        } else {
+            news.setUrl(link);
+        }
+
+        Elements metaOgDate = doc.select("meta[property=article:published_time]");
+        if (metaOgDate != null && !metaOgDate.isEmpty()) {
+            news.setDate(metaOgDate.attr("content").substring(0, 10));
+        }
+
+
+        return news;
     }
 
     public void getNews(final CallbackGetList<News> callback) {

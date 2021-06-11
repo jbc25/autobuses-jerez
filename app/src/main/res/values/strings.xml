@@ -67,4 +67,15 @@
     <string name="minutes_x">%d min</string>
     <string name="seconds_x">%d segundos</string>
     <string name="site_name">Sitio</string>
+
+
+    <string name="no_link_copied">No hay un enlace copiado en el portapapeles</string>
+    <string name="invalid_link_copied">El enlace copiado no es válido</string>
+    <string name="receiving_news_data">Recibiendo datos de noticia...</string>
+    <string name="is_ok">¿Está bien?</string>
+    <string name="yes_upload_news">¡Si! - Subir noticia</string>
+    <string name="date">Fecha</string>
+    <string name="sending">Enviando...</string>
+    <string name="news_sent_success">Envío de noticia correcto</string>
+    <string name="send">Enviar</string>
 </resources>
