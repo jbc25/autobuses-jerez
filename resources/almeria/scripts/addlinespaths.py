@@ -2,12 +2,12 @@ from lxml import etree
 import json
 
 
-tree = etree.parse('Lineas_almeria.kml')
+tree = etree.parse('Almeria buses.kml')
 root = tree.getroot()
 
 # Remove namespace prefixes
 for elem in root.getiterator():
-    elem.tag = etree.QName(elem).localname
+	elem.tag = etree.QName(elem).localname
 # Remove unused namespace declarations
 etree.cleanup_namespaces(root)
 
@@ -22,7 +22,7 @@ report = {
 # First create a dictionary of bus line path coordinates
 lines_paths = {}
 
-for placemark in root.xpath('//Document/Placemark'):
+for placemark in root.xpath('//Document//Placemark'):
 
 	id_line = placemark.xpath('string(name/text())').replace('Línea ', '')
 	coords_text = placemark.xpath('string(LineString/coordinates/text())')
@@ -53,5 +53,5 @@ with open('bus_data.json', 'r') as file_bus_data_in:
 	print(data_formatted)
 
 with open('bus_data.json', 'w') as file_bus_data_out:
-    file_bus_data_out.write(data_formatted)
+	file_bus_data_out.write(data_formatted)
 
