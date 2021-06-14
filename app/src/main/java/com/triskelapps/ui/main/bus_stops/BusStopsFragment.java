@@ -16,6 +16,7 @@ import com.triskelapps.model.BusStop;
 import com.triskelapps.ui.main.MainActivity;
 import com.triskelapps.ui.timetable.TimetableDialog;
 import com.triskelapps.util.CountlyUtil;
+import com.triskelapps.util.Util;
 
 import java.util.List;
 
@@ -195,6 +196,12 @@ public class BusStopsFragment extends BaseMainFragment implements BusStopsAdapte
             toast(R.string.error_code_bus_stop);
             CountlyUtil.busStopNotFound(busStopSelected.getLineId(), busStopSelected.getName(), "request_timetable");
         } else {
+
+            if (!Util.isConnected(getActivity())) {
+                toast(R.string.no_connection);
+                return;
+            }
+
             TimetableDialog.createDialog(busStopSelected).show(getChildFragmentManager(), null);
             CountlyUtil.seeTimetable(busStopSelected);
         }

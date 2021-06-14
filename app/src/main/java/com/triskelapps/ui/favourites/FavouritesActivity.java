@@ -2,15 +2,18 @@ package com.triskelapps.ui.favourites;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Toast;
 
 import androidx.recyclerview.widget.DividerItemDecoration;
 
 import com.triskelapps.App;
+import com.triskelapps.R;
 import com.triskelapps.base.BaseActivity;
 import com.triskelapps.databinding.ActivityFavouritesBinding;
 import com.triskelapps.ui.timetable.TimetableDialog;
 import com.triskelapps.util.CountlyUtil;
 import com.triskelapps.model.BusStop;
+import com.triskelapps.util.Util;
 
 import java.util.List;
 
@@ -41,6 +44,11 @@ public class FavouritesActivity extends BaseActivity implements FavouritesAdapte
 
     @Override
     public void onItemClick(View view, int position) {
+
+        if (!Util.isConnected(this)) {
+            toast(R.string.no_connection);
+            return;
+        }
 
         BusStop busStop = favourites.get(position);
         TimetableDialog.createDialog(busStop).show(getSupportFragmentManager(), null);
