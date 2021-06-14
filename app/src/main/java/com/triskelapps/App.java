@@ -38,8 +38,6 @@ public class App extends MultiDexApplication {
     public static final String URL_GOOGLE_PLAY_APP = "https://play.google.com/store/apps/details?id=" + BuildConfig.APPLICATION_ID;
     public static final String URL_DIRECT_GOOGLE_PLAY_APP = "market://details?id=" + BuildConfig.APPLICATION_ID;
 
-    public static final String URL_YOUTUBE_VIDEO = "https://youtu.be/S87pQYvdvRQ";
-
     public static final String PREFIX = BuildConfig.APPLICATION_ID + ".";
 
     public static final String PREF_FIRST_TIME_LAUNCH = PREFIX + "pref_first_time_launch";

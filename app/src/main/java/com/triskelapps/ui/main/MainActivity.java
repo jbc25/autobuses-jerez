@@ -134,7 +134,7 @@ public class MainActivity extends BaseActivity implements OnMapReadyCallback, Ma
                     .setTitle(R.string.welcome)
                     .setMessage(getString(R.string.welcome_text, getString(R.string.app_name_description)))
                     .setPositiveButton(R.string.watch_video, (dialog, which) -> {
-                        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(App.URL_YOUTUBE_VIDEO)));
+                        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(CityData.URL_YOUTUBE_VIDEO)));
                         CountlyUtil.recordEvent("welcome_screen_click_watch_video");
                     })
                     .setNeutralButton(R.string.close, null)
@@ -357,7 +357,7 @@ public class MainActivity extends BaseActivity implements OnMapReadyCallback, Ma
                 break;
 
             case R.id.nav_watch_video:
-                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(App.URL_YOUTUBE_VIDEO)));
+                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(CityData.URL_YOUTUBE_VIDEO)));
                 CountlyUtil.recordEvent("click_menu_watch_video");
                 break;
 
