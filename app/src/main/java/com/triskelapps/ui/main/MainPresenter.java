@@ -17,6 +17,7 @@ import com.triskelapps.R;
 import com.triskelapps.base.BasePresenter;
 import com.triskelapps.model.BusLine;
 import com.triskelapps.model.db.BusLineVisible;
+import com.triskelapps.ui.news.NewsPresenter;
 
 import org.json.JSONException;
 
@@ -47,9 +48,12 @@ public class MainPresenter extends BasePresenter {
 
     }
 
-    public void onCreate() {
+    public void onCreate(Intent intent) {
 
-//        DataProcessUtil.with(context).processData();
+        if (intent.hasExtra("id")) {
+            String newsId = intent.getStringExtra("id");
+            NewsPresenter.launchNewsActivity(context, newsId);
+        }
 
         checkDataVersion();
 

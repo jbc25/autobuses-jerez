@@ -40,7 +40,7 @@ import java.util.concurrent.Executors;
 public class NewsInteractor extends BaseInteractor {
 
 
-    public static final String COLLECTION_NEWS = "news" /*+ (BuildConfig.DEBUG ? "_test" : "")*/;
+    public static final String COLLECTION_NEWS = "news" + (BuildConfig.DEBUG ? "_test" : "");
 
     public NewsInteractor(Context context, BaseView baseView) {
         super(context, baseView);
@@ -131,6 +131,7 @@ public class NewsInteractor extends BaseInteractor {
                     if (task.isSuccessful()) {
                         for (QueryDocumentSnapshot document : task.getResult()) {
                             News news = document.toObject(News.class);
+                            news.setId(document.getId());
                             newsList.add(news);
                             Log.d(TAG, document.getId() + " => " + document.getData());
                         }

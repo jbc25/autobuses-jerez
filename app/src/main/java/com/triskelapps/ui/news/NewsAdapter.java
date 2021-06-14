@@ -98,7 +98,6 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.ViewHolder> {
             rootView.setOnClickListener(v -> {
                 News news = getItemAtPosition(getAdapterPosition());
                 WebUtils.openCustomTab(context, news.getUrl());
-
                 logEvent(news);
             });
         }

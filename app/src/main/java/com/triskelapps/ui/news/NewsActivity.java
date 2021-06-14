@@ -48,7 +48,7 @@ public class NewsActivity  extends BaseActivity implements NewsView {
         binding.btnSendNews.setOnClickListener(v -> presenter.onPasteUrlBtnClick());
         binding.btnSendNews.setVisibility(BuildConfig.DEBUG ? View.VISIBLE : View.GONE);
 
-        presenter.onCreate();
+        presenter.onCreate(getIntent());
 
     }
 
