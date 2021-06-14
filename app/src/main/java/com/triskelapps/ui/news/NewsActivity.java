@@ -15,6 +15,7 @@ import com.triskelapps.R;
 import com.triskelapps.base.BaseActivity;
 import com.triskelapps.databinding.ActivityNewsBinding;
 import com.triskelapps.databinding.RowNewsBinding;
+import com.triskelapps.interactor.NewsInteractor;
 import com.triskelapps.model.News;
 import com.triskelapps.views.EditTextDialog;
 
@@ -89,9 +90,11 @@ public class NewsActivity  extends BaseActivity implements NewsView {
         rowNewsBinding.imgNews.setTag(news.getImage());
         rowNewsBinding.imgOpenUrl.setTag(news.getUrl());
 
+        String sendBtnText = getString(R.string.send) + " " + NewsInteractor.COLLECTION_NEWS;
+
         new AlertDialog.Builder(this)
                 .setView(rowNewsBinding.getRoot())
-                .setPositiveButton(R.string.send, (dialog, which) -> {
+                .setPositiveButton(sendBtnText, (dialog, which) -> {
                     News news2 = new News();
                     news2.setTitle(rowNewsBinding.tvNewsTitle.getText().toString());
                     news2.setSubtitle(rowNewsBinding.tvNewsSubtitle.getText().toString());

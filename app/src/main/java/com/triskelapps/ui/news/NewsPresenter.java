@@ -1,13 +1,18 @@
 package com.triskelapps.ui.news;
 
 
+import android.app.AlertDialog;
 import android.content.ClipData;
 import android.content.ClipboardManager;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.util.Patterns;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.triskelapps.App;
+import com.triskelapps.BuildConfig;
 import com.triskelapps.R;
 import com.triskelapps.base.BaseInteractor;
 import com.triskelapps.base.BasePresenter;
@@ -16,6 +21,8 @@ import com.triskelapps.model.News;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import es.dmoral.toasty.Toasty;
 
 import static android.content.ClipDescription.MIMETYPE_TEXT_PLAIN;
 
@@ -48,7 +55,21 @@ public class NewsPresenter extends BasePresenter {
     }
 
     public void onCreate() {
+
+        if (BuildConfig.DEBUG) {
+            // debug variant is admin for news
+            checkAuthFirebase();
+        }
         refreshData();
+    }
+
+    private void checkAuthFirebase() {
+
+        FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
+        if (firebaseAuth.getCurrentUser() == null) {
+            firebaseAuth.signInAnonymously();
+        }
+
     }
 
 
@@ -151,7 +172,22 @@ public class NewsPresenter extends BasePresenter {
 
             @Override
             public void onError(String error) {
-                view.toast("Fallo al publicar noticia. " + error);
+                FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+
+                new AlertDialog.Builder(context)
+                        .setTitle("Fallo al publicar noticia")
+                        .setMessage("¿Estás dado de alta como admin? Este es tu id:\n" +
+                                (user != null ? user.getUid() : "null"))
+                        .setPositiveButton("Copiar id", (dialog, which) -> {
+                            if (user != null) {
+                                ClipboardManager clipboard = (ClipboardManager) context.getSystemService(Context.CLIPBOARD_SERVICE);
+                                ClipData clip = ClipData.newPlainText("id-admin", user.getUid());
+                                clipboard.setPrimaryClip(clip);
+                            }
+                        })
+                        .setNeutralButton(R.string.back, null)
+                        .show();
+
             }
         });
     }

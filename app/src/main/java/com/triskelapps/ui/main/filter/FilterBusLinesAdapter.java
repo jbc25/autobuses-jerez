@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.core.widget.CompoundButtonCompat;
+import androidx.core.widget.ImageViewCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.triskelapps.R;
@@ -48,14 +49,12 @@ public class FilterBusLinesAdapter extends RecyclerView.Adapter<FilterBusLinesAd
         holder.binding.checkBusLine.setChecked(busLine.isVisible());
 
         holder.binding.checkBusLine.setText(busLine.getName());
-//        holder.binding.checkBusLine.setTextColor(busLine.getColor());
 
         CompoundButtonCompat.setButtonTintList(holder.binding.checkBusLine, ColorStateList.valueOf(busLine.getColor()));
 
         holder.binding.tvLineDescription.setText(busLine.getDescription());
-//        holder.binding.tvLineDescription.setTextColor(busLine.getColor());
 
-        holder.binding.imgBusStop.setColorFilter(busLine.getColor());
+        ImageViewCompat.setImageTintList(holder.binding.imgBusStop, ColorStateList.valueOf(busLine.getColor()));
 
         holder.binding.viewBgColor.setBackgroundColor(busLine.getColor());
 

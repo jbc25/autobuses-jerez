@@ -16,6 +16,7 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.Query;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.triskelapps.App;
+import com.triskelapps.BuildConfig;
 import com.triskelapps.base.BaseInteractor;
 import com.triskelapps.base.BaseView;
 import com.triskelapps.model.News;
@@ -39,7 +40,7 @@ import java.util.concurrent.Executors;
 public class NewsInteractor extends BaseInteractor {
 
 
-    private static final String COLLECTION_NEWS = "news";
+    public static final String COLLECTION_NEWS = "news" /*+ (BuildConfig.DEBUG ? "_test" : "")*/;
 
     public NewsInteractor(Context context, BaseView baseView) {
         super(context, baseView);

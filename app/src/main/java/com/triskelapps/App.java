@@ -50,6 +50,8 @@ public class App extends MultiDexApplication {
 
 
     private static final String FILE_BUS_LINES_DATA = "bus_lines_data.json";
+    private static final String TOPIC_GENERAL = "general";
+    private static final String TOPIC_GENERAL_TEST = "general_test";
 
     private static MyDatabase db;
     //    public static final String SHARED_TOKEN = PREFIX + "shared_token";
@@ -89,7 +91,12 @@ public class App extends MultiDexApplication {
 
 //        NotificationHelper.with(this).initializeOreoChannelsNotification();
 
-        FirebaseMessaging.getInstance().subscribeToTopic(CityData.TOPIC_FIREBASE);
+        if (BuildConfig.DEBUG) {
+            FirebaseMessaging.getInstance().subscribeToTopic(TOPIC_GENERAL_TEST);
+            FirebaseMessaging.getInstance().unsubscribeFromTopic(TOPIC_GENERAL);
+        } else {
+            FirebaseMessaging.getInstance().subscribeToTopic(TOPIC_GENERAL);
+        }
 
     }
 
