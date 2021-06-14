@@ -9,8 +9,8 @@ android {
         applicationId "com.triskelapps"
         minSdkVersion 17
         targetSdkVersion 30
-        versionCode 54
-        versionName "0.5.4"
+        versionCode 160
+        versionName "1.6.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 
@@ -43,13 +43,13 @@ android {
     productFlavors {
         jerez {
             dimension "city"
-            applicationIdSuffix "busjerez"
+            applicationIdSuffix ".busjerez"
             versionNameSuffix "-busjerez"
         }
 
         almeria {
             dimension "city"
-            applicationIdSuffix "busalmeria"
+            applicationIdSuffix ".busalmeria"
             versionNameSuffix "-busalmeria"
         }
     }

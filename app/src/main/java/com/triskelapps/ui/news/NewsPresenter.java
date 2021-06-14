@@ -7,6 +7,7 @@ import android.content.ClipboardManager;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.text.TextUtils;
 import android.util.Patterns;
 
 import com.google.firebase.auth.FirebaseAuth;
@@ -18,6 +19,8 @@ import com.triskelapps.base.BaseInteractor;
 import com.triskelapps.base.BasePresenter;
 import com.triskelapps.interactor.NewsInteractor;
 import com.triskelapps.model.News;
+import com.triskelapps.util.CountlyUtil;
+import com.triskelapps.util.WebUtils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -28,15 +31,25 @@ import static android.content.ClipDescription.MIMETYPE_TEXT_PLAIN;
 
 public class NewsPresenter extends BasePresenter {
 
+    private static final String EXTRA_NEWS_ID = "extra_news_id";
+
     private final NewsView view;
     private final NewsInteractor newsInteractor;
     private List<News> newsList = new ArrayList<>();
     private News newsParsed;
+    private String newsId;
 
     public static void launchNewsActivity(Context context) {
 
         Intent intent = new Intent(context, NewsActivity.class);
 
+        context.startActivity(intent);
+    }
+
+    public static void launchNewsActivity(Context context, String newsId) {
+
+        Intent intent = new Intent(context, NewsActivity.class);
+        intent.putExtra(EXTRA_NEWS_ID, newsId);
         context.startActivity(intent);
     }
 
@@ -54,7 +67,11 @@ public class NewsPresenter extends BasePresenter {
 
     }
 
-    public void onCreate() {
+    public void onCreate(Intent intent) {
+
+        if (intent.hasExtra(EXTRA_NEWS_ID)) {
+            newsId = intent.getStringExtra(EXTRA_NEWS_ID);
+        }
 
         if (BuildConfig.DEBUG) {
             // debug variant is admin for news
@@ -82,6 +99,8 @@ public class NewsPresenter extends BasePresenter {
                 newsList.clear();
                 newsList.addAll(list);
                 view.showNewsList(newsList);
+
+                checkOpenNews();
             }
 
             @Override
@@ -90,6 +109,18 @@ public class NewsPresenter extends BasePresenter {
             }
         });
 
+    }
+
+    private void checkOpenNews() {
+
+        if (newsId != null) {
+            for (News news : newsList) {
+                if (TextUtils.equals(news.getId(), newsId)) {
+                    WebUtils.openCustomTab(context, news.getUrl());
+                    CountlyUtil.newsClick(news);
+                }
+            }
+        }
     }
 
     public void onPasteUrlBtnClick() {

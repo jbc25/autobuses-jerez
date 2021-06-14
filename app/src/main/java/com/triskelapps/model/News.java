@@ -7,6 +7,7 @@ public class News {
 
     public static final String FIELD_DATE = "date";
 
+    private String id;
     private String date;
     private String title;
     private String subtitle;
@@ -67,4 +68,11 @@ public class News {
         this.image = image;
     }
 
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
 }

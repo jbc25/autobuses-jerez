@@ -111,7 +111,7 @@ public class MainActivity extends BaseActivity implements OnMapReadyCallback, Ma
 
         fragmentFilterBusLines = (FilterBusLinesFragment) getSupportFragmentManager().findFragmentById(R.id.fragment_filter_bus_lines);
 
-        presenter.onCreate();
+        presenter.onCreate(getIntent());
 
         binding.tvAppVersion.setText(getString(R.string.version_format, BuildConfig.VERSION_NAME));
 
