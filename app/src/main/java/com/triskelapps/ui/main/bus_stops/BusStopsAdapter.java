@@ -87,7 +87,7 @@ public class BusStopsAdapter extends RecyclerView.Adapter<BusStopsAdapter.ViewHo
             binding = RowBusStopBinding.bind(itemView);
 
             binding.getRoot().setOnClickListener(v -> {
-                if (itemClickListener != null) {
+                if (itemClickListener != null && getAdapterPosition() > -1) {
                     itemClickListener.onItemClick(v, getAdapterPosition());
                     selectedPosition = getAdapterPosition();
                     notifyDataSetChanged();
