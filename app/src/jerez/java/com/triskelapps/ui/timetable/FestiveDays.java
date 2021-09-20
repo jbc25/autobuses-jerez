@@ -22,6 +22,7 @@ public class FestiveDays {
         festiveDaysMap.put("11/05/2021", context.getString(R.string.festive_7_feria_caballo)); // local
         festiveDaysMap.put("16/08/2021", context.getString(R.string.festive_8_asuncion_virgen) + " " + context.getString(R.string.moved)); // regional
         festiveDaysMap.put("24/09/2021", context.getString(R.string.festive_9_virgen_merced)); // local
+        festiveDaysMap.put("11/10/2021", context.getString(R.string.festive_91_san_dionisio) + " " + context.getString(R.string.moved)); // local
         festiveDaysMap.put("12/10/2021", context.getString(R.string.festive_10_nacional_day)); // nacional
         festiveDaysMap.put("01/11/2021", context.getString(R.string.festive_11_all_saints)); // nacional
         festiveDaysMap.put("06/12/2021", context.getString(R.string.festive_12_constitution_day)); // nacional
