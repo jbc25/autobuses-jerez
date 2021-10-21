@@ -22,6 +22,10 @@ import com.triskelapps.model.BusStop;
 import com.triskelapps.util.CountlyUtil;
 import com.triskelapps.util.DateUtils;
 
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+import org.jsoup.select.Elements;
+
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
@@ -63,7 +67,7 @@ public class TimetableDialog extends DialogFragment implements WebView.FindListe
                         if (getActivity() == null) {
                             return;
                         }
-                        infoHtml = body;
+                        infoHtml = cleanHtml(body);
                         loadTimetableHtml();
                     }
 
@@ -78,6 +82,20 @@ public class TimetableDialog extends DialogFragment implements WebView.FindListe
                         CountlyUtil.timetableError(busStop);
                     }
                 });
+    }
+
+    private String cleanHtml(String html) {
+
+        try {
+            Document doc = Jsoup.parse(html);
+
+            Elements div = doc.select("div[class=section section-default]");
+            String cleanedHtml = div.html();
+            return cleanedHtml;
+        } catch (Exception e) {
+            return html;
+        }
+
     }
 
     private void showProgressBar() {
