@@ -17,3 +17,5 @@
 **/google-services.json
 **/secret.xml
 /app/src/main/res/values/countly.xml
+**/*.aab
+**/*.apk
