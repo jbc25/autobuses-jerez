@@ -90,8 +90,12 @@ public class TimetableDialog extends DialogFragment implements WebView.FindListe
             Document doc = Jsoup.parse(html);
 
             Elements div = doc.select("div[class=section section-default]");
-            String cleanedHtml = div.html();
-            return cleanedHtml;
+            if (div.size() > 0) {
+                String cleanedHtml = div.html();
+                return cleanedHtml;
+            } else {
+                return html;
+            }
         } catch (Exception e) {
             return html;
         }

@@ -22,8 +22,8 @@ public class ApiClient {
     // Tutorial Retrofit 2.0
     // http://inthecheesefactory.com/blog/retrofit-2.0/en
 
-    public static final String BASE_URL_PRODUCTION = "https://web.jerez.es/webs-municipales/autobuses-urbanos/lineas-paradas-y-horarios/";
-    public static final String BASE_URL_DEBUG = "https://web.jerez.es/webs-municipales/autobuses-urbanos/lineas-paradas-y-horarios/";
+    public static final String BASE_URL_PRODUCTION = "https://www.comujesa.es/";
+    public static final String BASE_URL_DEBUG = "https://www.comujesa.es/";
 
 
     public static final String BASE_API_URL = DebugHelper.SWITCH_PROD_ENVIRONMENT ? BASE_URL_PRODUCTION : BASE_URL_DEBUG;

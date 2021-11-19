@@ -42,7 +42,9 @@ public class TimetableInteractor extends BaseInteractor {
                                 Log.e(TAG, "onResponse: Error", e);
                             }
                         } else {
-                            callback.onError(parseError(response));
+//                            callback.onError(parseError(response));
+                            CountlyUtil.recordHandledException(new Exception("Error loading timetable: " + parseError(response)));
+                            getTimetableAlternative(lineId, codeBusStop, callback);
                         }
                     }
 
