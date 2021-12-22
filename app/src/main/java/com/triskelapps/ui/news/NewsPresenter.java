@@ -1,18 +1,17 @@
 package com.triskelapps.ui.news;
 
 
+import static android.content.ClipDescription.MIMETYPE_TEXT_PLAIN;
+
 import android.app.AlertDialog;
 import android.content.ClipData;
 import android.content.ClipboardManager;
 import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.text.TextUtils;
 import android.util.Patterns;
 
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
-import com.triskelapps.App;
 import com.triskelapps.BuildConfig;
 import com.triskelapps.R;
 import com.triskelapps.base.BaseInteractor;
@@ -24,10 +23,6 @@ import com.triskelapps.util.WebUtils;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import es.dmoral.toasty.Toasty;
-
-import static android.content.ClipDescription.MIMETYPE_TEXT_PLAIN;
 
 public class NewsPresenter extends BasePresenter {
 
@@ -84,7 +79,11 @@ public class NewsPresenter extends BasePresenter {
 
         FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
         if (firebaseAuth.getCurrentUser() == null) {
-            firebaseAuth.signInAnonymously();
+            firebaseAuth.signInAnonymously().addOnCompleteListener(task -> {
+                if (!task.isSuccessful()) {
+                    view.toast("Fallo con login admin. ¿Has habilitado el registro anónimo en Firebase?");
+                }
+            });
         }
 
     }
@@ -203,18 +202,16 @@ public class NewsPresenter extends BasePresenter {
 
             @Override
             public void onError(String error) {
-                FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+                String uid = FirebaseAuth.getInstance().getUid();
 
                 new AlertDialog.Builder(context)
                         .setTitle("Fallo al publicar noticia")
-                        .setMessage("¿Estás dado de alta como admin? Este es tu id:\n" +
-                                (user != null ? user.getUid() : "null"))
+                        .setMessage("¿Estás dado de alta como admin? Este es tu id:\n" + uid)
                         .setPositiveButton("Copiar id", (dialog, which) -> {
-                            if (user != null) {
-                                ClipboardManager clipboard = (ClipboardManager) context.getSystemService(Context.CLIPBOARD_SERVICE);
-                                ClipData clip = ClipData.newPlainText("id-admin", user.getUid());
-                                clipboard.setPrimaryClip(clip);
-                            }
+                            ClipboardManager clipboard = (ClipboardManager) context.getSystemService(Context.CLIPBOARD_SERVICE);
+                            ClipData clip = ClipData.newPlainText("id-admin", uid);
+                            clipboard.setPrimaryClip(clip);
+
                         })
                         .setNeutralButton(R.string.back, null)
                         .show();

@@ -1,19 +1,19 @@
 {
-	"title": "Autobuses de Jerez",
-	"title2": "Autobuses de Jerez - App gratuita para Android / iOS",
-	"description_short": "Encuentra fácilmente la forma de llegar en autobús a cualquier lugar de Jerez con esta app<br>Descárgala gratuitamente en",
-	"web_root": "https://jerezbus.web.app",
-	"app_id_android": "com.triskelapps.busjerez",
+	"title": "Autobuses de Almería",
+	"title2": "Autobuses de Almería - App gratuita para Android / iOS",
+	"description_short": "Encuentra fácilmente la forma de llegar en autobús a cualquier lugar de Almería con esta app<br>Descárgala gratuitamente en",
+	"web_root": "https://almeriabus.web.app",
+	"app_id_android": "com.triskelapps.busalmeria",
 	"app_store": {
-		"url": "https://apps.apple.com/es/app/autobusesjerez/id1546520728"
+		"url": "https://apps.apple.com/es/app/busalmeria/id1601613063"
 		},
-	"firebase_hosting_name": "jerezbus",
+	"firebase_hosting_name": "almeriabus",
 	"year": "2021",
 	"open_source": {
 		"repository_url": "https://github.com/jbc25/autobuses-jerez"
 	},
 	"video": {
-		"youtube_id": "S87pQYvdvRQ"
+		"youtube_id": "kWma9Ai3viw"
 	},
 
 	"features": [
@@ -28,7 +28,7 @@
 			"header": "Busca tu destino",
 			"body": "Utiliza el buscador de lugares para <b>localizar tu destino</b>. De esta manera te será muy fácil ver las líneas que pasan cerca.",
 			"image": "capture6.png",
-			"image_alt": "Líneas y paradas",
+			"image_alt": "Busca tu destino",
 			"inverted": false
 		},
 		{
@@ -56,7 +56,7 @@
 			"header": "Mostrar/ocultar líneas del mapa",
 			"body": "Despliega el panel lateral para <b>seleccionar las líneas que necesites</b> ver en el mapa y acceder fácilmente a la información de cada una de ellas.",
 			"image": "capture5.png",
-			"image_alt": "Horarios",
+			"image_alt": "Mostrar ocultar líneas",
 			"inverted": false
 		},
 		{

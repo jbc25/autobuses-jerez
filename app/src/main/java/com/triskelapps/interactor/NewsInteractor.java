@@ -40,7 +40,7 @@ import java.util.concurrent.Executors;
 public class NewsInteractor extends BaseInteractor {
 
 
-    public static final String COLLECTION_NEWS = "news" /*+ (BuildConfig.DEBUG ? "_test" : "")*/;
+    public static final String COLLECTION_NEWS = "news"/* + (BuildConfig.DEBUG ? "_test" : "")*/;
 
     public NewsInteractor(Context context, BaseView baseView) {
         super(context, baseView);
