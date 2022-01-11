@@ -56,11 +56,14 @@ line_number = 0
 
 # Get line paths
 lines_coords = []
-lines_coords_encoded = re.findall("coordenadasLineas.push('.*');", bus_stops_html)
+lines_coords_encoded = re.findall("coordenadasLineas.push.*;", bus_lines_html)
 for line_coords_encoded in lines_coords_encoded:
 	line_coords_encoded = line_coords_encoded.replace("coordenadasLineas.push('","").replace("');", "")
-	coords = decode_polyline(line_coords_encoded.strip().replace("\\\\", "\\"))
+	line_coords_encoded = line_coords_encoded.replace("\\\\", "\\").strip()
+	coords = decode_polyline(line_coords_encoded)
 	lines_coords.append(coords)
+
+print('Number of lines: ' + str(len(lines_coords)))
 
 
 for line_node in root.xpath("//div[@id='lineas']//span"): 
@@ -84,18 +87,6 @@ for line_node in root.xpath("//div[@id='lineas']//span"):
 
 	line_description_parts = root_bus_stops.xpath("//a[@href='#ida']/strong/text()") # Array of 2 (origin, destination)
 	line_description = line_description_parts[0] + ' - ' + line_description_parts[1]
-
-	'''
-	coords_ida_encoded = re.findall("mapaCoordenadasIda = '.*';", bus_stops_html)[0].replace("mapaCoordenadasIda = '","").replace("';", "")
-	coords_ida = decode_polyline(coords_ida_encoded.strip().replace("\\\\", "\\"))
-
-	coords_vuelta_encoded_list = re.findall("mapaCoordenadasVuelta = '.*';", bus_stops_html)
-	coords_vuelta = []
-	if coords_vuelta_encoded_list:
-		coords_vuelta_encoded = coords_vuelta_encoded_list[0].replace("mapaCoordenadasVuelta = '","").replace("';", "")
-		coords_vuelta = decode_polyline(coords_vuelta_encoded.strip().replace("\\\\", "\\"))
-
-	'''
 
 	# Bus stops data
 	latitudes = re.findall("marcadorLatitud = '4.*';", bus_stops_html)
