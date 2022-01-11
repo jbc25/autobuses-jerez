@@ -78,4 +78,5 @@
     <string name="sending">Enviando...</string>
     <string name="news_sent_success">Envío de noticia correcto</string>
     <string name="send">Enviar</string>
+    <string name="not_available">No disponible</string>
 </resources>

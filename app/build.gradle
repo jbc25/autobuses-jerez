@@ -7,7 +7,7 @@ android {
 
     defaultConfig {
         applicationId "com.triskelapps"
-        minSdkVersion 17
+        minSdkVersion 19
         targetSdkVersion 30
         versionCode 165
         versionName "1.6.5"
@@ -53,11 +53,11 @@ android {
             versionNameSuffix "-busalmeria"
         }
 
-//        oviedo {
-//            dimension "city"
-//            applicationIdSuffix ".busoviedo"
-//            versionNameSuffix "-busoviedo"
-//        }
+        oviedo {
+            dimension "city"
+            applicationIdSuffix ".busoviedo"
+            versionNameSuffix "-busoviedo"
+        }
     }
 
     compileOptions {
@@ -86,7 +86,7 @@ dependencies {
 
     implementation "androidx.preference:preference:1.1.0"
 
-    implementation platform('com.google.firebase:firebase-bom:28.1.0')
+    implementation platform('com.google.firebase:firebase-bom:29.0.3')
     implementation 'com.google.firebase:firebase-messaging'
     implementation 'com.google.firebase:firebase-config'
     implementation 'com.google.firebase:firebase-firestore'

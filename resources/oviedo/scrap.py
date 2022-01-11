@@ -39,6 +39,10 @@ def decode_polyline(polyline_str):
     return coordinates
 
 
+def fix_encoding(text):
+	return text.encode('latin-1').decode('utf-8')
+
+
 report = {
 	"count": 0,
 }
@@ -72,7 +76,7 @@ for line_node in root.xpath("//div[@id='lineas']//span"):
 	color = line_node.attrib.get('style')
 	color = color.replace("background:", "")
 	link = line_node.xpath("string(a/@href)")
-	line_name = line_node.xpath("string(a/text())")
+	line_name = fix_encoding(line_node.xpath("string(a/text())")) 
 
 	#if line_number != 3: continue
 
