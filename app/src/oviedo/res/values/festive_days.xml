@@ -7,9 +7,10 @@
     <string name="festive_4_jueves_santo">Jueves Santo</string>
     <string name="festive_5_viernes_santo">Viernes Santo</string>
     <string name="festive_6_worker_day">Día del Trabajador</string>
-    <string name="festive_7_san_juan">San Juan</string>
+    <string name="festive_7_martes_campo">Martes de campo</string>
     <string name="festive_8_asuncion_virgen">Asunción de la Virgen</string>
-    <string name="festive_9_virgen_mar">Virgen del Mar</string>
+    <string name="festive_9_dia_asturias">Día de Asturias</string>
+    <string name="festive_91_san_mateo">San Mateo</string>
     <string name="festive_10_nacional_day">Día de la Hispanidad</string>
     <string name="festive_11_all_saints">Todos los Santos</string>
     <string name="festive_12_constitution_day">Día de la Constitución</string>

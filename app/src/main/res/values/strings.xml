@@ -11,7 +11,7 @@
     <string name="navigation_drawer_open">Abrir menú lateral</string>
     <string name="navigation_drawer_close">Cerrar menú lateral</string>
     <string name="bus_lines">Líneas de autobus</string>
-    <string name="line_info_format">Línea %d: %s</string>
+    <string name="line_info_format">%s: %s</string>
     <string name="more_timetable">Más horarios</string>
     <string name="timetable">Horarios</string>
     <string name="error_code_bus_stop">Error. No existe código de parada</string>

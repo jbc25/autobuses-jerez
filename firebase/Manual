@@ -28,9 +28,10 @@ Entrar en carpeta web/
 FUNCTIONS
 Entrar en carpeta functions/
 
-12. Ejecutar: firebase init functions y:
+12. Eliminar todo lo que hay en la carpeta functions/ incluidos ARCHIVOS OCULTOS
+13. Ejecutar: firebase init functions y:
   Seleccionar proyecto - Usar JavaScript - No activar ESLint - Instalar dependencias
-13. Reemplazar completamente archivos index.js y package.json
-14. Ejecutar: firebase deploy (estando en esa carpeta es un shortcut de firebase deploy --only functions)
+14. Reemplazar completamente archivos index.js y package.json
+15. Ejecutar: firebase deploy (estando en esa carpeta es un shortcut de firebase deploy --only functions)
 
 

@@ -61,7 +61,7 @@ public class BusStopsFragment extends BaseMainFragment implements BusStopsAdapte
         binding.btnTimetable.setOnClickListener(this);
         binding.imgFavourite.setOnClickListener(this);
         
-        binding.tvLineInfo.setText(getString(R.string.line_info_format, busLine.getId(), busLine.getDescription()));
+        binding.tvLineInfo.setText(getString(R.string.line_info_format, busLine.getName(), busLine.getDescription()));
 
         busStops = busLine.getBusStops();
         adapter = new BusStopsAdapter(getActivity(), busStops, busLine.getColor());

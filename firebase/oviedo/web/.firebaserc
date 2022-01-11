@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "autobusesalmeria"
+  },
+  "targets": {
+    "autobusesalmeria": {
+      "hosting": {
+        "cool": [
+          "almeriabus"
+        ]
+      }
+    }
+  }
+}
