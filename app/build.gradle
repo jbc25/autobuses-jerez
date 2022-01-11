@@ -52,6 +52,12 @@ android {
             applicationIdSuffix ".busalmeria"
             versionNameSuffix "-busalmeria"
         }
+
+//        oviedo {
+//            dimension "city"
+//            applicationIdSuffix ".busoviedo"
+//            versionNameSuffix "-busoviedo"
+//        }
     }
 
     compileOptions {
