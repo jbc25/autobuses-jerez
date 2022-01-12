@@ -10,6 +10,8 @@ import com.triskelapps.R;
 @Entity(primaryKeys = {"code","lineId"})
 public class BusStop  extends BusStopBase {
 
+    private String lineName;
+
     @Override
     public boolean hasBusStopExtraInfo() {
         return false;
@@ -25,4 +27,11 @@ public class BusStop  extends BusStopBase {
         return name;
     }
 
+    public String getLineName() {
+        return lineName;
+    }
+
+    public void setLineName(String lineName) {
+        this.lineName = lineName;
+    }
 }

@@ -40,7 +40,12 @@ def decode_polyline(polyline_str):
 
 
 def fix_encoding(text):
-	return text.encode('latin-1').decode('utf-8')
+	try:
+		return text.encode('iso-8859-1').decode('utf-8')
+	except Exception as e:
+		#print(e)
+		#print("error with text: " + text)
+		return text
 
 
 report = {
@@ -50,6 +55,8 @@ report = {
 url_base = "https://www.tua.es"
 
 response_bus_lines = requests.get(f"{url_base}/es/lineas-y-horarios")
+print(response_bus_lines.encoding)
+print(response_bus_lines.apparent_encoding)
 
 bus_lines_html = response_bus_lines.text
 root = html.fromstring(bus_lines_html)
@@ -72,13 +79,15 @@ print('Number of lines: ' + str(len(lines_coords)))
 
 for line_node in root.xpath("//div[@id='lineas']//span"): 
 
+	print("\n")
+
 	line_number += 1
 	color = line_node.attrib.get('style')
 	color = color.replace("background:", "")
 	link = line_node.xpath("string(a/@href)")
 	line_name = fix_encoding(line_node.xpath("string(a/text())")) 
 
-	#if line_number != 3: continue
+	#if line_number != 11: continue
 
 	print(f'line name: {line_name}')
 
@@ -91,6 +100,8 @@ for line_node in root.xpath("//div[@id='lineas']//span"):
 
 	line_description_parts = root_bus_stops.xpath("//a[@href='#ida']/strong/text()") # Array of 2 (origin, destination)
 	line_description = line_description_parts[0] + ' - ' + line_description_parts[1]
+	line_description = fix_encoding(line_description)
+	print(line_description)
 
 	# Bus stops data
 	latitudes = re.findall("marcadorLatitud = '4.*';", bus_stops_html)
@@ -104,6 +115,7 @@ for line_node in root.xpath("//div[@id='lineas']//span"):
 
 		bus_stop_code = re.search(r"codigo: '(.*?)', titulo", info_bus_stops[i]).group(1) # https://stackoverflow.com/a/32680048/1365440
 		bus_stop_name = re.search(r"titulo: '(.*?)', url", info_bus_stops[i]).group(1)
+		bus_stop_name = fix_encoding(bus_stop_name)
 
 		bus_stop_coords = [float(latitude), float(longitude)]
 
@@ -112,6 +124,7 @@ for line_node in root.xpath("//div[@id='lineas']//span"):
 				'code': bus_stop_code,
 				'name': bus_stop_name,
 				'lineId': line_number,
+				'lineName': line_name,
 				'coordinates': bus_stop_coords,
 			}
 		)
@@ -119,6 +132,7 @@ for line_node in root.xpath("//div[@id='lineas']//span"):
 	
 	bus_line = {
 		'id': line_number,
+		'lineName': line_name,
 		'colorHex': color,
 		'name': f'Línea {line_name}',
 		'description': line_description,

@@ -71,7 +71,7 @@ public class TimetableDialog extends DialogFragment {
                                 return;
                             }
                             hideProgressBar();
-                            processResponseJson(response);
+                            processResponseJson(response, busStop.getLineName());
                         },
                         error -> {
                             if (getActivity() == null) {
@@ -95,9 +95,7 @@ public class TimetableDialog extends DialogFragment {
 
     }
 
-    private void processResponseJson(JSONObject response) {
-
-        // TODO SELECT CURRENT LINE IN JSON
+    private void processResponseJson(JSONObject response, String lineName) {
 
         String waitTime1 = null;
         String waitTime2 = null;
@@ -105,28 +103,42 @@ public class TimetableDialog extends DialogFragment {
         try {
             JSONObject jsonValue = response.getJSONObject("estimaciones").getJSONObject("value");
             JSONArray estimations = jsonValue.getJSONArray("publicEstimation");
-            JSONObject estimationLine = estimations.getJSONObject(0);
+            for (int i = 0; i < estimations.length(); i++) {
 
-            try {
-                int seconds1 = estimationLine.getJSONObject("vh_first").getInt("seconds");
-                waitTime1 = getString(R.string.minutes_x, TimeUnit.SECONDS.toMinutes(seconds1));
-            } catch (JSONException e) {
-                e.printStackTrace();
+                JSONObject estimationLine = estimations.getJSONObject(i);
+                String estimationLineName = estimationLine.getString("line");
+                if (TextUtils.equals(estimationLineName, lineName)) {
+
+                    try {
+                        int seconds1 = estimationLine.getJSONObject("vh_first").getInt("seconds");
+                        waitTime1 = getString(R.string.minutes_x, convertToMinutes(seconds1));
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
+
+                    try {
+                        int seconds2 = estimationLine.getJSONObject("vh_second").getInt("seconds");
+                        waitTime2 = getString(R.string.minutes_x, convertToMinutes(seconds2));
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
+
+                    break;
+                }
+
             }
-
-            try {
-                int seconds2 = estimationLine.getJSONObject("vh_second").getInt("seconds");
-                waitTime2 = getString(R.string.minutes_x, TimeUnit.SECONDS.toMinutes(seconds2));
-            } catch (JSONException e) {
-                e.printStackTrace();
-            }
-
 
         } catch (JSONException e) {
             e.printStackTrace();
         }
 
         showWaitTimes(waitTime1, waitTime2);
+    }
+
+    private int convertToMinutes(int seconds1) {
+        float minutes = (float) seconds1 / 60;
+        int minutesRound = Math.round(minutes);
+        return minutesRound;
     }
 
     private void showWaitTimes(String waitTime1, String waitTime2) {
