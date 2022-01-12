@@ -15,5 +15,5 @@ public class CityData {
     public static final String URL_BUS_DATA_FILE = "https://triskelapps.es/apps/autobuses-oviedo/bus_data.json";
     public static final String URL_BANNER_MESSAGE_FILE = "https://triskelapps.es/apps/autobuses-oviedo/banner_message.json";
 
-    public static final String URL_YOUTUBE_VIDEO = "https://youtu.be/kWma9Ai3viw";
+    public static final String URL_YOUTUBE_VIDEO = "https://youtu.be/TSq5XOhgsf8";
 }

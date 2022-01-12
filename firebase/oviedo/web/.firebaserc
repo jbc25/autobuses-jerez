@@ -1,12 +1,12 @@
 {
   "projects": {
-    "default": "autobusesalmeria"
+    "default": "autobusesoviedo"
   },
   "targets": {
-    "autobusesalmeria": {
+    "autobusesoviedo": {
       "hosting": {
         "cool": [
-          "almeriabus"
+          "oviedobus"
         ]
       }
     }

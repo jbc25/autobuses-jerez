@@ -1,19 +1,19 @@
 {
-	"title": "Autobuses de Almería",
-	"title2": "Autobuses de Almería - App gratuita para Android / iOS",
-	"description_short": "Encuentra fácilmente la forma de llegar en autobús a cualquier lugar de Almería con esta app<br>Descárgala gratuitamente en",
-	"web_root": "https://almeriabus.web.app",
-	"app_id_android": "com.triskelapps.busalmeria",
+	"title": "Autobuses de Oviedo",
+	"title2": "Autobuses de Oviedo - App gratuita para Android / iOS",
+	"description_short": "Encuentra fácilmente la forma de llegar en autobús a cualquier lugar de Oviedo con esta app<br>Descárgala gratuitamente en",
+	"web_root": "https://oviedobus.web.app",
+	"app_id_android": "com.triskelapps.busoviedo",
 	"app_store": {
 		"url": "https://apps.apple.com/es/app/busalmeria/id1601613063"
 		},
-	"firebase_hosting_name": "almeriabus",
-	"year": "2021",
+	"firebase_hosting_name": "oviedobus",
+	"year": "2022",
 	"open_source": {
 		"repository_url": "https://github.com/jbc25/autobuses-jerez"
 	},
 	"video": {
-		"youtube_id": "kWma9Ai3viw"
+		"youtube_id": "TSq5XOhgsf8"
 	},
 
 	"features": [
