@@ -1,6 +1,5 @@
 package com.triskelapps;
 
-import android.app.Application;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.graphics.Color;
@@ -16,7 +15,6 @@ import com.google.android.libraries.places.api.Places;
 import com.google.firebase.messaging.FirebaseMessaging;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
-import com.triskelapps.database.DBMigrationBase;
 import com.triskelapps.database.MyDatabase;
 import com.triskelapps.model.BusLine;
 import com.triskelapps.model.db.BusLineVisible;

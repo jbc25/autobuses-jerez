@@ -23,22 +23,26 @@
         <activity
             android:name=".ui.main.MainActivity"
             android:screenOrientation="portrait"
-            android:label="@string/app_name">
+            android:label="@string/app_name"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
             android:name=".ui.favourites.FavouritesActivity"
             android:screenOrientation="portrait"
-            android:label="@string/favourite_bus_stops" />
+            android:label="@string/favourite_bus_stops"
+            android:exported="true"/>
 
         <activity
             android:name=".ui.news.NewsActivity"
             android:screenOrientation="portrait"
-            android:label="@string/news" />
+            android:label="@string/news"
+            android:exported="true" />
 
         <meta-data
             android:name="com.google.firebase.messaging.default_notification_icon"

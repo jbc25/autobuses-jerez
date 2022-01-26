@@ -38,7 +38,7 @@ public class UpdateAppCheckWorker extends ListenableWorker {
     private SettableFuture<Result> future;
     private UpdateAppManager updateAppManager;
 
-    private static final String CHANNEL_NOTIF_UPDATE_APP = "channel_update_app";
+    public static final String CHANNEL_NOTIF_UPDATE_APP = "channel_update_app";
     private static final int ID_UPDATE_APP_NOTIF = 1000;
     private SharedPreferences prefs;
 
@@ -99,7 +99,7 @@ public class UpdateAppCheckWorker extends ListenableWorker {
         NotificationCompat.Builder notifBuilder = new NotificationCompat.Builder(context, CHANNEL_NOTIF_UPDATE_APP)
                 .setSound(defaultSoundUri)
                 .setAutoCancel(true)
-                .setSmallIcon(R.mipmap.ic_app)
+                .setSmallIcon(R.mipmap.ic_notification)
                 .setColor(ContextCompat.getColor(context, R.color.colorPrimary))
                 .setContentIntent(pendingIntent);
         return notifBuilder;
