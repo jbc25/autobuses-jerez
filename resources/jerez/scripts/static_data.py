@@ -48,7 +48,7 @@ bus_lines_descriptions = {
     "2": "Esteve - Picadue\u00f1as", 
     "3": "Esteve - Las Torres", 
     "4": "Esteve - San Joaqu\u00edn - Hipercor", 
-    "5": "Esteve - Guadalcac\u00edn", 
+    "5": "Canal Sur - Guadalcac\u00edn", 
     "6": "Esteve - La Granja", 
     "7": "Angustias - Estella", 
     "8": "Circular 1 - Sentido antihorario", 

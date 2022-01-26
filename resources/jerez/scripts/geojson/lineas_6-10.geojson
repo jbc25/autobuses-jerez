@@ -6,6 +6,35 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
+                    -6.136593,
+                    36.681963,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Plaza Esteve\n",
+                "styleUrl": "#icon-1532-01579B",
+                "styleHash": "6f39a139",
+                "styleMapHash": {
+                    "normal": "#icon-1532-01579B-normal",
+                    "highlight": "#icon-1532-01579B-highlight"
+                },
+                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
+                "description": "descripción: <br>TRANSBORDO: <br>LINEA: 6<br>COD. PARADA: 343<br>SENTIDO: <br>LATITUD: 36.68196<br><br>LONGITUD: -6.13659",
+                "descripción": "",
+                "TRANSBORDO": "",
+                "LINEA": "6",
+                "COD. PARADA": "343",
+                "SENTIDO": "",
+                "LATITUD": "36.68196\n",
+                "LONGITUD": "-6.13659"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
                     -6.135114,
                     36.683371,
                     0
@@ -13,11 +42,11 @@
             },
             "properties": {
                 "name": "Villamarta",
-                "styleUrl": "#icon-1532-01579B",
-                "styleHash": "6f39a139",
+                "styleUrl": "#icon-1532-C2185B",
+                "styleHash": "-63984647",
                 "styleMapHash": {
-                    "normal": "#icon-1532-01579B-normal",
-                    "highlight": "#icon-1532-01579B-highlight"
+                    "normal": "#icon-1532-C2185B-normal",
+                    "highlight": "#icon-1532-C2185B-highlight"
                 },
                 "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
                 "description": "descripción: TRANSBORDO: 1-5-11-12-14<br>LINEA: 6<br>COD. PARADA: 453<br>SENTIDO: La Granja<br>LATITUD: 36.683371<br>LONGITUD: -6.135114<br>TRANSBORDO: 1-5-11-12-14<br>LINEA: 6.0<br>COD. PARADA: 453.0<br>SENTIDO: La Granja<br>LATITUD: 36.683371<br>LONGITUD: -6.135114",
@@ -874,11 +903,55 @@
         {
             "type": "Feature",
             "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -6.1343637,
+                    36.6808304,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Pz. Angustias-Canal Sur",
+                "styleUrl": "#icon-1532-C2185B",
+                "styleHash": "-63984647",
+                "styleMapHash": {
+                    "normal": "#icon-1532-C2185B-normal",
+                    "highlight": "#icon-1532-C2185B-highlight"
+                },
+                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
+                "description": "descripción: <br>TRANSBORDO: <br>LINEA: 6<br>COD. PARADA: 130<br>SENTIDO: <br>LATITUD: 36.68083<br><br>LONGITUD: -6.13436",
+                "descripción": "",
+                "TRANSBORDO": "",
+                "LINEA": "6",
+                "COD. PARADA": "130",
+                "SENTIDO": "",
+                "LATITUD": "36.68083\n",
+                "LONGITUD": "-6.13436"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
                 "type": "LineString",
                 "coordinates": [
                     [
-                        -6.135114,
-                        36.683371,
+                        -6.1366482,
+                        36.6819642,
+                        0
+                    ],
+                    [
+                        -6.136625,
+                        36.682497,
+                        0
+                    ],
+                    [
+                        -6.1360866,
+                        36.6830944,
+                        0
+                    ],
+                    [
+                        -6.1354517,
+                        36.6832689,
                         0
                     ],
                     [
@@ -2087,43 +2160,43 @@
                         0
                     ],
                     [
-                        -6.1327515,
-                        36.6819675,
+                        -6.1326104,
+                        36.6808805,
                         0
                     ],
                     [
-                        -6.1333898,
-                        36.6822642,
+                        -6.1329875,
+                        36.6809244,
                         0
                     ],
                     [
-                        -6.1338186,
-                        36.6824878,
+                        -6.1331775,
+                        36.6805475,
                         0
                     ],
                     [
-                        -6.1343287,
-                        36.6827205,
+                        -6.1333631,
+                        36.6805695,
                         0
                     ],
                     [
-                        -6.1349542,
-                        36.6829959,
+                        -6.1343637,
+                        36.6808304,
                         0
                     ],
                     [
-                        -6.1353447,
-                        36.6831551,
+                        -6.135511,
+                        36.6810256,
                         0
                     ],
                     [
-                        -6.1354434,
-                        36.6832691,
+                        -6.1366868,
+                        36.6813959,
                         0
                     ],
                     [
-                        -6.135188,
-                        36.6833401,
+                        -6.1366418,
+                        36.6818989,
                         0
                     ]
                 ]

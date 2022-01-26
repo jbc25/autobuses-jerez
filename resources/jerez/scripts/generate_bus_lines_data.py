@@ -43,7 +43,7 @@ for lines_file in lines_files:
 	starting_line_number = int(lines_file.split('-')[0])
 	line_number = starting_line_number
 
-	print(f'Línea de comienzo {starting_line_number}')
+	print(f'Línea de comienzo en archivo {starting_line_number}')
 
 	file_geojson = open(f'geojson/lineas_{lines_file}.geojson', 'r+')
 	geojson_text = file_geojson.read()
