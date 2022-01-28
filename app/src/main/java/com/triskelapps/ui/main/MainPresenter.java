@@ -155,7 +155,7 @@ public class MainPresenter extends BasePresenter {
         int lineId = busLines.get(position).getId();
         view.setBusLineVisible(lineId, checked);
 
-        App.getDB().busLineVisibleDao().update(new BusLineVisible(lineId, checked));
+        App.getDB().busLineVisibleDao().insert(new BusLineVisible(lineId, checked));
     }
 
 }

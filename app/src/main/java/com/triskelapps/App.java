@@ -147,7 +147,7 @@ public class App extends MultiDexApplication {
 
         for (BusLine busLine : busLines) {
             BusLineVisible busLineVisible = db.busLineVisibleDao().getBusLineVisible(busLine.getId());
-            busLine.setVisible(busLineVisible.isVisible());
+            busLine.setVisible(busLineVisible != null ? busLineVisible.isVisible() : true);
         }
 
     }
