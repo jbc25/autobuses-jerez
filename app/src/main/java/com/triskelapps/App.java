@@ -10,6 +10,7 @@ import androidx.multidex.MultiDex;
 import androidx.multidex.MultiDexApplication;
 import androidx.preference.PreferenceManager;
 import androidx.room.Room;
+import androidx.work.WorkManager;
 
 import com.google.android.libraries.places.api.Places;
 import com.google.firebase.messaging.FirebaseMessaging;
@@ -77,6 +78,7 @@ public class App extends MultiDexApplication {
                 .build();
 
         UpdateAppManager.scheduleAppUpdateCheckWork(this);
+//        WorkManager.getInstance(this).cancelUniqueWork(UpdateAppManager.UPDATE_CHECK_WORK_NAME);
 
 //        clearPersistedData();
 
@@ -93,6 +95,8 @@ public class App extends MultiDexApplication {
         } else {
             FirebaseMessaging.getInstance().subscribeToTopic(TOPIC_GENERAL);
         }
+
+        loadData(this);
 
     }
 
@@ -166,6 +170,10 @@ public class App extends MultiDexApplication {
     }
 
     public static int getColorForLine(Context context, int lineId) {
+        if (busLines == null) {
+            loadData(context);
+        }
+
         for (BusLine busLine : busLines) {
             if (busLine.getId() == lineId) {
                 return busLine.getColor();

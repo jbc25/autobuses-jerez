@@ -30,6 +30,8 @@ public class UpdateAppManager {
     private UpdateAvailableListener updateAvailableListener;
     private UpdateFinishListener updateFinishListener;
 
+    public static final String UPDATE_CHECK_WORK_NAME = "appUpdateCheckWork";
+
     public static final String TEMPLATE_URL_GOOGLE_PLAY_APP_HTTP = "https://play.google.com/store/apps/details?id=%s";
     public static final String TEMPLATE_URL_GOOGLE_PLAY_APP_DIRECT = "market://details?id=%s";
 
@@ -49,7 +51,7 @@ public class UpdateAppManager {
                 .setConstraints(constraints)
                 .build();
 
-        WorkManager.getInstance(context).enqueueUniquePeriodicWork("appUpdateCheckWork",
+        WorkManager.getInstance(context).enqueueUniquePeriodicWork(UPDATE_CHECK_WORK_NAME,
                 ExistingPeriodicWorkPolicy.KEEP, updateAppCheckWork);
 
     }
