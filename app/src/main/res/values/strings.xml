@@ -79,4 +79,9 @@
     <string name="news_sent_success">Envío de noticia correcto</string>
     <string name="send">Enviar</string>
     <string name="not_available">No disponible</string>
+    <string name="location_disabled">Tu ubicación está desactivada</string>
+    <string name="activate">Activar</string>
+    <string name="allow_location">Permitir acceso a ubicación</string>
+    <string name="allow">Permitir</string>
+    <string name="allow_location_message">Para mostrar tu ubicación en el mapa es necesario activar el permiso de localización del teléfono.\n\nPara activarlo pulsa el botón \"Permitir\" y en la siguiente pantalla pulsa \"Permisos\"</string>
 </resources>

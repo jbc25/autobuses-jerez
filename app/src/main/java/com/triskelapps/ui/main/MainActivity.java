@@ -14,18 +14,20 @@ import android.graphics.PorterDuff;
 import android.graphics.PorterDuffColorFilter;
 import android.net.Uri;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
+import androidx.activity.result.ActivityResultLauncher;
+import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.graphics.ColorUtils;
-import androidx.fragment.app.Fragment;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -71,9 +73,11 @@ import com.triskelapps.util.Util;
 import java.util.ArrayList;
 import java.util.List;
 
-import es.dmoral.toasty.Toasty;
+import io.nlopez.smartlocation.SmartLocation;
 
 public class MainActivity extends BaseActivity implements OnMapReadyCallback, MainView, GoogleMap.OnPolylineClickListener, GoogleMap.OnMarkerClickListener, NavigationView.OnNavigationItemSelectedListener {
+
+    private static final int REQ_CODE_LOCATION_PERMISSION = 3214;
 
     private GoogleMap map;
     private MainPresenter presenter;
@@ -83,7 +87,13 @@ public class MainActivity extends BaseActivity implements OnMapReadyCallback, Ma
     private FilterBusLinesFragment fragmentFilterBusLines;
     private AddressFragment addressFragment;
     private BusStopsFragment busStopsFragment;
+    private MenuItem menuItemAllowLocation;
 
+    private boolean locationPermissionPermanentlyDenied;
+
+    ActivityResultLauncher<Intent> settingsActivityResultLauncher = registerForActivityResult(
+            new ActivityResultContracts.StartActivityForResult(),
+            result -> checkLocationPermission());
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -144,15 +154,12 @@ public class MainActivity extends BaseActivity implements OnMapReadyCallback, Ma
         }
     }
 
-    @Override
-    public void onAttachFragment(@NonNull Fragment fragment) {
-        super.onAttachFragment(fragment);
-    }
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.main, menu);
+        menuItemAllowLocation = menu.findItem(R.id.menu_allow_location);
+        menuItemAllowLocation.setVisible(locationPermissionPermanentlyDenied);
         return super.onCreateOptionsMenu(menu);
     }
 
@@ -231,36 +238,48 @@ public class MainActivity extends BaseActivity implements OnMapReadyCallback, Ma
 
     private void checkLocationPermission() {
 
-        Dexter.withActivity(this)
-                .withPermission(Manifest.permission.ACCESS_FINE_LOCATION)
-                .withListener(new PermissionListener() {
-                    @Override
-                    public void onPermissionGranted(PermissionGrantedResponse response) {
-                        configureSelfLocationMap();
-                    }
+        if (SmartLocation.with(this).location().state().isAnyProviderAvailable()) {
+            Dexter.withActivity(this)
+                    .withPermission(Manifest.permission.ACCESS_FINE_LOCATION)
+                    .withListener(new PermissionListener() {
+                        @Override
+                        public void onPermissionGranted(PermissionGrantedResponse response) {
+                            if (menuItemAllowLocation != null) {
+                                menuItemAllowLocation.setVisible(false);
+                            }
+                            configureSelfLocationMap();
+                        }
 
-                    @Override
-                    public void onPermissionDenied(PermissionDeniedResponse response) {
-                        Toasty.error(MainActivity.this, getString(R.string.permission_denied)).show();
-                        finish();
-                    }
+                        @Override
+                        public void onPermissionDenied(PermissionDeniedResponse response) {
+                            if (SmartLocation.with(MainActivity.this).location().state().isAnyProviderAvailable()) {
+                                if (menuItemAllowLocation != null) {
+                                    menuItemAllowLocation.setVisible(true);
+                                }
+                            }
 
-                    @Override
-                    public void onPermissionRationaleShouldBeShown(PermissionRequest permission, PermissionToken token) {
-                        new AlertDialog.Builder(MainActivity.this)
-                                .setTitle(R.string.permission_needed)
-                                .setMessage(R.string.location_permission_message)
-                                .setPositiveButton(R.string.accept, (dialog, which) -> token.continuePermissionRequest())
-                                .setNegativeButton(R.string.cancel, (dialog, which) -> token.cancelPermissionRequest())
-                                .show();
-                    }
-                }).check();
+                            locationPermissionPermanentlyDenied = response.isPermanentlyDenied();
+                        }
+
+                        @Override
+                        public void onPermissionRationaleShouldBeShown(PermissionRequest permission, PermissionToken token) {
+                            new AlertDialog.Builder(MainActivity.this)
+                                    .setTitle(R.string.permission_needed)
+                                    .setMessage(R.string.location_permission_message)
+                                    .setPositiveButton(R.string.accept, (dialog, which) -> token.continuePermissionRequest())
+                                    .setNegativeButton(R.string.cancel, (dialog, which) -> token.cancelPermissionRequest())
+                                    .show();
+                        }
+                    }).check();
+        }
     }
 
 
     @SuppressLint("MissingPermission")
     private void configureSelfLocationMap() {
-        map.setMyLocationEnabled(true);
+        if (SmartLocation.with(this).location().state().isAnyProviderAvailable()) {
+            map.setMyLocationEnabled(true);
+        }
     }
 
 
@@ -286,8 +305,30 @@ public class MainActivity extends BaseActivity implements OnMapReadyCallback, Ma
             case R.id.menu_favourites:
                 startActivity(new Intent(this, FavouritesActivity.class));
                 break;
+
+            case R.id.menu_allow_location:
+                if (!locationPermissionPermanentlyDenied) {
+                    checkLocationPermission();
+                } else {
+                    showAllowLocationSettingsDialog();
+                }
+                break;
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    private void showAllowLocationSettingsDialog() {
+        new AlertDialog.Builder(this)
+                .setTitle(R.string.allow_location)
+                .setMessage(R.string.allow_location_message)
+                .setPositiveButton(R.string.allow, (dialog, which) -> {
+                    Intent intent = new Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS);
+                    Uri uri = Uri.fromParts("package", getPackageName(), null);
+                    intent.setData(uri);
+                    settingsActivityResultLauncher.launch(intent);
+                })
+                .setNegativeButton(R.string.cancel, null)
+                .show();
     }
 
     @Override
