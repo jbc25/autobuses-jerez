@@ -1,7 +1,7 @@
 [
   {
-    "featureType": "administrative.land_parcel",
-    "elementType": "labels",
+    "featureType": "poi",
+    "elementType": "labels.text",
     "stylers": [
       {
         "visibility": "off"
@@ -9,11 +9,10 @@
     ]
   },
   {
-    "featureType": "poi",
-    "elementType": "labels.text",
+    "featureType": "poi.attraction",
     "stylers": [
       {
-        "visibility": "off"
+        "visibility": "on"
       }
     ]
   },
@@ -26,17 +25,24 @@
     ]
   },
   {
-    "featureType": "road",
-    "elementType": "labels.icon",
+    "featureType": "poi.government",
     "stylers": [
       {
-        "visibility": "off"
+        "visibility": "simplified"
       }
     ]
   },
   {
-    "featureType": "road.local",
-    "elementType": "labels",
+    "featureType": "poi.park",
+    "stylers": [
+      {
+        "visibility": "on"
+      }
+    ]
+  },
+  {
+    "featureType": "road",
+    "elementType": "labels.icon",
     "stylers": [
       {
         "visibility": "off"
