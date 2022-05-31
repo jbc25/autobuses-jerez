@@ -47,7 +47,8 @@ public class UpdateAppManager {
                 .setRequiredNetworkType(NetworkType.CONNECTED)
                 .build();
 
-        PeriodicWorkRequest updateAppCheckWork = new PeriodicWorkRequest.Builder(UpdateAppCheckWorker.class, 1, TimeUnit.HOURS)
+        PeriodicWorkRequest updateAppCheckWork = new PeriodicWorkRequest.Builder(UpdateAppCheckWorker.class,
+                6, TimeUnit.HOURS, 30, TimeUnit.MINUTES)
                 .setConstraints(constraints)
                 .build();
 
