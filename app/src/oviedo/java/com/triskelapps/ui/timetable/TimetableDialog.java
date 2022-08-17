@@ -167,7 +167,7 @@ public class TimetableDialog extends DialogFragment {
 
         String time = DateUtils.formatTime.format(new Date());
         dayType = DayTypeUtil.with(getContext()).getDayType();
-        String infoText = getString(R.string.info_timetable_format, busStop.getLineId(), busStop.getName(), dayType, time);
+        String infoText = getString(R.string.info_timetable_format, busStop.getLineName(), busStop.getName(), dayType, time);
         binding.tvTimetableInfo.setText(infoText);
     }
 

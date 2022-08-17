@@ -14,6 +14,7 @@ public class CityData {
 
     public static final String URL_BUS_DATA_VERSION_FILE = "https://triskelapps.es/apps/autobuses-jerez/bus_data_version.json";
     public static final String URL_BUS_DATA_FILE = "https://triskelapps.es/apps/autobuses-jerez/bus_data.json";
+//    public static final String URL_BUS_DATA_FILE = "https://triskelapps.es/apps/autobuses-jerez/bus_data_debug.json";
     public static final String URL_BANNER_MESSAGE_FILE = "https://triskelapps.es/apps/autobuses-jerez/banner_message.json";
 
     public static final String URL_YOUTUBE_VIDEO = "https://youtu.be/S87pQYvdvRQ";

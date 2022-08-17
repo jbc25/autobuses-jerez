@@ -9,6 +9,7 @@ import android.content.ClipboardManager;
 import android.content.Context;
 import android.content.Intent;
 import android.text.TextUtils;
+import android.util.Log;
 import android.util.Patterns;
 
 import com.google.firebase.auth.FirebaseAuth;
@@ -82,8 +83,12 @@ public class NewsPresenter extends BasePresenter {
             firebaseAuth.signInAnonymously().addOnCompleteListener(task -> {
                 if (!task.isSuccessful()) {
                     view.toast("Fallo con login admin. ¿Has habilitado el registro anónimo en Firebase?");
+                } else {
+                    Log.i(TAG, "UID Firebase auth: " + FirebaseAuth.getInstance().getUid());
                 }
             });
+        } else {
+            Log.i(TAG, "UID Firebase auth: " + FirebaseAuth.getInstance().getUid());
         }
 
     }

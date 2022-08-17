@@ -18,7 +18,7 @@
 
     <string name="line_id_bus_stop_format">Línea %d. Parada: %s</string>
 
-    <string name="info_timetable_format">Línea %d - %s\nDía: %s\nHora actual: %s</string>
+    <string name="info_timetable_format">Línea %s - %s\nDía: %s\nHora actual: %s</string>
     <string name="see_timetable">Ver horarios</string>
 
     <string name="sunday">Domingo</string>

@@ -586,6 +586,35 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
+                    -6.1036429,
+                    36.6932914,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Residencia Pensionista\n",
+                "styleUrl": "#icon-1532-C2185B",
+                "styleHash": "-63984647",
+                "styleMapHash": {
+                    "normal": "#icon-1532-C2185B-normal",
+                    "highlight": "#icon-1532-C2185B-highlight"
+                },
+                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
+                "description": "descripción: <br>TRANSBORDO: 6-9<br>LINEA: 11<br>COD. PARADA: 368<br>SENTIDO: Centro<br>LATITUD: <br>LONGITUD: ",
+                "descripción": "",
+                "TRANSBORDO": "6-9",
+                "LINEA": "11",
+                "COD. PARADA": "368",
+                "SENTIDO": "Centro",
+                "LATITUD": "",
+                "LONGITUD": ""
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
                     -6.1065424,
                     36.6917375,
                     0
@@ -890,8 +919,8 @@
                     "highlight": "#icon-1532-C2185B-highlight"
                 },
                 "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
-                "description": "descripción: TRANSBORDO: 1-2-3-4-5-6-7-8-9-10-12-14-15-18<br>LINEA: 11<br>COD. PARADA: <br>SENTIDO: <br>LATITUD: 36.6808309<br>LONGITUD: -6.1330957<br>TRANSBORDO: 1-2-3-4-5-6-7-8-9-10-12-14-15-18<br>LINEA: 11<br>COD. PARADA: 130<br>SENTIDO: <br>LATITUD: 36.6808309<br>LONGITUD: -6.1330957",
-                "descripción": "TRANSBORDO: 1-2-3-4-5-6-7-8-9-10-12-14-15-18\nLINEA: 11\nCOD. PARADA: \nSENTIDO: \nLATITUD: 36.6808309\nLONGITUD: -6.1330957",
+                "description": "descripción: TRANSBORDO: 1-2-3-4-5-6-7-8-9-10-12-14-15-18<br>LINEA: 11<br>COD. PARADA: <br>SENTIDO: <br>LATITUD: 36.6808309<br>LONGITUD: -6.1330957<br>TRANSBORDO: 1-2-3-4-5-6-7-8-9-10-12-14-15-18<br>LINEA: 11<br>COD. PARADA: 130<br>SENTIDO: <br>LATITUD: 36.6808309<br>LONGITUD: -6.1330957",
+                "descripción": "TRANSBORDO: 1-2-3-4-5-6-7-8-9-10-12-14-15-18\nLINEA: 11\nCOD. PARADA: \nSENTIDO: \nLATITUD: 36.6808309\nLONGITUD: -6.1330957",
                 "TRANSBORDO": "1-2-3-4-5-6-7-8-9-10-12-14-15-18",
                 "LINEA": "11",
                 "COD. PARADA": "130",
@@ -2607,8 +2636,8 @@
                     "highlight": "#icon-1532-1A237E-highlight"
                 },
                 "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
-                "description": "descripción: TRANSBORDO: 1-2-3-4-5-6-7-8-9-10-11-14-15-18<br>LINEA: 12<br>COD.PARADA: 130<br>SENTIDO: Única<br>LATITUD: 36.6807835<br>LONGITUD: -6.1330814<br>TRANSBORDO: 1-2-3-4-5-6-7-8-9-10-11-14-15-18<br>LINEA: 12.0<br>COD.PARADA: 130.0<br>SENTIDO: San José Obrero<br>LATITUD: 36.6807835<br>LONGITUD: -6.1330814",
-                "descripción": "TRANSBORDO: 1-2-3-4-5-6-7-8-9-10-11-14-15-18\nLINEA: 12\nCOD.PARADA: 130\nSENTIDO: Única\nLATITUD: 36.6807835\nLONGITUD: -6.1330814",
+                "description": "descripción: TRANSBORDO: 1-2-3-4-5-6-7-8-9-10-11-14-15-18<br>LINEA: 12<br>COD.PARADA: 130<br>SENTIDO: Única<br>LATITUD: 36.6807835<br>LONGITUD: -6.1330814<br>TRANSBORDO: 1-2-3-4-5-6-7-8-9-10-11-14-15-18<br>LINEA: 12.0<br>COD.PARADA: 130.0<br>SENTIDO: San José Obrero<br>LATITUD: 36.6807835<br>LONGITUD: -6.1330814",
+                "descripción": "TRANSBORDO: 1-2-3-4-5-6-7-8-9-10-11-14-15-18\nLINEA: 12\nCOD.PARADA: 130\nSENTIDO: Única\nLATITUD: 36.6807835\nLONGITUD: -6.1330814",
                 "TRANSBORDO": "1-2-3-4-5-6-7-8-9-10-11-14-15-18",
                 "LINEA": "12.0",
                 "COD.PARADA": "130.0",
@@ -2897,9 +2926,9 @@
                     "highlight": "#icon-1532-C2185B-highlight"
                 },
                 "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
-                "description": "descripción: TRANSBORDO: 6-8-9-11<br>LINEA: 12<br>COD.PARADA: 88<br>SENTIDO: Hacia Avda Europa<br>LATITUD: 36.6906271<br>LONGITUD: -6.1111226<br>TRANSBORDO: 6-8-9-11<br>LINEA: 12.0<br>COD.PARADA: 88.0<br>SENTIDO: Hacia Avda Europa<br>LATITUD: 36.6906271<br>LONGITUD: -6.1111226",
-                "descripción": "TRANSBORDO: 6-8-9-11\nLINEA: 12\nCOD.PARADA: 88\nSENTIDO: Hacia Avda Europa\nLATITUD: 36.6906271\nLONGITUD: -6.1111226",
-                "TRANSBORDO": "6-8-9-11",
+                "description": "descripción: TRANSBORDO: NO<br>LINEA: 12<br>COD.PARADA: 88<br>SENTIDO: Hacia Avda Europa<br>LATITUD: 36.6906271<br>LONGITUD: -6.1111226<br>TRANSBORDO: NO<br>LINEA: 12.0<br>COD.PARADA: 88.0<br>SENTIDO: Hacia Avda Europa<br>LATITUD: 36.6906271<br>LONGITUD: -6.1111226",
+                "descripción": "TRANSBORDO: NO\nLINEA: 12\nCOD.PARADA: 88\nSENTIDO: Hacia Avda Europa\nLATITUD: 36.6906271\nLONGITUD: -6.1111226",
+                "TRANSBORDO": "NO",
                 "LINEA": "12.0",
                 "COD.PARADA": "88.0",
                 "SENTIDO": "Hacia Avda Europa",
@@ -3179,19 +3208,19 @@
                 ]
             },
             "properties": {
-                "name": "Fdez. Cruzado",
-                "styleUrl": "#icon-1532-0288D1",
-                "styleHash": "31884fd9",
+                "name": "Santa Antonia\n",
+                "styleUrl": "#icon-1532-C2185B",
+                "styleHash": "-63984647",
                 "styleMapHash": {
-                    "normal": "#icon-1532-0288D1-normal",
-                    "highlight": "#icon-1532-0288D1-highlight"
+                    "normal": "#icon-1532-C2185B-normal",
+                    "highlight": "#icon-1532-C2185B-highlight"
                 },
                 "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
-                "description": "descripción: TRANSBORDO: 5<br>LINEA: 12<br>COD.PARADA: 179<br>SENTIDO: Corredera<br>LATITUD: 36.7010103<br>LONGITUD: -6.1025871<br>TRANSBORDO: 5<br>LINEA: 12.0<br>COD.PARADA: 179.0<br>SENTIDO: Corredera<br>LATITUD: 36.7010103<br>LONGITUD: -6.1025871",
-                "descripción": "TRANSBORDO: 5\nLINEA: 12\nCOD.PARADA: 179\nSENTIDO: Corredera\nLATITUD: 36.7010103\nLONGITUD: -6.1025871",
+                "description": "descripción: TRANSBORDO: 5<br>LINEA: 12<br>COD.PARADA: 405<br>SENTIDO: Corredera<br>LATITUD: 36.7010103<br>LONGITUD: -6.1025871<br>TRANSBORDO: 5<br>LINEA: 12.0<br>COD.PARADA: 406.0<br>SENTIDO: Corredera<br>LATITUD: 36.7010103<br>LONGITUD: -6.1025871",
+                "descripción": "TRANSBORDO: 5\nLINEA: 12\nCOD.PARADA: 405\nSENTIDO: Corredera\nLATITUD: 36.7010103\nLONGITUD: -6.1025871",
                 "TRANSBORDO": "5",
                 "LINEA": "12.0",
-                "COD.PARADA": "179.0",
+                "COD.PARADA": "406.0",
                 "SENTIDO": "Corredera",
                 "LATITUD": "36.7010103",
                 "LONGITUD": "-6.1025871"
@@ -3506,8 +3535,8 @@
                     "highlight": "#icon-1532-C2185B-highlight"
                 },
                 "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
-                "description": "descripción: TRANSBORDO: 6-8-9-11<br>LINEA: 12<br>COD.PARADA: 355<br>SENTIDO: Sentido Centro<br>LATITUD: 36.68926<br>LONGITUD: -6.111031<br>TRANSBORDO: 6-8-9-11<br>LINEA: 12.0<br>COD.PARADA: 355.0<br>SENTIDO: Sentido Centro<br>LATITUD: 36.68926<br>LONGITUD: -6.111031",
-                "descripción": "TRANSBORDO: 6-8-9-11\nLINEA: 12\nCOD.PARADA: 355\nSENTIDO: Sentido Centro\nLATITUD: 36.68926\nLONGITUD: -6.111031",
+                "description": "descripción: TRANSBORDO: 6-8-9-11<br>LINEA: 12<br>COD.PARADA: 355<br>SENTIDO: Sentido Centro<br>LATITUD: 36.68926<br>LONGITUD: -6.111031<br>TRANSBORDO: 6-8-9-11<br>LINEA: 12.0<br>COD.PARADA: 355.0<br>SENTIDO: Sentido Centro<br>LATITUD: 36.68926<br>LONGITUD: -6.111031",
+                "descripción": "TRANSBORDO: 6-8-9-11\nLINEA: 12\nCOD.PARADA: 355\nSENTIDO: Sentido Centro\nLATITUD: 36.68926\nLONGITUD: -6.111031",
                 "TRANSBORDO": "6-8-9-11",
                 "LINEA": "12.0",
                 "COD.PARADA": "355.0",
@@ -3535,8 +3564,8 @@
                     "highlight": "#icon-1532-C2185B-highlight"
                 },
                 "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
-                "description": "descripción: TRANSBORDO: 6-8-9-11<br>LINEA: 12<br>COD.PARADA: 439<br>SENTIDO: Sentido Centro<br>LATITUD: 36.6876217<br>LONGITUD: -6.113098<br>TRANSBORDO: 6-8-9-11<br>LINEA: 12.0<br>COD.PARADA: 439.0<br>SENTIDO: Sentido Centro<br>LATITUD: 36.6876217<br>LONGITUD: -6.113098",
-                "descripción": "TRANSBORDO: 6-8-9-11\nLINEA: 12\nCOD.PARADA: 439\nSENTIDO: Sentido Centro\nLATITUD: 36.6876217\nLONGITUD: -6.113098",
+                "description": "descripción: TRANSBORDO: 6-8-9-11<br>LINEA: 12<br>COD.PARADA: 439<br>SENTIDO: Sentido Centro<br>LATITUD: 36.6876217<br>LONGITUD: -6.113098<br>TRANSBORDO: 6-8-9-11<br>LINEA: 12.0<br>COD.PARADA: 439.0<br>SENTIDO: Sentido Centro<br>LATITUD: 36.6876217<br>LONGITUD: -6.113098",
+                "descripción": "TRANSBORDO: 6-8-9-11\nLINEA: 12\nCOD.PARADA: 439\nSENTIDO: Sentido Centro\nLATITUD: 36.6876217\nLONGITUD: -6.113098",
                 "TRANSBORDO": "6-8-9-11",
                 "LINEA": "12.0",
                 "COD.PARADA": "439.0",
@@ -6461,11 +6490,11 @@
             },
             "properties": {
                 "name": "C.Mayores Zona Sur",
-                "styleUrl": "#icon-1532-C2185B",
-                "styleHash": "-63984647",
+                "styleUrl": "#icon-1532-097138",
+                "styleHash": "357d68d9",
                 "styleMapHash": {
-                    "normal": "#icon-1532-C2185B-normal",
-                    "highlight": "#icon-1532-C2185B-highlight"
+                    "normal": "#icon-1532-097138-normal",
+                    "highlight": "#icon-1532-097138-highlight"
                 },
                 "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
                 "description": "descripción: Linea: 13<br>Codigo de parada: 483<br>Direccion: Hacia Alcázar<br>Transbordo: <br>Latitud: 36.669748<br>Longitud: -6.131553<br>Linea: 13.0<br>Codigo de parada: 483.0<br>Direccion: Hacia Alcázar<br>Transbordo: <br>Latitud: 36.669748<br>Longitud: -6.131553",
@@ -6476,6 +6505,93 @@
                 "Transbordo": "",
                 "Latitud": "36.669748",
                 "Longitud": "-6.131553"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -6.1316837,
+                    36.6718948,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "c/ Amistad",
+                "styleUrl": "#icon-1532-C2185B",
+                "styleHash": "-63984647",
+                "styleMapHash": {
+                    "normal": "#icon-1532-C2185B-normal",
+                    "highlight": "#icon-1532-C2185B-highlight"
+                },
+                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
+                "description": "descripción: <br>Linea: 13<br>Codigo de parada: 19.0<br>Direccion: Hacia Alcázar<br>Transbordo: 1<br><br>Latitud: <br>Longitud: ",
+                "descripción": "",
+                "Linea": "13",
+                "Codigo de parada": "19.0",
+                "Direccion": "Hacia Alcázar",
+                "Transbordo": "1\n",
+                "Latitud": "",
+                "Longitud": ""
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -6.1322691,
+                    36.6738482,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "San Telmo\n",
+                "styleUrl": "#icon-1532-C2185B",
+                "styleHash": "-63984647",
+                "styleMapHash": {
+                    "normal": "#icon-1532-C2185B-normal",
+                    "highlight": "#icon-1532-C2185B-highlight"
+                },
+                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
+                "description": "descripción: <br>Linea: 13<br>Codigo de parada: 401.0<br>Direccion: Hacia Alcázar<br>Transbordo: 1<br>Latitud: <br>Longitud: ",
+                "descripción": "",
+                "Linea": "13",
+                "Codigo de parada": "401.0",
+                "Direccion": "Hacia Alcázar",
+                "Transbordo": "1",
+                "Latitud": "",
+                "Longitud": ""
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -6.1326062,
+                    36.6706604,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Cerrofruto",
+                "styleUrl": "#icon-1532-C2185B",
+                "styleHash": "-63984647",
+                "styleMapHash": {
+                    "normal": "#icon-1532-C2185B-normal",
+                    "highlight": "#icon-1532-C2185B-highlight"
+                },
+                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
+                "description": "descripción: <br>Linea: 13<br><br>Codigo de parada: 120.0<br>Direccion: Hacia Alcázar<br>Transbordo: 1-15<br>Latitud: <br>Longitud: ",
+                "descripción": "",
+                "Linea": "13\n",
+                "Codigo de parada": "120.0",
+                "Direccion": "Hacia Alcázar",
+                "Transbordo": "1-15",
+                "Latitud": "",
+                "Longitud": ""
             }
         },
         {
@@ -6985,216 +7101,6 @@
                     [
                         -6.1435382,
                         36.6765991,
-                        0
-                    ],
-                    [
-                        -6.1435513,
-                        36.6765602,
-                        0
-                    ],
-                    [
-                        -6.1435432,
-                        36.676479,
-                        0
-                    ],
-                    [
-                        -6.1434837,
-                        36.6763681,
-                        0
-                    ],
-                    [
-                        -6.143377,
-                        36.6763132,
-                        0
-                    ],
-                    [
-                        -6.143265,
-                        36.676297,
-                        0
-                    ],
-                    [
-                        -6.1431836,
-                        36.6763154,
-                        0
-                    ],
-                    [
-                        -6.1431076,
-                        36.6763511,
-                        0
-                    ],
-                    [
-                        -6.1430737,
-                        36.6763808,
-                        0
-                    ],
-                    [
-                        -6.1429576,
-                        36.6763849,
-                        0
-                    ],
-                    [
-                        -6.1428217,
-                        36.6763719,
-                        0
-                    ],
-                    [
-                        -6.142676,
-                        36.6762771,
-                        0
-                    ],
-                    [
-                        -6.1408959,
-                        36.6749595,
-                        0
-                    ],
-                    [
-                        -6.1400146,
-                        36.674306,
-                        0
-                    ],
-                    [
-                        -6.1390857,
-                        36.6736182,
-                        0
-                    ],
-                    [
-                        -6.138196,
-                        36.674381,
-                        0
-                    ],
-                    [
-                        -6.1379035,
-                        36.6749485,
-                        0
-                    ],
-                    [
-                        -6.1378136,
-                        36.675032,
-                        0
-                    ],
-                    [
-                        -6.1377307,
-                        36.6753368,
-                        0
-                    ],
-                    [
-                        -6.1377353,
-                        36.6753675,
-                        0
-                    ],
-                    [
-                        -6.1377535,
-                        36.6753917,
-                        0
-                    ],
-                    [
-                        -6.137842,
-                        36.6754166,
-                        0
-                    ],
-                    [
-                        -6.1385167,
-                        36.6755492,
-                        0
-                    ],
-                    [
-                        -6.1387565,
-                        36.6756282,
-                        0
-                    ],
-                    [
-                        -6.1389722,
-                        36.6757179,
-                        0
-                    ],
-                    [
-                        -6.139409,
-                        36.675949,
-                        0
-                    ],
-                    [
-                        -6.1400227,
-                        36.6762763,
-                        0
-                    ],
-                    [
-                        -6.1401982,
-                        36.6763689,
-                        0
-                    ],
-                    [
-                        -6.140674,
-                        36.6765498,
-                        0
-                    ],
-                    [
-                        -6.1409305,
-                        36.6766524,
-                        0
-                    ],
-                    [
-                        -6.1411923,
-                        36.6767399,
-                        0
-                    ],
-                    [
-                        -6.1414454,
-                        36.6767815,
-                        0
-                    ],
-                    [
-                        -6.141712,
-                        36.6767929,
-                        0
-                    ],
-                    [
-                        -6.1421139,
-                        36.6768012,
-                        0
-                    ],
-                    [
-                        -6.1423135,
-                        36.6768011,
-                        0
-                    ],
-                    [
-                        -6.142505,
-                        36.676788,
-                        0
-                    ],
-                    [
-                        -6.1429135,
-                        36.6767568,
-                        0
-                    ],
-                    [
-                        -6.1430954,
-                        36.6767471,
-                        0
-                    ],
-                    [
-                        -6.1431339,
-                        36.6767279,
-                        0
-                    ],
-                    [
-                        -6.1431885,
-                        36.6767173,
-                        0
-                    ],
-                    [
-                        -6.143305,
-                        36.676717,
-                        0
-                    ],
-                    [
-                        -6.1434161,
-                        36.6766953,
-                        0
-                    ],
-                    [
-                        -6.1435217,
-                        36.6766371,
                         0
                     ],
                     [
@@ -8753,58 +8659,88 @@
                         0
                     ],
                     [
-                        -6.1301596,
-                        36.6711006,
+                        -6.1301093,
+                        36.6711302,
                         0
                     ],
                     [
-                        -6.1305788,
-                        36.6706619,
+                        -6.1302723,
+                        36.6711055,
                         0
                     ],
                     [
-                        -6.1310006,
-                        36.6702265,
+                        -6.1305238,
+                        36.6712449,
                         0
                     ],
                     [
-                        -6.131581,
-                        36.669616,
+                        -6.1308727,
+                        36.6713757,
                         0
                     ],
                     [
-                        -6.1321501,
-                        36.6690355,
+                        -6.1312241,
+                        36.6714679,
                         0
                     ],
                     [
-                        -6.1321945,
-                        36.6690028,
+                        -6.1315916,
+                        36.6715119,
                         0
                     ],
                     [
-                        -6.1322404,
-                        36.6689949,
+                        -6.131703,
+                        36.6715156,
                         0
                     ],
                     [
-                        -6.1322864,
-                        36.6689934,
+                        -6.1317288,
+                        36.6715743,
                         0
                     ],
                     [
-                        -6.1323658,
-                        36.6690307,
+                        -6.1318546,
+                        36.6737218,
                         0
                     ],
                     [
-                        -6.1324547,
-                        36.6690539,
+                        -6.1319593,
+                        36.6737945,
                         0
                     ],
                     [
-                        -6.1325517,
-                        36.6690583,
+                        -6.132571,
+                        36.6737661,
+                        0
+                    ],
+                    [
+                        -6.1327456,
+                        36.6736974,
+                        0
+                    ],
+                    [
+                        -6.1324708,
+                        36.6693793,
+                        0
+                    ],
+                    [
+                        -6.1324684,
+                        36.6692853,
+                        0
+                    ],
+                    [
+                        -6.1324956,
+                        36.6691999,
+                        0
+                    ],
+                    [
+                        -6.1325241,
+                        36.6691426,
+                        0
+                    ],
+                    [
+                        -6.1325691,
+                        36.669083,
                         0
                     ],
                     [
@@ -8943,7 +8879,7 @@
                         0
                     ],
                     [
-                        -6.1421925,
+                        -6.1421067,
                         36.670119,
                         0
                     ],
@@ -9268,18 +9204,18 @@
                         0
                     ],
                     [
-                        -6.143265,
-                        36.676297,
+                        -6.143263,
+                        36.6762916,
                         0
                     ],
                     [
-                        -6.1431836,
-                        36.6763154,
+                        -6.1431742,
+                        36.6763149,
                         0
                     ],
                     [
-                        -6.1431076,
-                        36.6763511,
+                        -6.1430942,
+                        36.6763586,
                         0
                     ],
                     [
@@ -9300,11 +9236,6 @@
                     [
                         -6.1430896,
                         36.6766682,
-                        0
-                    ],
-                    [
-                        -6.1431885,
-                        36.6767173,
                         0
                     ],
                     [
@@ -9691,8 +9622,8 @@
                     "highlight": "#icon-1532-1A237E-highlight"
                 },
                 "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
-                "description": "descripción: TRANSBORDO: 1-2-3-4-6-10-11<br>LINEA: 14<br>COD.PARADA: 343<br>SENTIDO: Rotonda Nº6<br>LATITUD: 36.6817601<br>LONGITUD: -6.1365717<br>TRANSBORDO: 1-2-3-4-6-10-11<br>LINEA: 14.0<br>COD.PARADA: 343.0<br>SENTIDO: Rotonda Nº6<br>LATITUD: 36.6817601<br>LONGITUD: -6.1365717",
-                "descripción": "TRANSBORDO: 1-2-3-4-6-10-11\nLINEA: 14\nCOD.PARADA: 343\nSENTIDO: Rotonda Nº6\nLATITUD: 36.6817601\nLONGITUD: -6.1365717",
+                "description": "descripción: TRANSBORDO: 1-2-3-4-6-10-11<br>LINEA: 14<br>COD.PARADA: 343<br>SENTIDO: Rotonda Nº6<br>LATITUD: 36.6817601<br>LONGITUD: -6.1365717<br>TRANSBORDO: 1-2-3-4-6-10-11<br>LINEA: 14.0<br>COD.PARADA: 343.0<br>SENTIDO: Rotonda Nº6<br>LATITUD: 36.6817601<br>LONGITUD: -6.1365717",
+                "descripción": "TRANSBORDO: 1-2-3-4-6-10-11\nLINEA: 14\nCOD.PARADA: 343\nSENTIDO: Rotonda Nº6\nLATITUD: 36.6817601\nLONGITUD: -6.1365717",
                 "TRANSBORDO": "1-2-3-4-6-10-11",
                 "LINEA": "14.0",
                 "COD.PARADA": "343.0",
@@ -9923,9 +9854,9 @@
                     "highlight": "#icon-1532-C2185B-highlight"
                 },
                 "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
-                "description": "descripción: TRANSBORDO: 10 desde Parque Atlántico<br>LINEA: 14<br>COD.PARADA: 188<br>SENTIDO: Hacia Parque Atlántico<br>LATITUD: 36.679006<br>LONGITUD: -6.120865<br>TRANSBORDO: 10 desde Parque Atlántico<br>LINEA: 14.0<br>COD.PARADA: 188.0<br>SENTIDO: Hacia Parque Atlántico<br>LATITUD: 36.679006<br>LONGITUD: -6.120865",
-                "descripción": "TRANSBORDO: 10 desde Parque Atlántico\nLINEA: 14\nCOD.PARADA: 188\nSENTIDO: Hacia Parque Atlántico\nLATITUD: 36.679006\nLONGITUD: -6.120865",
-                "TRANSBORDO": "10 desde Parque Atlántico",
+                "description": "descripción: TRANSBORDO: 10 desde Parque Atlántico<br>LINEA: 14<br>COD.PARADA: 188<br>SENTIDO: Hacia Parque Atlántico<br>LATITUD: 36.679006<br>LONGITUD: -6.120865<br>TRANSBORDO: 10 desde Parque Atlántico<br>LINEA: 14.0<br>COD.PARADA: 188.0<br>SENTIDO: Hacia Parque Atlántico<br>LATITUD: 36.679006<br>LONGITUD: -6.120865",
+                "descripción": "TRANSBORDO: 10 desde Parque Atlántico\nLINEA: 14\nCOD.PARADA: 188\nSENTIDO: Hacia Parque Atlántico\nLATITUD: 36.679006\nLONGITUD: -6.120865",
+                "TRANSBORDO": "10 desde Parque Atlántico",
                 "LINEA": "14.0",
                 "COD.PARADA": "188.0",
                 "SENTIDO": "Hacia Parque Atlántico",
@@ -10097,12 +10028,12 @@
                     "highlight": "#icon-1532-C2185B-highlight"
                 },
                 "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
-                "description": "descripción: fake-cod.anterior<br>TRANSBORDO: <br>LINEA: 14<br>COD.PARADA: 454<br>SENTIDO: <br>LATITUD: 36.6764718<br>LONGITUD: -6.1049657",
+                "description": "descripción: fake-cod.anterior<br>TRANSBORDO: NO<br>LINEA: 14<br>COD.PARADA: 508<br>SENTIDO: Hacia La Granja<br>LATITUD: 36.6764718<br>LONGITUD: -6.1049657",
                 "descripción": "fake-cod.anterior",
-                "TRANSBORDO": "",
+                "TRANSBORDO": "NO",
                 "LINEA": "14",
-                "COD.PARADA": "454",
-                "SENTIDO": "",
+                "COD.PARADA": "508",
+                "SENTIDO": "Hacia La Granja",
                 "LATITUD": "36.6764718",
                 "LONGITUD": "-6.1049657"
             }
@@ -10329,12 +10260,12 @@
                     "highlight": "#icon-1532-C2185B-highlight"
                 },
                 "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
-                "description": "descripción: fake-cod.anterior<br>TRANSBORDO: <br>LINEA: <br>COD.PARADA: 250<br>SENTIDO: <br>LATITUD: 36.6766198<br>LONGITUD: -6.1051222",
+                "description": "descripción: fake-cod.anterior<br>TRANSBORDO: NO<br>LINEA: 14<br>COD.PARADA: 509<br>SENTIDO: Hacia Parque Atlántico<br>LATITUD: 36.6766198<br>LONGITUD: -6.1051222",
                 "descripción": "fake-cod.anterior",
-                "TRANSBORDO": "",
-                "LINEA": "",
-                "COD.PARADA": "250",
-                "SENTIDO": "",
+                "TRANSBORDO": "NO",
+                "LINEA": "14",
+                "COD.PARADA": "509",
+                "SENTIDO": "Hacia Parque Atlántico",
                 "LATITUD": "36.6766198",
                 "LONGITUD": "-6.1051222"
             }
@@ -10431,8 +10362,8 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -6.1138311,
-                    36.6772642,
+                    -6.1138271,
+                    36.6773153,
                     0
                 ]
             },
@@ -10445,14 +10376,14 @@
                     "highlight": "#icon-1532-C2185B-highlight"
                 },
                 "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
-                "description": "descripción: TRANSBORDO: <br>LINEA: 14<br>COD.PARADA: 57<br>SENTIDO: Hacia Parque Atlántico<br>LATITUD: 36.677261<br>LONGITUD: -6.113935<br>TRANSBORDO: <br>LINEA: 14.0<br>COD.PARADA: 57.0<br>SENTIDO: Hacia Parque Atlántico<br>LATITUD: 36.677261<br>LONGITUD: -6.113935",
-                "descripción": "TRANSBORDO: \nLINEA: 14\nCOD.PARADA: 57\nSENTIDO: Hacia Parque Atlántico\nLATITUD: 36.677261\nLONGITUD: -6.113935",
+                "description": "descripción: TRANSBORDO: <br>LINEA: 14<br>COD.PARADA: 57<br>SENTIDO: Hacia Parque Atlántico<br>LATITUD: 36.67731<br>LONGITUD: -6.11382<br>TRANSBORDO: <br>LINEA: 14.0<br>COD.PARADA: 57.0<br>SENTIDO: Hacia Parque Atlántico<br>LATITUD: 36.67731<br><br>LONGITUD: -6.11382",
+                "descripción": "TRANSBORDO: \nLINEA: 14\nCOD.PARADA: 57\nSENTIDO: Hacia Parque Atlántico\nLATITUD: 36.67731\nLONGITUD: -6.11382",
                 "TRANSBORDO": "",
                 "LINEA": "14.0",
                 "COD.PARADA": "57.0",
                 "SENTIDO": "Hacia Parque Atlántico",
-                "LATITUD": "36.677261",
-                "LONGITUD": "-6.113935"
+                "LATITUD": "36.67731\n",
+                "LONGITUD": "-6.11382"
             }
         },
         {
@@ -10735,8 +10666,8 @@
                     "highlight": "#icon-1532-C2185B-highlight"
                 },
                 "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
-                "description": "descripción: TRANSBORDO: 1-2-3-4-5-6-7-8-9-10-11-12-15-18<br>LINEA: 14<br>COD.PARADA: <br>SENTIDO: Plaza Esteve<br>LATITUD: 36.6807781<br>LONGITUD: -6.1331251<br>TRANSBORDO: 1-2-3-4-5-6-7-8-9-10-11-12-15-18<br>LINEA: 14<br>COD.PARADA: 130<br>SENTIDO: Plaza Esteve<br>LATITUD: 36.6807781<br>LONGITUD: -6.1331251",
-                "descripción": "TRANSBORDO: 1-2-3-4-5-6-7-8-9-10-11-12-15-18\nLINEA: 14\nCOD.PARADA: \nSENTIDO: Plaza Esteve\nLATITUD: 36.6807781\nLONGITUD: -6.1331251",
+                "description": "descripción: TRANSBORDO: 1-2-3-4-5-6-7-8-9-10-11-12-15-18<br>LINEA: 14<br>COD.PARADA: <br>SENTIDO: Plaza Esteve<br>LATITUD: 36.6807781<br>LONGITUD: -6.1331251<br>TRANSBORDO: 1-2-3-4-5-6-7-8-9-10-11-12-15-18<br>LINEA: 14<br>COD.PARADA: 130<br>SENTIDO: Plaza Esteve<br>LATITUD: 36.6807781<br>LONGITUD: -6.1331251",
+                "descripción": "TRANSBORDO: 1-2-3-4-5-6-7-8-9-10-11-12-15-18\nLINEA: 14\nCOD.PARADA: \nSENTIDO: Plaza Esteve\nLATITUD: 36.6807781\nLONGITUD: -6.1331251",
                 "TRANSBORDO": "1-2-3-4-5-6-7-8-9-10-11-12-15-18",
                 "LINEA": "14",
                 "COD.PARADA": "130",
@@ -10752,2057 +10683,1977 @@
                 "coordinates": [
                     [
                         -6.136653,
-                        36.681744,
+                        36.6817429,
                         0
                     ],
                     [
                         -6.136637,
-                        36.682497,
+                        36.6824959,
                         0
                     ],
                     [
                         -6.136126,
-                        36.683066,
+                        36.6830649,
                         0
                     ],
                     [
                         -6.136026,
-                        36.683093,
+                        36.6830919,
                         0
                     ],
                     [
                         -6.135753,
-                        36.683175,
+                        36.6831739,
                         0
                     ],
                     [
                         -6.135454,
-                        36.683261,
+                        36.6832599,
                         0
                     ],
                     [
                         -6.135398,
-                        36.683277,
+                        36.6832759,
                         0
                     ],
                     [
                         -6.135228,
-                        36.683332,
+                        36.6833309,
                         0
                     ],
                     [
                         -6.135135,
-                        36.683354,
+                        36.6833529,
                         0
                     ],
                     [
                         -6.134676,
-                        36.683456,
+                        36.6834549,
                         0
                     ],
                     [
                         -6.134265,
-                        36.683549,
+                        36.6835479,
                         0
                     ],
                     [
                         -6.134144,
-                        36.683584,
+                        36.6835829,
                         0
                     ],
                     [
                         -6.134078,
-                        36.683604,
+                        36.6836029,
                         0
                     ],
                     [
                         -6.134014,
-                        36.683619,
+                        36.6836179,
                         0
                     ],
                     [
                         -6.133733,
-                        36.683683,
+                        36.6836819,
                         0
                     ],
                     [
                         -6.133351,
-                        36.683755,
+                        36.6837539,
                         0
                     ],
                     [
                         -6.133212,
-                        36.683781,
+                        36.6837799,
                         0
                     ],
                     [
                         -6.133023,
-                        36.683808,
+                        36.6838069,
                         0
                     ],
                     [
                         -6.132684,
-                        36.683855,
+                        36.6838539,
                         0
                     ],
                     [
                         -6.13232,
-                        36.683892,
+                        36.6838909,
                         0
                     ],
                     [
                         -6.132109,
-                        36.683902,
+                        36.6839009,
                         0
                     ],
                     [
                         -6.131926,
-                        36.683914,
+                        36.6839129,
                         0
                     ],
                     [
                         -6.131549,
-                        36.683953,
+                        36.6839519,
                         0
                     ],
                     [
                         -6.13114,
-                        36.683995,
+                        36.6839939,
                         0
                     ],
                     [
                         -6.130756,
-                        36.684038,
+                        36.6840369,
                         0
                     ],
                     [
                         -6.130393,
-                        36.684089,
+                        36.6840879,
                         0
                     ],
                     [
                         -6.130025,
-                        36.684139,
+                        36.6841379,
                         0
                     ],
                     [
                         -6.129699,
-                        36.684184,
+                        36.6841829,
                         0
                     ],
                     [
                         -6.129371,
-                        36.684232,
+                        36.6842309,
                         0
                     ],
                     [
                         -6.128705,
-                        36.684337,
+                        36.6843359,
                         0
                     ],
                     [
                         -6.128431,
-                        36.684364,
+                        36.6843629,
                         0
                     ],
                     [
                         -6.128298,
-                        36.684376,
+                        36.6843749,
                         0
                     ],
                     [
                         -6.128165,
-                        36.684384,
+                        36.6843829,
                         0
                     ],
                     [
                         -6.127448,
-                        36.684467,
+                        36.6844659,
                         0
                     ],
                     [
                         -6.126946,
-                        36.684537,
+                        36.6845359,
                         0
                     ],
                     [
                         -6.126435,
-                        36.684594,
+                        36.6845929,
                         0
                     ],
                     [
                         -6.125915,
-                        36.684653,
+                        36.6846519,
                         0
                     ],
                     [
                         -6.125673,
-                        36.684682,
+                        36.6846809,
                         0
                     ],
                     [
                         -6.125425,
-                        36.684715,
+                        36.6847139,
                         0
                     ],
                     [
                         -6.125261,
-                        36.684735,
+                        36.6847339,
                         0
                     ],
                     [
                         -6.125106,
-                        36.684749,
+                        36.6847479,
                         0
                     ],
                     [
                         -6.124779,
-                        36.684782,
+                        36.6847809,
                         0
                     ],
                     [
                         -6.124335,
-                        36.684837,
+                        36.6848359,
                         0
                     ],
                     [
                         -6.123892,
-                        36.684889,
+                        36.6848879,
                         0
                     ],
                     [
                         -6.123607,
-                        36.684926,
+                        36.6849249,
                         0
                     ],
                     [
                         -6.1234,
-                        36.684949,
+                        36.6849479,
                         0
                     ],
                     [
                         -6.123168,
-                        36.684982,
+                        36.6849809,
                         0
                     ],
                     [
                         -6.122899,
-                        36.685029,
+                        36.6850279,
                         0
                     ],
                     [
                         -6.122798,
-                        36.685007,
+                        36.6850059,
                         0
                     ],
                     [
                         -6.122634,
-                        36.685009,
+                        36.6850079,
                         0
                     ],
                     [
                         -6.122496,
-                        36.685034,
+                        36.6850329,
                         0
                     ],
                     [
                         -6.122274,
-                        36.685079,
+                        36.6850779,
                         0
                     ],
                     [
                         -6.122089,
-                        36.685118,
+                        36.6851169,
                         0
                     ],
                     [
                         -6.121986,
-                        36.68503,
+                        36.6850289,
                         0
                     ],
                     [
                         -6.121803,
-                        36.684996,
+                        36.6849949,
                         0
                     ],
                     [
                         -6.121663,
-                        36.685032,
+                        36.6850309,
                         0
                     ],
                     [
                         -6.121546,
-                        36.685104,
+                        36.6851029,
                         0
                     ],
                     [
                         -6.12149,
-                        36.685117,
+                        36.6851159,
                         0
                     ],
                     [
                         -6.121429,
-                        36.685134,
+                        36.6851329,
                         0
                     ],
                     [
                         -6.121328,
-                        36.685167,
+                        36.6851659,
                         0
                     ],
                     [
                         -6.121175,
-                        36.68517,
+                        36.6851689,
                         0
                     ],
                     [
                         -6.121155,
-                        36.685155,
+                        36.6851539,
                         0
                     ],
                     [
                         -6.12109,
-                        36.685103,
+                        36.6851019,
                         0
                     ],
                     [
                         -6.121056,
-                        36.68506,
+                        36.6850589,
                         0
                     ],
                     [
                         -6.121039,
-                        36.685026,
+                        36.6850249,
                         0
                     ],
                     [
                         -6.121012,
-                        36.684916,
+                        36.6849149,
                         0
                     ],
                     [
                         -6.121002,
-                        36.684864,
+                        36.6848629,
                         0
                     ],
                     [
                         -6.120991,
-                        36.684816,
+                        36.6848149,
                         0
                     ],
                     [
                         -6.120971,
-                        36.684744,
+                        36.6847429,
                         0
                     ],
                     [
                         -6.120925,
-                        36.684598,
+                        36.6845969,
                         0
                     ],
                     [
                         -6.12091,
-                        36.684551,
+                        36.6845499,
                         0
                     ],
                     [
                         -6.120884,
-                        36.684464,
+                        36.6844629,
                         0
                     ],
                     [
                         -6.120772,
-                        36.684054,
+                        36.6840529,
                         0
                     ],
                     [
                         -6.120664,
-                        36.683642,
+                        36.6836409,
                         0
                     ],
                     [
                         -6.120609,
-                        36.683515,
+                        36.6835139,
                         0
                     ],
                     [
                         -6.120598,
-                        36.683412,
+                        36.6834109,
                         0
                     ],
                     [
                         -6.120525,
-                        36.683204,
+                        36.6832029,
                         0
                     ],
                     [
                         -6.120497,
-                        36.683078,
+                        36.6830769,
                         0
                     ],
                     [
                         -6.120464,
-                        36.682962,
+                        36.6829609,
                         0
                     ],
                     [
                         -6.120357,
-                        36.6826,
+                        36.6825989,
                         0
                     ],
                     [
                         -6.120246,
-                        36.682241,
+                        36.6822399,
                         0
                     ],
                     [
                         -6.12025,
-                        36.68214,
+                        36.6821389,
                         0
                     ],
                     [
                         -6.12019,
-                        36.68189,
+                        36.6818889,
                         0
                     ],
                     [
                         -6.120228,
-                        36.681837,
+                        36.6818359,
                         0
                     ],
                     [
                         -6.120256,
-                        36.681774,
+                        36.6817729,
                         0
                     ],
                     [
                         -6.120242,
-                        36.681708,
+                        36.6817069,
                         0
                     ],
                     [
                         -6.120217,
-                        36.681679,
+                        36.6816779,
                         0
                     ],
                     [
-                        -6.120159,
-                        36.681645,
+                        -6.1201778,
+                        36.6816278,
                         0
                     ],
                     [
-                        -6.12016,
-                        36.68158,
+                        -6.1201479,
+                        36.6815617,
                         0
                     ],
                     [
-                        -6.120188,
-                        36.681388,
+                        -6.1201625,
+                        36.6814385,
                         0
                     ],
                     [
-                        -6.120207,
-                        36.681275,
+                        -6.1201748,
+                        36.6813234,
                         0
                     ],
                     [
                         -6.120195,
-                        36.681174,
+                        36.6811729,
                         0
                     ],
                     [
                         -6.120255,
-                        36.680927,
+                        36.6809259,
                         0
                     ],
                     [
-                        -6.12031,
-                        36.680656,
+                        -6.1203046,
+                        36.6806549,
                         0
                     ],
                     [
-                        -6.120444,
-                        36.68026,
+                        -6.120448,
+                        36.6802073,
                         0
                     ],
                     [
-                        -6.12059,
-                        36.679862,
+                        -6.1205685,
+                        36.6798685,
                         0
                     ],
                     [
                         -6.120644,
-                        36.679714,
+                        36.6797129,
                         0
                     ],
                     [
-                        -6.12074,
-                        36.679493,
+                        -6.1207172,
+                        36.6795548,
+                        0
+                    ],
+                    [
+                        -6.1207744,
+                        36.6795115,
                         0
                     ],
                     [
                         -6.120837,
-                        36.679508,
+                        36.6795069,
                         0
                     ],
                     [
                         -6.120939,
-                        36.679495,
+                        36.6794939,
                         0
                     ],
                     [
                         -6.121022,
-                        36.679454,
+                        36.6794529,
                         0
                     ],
                     [
                         -6.121113,
-                        36.679364,
+                        36.6793629,
                         0
                     ],
                     [
                         -6.121137,
-                        36.67928,
+                        36.6792789,
                         0
                     ],
                     [
                         -6.121108,
-                        36.679164,
+                        36.6791629,
                         0
                     ],
                     [
                         -6.121038,
-                        36.679093,
+                        36.6790919,
                         0
                     ],
                     [
                         -6.120984,
-                        36.679062,
+                        36.6790609,
                         0
                     ],
                     [
                         -6.120926,
-                        36.679041,
+                        36.6790399,
                         0
                     ],
                     [
                         -6.120851,
-                        36.679032,
+                        36.6790309,
                         0
                     ],
                     [
                         -6.120788,
-                        36.679035,
+                        36.6790339,
                         0
                     ],
                     [
                         -6.120711,
-                        36.679054,
+                        36.6790529,
                         0
                     ],
                     [
                         -6.120654,
-                        36.679082,
+                        36.6790809,
                         0
                     ],
                     [
-                        -6.120619,
-                        36.679107,
+                        -6.1205809,
+                        36.6790945,
                         0
                     ],
                     [
-                        -6.120597,
-                        36.67913,
-                        0
-                    ],
-                    [
-                        -6.120512,
-                        36.679086,
+                        -6.1205066,
+                        36.6790688,
                         0
                     ],
                     [
                         -6.120444,
-                        36.679051,
+                        36.6790499,
                         0
                     ],
                     [
-                        -6.120399,
-                        36.679026,
+                        -6.120104,
+                        36.6789249,
                         0
                     ],
                     [
-                        -6.120277,
-                        36.678962,
-                        0
-                    ],
-                    [
-                        -6.120156,
-                        36.67891,
-                        0
-                    ],
-                    [
-                        -6.120078,
-                        36.678878,
-                        0
-                    ],
-                    [
-                        -6.119945,
-                        36.678845,
+                        -6.1198015,
+                        36.6788132,
                         0
                     ],
                     [
                         -6.119754,
-                        36.678796,
+                        36.6787949,
                         0
                     ],
                     [
-                        -6.119448,
-                        36.678718,
-                        0
-                    ],
-                    [
-                        -6.119351,
-                        36.678682,
+                        -6.1195808,
+                        36.6787368,
                         0
                     ],
                     [
                         -6.11925,
-                        36.67865,
+                        36.6786489,
                         0
                     ],
                     [
-                        -6.119045,
-                        36.678583,
+                        -6.1190276,
+                        36.6785948,
                         0
                     ],
                     [
                         -6.118634,
-                        36.678444,
+                        36.6784429,
                         0
                     ],
                     [
                         -6.118469,
-                        36.678384,
+                        36.6783829,
                         0
                     ],
                     [
                         -6.118281,
-                        36.678313,
+                        36.6783119,
                         0
                     ],
                     [
                         -6.117931,
-                        36.678181,
+                        36.6781799,
                         0
                     ],
                     [
                         -6.117754,
-                        36.678114,
+                        36.6781129,
                         0
                     ],
                     [
                         -6.117583,
-                        36.67805,
+                        36.6780489,
                         0
                     ],
                     [
                         -6.117242,
-                        36.677922,
+                        36.6779209,
                         0
                     ],
                     [
                         -6.117024,
-                        36.67784,
+                        36.6778389,
                         0
                     ],
                     [
                         -6.116812,
-                        36.67776,
+                        36.6777589,
                         0
                     ],
                     [
                         -6.116382,
-                        36.6776,
+                        36.6775989,
                         0
                     ],
                     [
                         -6.116148,
-                        36.677514,
+                        36.6775129,
                         0
                     ],
                     [
                         -6.116082,
-                        36.677492,
+                        36.6774909,
                         0
                     ],
                     [
                         -6.116039,
-                        36.677481,
+                        36.6774799,
                         0
                     ],
                     [
                         -6.1159,
-                        36.677444,
+                        36.6774429,
                         0
                     ],
                     [
                         -6.115787,
-                        36.677419,
+                        36.6774179,
                         0
                     ],
                     [
                         -6.115689,
-                        36.6774,
+                        36.6773989,
                         0
                     ],
                     [
                         -6.115578,
-                        36.67738,
+                        36.6773789,
                         0
                     ],
                     [
                         -6.115474,
-                        36.677368,
+                        36.6773669,
                         0
                     ],
                     [
-                        -6.115299,
-                        36.677354,
+                        -6.1153077,
+                        36.6773411,
                         0
                     ],
                     [
-                        -6.115053,
-                        36.677332,
-                        0
-                    ],
-                    [
-                        -6.114819,
-                        36.677314,
+                        -6.1150617,
+                        36.6773212,
                         0
                     ],
                     [
                         -6.11457,
-                        36.677293,
+                        36.6772919,
                         0
                     ],
                     [
                         -6.114328,
-                        36.677277,
+                        36.6772759,
                         0
                     ],
                     [
                         -6.113823,
-                        36.677252,
+                        36.6772509,
                         0
                     ],
                     [
                         -6.113581,
-                        36.677243,
+                        36.6772419,
                         0
                     ],
                     [
                         -6.113345,
-                        36.67723,
+                        36.6772289,
                         0
                     ],
                     [
                         -6.113048,
-                        36.677213,
+                        36.6772119,
                         0
                     ],
                     [
                         -6.112763,
-                        36.677194,
+                        36.6771929,
                         0
                     ],
                     [
                         -6.112305,
-                        36.677158,
+                        36.6771569,
                         0
                     ],
                     [
                         -6.11214,
-                        36.677141,
+                        36.6771399,
                         0
                     ],
                     [
                         -6.11197,
-                        36.677116,
+                        36.6771149,
                         0
                     ],
                     [
                         -6.11179,
-                        36.677082,
+                        36.6770809,
                         0
                     ],
                     [
-                        -6.111614,
-                        36.67704,
+                        -6.1116628,
+                        36.6770701,
+                        0
+                    ],
+                    [
+                        -6.1116361,
+                        36.6769926,
                         0
                     ],
                     [
                         -6.111756,
-                        36.676625,
+                        36.6766239,
                         0
                     ],
                     [
                         -6.111823,
-                        36.676422,
+                        36.6764209,
                         0
                     ],
                     [
                         -6.111852,
-                        36.67632,
+                        36.6763189,
                         0
                     ],
                     [
                         -6.111874,
-                        36.676218,
+                        36.6762169,
                         0
                     ],
                     [
                         -6.111873,
-                        36.676088,
+                        36.6760869,
                         0
                     ],
                     [
                         -6.111836,
-                        36.675966,
+                        36.6759649,
                         0
                     ],
                     [
                         -6.111578,
-                        36.675615,
+                        36.6756139,
                         0
                     ],
                     [
                         -6.111333,
-                        36.675282,
+                        36.6752809,
                         0
                     ],
                     [
                         -6.111271,
-                        36.675156,
+                        36.6751549,
                         0
                     ],
                     [
                         -6.111251,
-                        36.675115,
+                        36.6751139,
                         0
                     ],
                     [
                         -6.111205,
-                        36.674981,
+                        36.6749799,
                         0
                     ],
                     [
                         -6.111142,
-                        36.674799,
+                        36.6747979,
                         0
                     ],
                     [
                         -6.111016,
-                        36.674433,
+                        36.6744319,
                         0
                     ],
                     [
                         -6.111021,
-                        36.674397,
+                        36.6743959,
                         0
                     ],
                     [
                         -6.110988,
-                        36.674247,
+                        36.6742459,
                         0
                     ],
                     [
                         -6.111071,
-                        36.674194,
+                        36.6741929,
                         0
                     ],
                     [
                         -6.11111,
-                        36.674058,
+                        36.6740569,
                         0
                     ],
                     [
                         -6.111016,
-                        36.673936,
+                        36.6739349,
                         0
                     ],
                     [
                         -6.110866,
-                        36.673908,
+                        36.6739069,
                         0
                     ],
                     [
                         -6.110671,
-                        36.674017,
+                        36.6740159,
                         0
                     ],
                     [
                         -6.109442,
-                        36.674059,
+                        36.6740579,
                         0
                     ],
                     [
                         -6.109218,
-                        36.674076,
+                        36.6740749,
                         0
                     ],
                     [
                         -6.109025,
-                        36.674119,
+                        36.6741179,
                         0
                     ],
                     [
                         -6.108823,
-                        36.674186,
+                        36.6741849,
                         0
                     ],
                     [
                         -6.106616,
-                        36.675611,
+                        36.6756099,
                         0
                     ],
                     [
                         -6.105834,
-                        36.67611,
+                        36.6761089,
                         0
                     ],
                     [
                         -6.105612,
-                        36.676204,
+                        36.6762029,
                         0
                     ],
                     [
                         -6.105478,
-                        36.676217,
+                        36.6762159,
                         0
                     ],
                     [
                         -6.105393,
-                        36.676288,
+                        36.6762869,
                         0
                     ],
                     [
                         -6.10534,
-                        36.676393,
+                        36.6763919,
                         0
                     ],
                     [
                         -6.104058,
-                        36.67692,
+                        36.6769189,
                         0
                     ],
                     [
                         -6.10252,
-                        36.677584,
+                        36.6775829,
                         0
                     ],
                     [
                         -6.101848,
-                        36.677893,
+                        36.6778919,
                         0
                     ],
                     [
                         -6.101467,
-                        36.678108,
+                        36.6781069,
                         0
                     ],
                     [
                         -6.100985,
-                        36.678439,
+                        36.6784379,
                         0
                     ],
                     [
                         -6.100299,
-                        36.679036,
+                        36.6790349,
                         0
                     ],
                     [
                         -6.100008,
-                        36.679382,
+                        36.6793809,
                         0
                     ],
                     [
                         -6.099556,
-                        36.680065,
+                        36.6800639,
                         0
                     ],
                     [
                         -6.099436,
-                        36.68013,
+                        36.6801289,
                         0
                     ],
                     [
                         -6.099349,
-                        36.680236,
+                        36.6802349,
                         0
                     ],
                     [
                         -6.099398,
-                        36.68036,
+                        36.6803589,
                         0
                     ],
                     [
                         -6.099501,
-                        36.680441,
+                        36.6804399,
                         0
                     ],
                     [
                         -6.099144,
-                        36.68352,
+                        36.6835189,
                         0
                     ],
                     [
                         -6.098962,
-                        36.684988,
+                        36.6849869,
                         0
                     ],
                     [
                         -6.098878,
-                        36.685698,
+                        36.6856969,
                         0
                     ],
                     [
-                        -6.09885,
-                        36.685995,
+                        -6.0988312,
+                        36.6859574,
                         0
                     ],
                     [
                         -6.098725,
-                        36.686043,
+                        36.6860419,
                         0
                     ],
                     [
                         -6.098652,
-                        36.686157,
+                        36.6861559,
                         0
                     ],
                     [
                         -6.098686,
-                        36.686281,
+                        36.6862799,
                         0
                     ],
                     [
                         -6.098782,
-                        36.686351,
+                        36.6863499,
                         0
                     ],
                     [
                         -6.098903,
-                        36.686371,
+                        36.6863699,
                         0
                     ],
                     [
                         -6.099019,
-                        36.686329,
+                        36.6863279,
                         0
                     ],
                     [
                         -6.099094,
-                        36.686258,
+                        36.6862569,
                         0
                     ],
                     [
-                        -6.099115,
-                        36.686161,
+                        -6.0991016,
+                        36.6861137,
                         0
                     ],
                     [
-                        -6.099064,
-                        36.686071,
+                        -6.0990077,
+                        36.6860258,
                         0
                     ],
                     [
-                        -6.098974,
-                        36.686011,
+                        -6.0989646,
+                        36.6859099,
                         0
                     ],
                     [
                         -6.099594,
-                        36.680556,
+                        36.6805549,
                         0
                     ],
                     [
                         -6.099607,
-                        36.680446,
+                        36.6804449,
                         0
                     ],
                     [
                         -6.099722,
-                        36.680407,
+                        36.6804059,
                         0
                     ],
                     [
                         -6.099801,
-                        36.680336,
+                        36.6803349,
                         0
                     ],
                     [
                         -6.099791,
-                        36.680201,
+                        36.6801999,
                         0
                     ],
                     [
                         -6.099735,
-                        36.680128,
+                        36.6801269,
                         0
                     ],
                     [
                         -6.099731,
-                        36.680035,
+                        36.6800339,
                         0
                     ],
                     [
                         -6.099774,
-                        36.679908,
+                        36.6799069,
                         0
                     ],
                     [
                         -6.099839,
-                        36.679782,
+                        36.6797809,
                         0
                     ],
                     [
                         -6.100227,
-                        36.679275,
+                        36.6792739,
                         0
                     ],
                     [
                         -6.100534,
-                        36.678944,
+                        36.6789429,
                         0
                     ],
                     [
                         -6.100879,
-                        36.678628,
+                        36.6786269,
                         0
                     ],
                     [
                         -6.101248,
-                        36.678364,
+                        36.6783629,
                         0
                     ],
                     [
                         -6.101462,
-                        36.678206,
+                        36.6782049,
                         0
                     ],
                     [
                         -6.101714,
-                        36.678054,
+                        36.6780529,
                         0
                     ],
                     [
                         -6.10262,
-                        36.677628,
+                        36.6776269,
                         0
                     ],
                     [
                         -6.10445,
-                        36.676838,
+                        36.6768369,
                         0
                     ],
                     [
                         -6.105152,
-                        36.676531,
+                        36.6765299,
                         0
                     ],
                     [
                         -6.105366,
-                        36.676479,
+                        36.6764779,
                         0
                     ],
                     [
                         -6.105534,
-                        36.676551,
+                        36.6765499,
                         0
                     ],
                     [
                         -6.105676,
-                        36.676548,
+                        36.6765469,
                         0
                     ],
                     [
                         -6.105803,
-                        36.676408,
+                        36.6764069,
                         0
                     ],
                     [
                         -6.105793,
-                        36.676306,
+                        36.6763049,
                         0
                     ],
                     [
                         -6.105899,
-                        36.676158,
+                        36.6761569,
                         0
                     ],
                     [
                         -6.106652,
-                        36.675692,
+                        36.6756909,
                         0
                     ],
                     [
                         -6.10889,
-                        36.674247,
+                        36.6742459,
                         0
                     ],
                     [
                         -6.109221,
-                        36.67416,
+                        36.6741589,
                         0
                     ],
                     [
                         -6.110662,
-                        36.674106,
+                        36.6741049,
                         0
                     ],
                     [
                         -6.110734,
-                        36.674196,
+                        36.6741949,
                         0
                     ],
                     [
                         -6.110822,
-                        36.674251,
+                        36.6742499,
                         0
                     ],
                     [
                         -6.110914,
-                        36.674256,
+                        36.6742549,
                         0
                     ],
                     [
                         -6.110972,
-                        36.674401,
+                        36.6743999,
                         0
                     ],
                     [
                         -6.11101,
-                        36.674443,
+                        36.6744419,
                         0
                     ],
                     [
                         -6.111156,
-                        36.674873,
+                        36.6748719,
                         0
                     ],
                     [
                         -6.111239,
-                        36.675113,
+                        36.6751119,
                         0
                     ],
                     [
                         -6.111327,
-                        36.675291,
+                        36.6752899,
                         0
                     ],
                     [
                         -6.111503,
-                        36.675532,
+                        36.6755309,
                         0
                     ],
                     [
                         -6.111664,
-                        36.675749,
+                        36.6757479,
                         0
                     ],
                     [
                         -6.111824,
-                        36.675968,
+                        36.6759669,
                         0
                     ],
                     [
                         -6.11185,
-                        36.676045,
+                        36.6760439,
                         0
                     ],
                     [
                         -6.111863,
-                        36.676093,
+                        36.6760919,
                         0
                     ],
                     [
                         -6.111862,
-                        36.67622,
+                        36.6762189,
                         0
                     ],
                     [
                         -6.111838,
-                        36.676331,
+                        36.6763299,
                         0
                     ],
                     [
                         -6.111776,
-                        36.676529,
+                        36.6765279,
                         0
                     ],
                     [
                         -6.111688,
-                        36.676789,
+                        36.6767879,
                         0
                     ],
                     [
-                        -6.111599,
-                        36.677046,
+                        -6.1115527,
+                        36.677082,
                         0
                     ],
                     [
-                        -6.111746,
-                        36.677083,
+                        -6.1118251,
+                        36.677133,
                         0
                     ],
                     [
-                        -6.111896,
-                        36.677114,
+                        -6.1120905,
+                        36.6771699,
                         0
                     ],
                     [
-                        -6.112155,
-                        36.677153,
+                        -6.1122898,
+                        36.6771944,
                         0
                     ],
                     [
-                        -6.112266,
-                        36.677165,
+                        -6.1124638,
+                        36.6772085,
                         0
                     ],
                     [
-                        -6.112376,
-                        36.677173,
+                        -6.1127231,
+                        36.6772269,
                         0
                     ],
                     [
-                        -6.112532,
-                        36.677185,
+                        -6.1132637,
+                        36.6772547,
                         0
                     ],
                     [
-                        -6.112664,
-                        36.677196,
+                        -6.1136063,
+                        36.6772748,
                         0
                     ],
                     [
-                        -6.113312,
-                        36.677237,
+                        -6.1140688,
+                        36.6772989,
                         0
                     ],
                     [
-                        -6.113505,
-                        36.677249,
+                        -6.1144411,
+                        36.6773196,
                         0
                     ],
                     [
-                        -6.113694,
-                        36.677257,
+                        -6.1146016,
+                        36.6773306,
                         0
                     ],
                     [
-                        -6.114073,
-                        36.677275,
-                        0
-                    ],
-                    [
-                        -6.114442,
-                        36.677293,
-                        0
-                    ],
-                    [
-                        -6.114577,
-                        36.677304,
-                        0
-                    ],
-                    [
-                        -6.114724,
-                        36.677316,
-                        0
-                    ],
-                    [
-                        -6.115019,
-                        36.67734,
+                        -6.1150036,
+                        36.6773502,
                         0
                     ],
                     [
                         -6.115242,
-                        36.677359,
+                        36.6773579,
                         0
                     ],
                     [
-                        -6.115468,
-                        36.677378,
+                        -6.1154613,
+                        36.6773898,
                         0
                     ],
                     [
-                        -6.115558,
-                        36.677388,
+                        -6.1155741,
+                        36.6774084,
                         0
                     ],
                     [
-                        -6.115646,
-                        36.677403,
+                        -6.1156956,
+                        36.6774277,
                         0
                     ],
                     [
-                        -6.115788,
-                        36.677429,
+                        -6.1158209,
+                        36.6774569,
                         0
                     ],
                     [
-                        -6.115934,
-                        36.677463,
+                        -6.1160024,
+                        36.6775012,
                         0
                     ],
                     [
-                        -6.116072,
-                        36.6775,
+                        -6.1161961,
+                        36.6775581,
                         0
                     ],
                     [
-                        -6.11629,
-                        36.677575,
+                        -6.1164114,
+                        36.6776384,
                         0
                     ],
                     [
-                        -6.116393,
-                        36.677613,
+                        -6.1165131,
+                        36.6776783,
                         0
                     ],
                     [
-                        -6.116493,
-                        36.677652,
+                        -6.1178854,
+                        36.6781966,
                         0
                     ],
                     [
-                        -6.116695,
-                        36.677728,
+                        -6.1182222,
+                        36.6783225,
                         0
                     ],
                     [
-                        -6.11709,
-                        36.677876,
+                        -6.1186157,
+                        36.678479,
                         0
                     ],
                     [
-                        -6.11756,
-                        36.678052,
+                        -6.1190225,
+                        36.6786239,
                         0
                     ],
                     [
-                        -6.117722,
-                        36.678113,
+                        -6.1192071,
+                        36.6786713,
                         0
                     ],
                     [
-                        -6.117923,
-                        36.678188,
+                        -6.1196526,
+                        36.6787894,
                         0
                     ],
                     [
-                        -6.118296,
-                        36.678329,
+                        -6.1200977,
+                        36.6789528,
                         0
                     ],
                     [
-                        -6.118664,
-                        36.678465,
+                        -6.1203629,
+                        36.6790504,
                         0
                     ],
                     [
-                        -6.119052,
-                        36.678596,
+                        -6.1204888,
+                        36.6791036,
                         0
                     ],
                     [
-                        -6.119248,
-                        36.678659,
-                        0
-                    ],
-                    [
-                        -6.119441,
-                        36.678724,
-                        0
-                    ],
-                    [
-                        -6.119778,
-                        36.678812,
-                        0
-                    ],
-                    [
-                        -6.119945,
-                        36.678855,
-                        0
-                    ],
-                    [
-                        -6.120076,
-                        36.678888,
-                        0
-                    ],
-                    [
-                        -6.120152,
-                        36.678919,
-                        0
-                    ],
-                    [
-                        -6.120268,
-                        36.67897,
-                        0
-                    ],
-                    [
-                        -6.120387,
-                        36.679031,
-                        0
-                    ],
-                    [
-                        -6.120588,
-                        36.679138,
-                        0
-                    ],
-                    [
-                        -6.120576,
-                        36.679151,
+                        -6.1205277,
+                        36.6791607,
                         0
                     ],
                     [
                         -6.120534,
-                        36.679277,
+                        36.6792759,
                         0
                     ],
                     [
                         -6.120566,
-                        36.679361,
+                        36.6793599,
                         0
                     ],
                     [
                         -6.120609,
-                        36.679424,
+                        36.6794229,
                         0
                     ],
                     [
-                        -6.120726,
-                        36.679491,
+                        -6.1206595,
+                        36.679465,
                         0
                     ],
                     [
-                        -6.120609,
-                        36.679739,
+                        -6.1206576,
+                        36.6795824,
                         0
                     ],
                     [
-                        -6.120506,
-                        36.680049,
+                        -6.1205902,
+                        36.6797261,
                         0
                     ],
                     [
-                        -6.120414,
-                        36.680289,
+                        -6.1204738,
+                        36.6800339,
                         0
                     ],
                     [
-                        -6.120294,
-                        36.680648,
+                        -6.120359,
+                        36.6803729,
                         0
                     ],
                     [
-                        -6.12018,
-                        36.681173,
+                        -6.1202645,
+                        36.6806405,
+                        0
+                    ],
+                    [
+                        -6.1201652,
+                        36.6811278,
                         0
                     ],
                     [
                         -6.120131,
-                        36.681275,
+                        36.6812739,
                         0
                     ],
                     [
                         -6.120085,
-                        36.68142,
+                        36.6814189,
                         0
                     ],
                     [
                         -6.120026,
-                        36.681662,
+                        36.6816609,
                         0
                     ],
                     [
                         -6.119976,
-                        36.681702,
+                        36.6817009,
                         0
                     ],
                     [
                         -6.119958,
-                        36.68181,
+                        36.6818089,
                         0
                     ],
                     [
                         -6.120017,
-                        36.681865,
+                        36.6818639,
                         0
                     ],
                     [
                         -6.120076,
-                        36.681886,
+                        36.6818849,
                         0
                     ],
                     [
                         -6.120169,
-                        36.682138,
+                        36.6821369,
                         0
                     ],
                     [
                         -6.120224,
-                        36.682233,
+                        36.6822319,
                         0
                     ],
                     [
                         -6.12031,
-                        36.682484,
+                        36.6824829,
                         0
                     ],
                     [
                         -6.120387,
-                        36.682738,
+                        36.6827369,
                         0
                     ],
                     [
                         -6.120461,
-                        36.682994,
+                        36.6829929,
                         0
                     ],
                     [
                         -6.120496,
-                        36.683125,
+                        36.6831239,
                         0
                     ],
                     [
                         -6.120513,
-                        36.6832,
+                        36.6831989,
                         0
                     ],
                     [
                         -6.120534,
-                        36.683269,
+                        36.6832679,
                         0
                     ],
                     [
                         -6.120587,
-                        36.683414,
+                        36.6834129,
                         0
                     ],
                     [
                         -6.120597,
-                        36.683517,
+                        36.6835159,
                         0
                     ],
                     [
                         -6.120653,
-                        36.683646,
+                        36.6836449,
                         0
                     ],
                     [
                         -6.120725,
-                        36.683926,
+                        36.6839249,
                         0
                     ],
                     [
                         -6.120803,
-                        36.68421,
+                        36.6842089,
                         0
                     ],
                     [
                         -6.120845,
-                        36.68436,
+                        36.6843589,
                         0
                     ],
                     [
                         -6.120876,
-                        36.684476,
+                        36.6844749,
                         0
                     ],
                     [
                         -6.120927,
-                        36.684646,
+                        36.6846449,
                         0
                     ],
                     [
                         -6.12098,
-                        36.684815,
+                        36.6848139,
                         0
                     ],
                     [
                         -6.121003,
-                        36.684931,
+                        36.6849299,
                         0
                     ],
                     [
                         -6.121018,
-                        36.684993,
+                        36.6849919,
                         0
                     ],
                     [
                         -6.121039,
-                        36.685052,
+                        36.6850509,
                         0
                     ],
                     [
                         -6.12107,
-                        36.685098,
+                        36.6850969,
                         0
                     ],
                     [
                         -6.121128,
-                        36.685148,
+                        36.6851469,
                         0
                     ],
                     [
                         -6.121171,
-                        36.685177,
+                        36.6851759,
                         0
                     ],
                     [
                         -6.121332,
-                        36.685174,
+                        36.6851729,
                         0
                     ],
                     [
                         -6.121512,
-                        36.685205,
+                        36.6852039,
                         0
                     ],
                     [
                         -6.121516,
-                        36.685318,
+                        36.6853169,
                         0
                     ],
                     [
                         -6.121577,
-                        36.685409,
+                        36.6854079,
                         0
                     ],
                     [
                         -6.121658,
-                        36.685467,
+                        36.6854659,
                         0
                     ],
                     [
                         -6.121784,
-                        36.6855,
+                        36.6854989,
                         0
                     ],
                     [
                         -6.121914,
-                        36.685492,
+                        36.6854909,
                         0
                     ],
                     [
                         -6.122078,
-                        36.68539,
+                        36.6853889,
                         0
                     ],
                     [
                         -6.12212,
-                        36.685316,
+                        36.6853149,
                         0
                     ],
                     [
                         -6.122141,
-                        36.685244,
+                        36.6852429,
                         0
                     ],
                     [
                         -6.122209,
-                        36.685191,
+                        36.6851899,
                         0
                     ],
                     [
                         -6.12237,
-                        36.685134,
+                        36.6851329,
                         0
                     ],
                     [
                         -6.122818,
-                        36.685066,
+                        36.6850649,
                         0
                     ],
                     [
                         -6.122873,
-                        36.685047,
+                        36.6850459,
                         0
                     ],
                     [
                         -6.123099,
-                        36.685003,
+                        36.6850019,
                         0
                     ],
                     [
                         -6.12323,
-                        36.684982,
+                        36.6849809,
                         0
                     ],
                     [
                         -6.123364,
-                        36.684964,
+                        36.6849629,
                         0
                     ],
                     [
                         -6.124619,
-                        36.684812,
+                        36.6848109,
                         0
                     ],
                     [
                         -6.124774,
-                        36.684792,
+                        36.6847909,
                         0
                     ],
                     [
                         -6.12493,
-                        36.684778,
+                        36.6847769,
                         0
                     ],
                     [
                         -6.125244,
-                        36.684747,
+                        36.6847459,
                         0
                     ],
                     [
                         -6.125381,
-                        36.684732,
+                        36.6847309,
                         0
                     ],
                     [
                         -6.125528,
-                        36.684712,
+                        36.6847109,
                         0
                     ],
                     [
                         -6.12579,
-                        36.684678,
+                        36.6846769,
                         0
                     ],
                     [
                         -6.126047,
-                        36.68465,
+                        36.6846489,
                         0
                     ],
                     [
                         -6.126299,
-                        36.684623,
+                        36.6846219,
                         0
                     ],
                     [
                         -6.126613,
-                        36.684584,
+                        36.6845829,
                         0
                     ],
                     [
                         -6.126949,
-                        36.684548,
+                        36.6845469,
                         0
                     ],
                     [
                         -6.127288,
-                        36.684498,
+                        36.6844969,
                         0
                     ],
                     [
                         -6.127646,
-                        36.684453,
+                        36.6844519,
                         0
                     ],
                     [
                         -6.128054,
-                        36.684407,
+                        36.6844059,
                         0
                     ],
                     [
                         -6.128175,
-                        36.684394,
+                        36.6843929,
                         0
                     ],
                     [
                         -6.128299,
-                        36.684387,
+                        36.6843859,
                         0
                     ],
                     [
                         -6.128621,
-                        36.684358,
+                        36.6843569,
                         0
                     ],
                     [
                         -6.128718,
-                        36.684347,
+                        36.6843459,
                         0
                     ],
                     [
                         -6.129255,
-                        36.68426,
+                        36.6842589,
                         0
                     ],
                     [
                         -6.129598,
-                        36.684208,
+                        36.6842069,
                         0
                     ],
                     [
                         -6.129619,
-                        36.684188,
+                        36.6841869,
                         0
                     ],
                     [
                         -6.129697,
-                        36.684036,
+                        36.6840349,
                         0
                     ],
                     [
                         -6.129816,
-                        36.683798,
+                        36.6837969,
                         0
                     ],
                     [
                         -6.129903,
-                        36.683626,
+                        36.6836249,
                         0
                     ],
                     [
                         -6.129987,
-                        36.683488,
+                        36.6834869,
                         0
                     ],
                     [
                         -6.130038,
-                        36.6834,
+                        36.6833989,
                         0
                     ],
                     [
                         -6.130219,
-                        36.68308,
+                        36.6830789,
                         0
                     ],
                     [
                         -6.130286,
-                        36.68282,
+                        36.6828189,
                         0
                     ],
                     [
                         -6.130347,
-                        36.682705,
+                        36.6827039,
                         0
                     ],
                     [
                         -6.13041,
-                        36.682589,
+                        36.6825879,
                         0
                     ],
                     [
                         -6.130499,
-                        36.682453,
+                        36.6824519,
                         0
                     ],
                     [
                         -6.130727,
-                        36.682101,
+                        36.6820999,
                         0
                     ],
                     [
                         -6.13096,
-                        36.68176,
+                        36.6817589,
                         0
                     ],
                     [
                         -6.131079,
-                        36.681583,
+                        36.6815819,
                         0
                     ],
                     [
                         -6.131186,
-                        36.6814,
+                        36.6813989,
                         0
                     ],
                     [
                         -6.131655,
-                        36.68154,
+                        36.6815389,
                         0
                     ],
                     [
                         -6.132006,
-                        36.681649,
+                        36.6816479,
                         0
                     ],
                     [
                         -6.13216,
-                        36.681451,
+                        36.6814499,
                         0
                     ],
                     [
                         -6.132304,
-                        36.681265,
+                        36.6812639,
                         0
                     ],
                     [
                         -6.132618,
-                        36.680853,
+                        36.6808519,
                         0
                     ],
                     [
                         -6.132979,
-                        36.680942,
+                        36.6809409,
                         0
                     ],
                     [
                         -6.133176,
-                        36.68056,
+                        36.6805589,
                         0
                     ],
                     [
                         -6.133945,
-                        36.680707,
+                        36.6807059,
                         0
                     ],
                     [
                         -6.134239,
-                        36.680783,
+                        36.6807819,
                         0
                     ],
                     [
                         -6.134539,
-                        36.680855,
+                        36.6808539,
                         0
                     ],
                     [
                         -6.134891,
-                        36.680887,
+                        36.6808859,
                         0
                     ],
                     [
                         -6.135318,
-                        36.680978,
+                        36.6809769,
                         0
                     ],
                     [
                         -6.135467,
-                        36.681015,
+                        36.6810139,
                         0
                     ],
                     [
                         -6.13604,
-                        36.68116,
+                        36.6811589,
                         0
                     ],
                     [
                         -6.136732,
-                        36.681414,
+                        36.6814129,
                         0
                     ],
                     [
                         -6.136759,
-                        36.681444,
+                        36.6814429,
                         0
                     ],
                     [
                         -6.136653,
-                        36.681744,
+                        36.6817429,
                         0
                     ]
                 ]

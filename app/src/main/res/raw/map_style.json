@@ -41,6 +41,30 @@
     ]
   },
   {
+    "featureType": "poi.place_of_worship",
+    "stylers": [
+      {
+        "visibility": "simplified"
+      }
+    ]
+  },
+  {
+    "featureType": "poi.school",
+    "stylers": [
+      {
+        "visibility": "simplified"
+      }
+    ]
+  },
+  {
+    "featureType": "poi.sports_complex",
+    "stylers": [
+      {
+        "visibility": "simplified"
+      }
+    ]
+  },
+  {
     "featureType": "road",
     "elementType": "labels.icon",
     "stylers": [
@@ -50,10 +74,26 @@
     ]
   },
   {
-    "featureType": "transit",
+    "featureType": "transit.station.airport",
+    "stylers": [
+      {
+        "visibility": "simplified"
+      }
+    ]
+  },
+  {
+    "featureType": "transit.station.bus",
     "stylers": [
       {
         "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "transit.station.rail",
+    "stylers": [
+      {
+        "visibility": "simplified"
       }
     ]
   }

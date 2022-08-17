@@ -49,8 +49,8 @@
                     "highlight": "#icon-1532-C2185B-highlight"
                 },
                 "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
-                "description": "descripción: TRANSBORDO: 1-5-11-12-14<br>LINEA: 6<br>COD. PARADA: 453<br>SENTIDO: La Granja<br>LATITUD: 36.683371<br>LONGITUD: -6.135114<br>TRANSBORDO: 1-5-11-12-14<br>LINEA: 6.0<br>COD. PARADA: 453.0<br>SENTIDO: La Granja<br>LATITUD: 36.683371<br>LONGITUD: -6.135114",
-                "descripción": "TRANSBORDO: 1-5-11-12-14\nLINEA: 6\nCOD. PARADA: 453\nSENTIDO: La Granja\nLATITUD: 36.683371\nLONGITUD: -6.135114",
+                "description": "descripción: TRANSBORDO: 1-5-11-12-14<br>LINEA: 6<br>COD. PARADA: 453<br>SENTIDO: La Granja<br>LATITUD: 36.683371<br>LONGITUD: -6.135114<br>TRANSBORDO: 1-5-11-12-14<br>LINEA: 6.0<br>COD. PARADA: 453.0<br>SENTIDO: La Granja<br>LATITUD: 36.683371<br>LONGITUD: -6.135114",
+                "descripción": "TRANSBORDO: 1-5-11-12-14\nLINEA: 6\nCOD. PARADA: 453\nSENTIDO: La Granja\nLATITUD: 36.683371\nLONGITUD: -6.135114",
                 "TRANSBORDO": "1-5-11-12-14",
                 "LINEA": "6.0",
                 "COD. PARADA": "453.0",
@@ -78,8 +78,8 @@
                     "highlight": "#icon-1532-C2185B-highlight"
                 },
                 "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
-                "description": "descripción: TRANSBORDO: 1-5-11-12-14<br>LINEA: 6<br>COD. PARADA: 30<br>SENTIDO: La Granja<br>LATITUD: 36.684118<br>LONGITUD: -6.130268<br>TRANSBORDO: 1-5-11-12-14<br>LINEA: 6.0<br>COD. PARADA: 30.0<br>SENTIDO: La Granja<br>LATITUD: 36.684118<br>LONGITUD: -6.130268",
-                "descripción": "TRANSBORDO: 1-5-11-12-14\nLINEA: 6\nCOD. PARADA: 30\nSENTIDO: La Granja\nLATITUD: 36.684118\nLONGITUD: -6.130268",
+                "description": "descripción: TRANSBORDO: 1-5-11-12-14<br>LINEA: 6<br>COD. PARADA: 30<br>SENTIDO: La Granja<br>LATITUD: 36.684118<br>LONGITUD: -6.130268<br>TRANSBORDO: 1-5-11-12-14<br>LINEA: 6.0<br>COD. PARADA: 30.0<br>SENTIDO: La Granja<br>LATITUD: 36.684118<br>LONGITUD: -6.130268",
+                "descripción": "TRANSBORDO: 1-5-11-12-14\nLINEA: 6\nCOD. PARADA: 30\nSENTIDO: La Granja\nLATITUD: 36.684118\nLONGITUD: -6.130268",
                 "TRANSBORDO": "1-5-11-12-14",
                 "LINEA": "6.0",
                 "COD. PARADA": "30.0",
@@ -107,8 +107,8 @@
                     "highlight": "#icon-1532-C2185B-highlight"
                 },
                 "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
-                "description": "descripción: TRANSBORDO: 11-12-14<br>LINEA: 6<br>COD. PARADA: 202<br>SENTIDO: La Granja<br>LATITUD: 36.684453<br>LONGITUD: -6.127591<br>TRANSBORDO: 11-12-14<br>LINEA: 6.0<br>COD. PARADA: 202.0<br>SENTIDO: La Granja<br>LATITUD: 36.684453<br>LONGITUD: -6.127591",
-                "descripción": "TRANSBORDO: 11-12-14\nLINEA: 6\nCOD. PARADA: 202\nSENTIDO: La Granja\nLATITUD: 36.684453\nLONGITUD: -6.127591",
+                "description": "descripción: TRANSBORDO: 11-12-14<br>LINEA: 6<br>COD. PARADA: 202<br>SENTIDO: La Granja<br>LATITUD: 36.684453<br>LONGITUD: -6.127591<br>TRANSBORDO: 11-12-14<br>LINEA: 6.0<br>COD. PARADA: 202.0<br>SENTIDO: La Granja<br>LATITUD: 36.684453<br>LONGITUD: -6.127591",
+                "descripción": "TRANSBORDO: 11-12-14\nLINEA: 6\nCOD. PARADA: 202\nSENTIDO: La Granja\nLATITUD: 36.684453\nLONGITUD: -6.127591",
                 "TRANSBORDO": "11-12-14",
                 "LINEA": "6.0",
                 "COD. PARADA": "202.0",
@@ -426,11 +426,11 @@
                     "highlight": "#icon-1532-C2185B-highlight"
                 },
                 "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
-                "description": "descripción: fake-cod.anterior<br>TRANSBORDO: 5-9<br>LINEA: 6<br>COD. PARADA: 416<br>SENTIDO: <br>LATITUD: <br>LONGITUD: ",
-                "descripción": "fake-cod.anterior",
+                "description": "descripción: <br>TRANSBORDO: 5-9<br>LINEA: 6<br>COD. PARADA: 507<br><br>SENTIDO: <br>LATITUD: <br>LONGITUD: ",
+                "descripción": "",
                 "TRANSBORDO": "5-9",
                 "LINEA": "6",
-                "COD. PARADA": "416",
+                "COD. PARADA": "507\n",
                 "SENTIDO": "",
                 "LATITUD": "",
                 "LONGITUD": ""
@@ -2233,8 +2233,8 @@
                     "highlight": "#icon-1532-1A237E-highlight"
                 },
                 "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
-                "description": "descripción: TRANSBORDO: 1-2-3-4-5-6-8-9-10-11-12-14-15-18<br>LINEA: 7<br>COD. PARADA: 339<br>SENTIDO: Estella<br>LATITUD: 36.680586<br>LONGITUD: -6.13356<br>TRANSBORDO: 1-2-3-4-5-6-8-9-10-11-12-14-15-18<br>LINEA: 7.0<br>COD. PARADA: 339.0<br>SENTIDO: Estella<br>LATITUD: 36.680586<br>LONGITUD: -6.13356",
-                "descripción": "TRANSBORDO: 1-2-3-4-5-6-8-9-10-11-12-14-15-18\nLINEA: 7\nCOD. PARADA: 339\nSENTIDO: Estella\nLATITUD: 36.680586\nLONGITUD: -6.13356",
+                "description": "descripción: TRANSBORDO: 1-2-3-4-5-6-8-9-10-11-12-14-15-18<br>LINEA: 7<br>COD. PARADA: 339<br>SENTIDO: Estella<br>LATITUD: 36.680586<br>LONGITUD: -6.13356<br>TRANSBORDO: 1-2-3-4-5-6-8-9-10-11-12-14-15-18<br>LINEA: 7.0<br>COD. PARADA: 339.0<br>SENTIDO: Estella<br>LATITUD: 36.680586<br>LONGITUD: -6.13356",
+                "descripción": "TRANSBORDO: 1-2-3-4-5-6-8-9-10-11-12-14-15-18\nLINEA: 7\nCOD. PARADA: 339\nSENTIDO: Estella\nLATITUD: 36.680586\nLONGITUD: -6.13356",
                 "TRANSBORDO": "1-2-3-4-5-6-8-9-10-11-12-14-15-18",
                 "LINEA": "7.0",
                 "COD. PARADA": "339.0",
@@ -4749,8 +4749,8 @@
                     "highlight": "#icon-1532-1A237E-highlight"
                 },
                 "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
-                "description": "descripción: TRANSBORDO: 1-2-3-4-5-6-7-9-10-11-12-14-15-18<br>LINEA: 8 CIRCULAR I<br>COD. PARADA: 338<br>SENTIDO: Este-Norte-Oeste-Sur<br>LATITUD: 36.680623<br>LONGITUD: -6.133649<br>TRANSBORDO: 1-2-3-4-5-6-7-9-10-11-12-14-15-18<br>LINEA: 8 CIRCULAR I<br>COD. PARADA: 338<br>SENTIDO: Este-Norte-Oeste-Sur<br>LATITUD: 36.680623<br>LONGITUD: -6.133649",
-                "descripción": "TRANSBORDO: 1-2-3-4-5-6-7-9-10-11-12-14-15-18\nLINEA: 8 CIRCULAR I\nCOD. PARADA: 338\nSENTIDO: Este-Norte-Oeste-Sur\nLATITUD: 36.680623\nLONGITUD: -6.133649",
+                "description": "descripción: TRANSBORDO: 1-2-3-4-5-6-7-9-10-11-12-14-15-18<br>LINEA: 8 CIRCULAR I<br>COD. PARADA: 338<br>SENTIDO: Este-Norte-Oeste-Sur<br>LATITUD: 36.680623<br>LONGITUD: -6.133649<br>TRANSBORDO: 1-2-3-4-5-6-7-9-10-11-12-14-15-18<br>LINEA: 8 CIRCULAR I<br>COD. PARADA: 338<br>SENTIDO: Este-Norte-Oeste-Sur<br>LATITUD: 36.680623<br>LONGITUD: -6.133649",
+                "descripción": "TRANSBORDO: 1-2-3-4-5-6-7-9-10-11-12-14-15-18\nLINEA: 8 CIRCULAR I\nCOD. PARADA: 338\nSENTIDO: Este-Norte-Oeste-Sur\nLATITUD: 36.680623\nLONGITUD: -6.133649",
                 "TRANSBORDO": "1-2-3-4-5-6-7-9-10-11-12-14-15-18",
                 "LINEA": "8 CIRCULAR I",
                 "COD. PARADA": "338",
@@ -4793,8 +4793,8 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -6.129741,
-                    36.679155,
+                    -6.1294916,
+                    36.6791507,
                     0
                 ]
             },
@@ -4807,8 +4807,8 @@
                     "highlight": "#icon-1532-C2185B-highlight"
                 },
                 "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
-                "description": "descripción: TRANSBORDO: 7-9-10<br>LINEA: 8<br>COD. PARADA: 353<br>SENTIDO: Este-Norte-Oeste-Sur<br>LATITUD: 36.679155<br>LONGITUD: -6.129741<br>TRANSBORDO: 7-9-10<br>LINEA: 8.0<br>COD. PARADA: 353.0<br>SENTIDO: Este-Norte-Oeste-Sur<br>LATITUD: 36.679155<br>LONGITUD: -6.129741",
-                "descripción": "TRANSBORDO: 7-9-10\nLINEA: 8\nCOD. PARADA: 353\nSENTIDO: Este-Norte-Oeste-Sur\nLATITUD: 36.679155\nLONGITUD: -6.129741",
+                "description": "descripción: TRANSBORDO: 7-9-10<br>LINEA: 8<br>COD. PARADA: 353<br>SENTIDO: Este-Norte-Oeste-Sur<br>LATITUD: 36.679155<br>LONGITUD: -6.129741<br>TRANSBORDO: 7-9-10<br>LINEA: 8.0<br>COD. PARADA: 353.0<br>SENTIDO: Este-Norte-Oeste-Sur<br>LATITUD: 36.679155<br>LONGITUD: -6.129741",
+                "descripción": "TRANSBORDO: 7-9-10\nLINEA: 8\nCOD. PARADA: 353\nSENTIDO: Este-Norte-Oeste-Sur\nLATITUD: 36.679155\nLONGITUD: -6.129741",
                 "TRANSBORDO": "7-9-10",
                 "LINEA": "8.0",
                 "COD. PARADA": "353.0",
@@ -5228,8 +5228,8 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -6.101064,
-                    36.697449,
+                    -6.1009849,
+                    36.6974866,
                     0
                 ]
             },
@@ -5445,9 +5445,9 @@
                     "highlight": "#icon-1532-C2185B-highlight"
                 },
                 "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
-                "description": "descripción: TRANSBORDO: NO<br>LINEA: 8<br>COD. PARADA: 412<br>SENTIDO: Hacia Alvaro Domecq<br>LATITUD: 36.696382<br>LONGITUD: -6.121927<br>TRANSBORDO: 5-9-15<br>LINEA: 8.0<br>COD. PARADA: 412.0<br>SENTIDO: Hacia Alvaro Domecq<br>LATITUD: 36.696382<br>LONGITUD: -6.121927",
-                "descripción": "TRANSBORDO: NO\nLINEA: 8\nCOD. PARADA: 412\nSENTIDO: Hacia Alvaro Domecq\nLATITUD: 36.696382\nLONGITUD: -6.121927",
-                "TRANSBORDO": "5-9-15",
+                "description": "descripción: TRANSBORDO: 5-15<br>LINEA: 8<br>COD. PARADA: 412<br>SENTIDO: Hacia Alvaro Domecq<br>LATITUD: 36.696382<br>LONGITUD: -6.121927<br>TRANSBORDO: 5-15<br>LINEA: 8.0<br>COD. PARADA: 412.0<br>SENTIDO: Hacia Alvaro Domecq<br>LATITUD: 36.696382<br>LONGITUD: -6.121927",
+                "descripción": "TRANSBORDO: 5-15\nLINEA: 8\nCOD. PARADA: 412\nSENTIDO: Hacia Alvaro Domecq\nLATITUD: 36.696382\nLONGITUD: -6.121927",
+                "TRANSBORDO": "5-15",
                 "LINEA": "8.0",
                 "COD. PARADA": "412.0",
                 "SENTIDO": "Hacia Alvaro Domecq",
@@ -5547,8 +5547,8 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -6.120473,
-                    36.706697,
+                    -6.114198,
+                    36.7037746,
                     0
                 ]
             },
@@ -5561,14 +5561,14 @@
                     "highlight": "#icon-1532-C2185B-highlight"
                 },
                 "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
-                "description": "descripción: TRANSBORDO: 15<br>LINEA: 8<br>COD. PARADA: 209<br>SENTIDO: Hacia Cash Dian<br>LATITUD: 36.706697<br>LONGITUD: -6.120473<br>TRANSBORDO: 9-15-16<br>LINEA: 8.0<br>COD. PARADA: 209.0<br>SENTIDO: Hacia Cash Dian<br>LATITUD: 36.706697<br>LONGITUD: -6.120473",
-                "descripción": "TRANSBORDO: 15\nLINEA: 8\nCOD. PARADA: 209\nSENTIDO: Hacia Cash Dian\nLATITUD: 36.706697\nLONGITUD: -6.120473",
+                "description": "descripción: TRANSBORDO: 15<br>LINEA: 8<br>COD. PARADA: 209<br>SENTIDO: Hacia Cash Dian<br>LATITUD: 36.70377<br>LONGITUD: -6.11419<br>TRANSBORDO: 9-15-16<br>LINEA: 8.0<br>COD. PARADA: 209.0<br>SENTIDO: Hacia Cash Dian<br>LATITUD: 36.70377<br><br>LONGITUD: -6.11419",
+                "descripción": "TRANSBORDO: 15\nLINEA: 8\nCOD. PARADA: 209\nSENTIDO: Hacia Cash Dian\nLATITUD: 36.70377\nLONGITUD: -6.11419",
                 "TRANSBORDO": "9-15-16",
                 "LINEA": "8.0",
                 "COD. PARADA": "209.0",
                 "SENTIDO": "Hacia Cash Dian",
-                "LATITUD": "36.706697",
-                "LONGITUD": "-6.120473"
+                "LATITUD": "36.70377\n",
+                "LONGITUD": "-6.11419"
             }
         },
         {
@@ -6069,8 +6069,8 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -6.145129,
-                    36.698137,
+                    -6.1444745,
+                    36.6968552,
                     0
                 ]
             },
@@ -6156,13 +6156,13 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -6.149572,
-                    36.6931038,
+                    -6.1493024,
+                    36.6932361,
                     0
                 ]
             },
             "properties": {
-                "name": "Calvario",
+                "name": "Tablao",
                 "styleUrl": "#icon-1532-C2185B",
                 "styleHash": "-63984647",
                 "styleMapHash": {
@@ -6170,12 +6170,12 @@
                     "highlight": "#icon-1532-C2185B-highlight"
                 },
                 "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
-                "description": "descripción: TRANSBORDO: 18<br>LINEA: 8<br>COD. PARADA: 91<br>SENTIDO: Bajando<br>LATITUD: 36.692878<br>LONGITUD: -6.149867<br>TRANSBORDO: 9-18<br>LINEA: 8.0<br>COD. PARADA: 91.0<br>SENTIDO: Bajando<br>LATITUD: 36.692878<br>LONGITUD: -6.149867",
-                "descripción": "TRANSBORDO: 18\nLINEA: 8\nCOD. PARADA: 91\nSENTIDO: Bajando\nLATITUD: 36.692878\nLONGITUD: -6.149867",
-                "TRANSBORDO": "9-18",
+                "description": "descripción: TRANSBORDO: NO<br>LINEA: 8<br>COD. PARADA: 510<br>SENTIDO: Hacia Area Sur<br>LATITUD: 36.692878<br>LONGITUD: -6.149867<br>TRANSBORDO: 9<br>LINEA: 8.0<br>COD. PARADA: 510.0<br>SENTIDO: Hacia Area Sur<br><br>LATITUD: 36.692878<br>LONGITUD: -6.149867",
+                "descripción": "TRANSBORDO: NO\nLINEA: 8\nCOD. PARADA: 510\nSENTIDO: Hacia Area Sur\nLATITUD: 36.692878\nLONGITUD: -6.149867",
+                "TRANSBORDO": "9",
                 "LINEA": "8.0",
-                "COD. PARADA": "91.0",
-                "SENTIDO": "Bajando",
+                "COD. PARADA": "510.0",
+                "SENTIDO": "Hacia Area Sur\n",
                 "LATITUD": "36.692878",
                 "LONGITUD": "-6.149867"
             }
@@ -6286,12 +6286,12 @@
                     "highlight": "#icon-1532-C2185B-highlight"
                 },
                 "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
-                "description": "descripción: <br>TRANSBORDO: 9-18<br>LINEA: 8<br>COD. PARADA: 6<br>SENTIDO: <br>LATITUD: <br>LONGITUD: ",
+                "description": "descripción: <br>TRANSBORDO: 18<br>LINEA: 8<br>COD. PARADA: 6<br>SENTIDO: Antes de la salida de Luz Shopping<br><br>LATITUD: <br>LONGITUD: ",
                 "descripción": "",
-                "TRANSBORDO": "9-18",
+                "TRANSBORDO": "18",
                 "LINEA": "8",
                 "COD. PARADA": "6",
-                "SENTIDO": "",
+                "SENTIDO": "Antes de la salida de Luz Shopping\n",
                 "LATITUD": "",
                 "LONGITUD": ""
             }
@@ -6307,7 +6307,7 @@
                 ]
             },
             "properties": {
-                "name": "Area Sur 2",
+                "name": "Area Sur 3 Primark\n",
                 "styleUrl": "#icon-1532-C2185B",
                 "styleHash": "-63984647",
                 "styleMapHash": {
@@ -6315,12 +6315,12 @@
                     "highlight": "#icon-1532-C2185B-highlight"
                 },
                 "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
-                "description": "descripción: TRANSBORDO: NO<br>LINEA: 8<br>COD. PARADA: 33<br>SENTIDO: Hacia Area Sur 3<br>LATITUD: 36.69265<br>LONGITUD: -6.156356<br>TRANSBORDO: 9-18<br>LINEA: 8.0<br>COD. PARADA: 33.0<br>SENTIDO: Hacia Area Sur 3<br>LATITUD: 36.69265<br>LONGITUD: -6.156356",
-                "descripción": "TRANSBORDO: NO\nLINEA: 8\nCOD. PARADA: 33\nSENTIDO: Hacia Area Sur 3\nLATITUD: 36.69265\nLONGITUD: -6.156356",
+                "description": "descripción: TRANSBORDO: NO<br>LINEA: 8<br>COD. PARADA: 35<br>SENTIDO: Saliendo de Area Sur LATITUD: 36.69265<br>LONGITUD: -6.156356<br>TRANSBORDO: 9-18<br>LINEA: 8.0<br>COD. PARADA: 35.0<br>SENTIDO: Saliendo de Area Sur<br>LATITUD: 36.69265<br>LONGITUD: -6.156356",
+                "descripción": "TRANSBORDO: NO\nLINEA: 8\nCOD. PARADA: 35\nSENTIDO: Saliendo de Area Sur LATITUD: 36.69265\nLONGITUD: -6.156356",
                 "TRANSBORDO": "9-18",
                 "LINEA": "8.0",
-                "COD. PARADA": "33.0",
-                "SENTIDO": "Hacia Area Sur 3",
+                "COD. PARADA": "35.0",
+                "SENTIDO": "Saliendo de Area Sur",
                 "LATITUD": "36.69265",
                 "LONGITUD": "-6.156356"
             }
@@ -6366,11 +6366,11 @@
             },
             "properties": {
                 "name": "Zoilo Ruiz Mateos",
-                "styleUrl": "#icon-1532-C2185B",
-                "styleHash": "-63984647",
+                "styleUrl": "#icon-1532-097138",
+                "styleHash": "357d68d9",
                 "styleMapHash": {
-                    "normal": "#icon-1532-C2185B-normal",
-                    "highlight": "#icon-1532-C2185B-highlight"
+                    "normal": "#icon-1532-097138-normal",
+                    "highlight": "#icon-1532-097138-highlight"
                 },
                 "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
                 "description": "descripción: TRANSBORDO: NO<br>LINEA: 8<br>COD. PARADA: 459<br>SENTIDO: Hacia Puerta de Rota<br>LATITUD: 36.688152<br>LONGITUD: -6.149054<br>TRANSBORDO: NO<br>LINEA: 8.0<br>COD. PARADA: 459.0<br>SENTIDO: Hacia Puerta de Rota<br>LATITUD: 36.688152<br>LONGITUD: -6.149054",
@@ -6388,8 +6388,8 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -6.148507,
-                    36.686534,
+                    -6.1482388,
+                    36.6862458,
                     0
                 ]
             },
@@ -6424,11 +6424,11 @@
             },
             "properties": {
                 "name": "Luis Vives",
-                "styleUrl": "#icon-1532-C2185B",
-                "styleHash": "-63984647",
+                "styleUrl": "#icon-1532-097138",
+                "styleHash": "357d68d9",
                 "styleMapHash": {
-                    "normal": "#icon-1532-C2185B-normal",
-                    "highlight": "#icon-1532-C2185B-highlight"
+                    "normal": "#icon-1532-097138-normal",
+                    "highlight": "#icon-1532-097138-highlight"
                 },
                 "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
                 "description": "descripción: TRANSBORDO: 2<br>LINEA: 8<br>COD. PARADA: 274<br>SENTIDO: Hacia San Agustín<br>LATITUD: 36.6856969<br>LONGITUD: -6.1472515<br>TRANSBORDO: 2<br>LINEA: 8.0<br>COD. PARADA: 274.0<br>SENTIDO: Hacia San Agustín<br>LATITUD: 36.6856969<br>LONGITUD: -6.1472515",
@@ -6446,8 +6446,8 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -6.146774,
-                    36.684346,
+                    -6.1468571,
+                    36.6845084,
                     0
                 ]
             },
@@ -6475,8 +6475,8 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -6.146247,
-                    36.682702,
+                    -6.1460861,
+                    36.6826762,
                     0
                 ]
             },
@@ -6997,8 +6997,8 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -6.130882,
-                    36.671314,
+                    -6.1322499,
+                    36.6715593,
                     0
                 ]
             },
@@ -7090,7 +7090,7 @@
                 ]
             },
             "properties": {
-                "name": "Madre de Dios",
+                "name": "c/Manuel Moneo\n",
                 "styleUrl": "#icon-1532-C2185B",
                 "styleHash": "-63984647",
                 "styleMapHash": {
@@ -7098,12 +7098,12 @@
                     "highlight": "#icon-1532-C2185B-highlight"
                 },
                 "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
-                "description": "descripción: TRANSBORDO: 15<br>LINEA: 8<br>COD. PARADA: 281<br>SENTIDO: De San Telmo a Plaza M. Dios<br>LATITUD: 36.677797<br>LONGITUD: -6.130528<br>TRANSBORDO: 15<br>LINEA: 8.0<br>COD. PARADA: 281.0<br>SENTIDO: De San Telmo a Plaza M. Dios<br>LATITUD: 36.677797<br>LONGITUD: -6.130528",
-                "descripción": "TRANSBORDO: 15\nLINEA: 8\nCOD. PARADA: 281\nSENTIDO: De San Telmo a Plaza M. Dios\nLATITUD: 36.677797\nLONGITUD: -6.130528",
-                "TRANSBORDO": "15",
+                "description": "descripción: TRANSBORDO: 1-15<br>LINEA: 8<br>COD. PARADA: 277<br>SENTIDO: hacia Centro<br>LATITUD: 36.677797<br>LONGITUD: -6.130528<br>TRANSBORDO: 1-15<br>LINEA: 8.0<br>COD. PARADA: 277.0<br>SENTIDO: hacia Centro<br><br>LATITUD: 36.677797<br>LONGITUD: -6.130528",
+                "descripción": "TRANSBORDO: 1-15\nLINEA: 8\nCOD. PARADA: 277\nSENTIDO: hacia Centro\nLATITUD: 36.677797\nLONGITUD: -6.130528",
+                "TRANSBORDO": "1-15",
                 "LINEA": "8.0",
-                "COD. PARADA": "281.0",
-                "SENTIDO": "De San Telmo a Plaza M. Dios",
+                "COD. PARADA": "277.0",
+                "SENTIDO": "hacia Centro\n",
                 "LATITUD": "36.677797",
                 "LONGITUD": "-6.130528"
             }
@@ -9478,13 +9478,13 @@
                         0
                     ],
                     [
-                        -6.148363,
-                        36.693714,
+                        -6.1483791,
+                        36.6936721,
                         0
                     ],
                     [
-                        -6.148428,
-                        36.693743,
+                        -6.148436,
+                        36.6936914,
                         0
                     ],
                     [
@@ -9508,53 +9508,53 @@
                         0
                     ],
                     [
-                        -6.149503,
-                        36.693033,
+                        -6.149452,
+                        36.6930696,
                         0
                     ],
                     [
-                        -6.14959,
-                        36.693015,
+                        -6.1496249,
+                        36.6930247,
                         0
                     ],
                     [
-                        -6.14979,
-                        36.693015,
+                        -6.1497685,
+                        36.693058,
                         0
                     ],
                     [
-                        -6.149879,
-                        36.693032,
+                        -6.1498513,
+                        36.693109,
                         0
                     ],
                     [
-                        -6.149894,
-                        36.693128,
+                        -6.1499367,
+                        36.693161,
                         0
                     ],
                     [
-                        -6.149925,
-                        36.693166,
+                        -6.1500254,
+                        36.6932398,
                         0
                     ],
                     [
-                        -6.149974,
-                        36.693198,
+                        -6.1500645,
+                        36.6932918,
                         0
                     ],
                     [
-                        -6.150093,
-                        36.693228,
+                        -6.1500759,
+                        36.6933453,
                         0
                     ],
                     [
-                        -6.15009,
-                        36.693305,
+                        -6.1500957,
+                        36.6933882,
                         0
                     ],
                     [
-                        -6.150109,
-                        36.693395,
+                        -6.1501305,
+                        36.6934552,
                         0
                     ],
                     [
@@ -10288,13 +10288,13 @@
                         0
                     ],
                     [
-                        -6.146538,
-                        36.683069,
+                        -6.1465903,
+                        36.6830744,
                         0
                     ],
                     [
-                        -6.146633,
-                        36.683001,
+                        -6.1465847,
+                        36.6829806,
                         0
                     ],
                     [
@@ -11881,8 +11881,8 @@
                     "highlight": "#icon-1532-1A237E-highlight"
                 },
                 "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
-                "description": "descripción: TRANSBORDO: 1-2-3-4-5-6-7-8-10-11-12-14-15-18<br>LINEA: 9 CIRCULAR II<br>COD. PARADA: 338<br>SENTIDO: Sur-Oeste-Norte-Este<br>LATITUD: 36.680623<br>LONGITUD: -6.133649<br>TRANSBORDO: 1-2-3-4-5-6-7-8-10-11-12-14-15-18<br>LINEA: 9 CIRCULAR II<br>COD. PARADA: 338<br>SENTIDO: Sur-Oeste-Norte-Este<br>LATITUD: 36.680623<br>LONGITUD: -6.133649",
-                "descripción": "TRANSBORDO: 1-2-3-4-5-6-7-8-10-11-12-14-15-18\nLINEA: 9 CIRCULAR II\nCOD. PARADA: 338\nSENTIDO: Sur-Oeste-Norte-Este\nLATITUD: 36.680623\nLONGITUD: -6.133649",
+                "description": "descripción: TRANSBORDO: 1-2-3-4-5-6-7-8-10-11-12-14-15-18<br>LINEA: 9 CIRCULAR II<br>COD. PARADA: 338<br>SENTIDO: Sur-Oeste-Norte-Este<br>LATITUD: 36.680623<br>LONGITUD: -6.133649<br>TRANSBORDO: 1-2-3-4-5-6-7-8-10-11-12-14-15-18<br>LINEA: 9 CIRCULAR II<br>COD. PARADA: 338<br>SENTIDO: Sur-Oeste-Norte-Este<br>LATITUD: 36.680623<br>LONGITUD: -6.133649",
+                "descripción": "TRANSBORDO: 1-2-3-4-5-6-7-8-10-11-12-14-15-18\nLINEA: 9 CIRCULAR II\nCOD. PARADA: 338\nSENTIDO: Sur-Oeste-Norte-Este\nLATITUD: 36.680623\nLONGITUD: -6.133649",
                 "TRANSBORDO": "1-2-3-4-5-6-7-8-10-11-12-14-15-18",
                 "LINEA": "9 CIRCULAR II",
                 "COD. PARADA": "338",
@@ -11925,8 +11925,8 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -6.129741,
-                    36.679155,
+                    -6.1294594,
+                    36.6791894,
                     0
                 ]
             },
@@ -12244,8 +12244,8 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -6.130882,
-                    36.671314,
+                    -6.1322499,
+                    36.671549,
                     0
                 ]
             },
@@ -12650,8 +12650,8 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -6.146247,
-                    36.682702,
+                    -6.1464381,
+                    36.6832258,
                     0
                 ]
             },
@@ -12679,8 +12679,8 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -6.146966,
-                    36.684754,
+                    -6.1466113,
+                    36.6842776,
                     0
                 ]
             },
@@ -12715,11 +12715,11 @@
             },
             "properties": {
                 "name": "Luis Vives",
-                "styleUrl": "#icon-1532-C2185B",
-                "styleHash": "-63984647",
+                "styleUrl": "#icon-1532-097138",
+                "styleHash": "357d68d9",
                 "styleMapHash": {
-                    "normal": "#icon-1532-C2185B-normal",
-                    "highlight": "#icon-1532-C2185B-highlight"
+                    "normal": "#icon-1532-097138-normal",
+                    "highlight": "#icon-1532-097138-highlight"
                 },
                 "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
                 "description": "descripción: TRANSBORDO: 2<br>LINEA: 9<br>COD. PARADA: 275<br>SENTIDO: Hacia Area Sur<br>LATITUD: 36.6856668<br>LONGITUD: -6.1472837<br>TRANSBORDO: 2<br>LINEA: 9.0<br>COD. PARADA: 275.0<br>SENTIDO: Hacia Area Sur<br>LATITUD: 36.6856668<br>LONGITUD: -6.1472837",
@@ -12737,8 +12737,8 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -6.147654,
-                    36.686021,
+                    -6.1483299,
+                    36.6870405,
                     0
                 ]
             },
@@ -12773,11 +12773,11 @@
             },
             "properties": {
                 "name": "Zoilo Ruiz Mateos",
-                "styleUrl": "#icon-1532-C2185B",
-                "styleHash": "-63984647",
+                "styleUrl": "#icon-1532-097138",
+                "styleHash": "357d68d9",
                 "styleMapHash": {
-                    "normal": "#icon-1532-C2185B-normal",
-                    "highlight": "#icon-1532-C2185B-highlight"
+                    "normal": "#icon-1532-097138-normal",
+                    "highlight": "#icon-1532-097138-highlight"
                 },
                 "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
                 "description": "descripción: TRANSBORDO: <br>LINEA: 9<br>COD. PARADA: 460<br>SENTIDO: Hacia El Zoo<br>LATITUD: 36.688365<br>LONGITUD: -6.149146<br>TRANSBORDO: <br>LINEA: 9.0<br>COD. PARADA: 460.0<br>SENTIDO: Hacia El Zoo<br>LATITUD: 36.688365<br>LONGITUD: -6.149146",
@@ -12830,7 +12830,7 @@
                 ]
             },
             "properties": {
-                "name": "Área Sur 2",
+                "name": "Área Sur 3 Primark\n",
                 "styleUrl": "#icon-1532-C2185B",
                 "styleHash": "-63984647",
                 "styleMapHash": {
@@ -12838,12 +12838,12 @@
                     "highlight": "#icon-1532-C2185B-highlight"
                 },
                 "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
-                "description": "descripción: TRANSBORDO: 18 <br>LINEA: 9<br>COD. PARADA: 34<br>SENTIDO: Dirección Area Sur<br>LATITUD: 36.692093<br>LONGITUD: -6.156533<br>TRANSBORDO: 8-18<br>LINEA: 9.0<br>COD. PARADA: 34.0<br>SENTIDO: Dirección Area Sur<br>LATITUD: 36.692093<br>LONGITUD: -6.156533",
-                "descripción": "TRANSBORDO: 18 \nLINEA: 9\nCOD. PARADA: 34\nSENTIDO: Dirección Area Sur\nLATITUD: 36.692093\nLONGITUD: -6.156533",
+                "description": "descripción: TRANSBORDO: 18 <br>LINEA: 9<br>COD. PARADA: 36<br>SENTIDO: Entrando en Area Sur<br>LATITUD: 36.692093<br>LONGITUD: -6.156533<br>TRANSBORDO: 8-18<br>LINEA: 9.0<br>COD. PARADA: 36.0<br>SENTIDO: Entrando en Area Sur<br>LATITUD: 36.692093<br>LONGITUD: -6.156533",
+                "descripción": "TRANSBORDO: 18 \nLINEA: 9\nCOD. PARADA: 36\nSENTIDO: Entrando en Area Sur\nLATITUD: 36.692093\nLONGITUD: -6.156533",
                 "TRANSBORDO": "8-18",
                 "LINEA": "9.0",
-                "COD. PARADA": "34.0",
-                "SENTIDO": "Dirección Area Sur",
+                "COD. PARADA": "36.0",
+                "SENTIDO": "Entrando en Area Sur",
                 "LATITUD": "36.692093",
                 "LONGITUD": "-6.156533"
             }
@@ -12867,12 +12867,12 @@
                     "highlight": "#icon-1532-C2185B-highlight"
                 },
                 "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
-                "description": "descripción: <br>TRANSBORDO: 8-18<br>LINEA: 9<br>COD. PARADA: 6<br>SENTIDO: <br>LATITUD: <br>LONGITUD: ",
+                "description": "descripción: <br>TRANSBORDO: 18<br>LINEA: 9<br>COD. PARADA: 7<br>SENTIDO: En el mismo centro<br><br>LATITUD: <br>LONGITUD: ",
                 "descripción": "",
-                "TRANSBORDO": "8-18",
+                "TRANSBORDO": "18",
                 "LINEA": "9",
-                "COD. PARADA": "6",
-                "SENTIDO": "",
+                "COD. PARADA": "7",
+                "SENTIDO": "En el mismo centro\n",
                 "LATITUD": "",
                 "LONGITUD": ""
             }
@@ -13114,8 +13114,8 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -6.144753,
-                    36.697509,
+                    -6.1446873,
+                    36.6975348,
                     0
                 ]
             },
@@ -13752,13 +13752,13 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -6.121235,
-                    36.696231,
+                    -6.1234076,
+                    36.6963751,
                     0
                 ]
             },
             "properties": {
-                "name": "Sementales",
+                "name": "IFECA",
                 "styleUrl": "#icon-1532-C2185B",
                 "styleHash": "-63984647",
                 "styleMapHash": {
@@ -13766,11 +13766,11 @@
                     "highlight": "#icon-1532-C2185B-highlight"
                 },
                 "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
-                "description": "descripción: TRANSBORDO: <br>LINEA: 9<br>COD. PARADA: 413<br>SENTIDO: Hacia La Granja<br>LATITUD: 36.696231<br>LONGITUD: -6.121235<br>TRANSBORDO: <br>LINEA: 9.0<br>COD. PARADA: 413.0<br>SENTIDO: Hacia La Granja<br>LATITUD: 36.696231<br>LONGITUD: -6.121235",
-                "descripción": "TRANSBORDO: \nLINEA: 9\nCOD. PARADA: 413\nSENTIDO: Hacia La Granja\nLATITUD: 36.696231\nLONGITUD: -6.121235",
-                "TRANSBORDO": "",
+                "description": "descripción: TRANSBORDO: 5-15<br>LINEA: 9<br>COD. PARADA: 146<br>SENTIDO: Hacia La Granja<br>LATITUD: 36.696231<br>LONGITUD: -6.121235<br>TRANSBORDO: 5-15<br>LINEA: 9.0<br>COD. PARADA: 146.0<br>SENTIDO: Hacia La Granja<br>LATITUD: 36.696231<br>LONGITUD: -6.121235",
+                "descripción": "TRANSBORDO: 5-15\nLINEA: 9\nCOD. PARADA: 146\nSENTIDO: Hacia La Granja\nLATITUD: 36.696231\nLONGITUD: -6.121235",
+                "TRANSBORDO": "5-15",
                 "LINEA": "9.0",
-                "COD. PARADA": "413.0",
+                "COD. PARADA": "146.0",
                 "SENTIDO": "Hacia La Granja",
                 "LATITUD": "36.696231",
                 "LONGITUD": "-6.121235"
@@ -13897,6 +13897,35 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
+                    -6.1057671,
+                    36.6985139,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "C/ Huelva",
+                "styleUrl": "#icon-1532-C2185B",
+                "styleHash": "-63984647",
+                "styleMapHash": {
+                    "normal": "#icon-1532-C2185B-normal",
+                    "highlight": "#icon-1532-C2185B-highlight"
+                },
+                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
+                "description": "descripción: <br>TRANSBORDO: 5-6<br>LINEA: 9<br>COD. PARADA: 507<br>SENTIDO: <br>LATITUD: <br>LONGITUD: ",
+                "descripción": "",
+                "TRANSBORDO": "5-6",
+                "LINEA": "9",
+                "COD. PARADA": "507",
+                "SENTIDO": "",
+                "LATITUD": "",
+                "LONGITUD": ""
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
                     -6.104574,
                     36.698751,
                     0
@@ -13955,8 +13984,8 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -6.101044,
-                    36.697469,
+                    -6.1013283,
+                    36.6976142,
                     0
                 ]
             },
@@ -15660,28 +15689,43 @@
                         0
                     ],
                     [
-                        -6.146096,
-                        36.682787,
+                        -6.1460638,
+                        36.6827225,
                         0
                     ],
                     [
-                        -6.146074,
-                        36.682825,
+                        -6.1459801,
+                        36.6827443,
                         0
                     ],
                     [
-                        -6.146345,
-                        36.682973,
+                        -6.1459453,
+                        36.6828225,
                         0
                     ],
                     [
-                        -6.14652,
-                        36.683114,
+                        -6.1459694,
+                        36.6828884,
+                        0
+                    ],
+                    [
+                        -6.1460419,
+                        36.6829393,
+                        0
+                    ],
+                    [
+                        -6.1463852,
+                        36.6831483,
+                        0
+                    ],
+                    [
+                        -6.1465227,
+                        36.6832194,
                         0
                     ],
                     [
                         -6.14657,
-                        36.683196,
+                        36.6832745,
                         0
                     ],
                     [
@@ -15725,68 +15769,53 @@
                         0
                     ],
                     [
-                        -6.147076,
-                        36.685632,
+                        -6.1470331,
+                        36.6855761,
                         0
                     ],
                     [
-                        -6.147017,
-                        36.685717,
+                        -6.1469701,
+                        36.6857127,
                         0
                     ],
                     [
-                        -6.147052,
-                        36.685806,
+                        -6.1470064,
+                        36.6857985,
                         0
                     ],
                     [
-                        -6.147137,
-                        36.685825,
+                        -6.1471021,
+                        36.6858465,
                         0
                     ],
                     [
-                        -6.147209,
-                        36.685815,
+                        -6.1471848,
+                        36.6858903,
                         0
                     ],
                     [
-                        -6.147234,
-                        36.685823,
+                        -6.1480642,
+                        36.6862869,
                         0
                     ],
                     [
-                        -6.14728,
-                        36.685843,
+                        -6.1481984,
+                        36.6863666,
                         0
                     ],
                     [
-                        -6.147705,
-                        36.686062,
+                        -6.148238,
+                        36.6863921,
                         0
                     ],
                     [
-                        -6.148032,
-                        36.686231,
+                        -6.1482665,
+                        36.6864391,
                         0
                     ],
                     [
-                        -6.148244,
-                        36.68633,
-                        0
-                    ],
-                    [
-                        -6.148293,
-                        36.686362,
-                        0
-                    ],
-                    [
-                        -6.148347,
-                        36.686452,
-                        0
-                    ],
-                    [
-                        -6.148302,
-                        36.68652,
+                        -6.1482685,
+                        36.6865125,
                         0
                     ],
                     [
@@ -15795,48 +15824,43 @@
                         0
                     ],
                     [
-                        -6.148352,
-                        36.686651,
+                        -6.1483386,
+                        36.6866962,
                         0
                     ],
                     [
-                        -6.14842,
-                        36.686671,
+                        -6.1483787,
+                        36.6868331,
                         0
                     ],
                     [
-                        -6.148423,
-                        36.686818,
+                        -6.1484835,
+                        36.68718,
                         0
                     ],
                     [
-                        -6.148462,
-                        36.686952,
+                        -6.1485393,
+                        36.6873015,
                         0
                     ],
                     [
-                        -6.148546,
-                        36.687252,
+                        -6.1488182,
+                        36.6878256,
                         0
                     ],
                     [
-                        -6.148849,
-                        36.687817,
+                        -6.149059,
+                        36.6882849,
                         0
                     ],
                     [
-                        -6.14911,
-                        36.688329,
+                        -6.149081,
+                        36.6883915,
                         0
                     ],
                     [
-                        -6.149136,
-                        36.688456,
-                        0
-                    ],
-                    [
-                        -6.149128,
-                        36.688562,
+                        -6.1490449,
+                        36.6885308,
                         0
                     ],
                     [
@@ -15865,8 +15889,8 @@
                         0
                     ],
                     [
-                        -6.149239,
-                        36.688782,
+                        -6.1493423,
+                        36.6888186,
                         0
                     ],
                     [
@@ -16180,8 +16204,8 @@
                         0
                     ],
                     [
-                        -6.151174,
-                        36.694252,
+                        -6.1511847,
+                        36.6942197,
                         0
                     ],
                     [
@@ -16200,38 +16224,73 @@
                         0
                     ],
                     [
+                        -6.1502463,
+                        36.6935656,
+                        0
+                    ],
+                    [
                         -6.150157,
                         36.69343,
                         0
                     ],
                     [
-                        -6.150113,
-                        36.693235,
+                        -6.1501082,
+                        36.6933153,
                         0
                     ],
                     [
-                        -6.149982,
-                        36.693189,
+                        -6.1501184,
+                        36.6932264,
                         0
                     ],
                     [
-                        -6.149894,
-                        36.693129,
+                        -6.1502502,
+                        36.6930535,
                         0
                     ],
                     [
-                        -6.149845,
-                        36.693052,
+                        -6.1502118,
+                        36.6929494,
                         0
                     ],
                     [
-                        -6.149614,
-                        36.693038,
+                        -6.1501431,
+                        36.6929012,
                         0
                     ],
                     [
-                        -6.14951,
-                        36.693069,
+                        -6.1500421,
+                        36.6928767,
+                        0
+                    ],
+                    [
+                        -6.1499112,
+                        36.692909,
+                        0
+                    ],
+                    [
+                        -6.1498205,
+                        36.6929907,
+                        0
+                    ],
+                    [
+                        -6.1497263,
+                        36.6930078,
+                        0
+                    ],
+                    [
+                        -6.1496215,
+                        36.6929981,
+                        0
+                    ],
+                    [
+                        -6.1495195,
+                        36.6930126,
+                        0
+                    ],
+                    [
+                        -6.1494148,
+                        36.693055,
                         0
                     ],
                     [
@@ -17525,23 +17584,23 @@
                         0
                     ],
                     [
-                        -6.101672,
-                        36.699218,
+                        -6.1017114,
+                        36.6991495,
                         0
                     ],
                     [
-                        -6.101374,
-                        36.698306,
+                        -6.101668,
+                        36.6990707,
                         0
                     ],
                     [
-                        -6.101235,
-                        36.697828,
+                        -6.1013101,
+                        36.6977097,
                         0
                     ],
                     [
-                        -6.101161,
-                        36.697517,
+                        -6.1012562,
+                        36.6975245,
                         0
                     ],
                     [
@@ -18462,6 +18521,151 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
+                    -6.122316,
+                    36.6725578,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Av. Medina Sidonia\n",
+                "styleUrl": "#icon-1532-C2185B",
+                "styleHash": "-63984647",
+                "styleMapHash": {
+                    "normal": "#icon-1532-C2185B-normal",
+                    "highlight": "#icon-1532-C2185B-highlight"
+                },
+                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
+                "description": "descripción: <br>TRANSBORDO: <br>LINEA: 10<br>COD.PARADA: 502<br>SENTIDO: <br>LATITUD: <br>LONGITUD: ",
+                "descripción": "",
+                "TRANSBORDO": "",
+                "LINEA": "10",
+                "COD.PARADA": "502",
+                "SENTIDO": "",
+                "LATITUD": "",
+                "LONGITUD": ""
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -6.1207915,
+                    36.6669357,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Pino Solete\n",
+                "styleUrl": "#icon-1532-C2185B",
+                "styleHash": "-63984647",
+                "styleMapHash": {
+                    "normal": "#icon-1532-C2185B-normal",
+                    "highlight": "#icon-1532-C2185B-highlight"
+                },
+                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
+                "description": "descripción: <br>TRANSBORDO: <br>LINEA: 10<br>COD.PARADA: 505<br>SENTIDO: <br>LATITUD: <br>LONGITUD: ",
+                "descripción": "",
+                "TRANSBORDO": "",
+                "LINEA": "10",
+                "COD.PARADA": "505",
+                "SENTIDO": "",
+                "LATITUD": "",
+                "LONGITUD": ""
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -6.1182969,
+                    36.6634693,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "C/ Sta Inés\n",
+                "styleUrl": "#icon-1532-C2185B",
+                "styleHash": "-63984647",
+                "styleMapHash": {
+                    "normal": "#icon-1532-C2185B-normal",
+                    "highlight": "#icon-1532-C2185B-highlight"
+                },
+                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
+                "description": "descripción: <br>TRANSBORDO: <br>LINEA: 10<br>COD.PARADA: 506<br>SENTIDO: <br>LATITUD: <br>LONGITUD: ",
+                "descripción": "",
+                "TRANSBORDO": "",
+                "LINEA": "10",
+                "COD.PARADA": "506",
+                "SENTIDO": "",
+                "LATITUD": "",
+                "LONGITUD": ""
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -6.1159498,
+                    36.665816,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Rsd El Duque\n",
+                "styleUrl": "#icon-1532-C2185B",
+                "styleHash": "-63984647",
+                "styleMapHash": {
+                    "normal": "#icon-1532-C2185B-normal",
+                    "highlight": "#icon-1532-C2185B-highlight"
+                },
+                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
+                "description": "descripción: <br>TRANSBORDO: <br>LINEA: 10<br>COD.PARADA: 503<br>SENTIDO: <br>LATITUD: <br>LONGITUD: ",
+                "descripción": "",
+                "TRANSBORDO": "",
+                "LINEA": "10",
+                "COD.PARADA": "503",
+                "SENTIDO": "",
+                "LATITUD": "",
+                "LONGITUD": ""
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -6.1219213,
+                    36.671844,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Av. Medina Sidonia\n",
+                "styleUrl": "#icon-1532-C2185B",
+                "styleHash": "-63984647",
+                "styleMapHash": {
+                    "normal": "#icon-1532-C2185B-normal",
+                    "highlight": "#icon-1532-C2185B-highlight"
+                },
+                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
+                "description": "descripción: <br>TRANSBORDO: <br>LINEA: 10<br>COD.PARADA: 504<br>SENTIDO: <br>LATITUD: <br>LONGITUD: ",
+                "descripción": "",
+                "TRANSBORDO": "",
+                "LINEA": "10",
+                "COD.PARADA": "504",
+                "SENTIDO": "",
+                "LATITUD": "",
+                "LONGITUD": ""
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
                     -6.12423,
                     36.6751473,
                     0
@@ -18571,6 +18775,64 @@
                 "SENTIDO": "Hospital",
                 "LATITUD": "36.680544",
                 "LONGITUD": "-6.131088"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -6.1344104,
+                    36.680836,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Pz. Angustias-Canal Sur",
+                "styleUrl": "#icon-1532-C2185B",
+                "styleHash": "-63984647",
+                "styleMapHash": {
+                    "normal": "#icon-1532-C2185B-normal",
+                    "highlight": "#icon-1532-C2185B-highlight"
+                },
+                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
+                "description": "descripción: TRANSBORDO: 1-2-3-4-5-6-7-8-9-11-12-14-15-18<br>LINEA: 10<br>COD.PARADA: 130<br>SENTIDO: Única<br>LATITUD: 36.680865<br>LONGITUD: -6.134338<br>TRANSBORDO: 1-2-3-4-5-6-7-8-9-11-12-14-15-18<br>LINEA: 10.0<br>COD.PARADA: 130.0<br>SENTIDO: Única<br>LATITUD: 36.680865<br>LONGITUD: -6.134338",
+                "descripción": "TRANSBORDO: 1-2-3-4-5-6-7-8-9-11-12-14-15-18\nLINEA: 10\nCOD.PARADA: 130\nSENTIDO: Única\nLATITUD: 36.680865\nLONGITUD: -6.134338",
+                "TRANSBORDO": "1-2-3-4-5-6-7-8-9-11-12-14-15-18",
+                "LINEA": "10.0",
+                "COD.PARADA": "130.0",
+                "SENTIDO": "Única",
+                "LATITUD": "36.680865",
+                "LONGITUD": "-6.134338"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -6.1366549,
+                    36.6821365,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Plaza Esteve",
+                "styleUrl": "#icon-1532-0288D1",
+                "styleHash": "31884fd9",
+                "styleMapHash": {
+                    "normal": "#icon-1532-0288D1-normal",
+                    "highlight": "#icon-1532-0288D1-highlight"
+                },
+                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
+                "description": "descripción: TRANSBORDO: 1-2-3-4-6-11-14<br>LINEA: 10<br>COD.PARADA: 343<br>SENTIDO: Hospital<br>LATITUD: 36.681745<br>LONGITUD: -6.136679<br>TRANSBORDO: 1-2-3-4-6-11-14<br>LINEA: 10.0<br>COD.PARADA: 343.0<br>SENTIDO: Hospital<br>LATITUD: 36.681745<br>LONGITUD: -6.136679",
+                "descripción": "TRANSBORDO: 1-2-3-4-6-11-14\nLINEA: 10\nCOD.PARADA: 343\nSENTIDO: Hospital\nLATITUD: 36.681745\nLONGITUD: -6.136679",
+                "TRANSBORDO": "1-2-3-4-6-11-14",
+                "LINEA": "10.0",
+                "COD.PARADA": "343.0",
+                "SENTIDO": "Hospital",
+                "LATITUD": "36.681745",
+                "LONGITUD": "-6.136679"
             }
         },
         {
@@ -18781,8 +19043,8 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -6.1473814,
-                    36.7058735,
+                    -6.1447287,
+                    36.7051994,
                     0
                 ]
             },
@@ -18795,14 +19057,43 @@
                     "highlight": "#icon-1532-673AB7-highlight"
                 },
                 "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
-                "description": "descripción: TRANSBORDO: <br>LINEA: 10<br>COD.PARADA: 273<br>SENTIDO: Hospital<br>LATITUD: 36.704972<br>LONGITUD: -6.148634<br>TRANSBORDO: <br>LINEA: 10.0<br>COD.PARADA: 273.0<br>SENTIDO: Hospital<br>LATITUD: 36.704972<br>LONGITUD: -6.148634",
-                "descripción": "TRANSBORDO: \nLINEA: 10\nCOD.PARADA: 273\nSENTIDO: Hospital\nLATITUD: 36.704972\nLONGITUD: -6.148634",
+                "description": "descripción: TRANSBORDO: <br>LINEA: 10<br>COD.PARADA: 273<br>SENTIDO: Hospital<br>LATITUD: 36.70519<br>LONGITUD: -6.14472<br>TRANSBORDO: <br>LINEA: 10.0<br>COD.PARADA: 273.0<br>SENTIDO: Hospital<br>LATITUD: 36.70519<br><br>LONGITUD: -6.14472",
+                "descripción": "TRANSBORDO: \nLINEA: 10\nCOD.PARADA: 273\nSENTIDO: Hospital\nLATITUD: 36.70519\nLONGITUD: -6.14472",
                 "TRANSBORDO": "",
                 "LINEA": "10.0",
                 "COD.PARADA": "273.0",
                 "SENTIDO": "Hospital",
-                "LATITUD": "36.704972",
-                "LONGITUD": "-6.148634"
+                "LATITUD": "36.70519\n",
+                "LONGITUD": "-6.14472"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -6.1480312,
+                    36.7056622,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Los Villares II\n",
+                "styleUrl": "#icon-1532-673AB7",
+                "styleHash": "39375659",
+                "styleMapHash": {
+                    "normal": "#icon-1532-673AB7-normal",
+                    "highlight": "#icon-1532-673AB7-highlight"
+                },
+                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
+                "description": "descripción: TRANSBORDO:<br>LINEA: 10<br>COD.PARADA: 496<br>SENTIDO: Hospital<br>LATITUD: 36.70566<br>LONGITUD: -6.14803<br>TRANSBORDO: <br>LINEA: 10.0<br>COD.PARADA: 496.0<br>SENTIDO: Hospital<br>LATITUD: 36.70566<br><br>LONGITUD: -6.14803",
+                "descripción": "TRANSBORDO:\nLINEA: 10\nCOD.PARADA: 496\nSENTIDO: Hospital\nLATITUD: 36.70566\nLONGITUD: -6.14803",
+                "TRANSBORDO": "",
+                "LINEA": "10.0",
+                "COD.PARADA": "496.0",
+                "SENTIDO": "Hospital",
+                "LATITUD": "36.70566\n",
+                "LONGITUD": "-6.14803"
             }
         },
         {
@@ -19193,7 +19484,7 @@
                 ]
             },
             "properties": {
-                "name": "Sto. Domingo",
+                "name": "Sto. Domingo III\n",
                 "styleUrl": "#icon-1532-C2185B",
                 "styleHash": "-63984647",
                 "styleMapHash": {
@@ -19433,8 +19724,8 @@
                     "highlight": "#icon-1532-0288D1-highlight"
                 },
                 "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
-                "description": "descripción: TRANSBORDO: 1-2-3-4-5-6-7-8-9-11-12-14-15-18<br>LINEA: 10<br>COD.PARADA: 339<br>SENTIDO: La Canaleja<br>LATITUD: 36.6805086<br>LONGITUD: -6.1331925<br>TRANSBORDO: 1-2-3-4-5-6-7-8-9-11-12-14-15-18<br>LINEA: 10.0<br>COD.PARADA: 339.0<br>SENTIDO: La Canaleja<br>LATITUD: 36.6805086<br>LONGITUD: -6.1331925",
-                "descripción": "TRANSBORDO: 1-2-3-4-5-6-7-8-9-11-12-14-15-18\nLINEA: 10\nCOD.PARADA: 339\nSENTIDO: La Canaleja\nLATITUD: 36.6805086\nLONGITUD: -6.1331925",
+                "description": "descripción: TRANSBORDO: 1-2-3-4-5-6-7-8-9-11-12-14-15-18<br>LINEA: 10<br>COD.PARADA: 339<br>SENTIDO: La Canaleja<br>LATITUD: 36.6805086<br>LONGITUD: -6.1331925<br>TRANSBORDO: 1-2-3-4-5-6-7-8-9-11-12-14-15-18<br>LINEA: 10.0<br>COD.PARADA: 339.0<br>SENTIDO: La Canaleja<br>LATITUD: 36.6805086<br>LONGITUD: -6.1331925",
+                "descripción": "TRANSBORDO: 1-2-3-4-5-6-7-8-9-11-12-14-15-18\nLINEA: 10\nCOD.PARADA: 339\nSENTIDO: La Canaleja\nLATITUD: 36.6805086\nLONGITUD: -6.1331925",
                 "TRANSBORDO": "1-2-3-4-5-6-7-8-9-11-12-14-15-18",
                 "LINEA": "10.0",
                 "COD.PARADA": "339.0",
@@ -19477,8 +19768,8 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -6.129741,
-                    36.679155,
+                    -6.1294808,
+                    36.6791658,
                     0
                 ]
             },
@@ -19673,6 +19964,151 @@
                 "SENTIDO": "Hacia Liberación",
                 "LATITUD": "36.673655",
                 "LONGITUD": "-6.123978"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -6.122232,
+                    36.6725739,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Av. Medina Sidonia\n",
+                "styleUrl": "#icon-1532-C2185B",
+                "styleHash": "-63984647",
+                "styleMapHash": {
+                    "normal": "#icon-1532-C2185B-normal",
+                    "highlight": "#icon-1532-C2185B-highlight"
+                },
+                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
+                "description": "descripción: <br>TRANSBORDO: <br>LINEA: 10<br>COD.PARADA: 389<br>SENTIDO: <br>LATITUD: <br>LONGITUD: ",
+                "descripción": "",
+                "TRANSBORDO": "",
+                "LINEA": "10",
+                "COD.PARADA": "389",
+                "SENTIDO": "",
+                "LATITUD": "",
+                "LONGITUD": ""
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -6.1206873,
+                    36.6669499,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Pino Solete\n",
+                "styleUrl": "#icon-1532-C2185B",
+                "styleHash": "-63984647",
+                "styleMapHash": {
+                    "normal": "#icon-1532-C2185B-normal",
+                    "highlight": "#icon-1532-C2185B-highlight"
+                },
+                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
+                "description": "descripción: <br>TRANSBORDO: <br>LINEA: 10<br>COD.PARADA: 389<br><br>SENTIDO: <br>LATITUD: <br>LONGITUD: ",
+                "descripción": "",
+                "TRANSBORDO": "",
+                "LINEA": "10",
+                "COD.PARADA": "389\n",
+                "SENTIDO": "",
+                "LATITUD": "",
+                "LONGITUD": ""
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -6.1183492,
+                    36.663519,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "C/ Sta Inés\n",
+                "styleUrl": "#icon-1532-C2185B",
+                "styleHash": "-63984647",
+                "styleMapHash": {
+                    "normal": "#icon-1532-C2185B-normal",
+                    "highlight": "#icon-1532-C2185B-highlight"
+                },
+                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
+                "description": "descripción: <br>TRANSBORDO: <br>LINEA: 10<br>COD.PARADA: 389<br>SENTIDO: <br>LATITUD: <br>LONGITUD: ",
+                "descripción": "",
+                "TRANSBORDO": "",
+                "LINEA": "10",
+                "COD.PARADA": "389",
+                "SENTIDO": "",
+                "LATITUD": "",
+                "LONGITUD": ""
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -6.1160072,
+                    36.6658518,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Rsd El Duque\n",
+                "styleUrl": "#icon-1532-C2185B",
+                "styleHash": "-63984647",
+                "styleMapHash": {
+                    "normal": "#icon-1532-C2185B-normal",
+                    "highlight": "#icon-1532-C2185B-highlight"
+                },
+                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
+                "description": "descripción: <br>TRANSBORDO: <br>LINEA: 10<br>COD.PARADA: 389<br>SENTIDO: <br>LATITUD: <br>LONGITUD: ",
+                "descripción": "",
+                "TRANSBORDO": "",
+                "LINEA": "10",
+                "COD.PARADA": "389",
+                "SENTIDO": "",
+                "LATITUD": "",
+                "LONGITUD": ""
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -6.1219712,
+                    36.67183,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Av. Medina Sidonia\n",
+                "styleUrl": "#icon-1532-C2185B",
+                "styleHash": "-63984647",
+                "styleMapHash": {
+                    "normal": "#icon-1532-C2185B-normal",
+                    "highlight": "#icon-1532-C2185B-highlight"
+                },
+                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
+                "description": "descripción: <br>TRANSBORDO: <br>LINEA: 10<br>COD.PARADA: 389<br>SENTIDO: <br>LATITUD: <br>LONGITUD: ",
+                "descripción": "",
+                "TRANSBORDO": "",
+                "LINEA": "10",
+                "COD.PARADA": "389",
+                "SENTIDO": "",
+                "LATITUD": "",
+                "LONGITUD": ""
             }
         },
         {
@@ -19963,64 +20399,6 @@
                 "SENTIDO": "Única",
                 "LATITUD": "36.680526",
                 "LONGITUD": "-6.106662"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -6.1344104,
-                    36.680836,
-                    0
-                ]
-            },
-            "properties": {
-                "name": "Pz. Angustias-Canal Sur",
-                "styleUrl": "#icon-1532-C2185B",
-                "styleHash": "-63984647",
-                "styleMapHash": {
-                    "normal": "#icon-1532-C2185B-normal",
-                    "highlight": "#icon-1532-C2185B-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
-                "description": "descripción: TRANSBORDO: 1-2-3-4-5-6-7-8-9-11-12-14-15-18<br>LINEA: 10<br>COD.PARADA: 130<br>SENTIDO: Única<br>LATITUD: 36.680865<br>LONGITUD: -6.134338<br>TRANSBORDO: 1-2-3-4-5-6-7-8-9-11-12-14-15-18<br>LINEA: 10.0<br>COD.PARADA: 130.0<br>SENTIDO: Única<br>LATITUD: 36.680865<br>LONGITUD: -6.134338",
-                "descripción": "TRANSBORDO: 1-2-3-4-5-6-7-8-9-11-12-14-15-18\nLINEA: 10\nCOD.PARADA: 130\nSENTIDO: Única\nLATITUD: 36.680865\nLONGITUD: -6.134338",
-                "TRANSBORDO": "1-2-3-4-5-6-7-8-9-11-12-14-15-18",
-                "LINEA": "10.0",
-                "COD.PARADA": "130.0",
-                "SENTIDO": "Única",
-                "LATITUD": "36.680865",
-                "LONGITUD": "-6.134338"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -6.1366549,
-                    36.6821365,
-                    0
-                ]
-            },
-            "properties": {
-                "name": "Plaza Esteve",
-                "styleUrl": "#icon-1532-0288D1",
-                "styleHash": "31884fd9",
-                "styleMapHash": {
-                    "normal": "#icon-1532-0288D1-normal",
-                    "highlight": "#icon-1532-0288D1-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
-                "description": "descripción: TRANSBORDO: 1-2-3-4-6-11-14<br>LINEA: 10<br>COD.PARADA: 343<br>SENTIDO: Hospital<br>LATITUD: 36.681745<br>LONGITUD: -6.136679<br>TRANSBORDO: 1-2-3-4-6-11-14<br>LINEA: 10.0<br>COD.PARADA: 343.0<br>SENTIDO: Hospital<br>LATITUD: 36.681745<br>LONGITUD: -6.136679",
-                "descripción": "TRANSBORDO: 1-2-3-4-6-11-14\nLINEA: 10\nCOD.PARADA: 343\nSENTIDO: Hospital\nLATITUD: 36.681745\nLONGITUD: -6.136679",
-                "TRANSBORDO": "1-2-3-4-6-11-14",
-                "LINEA": "10.0",
-                "COD.PARADA": "343.0",
-                "SENTIDO": "Hospital",
-                "LATITUD": "36.681745",
-                "LONGITUD": "-6.136679"
             }
         },
         {
@@ -20499,8 +20877,8 @@
                         0
                     ],
                     [
-                        -6.122115,
-                        36.67343,
+                        -6.122119,
+                        36.6734182,
                         0
                     ],
                     [
@@ -20509,13 +20887,238 @@
                         0
                     ],
                     [
+                        -6.1224379,
+                        36.6733429,
+                        0
+                    ],
+                    [
                         -6.122506,
                         36.673294,
                         0
                     ],
                     [
-                        -6.122583,
-                        36.673237,
+                        -6.1225508,
+                        36.6732241,
+                        0
+                    ],
+                    [
+                        -6.1225828,
+                        36.6731096,
+                        0
+                    ],
+                    [
+                        -6.1225532,
+                        36.6729045,
+                        0
+                    ],
+                    [
+                        -6.1223097,
+                        36.6727528,
+                        0
+                    ],
+                    [
+                        -6.1222697,
+                        36.6723903,
+                        0
+                    ],
+                    [
+                        -6.122176,
+                        36.6720364,
+                        0
+                    ],
+                    [
+                        -6.1219,
+                        36.6715286,
+                        0
+                    ],
+                    [
+                        -6.1213477,
+                        36.6708122,
+                        0
+                    ],
+                    [
+                        -6.1215516,
+                        36.6707294,
+                        0
+                    ],
+                    [
+                        -6.1217448,
+                        36.6706165,
+                        0
+                    ],
+                    [
+                        -6.1219028,
+                        36.6704075,
+                        0
+                    ],
+                    [
+                        -6.1218611,
+                        36.669976,
+                        0
+                    ],
+                    [
+                        -6.121755,
+                        36.6695617,
+                        0
+                    ],
+                    [
+                        -6.1215087,
+                        36.6688607,
+                        0
+                    ],
+                    [
+                        -6.12123,
+                        36.6682284,
+                        0
+                    ],
+                    [
+                        -6.1209512,
+                        36.6677445,
+                        0
+                    ],
+                    [
+                        -6.1205708,
+                        36.6659323,
+                        0
+                    ],
+                    [
+                        -6.1202977,
+                        36.6640986,
+                        0
+                    ],
+                    [
+                        -6.1194404,
+                        36.6626192,
+                        0
+                    ],
+                    [
+                        -6.1185548,
+                        36.6632939,
+                        0
+                    ],
+                    [
+                        -6.1176961,
+                        36.6640073,
+                        0
+                    ],
+                    [
+                        -6.1173291,
+                        36.6643726,
+                        0
+                    ],
+                    [
+                        -6.11675,
+                        36.6651115,
+                        0
+                    ],
+                    [
+                        -6.116541,
+                        36.6653253,
+                        0
+                    ],
+                    [
+                        -6.1155329,
+                        36.6662307,
+                        0
+                    ],
+                    [
+                        -6.1151964,
+                        36.6663143,
+                        0
+                    ],
+                    [
+                        -6.1152079,
+                        36.6665488,
+                        0
+                    ],
+                    [
+                        -6.1153746,
+                        36.6666541,
+                        0
+                    ],
+                    [
+                        -6.1155842,
+                        36.666639,
+                        0
+                    ],
+                    [
+                        -6.1163156,
+                        36.6670945,
+                        0
+                    ],
+                    [
+                        -6.1170684,
+                        36.6674941,
+                        0
+                    ],
+                    [
+                        -6.1188781,
+                        36.6688474,
+                        0
+                    ],
+                    [
+                        -6.1200863,
+                        36.6697164,
+                        0
+                    ],
+                    [
+                        -6.120829,
+                        36.6703723,
+                        0
+                    ],
+                    [
+                        -6.1211986,
+                        36.6708665,
+                        0
+                    ],
+                    [
+                        -6.1219061,
+                        36.6717674,
+                        0
+                    ],
+                    [
+                        -6.1220784,
+                        36.6721761,
+                        0
+                    ],
+                    [
+                        -6.122132,
+                        36.6725975,
+                        0
+                    ],
+                    [
+                        -6.1221107,
+                        36.6727298,
+                        0
+                    ],
+                    [
+                        -6.1219419,
+                        36.6728535,
+                        0
+                    ],
+                    [
+                        -6.1218133,
+                        36.6730858,
+                        0
+                    ],
+                    [
+                        -6.1218832,
+                        36.6733246,
+                        0
+                    ],
+                    [
+                        -6.1221075,
+                        36.6734482,
+                        0
+                    ],
+                    [
+                        -6.1223506,
+                        36.6734191,
+                        0
+                    ],
+                    [
+                        -6.1225444,
+                        36.6733082,
                         0
                     ],
                     [
@@ -22869,13 +23472,183 @@
                         0
                     ],
                     [
-                        -6.122515,
-                        36.672894,
+                        -6.1224721,
+                        36.6728886,
                         0
                     ],
                     [
-                        -6.122237,
+                        -6.1222839,
                         36.672788,
+                        0
+                    ],
+                    [
+                        -6.1221867,
+                        36.6722127,
+                        0
+                    ],
+                    [
+                        -6.1221162,
+                        36.6719861,
+                        0
+                    ],
+                    [
+                        -6.1219437,
+                        36.6716605,
+                        0
+                    ],
+                    [
+                        -6.1213072,
+                        36.670797,
+                        0
+                    ],
+                    [
+                        -6.1216415,
+                        36.6706392,
+                        0
+                    ],
+                    [
+                        -6.1218597,
+                        36.6704205,
+                        0
+                    ],
+                    [
+                        -6.1218132,
+                        36.6699884,
+                        0
+                    ],
+                    [
+                        -6.1216585,
+                        36.6694346,
+                        0
+                    ],
+                    [
+                        -6.1214793,
+                        36.6689211,
+                        0
+                    ],
+                    [
+                        -6.1211027,
+                        36.6680684,
+                        0
+                    ],
+                    [
+                        -6.1209009,
+                        36.6677345,
+                        0
+                    ],
+                    [
+                        -6.1206338,
+                        36.6665155,
+                        0
+                    ],
+                    [
+                        -6.1204841,
+                        36.6656349,
+                        0
+                    ],
+                    [
+                        -6.1202564,
+                        36.6641189,
+                        0
+                    ],
+                    [
+                        -6.119421,
+                        36.6626896,
+                        0
+                    ],
+                    [
+                        -6.1181987,
+                        36.663623,
+                        0
+                    ],
+                    [
+                        -6.1175526,
+                        36.6642037,
+                        0
+                    ],
+                    [
+                        -6.1167629,
+                        36.6651546,
+                        0
+                    ],
+                    [
+                        -6.1155526,
+                        36.666254,
+                        0
+                    ],
+                    [
+                        -6.1152707,
+                        36.6663497,
+                        0
+                    ],
+                    [
+                        -6.1152478,
+                        36.6665288,
+                        0
+                    ],
+                    [
+                        -6.1154106,
+                        36.6666033,
+                        0
+                    ],
+                    [
+                        -6.1155846,
+                        36.6665932,
+                        0
+                    ],
+                    [
+                        -6.1163153,
+                        36.6670615,
+                        0
+                    ],
+                    [
+                        -6.1171393,
+                        36.6675075,
+                        0
+                    ],
+                    [
+                        -6.1183842,
+                        36.668447,
+                        0
+                    ],
+                    [
+                        -6.1198971,
+                        36.6695535,
+                        0
+                    ],
+                    [
+                        -6.1201842,
+                        36.6697539,
+                        0
+                    ],
+                    [
+                        -6.1208829,
+                        36.6703984,
+                        0
+                    ],
+                    [
+                        -6.1214791,
+                        36.6711746,
+                        0
+                    ],
+                    [
+                        -6.1219206,
+                        36.6717262,
+                        0
+                    ],
+                    [
+                        -6.1220985,
+                        36.6721569,
+                        0
+                    ],
+                    [
+                        -6.122166,
+                        36.6726154,
+                        0
+                    ],
+                    [
+                        -6.1221315,
+                        36.6728006,
                         0
                     ],
                     [

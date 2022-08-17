@@ -236,7 +236,7 @@ direction_names = {
 }
 
 
-non_regular_bus_stops = ['Garvey', 'Los Villares', 'Ciudad del Transporte', 'IVECO', 'PCTA', 'Campo de la Juventud', 'Agrimensor',
+non_regular_bus_stops = ['Garvey', 'Los Villares', 'Los Villares II', 'Ciudad del Transporte', 'IVECO', 'PCTA', 'Campo de la Juventud', 'Agrimensor',
     'Alvar Fañez', 'Rodrigo de Jerez', 'Media Markt', 'Guadabajaque', 'Campus El Sabio', 'Resid. Rancho Colores', 
     'Gta. de Guadabajaque', 'Media Markt', 'Rodrigo de Jerez', 'Carrefour Sur.'
 ]
