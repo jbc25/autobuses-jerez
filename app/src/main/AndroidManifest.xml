@@ -40,7 +40,7 @@
             android:exported="true"/>
 
         <activity
-            android:name=".ui.news.NewsActivity"
+            android:name=".features.news.ui.NewsActivity"
             android:screenOrientation="portrait"
             android:label="@string/news"
             android:exported="true" />

@@ -36,7 +36,7 @@ public class TimetableDialog extends DialogFragment {
     private static final String ARG_BUS_STOP = "arg_bus_stop";
     private static final String TAG = "TimetableDialog";
 
-    private static final String URL_WAIT_TIME = "http://www.tua.es/rest/estimaciones/%d";
+    private static final String URL_WAIT_TIME = "https://www.tua.es/rest/estimaciones/%d";
 
     private DialogTimetableBinding binding;
     private BusStop busStop;

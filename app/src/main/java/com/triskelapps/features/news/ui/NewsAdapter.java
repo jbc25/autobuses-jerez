@@ -1,4 +1,4 @@
-package com.triskelapps.ui.news;
+package com.triskelapps.features.news.ui;
 
 
 import android.content.Context;
@@ -13,9 +13,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.squareup.picasso.Picasso;
 import com.triskelapps.R;
-import com.triskelapps.model.News;
+import com.triskelapps.features.news.data.News;
 import com.triskelapps.util.CountlyUtil;
-import com.triskelapps.util.Util;
 import com.triskelapps.util.WebUtils;
 
 import java.util.List;

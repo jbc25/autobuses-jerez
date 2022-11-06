@@ -9,8 +9,8 @@ android {
         applicationId "com.triskelapps"
         minSdkVersion 19
         targetSdkVersion 31
-        versionCode 174
-        versionName "1.7.4"
+        versionCode 176
+        versionName "1.7.6"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 

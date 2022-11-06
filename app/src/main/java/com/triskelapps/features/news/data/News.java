@@ -1,4 +1,4 @@
-package com.triskelapps.model;
+package com.triskelapps.features.news.data;
 
 
 import com.triskelapps.util.DateUtils;

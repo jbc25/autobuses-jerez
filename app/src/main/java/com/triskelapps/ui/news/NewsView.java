@@ -1,7 +1,7 @@
 package com.triskelapps.ui.news;
 
 import com.triskelapps.base.BaseView;
-import com.triskelapps.model.News;
+import com.triskelapps.features.news.data.News;
 
 import java.util.List;
 

@@ -1,7 +1,6 @@
-package com.triskelapps.ui.news;
+package com.triskelapps.features.news.ui;
 
 import android.app.AlertDialog;
-import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -16,7 +15,9 @@ import com.triskelapps.base.BaseActivity;
 import com.triskelapps.databinding.ActivityNewsBinding;
 import com.triskelapps.databinding.RowNewsBinding;
 import com.triskelapps.interactor.NewsInteractor;
-import com.triskelapps.model.News;
+import com.triskelapps.features.news.data.News;
+import com.triskelapps.ui.news.NewsPresenter;
+import com.triskelapps.ui.news.NewsView;
 import com.triskelapps.views.EditTextDialog;
 
 import java.util.List;

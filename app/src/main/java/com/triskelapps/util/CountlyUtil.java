@@ -9,12 +9,11 @@ import com.google.firebase.remoteconfig.FirebaseRemoteConfig;
 import com.triskelapps.DebugHelper;
 import com.triskelapps.R;
 import com.triskelapps.model.BusStop;
-import com.triskelapps.model.News;
+import com.triskelapps.features.news.data.News;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import ly.count.android.sdk.BuildConfig;
 import ly.count.android.sdk.Countly;
 import ly.count.android.sdk.CountlyConfig;
 

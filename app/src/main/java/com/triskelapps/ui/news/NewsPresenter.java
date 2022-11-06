@@ -17,8 +17,9 @@ import com.triskelapps.BuildConfig;
 import com.triskelapps.R;
 import com.triskelapps.base.BaseInteractor;
 import com.triskelapps.base.BasePresenter;
+import com.triskelapps.features.news.ui.NewsActivity;
 import com.triskelapps.interactor.NewsInteractor;
-import com.triskelapps.model.News;
+import com.triskelapps.features.news.data.News;
 import com.triskelapps.util.CountlyUtil;
 import com.triskelapps.util.WebUtils;
 

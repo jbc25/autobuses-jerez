@@ -27,10 +27,10 @@ public class TimetableInteractor extends BaseInteractor {
         void onAccountNotActivated();
     }
 
-    public void getTimetable(int lineId, int codeBusStop, CallbackPost callback) {
+    public void getTimetable(final int lineId, final int codeBusStop, CallbackPost callback) {
 
         getApi(BusTimetableApi.class)
-                .getTimetable(lineId, codeBusStop)
+                .getTimetableAlternative(lineId, codeBusStop)
                 .enqueue(new Callback<ResponseBody>() {
                     @Override
                     public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {

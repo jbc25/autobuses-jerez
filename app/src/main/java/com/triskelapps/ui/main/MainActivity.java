@@ -64,7 +64,7 @@ import com.triskelapps.ui.favourites.FavouritesActivity;
 import com.triskelapps.ui.main.address.AddressFragment;
 import com.triskelapps.ui.main.bus_stops.BusStopsFragment;
 import com.triskelapps.ui.main.filter.FilterBusLinesFragment;
-import com.triskelapps.ui.news.NewsActivity;
+import com.triskelapps.features.news.ui.NewsActivity;
 import com.triskelapps.util.ChangelogHelper;
 import com.triskelapps.util.CountlyUtil;
 import com.triskelapps.util.ShareAppReminderHelper;
@@ -508,7 +508,7 @@ public class MainActivity extends BaseActivity implements OnMapReadyCallback, Ma
                         .position(position)
                         .visible(false)
                         .icon(busStopsIcon)
-                        .title(busStop.getName()));
+                        .title(busStop.getName() + (BuildConfig.DEBUG ? " - " + busStop.getCode() : "")));
 
                 marker.setTag(busStop);
 

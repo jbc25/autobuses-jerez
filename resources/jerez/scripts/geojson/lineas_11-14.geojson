@@ -3216,11 +3216,11 @@
                     "highlight": "#icon-1532-C2185B-highlight"
                 },
                 "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
-                "description": "descripción: TRANSBORDO: 5<br>LINEA: 12<br>COD.PARADA: 405<br>SENTIDO: Corredera<br>LATITUD: 36.7010103<br>LONGITUD: -6.1025871<br>TRANSBORDO: 5<br>LINEA: 12.0<br>COD.PARADA: 406.0<br>SENTIDO: Corredera<br>LATITUD: 36.7010103<br>LONGITUD: -6.1025871",
+                "description": "descripción: TRANSBORDO: 5<br>LINEA: 12<br>COD.PARADA: 405<br>SENTIDO: Corredera<br>LATITUD: 36.7010103<br>LONGITUD: -6.1025871<br>TRANSBORDO: 5<br>LINEA: 12.0<br>COD.PARADA: 405.0<br>SENTIDO: Corredera<br>LATITUD: 36.7010103<br>LONGITUD: -6.1025871",
                 "descripción": "TRANSBORDO: 5\nLINEA: 12\nCOD.PARADA: 405\nSENTIDO: Corredera\nLATITUD: 36.7010103\nLONGITUD: -6.1025871",
                 "TRANSBORDO": "5",
                 "LINEA": "12.0",
-                "COD.PARADA": "406.0",
+                "COD.PARADA": "405.0",
                 "SENTIDO": "Corredera",
                 "LATITUD": "36.7010103",
                 "LONGITUD": "-6.1025871"
@@ -5722,93 +5722,6 @@
                 "Transbordo": "",
                 "Latitud": "36.676901",
                 "Longitud": "-6.143748"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -6.1404586,
-                    36.6746222,
-                    0
-                ]
-            },
-            "properties": {
-                "name": "Campo de la Juventud",
-                "styleUrl": "#icon-1532-097138",
-                "styleHash": "357d68d9",
-                "styleMapHash": {
-                    "normal": "#icon-1532-097138-normal",
-                    "highlight": "#icon-1532-097138-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
-                "description": "descripción: Linea: 13<br>Codigo de parada: 94<br>Direccion: Hacia El Portal<br>Transbordo: 8<br>Latitud: 36.67462<br>Longitud: -6.140521<br>Linea: 13.0<br>Codigo de parada: 94.0<br>Direccion: Hacia El Portal<br>Transbordo: 8<br>Latitud: 36.67462<br>Longitud: -6.140521",
-                "descripción": "Linea: 13\nCodigo de parada: 94\nDireccion: Hacia El Portal\nTransbordo: 8\nLatitud: 36.67462\nLongitud: -6.140521",
-                "Linea": "13.0",
-                "Codigo de parada": "94.0",
-                "Direccion": "Hacia El Portal",
-                "Transbordo": "8",
-                "Latitud": "36.67462",
-                "Longitud": "-6.140521"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -6.1381838,
-                    36.6754965,
-                    0
-                ]
-            },
-            "properties": {
-                "name": "Agrimensor",
-                "styleUrl": "#icon-1532-097138",
-                "styleHash": "357d68d9",
-                "styleMapHash": {
-                    "normal": "#icon-1532-097138-normal",
-                    "highlight": "#icon-1532-097138-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
-                "description": "descripción: Linea: 13<br>Codigo de parada: 1<br>Direccion: hacia centro<br>Transbordo: <br>Latitud: 36.675397<br>Longitud: -6.137762<br>Linea: 13.0<br>Codigo de parada: 1.0<br>Direccion: hacia centro<br>Transbordo: <br>Latitud: 36.675397<br>Longitud: -6.137762",
-                "descripción": "Linea: 13\nCodigo de parada: 1\nDireccion: hacia centro\nTransbordo: \nLatitud: 36.675397\nLongitud: -6.137762",
-                "Linea": "13.0",
-                "Codigo de parada": "1.0",
-                "Direccion": "hacia centro",
-                "Transbordo": "",
-                "Latitud": "36.675397",
-                "Longitud": "-6.137762"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -6.140609,
-                    36.6765435,
-                    0
-                ]
-            },
-            "properties": {
-                "name": "Alvar Fañez",
-                "styleUrl": "#icon-1532-097138",
-                "styleHash": "357d68d9",
-                "styleMapHash": {
-                    "normal": "#icon-1532-097138-normal",
-                    "highlight": "#icon-1532-097138-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
-                "description": "descripción: Linea: 13<br>Codigo de parada: 15<br>Direccion: Hacia centro<br>Transbordo: <br>Latitud: 36.67638<br>Longitud: -6.140265<br>Linea: 13.0<br>Codigo de parada: 15.0<br>Direccion: Hacia centro<br>Transbordo: <br>Latitud: 36.67638<br>Longitud: -6.140265",
-                "descripción": "Linea: 13\nCodigo de parada: 15\nDireccion: Hacia centro\nTransbordo: \nLatitud: 36.67638\nLongitud: -6.140265",
-                "Linea": "13.0",
-                "Codigo de parada": "15.0",
-                "Direccion": "Hacia centro",
-                "Transbordo": "",
-                "Latitud": "36.67638",
-                "Longitud": "-6.140265"
             }
         },
         {
