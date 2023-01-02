@@ -1,14 +1,14 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 31
+    compileSdkVersion 33
 
     def mapsApiKey = "AIzaSyCnGIo5HlO1DnniY-cGShOyle_HWyH2swU"
 
     defaultConfig {
         applicationId "com.triskelapps"
         minSdkVersion 19
-        targetSdkVersion 31
+        targetSdkVersion 33
         versionCode 176
         versionName "1.7.6"
 
@@ -66,6 +66,7 @@ android {
     }
 
     buildFeatures.viewBinding = true
+    namespace 'com.triskelapps'
 
     defaultConfig {
         vectorDrawables.useSupportLibrary = true
