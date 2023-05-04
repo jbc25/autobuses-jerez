@@ -67,7 +67,7 @@ public class App extends MultiDexApplication {
 
         CountlyUtil.configureCountly(this);
 
-        String apiKey = BuildConfig.MAPS_API_KEY;
+        String apiKey = getString(R.string.maps_api_key);
         Places.initialize(getApplicationContext(), apiKey);
 
         db = Room.databaseBuilder(getApplicationContext(),

@@ -3,27 +3,19 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 33
 
-    def mapsApiKey = "AIzaSyCnGIo5HlO1DnniY-cGShOyle_HWyH2swU"
-
     defaultConfig {
         applicationId "com.triskelapps"
         minSdkVersion 19
         targetSdkVersion 33
-        versionCode 179
-        versionName "1.7.9"
+        versionCode 180
+        versionName "1.8.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-
-        manifestPlaceholders = [ maps_api_key:"$mapsApiKey"]
 
         multiDexEnabled true
     }
 
     buildTypes {
-
-        all {
-            buildConfigField "String", "MAPS_API_KEY", "\"$mapsApiKey\""
-        }
 
         release {
             // Enables code shrinking, obfuscation, and optimization for only
