@@ -4,7 +4,7 @@
     <string name="permission_denied">Permiso denegado</string>
     <string name="permission_needed">Se necesita permiso</string>
     <string name="location_permission_message">Hace falta aceptar el permiso a la ubicación para que puedas localizarte en el mapa</string>
-    <string name="where_to_go">¿Dónde quieres ir?</string>
+    <string name="where_to_go">Encuentra tu destino</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
@@ -84,4 +84,9 @@
     <string name="allow_location">Permitir acceso a ubicación</string>
     <string name="allow">Permitir</string>
     <string name="allow_location_message">Para mostrar tu ubicación en el mapa es necesario activar el permiso de localización del teléfono.\n\nPara activarlo pulsa el botón \"Permitir\" y en la siguiente pantalla pulsa \"Permisos\"</string>
+
+    <string name="notifications_permission_rationale_msg">A partir de la versión 13 de Android, el usuario tiene la opción de elegir qué notificaciones quiere recibir. Acepta el permiso si quieres que te lleguen avisos para estar al día.</string>
+    <string name="notifications_permission">Permiso de notificaciones</string>
+    <string name="notifications_permission_denied">Has desactivado las notificaciones</string>
+    <string name="notifications_permission_granted">¡Notificaciones activadas!</string>
 </resources>

@@ -42,8 +42,14 @@ public class TimetableInteractor extends BaseInteractor {
                                 Log.e(TAG, "onResponse: Error", e);
                             }
                         } else {
-//                            callback.onError(parseError(response));
-                            CountlyUtil.recordHandledException(new Exception("Error loading timetable: " + parseError(response)));
+
+                            if (response.code() == 404) {
+                                CountlyUtil.recordHandledException(new Exception("Error loading timetable: Parada no encontrada. " +
+                                        String.format("L: %d - P: %d", lineId, codeBusStop)));
+                            } else {
+                                CountlyUtil.recordHandledException(new Exception("Error loading timetable: " + parseError(response)));
+                            }
+
                             getTimetableAlternative(lineId, codeBusStop, callback);
                         }
                     }
@@ -72,6 +78,14 @@ public class TimetableInteractor extends BaseInteractor {
                                 Log.e(TAG, "onResponse: Error", e);
                             }
                         } else {
+
+                            if (response.code() == 404) {
+                                CountlyUtil.recordHandledException(new Exception("Error loading timetable ALTERNATIVE: Parada no encontrada. " +
+                                        String.format("L: %d - P: %d", lineId, codeBusStop)));
+                            } else {
+                                CountlyUtil.recordHandledException(new Exception("Error loading timetable ALTERNATIVE: " + parseError(response)));
+                            }
+
                             callback.onError(parseError(response));
                         }
                     }

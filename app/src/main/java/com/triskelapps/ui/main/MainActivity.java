@@ -13,6 +13,7 @@ import android.graphics.Paint;
 import android.graphics.PorterDuff;
 import android.graphics.PorterDuffColorFilter;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.provider.Settings;
 import android.util.Log;
@@ -147,10 +148,42 @@ public class MainActivity extends BaseActivity implements OnMapReadyCallback, Ma
                         startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(CityData.URL_YOUTUBE_VIDEO)));
                         CountlyUtil.recordEvent("welcome_screen_click_watch_video");
                     })
-                    .setNeutralButton(R.string.close, null)
+                    .setNeutralButton(R.string.close, (dialog, which) -> showNotificationsPermissionDialog())
                     .show();
 
             getPrefs().edit().putBoolean(App.PREF_FIRST_TIME_LAUNCH, false).commit();
+        } else {
+            showNotificationsPermissionDialog();
+        }
+    }
+
+    private void showNotificationsPermissionDialog() {
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+
+            Dexter.withActivity(this)
+                    .withPermission(Manifest.permission.POST_NOTIFICATIONS)
+                    .withListener(new PermissionListener() {
+                        @Override
+                        public void onPermissionGranted(PermissionGrantedResponse response) {
+                            toast(R.string.notifications_permission_granted);
+                        }
+
+                        @Override
+                        public void onPermissionDenied(PermissionDeniedResponse response) {
+                            toast(R.string.notifications_permission_denied);
+                        }
+
+                        @Override
+                        public void onPermissionRationaleShouldBeShown(PermissionRequest permission, final PermissionToken token) {
+                            new AlertDialog.Builder(MainActivity.this)
+                                    .setTitle(R.string.notifications_permission)
+                                    .setMessage(R.string.notifications_permission_rationale_msg)
+                                    .setPositiveButton(R.string.accept, (dialog, which) -> token.continuePermissionRequest())
+                                    .setNegativeButton(R.string.cancel, (dialog, which) -> token.cancelPermissionRequest())
+                                    .show();
+                        }
+                    }).check();
         }
     }
 

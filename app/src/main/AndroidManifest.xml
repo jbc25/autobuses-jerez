@@ -4,6 +4,7 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
 
     <application
         android:name=".App"
@@ -34,14 +35,12 @@
         <activity
             android:name=".ui.favourites.FavouritesActivity"
             android:screenOrientation="portrait"
-            android:label="@string/favourite_bus_stops"
-            android:exported="true"/>
+            android:label="@string/favourite_bus_stops"/>
 
         <activity
             android:name=".features.news.ui.NewsActivity"
             android:screenOrientation="portrait"
-            android:label="@string/news"
-            android:exported="true" />
+            android:label="@string/news" />
 
         <meta-data
             android:name="com.google.firebase.messaging.default_notification_icon"
