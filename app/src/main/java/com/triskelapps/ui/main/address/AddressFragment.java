@@ -23,6 +23,7 @@ import com.triskelapps.R;
 import com.triskelapps.base.BaseMainFragment;
 import com.triskelapps.databinding.FragmentAddressBinding;
 import com.triskelapps.model.BusLine;
+import com.triskelapps.model.BusStop;
 import com.triskelapps.util.CountlyUtil;
 
 import java.util.Arrays;
@@ -95,20 +96,22 @@ public class AddressFragment extends BaseMainFragment {
 
     private void findNearbyLines(@NonNull Place place) {
 
-        double distanceLimit = 100; // meters
+        double distanceLimit = 200; // meters
 
         List<BusLine> busLines = App.getBusLinesData(getActivity());
         for (BusLine busLine : busLines) {
-            List<LatLng> path = busLine.getPath().stream().map(coords ->
-                    new LatLng(coords.get(0), coords.get(1))).collect(Collectors.toList());
+            List<BusStop> busStops = busLine.getBusStops();
 
             // Verifica si la polilínea está cerca del punto de referencia
-            for (LatLng punto : path) {
-                double distance = SphericalUtil.computeDistanceBetween(place.getLatLng(), punto);
+            for (BusStop busStop : busStops) {
+                LatLng coords = new LatLng(busStop.getCoordinates().get(0), busStop.getCoordinates().get(1));
+                double distance = SphericalUtil.computeDistanceBetween(place.getLatLng(), coords);
+
+//                Log.d(TAG, "findNearbyLines: coordPlace=" + place.getLatLng() + ", coordBusStop=" + coords + ", distance: " + distance);
 
                 if (distance <= distanceLimit) {
                     Log.d(TAG, "findNearbyLines: linea: " + busLine.getId());
-                    break; // Opcional: si solo te interesa saber si hay una polilínea cercana, puedes detener la iteración aquí
+                    break;
                 }
             }
         }
