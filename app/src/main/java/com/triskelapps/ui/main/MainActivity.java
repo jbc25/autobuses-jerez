@@ -386,6 +386,7 @@ public class MainActivity extends BaseActivity implements OnMapReadyCallback, Ma
                 super.onBackPressed();
             }
         } catch (Exception e) {
+            Log.e(TAG, "onBackPressed: ", e);
             super.onBackPressed();
         }
     }
@@ -462,7 +463,7 @@ public class MainActivity extends BaseActivity implements OnMapReadyCallback, Ma
                 .setMessage(R.string.app_info_text)
                 .setPositiveButton(R.string.contact, (dialog, which) -> {
                     Intent intent = new Intent(Intent.ACTION_SENDTO, Uri.fromParts(
-                            "mailto","julio@triskelapps.com", null));
+                            "mailto", "julio@triskelapps.com", null));
                     intent.putExtra(Intent.EXTRA_SUBJECT, getString(R.string.contact_email_subject));
 //                    intent.putExtra(Intent.EXTRA_TEXT, "I'm email body.");
                     startActivity(Intent.createChooser(intent, getString(R.string.send_email)));
@@ -556,7 +557,7 @@ public class MainActivity extends BaseActivity implements OnMapReadyCallback, Ma
             for (int pathIndex = 0; pathIndex < busLine.getPath().size(); pathIndex++) {
                 if (pathIndex % PATH_STEP == 0 && pathIndex + 1 < busLine.getPath().size()) {
                     List<Double> currentCoords = busLine.getPath().get(pathIndex);
-                    List<Double> nextCoords = busLine.getPath().get(pathIndex+1);
+                    List<Double> nextCoords = busLine.getPath().get(pathIndex + 1);
                     LatLng currentLatLng = new LatLng(currentCoords.get(0), currentCoords.get(1));
                     LatLng nextLatLng = new LatLng(nextCoords.get(0), nextCoords.get(1));
                     double rotation = SphericalUtil.computeHeading(currentLatLng, nextLatLng);
@@ -677,10 +678,11 @@ public class MainActivity extends BaseActivity implements OnMapReadyCallback, Ma
 
         markerDestination = map.addMarker(new MarkerOptions()
                 .position(place.getLatLng())
+                .icon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_marker_green))
                 .title(place.getName()));
 
         markerDestination.showInfoWindow();
-        markerDestination.setZIndex(3);
+        markerDestination.setZIndex(Integer.MAX_VALUE);
 
         map.animateCamera(CameraUpdateFactory.newLatLng(place.getLatLng()));
 

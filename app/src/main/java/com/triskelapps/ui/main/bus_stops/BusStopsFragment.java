@@ -160,7 +160,8 @@ public class BusStopsFragment extends BaseMainFragment implements BusStopsAdapte
     }
 
     public void clearBusStopSelection() {
-        ((MainActivity) getActivity()).unselectBusStopMarker(adapter.getSelectedPosition());
+        ((MainActivity) getActivity()).unselectBusStopMarker(
+                adapter.getItemAtPosition(adapter.getSelectedPosition()).getCode());
         adapter.setSelectedPosition(-1);
         binding.viewBusStopInfo.setVisibility(View.GONE);
         binding.imgFavourite.setVisibility(View.GONE);

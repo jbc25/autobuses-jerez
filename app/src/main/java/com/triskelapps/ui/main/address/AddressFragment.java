@@ -111,7 +111,7 @@ public class AddressFragment extends BaseMainFragment {
 
     private void findNearbyLines(@NonNull Place place) {
 
-        double distanceRange = 200; // meters
+        double distanceRange = 300; // meters
 
         Map<Integer, NearbyLine> nearbyLinesMap = new HashMap<>();
 
@@ -146,6 +146,15 @@ public class AddressFragment extends BaseMainFragment {
 
         List<NearbyLine> nearbyLineList = nearbyLinesMap.entrySet().stream()
                 .map(Map.Entry::getValue)
+                .sorted((o1, o2) -> { 
+                    if (o1.getDistance() == o2.getDistance()) {
+                        return 0;
+                    } else if (o1.getDistance() > o2.getDistance()) {
+                        return 1;
+                    } else {
+                        return -1;
+                    }
+                })
                 .collect(Collectors.toList());
 
         showNearbyLines(nearbyLineList);
