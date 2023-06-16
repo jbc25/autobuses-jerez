@@ -22,21 +22,24 @@ import java.util.List;
 
 public class BusStopsFragment extends BaseMainFragment implements BusStopsAdapter.OnItemClickListener, View.OnClickListener {
     private static final String ARG_BUS_LINE = "arg_bus_line";
+    private static final String ARG_BUS_STOP = "arg_bus_stop";
 
     private BusLine busLine;
     private FragmentBusStopsBinding binding;
     private List<BusStop> busStops;
     private BusStopsAdapter adapter;
     private BusStop busStopSelected;
+    private BusStop busStopArg;
 
     public BusStopsFragment() {
         // Required empty public constructor
     }
 
-    public static BusStopsFragment newInstance(BusLine busLine) {
+    public static BusStopsFragment newInstance(BusLine busLine, BusStop busStop) {
         BusStopsFragment fragment = new BusStopsFragment();
         Bundle args = new Bundle();
         args.putSerializable(ARG_BUS_LINE, busLine);
+        args.putSerializable(ARG_BUS_STOP, busStop);
         fragment.setArguments(args);
         return fragment;
     }
@@ -50,6 +53,7 @@ public class BusStopsFragment extends BaseMainFragment implements BusStopsAdapte
         }
 
         busLine = (BusLine) getArguments().getSerializable(ARG_BUS_LINE);
+        busStopArg = (BusStop) getArguments().getSerializable(ARG_BUS_STOP);
 
     }
 
@@ -77,15 +81,20 @@ public class BusStopsFragment extends BaseMainFragment implements BusStopsAdapte
         super.onResume();
         if (busStopSelected != null) {
             showBusStopInfoView(busStopSelected);
+        } else if (busStopArg != null) {
+            binding.recyclerBusStops.post(() -> {
+                selectBusStop(busStopArg);
+                ((MainActivity) getActivity()).selectBusStopMarker(busStopArg.getCode());
+            });
         }
     }
 
     @Override
     public void onItemClick(View view, int position) {
 
-        ((MainActivity) getActivity()).selectBusStopMarker(position);
-
         BusStop busStop = busStops.get(position);
+
+        ((MainActivity) getActivity()).selectBusStopMarker(busStop.getCode());
 
         Log.i(TAG, "onBusStopClick: code: " + busStop.getCode() + ". Name: " + busStop.getName());
 

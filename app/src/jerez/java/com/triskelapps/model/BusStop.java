@@ -8,7 +8,7 @@ import androidx.room.Ignore;
 import com.triskelapps.R;
 
 @Entity(primaryKeys = {"code","lineId"})
-public class BusStop  extends BusStopBase{
+public class BusStop  extends BusStopBase {
 
     private String way; // Not used but must keep it for backwards database integrity
 

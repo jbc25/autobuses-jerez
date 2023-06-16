@@ -12,8 +12,10 @@ import com.triskelapps.App;
 import com.triskelapps.base.BaseMainFragment;
 import com.triskelapps.databinding.FragmentFilterBusLinesBinding;
 import com.triskelapps.model.BusLine;
+import com.triskelapps.model.NearbyLine;
 import com.triskelapps.util.CountlyUtil;
 
+import java.util.ArrayList;
 import java.util.List;
 
 
@@ -22,6 +24,7 @@ public class FilterBusLinesFragment extends BaseMainFragment implements FilterBu
     private FragmentFilterBusLinesBinding binding;
     private List<BusLine> busLines;
     private FilterBusLinesAdapter adapter;
+
 
     public FilterBusLinesFragment() {
         // Required empty public constructor
@@ -42,7 +45,6 @@ public class FilterBusLinesFragment extends BaseMainFragment implements FilterBu
 
 
         busLines = App.getBusLinesData(getActivity());
-
         adapter = new FilterBusLinesAdapter(getActivity(), busLines);
         adapter.setOnItemClickListener(this);
         binding.recyclerBusLines.setAdapter(adapter);

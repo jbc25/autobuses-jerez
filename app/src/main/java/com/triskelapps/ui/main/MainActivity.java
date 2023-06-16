@@ -485,15 +485,16 @@ public class MainActivity extends BaseActivity implements OnMapReadyCallback, Ma
         map.getUiSettings().setMapToolbarEnabled(true);
         if (busStopsFragment != null && marker.getTag() != null && marker.getTag() instanceof BusStop) {
             busStopsFragment.selectBusStop((BusStop) marker.getTag());
+            marker.setZIndex(2);
             return false;
         }
         return true;
     }
 
-    public void selectBusStopMarker(int position) {
-        if (mapDataController.hasBusLineSelected() && position != -1) {
+    public void selectBusStopMarker(int busStopCode) {
+        if (mapDataController.hasBusLineSelected() && busStopCode != -1) {
             map.getUiSettings().setMapToolbarEnabled(false);
-            Marker marker = mapDataController.getMarker(position);
+            Marker marker = mapDataController.getMarker(busStopCode);
             marker.showInfoWindow();
             map.animateCamera(CameraUpdateFactory.newLatLng(marker.getPosition()));
         }
@@ -645,7 +646,7 @@ public class MainActivity extends BaseActivity implements OnMapReadyCallback, Ma
     }
 
     @Override
-    public void showBusLineInfo(BusLine busLine, boolean animateToBounds) {
+    public void showBusLineInfo(BusLine busLine, BusStop busStop, boolean animateToBounds) {
 
 
         if (binding.drawerLayout.isDrawerOpen(Gravity.RIGHT)) {
@@ -656,7 +657,7 @@ public class MainActivity extends BaseActivity implements OnMapReadyCallback, Ma
             getSupportFragmentManager().popBackStack();
         }
 
-        busStopsFragment = BusStopsFragment.newInstance(busLine);
+        busStopsFragment = BusStopsFragment.newInstance(busLine, busStop);
         getSupportFragmentManager().beginTransaction()
                 .replace(R.id.frame_bottom, busStopsFragment)
                 .addToBackStack(null)
@@ -679,6 +680,7 @@ public class MainActivity extends BaseActivity implements OnMapReadyCallback, Ma
                 .title(place.getName()));
 
         markerDestination.showInfoWindow();
+        markerDestination.setZIndex(3);
 
         map.animateCamera(CameraUpdateFactory.newLatLng(place.getLatLng()));
 

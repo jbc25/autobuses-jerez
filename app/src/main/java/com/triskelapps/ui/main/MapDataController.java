@@ -4,6 +4,7 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.LatLngBounds;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.Polyline;
+import com.triskelapps.model.BusStop;
 
 import java.util.HashMap;
 import java.util.List;
@@ -80,8 +81,11 @@ public class MapDataController {
         return lineSelected > 0;
     }
 
-    public Marker getMarker(int position) {
+    public Marker getMarker(int busStopCode) {
         List<Marker> markers = markersBusStopsMap.get(lineSelected);
-        return markers.get(position);
+        return markers.stream().filter(marker -> {
+            BusStop markerBusStop = (BusStop) marker.getTag();
+            return markerBusStop.getCode() == busStopCode;
+        }).findFirst().get();
     }
 }

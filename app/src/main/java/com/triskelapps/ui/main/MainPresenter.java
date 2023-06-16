@@ -16,6 +16,7 @@ import com.triskelapps.CityData;
 import com.triskelapps.R;
 import com.triskelapps.base.BasePresenter;
 import com.triskelapps.model.BusLine;
+import com.triskelapps.model.BusStop;
 import com.triskelapps.model.db.BusLineVisible;
 import com.triskelapps.ui.news.NewsPresenter;
 
@@ -131,20 +132,16 @@ public class MainPresenter extends BasePresenter {
     }
 
     public void onBusLinePathClick(int lineId, boolean animateToBounds) {
-        for (BusLine busLine : busLines) {
-            if (busLine.getId() == lineId) {
-                view.showBusLineInfo(busLine, animateToBounds);
-                return;
-            }
-        }
+        BusLine busLine = busLines.stream().filter( busLine1 -> busLine1.getId() == lineId).findFirst().get();
+        view.showBusLineInfo(busLine, null, animateToBounds);
+    }
 
-        throw new IllegalStateException("lineId not valid: " + lineId);
+    public void onNearbyLineClick(BusLine busLine, BusStop busStop) {
+        view.showBusLineInfo(busLine, busStop, false);
     }
 
     public void onPlaceSelected(Place place) {
-
         view.setDestinationMarker(place);
-
     }
 
     public void onClearPlaceAutocompleteText() {
