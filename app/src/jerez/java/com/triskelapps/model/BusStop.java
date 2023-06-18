@@ -20,7 +20,7 @@ public class BusStop  extends BusStopBase {
     @Override
     public String getBusStopExtraInfo(Context context) {
         return context.getString(
-                R.string.bus_stop_direction_transfer_format, getDirection(), getTransfer());
+                R.string.bus_stop_direction_transfer_format, getDirection());
     }
 
 
