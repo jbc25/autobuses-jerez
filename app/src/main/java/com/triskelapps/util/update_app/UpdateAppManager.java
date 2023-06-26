@@ -1,6 +1,7 @@
 package com.triskelapps.util.update_app;
 
 import android.app.Activity;
+import android.content.ActivityNotFoundException;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
@@ -120,9 +121,9 @@ public class UpdateAppManager {
         String directUrl = String.format(TEMPLATE_URL_GOOGLE_PLAY_APP_DIRECT, packageName);
 
         Intent directPlayIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(directUrl));
-        if (directPlayIntent.resolveActivity(context.getPackageManager()) != null) {
+        try {
             context.startActivity(directPlayIntent);
-        } else {
+        } catch (ActivityNotFoundException e) {
             context.startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(httpUrl)));
         }
     }

@@ -1,6 +1,7 @@
 package com.triskelapps.util;
 
 import android.annotation.SuppressLint;
+import android.content.ActivityNotFoundException;
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.AssetManager;
@@ -8,6 +9,7 @@ import android.content.res.Resources;
 import android.graphics.Point;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
+import android.net.Uri;
 import android.os.Build;
 import android.provider.Settings;
 import android.text.Html;
@@ -15,9 +17,12 @@ import android.text.Spanned;
 import android.text.method.LinkMovementMethod;
 import android.util.DisplayMetrics;
 import android.util.Log;
+import android.util.Patterns;
 import android.util.TypedValue;
 import android.view.WindowManager;
 import android.widget.TextView;
+
+import com.triskelapps.R;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -29,6 +34,8 @@ import java.text.Normalizer;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
+
+import es.dmoral.toasty.Toasty;
 
 public final class Util {
 
@@ -188,5 +195,23 @@ public final class Util {
             stringBuilder.append(line).append('\n');
         }
         return stringBuilder.toString();
+    }
+
+    public static boolean isValidLink(String link) {
+        return link != null && Patterns.WEB_URL.matcher(link).matches();
+    }
+
+    public static void openLink(Context context, String link) {
+
+        if (!isValidLink(link)) {
+            Toasty.error(context, context.getString(R.string.invalid_link)).show();
+            return;
+        }
+
+        try {
+            context.startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(link)));
+        } catch (ActivityNotFoundException e) {
+            Toasty.error(context, context.getString(R.string.no_app_to_open_link)).show();
+        }
     }
 }

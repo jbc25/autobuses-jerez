@@ -22,6 +22,7 @@ import com.triskelapps.App;
 import com.triskelapps.CityData;
 import com.triskelapps.databinding.ViewBannerMessageBinding;
 import com.triskelapps.util.CountlyUtil;
+import com.triskelapps.util.Util;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -129,15 +130,7 @@ public class BannerMessageView extends FrameLayout implements View.OnClickListen
 
     @Override
     public void onClick(View v) {
-
-        if (link != null) {
-            Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(link));
-            if (intent.resolveActivity(getContext().getPackageManager()) != null) {
-                getContext().startActivity(intent);
-                CountlyUtil.bannerMessageClick(link);
-            }
-        }
-
+        Util.openLink(getContext(), link);
     }
 
 

@@ -90,4 +90,6 @@
     <string name="notifications_permission_denied">Has desactivado las notificaciones</string>
     <string name="notifications_permission_granted">¡Notificaciones activadas!</string>
     <string name="nearby_lines">Líneas\ncercanas</string>
+    <string name="invalid_link">El enlace no es válido</string>
+    <string name="no_app_to_open_link">No existe aplicación para abrir este enlace</string>
 </resources>
