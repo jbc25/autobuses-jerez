@@ -2651,35 +2651,6 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -6.1362709,
-                    36.68127,
-                    0
-                ]
-            },
-            "properties": {
-                "name": "Corredera",
-                "styleUrl": "#icon-1532-C2185B",
-                "styleHash": "-63984647",
-                "styleMapHash": {
-                    "normal": "#icon-1532-C2185B-normal",
-                    "highlight": "#icon-1532-C2185B-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
-                "description": "descripción: TRANSBORDO: 5<br>LINEA: 12<br>COD.PARADA: 131<br>SENTIDO: Unica<br>LATITUD: 36.680999<br>LONGITUD: -6.135418<br>TRANSBORDO: 5<br>LINEA: 12.0<br>COD.PARADA: 131.0<br>SENTIDO: San José Obrero<br>LATITUD: 36.680999<br>LONGITUD: -6.135418",
-                "descripción": "TRANSBORDO: 5\nLINEA: 12\nCOD.PARADA: 131\nSENTIDO: Unica\nLATITUD: 36.680999\nLONGITUD: -6.135418",
-                "TRANSBORDO": "5",
-                "LINEA": "12.0",
-                "COD.PARADA": "131.0",
-                "SENTIDO": "San José Obrero",
-                "LATITUD": "36.680999",
-                "LONGITUD": "-6.135418"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
                     -6.1349477,
                     36.6834033,
                     0
@@ -5996,7 +5967,7 @@
                 ]
             },
             "properties": {
-                "name": "Resid. Rancho Colores",
+                "name": "Residencia Rancho Colores",
                 "styleUrl": "#icon-1532-097138",
                 "styleHash": "357d68d9",
                 "styleMapHash": {
@@ -6004,10 +5975,10 @@
                     "highlight": "#icon-1532-097138-highlight"
                 },
                 "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
-                "description": "descripción: Linea: 13<br>Codigo de parada: 370<br>Direccion: Vuelta<br>Transbordo: <br>Latitud: 36.668904<br>Longitud: -6.159823<br>Linea: 13.0<br>Codigo de parada: 370.0<br>Direccion: Vuelta<br>Transbordo: <br>Latitud: 36.668904<br>Longitud: -6.159823",
+                "description": "descripción: Linea: 13<br>Codigo de parada: 370<br>Direccion: Vuelta<br>Transbordo: <br>Latitud: 36.668904<br>Longitud: -6.159823<br>Linea: 13.0<br>Codigo de parada: 369<br>Direccion: Vuelta<br>Transbordo: <br>Latitud: 36.668904<br>Longitud: -6.159823",
                 "descripción": "Linea: 13\nCodigo de parada: 370\nDireccion: Vuelta\nTransbordo: \nLatitud: 36.668904\nLongitud: -6.159823",
                 "Linea": "13.0",
-                "Codigo de parada": "370.0",
+                "Codigo de parada": "369",
                 "Direccion": "Vuelta",
                 "Transbordo": "",
                 "Latitud": "36.668904",

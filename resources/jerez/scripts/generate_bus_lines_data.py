@@ -142,7 +142,7 @@ for lines_file in lines_files:
 			if bus_line.path:
 				print(f'Mas de un LineString en linea {line_number}. Se añadiran al anterior')
 
-			print(f'coordinates_list size: {len(coordinates_list)}')
+			# print(f'coordinates_list size: {len(coordinates_list)}')
 
 			for coordinates in coordinates_list:
 				bus_line.path.append([float(coordinates[1]), float(coordinates[0])])
@@ -167,7 +167,7 @@ for lines_file in lines_files:
 			direction_index = 0
 
 			line_number += 1
-			print(f'Línea siguiente {line_number}')
+			# print(f'Línea siguiente {line_number}')
 
 
 serialized_data = json.dumps([ob.__dict__ for ob in bus_lines])
@@ -176,3 +176,5 @@ serialized_data = json.dumps([ob.__dict__ for ob in bus_lines])
 
 import pyperclip
 pyperclip.copy(serialized_data)
+
+print("\nCompletado.\nCopiado al portapapeles")

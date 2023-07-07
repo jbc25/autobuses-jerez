@@ -6359,35 +6359,6 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -6.149054,
-                    36.688152,
-                    0
-                ]
-            },
-            "properties": {
-                "name": "Zoilo Ruiz Mateos",
-                "styleUrl": "#icon-1532-097138",
-                "styleHash": "357d68d9",
-                "styleMapHash": {
-                    "normal": "#icon-1532-097138-normal",
-                    "highlight": "#icon-1532-097138-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
-                "description": "descripción: TRANSBORDO: NO<br>LINEA: 8<br>COD. PARADA: 459<br>SENTIDO: Hacia Puerta de Rota<br>LATITUD: 36.688152<br>LONGITUD: -6.149054<br>TRANSBORDO: NO<br>LINEA: 8.0<br>COD. PARADA: 459.0<br>SENTIDO: Hacia Puerta de Rota<br>LATITUD: 36.688152<br>LONGITUD: -6.149054",
-                "descripción": "TRANSBORDO: NO\nLINEA: 8\nCOD. PARADA: 459\nSENTIDO: Hacia Puerta de Rota\nLATITUD: 36.688152\nLONGITUD: -6.149054",
-                "TRANSBORDO": "NO",
-                "LINEA": "8.0",
-                "COD. PARADA": "459.0",
-                "SENTIDO": "Hacia Puerta de Rota",
-                "LATITUD": "36.688152",
-                "LONGITUD": "-6.149054"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
                     -6.1482388,
                     36.6862458,
                     0
@@ -6410,35 +6381,6 @@
                 "SENTIDO": "Hacia Puerta de Rota",
                 "LATITUD": "36.686534",
                 "LONGITUD": "-6.148507"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -6.147252,
-                    36.685697,
-                    0
-                ]
-            },
-            "properties": {
-                "name": "Luis Vives",
-                "styleUrl": "#icon-1532-097138",
-                "styleHash": "357d68d9",
-                "styleMapHash": {
-                    "normal": "#icon-1532-097138-normal",
-                    "highlight": "#icon-1532-097138-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
-                "description": "descripción: TRANSBORDO: 2<br>LINEA: 8<br>COD. PARADA: 274<br>SENTIDO: Hacia San Agustín<br>LATITUD: 36.6856969<br>LONGITUD: -6.1472515<br>TRANSBORDO: 2<br>LINEA: 8.0<br>COD. PARADA: 274.0<br>SENTIDO: Hacia San Agustín<br>LATITUD: 36.6856969<br>LONGITUD: -6.1472515",
-                "descripción": "TRANSBORDO: 2\nLINEA: 8\nCOD. PARADA: 274\nSENTIDO: Hacia San Agustín\nLATITUD: 36.6856969\nLONGITUD: -6.1472515",
-                "TRANSBORDO": "2",
-                "LINEA": "8.0",
-                "COD. PARADA": "274.0",
-                "SENTIDO": "Hacia San Agustín",
-                "LATITUD": "36.6856969",
-                "LONGITUD": "-6.1472515"
             }
         },
         {
@@ -12708,35 +12650,6 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -6.147284,
-                    36.685667,
-                    0
-                ]
-            },
-            "properties": {
-                "name": "Luis Vives",
-                "styleUrl": "#icon-1532-097138",
-                "styleHash": "357d68d9",
-                "styleMapHash": {
-                    "normal": "#icon-1532-097138-normal",
-                    "highlight": "#icon-1532-097138-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
-                "description": "descripción: TRANSBORDO: 2<br>LINEA: 9<br>COD. PARADA: 275<br>SENTIDO: Hacia Area Sur<br>LATITUD: 36.6856668<br>LONGITUD: -6.1472837<br>TRANSBORDO: 2<br>LINEA: 9.0<br>COD. PARADA: 275.0<br>SENTIDO: Hacia Area Sur<br>LATITUD: 36.6856668<br>LONGITUD: -6.1472837",
-                "descripción": "TRANSBORDO: 2\nLINEA: 9\nCOD. PARADA: 275\nSENTIDO: Hacia Area Sur\nLATITUD: 36.6856668\nLONGITUD: -6.1472837",
-                "TRANSBORDO": "2",
-                "LINEA": "9.0",
-                "COD. PARADA": "275.0",
-                "SENTIDO": "Hacia Area Sur",
-                "LATITUD": "36.6856668",
-                "LONGITUD": "-6.1472837"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
                     -6.1483299,
                     36.6870405,
                     0
@@ -12759,35 +12672,6 @@
                 "SENTIDO": "Hacia El Zoo",
                 "LATITUD": "36.686021",
                 "LONGITUD": "-6.147654"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -6.149146,
-                    36.688365,
-                    0
-                ]
-            },
-            "properties": {
-                "name": "Zoilo Ruiz Mateos",
-                "styleUrl": "#icon-1532-097138",
-                "styleHash": "357d68d9",
-                "styleMapHash": {
-                    "normal": "#icon-1532-097138-normal",
-                    "highlight": "#icon-1532-097138-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
-                "description": "descripción: TRANSBORDO: <br>LINEA: 9<br>COD. PARADA: 460<br>SENTIDO: Hacia El Zoo<br>LATITUD: 36.688365<br>LONGITUD: -6.149146<br>TRANSBORDO: <br>LINEA: 9.0<br>COD. PARADA: 460.0<br>SENTIDO: Hacia El Zoo<br>LATITUD: 36.688365<br>LONGITUD: -6.149146",
-                "descripción": "TRANSBORDO: \nLINEA: 9\nCOD. PARADA: 460\nSENTIDO: Hacia El Zoo\nLATITUD: 36.688365\nLONGITUD: -6.149146",
-                "TRANSBORDO": "",
-                "LINEA": "9.0",
-                "COD. PARADA": "460.0",
-                "SENTIDO": "Hacia El Zoo",
-                "LATITUD": "36.688365",
-                "LONGITUD": "-6.149146"
             }
         },
         {

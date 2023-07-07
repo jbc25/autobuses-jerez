@@ -14,7 +14,7 @@ public interface BusTimetableApi {
 
     @POST("index.php?id=listar_b")
     @FormUrlEncoded
-    Call<ResponseBody> getTimetable(@Field("valorLinea") int lineId, @Field("valorCaja1") int codeBusStop);
+    Call<ResponseBody> getTimetableOriginal(@Field("valorLinea") int lineId, @Field("valorCaja1") int codeBusStop);
 
 
     @GET("https://triskelapps.es/apps/autobuses-jerez/timetables/L{lineId}-P{busStopCode}.html")

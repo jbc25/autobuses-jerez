@@ -30,42 +30,6 @@ public class TimetableInteractor extends BaseInteractor {
     public void getTimetable(final int lineId, final int codeBusStop, CallbackPost callback) {
 
         getApi(BusTimetableApi.class)
-                .getTimetable(lineId, codeBusStop)
-                .enqueue(new Callback<ResponseBody>() {
-                    @Override
-                    public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
-                        if (response.isSuccessful()) {
-                            try {
-                                callback.onSuccess(response.body().string());
-                            } catch (IOException e) {
-                                callback.onError("Error on string body");
-                                Log.e(TAG, "onResponse: Error", e);
-                            }
-                        } else {
-
-                            if (response.code() == 404) {
-                                CountlyUtil.recordHandledException(new Exception("Error loading timetable: Parada no encontrada. " +
-                                        String.format("L: %d - P: %d", lineId, codeBusStop)));
-                            } else {
-                                CountlyUtil.recordHandledException(new Exception("Error loading timetable: " + parseError(response)));
-                            }
-
-                            getTimetableAlternative(lineId, codeBusStop, callback);
-                        }
-                    }
-
-                    @Override
-                    public void onFailure(Call<ResponseBody> call, Throwable t) {
-
-                        CountlyUtil.recordHandledException(new Exception("Error loading timetable: " + t.getMessage()));
-                        getTimetableAlternative(lineId, codeBusStop, callback);
-                    }
-                });
-    }
-
-    public void getTimetableAlternative(int lineId, int codeBusStop, CallbackPost callback) {
-
-        getApi(BusTimetableApi.class)
                 .getTimetableAlternative(lineId, codeBusStop)
                 .enqueue(new Callback<ResponseBody>() {
                     @Override
@@ -86,7 +50,7 @@ public class TimetableInteractor extends BaseInteractor {
                                 CountlyUtil.recordHandledException(new Exception("Error loading timetable ALTERNATIVE: " + parseError(response)));
                             }
 
-                            callback.onError(parseError(response));
+                            getTimetableOriginal(lineId, codeBusStop, callback);
                         }
                     }
 
@@ -94,6 +58,42 @@ public class TimetableInteractor extends BaseInteractor {
                     public void onFailure(Call<ResponseBody> call, Throwable t) {
 
                         CountlyUtil.recordHandledException(new Exception("Error loading timetable ALTERNATIVE: " + t.getMessage()));
+                        getTimetableOriginal(lineId, codeBusStop, callback);
+                    }
+                });
+    }
+
+    private void getTimetableOriginal(int lineId, int codeBusStop, CallbackPost callback) {
+
+        getApi(BusTimetableApi.class)
+                .getTimetableOriginal(lineId, codeBusStop)
+                .enqueue(new Callback<ResponseBody>() {
+                    @Override
+                    public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
+                        if (response.isSuccessful()) {
+                            try {
+                                callback.onSuccess(response.body().string());
+                            } catch (IOException e) {
+                                callback.onError("Error on string body");
+                                Log.e(TAG, "onResponse: Error", e);
+                            }
+                        } else {
+
+                            if (response.code() == 404) {
+                                CountlyUtil.recordHandledException(new Exception("Error loading timetable ORIGINAL: Parada no encontrada. " +
+                                        String.format("L: %d - P: %d", lineId, codeBusStop)));
+                            } else {
+                                CountlyUtil.recordHandledException(new Exception("Error loading timetable ORIGINAL: " + parseError(response)));
+                            }
+
+                            callback.onError(parseError(response));
+                        }
+                    }
+
+                    @Override
+                    public void onFailure(Call<ResponseBody> call, Throwable t) {
+
+                        CountlyUtil.recordHandledException(new Exception("Error loading timetable ORIGINAL: " + t.getMessage()));
                         callback.onError(t.getMessage());
                     }
                 });

@@ -10263,35 +10263,6 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -6.136285,
-                    36.6812765,
-                    0
-                ]
-            },
-            "properties": {
-                "name": "Corredera",
-                "styleUrl": "#icon-1532-C2185B",
-                "styleHash": "-63984647",
-                "styleMapHash": {
-                    "normal": "#icon-1532-C2185B-normal",
-                    "highlight": "#icon-1532-C2185B-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
-                "description": "descripción: TRANSBORDO: 12-18<br>LINEA: 5<br>COD. PARADA: 131<br>SENTIDO: Guadalcacín<br>LATITUD: 36.680999<br>LONGITUD: -6.135418<br>TRANSBORDO: 12-18<br>LINEA: 5.0<br>COD. PARADA: 131.0<br>SENTIDO: Guadalcacín<br>LATITUD: 36.680999<br>LONGITUD: -6.135418",
-                "descripción": "TRANSBORDO: 12-18\nLINEA: 5\nCOD. PARADA: 131\nSENTIDO: Guadalcacín\nLATITUD: 36.680999\nLONGITUD: -6.135418",
-                "TRANSBORDO": "12-18",
-                "LINEA": "5.0",
-                "COD. PARADA": "131.0",
-                "SENTIDO": "Guadalcacín",
-                "LATITUD": "36.680999",
-                "LONGITUD": "-6.135418"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
                     -6.1350992,
                     36.6833473,
                     0
@@ -10364,11 +10335,11 @@
                     "highlight": "#icon-1532-C2185B-highlight"
                 },
                 "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
-                "description": "descripción: fake-cod.anterior<br>TRANSBORDO: NO<br>LINEA: 5<br>COD. PARADA: 30<br>SENTIDO: Guadalcacín<br>LATITUD: <br>LONGITUD: ",
+                "description": "descripción: fake-cod.anterior<br>TRANSBORDO: NO<br>LINEA: 5<br>COD. PARADA: 55<br><br>SENTIDO: Guadalcacín<br>LATITUD: <br>LONGITUD: ",
                 "descripción": "fake-cod.anterior",
                 "TRANSBORDO": "NO",
                 "LINEA": "5",
-                "COD. PARADA": "30",
+                "COD. PARADA": "55\n",
                 "SENTIDO": "Guadalcacín",
                 "LATITUD": "",
                 "LONGITUD": ""
