@@ -57,14 +57,11 @@
             android:textSize="16sp" />
 
         <androidx.appcompat.widget.AppCompatButton
+            style="@style/AppButton"
             android:id="@+id/btn_timetable"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
-            android:backgroundTint="@color/colorPrimary"
-            android:text="@string/see_timetable"
-            android:textColor="@color/white" />
+            android:text="@string/see_timetable" />
 
     </RelativeLayout>
 

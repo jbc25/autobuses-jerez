@@ -2312,7 +2312,7 @@
                 ]
             },
             "properties": {
-                "name": "C/ Cartuja",
+                "name": "Minotauro",
                 "styleUrl": "#icon-1532-C2185B",
                 "styleHash": "-63984647",
                 "styleMapHash": {
@@ -3182,7 +3182,7 @@
                 ]
             },
             "properties": {
-                "name": "C/ Cartuja",
+                "name": "Minotauro",
                 "styleUrl": "#icon-1532-C2185B",
                 "styleHash": "-63984647",
                 "styleMapHash": {
@@ -4828,7 +4828,7 @@
                 ]
             },
             "properties": {
-                "name": "C/ Cartuja",
+                "name": "Minotauro\n",
                 "styleUrl": "#icon-1532-C2185B",
                 "styleHash": "-63984647",
                 "styleMapHash": {
@@ -4973,7 +4973,7 @@
                 ]
             },
             "properties": {
-                "name": "Centro Salud",
+                "name": "Centro Salud Asunción\n",
                 "styleUrl": "#icon-1532-C2185B",
                 "styleHash": "-63984647",
                 "styleMapHash": {
@@ -5553,7 +5553,7 @@
                 ]
             },
             "properties": {
-                "name": "Hipercor",
+                "name": "Hipercor (Altillo)\n",
                 "styleUrl": "#icon-1532-C2185B",
                 "styleHash": "-63984647",
                 "styleMapHash": {
@@ -5582,7 +5582,7 @@
                 ]
             },
             "properties": {
-                "name": "Hipercor Rioja",
+                "name": "Hipercor (Voltaire)",
                 "styleUrl": "#icon-1532-C2185B",
                 "styleHash": "-63984647",
                 "styleMapHash": {
@@ -6452,7 +6452,7 @@
                 ]
             },
             "properties": {
-                "name": "Asta Regia",
+                "name": "c/ Ermita de Guia\n",
                 "styleUrl": "#icon-1532-C2185B",
                 "styleHash": "-63984647",
                 "styleMapHash": {
@@ -6460,12 +6460,12 @@
                     "highlight": "#icon-1532-C2185B-highlight"
                 },
                 "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
-                "description": "descripción: TRANSBORDO: 9<br>LINEA: 8<br>COD. PARADA: 43<br>SENTIDO: (Sin ubicacion)<br>LATITUD: 36.679195<br>LONGITUD: -6.145413<br>TRANSBORDO: 9<br>LINEA: 8.0<br>COD. PARADA: 43.0<br>SENTIDO: (Sin ubicacion)<br>LATITUD: 36.679195<br>LONGITUD: -6.145413",
-                "descripción": "TRANSBORDO: 9\nLINEA: 8\nCOD. PARADA: 43\nSENTIDO: (Sin ubicacion)\nLATITUD: 36.679195\nLONGITUD: -6.145413",
+                "description": "descripción: TRANSBORDO: 9<br>LINEA: 8<br>COD. PARADA: 43<br>SENTIDO:<br>LATITUD: 36.679195<br>LONGITUD: -6.145413<br>TRANSBORDO: 9<br>LINEA: 8.0<br>COD. PARADA: 43.0<br>SENTIDO: <br>LATITUD: 36.679195<br>LONGITUD: -6.145413",
+                "descripción": "TRANSBORDO: 9\nLINEA: 8\nCOD. PARADA: 43\nSENTIDO:\nLATITUD: 36.679195\nLONGITUD: -6.145413",
                 "TRANSBORDO": "9",
                 "LINEA": "8.0",
                 "COD. PARADA": "43.0",
-                "SENTIDO": "(Sin ubicacion)",
+                "SENTIDO": "",
                 "LATITUD": "36.679195",
                 "LONGITUD": "-6.145413"
             }
@@ -12540,7 +12540,7 @@
                 ]
             },
             "properties": {
-                "name": "Asta Regia",
+                "name": "c/ Ermita de Guia\n",
                 "styleUrl": "#icon-1532-C2185B",
                 "styleHash": "-63984647",
                 "styleMapHash": {
@@ -12548,12 +12548,12 @@
                     "highlight": "#icon-1532-C2185B-highlight"
                 },
                 "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
-                "description": "descripción: TRANSBORDO: 8 <br>LINEA: 9<br>COD. PARADA: 43<br>SENTIDO: (Sin ubicacion)<br>LATITUD: 36.679195<br>LONGITUD: -6.145413<br>TRANSBORDO: 8<br>LINEA: 9.0<br>COD. PARADA: 43.0<br>SENTIDO: (Sin ubicacion)<br>LATITUD: 36.679195<br>LONGITUD: -6.145413",
-                "descripción": "TRANSBORDO: 8 \nLINEA: 9\nCOD. PARADA: 43\nSENTIDO: (Sin ubicacion)\nLATITUD: 36.679195\nLONGITUD: -6.145413",
+                "description": "descripción: TRANSBORDO: 8 <br>LINEA: 9<br>COD. PARADA: 43<br>SENTIDO:<br>LATITUD: 36.679195<br>LONGITUD: -6.145413<br>TRANSBORDO: 8<br>LINEA: 9.0<br>COD. PARADA: 43.0<br>SENTIDO: <br>LATITUD: 36.679195<br>LONGITUD: -6.145413",
+                "descripción": "TRANSBORDO: 8 \nLINEA: 9\nCOD. PARADA: 43\nSENTIDO:\nLATITUD: 36.679195\nLONGITUD: -6.145413",
                 "TRANSBORDO": "8",
                 "LINEA": "9.0",
                 "COD. PARADA": "43.0",
-                "SENTIDO": "(Sin ubicacion)",
+                "SENTIDO": "",
                 "LATITUD": "36.679195",
                 "LONGITUD": "-6.145413"
             }
@@ -12772,7 +12772,7 @@
                 ]
             },
             "properties": {
-                "name": "Worten",
+                "name": "Luz Shopping\n",
                 "styleUrl": "#icon-1532-C2185B",
                 "styleHash": "-63984647",
                 "styleMapHash": {
@@ -13497,7 +13497,7 @@
                 ]
             },
             "properties": {
-                "name": "Hipercor Rioja",
+                "name": "Hipercor (Voltaire)",
                 "styleUrl": "#icon-1532-C2185B",
                 "styleHash": "-63984647",
                 "styleMapHash": {
@@ -13526,7 +13526,7 @@
                 ]
             },
             "properties": {
-                "name": "Hipercor",
+                "name": "Hipercor (Altillo)\n",
                 "styleUrl": "#icon-1532-C2185B",
                 "styleHash": "-63984647",
                 "styleMapHash": {
@@ -14135,7 +14135,7 @@
                 ]
             },
             "properties": {
-                "name": "Centro Salud",
+                "name": "Centro Salud Asunción\n",
                 "styleUrl": "#icon-1532-C2185B",
                 "styleHash": "-63984647",
                 "styleMapHash": {
@@ -14280,7 +14280,7 @@
                 ]
             },
             "properties": {
-                "name": "Cartuja",
+                "name": "Minotauro",
                 "styleUrl": "#icon-1532-C2185B",
                 "styleHash": "-63984647",
                 "styleMapHash": {
@@ -18237,7 +18237,7 @@
                 ]
             },
             "properties": {
-                "name": "SuperSol",
+                "name": "Pza. Carpita\n",
                 "styleUrl": "#icon-1532-C2185B",
                 "styleHash": "-63984647",
                 "styleMapHash": {
@@ -18419,12 +18419,12 @@
                     "highlight": "#icon-1532-C2185B-highlight"
                 },
                 "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
-                "description": "descripción: <br>TRANSBORDO: <br>LINEA: 10<br>COD.PARADA: 502<br>SENTIDO: <br>LATITUD: <br>LONGITUD: ",
-                "descripción": "",
+                "description": "descripción: hacia Pinosolete<br><br>TRANSBORDO: <br>LINEA: 10<br>COD.PARADA: 502<br>SENTIDO: en sentido Canaleja<br><br>LATITUD: <br>LONGITUD: ",
+                "descripción": "hacia Pinosolete\n",
                 "TRANSBORDO": "",
                 "LINEA": "10",
                 "COD.PARADA": "502",
-                "SENTIDO": "",
+                "SENTIDO": "en sentido Canaleja\n",
                 "LATITUD": "",
                 "LONGITUD": ""
             }
@@ -18448,12 +18448,12 @@
                     "highlight": "#icon-1532-C2185B-highlight"
                 },
                 "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
-                "description": "descripción: <br>TRANSBORDO: <br>LINEA: 10<br>COD.PARADA: 505<br>SENTIDO: <br>LATITUD: <br>LONGITUD: ",
+                "description": "descripción: <br>TRANSBORDO: <br>LINEA: 10<br>COD.PARADA: 505<br>SENTIDO: hacia centro<br><br>LATITUD: <br>LONGITUD: ",
                 "descripción": "",
                 "TRANSBORDO": "",
                 "LINEA": "10",
                 "COD.PARADA": "505",
-                "SENTIDO": "",
+                "SENTIDO": "hacia centro\n",
                 "LATITUD": "",
                 "LONGITUD": ""
             }
@@ -18477,12 +18477,12 @@
                     "highlight": "#icon-1532-C2185B-highlight"
                 },
                 "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
-                "description": "descripción: <br>TRANSBORDO: <br>LINEA: 10<br>COD.PARADA: 506<br>SENTIDO: <br>LATITUD: <br>LONGITUD: ",
+                "description": "descripción: <br>TRANSBORDO: <br>LINEA: 10<br>COD.PARADA: 506<br>SENTIDO: hacia Centro<br><br>LATITUD: <br>LONGITUD: ",
                 "descripción": "",
                 "TRANSBORDO": "",
                 "LINEA": "10",
                 "COD.PARADA": "506",
-                "SENTIDO": "",
+                "SENTIDO": "hacia Centro\n",
                 "LATITUD": "",
                 "LONGITUD": ""
             }
@@ -18506,12 +18506,12 @@
                     "highlight": "#icon-1532-C2185B-highlight"
                 },
                 "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
-                "description": "descripción: <br>TRANSBORDO: <br>LINEA: 10<br>COD.PARADA: 503<br>SENTIDO: <br>LATITUD: <br>LONGITUD: ",
+                "description": "descripción: <br>TRANSBORDO: <br>LINEA: 10<br>COD.PARADA: 503<br>SENTIDO: hacia Centro<br><br>LATITUD: <br>LONGITUD: ",
                 "descripción": "",
                 "TRANSBORDO": "",
                 "LINEA": "10",
                 "COD.PARADA": "503",
-                "SENTIDO": "",
+                "SENTIDO": "hacia Centro\n",
                 "LATITUD": "",
                 "LONGITUD": ""
             }
@@ -18535,12 +18535,12 @@
                     "highlight": "#icon-1532-C2185B-highlight"
                 },
                 "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
-                "description": "descripción: <br>TRANSBORDO: <br>LINEA: 10<br>COD.PARADA: 504<br>SENTIDO: <br>LATITUD: <br>LONGITUD: ",
+                "description": "descripción: <br>TRANSBORDO: <br>LINEA: 10<br>COD.PARADA: 504<br>SENTIDO: hacia Centro<br><br>LATITUD: <br>LONGITUD: ",
                 "descripción": "",
                 "TRANSBORDO": "",
                 "LINEA": "10",
                 "COD.PARADA": "504",
-                "SENTIDO": "",
+                "SENTIDO": "hacia Centro\n",
                 "LATITUD": "",
                 "LONGITUD": ""
             }
@@ -18767,11 +18767,11 @@
                     "highlight": "#icon-1532-C2185B-highlight"
                 },
                 "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
-                "description": "descripción: TRANSBORDO: 2-3-4-16-17-18<br>LINEA: 10<br>COD.PARADA: 414<br>SENTIDO: De Alameda Cristina a Paul<br>LATITUD: 36.690344<br>LONGITUD: -6.135741<br>TRANSBORDO: 2-3-4-16-17-18<br>LINEA: 10.0<br>COD.PARADA: 414.0<br>SENTIDO: De Alameda Cristina a Paul<br>LATITUD: 36.690344<br>LONGITUD: -6.135741",
-                "descripción": "TRANSBORDO: 2-3-4-16-17-18\nLINEA: 10\nCOD.PARADA: 414\nSENTIDO: De Alameda Cristina a Paul\nLATITUD: 36.690344\nLONGITUD: -6.135741",
+                "description": "descripción: hacia Pza. Angustias<br><br>TRANSBORDO: 2-3-4-16-17-18<br>LINEA: 10.0<br>COD.PARADA: 419<br>SENTIDO: De Alameda Cristina a Paul<br>LATITUD: 36.690344<br>LONGITUD: -6.135741",
+                "descripción": "hacia Pza. Angustias\n",
                 "TRANSBORDO": "2-3-4-16-17-18",
                 "LINEA": "10.0",
-                "COD.PARADA": "414.0",
+                "COD.PARADA": "419",
                 "SENTIDO": "De Alameda Cristina a Paul",
                 "LATITUD": "36.690344",
                 "LONGITUD": "-6.135741"
@@ -19463,12 +19463,12 @@
                     "highlight": "#icon-1532-C2185B-highlight"
                 },
                 "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
-                "description": "descripción: <br>TRANSBORDO: 2-3-4-16-17-18<br>LINEA: 10<br>COD.PARADA: 414<br>SENTIDO: La Canaleja<br>LATITUD: <br>LONGITUD: ",
-                "descripción": "",
+                "description": "descripción: hacia Hospital<br><br>TRANSBORDO: 2-3-4-16-17-18<br>LINEA: 10<br>COD.PARADA: 519<br>SENTIDO: hacia Avenida<br><br>LATITUD: <br>LONGITUD: ",
+                "descripción": "hacia Hospital\n",
                 "TRANSBORDO": "2-3-4-16-17-18",
                 "LINEA": "10",
-                "COD.PARADA": "414",
-                "SENTIDO": "La Canaleja",
+                "COD.PARADA": "519",
+                "SENTIDO": "hacia Avenida\n",
                 "LATITUD": "",
                 "LONGITUD": ""
             }
@@ -19869,12 +19869,12 @@
                     "highlight": "#icon-1532-C2185B-highlight"
                 },
                 "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
-                "description": "descripción: <br>TRANSBORDO: <br>LINEA: 10<br>COD.PARADA: 389<br>SENTIDO: <br>LATITUD: <br>LONGITUD: ",
-                "descripción": "",
+                "description": "descripción: hacia Pinosolete<br><br>TRANSBORDO: <br>LINEA: 10<br>COD.PARADA: 512<br>SENTIDO: en sentido Esteve<br><br>LATITUD: <br>LONGITUD: ",
+                "descripción": "hacia Pinosolete\n",
                 "TRANSBORDO": "",
                 "LINEA": "10",
-                "COD.PARADA": "389",
-                "SENTIDO": "",
+                "COD.PARADA": "512",
+                "SENTIDO": "en sentido Esteve\n",
                 "LATITUD": "",
                 "LONGITUD": ""
             }
@@ -19898,12 +19898,12 @@
                     "highlight": "#icon-1532-C2185B-highlight"
                 },
                 "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
-                "description": "descripción: <br>TRANSBORDO: <br>LINEA: 10<br>COD.PARADA: 389<br><br>SENTIDO: <br>LATITUD: <br>LONGITUD: ",
+                "description": "descripción: <br>TRANSBORDO: <br>LINEA: 10<br>COD.PARADA: 513<br><br>SENTIDO: hacia Canaleja<br><br>LATITUD: <br>LONGITUD: ",
                 "descripción": "",
                 "TRANSBORDO": "",
                 "LINEA": "10",
-                "COD.PARADA": "389\n",
-                "SENTIDO": "",
+                "COD.PARADA": "513\n",
+                "SENTIDO": "hacia Canaleja\n",
                 "LATITUD": "",
                 "LONGITUD": ""
             }
@@ -19927,12 +19927,12 @@
                     "highlight": "#icon-1532-C2185B-highlight"
                 },
                 "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
-                "description": "descripción: <br>TRANSBORDO: <br>LINEA: 10<br>COD.PARADA: 389<br>SENTIDO: <br>LATITUD: <br>LONGITUD: ",
+                "description": "descripción: <br>TRANSBORDO: <br>LINEA: 10<br>COD.PARADA: 514<br>SENTIDO: hacia Canaleja<br><br>LATITUD: <br>LONGITUD: ",
                 "descripción": "",
                 "TRANSBORDO": "",
                 "LINEA": "10",
-                "COD.PARADA": "389",
-                "SENTIDO": "",
+                "COD.PARADA": "514",
+                "SENTIDO": "hacia Canaleja\n",
                 "LATITUD": "",
                 "LONGITUD": ""
             }
@@ -19956,12 +19956,12 @@
                     "highlight": "#icon-1532-C2185B-highlight"
                 },
                 "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
-                "description": "descripción: <br>TRANSBORDO: <br>LINEA: 10<br>COD.PARADA: 389<br>SENTIDO: <br>LATITUD: <br>LONGITUD: ",
+                "description": "descripción: <br>TRANSBORDO: <br>LINEA: 10<br>COD.PARADA: 515<br>SENTIDO: hacia Canaleja<br><br>LATITUD: <br>LONGITUD: ",
                 "descripción": "",
                 "TRANSBORDO": "",
                 "LINEA": "10",
-                "COD.PARADA": "389",
-                "SENTIDO": "",
+                "COD.PARADA": "515",
+                "SENTIDO": "hacia Canaleja\n",
                 "LATITUD": "",
                 "LONGITUD": ""
             }
@@ -19985,12 +19985,12 @@
                     "highlight": "#icon-1532-C2185B-highlight"
                 },
                 "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
-                "description": "descripción: <br>TRANSBORDO: <br>LINEA: 10<br>COD.PARADA: 389<br>SENTIDO: <br>LATITUD: <br>LONGITUD: ",
+                "description": "descripción: <br>TRANSBORDO: <br>LINEA: 10<br>COD.PARADA: 516<br>SENTIDO: hacia Canaleja<br><br>LATITUD: <br>LONGITUD: ",
                 "descripción": "",
                 "TRANSBORDO": "",
                 "LINEA": "10",
-                "COD.PARADA": "389",
-                "SENTIDO": "",
+                "COD.PARADA": "516",
+                "SENTIDO": "hacia Canaleja\n",
                 "LATITUD": "",
                 "LONGITUD": ""
             }
@@ -20151,7 +20151,7 @@
                 ]
             },
             "properties": {
-                "name": "SuperSol",
+                "name": "Pza. Carpita\n",
                 "styleUrl": "#icon-1532-C2185B",
                 "styleHash": "-63984647",
                 "styleMapHash": {
@@ -20267,7 +20267,7 @@
                 ]
             },
             "properties": {
-                "name": "Parque Eroski",
+                "name": "Rompidillo",
                 "styleUrl": "#icon-1532-C2185B",
                 "styleHash": "-63984647",
                 "styleMapHash": {

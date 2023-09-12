@@ -92,4 +92,6 @@
     <string name="nearby_lines">Líneas\ncercanas</string>
     <string name="invalid_link">El enlace no es válido</string>
     <string name="no_app_to_open_link">No existe aplicación para abrir este enlace</string>
+    <string name="activate_all">Activar todas</string>
+    <string name="deactivate_all">Desactivar todas</string>
 </resources>

@@ -853,7 +853,7 @@
                 ]
             },
             "properties": {
-                "name": "C/ Cartuja",
+                "name": "Minotauro",
                 "styleUrl": "#icon-1532-C2185B",
                 "styleHash": "-63984647",
                 "styleMapHash": {
@@ -3672,7 +3672,7 @@
                 ]
             },
             "properties": {
-                "name": "C/ Cartuja",
+                "name": "Minotauro",
                 "styleUrl": "#icon-1532-C2185B",
                 "styleHash": "-63984647",
                 "styleMapHash": {
@@ -5880,7 +5880,7 @@
                 ]
             },
             "properties": {
-                "name": "Media Markt",
+                "name": "c/Finlandia",
                 "styleUrl": "#icon-1532-097138",
                 "styleHash": "357d68d9",
                 "styleMapHash": {
@@ -6025,7 +6025,7 @@
                 ]
             },
             "properties": {
-                "name": "Media Markt",
+                "name": "c/ Finlandia\n",
                 "styleUrl": "#icon-1532-097138",
                 "styleHash": "357d68d9",
                 "styleMapHash": {
@@ -6083,7 +6083,7 @@
                 ]
             },
             "properties": {
-                "name": "Carrefour Sur.",
+                "name": "Carrefour Sur (Guadabajaque)\n",
                 "styleUrl": "#icon-1532-097138",
                 "styleHash": "357d68d9",
                 "styleMapHash": {
@@ -6091,10 +6091,10 @@
                     "highlight": "#icon-1532-097138-highlight"
                 },
                 "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
-                "description": "descripción: Procede de Guadabajaque<br>Linea: 13<br>Codigo de parada: <br>Direccion: Zona Sur<br>Transbordo: 8-9<br>Latitud: <br>Longitud: ",
-                "descripción": "Procede de Guadabajaque",
+                "description": "descripción: Hacia Guadabajaque<br>Linea: 13<br>Codigo de parada: 300<br>Direccion: Zona Sur<br>Transbordo: 8-9<br>Latitud: <br>Longitud: ",
+                "descripción": "Hacia Guadabajaque",
                 "Linea": "13",
-                "Codigo de parada": "",
+                "Codigo de parada": "300",
                 "Direccion": "Zona Sur",
                 "Transbordo": "8-9",
                 "Latitud": "",

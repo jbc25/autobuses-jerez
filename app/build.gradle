@@ -1,14 +1,16 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 33
 
     defaultConfig {
         applicationId "com.triskelapps"
+
         minSdkVersion 21
         targetSdkVersion 33
-        versionCode 184
-        versionName "1.8.4"
+        compileSdk 33
+
+        versionCode 185
+        versionName "1.8.5"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 

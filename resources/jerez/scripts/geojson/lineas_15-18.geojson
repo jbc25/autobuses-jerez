@@ -194,11 +194,11 @@
                     "highlight": "#icon-1532-3949AB-highlight"
                 },
                 "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
-                "description": "descripción: <br>TRANSBORDO: <br>LINEA: 15<br>COD.PARADA: 476<br>SENTIDO: Pz. Angustias-El Portal<br>LATITUD: <br>LONGITUD: ",
+                "description": "descripción: <br>TRANSBORDO: <br>LINEA: 15<br>COD.PARADA: 517<br>SENTIDO: Pz. Angustias-El Portal<br>LATITUD: <br>LONGITUD: ",
                 "descripción": "",
                 "TRANSBORDO": "",
                 "LINEA": "15",
-                "COD.PARADA": "476",
+                "COD.PARADA": "517",
                 "SENTIDO": "Pz. Angustias-El Portal",
                 "LATITUD": "",
                 "LONGITUD": ""
@@ -252,11 +252,11 @@
                     "highlight": "#icon-1532-3949AB-highlight"
                 },
                 "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
-                "description": "descripción: <br>TRANSBORDO: <br>LINEA: 15<br>COD.PARADA: 477<br>SENTIDO: Pz. Angustias-El Portal<br>LATITUD: <br>LONGITUD: ",
+                "description": "descripción: <br>TRANSBORDO: <br>LINEA: 15<br>COD.PARADA: 518<br>SENTIDO: Pz. Angustias-El Portal<br>LATITUD: <br>LONGITUD: ",
                 "descripción": "",
                 "TRANSBORDO": "",
                 "LINEA": "15",
-                "COD.PARADA": "477",
+                "COD.PARADA": "518",
                 "SENTIDO": "Pz. Angustias-El Portal",
                 "LATITUD": "",
                 "LONGITUD": ""
@@ -447,7 +447,7 @@
                 ]
             },
             "properties": {
-                "name": "Hipercor-Camino Espera",
+                "name": "Hipercor (Av. Espera)",
                 "styleUrl": "#icon-1532-C2185B",
                 "styleHash": "-63984647",
                 "styleMapHash": {
@@ -476,7 +476,7 @@
                 ]
             },
             "properties": {
-                "name": "Hipercor",
+                "name": "Hipercor (Altillo)\n",
                 "styleUrl": "#icon-1532-C2185B",
                 "styleHash": "-63984647",
                 "styleMapHash": {
@@ -745,11 +745,11 @@
                     "highlight": "#icon-1532-1A237E-highlight"
                 },
                 "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
-                "description": "descripción: <br>TRANSBORDO: 1-2-3-4-5-6-7-8-9-10-11-12-14-18<br>LINEA: 15.0<br>COD.PARADA: 340<br>SENTIDO: El Portal<br>LATITUD: 36.6807559<br>LONGITUD: -6.1331738",
-                "descripción": "",
+                "description": "descripción: Hacia el Sur en Bodega Cuadro<br>TRANSBORDO: 1-2-3-4-5-6-7-8-9-10-11-12-14-18<br>LINEA: 15<br>COD.PARADA: 341<br>SENTIDO: El Portal<br>LATITUD: 36.6807559<br>LONGITUD: -6.1331738",
+                "descripción": "Hacia el Sur en Bodega Cuadro",
                 "TRANSBORDO": "1-2-3-4-5-6-7-8-9-10-11-12-14-18",
-                "LINEA": "15.0",
-                "COD.PARADA": "340",
+                "LINEA": "15",
+                "COD.PARADA": "341",
                 "SENTIDO": "El Portal",
                 "LATITUD": "36.6807559",
                 "LONGITUD": "-6.1331738"
@@ -774,11 +774,11 @@
                     "highlight": "#icon-1532-C2185B-highlight"
                 },
                 "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
-                "description": "descripción: TRANSBORDO: 7-8-9-10<br>LINEA: 15<br>COD.PARADA: 344<br>SENTIDO: El Portal<br>LATITUD: 36.67932<br>LONGITUD: -6.130807<br>TRANSBORDO: 7-8-9-10<br>LINEA: 15.0<br>COD.PARADA: 344.0<br>SENTIDO: El Portal<br>LATITUD: 36.67932<br>LONGITUD: -6.130807",
-                "descripción": "TRANSBORDO: 7-8-9-10\nLINEA: 15\nCOD.PARADA: 344\nSENTIDO: El Portal\nLATITUD: 36.67932\nLONGITUD: -6.130807",
+                "description": "descripción: TRANSBORDO: 7-8-9-10<br>LINEA: 15<br>COD.PARADA: 520<br>SENTIDO: El Portal<br>LATITUD: 36.67932<br>LONGITUD: -6.130807<br>TRANSBORDO: 7-8-9-10<br>LINEA: 15<br>COD.PARADA: 520<br>SENTIDO: El Portal<br>LATITUD: 36.67932<br>LONGITUD: -6.130807",
+                "descripción": "TRANSBORDO: 7-8-9-10\nLINEA: 15\nCOD.PARADA: 520\nSENTIDO: El Portal\nLATITUD: 36.67932\nLONGITUD: -6.130807",
                 "TRANSBORDO": "7-8-9-10",
-                "LINEA": "15.0",
-                "COD.PARADA": "344.0",
+                "LINEA": "15",
+                "COD.PARADA": "520",
                 "SENTIDO": "El Portal",
                 "LATITUD": "36.67932",
                 "LONGITUD": "-6.130807"
@@ -919,11 +919,11 @@
                     "highlight": "#icon-1532-C2185B-highlight"
                 },
                 "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
-                "description": "descripción: TRANSBORDO: <br>LINEA: 15<br>COD.PARADA: 445<br>SENTIDO: Hacia El Portal<br>LATITUD: 36.663296<br>LONGITUD: -6.131686<br>TRANSBORDO: <br>LINEA: 15.0<br>COD.PARADA: 306<br><br>SENTIDO: Hacia El Portal<br>LATITUD: 36.663296<br>LONGITUD: -6.131686",
-                "descripción": "TRANSBORDO: \nLINEA: 15\nCOD.PARADA: 445\nSENTIDO: Hacia El Portal\nLATITUD: 36.663296\nLONGITUD: -6.131686",
+                "description": "descripción: CODIGO CAMBIADO (ANTERIOR)<br><br>TRANSBORDO: <br>LINEA: 15.0<br>COD.PARADA: 47<br><br>SENTIDO: Hacia El Portal<br>LATITUD: 36.663296<br>LONGITUD: -6.131686",
+                "descripción": "CODIGO CAMBIADO (ANTERIOR)\n",
                 "TRANSBORDO": "",
                 "LINEA": "15.0",
-                "COD.PARADA": "306\n",
+                "COD.PARADA": "47\n",
                 "SENTIDO": "Hacia El Portal",
                 "LATITUD": "36.663296",
                 "LONGITUD": "-6.131686"
@@ -948,11 +948,11 @@
                     "highlight": "#icon-1532-C2185B-highlight"
                 },
                 "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
-                "description": "descripción: TRANSBORDO: <br>LINEA: 15<br>COD.PARADA: 26<br>SENTIDO: Hacia El Portal<br>LATITUD: 36.6534291<br>LONGITUD: -6.1301725<br>TRANSBORDO: <br>LINEA: 15.0<br>COD.PARADA: 25<br>SENTIDO: Hacia El Portal<br>LATITUD: 36.6534291<br>LONGITUD: -6.1301725",
+                "description": "descripción: TRANSBORDO: <br>LINEA: 15<br>COD.PARADA: 26<br>SENTIDO: Hacia El Portal<br>LATITUD: 36.6534291<br>LONGITUD: -6.1301725<br>TRANSBORDO: <br>LINEA: 15.0<br>COD.PARADA: 306<br>SENTIDO: Hacia El Portal<br>LATITUD: 36.6534291<br>LONGITUD: -6.1301725",
                 "descripción": "TRANSBORDO: \nLINEA: 15\nCOD.PARADA: 26\nSENTIDO: Hacia El Portal\nLATITUD: 36.6534291\nLONGITUD: -6.1301725",
                 "TRANSBORDO": "",
                 "LINEA": "15.0",
-                "COD.PARADA": "25",
+                "COD.PARADA": "306",
                 "SENTIDO": "Hacia El Portal",
                 "LATITUD": "36.6534291",
                 "LONGITUD": "-6.1301725"
@@ -1325,11 +1325,11 @@
                     "highlight": "#icon-1532-1A237E-highlight"
                 },
                 "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
-                "description": "descripción: CODIGO APP<br><br>TRANSBORDO: 1-2-3-4-5-6-7-8-9-10-11-12-14-18<br>LINEA: 15.0<br>COD.PARADA: 341000<br>SENTIDO: Nueva Jarilla<br>LATITUD: 36.6807581<br>LONGITUD: -6.1331738",
-                "descripción": "CODIGO APP\n",
+                "description": "descripción: Hacia el Norte en Bodega Cuadro<br>TRANSBORDO: 1-2-3-4-5-6-7-8-9-10-11-12-14-18<br>LINEA: 15<br>COD.PARADA: 340<br>SENTIDO: Nueva Jarilla<br>LATITUD: 36.6807581<br>LONGITUD: -6.1331738",
+                "descripción": "Hacia el Norte en Bodega Cuadro",
                 "TRANSBORDO": "1-2-3-4-5-6-7-8-9-10-11-12-14-18",
-                "LINEA": "15.0",
-                "COD.PARADA": "341000",
+                "LINEA": "15",
+                "COD.PARADA": "340",
                 "SENTIDO": "Nueva Jarilla",
                 "LATITUD": "36.6807581",
                 "LONGITUD": "-6.1331738"
@@ -1340,8 +1340,8 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -6.1307642,
-                    36.6792661,
+                    -6.130732,
+                    36.6792467,
                     0
                 ]
             },
@@ -1354,11 +1354,11 @@
                     "highlight": "#icon-1532-C2185B-highlight"
                 },
                 "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
-                "description": "descripción: CODIGO CAMBIADO<br><br>TRANSBORDO: 7-8-9-10<br>LINEA: 15<br>COD.PARADA: 341000<br>SENTIDO: Nueva Jarilla<br>LATITUD: 36.6793073<br>LONGITUD: -6.1307793",
-                "descripción": "CODIGO CAMBIADO\n",
+                "description": "descripción: <br>TRANSBORDO: 7-8-9-10<br>LINEA: 15<br>COD.PARADA: 341<br>SENTIDO: Nueva Jarilla<br>LATITUD: 36.6793073<br>LONGITUD: -6.1307793",
+                "descripción": "",
                 "TRANSBORDO": "7-8-9-10",
                 "LINEA": "15",
-                "COD.PARADA": "341000",
+                "COD.PARADA": "341",
                 "SENTIDO": "Nueva Jarilla",
                 "LATITUD": "36.6793073",
                 "LONGITUD": "-6.1307793"
@@ -1636,7 +1636,7 @@
                 ]
             },
             "properties": {
-                "name": "Hipercor",
+                "name": "Hipercor (Altillo)\n",
                 "styleUrl": "#icon-1532-C2185B",
                 "styleHash": "-63984647",
                 "styleMapHash": {
@@ -10669,7 +10669,7 @@
                 ]
             },
             "properties": {
-                "name": "Hipercor",
+                "name": "Hipercor (Andalucia)\n",
                 "styleUrl": "#icon-1532-C2185B",
                 "styleHash": "-63984647",
                 "styleMapHash": {
@@ -10959,7 +10959,7 @@
                 ]
             },
             "properties": {
-                "name": "Hipercor-C. Espera",
+                "name": "Hipercor (Av. Espera)",
                 "styleUrl": "#icon-1532-C2185B",
                 "styleHash": "-63984647",
                 "styleMapHash": {
@@ -10988,7 +10988,7 @@
                 ]
             },
             "properties": {
-                "name": "Hipercor",
+                "name": "Hipercor (Altillo)\n",
                 "styleUrl": "#icon-1532-C2185B",
                 "styleHash": "-63984647",
                 "styleMapHash": {
@@ -14335,11 +14335,11 @@
                     "highlight": "#icon-1532-0288D1-highlight"
                 },
                 "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
-                "description": "descripción: fake-cod.anterior<br>TRANSBORDO: <br>LINEA: 17<br>COD.PARADA: 341<br>SENTIDO: Rotonda Casinos<br>LATITUD: <br>LONGITUD: ",
-                "descripción": "fake-cod.anterior",
+                "description": "descripción: <br>TRANSBORDO: <br>LINEA: 17<br>COD.PARADA: 511<br>SENTIDO: Rotonda Casinos<br>LATITUD: <br>LONGITUD: ",
+                "descripción": "",
                 "TRANSBORDO": "",
                 "LINEA": "17",
-                "COD.PARADA": "341",
+                "COD.PARADA": "511",
                 "SENTIDO": "Rotonda Casinos",
                 "LATITUD": "",
                 "LONGITUD": ""
@@ -17975,7 +17975,7 @@
                 ]
             },
             "properties": {
-                "name": "Worten",
+                "name": "Luz Shopping\n",
                 "styleUrl": "#icon-1532-C2185B",
                 "styleHash": "-63984647",
                 "styleMapHash": {

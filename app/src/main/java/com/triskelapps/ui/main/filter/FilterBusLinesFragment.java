@@ -49,6 +49,22 @@ public class FilterBusLinesFragment extends BaseMainFragment implements FilterBu
         adapter.setOnItemClickListener(this);
         binding.recyclerBusLines.setAdapter(adapter);
 
+        configureActivateAllButtons();
+
+    }
+
+    private void configureActivateAllButtons() {
+        binding.btnActivateAll.setOnClickListener(v -> activateAllLines(true));
+        binding.btnDeactivateAll.setOnClickListener(v -> activateAllLines(false));
+    }
+
+    private void activateAllLines(boolean activate) {
+        for (int i = 0; i < busLines.size(); i++) {
+            busLines.get(i).setVisible(activate);
+            getMainPresenter().onBusLineCheckedChanged(i, activate);
+        }
+
+        adapter.notifyDataSetChanged();
     }
 
     @Override
