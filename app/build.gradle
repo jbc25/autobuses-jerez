@@ -9,8 +9,8 @@ android {
         targetSdkVersion 34
         compileSdk 34
 
-        versionCode 189
-        versionName "1.8.9"
+        versionCode 190
+        versionName "1.9.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 
@@ -88,8 +88,7 @@ dependencies {
     implementation 'com.google.firebase:firebase-auth'
 
     // UPDATE APP VIEW
-    implementation 'com.google.android.play:core:1.10.3'
-    implementation "androidx.work:work-runtime:2.9.0"
+    implementation 'com.triskelapps:simpleappupdate:0.1.4'
 
     implementation 'com.google.android.libraries.places:places:3.3.0'
 

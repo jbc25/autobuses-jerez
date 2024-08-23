@@ -10,7 +10,6 @@ import androidx.multidex.MultiDex;
 import androidx.multidex.MultiDexApplication;
 import androidx.preference.PreferenceManager;
 import androidx.room.Room;
-import androidx.work.WorkManager;
 
 import com.google.android.libraries.places.api.Places;
 import com.google.firebase.messaging.FirebaseMessaging;
@@ -19,13 +18,16 @@ import com.google.gson.reflect.TypeToken;
 import com.triskelapps.database.MyDatabase;
 import com.triskelapps.model.BusLine;
 import com.triskelapps.model.db.BusLineVisible;
+import com.triskelapps.simpleappupdate.SimpleAppUpdate;
+import com.triskelapps.simpleappupdate.config.NotificationStyle;
+import com.triskelapps.simpleappupdate.config.WorkerConfig;
 import com.triskelapps.util.CountlyUtil;
 import com.triskelapps.util.Util;
-import com.triskelapps.util.update_app.UpdateAppManager;
 
 import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 
 public class App extends MultiDexApplication {
@@ -33,9 +35,6 @@ public class App extends MultiDexApplication {
     private static final String TAG = "App";
 
     public static final int BUS_LINES_COUNT = 18;
-
-    public static final String URL_GOOGLE_PLAY_APP = "https://play.google.com/store/apps/details?id=" + BuildConfig.APPLICATION_ID;
-    public static final String URL_DIRECT_GOOGLE_PLAY_APP = "market://details?id=" + BuildConfig.APPLICATION_ID;
 
     public static final String PREFIX = BuildConfig.APPLICATION_ID + ".";
 
@@ -77,8 +76,12 @@ public class App extends MultiDexApplication {
                 .allowMainThreadQueries()
                 .build();
 
-        UpdateAppManager.scheduleAppUpdateCheckWork(this);
-//        WorkManager.getInstance(this).cancelUniqueWork(UpdateAppManager.UPDATE_CHECK_WORK_NAME);
+
+        // Periodic app update configuration
+        new SimpleAppUpdate(this).cancelWork("appUpdateCheckWork");
+        NotificationStyle notificationStyle = new NotificationStyle(R.mipmap.ic_notification, R.color.colorPrimary);
+        WorkerConfig workerConfig = new WorkerConfig(6, TimeUnit.HOURS, 30, TimeUnit.MINUTES);
+        SimpleAppUpdate.schedulePeriodicChecks(this, BuildConfig.VERSION_CODE, notificationStyle, workerConfig);
 
 //        clearPersistedData();
 

@@ -25,10 +25,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
-            <com.triskelapps.util.update_app.UpdateAppView
+            <com.triskelapps.simpleappupdate.SimpleAppUpdateView
                 android:id="@+id/view_update_app"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                app:backgroundColor="@color/primary_light"
+                app:foregroundColor="@color/black"
                 android:layout_below="@+id/view_banner_message"/>
 
             <fragment
