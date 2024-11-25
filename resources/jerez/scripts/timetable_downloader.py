@@ -25,7 +25,7 @@ def download_timetable(line_number, bus_stop_code):
 	print(f'linea{line_number}-parada{bus_stop_code}')
 
 	payload = {'valorLinea': line_number, 'valorCaja1': bus_stop_code}
-	r = requests.post("https://www.comujesa.es/index.php?id=listar_b", data=payload)
+	r = requests.post("https://www.comujesa.es/autobuses-urbanos/paradas-y-horarios/listar-b", data=payload)
 
 	if r.status_code == requests.codes.ok:
 

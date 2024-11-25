@@ -77,6 +77,12 @@ public class FavouritesAdapter extends RecyclerView.Adapter<FavouritesAdapter.Vi
                 }
             });
 
+            binding.imgEditFav.setOnClickListener(v -> {
+                if (itemClickListener != null) {
+                    itemClickListener.onItemEditClick(getAdapterPosition());
+                }
+            });
+
             binding.imgRemoveFav.setOnClickListener(v -> {
                 if (itemClickListener != null) {
                     itemClickListener.onItemRemoveClick(getAdapterPosition());
@@ -94,6 +100,7 @@ public class FavouritesAdapter extends RecyclerView.Adapter<FavouritesAdapter.Vi
     public interface OnItemClickListener {
         void onItemClick(View view, int position);
 
+        void onItemEditClick(int position);
         void onItemRemoveClick(int position);
     }
 }

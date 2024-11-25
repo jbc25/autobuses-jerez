@@ -1,9 +1,12 @@
 package com.triskelapps.ui.favourites;
 
+import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.recyclerview.widget.DividerItemDecoration;
 
 import com.triskelapps.App;
@@ -14,6 +17,7 @@ import com.triskelapps.ui.timetable.TimetableDialog;
 import com.triskelapps.util.CountlyUtil;
 import com.triskelapps.model.BusStop;
 import com.triskelapps.util.Util;
+import com.triskelapps.util.WindowUtils;
 
 import java.util.List;
 
@@ -53,6 +57,37 @@ public class FavouritesActivity extends BaseActivity implements FavouritesAdapte
         BusStop busStop = favourites.get(position);
         TimetableDialog.createDialog(busStop).show(getSupportFragmentManager(), null);
         CountlyUtil.seeTimetableFavourite(busStop);
+
+    }
+
+    @Override
+    public void onItemEditClick(int position) {
+
+        final BusStop busStop = favourites.get(position);
+
+        View layout = View.inflate(this, R.layout.view_dialog_edittext, null);
+
+        final EditText editText = layout.findViewById(R.id.edit_text);
+        editText.setText(busStop.getName());
+
+        final AlertDialog dialog = new AlertDialog.Builder(this)
+                .setView(layout)
+                .setPositiveButton(R.string.accept, (dialogInterface, which) -> {
+
+                    busStop.setName(editText.getText().toString());
+
+                    App.getDB().busStopDao().update(busStop);
+                    favourites.set(position, busStop);
+                    adapter.notifyDataSetChanged();
+
+                })
+                .setNeutralButton(R.string.cancel, null)
+                .create();
+
+        dialog.setOnDismissListener(dialogInterface -> WindowUtils.hideSoftKeyboard(this));
+
+        dialog.show();
+
 
     }
 

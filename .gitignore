@@ -13,3 +13,4 @@
 /app/src/main/res/values/countly.xml
 **/*.aab
 **/*.apk
+/app/jerez/release/app-jerez-release/

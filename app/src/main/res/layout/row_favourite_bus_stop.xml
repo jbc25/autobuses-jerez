@@ -25,6 +25,15 @@
         android:layout_marginLeft="8dp"/>
 
     <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/img_edit_fav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_edit"
+        android:padding="3dp"
+        app:tint="@color/black"
+        android:background="@drawable/background_pressed_common"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/img_remove_fav"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
