@@ -23,15 +23,15 @@ with open('bus_data.json', 'r') as f:
 	report['total_bus_stops'] = total_bus_stops
 
 	# Download timetables loop
-# 	current_bus_stop = 0
-# 	for bus_line in json_data:
-# 		for bus_stop in bus_line['busStops']:
-# 			current_bus_stop += 1
-# 			print(f'Descargando horario {current_bus_stop} de {total_bus_stops}')
-# 			ok = download_timetable(bus_line['id'], bus_stop['code'])
-# 			if not ok:
-# 				report['download_errors_count'] += 1
-# 				report['download_errors_info'].append(f"{bus_line['id']}-{bus_stop['code']}")
+	current_bus_stop = 0
+	for bus_line in json_data:
+		for bus_stop in bus_line['busStops']:
+			current_bus_stop += 1
+			print(f'Descargando horario {current_bus_stop} de {total_bus_stops}')
+			ok = download_timetable(bus_line['id'], bus_stop['code'])
+			if not ok:
+				report['download_errors_count'] += 1
+				report['download_errors_info'].append(f"{bus_line['id']}-{bus_stop['code']}")
 
 with open('timetables_sync_report.log', 'a') as f2:
     timestamp = datetime.now().strftime('%Y-%m-%d %H:%M')
