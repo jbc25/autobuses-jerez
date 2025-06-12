@@ -14,3 +14,4 @@
 **/*.aab
 **/*.apk
 /app/jerez/release/app-jerez-release/
+/resources/jerez/scripts/timetables/
