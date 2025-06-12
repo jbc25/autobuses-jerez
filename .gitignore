@@ -15,3 +15,4 @@
 **/*.apk
 /app/jerez/release/app-jerez-release/
 /resources/jerez/scripts/timetables/
+/resources/jerez/scripts/timetables_sync_report.log
