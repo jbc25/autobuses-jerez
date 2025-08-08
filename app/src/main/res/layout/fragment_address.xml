@@ -8,11 +8,37 @@
     android:background="@drawable/bg_frame"
     tools:context="com.triskelapps.ui.main.address.AddressFragment">
 
-    <fragment
-        android:id="@+id/fragment_places_autocomplete"
-        android:name="com.triskelapps.ui.main.address.CustomPlaceAutocompleteFragment"
+    <LinearLayout
+        android:id="@+id/view_search_address"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_search" />
+
+        <TextView
+            android:id="@+id/tv_search_place"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/where_to_go"
+            android:textSize="18sp"
+            android:layout_margin="10dp" />
+
+        <ImageView
+            android:id="@+id/ic_clear_search_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_close"
+            app:tint="@color/black"
+            android:padding="5dp"/>
+
+    </LinearLayout>
 
     <LinearLayout
         android:id="@+id/view_nearby_lines"

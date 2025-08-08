@@ -6,7 +6,14 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <include layout="@layout/toolbar" />
+    <FrameLayout
+        android:id="@+id/frame_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+        <include layout="@layout/toolbar" />
+    </FrameLayout>
 
     <androidx.drawerlayout.widget.DrawerLayout
         android:id="@+id/drawer_layout"
@@ -29,24 +36,24 @@
                 android:id="@+id/view_update_app"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_below="@+id/view_banner_message"
                 app:backgroundColor="@color/primary_light"
-                app:foregroundColor="@color/black"
-                android:layout_below="@+id/view_banner_message"/>
+                app:foregroundColor="@color/black" />
 
             <fragment
                 android:id="@+id/fragment_address"
+                android:name="com.triskelapps.ui.main.address.AddressFragment"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:name="com.triskelapps.ui.main.address.AddressFragment"
-                android:layout_below="@+id/view_update_app"/>
+                android:layout_below="@+id/view_update_app" />
 
             <fragment
                 android:id="@+id/map"
                 android:name="com.google.android.gms.maps.SupportMapFragment"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_below="@id/fragment_address"
                 android:layout_above="@+id/frame_bottom"
+                android:layout_below="@id/fragment_address"
                 tools:context=".ui.main.MainActivity" />
 
             <ProgressBar
@@ -54,8 +61,8 @@
                 style="@style/Widget.AppCompat.ProgressBar"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:theme="@style/ProgressBarMap"
-                android:layout_centerInParent="true" />
+                android:layout_centerInParent="true"
+                android:theme="@style/ProgressBarMap" />
 
             <FrameLayout
                 android:id="@+id/frame_bottom"
@@ -80,19 +87,19 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:gravity="center_horizontal"
             android:layout_gravity="start"
             android:layout_marginRight="50dp"
-            android:background="?android:colorBackground">
+            android:background="?android:colorBackground"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
+                android:background="@color/primary_light"
                 android:gravity="center"
-                android:padding="10dp"
-                android:background="@color/primary_light">
+                android:orientation="horizontal"
+                android:padding="10dp">
 
                 <androidx.appcompat.widget.AppCompatImageView
                     android:layout_width="wrap_content"
@@ -104,26 +111,26 @@
                     android:layout_marginLeft="10dp"
                     android:text="@string/app_name"
                     android:textSize="20sp"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
             </LinearLayout>
 
             <com.google.android.material.navigation.NavigationView
                 android:id="@+id/nav_view"
-                app:menu="@menu/drawer_menu_main"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
+                android:layout_marginBottom="10dp"
                 android:layout_weight="1"
                 android:fitsSystemWindows="false"
-                android:layout_marginBottom="10dp"/>
+                app:menu="@menu/drawer_menu_main" />
 
             <TextView
                 android:id="@+id/tv_app_version"
                 style="@style/TextBase"
-                android:textSize="12sp"
-                android:padding="5dp"
                 android:layout_width="match_parent"
+                android:background="@color/primary_light"
                 android:gravity="center"
-                android:background="@color/primary_light"/>
+                android:padding="5dp"
+                android:textSize="12sp" />
 
         </LinearLayout>
 

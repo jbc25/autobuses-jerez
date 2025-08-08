@@ -1,20 +1,33 @@
 package com.triskelapps.ui.main.address;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import androidx.activity.result.ActivityResultLauncher;
+import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import com.google.android.gms.common.api.Status;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.tasks.Task;
+import com.google.android.libraries.places.api.Places;
+import com.google.android.libraries.places.api.model.AutocompletePrediction;
+import com.google.android.libraries.places.api.model.AutocompleteSessionToken;
 import com.google.android.libraries.places.api.model.Place;
 import com.google.android.libraries.places.api.model.RectangularBounds;
+import com.google.android.libraries.places.api.net.FetchPlaceRequest;
+import com.google.android.libraries.places.api.net.FetchPlaceResponse;
+import com.google.android.libraries.places.api.net.PlacesClient;
+import com.google.android.libraries.places.widget.PlaceAutocomplete;
+import com.google.android.libraries.places.widget.PlaceAutocompleteActivity;
 import com.google.android.libraries.places.widget.listener.PlaceSelectionListener;
+import com.google.common.base.Preconditions;
 import com.google.maps.android.SphericalUtil;
 import com.triskelapps.App;
 import com.triskelapps.CityData;
@@ -32,7 +45,6 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.Optional;
 import java.util.stream.Collectors;
 
 
@@ -43,10 +55,11 @@ public class AddressFragment extends BaseMainFragment {
 
 
     private FragmentAddressBinding binding;
-    private CustomPlaceAutocompleteFragment autocompleteFragment;
 
     List<NearbyLine> nearbyLines = new ArrayList<>();
     private NearbyLinesAdapter nearbyLinesAdapter;
+    private ActivityResultLauncher<Intent> placeAutocompleteActivityResultLauncher;
+    private Intent autocompleteIntent;
 
     public AddressFragment() {
         // Required empty public constructor
@@ -64,50 +77,81 @@ public class AddressFragment extends BaseMainFragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        configurePlaceAutocomplete();
+        configurePlaceAutocompleteNew();
 
         nearbyLinesAdapter = new NearbyLinesAdapter(getActivity(), nearbyLines);
         nearbyLinesAdapter.setOnItemClickListener((nearbyLine) ->
                 getMainPresenter().onNearbyLineClick(nearbyLine.getBusLine(), nearbyLine.getBusStop()));
         binding.recyclerNearbyLines.setAdapter(nearbyLinesAdapter);
         binding.viewNearbyLines.setVisibility(View.GONE);
+
     }
 
-    private void configurePlaceAutocomplete() {
+    private void configurePlaceAutocompleteNew() {
 
-        autocompleteFragment = (CustomPlaceAutocompleteFragment) getChildFragmentManager().findFragmentById(R.id.fragment_places_autocomplete);
+        // Optional, create a session token for Autocomplete request and the followup FetchPlace request
+        AutocompleteSessionToken sessionToken = AutocompleteSessionToken.newInstance();
 
-        autocompleteFragment.setCountries("ES");
+        autocompleteIntent =
+                new PlaceAutocomplete.IntentBuilder()
+                        .setCountries(List.of("ES"))
+                        .setLocationRestriction(RectangularBounds.newInstance(
+                                CityData.AUTOCOMPLETE_RESULTS_COORDS_SOUTH_WEST, CityData.AUTOCOMPLETE_RESULTS_COORDS_NORTH_EAST))
+                        .setAutocompleteSessionToken(sessionToken) // optional
+                        .build(getActivity());
 
-        // https://developers.google.com/places/android-sdk/autocomplete#constrain-AC-results
-        autocompleteFragment.setLocationRestriction(RectangularBounds.newInstance(
-                CityData.AUTOCOMPLETE_RESULTS_COORDS_SOUTH_WEST, CityData.AUTOCOMPLETE_RESULTS_COORDS_NORTH_EAST));
+        placeAutocompleteActivityResultLauncher = registerForActivityResult(
+                new ActivityResultContracts.StartActivityForResult(),
+                result -> {
+                    Intent intent = result.getData();
+                    if (result.getResultCode() == PlaceAutocompleteActivity.RESULT_OK) {
 
-//        autocompleteFragment.setTypeFilter(TypeFilter.ADDRESS);
+                        AutocompletePrediction prediction =
+                                PlaceAutocomplete.getPredictionFromIntent(
+                                        Preconditions.checkNotNull(intent));
 
-        autocompleteFragment.setPlaceFields(Arrays.asList(Place.Field.ID, Place.Field.NAME, Place.Field.ADDRESS, Place.Field.LAT_LNG));
+                        AutocompleteSessionToken sessionToken1 =
+                                PlaceAutocomplete.getSessionTokenFromIntent(
+                                        Preconditions.checkNotNull(intent));
 
-        autocompleteFragment.setOnPlaceSelectedListener(new PlaceSelectionListener() {
-            @Override
-            public void onPlaceSelected(Place place) {
-                Log.i(TAG, "Autocomplete Places. Selected: " + place.getName());
-                getMainPresenter().onPlaceSelected(place);
-                findNearbyLines(place);
-                CountlyUtil.selectPlace(place.getName());
-            }
+                        // create PlacesClient to make FetchPlace request (optional)
+                        PlacesClient placesClient = Places.createClient(getActivity());
+                        FetchPlaceRequest request =
+                                FetchPlaceRequest.builder(prediction.getPlaceId(),
+                                                Arrays.asList(Place.Field.DISPLAY_NAME, Place.Field.LOCATION))
+                                        .setSessionToken(sessionToken1).build();
+                        Task<FetchPlaceResponse> task = placesClient.fetchPlace(request);
+                        task.addOnSuccessListener(fetchPlaceResponse -> {
 
-            @Override
-            public void onError(Status status) {
-                Log.i(TAG, "Autocomplete Places. Error: " + status);
-                CountlyUtil.selectPlaceError(status.getStatusCode(), status.getStatusMessage());
-            }
-        });
+                            Place place = fetchPlaceResponse.getPlace();
+                            onPlaceSelected(place);
+                        });
+                    } else {
+                        Log.i(TAG, "Error New Places API Autocomplete");
+                        CountlyUtil.selectPlaceError(-1, "Error New Places API Autocomplete");
+                    }
+                }
+        );
 
-        autocompleteFragment.setClearRunnable(() -> {
+        binding.tvSearchPlace.setOnClickListener(v -> placeAutocompleteActivityResultLauncher.launch(autocompleteIntent));
+
+        binding.icClearSearchText.setOnClickListener(v -> {
+            binding.tvSearchPlace.setText("");
             getMainPresenter().onClearPlaceAutocompleteText();
             binding.viewNearbyLines.setVisibility(View.GONE);
         });
+
     }
+
+    private void onPlaceSelected(Place place) {
+
+        Log.i(TAG, "Autocomplete Places. Selected: " + place.getDisplayName());
+        binding.tvSearchPlace.setText(place.getDisplayName());
+        getMainPresenter().onPlaceSelected(place);
+        findNearbyLines(place);
+        CountlyUtil.selectPlace(place.getDisplayName());
+    }
+
 
     private void findNearbyLines(@NonNull Place place) {
 
@@ -146,7 +190,7 @@ public class AddressFragment extends BaseMainFragment {
 
         List<NearbyLine> nearbyLineList = nearbyLinesMap.entrySet().stream()
                 .map(Map.Entry::getValue)
-                .sorted((o1, o2) -> { 
+                .sorted((o1, o2) -> {
                     if (o1.getDistance() == o2.getDistance()) {
                         return 0;
                     } else if (o1.getDistance() > o2.getDistance()) {
@@ -171,7 +215,7 @@ public class AddressFragment extends BaseMainFragment {
 
 
     public void clearAddress() {
-        autocompleteFragment.setText("");
+        binding.tvSearchPlace.setText("");
         binding.viewNearbyLines.setVisibility(View.GONE);
     }
 }
