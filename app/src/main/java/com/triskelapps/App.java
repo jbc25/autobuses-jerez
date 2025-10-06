@@ -34,8 +34,6 @@ public class App extends MultiDexApplication {
 
     private static final String TAG = "App";
 
-    public static final int BUS_LINES_COUNT = 18;
-
     public static final String PREFIX = BuildConfig.APPLICATION_ID + ".";
 
     public static final String PREF_FIRST_TIME_LAUNCH = PREFIX + "pref_first_time_launch";

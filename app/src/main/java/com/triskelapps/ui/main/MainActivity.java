@@ -127,13 +127,18 @@ public class MainActivity extends BaseActivity implements OnMapReadyCallback, Ma
                     WindowInsetsCompat.Type.systemBars()
                             | WindowInsetsCompat.Type.displayCutout()
             );
-            binding.frameToolbar.setPadding(bars.left, bars.top, bars.right, bars.bottom);
+            binding.frameToolbar.setPadding(0, bars.top, 0, 0);
+            v.setPadding(bars.left, 0, bars.right, bars.bottom);
             return WindowInsetsCompat.CONSUMED;
         });
 
         getWindow().setStatusBarColor(ContextCompat.getColor(MainActivity.this, R.color.colorPrimary));
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
             getWindow().getDecorView().getWindowInsetsController().setSystemBarsAppearance(0, APPEARANCE_LIGHT_STATUS_BARS);
+        } else {
+            int flags = getWindow().getDecorView().getSystemUiVisibility();
+            flags &= ~View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR; // Remove light status bar flag
+            getWindow().getDecorView().setSystemUiVisibility(flags);
         }
 
         binding.navView.setNavigationItemSelectedListener(this);

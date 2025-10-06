@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editor de Rutas de Autobuses</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; height: 100vh; overflow: hidden; }
+        #container { display: flex; height: 100vh; }
+        #sidebar { width: 350px; background: #2c3e50; color: white; overflow-y: auto; padding: 20px; }
+        #map { flex: 1; position: relative; }
+        h1 { font-size: 1.5em; margin-bottom: 20px; color: #ecf0f1; }
+        h2 { font-size: 1.2em; margin: 20px 0 10px 0; color: #3498db; }
+        .btn { background: #3498db; color: white; border: none; padding: 10px 15px; cursor: pointer; border-radius: 5px; margin: 5px 5px 5px 0; font-size: 14px; transition: background 0.3s; }
+        .btn:hover { background: #2980b9; }
+        .btn-danger { background: #e74c3c; }
+        .btn-danger:hover { background: #c0392b; }
+        .btn-success { background: #27ae60; }
+        .btn-success:hover { background: #229954; }
+        .btn-warning { background: #f39c12; }
+        .btn-warning:hover { background: #e67e22; }
+        .line-item { background: #34495e; padding: 15px; margin: 10px 0; border-radius: 5px; cursor: pointer; transition: background 0.3s; }
+        .line-item:hover { background: #3d566e; }
+        .line-item.active { background: #3498db; }
+        .line-color { display: inline-block; width: 20px; height: 20px; border-radius: 3px; margin-right: 10px; vertical-align: middle; }
+        .stop-item { background: #34495e; padding: 10px; margin: 5px 0; border-radius: 3px; font-size: 0.9em; cursor: move; transition: background 0.3s; }
+        .stop-item:hover { background: #3d566e; }
+        .stop-item.highlighted { background: #f39c12; animation: pulse 1s ease-in-out; }
+        .stop-item.dragging { opacity: 0.5; }
+        @keyframes pulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.05); } }
+        input, textarea { width: 100%; padding: 8px; margin: 5px 0 15px 0; border: none; border-radius: 3px; font-size: 14px; }
+        label { display: block; margin-top: 10px; font-weight: bold; color: #ecf0f1; }
+        .form-section { background: #34495e; padding: 15px; border-radius: 5px; margin: 15px 0; }
+        #file-input { display: none; }
+        .edit-mode-info { background: #f39c12; padding: 10px; border-radius: 5px; margin: 10px 0; text-align: center; font-size: 0.9em; }
+        .stats { background: #34495e; padding: 10px; border-radius: 5px; margin: 10px 0; font-size: 0.9em; }
+        .color-picker-wrapper { display: flex; align-items: center; gap: 10px; }
+        .color-picker-wrapper input[type="color"] { width: 60px; height: 40px; border: none; cursor: pointer; }
+        .color-picker-wrapper input[type="text"] { flex: 1; }
+        .path-vertex { background: #e74c3c; width: 14px; height: 14px; border-radius: 50%; border: 3px solid white; box-shadow: 0 0 4px rgba(0,0,0,0.5); cursor: move; }
+        .toast { position: fixed; bottom: 30px; right: 30px; background: #2c3e50; color: white; padding: 15px 20px; border-radius: 5px; box-shadow: 0 4px 12px rgba(0,0,0,0.3); z-index: 10000; animation: slideIn 0.3s ease-out; }
+        .toast.success { background: #27ae60; }
+        .toast.error { background: #e74c3c; }
+        .toast.info { background: #3498db; }
+        @keyframes slideIn { from { transform: translateX(400px); opacity: 0; } to { transform: translateX(0); opacity: 1; } }
+        .add-stop-mode-info { background: #27ae60; padding: 10px; border-radius: 5px; margin: 10px 0; text-align: center; font-size: 0.9em; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="sidebar">
+            <h1>🚌 Editor de Rutas</h1>
+            <div>
+                <button class="btn" onclick="importFile()">📁 Importar JSON</button>
+                <button class="btn btn-success" onclick="exportFile()">💾 Exportar JSON</button>
+                <input type="file" id="file-input" accept=".json" onchange="handleFileSelect(event)">
+            </div>
+            <div class="stats" id="stats"><div>Líneas: 0</div><div>Paradas totales: 0</div></div>
+            <div id="edit-mode" class="edit-mode-info" style="display: none;">✏️ <strong>Modo Edición Trazado</strong><br>• Arrastra los puntos rojos<br>• Clic derecho en línea: añadir punto<br>• Clic derecho en punto: eliminar punto</div>
+            <div id="add-stop-mode" class="add-stop-mode-info" style="display: none;">➕ <strong>Añadir Parada</strong><br>Haz clic derecho en el mapa</div>
+            <h2>Líneas</h2>
+            <button class="btn btn-warning" onclick="deselectLine()" style="width: 100%;">🔄 Desmarcar Líneas</button>
+            <div id="lines-list"></div>
+            <div id="line-editor" style="display: none;">
+                <h2>Editar Línea</h2>
+                <div class="form-section">
+                    <label>Nombre:</label><input type="text" id="line-name">
+                    <label>Descripción:</label><input type="text" id="line-description">
+                    <label>Color:</label>
+                    <div class="color-picker-wrapper">
+                        <input type="color" id="line-color-picker">
+                        <input type="text" id="line-color" placeholder="#FFD400">
+                    </div>
+                    <button class="btn btn-success" onclick="saveLine()">💾 Guardar</button>
+                    <button class="btn" onclick="toggleEditMode()">✏️ Editar Trazado</button>
+                    <button class="btn btn-danger" onclick="deleteLine()">🗑️ Eliminar</button>
+                </div>
+                <h2>Paradas <small>(arrastra para reordenar)</small></h2>
+                <div id="stops-list"></div>
+                <button class="btn" onclick="addStop()">➕ Añadir Parada</button>
+            </div>
+            <div id="stop-editor" style="display: none;">
+                <h2>Editar Parada</h2>
+                <div class="form-section">
+                    <label>Orden:</label><input type="number" id="stop-order" min="1">
+                    <label>Nombre:</label><input type="text" id="stop-name">
+                    <label>Código:</label><input type="number" id="stop-code">
+                    <label>Dirección:</label><input type="text" id="stop-direction">
+                    <label>Transbordos:</label><input type="text" id="stop-transfer">
+                    <label>Latitud:</label><input type="number" step="any" id="stop-lat">
+                    <label>Longitud:</label><input type="number" step="any" id="stop-lng">
+                    <button class="btn btn-success" onclick="saveStop()">💾 Guardar</button>
+                    <button class="btn btn-danger" onclick="deleteStop()">🗑️ Eliminar</button>
+                    <button class="btn" onclick="backToLine()">← Volver</button>
+                </div>
+            </div>
+        </div>
+        <div id="map"></div>
+    </div>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script>
+        let map, busData = [], currentLine = null, currentStop = null, editMode = false, addStopMode = false;
+        let linePolylines = {}, stopMarkers = {}, pathVertexMarkers = [], editablePolyline = null, selectedStopMarker = null;
+
+        function showToast(msg, type = 'info') {
+            const t = document.createElement('div');
+            t.className = `toast ${type}`;
+            t.textContent = msg;
+            document.body.appendChild(t);
+            setTimeout(() => t.remove(), 2000);
+        }
+
+        function initMap() {
+            map = L.map('map').setView([36.6814, -6.1367], 13);
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {attribution: '© OpenStreetMap'}).addTo(map);
+            map.getContainer().addEventListener('contextmenu', e => e.preventDefault());
+            map.on('contextmenu', e => { if (addStopMode && currentLine) addStopAtLocation(e.latlng); });
+        }
+
+        function importFile() { document.getElementById('file-input').click(); }
+
+        function handleFileSelect(e) {
+            const file = e.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(ev) {
+                    try {
+                        busData = JSON.parse(ev.target.result);
+                        deselectLine();
+                        updateStats();
+                        showToast('Archivo importado', 'success');
+                    } catch (err) { showToast('Error al leer JSON', 'error'); }
+                };
+                reader.readAsText(file);
+            }
+        }
+
+        function exportFile() {
+            const blob = new Blob([JSON.stringify(busData, null, 2)], {type: 'application/json'});
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'bus-data-modified.json';
+            a.click();
+            URL.revokeObjectURL(url);
+            showToast('Archivo exportado', 'success');
+        }
+
+        function renderLines() {
+            const list = document.getElementById('lines-list');
+            list.innerHTML = '';
+            busData.forEach(line => {
+                const item = document.createElement('div');
+                item.className = 'line-item' + (currentLine && currentLine.id === line.id ? ' active' : '');
+                item.innerHTML = `<span class="line-color" style="background: ${line.colorHex}"></span><strong>Línea ${line.id}</strong>: ${line.name}<br><small>${line.description} (${line.busStops.length} paradas)</small>`;
+                item.onclick = () => selectLine(line);
+                list.appendChild(item);
+            });
+        }
+
+        function drawLine(line) {
+            const coords = line.path.map(c => [c[0], c[1]]);
+            linePolylines[line.id] = L.polyline(coords, {color: line.colorHex, weight: 4, opacity: 0.7}).addTo(map);
+            stopMarkers[line.id] = [];
+            line.busStops.forEach((stop, idx) => {
+                const m = L.circleMarker([stop.coordinates[0], stop.coordinates[1]], {
+                    radius: 6, fillColor: line.colorHex, color: '#fff', weight: 2, opacity: 1, fillOpacity: 0.8
+                }).addTo(map);
+                m.bindPopup(`<strong>${stop.name}</strong><br>Código: ${stop.code}<br>Dirección: ${stop.direction}<br>Transbordos: ${stop.transfer}`);
+                m.on('click', () => { if (currentLine && currentLine.id === line.id) highlightStopInList(idx); });
+                stopMarkers[line.id].push({marker: m, stop, stopIndex: idx});
+            });
+        }
+
+        function drawSelectedLine(line) {
+            const coords = line.path.map(c => [c[0], c[1]]);
+            linePolylines[line.id] = L.polyline(coords, {color: line.colorHex, weight: 4, opacity: 0.7}).addTo(map);
+            stopMarkers[line.id] = [];
+            line.busStops.forEach((stop, idx) => {
+                const m = L.marker([stop.coordinates[0], stop.coordinates[1]], {
+                    draggable: true,
+                    icon: L.divIcon({
+                        className: 'stop-marker-draggable',
+                        html: `<div style="background: ${line.colorHex}; width: 16px; height: 16px; border-radius: 50%; border: 3px solid white; box-shadow: 0 0 4px rgba(0,0,0,0.5);"></div>`,
+                        iconSize: [16, 16], iconAnchor: [8, 8]
+                    })
+                }).addTo(map);
+                m.bindPopup(`<strong>${stop.name}</strong><br>Código: ${stop.code}<br>Dirección: ${stop.direction}<br>Transbordos: ${stop.transfer}`);
+                m.on('dragend', e => {
+                    const ll = e.target.getLatLng();
+                    stop.coordinates = [ll.lat, ll.lng];
+                    if (currentStop === stop) {
+                        document.getElementById('stop-lat').value = ll.lat;
+                        document.getElementById('stop-lng').value = ll.lng;
+                    }
+                });
+                m.on('click', () => { highlightStopInList(idx); selectStopMarker(m); });
+                stopMarkers[line.id].push({marker: m, stop, stopIndex: idx});
+            });
+        }
+
+        function selectStopMarker(m) {
+            if (selectedStopMarker) {
+                selectedStopMarker.setIcon(L.divIcon({
+                    className: 'stop-marker-draggable',
+                    html: `<div style="background: ${currentLine.colorHex}; width: 16px; height: 16px; border-radius: 50%; border: 3px solid white; box-shadow: 0 0 4px rgba(0,0,0,0.5);"></div>`,
+                    iconSize: [16, 16], iconAnchor: [8, 8]
+                }));
+            }
+            selectedStopMarker = m;
+            m.setIcon(L.divIcon({
+                className: 'stop-marker-draggable',
+                html: `<div style="background: #f39c12; width: 20px; height: 20px; border-radius: 50%; border: 3px solid white; box-shadow: 0 0 8px rgba(243,156,18,0.8);"></div>`,
+                iconSize: [20, 20], iconAnchor: [10, 10]
+            }));
+        }
+
+        function highlightStopInList(idx) {
+            const items = document.querySelectorAll('.stop-item');
+            items.forEach(i => i.classList.remove('highlighted'));
+            if (items[idx]) {
+                items[idx].classList.add('highlighted');
+                items[idx].scrollIntoView({behavior: 'smooth', block: 'nearest'});
+            }
+            if (stopMarkers[currentLine.id] && stopMarkers[currentLine.id][idx]) {
+                selectStopMarker(stopMarkers[currentLine.id][idx].marker);
+            }
+        }
+
+        function clearMap() {
+            Object.values(linePolylines).forEach(p => map.removeLayer(p));
+            Object.values(stopMarkers).forEach(ms => ms.forEach(m => map.removeLayer(m.marker)));
+            clearPathVertices();
+            if (editablePolyline) { map.removeLayer(editablePolyline); editablePolyline = null; }
+            linePolylines = {}; stopMarkers = {}; selectedStopMarker = null;
+        }
+
+        function selectLine(line) {
+            currentLine = line; currentStop = null; editMode = false; addStopMode = false;
+            document.getElementById('line-editor').style.display = 'block';
+            document.getElementById('stop-editor').style.display = 'none';
+            document.getElementById('edit-mode').style.display = 'none';
+            document.getElementById('add-stop-mode').style.display = 'none';
+            document.getElementById('line-name').value = line.name;
+            document.getElementById('line-description').value = line.description;
+            document.getElementById('line-color').value = line.colorHex;
+            document.getElementById('line-color-picker').value = line.colorHex;
+            renderStops();
+            renderLines();
+            clearMap();
+            drawSelectedLine(line);
+            if (line.path.length > 0) {
+                const bounds = L.latLngBounds(line.path.map(c => [c[0], c[1]]));
+                map.fitBounds(bounds);
+            }
+        }
+
+        function deselectLine() {
+            currentLine = null; currentStop = null; editMode = false; addStopMode = false;
+            document.getElementById('line-editor').style.display = 'none';
+            document.getElementById('stop-editor').style.display = 'none';
+            document.getElementById('edit-mode').style.display = 'none';
+            document.getElementById('add-stop-mode').style.display = 'none';
+            clearMap();
+            renderLines();
+            busData.forEach(line => drawLine(line));
+            if (busData.length > 0) {
+                const allCoords = busData.flatMap(l => l.path.map(c => [c[0], c[1]]));
+                if (allCoords.length > 0) map.fitBounds(L.latLngBounds(allCoords));
+            }
+        }
+
+        function renderStops() {
+            const list = document.getElementById('stops-list');
+            list.innerHTML = '';
+            if (!currentLine) return;
+            currentLine.busStops.forEach((stop, idx) => {
+                const item = document.createElement('div');
+                item.className = 'stop-item';
+                item.draggable = true;
+                item.dataset.index = idx;
+                item.innerHTML = `<strong>${idx + 1}. ${stop.name}</strong><br><small>Código: ${stop.code} | ${stop.direction}</small>`;
+                item.onclick = e => { if (!item.classList.contains('dragging')) selectStop(stop, idx); };
+                item.addEventListener('dragstart', e => { item.classList.add('dragging'); e.dataTransfer.setData('text/html', idx); });
+                item.addEventListener('dragend', () => item.classList.remove('dragging'));
+                item.addEventListener('dragover', e => { e.preventDefault(); });
+                item.addEventListener('drop', e => {
+                    e.preventDefault();
+                    const from = parseInt(e.dataTransfer.getData('text/html'));
+                    const to = parseInt(item.dataset.index);
+                    if (from !== to) {
+                        const s = currentLine.busStops[from];
+                        currentLine.busStops.splice(from, 1);
+                        currentLine.busStops.splice(to, 0, s);
+                        renderStops();
+                        clearMap();
+                        drawSelectedLine(currentLine);
+                        showToast('Orden actualizado', 'success');
+                    }
+                });
+                list.appendChild(item);
+            });
+        }
+
+        function selectStop(stop, idx) {
+            currentStop = stop;
+            document.getElementById('line-editor').style.display = 'none';
+            document.getElementById('stop-editor').style.display = 'block';
+            document.getElementById('stop-order').value = idx + 1;
+            document.getElementById('stop-order').max = currentLine.busStops.length;
+            document.getElementById('stop-name').value = stop.name;
+            document.getElementById('stop-code').value = stop.code;
+            document.getElementById('stop-direction').value = stop.direction;
+            document.getElementById('stop-transfer').value = stop.transfer;
+            document.getElementById('stop-lat').value = stop.coordinates[0];
+            document.getElementById('stop-lng').value = stop.coordinates[1];
+            highlightStopInList(idx);
+        }
+
+        function saveLine() {
+            if (!currentLine) return;
+            currentLine.name = document.getElementById('line-name').value;
+            currentLine.description = document.getElementById('line-description').value;
+            currentLine.colorHex = document.getElementById('line-color').value;
+            clearMap();
+            drawSelectedLine(currentLine);
+            renderLines();
+            showToast('Línea guardada', 'success');
+        }
+
+        function saveStop() {
+            if (!currentStop) return;
+            const newOrder = parseInt(document.getElementById('stop-order').value) - 1;
+            const curIdx = currentLine.busStops.indexOf(currentStop);
+            currentStop.name = document.getElementById('stop-name').value;
+            currentStop.code = parseInt(document.getElementById('stop-code').value);
+            currentStop.direction = document.getElementById('stop-direction').value;
+            currentStop.transfer = document.getElementById('stop-transfer').value;
+            currentStop.coordinates[0] = parseFloat(document.getElementById('stop-lat').value);
+            currentStop.coordinates[1] = parseFloat(document.getElementById('stop-lng').value);
+            if (newOrder !== curIdx && newOrder >= 0 && newOrder < currentLine.busStops.length) {
+                currentLine.busStops.splice(curIdx, 1);
+                currentLine.busStops.splice(newOrder, 0, currentStop);
+            }
+            clearMap();
+            drawSelectedLine(currentLine);
+            renderStops();
+            showToast('Parada guardada', 'success');
+        }
+
+        function addStop() {
+            if (!currentLine) return;
+            addStopMode = !addStopMode;
+            document.getElementById('add-stop-mode').style.display = addStopMode ? 'block' : 'none';
+            if (addStopMode) showToast('Clic derecho en el mapa', 'info');
+        }
+
+        function addStopAtLocation(ll) {
+            const s = {name: "Nueva Parada", lineId: currentLine.id, nonRegular: false, code: Math.floor(Math.random()*1000), transfer: "NO", direction: currentLine.description, coordinates: [ll.lat, ll.lng]};
+            currentLine.busStops.push(s);
+            addStopMode = false;
+            document.getElementById('add-stop-mode').style.display = 'none';
+            renderStops();
+            clearMap();
+            drawSelectedLine(currentLine);
+            selectStop(s, currentLine.busStops.length - 1);
+            showToast('Parada añadida', 'success');
+        }
+
+        function deleteStop() {
+            if (!currentStop || !currentLine) return;
+            const idx = currentLine.busStops.indexOf(currentStop);
+            if (idx > -1) currentLine.busStops.splice(idx, 1);
+            backToLine();
+            clearMap();
+            drawSelectedLine(currentLine);
+            showToast('Parada eliminada', 'success');
+        }
+
+        function deleteLine() {
+            if (!currentLine) return;
+            const idx = busData.findIndex(l => l.id === currentLine.id);
+            if (idx > -1) busData.splice(idx, 1);
+            deselectLine();
+            updateStats();
+            showToast('Línea eliminada', 'success');
+        }
+
+        function backToLine() {
+            currentStop = null; addStopMode = false;
+            document.getElementById('stop-editor').style.display = 'none';
+            document.getElementById('add-stop-mode').style.display = 'none';
+            document.getElementById('line-editor').style.display = 'block';
+            renderStops();
+        }
+
+        function toggleEditMode() {
+            if (!currentLine) return;
+            editMode = !editMode;
+            document.getElementById('edit-mode').style.display = editMode ? 'block' : 'none';
+            editMode ? enablePathEditing() : disablePathEditing();
+        }
+
+        function enablePathEditing() {
+            clearPathVertices();
+            if (editablePolyline) map.removeLayer(editablePolyline);
+            const coords = currentLine.path.map(c => [c[0], c[1]]);
+            editablePolyline = L.polyline(coords, {color: currentLine.colorHex, weight: 4, opacity: 0.7}).addTo(map);
+            currentLine.path.forEach((c, i) => createPathVertex(c, i));
+            editablePolyline.on('contextmenu', function(e) {
+                const ll = e.latlng;
+                let minDist = Infinity, insIdx = 0;
+                for (let i = 0; i < currentLine.path.length - 1; i++) {
+                    const p1 = L.latLng(currentLine.path[i][0], currentLine.path[i][1]);
+                    const p2 = L.latLng(currentLine.path[i+1][0], currentLine.path[i+1][1]);
+                    const mid = L.latLng((p1.lat + p2.lat)/2, (p1.lng + p2.lng)/2);
+                    const dist = map.distance(ll, mid);
+                    if (dist < minDist) { minDist = dist; insIdx = i + 1; }
+                }
+                currentLine.path.splice(insIdx, 0, [ll.lat, ll.lng]);
+                updatePathVisualization();
+            });
+        }
+
+        function createPathVertex(coord, idx) {
+            const m = L.marker([coord[0], coord[1]], {
+                draggable: true,
+                icon: L.divIcon({className: 'path-vertex', html: '<div class="path-vertex"></div>', iconSize: [14, 14], iconAnchor: [7, 7]}),
+                zIndexOffset: 1000
+            }).addTo(map);
+            m.on('drag', e => { currentLine.path[idx] = [e.target.getLatLng().lat, e.target.getLatLng().lng]; updatePolyline(); });
+            m.on('contextmenu', e => {
+                L.DomEvent.stopPropagation(e);
+                if (currentLine.path.length > 2) {
+                    currentLine.path.splice(idx, 1);
+                    updatePathVisualization();
+                } else showToast('Mínimo 2 puntos', 'error');
+            });
+            pathVertexMarkers.push(m);
+        }
+
+        function updatePolyline() {
+            if (editablePolyline) editablePolyline.setLatLngs(currentLine.path.map(c => [c[0], c[1]]));
+        }
+
+        function updatePathVisualization() {
+            clearPathVertices();
+            updatePolyline();
+            currentLine.path.forEach((c, i) => createPathVertex(c, i));
+        }
+
+        function clearPathVertices() {
+            pathVertexMarkers.forEach(m => map.removeLayer(m));
+            pathVertexMarkers = [];
+        }
+
+        function disablePathEditing() {
+            clearPathVertices();
+            if (editablePolyline) { editablePolyline.off('contextmenu'); map.removeLayer(editablePolyline); editablePolyline = null; }
+            clearMap();
+            drawSelectedLine(currentLine);
+        }
+
+        function updateStats() {
+            const total = busData.reduce((s, l) => s + l.busStops.length, 0);
+            document.getElementById('stats').innerHTML = `<div>Líneas: ${busData.length}</div><div>Paradas totales: ${total}</div>`;
+        }
+
+        window.addEventListener('DOMContentLoaded', () => {
+            initMap();
+            const cp = document.getElementById('line-color-picker');
+            const ci = document.getElementById('line-color');
+            if (cp && ci) {
+                cp.addEventListener('input', e => ci.value = e.target.value);
+                ci.addEventListener('input', e => { if (/^#[0-9A-F]{6}$/i.test(e.target.value)) cp.value = e.target.value; });
+            }
+        });
+    </script>
+</body>
+</html>
