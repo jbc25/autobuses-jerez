@@ -18,6 +18,7 @@ import com.triskelapps.base.BasePresenter;
 import com.triskelapps.model.BusLine;
 import com.triskelapps.model.BusStop;
 import com.triskelapps.model.db.BusLineVisible;
+import com.triskelapps.ui.main.address.LocationResult;
 import com.triskelapps.ui.news.NewsPresenter;
 
 import org.json.JSONException;
@@ -140,8 +141,8 @@ public class MainPresenter extends BasePresenter {
         view.showBusLineInfo(busLine, busStop, false);
     }
 
-    public void onPlaceSelected(Place place) {
-        view.setDestinationMarker(place);
+    public void onPlaceSelected(LocationResult locationResult) {
+        view.setDestinationMarker(locationResult);
     }
 
     public void onClearPlaceAutocompleteText() {

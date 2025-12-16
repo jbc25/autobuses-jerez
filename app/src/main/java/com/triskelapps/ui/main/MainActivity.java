@@ -72,6 +72,7 @@ import com.triskelapps.model.BusLine;
 import com.triskelapps.model.BusStop;
 import com.triskelapps.ui.favourites.FavouritesActivity;
 import com.triskelapps.ui.main.address.AddressFragment;
+import com.triskelapps.ui.main.address.LocationResult;
 import com.triskelapps.ui.main.bus_stops.BusStopsFragment;
 import com.triskelapps.ui.main.filter.FilterBusLinesFragment;
 import com.triskelapps.features.news.ui.NewsActivity;
@@ -704,19 +705,19 @@ public class MainActivity extends BaseActivity implements OnMapReadyCallback, Ma
     }
 
     @Override
-    public void setDestinationMarker(Place place) {
+    public void setDestinationMarker(LocationResult locationResult) {
 
         removeDestinationMarker();
 
         markerDestination = map.addMarker(new MarkerOptions()
-                .position(place.getLocation())
+                .position(locationResult.getLatLng())
                 .icon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_marker_green))
-                .title(place.getDisplayName()));
+                .title(locationResult.getName()));
 
         markerDestination.showInfoWindow();
         markerDestination.setZIndex(Integer.MAX_VALUE);
 
-        map.animateCamera(CameraUpdateFactory.newLatLng(place.getLocation()));
+        map.animateCamera(CameraUpdateFactory.newLatLng(locationResult.getLatLng()));
 
     }
 

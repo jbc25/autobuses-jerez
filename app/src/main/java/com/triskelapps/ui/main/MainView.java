@@ -4,6 +4,7 @@ import com.google.android.libraries.places.api.model.Place;
 import com.triskelapps.base.BaseView;
 import com.triskelapps.model.BusLine;
 import com.triskelapps.model.BusStop;
+import com.triskelapps.ui.main.address.LocationResult;
 
 import java.util.List;
 
@@ -12,7 +13,7 @@ public interface MainView extends BaseView {
 
     void showBusLineInfo(BusLine busLine, BusStop busStop, boolean animateToBounds);
 
-    void setDestinationMarker(Place place);
+    void setDestinationMarker(LocationResult locationResult);
 
     void removeDestinationMarker();
 

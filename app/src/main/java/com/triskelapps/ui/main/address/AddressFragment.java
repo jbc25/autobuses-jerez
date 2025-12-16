@@ -48,9 +48,6 @@ import java.util.Map;
 import java.util.stream.Collectors;
 
 
-/**
- * A simple {@link Fragment} subclass.
- */
 public class AddressFragment extends BaseMainFragment {
 
 
@@ -133,27 +130,37 @@ public class AddressFragment extends BaseMainFragment {
                 }
         );
 
-        binding.tvSearchPlace.setOnClickListener(v -> placeAutocompleteActivityResultLauncher.launch(autocompleteIntent));
+        binding.locationSearchView.setOnLocationSelectedListener(locationResult -> {
 
-        binding.icClearSearchText.setOnClickListener(v -> {
-            binding.tvSearchPlace.setText("");
+            Log.d("Location", "Seleccionado: " + locationResult.getName());
+
+            getMainPresenter().onPlaceSelected(locationResult);
+            findNearbyLines(locationResult);
+            CountlyUtil.selectPlace(locationResult.getName());
+
+            return null;
+        });
+
+        binding.locationSearchView.setOnClearListener(() -> {
             getMainPresenter().onClearPlaceAutocompleteText();
             binding.viewNearbyLines.setVisibility(View.GONE);
+            return null;
         });
+
 
     }
 
     private void onPlaceSelected(Place place) {
-
-        Log.i(TAG, "Autocomplete Places. Selected: " + place.getDisplayName());
-        binding.tvSearchPlace.setText(place.getDisplayName());
-        getMainPresenter().onPlaceSelected(place);
-        findNearbyLines(place);
-        CountlyUtil.selectPlace(place.getDisplayName());
+//
+//        Log.i(TAG, "Autocomplete Places. Selected: " + place.getDisplayName());
+////        binding.tvSearchPlace.setText(place.getDisplayName());
+//        getMainPresenter().onPlaceSelected(place);
+//        findNearbyLines(place);
+//        CountlyUtil.selectPlace(place.getDisplayName());
     }
 
 
-    private void findNearbyLines(@NonNull Place place) {
+    private void findNearbyLines(@NonNull LocationResult locationResult) {
 
         double distanceRange = 300; // meters
 
@@ -166,11 +173,11 @@ public class AddressFragment extends BaseMainFragment {
             // Find closest bus stop within distance range
             for (BusStop busStop : busStops) {
                 LatLng coords = new LatLng(busStop.getCoordinates().get(0), busStop.getCoordinates().get(1));
-                double distance = SphericalUtil.computeDistanceBetween(place.getLatLng(), coords);
+                double distance = SphericalUtil.computeDistanceBetween(locationResult.getLatLng(), coords);
 
                 if (distance <= distanceRange) {
 
-                    Log.d(TAG, "findNearbyLinesRange: coordPlace=" + place.getLatLng() + ", coordBusStop=" + coords + ", distance: " + distance);
+                    Log.d(TAG, "findNearbyLinesRange: coordPlace=" + locationResult.getLatLng() + ", coordBusStop=" + coords + ", distance: " + distance);
 
                     NearbyLine nearbyLine = nearbyLinesMap.get(busLine.getId());
                     if (nearbyLine == null) {
@@ -215,7 +222,7 @@ public class AddressFragment extends BaseMainFragment {
 
 
     public void clearAddress() {
-        binding.tvSearchPlace.setText("");
+        binding.locationSearchView.clearSearchText();
         binding.viewNearbyLines.setVisibility(View.GONE);
     }
 }
