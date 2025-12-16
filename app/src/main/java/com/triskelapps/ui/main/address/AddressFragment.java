@@ -11,27 +11,12 @@ import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.fragment.app.Fragment;
 
-import com.google.android.gms.common.api.Status;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.tasks.Task;
-import com.google.android.libraries.places.api.Places;
-import com.google.android.libraries.places.api.model.AutocompletePrediction;
-import com.google.android.libraries.places.api.model.AutocompleteSessionToken;
-import com.google.android.libraries.places.api.model.Place;
-import com.google.android.libraries.places.api.model.RectangularBounds;
-import com.google.android.libraries.places.api.net.FetchPlaceRequest;
-import com.google.android.libraries.places.api.net.FetchPlaceResponse;
-import com.google.android.libraries.places.api.net.PlacesClient;
-import com.google.android.libraries.places.widget.PlaceAutocomplete;
-import com.google.android.libraries.places.widget.PlaceAutocompleteActivity;
-import com.google.android.libraries.places.widget.listener.PlaceSelectionListener;
-import com.google.common.base.Preconditions;
 import com.google.maps.android.SphericalUtil;
 import com.triskelapps.App;
 import com.triskelapps.CityData;
-import com.triskelapps.R;
 import com.triskelapps.base.BaseMainFragment;
 import com.triskelapps.databinding.FragmentAddressBinding;
 import com.triskelapps.model.BusLine;
@@ -86,50 +71,6 @@ public class AddressFragment extends BaseMainFragment {
 
     private void configurePlaceAutocompleteNew() {
 
-        // Optional, create a session token for Autocomplete request and the followup FetchPlace request
-        AutocompleteSessionToken sessionToken = AutocompleteSessionToken.newInstance();
-
-        autocompleteIntent =
-                new PlaceAutocomplete.IntentBuilder()
-                        .setCountries(List.of("ES"))
-                        .setLocationRestriction(RectangularBounds.newInstance(
-                                CityData.AUTOCOMPLETE_RESULTS_COORDS_SOUTH_WEST, CityData.AUTOCOMPLETE_RESULTS_COORDS_NORTH_EAST))
-                        .setAutocompleteSessionToken(sessionToken) // optional
-                        .build(getActivity());
-
-        placeAutocompleteActivityResultLauncher = registerForActivityResult(
-                new ActivityResultContracts.StartActivityForResult(),
-                result -> {
-                    Intent intent = result.getData();
-                    if (result.getResultCode() == PlaceAutocompleteActivity.RESULT_OK) {
-
-                        AutocompletePrediction prediction =
-                                PlaceAutocomplete.getPredictionFromIntent(
-                                        Preconditions.checkNotNull(intent));
-
-                        AutocompleteSessionToken sessionToken1 =
-                                PlaceAutocomplete.getSessionTokenFromIntent(
-                                        Preconditions.checkNotNull(intent));
-
-                        // create PlacesClient to make FetchPlace request (optional)
-                        PlacesClient placesClient = Places.createClient(getActivity());
-                        FetchPlaceRequest request =
-                                FetchPlaceRequest.builder(prediction.getPlaceId(),
-                                                Arrays.asList(Place.Field.DISPLAY_NAME, Place.Field.LOCATION))
-                                        .setSessionToken(sessionToken1).build();
-                        Task<FetchPlaceResponse> task = placesClient.fetchPlace(request);
-                        task.addOnSuccessListener(fetchPlaceResponse -> {
-
-                            Place place = fetchPlaceResponse.getPlace();
-                            onPlaceSelected(place);
-                        });
-                    } else {
-                        Log.i(TAG, "Error New Places API Autocomplete");
-                        CountlyUtil.selectPlaceError(-1, "Error New Places API Autocomplete");
-                    }
-                }
-        );
-
         binding.locationSearchView.setOnLocationSelectedListener(locationResult -> {
 
             Log.d("Location", "Seleccionado: " + locationResult.getName());
@@ -148,15 +89,6 @@ public class AddressFragment extends BaseMainFragment {
         });
 
 
-    }
-
-    private void onPlaceSelected(Place place) {
-//
-//        Log.i(TAG, "Autocomplete Places. Selected: " + place.getDisplayName());
-////        binding.tvSearchPlace.setText(place.getDisplayName());
-//        getMainPresenter().onPlaceSelected(place);
-//        findNearbyLines(place);
-//        CountlyUtil.selectPlace(place.getDisplayName());
     }
 
 

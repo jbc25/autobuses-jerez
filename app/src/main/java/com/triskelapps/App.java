@@ -11,7 +11,6 @@ import androidx.multidex.MultiDexApplication;
 import androidx.preference.PreferenceManager;
 import androidx.room.Room;
 
-import com.google.android.libraries.places.api.Places;
 import com.google.firebase.messaging.FirebaseMessaging;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
@@ -63,9 +62,6 @@ public class App extends MultiDexApplication {
         AppCompatDelegate.setCompatVectorFromResourcesEnabled(true);
 
         CountlyUtil.configureCountly(this);
-
-        String apiKey = getString(R.string.maps_api_key);
-        Places.initializeWithNewPlacesApiEnabled(getApplicationContext(), apiKey);
 
         db = Room.databaseBuilder(getApplicationContext(),
                 MyDatabase.class, DB_NAME)

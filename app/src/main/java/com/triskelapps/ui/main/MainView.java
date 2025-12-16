@@ -1,6 +1,5 @@
 package com.triskelapps.ui.main;
 
-import com.google.android.libraries.places.api.model.Place;
 import com.triskelapps.base.BaseView;
 import com.triskelapps.model.BusLine;
 import com.triskelapps.model.BusStop;

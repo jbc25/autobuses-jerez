@@ -1,6 +1,7 @@
 package com.triskelapps.ui.main.address
 
 
+import android.R.attr.apiKey
 import android.app.AlertDialog
 import android.content.Context
 import android.util.AttributeSet
@@ -8,12 +9,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.*
-import androidx.appcompat.widget.AppCompatImageButton
 import androidx.constraintlayout.widget.ConstraintLayout
 import com.google.android.gms.maps.model.LatLng
 import com.triskelapps.R
-import com.triskelapps.databinding.FragmentAddressBinding
 import com.triskelapps.databinding.LocationSearchViewBinding
+import com.triskelapps.util.WindowUtils
 import kotlinx.coroutines.*
 import org.json.JSONObject
 import java.net.HttpURLConnection
@@ -51,8 +51,7 @@ class LocationSearchView @JvmOverloads constructor(
             val query = binding.searchEditText.text.toString()
             if (query.isNotEmpty()) {
                 performSearch(query)
-            } else {
-                Toast.makeText(context, "Introduce un término de búsqueda", Toast.LENGTH_SHORT).show()
+                WindowUtils.hideSoftKeyboard(binding.root)
             }
         }
 
@@ -81,14 +80,14 @@ class LocationSearchView @JvmOverloads constructor(
                 }
                 dialog.dismiss()
                 if (results.size == 1) {
-                    binding.searchEditText.setText(results[0].name)
+                    results[0].name.takeIf { it.isNotEmpty() }?.let { binding.searchEditText.setText(it) }
                     onLocationSelected?.invoke(results[0])
                 } else {
                     showResultsDialog(results)
                 }
             } catch (e: Exception) {
                 dialog.dismiss()
-                Toast.makeText(context, "Error al buscar: ${e.message}", Toast.LENGTH_SHORT).show()
+                Toast.makeText(context, context.getString(R.string.error_search, e.message), Toast.LENGTH_SHORT).show()
             }
         }
     }
@@ -102,8 +101,9 @@ class LocationSearchView @JvmOverloads constructor(
     }
 
     private fun fetchLocations(query: String): List<LocationResult> {
-        val encodedQuery = URLEncoder.encode(query, "UTF-8")
-        val urlString = "https://photon.komoot.io/api/?q=$encodedQuery&lat=36.690907551604724&lon=-6.131568600157266&lang=en"
+        val encodedQuery = URLEncoder.encode("$query jerez", "UTF-8")
+        val apiKey = context.getString(R.string.geoapify_api_key)
+        val urlString = "https://api.geoapify.com/v1/geocode/autocomplete?text=$encodedQuery&filter=circle%3A-6.117677833325843%2C36.68378355206636%2C13000&limit=5&format=geojson&apiKey=$apiKey&lang=en"
 
         val url = URL(urlString)
         val connection = url.openConnection() as HttpURLConnection
@@ -133,7 +133,7 @@ class LocationSearchView @JvmOverloads constructor(
 
             results.add(
                 LocationResult(
-                    name = properties.optString("name", "Sin nombre"),
+                    name = properties.optString("name", ""),
                     street = properties.optString("street", null),
                     housenumber = properties.optString("housenumber", null),
                     postcode = properties.optString("postcode", null),
@@ -150,7 +150,7 @@ class LocationSearchView @JvmOverloads constructor(
 
     private fun showResultsDialog(results: List<LocationResult>) {
         if (results.isEmpty()) {
-            Toast.makeText(context, "No se encontraron resultados", Toast.LENGTH_SHORT).show()
+            Toast.makeText(context, R.string.no_results_found, Toast.LENGTH_SHORT).show()
             return
         }
 
@@ -159,14 +159,14 @@ class LocationSearchView @JvmOverloads constructor(
         listView.adapter = adapter
 
         val dialog = AlertDialog.Builder(context)
-            .setTitle("Resultados")
+            .setTitle(R.string.results)
             .setView(listView)
-            .setNegativeButton("Cancelar", null)
+            .setNegativeButton(R.string.cancel, null)
             .create()
 
         listView.setOnItemClickListener { _, _, position, _ ->
             val selected = results[position]
-            binding.searchEditText.setText(selected.name)
+            selected.name.takeIf { it.isNotEmpty() }?.let { binding.searchEditText.setText(it) }
             onLocationSelected?.invoke(selected)
             dialog.dismiss()
         }

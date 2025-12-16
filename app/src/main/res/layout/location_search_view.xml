@@ -5,7 +5,7 @@
     android:layout_height="wrap_content"
     android:orientation="horizontal"
     android:gravity="center_vertical"
-    android:padding="8dp">
+    android:padding="4dp">
 
     <EditText
         android:id="@+id/searchEditText"
@@ -23,16 +23,18 @@
         android:layout_height="wrap_content"
         android:padding="5dp"
         android:src="@drawable/ic_close"
-        app:tint="@color/black" />
+        app:tint="@color/black"
+        android:contentDescription="@string/clear_search"/>
 
     <androidx.appcompat.widget.AppCompatImageButton
         android:id="@+id/searchButton"
-        android:layout_width="45dp"
-        android:layout_height="45dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
         android:layout_marginStart="8dp"
         android:background="@color/colorPrimary"
         android:padding="5dp"
         android:src="@drawable/ic_search"
+        android:contentDescription="@string/search"
         app:tint="@color/white" />
 
 </LinearLayout>

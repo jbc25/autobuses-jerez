@@ -94,4 +94,9 @@
     <string name="no_app_to_open_link">No existe aplicación para abrir este enlace</string>
     <string name="activate_all">Activar todas</string>
     <string name="deactivate_all">Desactivar todas</string>
+    <string name="no_results_found">No se encontraron resultados</string>
+    <string name="error_search">Error al buscar: %s</string>
+    <string name="results">Resultados</string>
+    <string name="clear_search">Borrar búsqueda</string>
+    <string name="search">Realizar búsqueda</string>
 </resources>
