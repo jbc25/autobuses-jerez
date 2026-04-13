@@ -114,7 +114,10 @@
 
     function initMap() {
         map = L.map('map').setView([36.6814, -6.1367], 13);
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {attribution: '© OpenStreetMap'}).addTo(map);
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '© OpenStreetMap',
+            referrerPolicy: 'origin'
+        }).addTo(map);
         map.getContainer().addEventListener('contextmenu', e => e.preventDefault());
         map.on('contextmenu', e => { if (addStopMode && currentLine) addStopAtLocation(e.latlng); });
     }
@@ -138,7 +141,7 @@
     }
 
     function exportFile() {
-        const blob = new Blob([JSON.stringify(busData, null, 2)], {type: 'application/json'});
+        const blob = new Blob([JSON.stringify(busData)], {type: 'application/json'});
         const url = URL.createObjectURL(blob);
         const a = document.createElement('a');
         a.href = url;
