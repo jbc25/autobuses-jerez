@@ -20,7 +20,7 @@ def clean_html(html_text):
 		return html_text
 
 
-def download_timetable(line_number, bus_stop_code):
+def download_timetable(line_number, bus_stop_code, BASE_DIR):
 
 	print(f'linea{line_number}-parada{bus_stop_code}')
 
@@ -39,7 +39,7 @@ def download_timetable(line_number, bus_stop_code):
 
 		html_cleaned = clean_html(html_str)
 
-		with open(f'timetables/L{line_number}-P{bus_stop_code}.html', 'w') as file_out:
+		with open(f'{BASE_DIR}/timetables/L{line_number}-P{bus_stop_code}.html', 'w') as file_out:
 			file_out.write(html_cleaned)
 
 		return True
